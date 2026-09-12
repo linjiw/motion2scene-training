@@ -1,0 +1,18 @@
+{
+  "verified_at_utc": "2026-09-12T20:15:41.647828+00:00",
+  "repository": "https://github.com/linjiw/motion2scene-training",
+  "visibility": "private",
+  "branch": "main",
+  "verified_commit": "00b967739d7e602cf40176e3037924e39a8071d0",
+  "method": "Fresh GitHub SSH clone including LFS smudge, followed by SHA-256 verification of all five archives",
+  "bundle_verification": [
+    "repaired-motions verified",
+    "research-datasets-scenes verified",
+    "robot-assets verified",
+    "checkpoints verified",
+    "learned-scene-models verified"
+  ],
+  "paper_sha256": "999c23c8f48b6841d1218fa1bbbe7d49cba6950a3272d5564e9732d37add59d0",
+  "paper_pages": 5,
+  "teacher_training_modified": false
+}

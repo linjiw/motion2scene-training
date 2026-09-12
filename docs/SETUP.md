@@ -13,7 +13,7 @@ Run commands from the repository root. Native commands use the Python interprete
 
 ## 2. Get a working copy and data
 
-The complete repository is hosted privately at `github.com/linjiw/motion2scene-training`. Authorized GitHub users can clone it with:
+The complete repository is hosted privately at `github.com/linjiw/motion2scene-training`. Authorized GitHub users can clone it with (configure a GitHub SSH key first, or use `gh auth login` and `gh repo clone linjiw/motion2scene-training`):
 
 ```bash
 git clone git@github.com:linjiw/motion2scene-training.git motion2scene-work
