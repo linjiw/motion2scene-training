@@ -22,3 +22,7 @@ python -m pytest -q tests
 ```
 
 The CPU viewer optional dependencies and native GPU bootstrap are declared separately. Unsupported simulator/GPU combinations may need environment changes; the package does not claim cross-platform native physics validation.
+
+## Git/LFS distribution check
+
+A fresh local clone of commit `34d7493` automatically materialized the LFS objects. Running the cloned package against its own repository verified all five data archives. This checks local Git/LFS distribution; no remote repository has been created or uploaded.
