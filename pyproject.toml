@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "motion2scene-training-kit"
 version = "0.1.0"
 description = "Portable Motion2Scene datasets, scene generation and SONIC teacher/student workflows"
-requires-python = ">=3.11"
+requires-python = ">=3.11.8"
 dependencies = []
 
 [project.optional-dependencies]

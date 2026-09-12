@@ -2,7 +2,6 @@
 
 import argparse
 import hashlib
-import importlib.util
 import json
 import os
 import shutil
@@ -29,16 +28,23 @@ def root_path():
     return root.resolve()
 
 
-def safe_extract(archive, destination):
+def safe_extract(archive, destination, verified_files=None):
     destination = Path(destination).resolve()
     with tarfile.open(archive) as tar:
+        pending = []
         for member in tar.getmembers():
             target = (destination / member.name).resolve()
             if not target.is_relative_to(destination) or not member.isfile():
                 raise ValueError(f"Unsafe archive member: {member.name}")
             if target.exists():
-                raise FileExistsError(f"Refusing to overwrite {target}")
-        tar.extractall(destination, filter="data")
+                expected = (verified_files or {}).get(member.name)
+                if expected is None or digest(target) != expected:
+                    raise FileExistsError(
+                        f"Refusing to overwrite changed/unverified {target}"
+                    )
+            else:
+                pending.append(member)
+        tar.extractall(destination, members=pending, filter="data")
 
 
 def native(root, module, arguments):
@@ -70,6 +76,7 @@ def main(argv=None):
     extract.add_argument("names", nargs="*")
     doctor = sub.add_parser("doctor")
     doctor.add_argument("--cuda", action="store_true")
+    doctor.add_argument("--profile", choices=["base", "view", "student", "teacher"])
     teacher = sub.add_parser("teacher-prepare")
     teacher.add_argument("--output", type=Path, required=True)
     teacher.add_argument("--num-envs", type=int, choices=[128, 256], default=128)
@@ -88,6 +95,12 @@ def main(argv=None):
     view.add_argument("motion", type=Path)
     view.add_argument("--output", type=Path, required=True)
     args = parser.parse_args(argv)
+    if args.command == "teacher-prepare" and args.iterations <= 0:
+        parser.error("iterations must be positive")
+    if args.command == "student-smoke" and not 6 <= args.updates <= 1000:
+        parser.error("student smoke updates must be 6..1000")
+    if args.command == "generator-smoke" and not 1 <= args.updates <= 1000:
+        parser.error("generator smoke updates must be 1..1000")
     root = root_path()
     workspace = (args.workspace or root / "workspace").resolve()
     catalog = json.loads((root / "manifests/catalog.json").read_text())
@@ -107,8 +120,12 @@ def main(argv=None):
                     f"Bundle missing or changed: {archive}; run git lfs pull"
                 )
             if args.command == "unpack":
-                safe_extract(archive, workspace)
                 manifest = json.loads((root / bundle["manifest"]).read_text())
+                safe_extract(
+                    archive,
+                    workspace,
+                    {f["path"]: f["sha256"] for f in manifest["files"]},
+                )
                 for item in manifest["files"]:
                     if digest(workspace / item["path"]) != item["sha256"]:
                         raise ValueError(f"Extracted file changed: {item['path']}")
@@ -118,6 +135,9 @@ def main(argv=None):
             and (workspace / "vendor/sonic/gear_sonic/data").exists()
         ):
             link = root / "vendor/sonic/gear_sonic/data"
+            expected = workspace / "vendor/sonic/gear_sonic/data"
+            if link.is_symlink() and link.resolve() != expected.resolve():
+                link.unlink()
             if not link.exists():
                 link.symlink_to(
                     os.path.relpath(
@@ -126,23 +146,17 @@ def main(argv=None):
                     target_is_directory=True,
                 )
     elif args.command == "doctor":
-        modules = ["numpy", "torch", "hydra", "mujoco", "isaaclab", "trl", "matplotlib"]
-        result = {
-            "python": sys.version,
-            "repository": str(root),
-            "workspace": str(workspace),
-            "modules": {m: importlib.util.find_spec(m) is not None for m in modules},
-            "ffmpeg": shutil.which("ffmpeg"),
-            "assets": (root / "vendor/sonic/gear_sonic/data").exists(),
-        }
-        if args.cuda:
-            import torch
+        from m2s_package.readiness import inspect
 
-            result["cuda_available"] = torch.cuda.is_available()
-            if result["cuda_available"]:
-                x = torch.ones(16, 16, device="cuda")
-                result["cuda_matmul"] = float((x @ x)[0, 0])
+        result = inspect(
+            root,
+            workspace,
+            args.profile or ("teacher" if args.cuda else "base"),
+            args.cuda,
+        )
         print(json.dumps(result, indent=2))
+        if not result["ready"]:
+            raise SystemExit(1)
     elif args.command == "teacher-prepare":
         parent = args.output.resolve().with_name(args.output.name + "-parent")
         parent.mkdir(parents=True, exist_ok=False)

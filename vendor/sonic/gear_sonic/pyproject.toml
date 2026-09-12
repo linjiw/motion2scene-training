@@ -104,7 +104,7 @@ training = [
     "tensorboard",
     "open3d",
     "vector-quantize-pytorch",
-    "smpl_sim @ git+https://github.com/ZhengyiLuo/SMPLSim.git",
+    "smpl_sim @ git+https://github.com/ZhengyiLuo/SMPLSim.git@b5c08720503ad5fff64050c4d289c42d947fcf8d",
 ]
 
 [tool.setuptools.packages.find]

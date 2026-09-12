@@ -1,0 +1,11 @@
+Using Python 3.11.16 environment at: /home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab
+   Updating https://github.com/ZhengyiLuo/SMPLSim.git (b5c08720503ad5fff64050c4d289c42d947fcf8d)
+    Updated https://github.com/ZhengyiLuo/SMPLSim.git (b5c08720503ad5fff64050c4d289c42d947fcf8d)
+   Updating https://github.com/ZhengyiLuo/smplx.git (master)
+    Updated https://github.com/ZhengyiLuo/smplx.git (a5b8e4ac14f79f3f33fd2cf2a16e6f507146b813)
+Resolved 182 packages in 2.41s
+Would download 1 package
+Would uninstall 1 package
+Would install 1 package
+ - gear-sonic==0.1.0 (from file:///home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic)
+ + gear-sonic @ file:///home/linjiw/motion2scene-training/vendor/sonic/gear_sonic

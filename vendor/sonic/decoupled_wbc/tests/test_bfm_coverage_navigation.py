@@ -5,12 +5,26 @@ import pytest
 
 from gear_sonic.research.scene_distillation.collect import supported_prefix
 from gear_sonic.research.scene_distillation.scene_qualification import score_scene
-from gear_sonic.research.scene_distillation.tasks import trajectory_labels, validate_task
+from gear_sonic.research.scene_distillation.tasks import (
+    trajectory_labels,
+    validate_task,
+)
 
 
 def test_prefix_censors_at_first_bad_state_and_native_end():
-    assert supported_prefix([True, True, False, True], 4, 2).tolist() == [True, True, False, False]
-    assert supported_prefix([True] * 5, 3, 2).tolist() == [True, True, True, False, False]
+    assert supported_prefix([True, True, False, True], 4, 2).tolist() == [
+        True,
+        True,
+        False,
+        False,
+    ]
+    assert supported_prefix([True] * 5, 3, 2).tolist() == [
+        True,
+        True,
+        True,
+        False,
+        False,
+    ]
     assert not supported_prefix([True] * 5, 3, 4).any()
 
 
@@ -50,26 +64,32 @@ def fixture_trace():
 
 def test_pair_contacts_allow_foot_floor_but_reject_body_floor_and_obstacles():
     task, tracked, forces, names = fixture_trace()
-    result = score_scene(task, tracked, tracked, forces, names, terminated=False, valid_steps=60)
+    result = score_scene(
+        task, tracked, tracked, forces, names, terminated=False, valid_steps=60
+    )
     assert result["state"] == "complete"
     forces[101, 1, 0, 0] = 2
-    assert not score_scene(task, tracked, tracked, forces, names, terminated=False, valid_steps=60)[
-        "checks"
-    ]["environment_contacts"]
+    assert not score_scene(
+        task, tracked, tracked, forces, names, terminated=False, valid_steps=60
+    )["checks"]["environment_contacts"]
     forces[101, 1, 0, 0] = 0
     forces[101, 0, 1, 0] = 2
-    assert not score_scene(task, tracked, tracked, forces, names, terminated=False, valid_steps=60)[
-        "checks"
-    ]["environment_contacts"]
+    assert not score_scene(
+        task, tracked, tracked, forces, names, terminated=False, valid_steps=60
+    )["checks"]["environment_contacts"]
 
 
 def test_arrival_without_stable_hold_and_missing_substeps_fail():
     task, tracked, forces, names = fixture_trace()
     tracked[:-1, 0, 0] = 0.4
-    result = score_scene(task, tracked, tracked, forces, names, terminated=False, valid_steps=60)
+    result = score_scene(
+        task, tracked, tracked, forces, names, terminated=False, valid_steps=60
+    )
     assert result["checks"]["goal_reached"] and not result["checks"]["terminal_hold"]
     with pytest.raises(ValueError, match="Incomplete"):
-        score_scene(task, tracked, tracked, forces[:-1], names, terminated=False, valid_steps=60)
+        score_scene(
+            task, tracked, tracked, forces[:-1], names, terminated=False, valid_steps=60
+        )
 
 
 def test_task_rejects_unknown_public_profile():
@@ -89,16 +109,28 @@ def test_native_wrapper_reference_and_measured_roles():
     from pathlib import Path
     from types import SimpleNamespace
 
-    tree = ast.parse(Path("gear_sonic/envs/wrapper/manager_env_wrapper.py").read_text())
+    tree = ast.parse(
+        (
+            Path(__file__).resolve().parents[2]
+            / "gear_sonic/envs/wrapper/manager_env_wrapper.py"
+        ).read_text()
+    )
     cls = next(
-        n for n in tree.body if isinstance(n, ast.ClassDef) and n.name == "ManagerEnvWrapper"
+        n
+        for n in tree.body
+        if isinstance(n, ast.ClassDef) and n.name == "ManagerEnvWrapper"
     )
     method = next(
-        n for n in cls.body if isinstance(n, ast.FunctionDef) and n.name == "get_env_data"
+        n
+        for n in cls.body
+        if isinstance(n, ast.FunctionDef) and n.name == "get_env_data"
     )
     namespace = {}
     exec(
-        compile(ast.Module(body=[method], type_ignores=[]), "wrapper_role_test", "exec"), namespace
+        compile(
+            ast.Module(body=[method], type_ignores=[]), "wrapper_role_test", "exec"
+        ),
+        namespace,
     )
     reference, measured = object(), object()
     env = SimpleNamespace(
@@ -147,7 +179,9 @@ def test_public_request_identity_excludes_reference_but_binds_goal_and_scene():
     )
     task = {k: 0 for k in keys}
     reference_changed = dict(task, motion_id="different", reference={"sha256": "new"})
-    assert navigation_request_sha256(task) == navigation_request_sha256(reference_changed)
+    assert navigation_request_sha256(task) == navigation_request_sha256(
+        reference_changed
+    )
     assert navigation_request_sha256(task) != navigation_request_sha256(
         dict(task, goal_xyz=[1, 0, 0])
     )
@@ -160,5 +194,11 @@ def test_whole_qualified_teacher_keeps_late_recovery_but_never_post_end_frames()
     from gear_sonic.research.scene_distillation.collect import teacher_support_mask
 
     local = [True, False, True, True, True]
-    assert teacher_support_mask(local, 4, 2, True).tolist() == [True, True, True, True, False]
+    assert teacher_support_mask(local, 4, 2, True).tolist() == [
+        True,
+        True,
+        True,
+        True,
+        False,
+    ]
     assert not teacher_support_mask(local, 4, 2, False).any()

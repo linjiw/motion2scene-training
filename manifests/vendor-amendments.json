@@ -1,0 +1,18 @@
+{
+  "files": [
+    {
+      "path": "vendor/sonic/gear_sonic/pyproject.toml",
+      "snapshot_sha256": "23f65c58f203953a84dd94b144c37e7d0db1fd8ce89999b004df75c17890cfe0",
+      "current_sha256": "c1291ba4dbcdf84eca945da84f97b1c50006cb28280753846acb7d79e7402dea"
+    },
+    {
+      "path": "vendor/sonic/decoupled_wbc/tests/test_bfm_coverage_navigation.py",
+      "snapshot_sha256": "457d263aa0ec1b197bc65aafded581367f5d930522f2081ee613c270b554122a",
+      "current_sha256": "c599b7a8096943e5530b174a40d367006c93bb9b6aeb215b91459e2c15468a33"
+    }
+  ],
+  "reasons": [
+    "Pin SMPLSim to observed training revision",
+    "Resolve native wrapper test source relative to the vendored test, independent of cwd"
+  ]
+}

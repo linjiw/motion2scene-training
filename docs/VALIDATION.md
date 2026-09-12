@@ -26,3 +26,7 @@ The CPU viewer optional dependencies and native GPU bootstrap are declared separ
 ## Git/LFS distribution check
 
 A fresh local clone of commit `34d7493` automatically materialized the LFS objects. Running the cloned package against its own repository verified all five data archives. This checks local Git/LFS distribution; no remote repository has been created or uploaded.
+
+## Subsequent readiness audit
+
+The follow-up audit fixed setup checks and a working-directory-dependent test. The updated package-root suite passes 31 tests. See [the audit](READINESS_AUDIT.md) for executed checks, native dependency conflicts and remaining integration limits.
