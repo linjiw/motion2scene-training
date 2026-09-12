@@ -34,7 +34,7 @@ Prior relocated integration evidence still applies: 89/20 native CPU motion load
 1. The working native environment has four declared dependency conflicts, detailed in [SETUP.md](SETUP.md). Captured constraints are not a complete, conflict-free lock. A dry-run against an existing environment is not a clean installation test.
 2. No fresh native installation or additional teacher GPU run was performed. Full GPU readiness requires an isolated install, loader validation and a bounded physical train/evaluation smoke. The active source teacher was not modified.
 3. A portable teacher crash-resume command and one-command teacher evaluation are not implemented. The [research runbook](RESEARCH_RUNBOOK.md) explains the current manual integration boundary. Exact BFM optimizer continuation exists in its native fitter.
-4. The repository is local; another machine needs a published Git/LFS remote or an explicit transfer of the actual bundles. There is no remote clone URL yet.
+4. At the audit snapshot the repository was local. The subsequent documentation publication targets the private GitHub repository `linjiw/motion2scene-training`; remote/LFS verification is recorded separately in `docs/publication/`. Access permission is required.
 5. Scene proposals and offline fits are not evidence of successful physical scene navigation. Qualification gates remain intact.
 
 Evidence is retained in `validation-evidence/readiness-audit/`. The original data bundles and teacher/student checkpoint bytes were not changed by this audit.

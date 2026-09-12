@@ -10,3 +10,7 @@ build/
 
 vendor/sonic/gear_sonic/data
 external/
+
+paper/*.log
+paper/*.aux
+paper/*.out

@@ -6,11 +6,19 @@ A separate, self-contained research checkout for SONIC teacher training, BFM stu
 
 Read the [readiness audit](docs/READINESS_AUDIT.md) before setting up native training.
 
+## Project and research overview
+
+The intended loop is **executable motion → critical scene proposals → physical qualification → teacher labels → masked student → scene/goal control**. A scene that merely clears a reference is not yet a useful navigation demonstration. The package preserves each qualification boundary and the negative results that motivate the next experiments.
+
+Read the [detailed research guide](docs/RESEARCH_GUIDE.md), [paper draft (PDF)](paper/main.pdf), and [paper evidence map](paper/README.md). The draft describes the measured exploratory results; autonomous scene-navigation and residual-learning gains remain proposed work.
+
 ## Install and unpack
 
-Use Python 3.11 and Git LFS. Clone this repository including LFS objects, then:
+Use Python 3.11.8+ and Git LFS. Clone this repository including LFS objects (GitHub authentication is needed for a private repository), then:
 
 ```bash
+git clone git@github.com:linjiw/motion2scene-training.git
+cd motion2scene-training
 git lfs install
 git lfs pull
 python3.11 -m venv .venv
@@ -87,4 +95,16 @@ The built-in `view` command plots root trajectory and height from a reference NP
 
 For new experiments and continuation limits, read [the research runbook](docs/RESEARCH_RUNBOOK.md).
 
-See [dataset coverage](docs/DATASETS.md), [workflow map](docs/WORKFLOWS.md), and [validation](docs/VALIDATION.md). This repository preserves original license notices; dataset/model assets do not acquire a new blanket license merely by being bundled. No remote publication is implied by local repository creation.
+See [dataset coverage](docs/DATASETS.md), [workflow map](docs/WORKFLOWS.md), and [validation](docs/VALIDATION.md). This repository preserves original license notices; dataset/model assets do not acquire a new blanket license merely by being bundled. Repository destination: `github.com/linjiw/motion2scene-training`. Access to private content requires repository permission; asset-specific terms remain in effect.
+
+## Documentation index
+
+| Document | Purpose |
+|---|---|
+| [Setup](docs/SETUP.md) | Environments, data extraction, readiness and troubleshooting |
+| [Readiness audit](docs/READINESS_AUDIT.md) | Executed checks and remaining native integration gaps |
+| [Research guide](docs/RESEARCH_GUIDE.md) | Problem, interfaces, methods, experiments and next milestones |
+| [Research runbook](docs/RESEARCH_RUNBOOK.md) | Concrete workflow and continuation boundaries |
+| [Dataset inventory](docs/DATASETS.md) | Bundle contents, provenance and asset terms |
+| [Paper](paper/README.md) | Compiled draft, editable source and claim-to-evidence map |
+| [Contributing](CONTRIBUTING.md) | Testing, experiment records and contribution practice |

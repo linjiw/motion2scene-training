@@ -1,0 +1,159 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[margin=0.72in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,graphicx,url,hyperref}
+\title{Motion2Scene: Qualifying Motion-Derived Scenes for Humanoid Teacher--Student Learning}
+\author{Project contributors\\\small Author list and affiliations to be finalized}
+\date{Research draft, September 2026; not a submission or peer-reviewed result}
+\begin{document}
+\maketitle
+\begin{abstract}
+Humanoid motion offers a potential source of supervision for constructing traversal scenes and learning scene-conditioned control. However, a motion-compatible obstacle arrangement need not explain why that motion is useful, and kinematic clearance does not establish closed-loop feasibility. We present Motion2Scene, an auditable research pipeline connecting motion-derived obstacle proposals, physical teacher qualification, masked behavior distillation, and a proposed scene/goal-conditioned student with bounded residual adaptation. We report exploratory evidence rather than a completed navigation system. In a 120-motion geometric study, a hindsight-conditioned obstacle scorer assigns 0.317\% probability to contrastive candidates, compared with 0.312\% for a geometry-trained baseline, while its penetration-witness mass increases. A bounded 100-motion distillation study produces only one full-command tracking completion and zero sparse-command tracking completions. Two scene probes complete native reference tracking but both fail the stricter task qualification. A repaired-data teacher is still under training at the recorded checkpoint series and remains below the previous completed teacher on matched repaired development motions. These results identify temporal supervision, command identifiability, and execution-based scene qualification as unresolved requirements for useful motion-to-scene-to-control learning. We provide reproducible data bundles, implementation, evaluation contracts, and discriminating next experiments without claiming successful autonomous navigation.
+\end{abstract}
+
+\section{Introduction}
+A humanoid ducking beneath an overhead obstacle, turning through a narrow passage, or stepping over an obstruction suggests an inverse problem: which environments make an observed motion useful? Solving that problem could expand scene--behavior training data without requiring a human to label every scene. Yet ducking can also be a stylistic choice in an empty room. A scene that merely avoids collision with a reference trajectory does not identify the cause or necessity of the behavior.
+
+Motion2Scene studies an inverse--forward loop: construct candidate constraints from motion, qualify the resulting scene--motion pair under execution, and use qualified pairs to train a controller receiving scene and task information. The intended output is a distribution of task-relevant constraints, not a photorealistic reconstruction of an original environment. The downstream objective is successful traversal and stopping, not copying every unspecified joint angle.
+
+This paper is an exploratory systems and failure-analysis draft. Its present contributions are (i) an explicit separation of compatibility, geometric contrast, and physical qualification; (ii) an implementation connecting native SONIC tracking, teacher-bound labels, masked student commands, and scene-task records; and (iii) measured failure cases and a portable evidence package. Successful scene-conditioned distillation, a general navigation teacher, and residual-learning gains remain hypotheses to test. We do not claim novelty for hallucination, masked distillation, dataset aggregation, or residual control individually.
+
+\section{Related Work}
+Learning from Learned Hallucination (LfLH) learns obstacle configurations using motion and a planning decoder~\cite{lflh}. It motivates inverse environment construction, but our implemented obstacle scorer uses geometric labels rather than a differentiable full humanoid planner. Thus the present experiment is not a reproduction of LfLH's planner-reconstruction formulation.
+
+Learning from Hallucinating Critical Points separates critical configurations from procedural obstacle-trajectory generation~\cite{critical}. This precedent limits any claim that identifying important times and positions is sufficient novelty. Our open question concerns body-aware constraints whose behavioral preference survives closed-loop humanoid execution.
+
+SONIC supplies scalable motion-tracking control and a reusable motion-token interface~\cite{sonic}. We use its released controller and native training machinery; our limited adaptation studies do not reproduce its large-scale pretraining. Behavior Foundation Model (BFM) combines masked control interfaces with conditional variational distillation~\cite{bfm}. Our implementation adapts these ideas to a fixed SONIC decoder and a small research corpus, and should be described as BFM-inspired rather than an independently validated general behavior foundation model.
+
+DAgger addresses policy-induced distribution shift by aggregating expert labels on learner states~\cite{dagger}. Our queried and teacher-assisted collections follow that motivation, but measured query support and teacher interventions must be distinguished from independent student success. GuideWalk combines navigation guidance, a locomotion teacher, distillation and reinforcement-learning refinement~\cite{guidewalk}. It motivates the proposed composite navigation teacher; its published outcomes are not outcomes of Motion2Scene.
+
+\section{Problem and Qualification Contracts}
+Let a motion $M=(q_{0:T},\dot q_{0:T})$ contain root and joint states. Let $S=\{o_j\}_{j=1}^{J}$ denote obstacle primitives, and $g$ a task request including start, goal, deadline and stopping criteria. A geometric compatibility predicate $C(M,S)$ tests whether the reference clears the scene under the stated geometry model. A contrastive predicate additionally seeks an alternative $M^-$ for which
+\begin{equation}
+ C(M,S)=1,\qquad C(M^-,S)=0.
+\end{equation}
+This condition is not a causal claim about why $M$ was generated. In particular, an artificial alternative may be dynamically impossible. Behavioral preference requires qualified alternatives with comparable start/task conditions.
+
+Physical qualification instead evaluates a policy rollout $\tau\sim\pi(\cdot\mid M,S,g)$. We define a conjunction
+\begin{equation}
+ Q(\tau)=Q_{\rm track}\land Q_{\rm contact}\land Q_{\rm goal}\land Q_{\rm hold}.
+\end{equation}
+The current scene probes require native completion, mean body error at most 0.10 m, maximum root-XY error at most 0.25 m, task-compliant goal stopping, and no prohibited normal contact above 1 N. Foot--floor support is allowed; body--obstacle and nonfoot--floor contact are not. Contact evidence is sampled every 0.005 s physics step. Goal holding requires 50 control ticks within 0.25 m at root speed at most 0.1 m/s. These are the declared research thresholds, not universal safety guarantees.
+
+We retain failed attempts and denominator membership. Reference repair, collision-free sampled geometry, successful exact tracking, and successful navigation are separate evidence categories. A zero-collision result after rejecting unsafe candidates is a filtering property, not automatically a learned safety property.
+
+\section{Pipeline}
+\subsection{Motion-Derived Obstacle Proposals}
+The implemented local study extracts 64 offline kinematic channels, including heights, relative positions, derivatives and selected body angular velocities. Features include future frames and are restricted to offline inverse modeling. Five rule-based event anchors yield 225 candidates per motion. A 21,185-parameter network scores candidate recipes from a 128-dimensional local mean/std motion summary.
+
+Let $c_k,n_k,d_k$ indicate reference clearance, a sufficient-near condition, and geometric contrast. The hindsight target is
+\begin{equation}
+ w_k=0.1c_k+n_k+3d_k.
+\end{equation}
+The implemented loss combines coverage of normalized target mass with a retained-clear-probability penalty. Geometry-only and zero-motion-feature variants share candidate support. The alternatives are a local root chord and an articulation held from window entry while following the root. They are geometric probes, not execution-qualified continuations. Continuous learned placement and learned anchor discovery were not implemented in this study.
+
+\subsection{Teacher and Data Provenance}
+The original corpus contains 100 training and 20 development motions. The repaired dataset retains all 100 training candidates but recommends 89 after screening; all 20 development clips remain in evaluation, including unresolved screens. The previous teacher received 8,000 iterations with 512 environments and 24 control steps per rollout, or 98,304,000 transitions. The new 128-environment fit is bounded at 32,000 iterations to match that transition budget, with five PPO epochs and eight minibatches per rollout.
+
+These are fresh optimizer fits from released actor/critic weights. Reducing environment count does not make iteration counts directly comparable. We hash teacher checkpoints and label files; actor targets and frozen decoders must refer to the same teacher. Whole-qualified teacher episodes retain all valid recorded frames, whereas exploratory queries and supported prefixes remain explicitly identified.
+
+\subsection{Masked Foundation Student}
+The student consumes 930-dimensional proprioceptive history and a 79-component masked command. The full interface includes root signals, 14 body-point targets and 29 joint targets. Root/heading commands expose a smaller subset; sparse navigation commands expose body-frame planar velocity, yaw rate and height. Arrival information is not silently assumed available.
+
+A privileged posterior uses additional state and future reference during training, while deployment uses a public prior. A 32-dimensional latent is mapped to a 64-dimensional token consumed by the frozen teacher decoder. Schematically, training minimizes
+\begin{align}
+\mathcal L={}&\mathbb E_q\|D(z,o)-a^T\|^2\\
+&+\beta\,\mathrm{KL}(q(z\mid o,c,x^{\rm priv})\Vert p(z\mid o,c))\nonumber\\
+&+\lambda\|D(\bar z_p,o)-a^T\|^2.\nonumber
+\end{align}
+The implementation includes bounded-token quantization and decoder-parity checks. This equation summarizes the objectives rather than specifying every numerical implementation detail.
+
+The curriculum moves from full commands to root/heading and then sparse commands while retaining earlier profiles. Reference-quarter sampling uses original frame phase before filtering; ranking retained prefix rows would falsely imply complete temporal coverage. The present sampler balances episodes and occupied quarters, not motion IDs across arbitrary multi-source aggregates.
+
+\subsection{Proposed Scene/Goal Student and Residual Learning}
+The implemented downstream actor interface contains proprioception, a six-dimensional body-frame start/goal representation, and up to five masked 15-dimensional obstacle encodings. A recurrent public encoder predicts bounded foundation commands. Future trajectory targets, reference phase, motion identity and privileged teacher observations must not leak into deployed inputs.
+
+A composite expert would select feasible guidance from the scene and goal and query the tracking teacher on the same state. Current qualified-continuation selection is restricted to recorded requests; it is not a general planner. A bounded residual can refine a frozen base action:
+\begin{equation}
+ a_t= a^{\rm base}_t+\ell\odot\tanh(r_\psi(h_t)).
+\end{equation}
+The intended task objective combines progress, stable stopping, collision penalties and an imitation anchor. The code includes residual PPO and qualification gates, but this study has no successful physical scene-navigation distillation or residual-PPO result.
+
+\section{Experiments and Results}
+\subsection{Geometric Hindsight Study}
+Six fits use two seeds, 200 updates per fit and 100 training motions; all 20 previously inspected development motions remain in descriptive scoring. Only 74/22,500 training cells and 8/4,500 development cells exhibit the stated geometric contrast. Seventeen development motions contain none.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrr}\toprule
+Model & Contrast & Clear & Penetration\\\midrule
+Geometry & 0.312\% & 76.565\% & 20.645\%\\
+Hindsight & 0.317\% & 71.691\% & 25.479\%\\
+No motion features & 0.292\% & 68.924\% & 28.321\%\\\bottomrule
+\end{tabular}
+\caption{Raw candidate probability mass, averaged over two seeds and 20 development motions. Contrast is geometric; penetration is the recorded witness predicate. No dynamics were executed.}
+\end{table}
+The hindsight objective does not establish an advantage over the geometry baseline: contrast mass is nearly unchanged and penetration-witness mass is higher. The no-motion variant still receives motion-derived candidate anchors, so it is not completely motion-independent. No significance test is claimed for this exploratory, shared-corpus analysis.
+
+\subsection{Foundation Distillation and Temporal Coverage}
+A bounded larger study performs 12,000 new updates across teacher and DAgger collections. Its final student completes 1/100 full-command reference-tracking motions and 0/100 sparse-command reference-tracking motions. An additional 3,000-update teacher-assisted fit does not improve standalone completion. Mixed teacher/student completions during assistance are not counted as student successes.
+
+The first aggregate retains 8,330 query rows but only two after the midpoint and none in the final reference quarter. Assistance increases late coverage, but does not demonstrate independent recovery. In the original FP32 teacher collection, whole-qualified clips 00246 and 00770 were unnecessarily prefix-truncated. Retaining their recorded qualified support enables a separate two-clip curriculum diagnostic; it does not retroactively alter the original experiment.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrr}\toprule
+Profile & Uniform & Curriculum\\\midrule
+Full & 0.175743 & 0.179833\\
+Root/heading & 0.175966 & 0.178820\\
+Sparse commands & 0.176136 & 0.178860\\\bottomrule
+\end{tabular}
+\caption{Held-out prior action MSE after 240 updates per arm. Both use identical initialization, examples and reference-quarter sampling. Validation is within-clip interpolation, not unseen-motion or physical evaluation.}
+\end{table}
+The curriculum is slightly worse on this single-seed diagnostic. Shuffling sparse commands changes predicted actions by only 0.0012--0.0028 RMS on the two clips. This is consistent with weak command dependence, although narrow command variation limits the diagnostic. Low cloning loss alone is insufficient evidence of controllability.
+
+\subsection{Physical Scene Qualification}
+Two three-obstacle probes append a new 1.2 s terminal hold to previously reliable flat-ground references. Both complete native reference tracking, but neither passes the conjunction of qualification criteria. Motion 00185 has 0.14285 m mean body error and 0.35236 m final goal distance. Motion 00490 reaches within 0.07522 m of the goal but incurs 352.46 N normal contact at the right shoulder against an obstacle. Consequently, zero qualified navigation demonstrations are admitted. These failures show why geometric clearance and native completion cannot replace task/contact qualification.
+
+\subsection{Repaired-Teacher Interim Evaluation}
+Table~\ref{tab:teacher} compares frozen repaired-teacher checkpoints with the previous completed teacher using the same 20 repaired development clips, seed and native environment configuration. Earlier observations on unrepaired development data are not substituted for this baseline.
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrr}\toprule
+Checkpoint & Complete & Mean progress\\\midrule
+Repaired 3,400 & 2/20 & 29.74\%\\
+Repaired 4,700 & 4/20 & 35.80\%\\
+Repaired 6,200 & 3/20 & 33.72\%\\
+Previous final 8,000 & 11/20 & 71.48\%\\\bottomrule
+\end{tabular}
+\caption{Interim capability, not equal-exposure or isolated repair-effect comparison. Repaired checkpoints use 128 environments; the old final teacher used 512.}\label{tab:teacher}
+\end{table}
+The step-6,200 teacher has 19,046,400 transitions, only 19.375\% of the previous final teacher's exposure. It remains weaker and does not improve monotonically across the observed checkpoints. The final repaired run is not complete in this frozen evidence set. Repeated development looks are disclosed and do not support confirmatory generalization claims.
+
+\section{Discussion and Discriminating Next Experiments}
+Three issues emerge. First, the inverse problem is weakly identified: sparse geometric contrast and unqualified alternatives do not show that a scene makes the observed behavior necessary. A useful next test holds the scene fixed and compares execution-qualified stronger and weaker motions, then changes a critical obstacle to reverse their preference.
+
+Second, most retained student labels describe early rollout states. Sampling cannot manufacture absent late-phase supervision. The next collection should preserve whole-qualified walking, turning and stopping episodes, with interventions and supported recoveries throughout their durations. Motion/source balancing must be explicit, and unsupported queries must remain absent rather than receiving nominal actions from another state.
+
+Third, sparse commands underdetermine detailed pose. Native termination includes reference-style foot-position constraints; a different useful gait can fail that criterion. A separate command-following protocol should measure planar velocity, yaw-rate and height error alongside stability and duration. Goal navigation additionally needs arrival, stopping and contact outcomes. Neither protocol should silently redefine the published exact-tracking results.
+
+A proposed downstream comparison should freeze a qualified base, compare residual-disabled and residual-enabled learning with matched transition budgets, and include goal-only, shuffled-scene and changed-goal ablations. At fixed state, different task requests need qualified expert responses to test whether conditioning matters. Multiple seeds and held-out motion groups/scene families are necessary before claiming a generalization benefit. These experiments are future work, not promised outcomes.
+
+\section{Reproducibility and Limitations}
+The package includes 8,599 data/model files in five SHA-256-indexed Git LFS archives, vendored implementations, design records and portable setup commands. A local clone/LFS check, relocated 89/20 motion loader validation, CPU student/generator fitting and 200 scene exports passed. The follow-up package suite passes 31 tests. A working-directory-dependent test was corrected to inspect the exported code itself.
+
+A fresh-machine native GPU installation has not been certified. The source environment has four declared dependency conflicts, documented without changing the live training environment. Portable teacher crash-resume and one-command evaluation remain integration gaps. Large upstream corpora and simulator binaries are not bundled, and individual assets retain their original license terms.
+
+The studies are small, exploratory and partly reuse previously inspected development data. The archived independent Motion2Scene project includes earlier failed gates and a retracted surrogate study; those are not affirmative evidence for the present method. We report no hardware results, no navigation-success rate for a qualified scene student, and no residual-learning gain. The contribution supported today is a reproducible investigation of the qualification gap, rather than a completed state-of-the-art controller.
+
+\section{Conclusion}
+Motion-derived environments can provide useful hypotheses for humanoid behavior learning, but the current experiments do not establish a successful inverse-to-navigation pipeline. Geometric contrast is sparse, student temporal support is inadequate, and native tracking completion can coexist with task or contact failure. Motion2Scene makes these boundaries measurable and supplies the implementation and evidence needed to test whether execution-qualified counterfactuals and task-aligned distillation can close them.
+
+\begin{thebibliography}{9}
+\bibitem{lflh} Z. Wang et al. From Agile Ground to Aerial Navigation: Learning from Learned Hallucination. 2021. \url{https://arxiv.org/abs/2108.09793}.
+\bibitem{critical} S. A. Ghani, K. Lee, and X. Xiao. Learning from Hallucinating Critical Points for Navigation in Dynamic Environments. 2025. \url{https://arxiv.org/abs/2509.26513}.
+\bibitem{sonic} Z. Luo et al. SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control. 2025, subsequently revised. \url{https://arxiv.org/abs/2511.07820}.
+\bibitem{bfm} W. Zeng et al. Behavior Foundation Model for Humanoid Robots. 2025. \url{https://arxiv.org/abs/2509.13780}.
+\bibitem{dagger} S. Ross, G. Gordon, and D. Bagnell. A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning. AISTATS, 2011, pp. 627--635. \url{https://proceedings.mlr.press/v15/ross11a.html}.
+\bibitem{guidewalk} H. Han et al. GuideWalk: Learning Unified Autonomous Navigation and Locomotion for Humanoid Robots across Versatile Terrains. 2026. \url{https://arxiv.org/abs/2606.10449}.
+\end{thebibliography}
+\end{document}
