@@ -1,0 +1,209 @@
+{
+  "files": [
+    {
+      "path": "m2s-hindsight-dataset-v1-20260911/assets/frozen-proposal-inputs.pt",
+      "sha256": "9ed54472c3b6bf77058b2431b3e45c42a40636ecda7fe52e1c34f74bc8152e52",
+      "bytes": 15556218
+    },
+    {
+      "path": "m2s-hindsight-dataset-v1-20260911/assets/hindsight-801.pt",
+      "sha256": "a3c4a88435ee11806265643f35a4f65fc1176935a5faa670faa1d8ddea5cad50",
+      "bytes": 90667
+    },
+    {
+      "path": "m2s-hindsight-events-100-20260911/geometry-801.pt",
+      "sha256": "d8f150a05fa4360c61aa5c5c6b164cdcf638d2f8065a7f3aa166473554a1a570",
+      "bytes": 90649
+    },
+    {
+      "path": "m2s-hindsight-events-100-20260911/geometry-802.pt",
+      "sha256": "99c8a5cbd64582c1b8591fc3030abac4c94412fe340fc371a3fc7324725a34a9",
+      "bytes": 90649
+    },
+    {
+      "path": "m2s-hindsight-events-100-20260911/hindsight-801.pt",
+      "sha256": "a3c4a88435ee11806265643f35a4f65fc1176935a5faa670faa1d8ddea5cad50",
+      "bytes": 90667
+    },
+    {
+      "path": "m2s-hindsight-events-100-20260911/hindsight-802.pt",
+      "sha256": "c89229d750b3428a6ee8284cab108bea150a7db5a44435ad8be2f514ce0fa54a",
+      "bytes": 90667
+    },
+    {
+      "path": "m2s-hindsight-events-100-20260911/hindsight_no_motion-801.pt",
+      "sha256": "3e210db67fbabeea6646a9d08d5fd0d0b1f7fdcc3aed536e006fcade9b59584f",
+      "bytes": 90911
+    },
+    {
+      "path": "m2s-hindsight-events-100-20260911/hindsight_no_motion-802.pt",
+      "sha256": "c19212663326e1d45a89cb8fcf73a60e850f3d49c9d6f9508a847f30cd280ef7",
+      "bytes": 90911
+    },
+    {
+      "path": "m2s-hindsight-events-100-20260911/labels.pt",
+      "sha256": "9ed54472c3b6bf77058b2431b3e45c42a40636ecda7fe52e1c34f74bc8152e52",
+      "bytes": 15556218
+    },
+    {
+      "path": "m2s-hindsight-events-100-20260911/probabilities.pt",
+      "sha256": "6ef210b49d0eed7fe3a9fa0ef5da6cf75988e992c0cafdb35f7fd6faffa671d9",
+      "bytes": 165667
+    },
+    {
+      "path": "m2s-kimodo-navigation-100-20260911/conditioned-701.pt",
+      "sha256": "19d193781bf3afaf3426b6c10253f835ef8dc33f43044baad786b842c9dca63f",
+      "bytes": 128719
+    },
+    {
+      "path": "m2s-kimodo-navigation-100-20260911/conditioned-702.pt",
+      "sha256": "f09fb8bf6458d287d3b9412a3243a120053e479e2a086ca2a6ac8c08b10505f2",
+      "bytes": 128719
+    },
+    {
+      "path": "m2s-kimodo-navigation-100-20260911/labels.pt",
+      "sha256": "9454fd41954f9ca82319fcc7804325fa576b278d3bf06cb63df8f466e10ec801",
+      "bytes": 354953
+    },
+    {
+      "path": "m2s-kimodo-navigation-100-20260911/probabilities.pt",
+      "sha256": "028b3d8f0f868a1d9aba27ea3e82424246b2daafe4413dbeabfbb5f12d16c1e7",
+      "bytes": 92635
+    },
+    {
+      "path": "m2s-kimodo-navigation-100-20260911/unconditional-701.pt",
+      "sha256": "e042c026adb5b126fdb3df94752d1adfca69c7a461b90be3974adb213be96522",
+      "bytes": 128755
+    },
+    {
+      "path": "m2s-kimodo-navigation-100-20260911/unconditional-702.pt",
+      "sha256": "c2c90ea91d1ede11d25b63891fab207fda00cd216a6fd26cc292e550fd39a58b",
+      "bytes": 128755
+    },
+    {
+      "path": "m2s-kimodo-route-100-20260911/conditioned-701.pt",
+      "sha256": "a48a4c23e49048d7e78319c5a91e43a06a53ed4912a116f42695cc6001b7dcad",
+      "bytes": 128719
+    },
+    {
+      "path": "m2s-kimodo-route-100-20260911/conditioned-702.pt",
+      "sha256": "b2301476a72f03db7bf6b22fd335ff1feb487a963d7af25574e5448ba735aaaf",
+      "bytes": 128719
+    },
+    {
+      "path": "m2s-kimodo-route-100-20260911/labels.pt",
+      "sha256": "b04e9a6dbdf95fee7421e3b1f752e6fabfddcc220acdbe98e9229518cb24e0d0",
+      "bytes": 895172
+    },
+    {
+      "path": "m2s-kimodo-route-100-20260911/probabilities.pt",
+      "sha256": "617b88e42b3fd9cb38e86c567802aa731bd0dc6b6c0ef12ab687b8785390112b",
+      "bytes": 92635
+    },
+    {
+      "path": "m2s-kimodo-route-100-20260911/unconditional-701.pt",
+      "sha256": "9eac622f6747ab8b8af5bb48e551c1c94c15a84d91269ee7a1d5a0acd1d0678f",
+      "bytes": 128755
+    },
+    {
+      "path": "m2s-kimodo-route-100-20260911/unconditional-702.pt",
+      "sha256": "c5b099e1677ca308f5c89f998983c3ad337b4fe0333843090f16f641d14492d6",
+      "bytes": 128755
+    },
+    {
+      "path": "m2s-multimotion-shapes-20260911/geometry.pt",
+      "sha256": "0da07fa9647eec1e745d7c7b9e23e82a933dbfff1fc434c42ab8e9871944b0f6",
+      "bytes": 1018721
+    },
+    {
+      "path": "m2s-multimotion-shapes-20260911/mlp-501.pt",
+      "sha256": "7400e9dae37c3ddd707d8630eadd59aad2a3a19564a4d90030105a3de076a8ce",
+      "bytes": 121782
+    },
+    {
+      "path": "m2s-multimotion-shapes-20260911/mlp-502.pt",
+      "sha256": "408e43e6ffb7123bf164c4bd20a8022f7b715d4bf0b0394b39c64ab906b03f2c",
+      "bytes": 121782
+    },
+    {
+      "path": "m2s-multimotion-shapes-20260911/probabilities.pt",
+      "sha256": "127390746d1543c2f3b26417dd941021b1f347759e159eb67c38420514da2808",
+      "bytes": 89373
+    },
+    {
+      "path": "m2s-multimotion-shapes-20260911/transformer-501.pt",
+      "sha256": "8fc39c3a6609ceeb05030370481635486ccb538909fc07dbf4ab873c76e21758",
+      "bytes": 364034
+    },
+    {
+      "path": "m2s-multimotion-shapes-20260911/transformer-502.pt",
+      "sha256": "304487b308b33dc0baac996992c38bf1b81fe4f036e5e45a7714aed78db23e56",
+      "bytes": 364034
+    },
+    {
+      "path": "m2s-multimotion-shapes-20260911/unconditional-501.pt",
+      "sha256": "a800161ed13e69da07757c258f2a1c644851f6dedf0c682758fa96475c66a09b",
+      "bytes": 122568
+    },
+    {
+      "path": "m2s-multimotion-shapes-20260911/unconditional-502.pt",
+      "sha256": "3b3c5eadff1b9eeb5a1c810d846f6024f978f17acd9fc6de182591db4ce51923",
+      "bytes": 122568
+    },
+    {
+      "path": "m2s-native-development-labels-20260911/labels.pt",
+      "sha256": "92df3252485e610f23f32da65f43f91846c58188eb65dfc2dfc3ea44f19f6872",
+      "bytes": 14206160
+    },
+    {
+      "path": "m2s-primitive-rescore-20260911/bounds.pt",
+      "sha256": "c7865f7b585061cf7ca0029c0c8526fe92c270542bb176df3acec8af59b5b767",
+      "bytes": 30493
+    },
+    {
+      "path": "m2s-split-safe-development-20260911/conditioned-w1-601.pt",
+      "sha256": "3a4a5af51f4aef049f0efc951fba41183e561340c762bd59399b07e7a49ecf2e",
+      "bytes": 128773
+    },
+    {
+      "path": "m2s-split-safe-development-20260911/conditioned-w1-602.pt",
+      "sha256": "1cdcb285f3eb9eab1aaad650f4fa8aeb69ccc0534f4b67cbb25991046231aa24",
+      "bytes": 128773
+    },
+    {
+      "path": "m2s-split-safe-development-20260911/conditioned-w2-601.pt",
+      "sha256": "2d3a59b9e4ff826a112ee9c100f3dd2bddea47d3e551bdc3f76085a46b215a4a",
+      "bytes": 128773
+    },
+    {
+      "path": "m2s-split-safe-development-20260911/conditioned-w2-602.pt",
+      "sha256": "902392c3f48c5d9ae40cd2e8b2339040625d303a60b0f17aa65480d0de7bff48",
+      "bytes": 128773
+    },
+    {
+      "path": "m2s-split-safe-development-20260911/probabilities.pt",
+      "sha256": "e1a3591ea06db2300cd72c4420317300c5c9b0f324225d746e35dbdd9a9d9d55",
+      "bytes": 116707
+    },
+    {
+      "path": "m2s-split-safe-development-20260911/unconditional-w1-601.pt",
+      "sha256": "deaf5f31dd8cc52929562ae69fd9852ee0a018f78237601f42762b215b137d95",
+      "bytes": 128809
+    },
+    {
+      "path": "m2s-split-safe-development-20260911/unconditional-w1-602.pt",
+      "sha256": "012552d0c09bcb4927cf4b0e62b488d641680aa0aa708214e67812b7634ed50d",
+      "bytes": 128809
+    },
+    {
+      "path": "m2s-split-safe-development-20260911/unconditional-w2-601.pt",
+      "sha256": "9887b3c57c3cff51ac4f0f65f638354a64c7c8868846cf52c185b28c670fdbe1",
+      "bytes": 128809
+    },
+    {
+      "path": "m2s-split-safe-development-20260911/unconditional-w2-602.pt",
+      "sha256": "2169355810e8062d1a9a4d20f244c6b902a68a112eb93d031ad32a7cb35a8d06",
+      "bytes": 128809
+    }
+  ]
+}

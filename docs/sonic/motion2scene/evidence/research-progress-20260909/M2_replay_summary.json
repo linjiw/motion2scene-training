@@ -1,0 +1,78 @@
+{
+  "corpora": [
+    {
+      "seed": 93201,
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-checkpoint-replay-learning-curves-20260909-v1/seed93201_observation_curriculum_M2/result.json",
+        "sha256": "sha256:99b5733a7db59bb2bce27e4a9aeb7cf28e2941bfa3be0cd87c2ba5ac85a9809a"
+      },
+      "contexts": 6,
+      "passages_by_control": {
+        "coverage_only": 5,
+        "current_error": 5,
+        "historical_current_error": 5,
+        "historical_gated": 5,
+        "historical_ungated": 5,
+        "uniform": 5,
+        "uniform_coverage": 5
+      },
+      "historical_gated_and_ungated_weights_identical": true,
+      "nonempty_phase_cues_eligible": 6,
+      "nonempty_phase_records": 6,
+      "positive_historical_phase_gaps": 3,
+      "complete_policy_fit_calls": 22
+    },
+    {
+      "seed": 93202,
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-checkpoint-replay-learning-curves-20260909-v1/seed93202_observation_curriculum_M2/result.json",
+        "sha256": "sha256:eb3ea009ae2dcec90a4fc3c85685a48270f8f4011278f762003a56eccc65006d"
+      },
+      "contexts": 6,
+      "passages_by_control": {
+        "coverage_only": 5,
+        "current_error": 5,
+        "historical_current_error": 5,
+        "historical_gated": 5,
+        "historical_ungated": 5,
+        "uniform": 5,
+        "uniform_coverage": 5
+      },
+      "historical_gated_and_ungated_weights_identical": true,
+      "nonempty_phase_cues_eligible": 6,
+      "nonempty_phase_records": 6,
+      "positive_historical_phase_gaps": 3,
+      "complete_policy_fit_calls": 22
+    },
+    {
+      "seed": 93203,
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-checkpoint-replay-learning-curves-20260909-v1/seed93203_observation_curriculum_M2/result.json",
+        "sha256": "sha256:afe00140353ecf8da06742889795c55893e780e79d2f86cd4738c514b7972409"
+      },
+      "contexts": 6,
+      "passages_by_control": {
+        "coverage_only": 5,
+        "current_error": 5,
+        "historical_current_error": 5,
+        "historical_gated": 5,
+        "historical_ungated": 5,
+        "uniform": 5,
+        "uniform_coverage": 5
+      },
+      "historical_gated_and_ungated_weights_identical": true,
+      "nonempty_phase_cues_eligible": 6,
+      "nonempty_phase_records": 6,
+      "positive_historical_phase_gaps": 3,
+      "complete_policy_fit_calls": 22
+    }
+  ],
+  "new_physics_steps": 0,
+  "interpretation": "three corpora on the same six recorded development contexts; no closed-loop performance claim, gating is inactive in these stored cue records",
+  "cpu_computation": {
+    "final_models": 21,
+    "complete_policy_fit_calls": 66,
+    "recorded_fitting_wall_seconds": null,
+    "counting_basis": "one initial common fit and three refits per control per corpus, source implementation and recorded weight histories"
+  }
+}

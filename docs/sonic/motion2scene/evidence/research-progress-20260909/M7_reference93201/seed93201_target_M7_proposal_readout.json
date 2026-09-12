@@ -1,0 +1,291 @@
+{
+  "candidate": {
+    "assigned_positive_option_id": "sustained_e070_r255",
+    "beam_specifications": [
+      {
+        "lateral_offset_m": -0.050712974,
+        "length_m": 0.862637864,
+        "route_progress_fraction": 0.379302066,
+        "thickness_m": 0.147209098,
+        "underside_m": 1.269061133,
+        "width_m": 1.515173143,
+        "yaw_offset_rad": -0.012284597
+      }
+    ],
+    "beams": [
+      {
+        "center_xy_m": [
+          1.898927640180296,
+          -0.10581462737027461
+        ],
+        "lateral_offset_m": -0.050712974,
+        "length_m": 0.862637864,
+        "route_progress": 0.379302066,
+        "route_progress_fraction": 0.379302066,
+        "thickness_m": 0.147209098,
+        "underside_m": 1.269061133,
+        "width_m": 1.515173143,
+        "yaw_offset_rad": -0.012284597,
+        "yaw_rad": -0.0685020445864368
+      }
+    ],
+    "candidate_id": "primary_candidate_93201_1131",
+    "candidate_index": 1131,
+    "definition": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-candidate-pools-20260909-v1/seed_93201/definitions/primary_candidate_93201_1131.json",
+      "sha256": "sha256:3a2bfe29ddec0fc1ab4d12db2a9b0f406267c997e207ae88f44f838581c11043"
+    },
+    "excluded_reason": null,
+    "future_branch_order": [
+      "short_e070_r265",
+      "prior_splice_e050_r265",
+      "short_e015_r265",
+      "prior_splice_e015_r265",
+      "sustained_e070_r255",
+      "neutral",
+      "sustained_e015_r255"
+    ],
+    "future_physics_seed": 93201,
+    "minimum_evaluated_positive_clearance_m": [
+      -0.03288698097932832,
+      -0.03406931535858951,
+      0.011238496330115616,
+      -0.0026512563173461123,
+      -0.0040193017231534844,
+      -0.03406931535858951,
+      0.011679679589471664
+    ],
+    "nominal_negative_clearance_m": [
+      -0.03288698097932832,
+      -0.03406931535858951,
+      0.017307803141442285,
+      -0.0026512563173461123,
+      -0.0040193017231534844,
+      -0.03406931535858951,
+      0.01775630241220591
+    ],
+    "positive_offset_counts": [
+      1,
+      1,
+      81,
+      1,
+      1,
+      1,
+      81
+    ],
+    "proposal_rng_seed": 93201,
+    "robust_positive_eligible": [
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      true
+    ],
+    "stratum": "sustained",
+    "stratum_round": 226,
+    "target_rng_seed": 1093201
+  },
+  "candidate_id": "primary_candidate_93201_1131",
+  "candidates": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-candidate-pools-20260909-v1/seed_93201/candidates.json",
+    "sha256": "sha256:270da1e55751625fc662f91e3cae764806e516fe6c6eb249b0d89ac953458d73"
+  },
+  "conditional_development_hypothesis": {
+    "matched_control": "Existing 10 mm negative-margin selector on the same fresh proposal identities.",
+    "required_outcomes": "Physical useful-task yield and response diversity, followed by matched-cost common-set policy performance.",
+    "retain_discard_rule": "Do not retain for geometric acceptance alone. Require useful verified alternatives and repeatable development policy benefit under a predeclared budget; otherwise discard. No new threshold or pilot is adopted here.",
+    "smallest_change": "Vary only the fixed-prior negative margin in a separately declared pilot; preserve the positive 10 mm / 81-offset criterion, earlier-data fixed-schedule choice, exclusions, common proposal identities and draw order, ranking rule, and maximum budget.",
+    "status": "Unimplemented and untested; reconsider only after the M8 development gate.",
+    "suspected_mechanism": "The fixed-prior negative margin may reject shallow predicted interference that produces a physical response contrast."
+  },
+  "current_fixed_prior_selector_accepts": {
+    "prior_splice_e015_r265": false,
+    "prior_splice_e050_r265": false
+  },
+  "current_negative_interference_margin_m": 0.01,
+  "current_positive_margin_m": 0.01,
+  "frozen_acquisition_rounds_through_M32": {
+    "analytic_contrast": [],
+    "observation_curriculum": [],
+    "reference_contrast": [],
+    "target_only": [
+      7
+    ],
+    "uniform": []
+  },
+  "generating_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_target_only/models/model_006/policy.npz",
+    "sha256": "sha256:7c86a5e31a4d493f87803663264a574285d38d90792f7e5f25aa7cb298e2da5b"
+  },
+  "geometry_source": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-candidate-pools-20260909-v1/seed_93201/geometry_queries.npz",
+    "sha256": "sha256:499a863abc01afbd5f8c46aa87dc427f16e1037e672efc4808d0d593f44adaa4"
+  },
+  "interpretation": "Both sustained schedules meet the declared 81-offset positive-clearance test and pass nominal physics. Both priors have shallow nominal geometric interference and fail nominal physics, but do not meet the targeted selector's 10 mm negative margin. The scene is eligible for ordinary executed contrast using a neutral negative; its saved rank is 75/77 and it is absent from that arm's adopted M32 queue, versus target-only rank 10/438 and acquisition at M7. Geometric eligibility alone therefore does not ensure this useful response enters a finite corpus. Target-only also differs in preassigned-positive selection and ranking, so arm differences do not isolate the negative constraint. This single example does not explain the whole pilot null, establish physical offset robustness, or support held-out benefit. The already acquired scene remains excluded from a fresh pilot; no queue is changed.",
+  "new_clearance_queries": 0,
+  "new_fits": 0,
+  "new_physical_executions": 0,
+  "new_proposals": 0,
+  "ordinary_queue_entries": {
+    "analytic_contrast": {
+      "eligible_count": 77,
+      "position_1based": 75,
+      "row": {
+        "candidate_id": "primary_candidate_93201_1131",
+        "candidate_index": 1131,
+        "coverage_key": {
+          "observation_timing_class": "pending_actual_sensor",
+          "positive_entry_tick": 70,
+          "positive_option": "sustained_e070_r255",
+          "scene_stratum": "sustained"
+        },
+        "curriculum_ready": false,
+        "definition": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-candidate-pools-20260909-v1/seed_93201/definitions/primary_candidate_93201_1131.json",
+          "sha256": "sha256:3a2bfe29ddec0fc1ab4d12db2a9b0f406267c997e207ae88f44f838581c11043"
+        },
+        "future_physics_seed": 93201,
+        "geometric_screen_passed": true,
+        "geometric_slack_m": 0.001679679589471664,
+        "negative_nominal_clearance_m": -0.03288698097932832,
+        "negative_option_id": "neutral",
+        "observation_availability": null,
+        "physical_measurement_admitted": null,
+        "physical_passage": null,
+        "positive_minimum_clearance_m": 0.011679679589471664,
+        "positive_option_id": "sustained_e070_r255",
+        "stratum": "sustained",
+        "verified_learner_gap": null
+      }
+    },
+    "target_only": {
+      "eligible_count": 438,
+      "position_1based": 10,
+      "row": {
+        "candidate_id": "primary_candidate_93201_1131",
+        "candidate_index": 1131,
+        "coverage_key": {
+          "observation_timing_class": "pending_actual_sensor",
+          "positive_entry_tick": 70,
+          "positive_option": "sustained_e070_r255",
+          "scene_stratum": "sustained"
+        },
+        "curriculum_ready": false,
+        "definition": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-candidate-pools-20260909-v1/seed_93201/definitions/primary_candidate_93201_1131.json",
+          "sha256": "sha256:3a2bfe29ddec0fc1ab4d12db2a9b0f406267c997e207ae88f44f838581c11043"
+        },
+        "future_physics_seed": 93201,
+        "geometric_screen_passed": true,
+        "geometric_slack_m": 0.001679679589471664,
+        "negative_nominal_clearance_m": null,
+        "negative_option_id": null,
+        "observation_availability": null,
+        "physical_measurement_admitted": null,
+        "physical_passage": null,
+        "positive_minimum_clearance_m": 0.011679679589471664,
+        "positive_option_id": "sustained_e070_r255",
+        "stratum": "sustained",
+        "verified_learner_gap": null
+      }
+    }
+  },
+  "original_selection_recomputed_for_this_candidate": true,
+  "physical_readout": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/seed93201_target_uniform_M7_bound_readout.json",
+    "sha256": "sha256:e9e7603b723bbb56e65940863752bd437e61682441be0695f2a1613875131830"
+  },
+  "physical_teacher_outcomes": {
+    "neutral": "failure",
+    "prior_splice_e015_r265": "failure",
+    "prior_splice_e050_r265": "failure",
+    "short_e015_r265": "failure",
+    "short_e070_r265": "failure",
+    "sustained_e015_r255": "pass",
+    "sustained_e070_r255": "pass"
+  },
+  "plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json",
+    "sha256": "sha256:bf551021c82fd42d0e6b002a2941a71b1358d72a469903105a2230bdfae3a4ed"
+  },
+  "pool_result": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-candidate-pools-20260909-v1/result.json",
+    "sha256": "sha256:7849ee1e59f91c582eb3230819f55d7571caed357d7c5d5545b5678457bad3b5"
+  },
+  "queue_sources": {
+    "analytic_contrast": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-candidate-pools-20260909-v1/seed_93201/analytic_contrast.json",
+      "sha256": "sha256:2e2553e9adf30f01dde0108c80bc3f1fb9acd22f5dc54e25c456f1a6e9a866b0"
+    },
+    "target_only": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-candidate-pools-20260909-v1/seed_93201/target_only.json",
+      "sha256": "sha256:df758d922c2f347ea48426003faa5e4a605710f38e13cdffecab1be5c6da21ad"
+    }
+  },
+  "readout_selection_computation_seconds": 0.00023322500055655837,
+  "saved_geometry": {
+    "neutral": {
+      "evaluated_offset_count": 1,
+      "minimum_recorded_outer_clearance_m": -0.03288698097932832,
+      "nominal_inner_clearance_m": -0.03288698097932832
+    },
+    "prior_splice_e015_r265": {
+      "evaluated_offset_count": 1,
+      "minimum_recorded_outer_clearance_m": -0.0026512563173461123,
+      "nominal_inner_clearance_m": -0.0026512563173461123
+    },
+    "prior_splice_e050_r265": {
+      "evaluated_offset_count": 1,
+      "minimum_recorded_outer_clearance_m": -0.0040193017231534844,
+      "nominal_inner_clearance_m": -0.0040193017231534844
+    },
+    "short_e015_r265": {
+      "evaluated_offset_count": 1,
+      "minimum_recorded_outer_clearance_m": -0.03406931535858951,
+      "nominal_inner_clearance_m": -0.03406931535858951
+    },
+    "short_e070_r265": {
+      "evaluated_offset_count": 1,
+      "minimum_recorded_outer_clearance_m": -0.03406931535858951,
+      "nominal_inner_clearance_m": -0.03406931535858951
+    },
+    "sustained_e015_r255": {
+      "evaluated_offset_count": 81,
+      "minimum_recorded_outer_clearance_m": 0.011238496330115616,
+      "nominal_inner_clearance_m": 0.017307803141442285
+    },
+    "sustained_e070_r255": {
+      "evaluated_offset_count": 81,
+      "minimum_recorded_outer_clearance_m": 0.011679679589471664,
+      "nominal_inner_clearance_m": 0.01775630241220591
+    }
+  },
+  "schema": "motion2scene_single_acquired_scene_proposal_readout_v1",
+  "scope": "One already acquired development scene; saved geometry and bound physical outcomes. No new proposal search, physical robustness test, policy evaluation, or selector intervention.",
+  "selector_implementation": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/hallucination/motion2scene_acquisition_pool.py",
+      "sha256": "sha256:153f2eabce01a5e4559d1bbb78f7662c74386a9459ec292b6f53052d93e60f31"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_complementary_acquisition.py",
+      "sha256": "sha256:8a5337b5093afb588da71228aa9cce799a6e8c41af525b8bca6996a1c3e1f684"
+    }
+  ],
+  "student": {
+    "outcome": "pass",
+    "passage_time_s": 4.1,
+    "selected_schedule": "sustained_e070_r255"
+  },
+  "student_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_target_only/round_007/student/result.json",
+    "sha256": "sha256:e9d17c266b619cf54448c1e996a6c7136ab96af57ebd7e2e5c2bf8642f897250"
+  },
+  "teacher_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_target_only/round_007/teachers/result.json",
+    "sha256": "sha256:0d178e8fd47894c3a18323cfc03e95c10c36a575d4e0ee6ea93f79beba0a8ce3"
+  },
+  "utc": "2026-09-10T09:46:56.569004+00:00"
+}

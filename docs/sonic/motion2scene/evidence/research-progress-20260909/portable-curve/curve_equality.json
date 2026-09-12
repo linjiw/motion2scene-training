@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-09-09T23:52:56.172315+00:00",
+  "new": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-curve-portability-validation-20260909-v1/M2_regression_v3/result.json",
+    "sha256": "sha256:be631a47557fcd6bff97fc3f5704857859516438bd9df269beba3f7d888ccaf0"
+  },
+  "original": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/full_reconstruction/result.json",
+    "sha256": "sha256:6fe05d49ce788f225970614a9f8f9dd70337e6dd990d37a37584847a403b98ca"
+  },
+  "exactly_equal_curves": true,
+  "corpora": 12,
+  "curve_rows": 24,
+  "new_physics_steps": 0
+}

@@ -1,0 +1,451 @@
+{
+  "assigned_encounters": 5,
+  "bank_solvable_encounters": 2,
+  "common_passing_fixed_schedules_on_solvable_encounters": [
+    "sustained_e015_r255",
+    "sustained_e070_r255"
+  ],
+  "completion": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/complete_005.json",
+    "sha256": "sha256:ffb939a44c6d1f6b024ee7108ab9d2c2741402a5cff7a64b3fbb9ca512dba182"
+  },
+  "cumulative_physics_steps": 55632,
+  "encounter_physics_steps": 9536,
+  "gap_rule": {
+    "common_safe_wait_override": false,
+    "cue": "surface",
+    "encounter_gap": "maximum_current_eligible_matched_phase_gap",
+    "length_edges_m": [
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "mixture": {
+      "coverage": 0.2,
+      "uniform": 0.2,
+      "verified_gap": 0.6
+    },
+    "no_positive_gap_fallback": "uniform_encounters_then_complete_phase_targets",
+    "required_beams": "all_collision_enabled",
+    "schema": "motion2scene_timed_schedule_replay_rule_v1",
+    "sensing_margin_s": 0.0
+  },
+  "generating_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/models/model_004/policy.npz",
+    "sha256": "sha256:631196e7dfb6b4e04987fc420f0aa82d8e0a6d06bd63caee2f7b0653cc6ff4d6"
+  },
+  "implementation": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/verify_seed93203_reference_M5.py",
+      "sha256": "sha256:b4ff4a572f98a29e11fbb1c2b6e23b2dc0c747cab8735c5bd917efe34f640bf5"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_build_timed_replay.py",
+      "sha256": "sha256:c29fd8a7e2fb1f7103d4c7a9393b8a99e3824db762db735c8b45cad149ee62d7"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_expanded_acquisition.py",
+      "sha256": "sha256:28a3d91beb810f410c897bae448772484658c2f921e6da4b511d508ab528220c"
+    }
+  ],
+  "interpretation": "Actual generating M4 policy on one acquired development encounter. Neutral teacher branches at later phases are not alternatives available after the student has already committed. Historical gaps attach to the generating M4 policy; uniform reference fitting weights are unchanged. Surface visibility does not establish semantic distinguishability. Prefix capability includes every assigned post-bootstrap task and retains unknowns; it is not held-out or post-update policy performance.",
+  "learner_l2": 10.0,
+  "new_fits_from_verification": 0,
+  "new_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/models/model_005/policy.npz",
+    "sha256": "sha256:33c605ff8d4a13911d089e3d320afaafd885d469415e4f5f1d9db195379af74c"
+  },
+  "new_physics_from_verification": 0,
+  "new_teacher_targets_raw_reaudited": true,
+  "original_teacher_prefix_preserved": true,
+  "phases": [
+    {
+      "active_before": "neutral",
+      "admitted_continuation_counts": [
+        4,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "causal_features_equal": true,
+      "complete_legal_action_table": true,
+      "deadline": {
+        "common_safe_wait_override": false,
+        "cue": "surface",
+        "current_eligible": true,
+        "current_phase": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 0.28,
+          "phase_tick": 15,
+          "physical_decision_elapsed_s": 0.28,
+          "reason": "declared_causal_cue_deadline"
+        },
+        "scope": "later entry visibility is diagnostic only; no future cue is credited now",
+        "teacher_continuation_entry": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 1.38,
+          "phase_tick": 70,
+          "physical_decision_elapsed_s": 1.38,
+          "reason": "declared_causal_cue_deadline"
+        }
+      },
+      "expected_continuation_counts": [
+        4,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "gap_reasons": [],
+      "historical_physical_gap": 1.0,
+      "legal_mask_equal": true,
+      "legal_policy_values": {
+        "neutral": -0.001576075178542623,
+        "prior_splice_e015_r265": 0.0,
+        "short_e015_r265": -0.46412575738411543,
+        "sustained_e015_r255": -0.6264701826853903
+      },
+      "preaction_capture_elapsed_s": 0.28,
+      "raw_matched_neutral_history": true,
+      "recorded_choice_reconstructed": true,
+      "recorded_history_sha256": "8a7f08348ac979ba3fe33caf9211377cd09fa6759f00f455c9b3e723c4223756",
+      "selected_option_id": "prior_splice_e015_r265",
+      "teacher_action": 0,
+      "teacher_neutral_prefix_passing_actions": [
+        "neutral",
+        "sustained_e015_r255"
+      ],
+      "teacher_neutral_prefix_passing_continuations": [
+        "sustained_e070_r255",
+        "sustained_e015_r255"
+      ],
+      "tick": 15
+    },
+    {
+      "active_before": "prior_splice_e015_r265",
+      "admitted_continuation_counts": [
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "causal_features_equal": false,
+      "complete_legal_action_table": true,
+      "deadline": {
+        "common_safe_wait_override": false,
+        "cue": "surface",
+        "current_eligible": true,
+        "current_phase": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 0.98,
+          "phase_tick": 50,
+          "physical_decision_elapsed_s": 0.98,
+          "reason": "declared_causal_cue_deadline"
+        },
+        "scope": "later entry visibility is diagnostic only; no future cue is credited now",
+        "teacher_continuation_entry": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 1.38,
+          "phase_tick": 70,
+          "physical_decision_elapsed_s": 1.38,
+          "reason": "declared_causal_cue_deadline"
+        }
+      },
+      "expected_continuation_counts": [
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "gap_reasons": [
+        "student_neutral_phase_unavailable",
+        "student_recorded_history_unmatched",
+        "student_history_identity_differs",
+        "student_features_differ",
+        "student_legality_differs"
+      ],
+      "historical_physical_gap": null,
+      "legal_mask_equal": false,
+      "legal_policy_values": null,
+      "preaction_capture_elapsed_s": 0.98,
+      "raw_matched_neutral_history": false,
+      "recorded_choice_reconstructed": true,
+      "recorded_history_sha256": null,
+      "selected_option_id": "prior_splice_e015_r265",
+      "teacher_action": 0,
+      "teacher_neutral_prefix_passing_actions": [
+        "neutral"
+      ],
+      "teacher_neutral_prefix_passing_continuations": [
+        "sustained_e070_r255"
+      ],
+      "tick": 50
+    },
+    {
+      "active_before": "prior_splice_e015_r265",
+      "admitted_continuation_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "causal_features_equal": false,
+      "complete_legal_action_table": true,
+      "deadline": {
+        "common_safe_wait_override": false,
+        "cue": "surface",
+        "current_eligible": true,
+        "current_phase": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 1.38,
+          "phase_tick": 70,
+          "physical_decision_elapsed_s": 1.38,
+          "reason": "declared_causal_cue_deadline"
+        },
+        "scope": "later entry visibility is diagnostic only; no future cue is credited now",
+        "teacher_continuation_entry": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 1.38,
+          "phase_tick": 70,
+          "physical_decision_elapsed_s": 1.38,
+          "reason": "declared_causal_cue_deadline"
+        }
+      },
+      "expected_continuation_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "gap_reasons": [
+        "student_neutral_phase_unavailable",
+        "student_recorded_history_unmatched",
+        "student_history_identity_differs",
+        "student_features_differ",
+        "student_legality_differs"
+      ],
+      "historical_physical_gap": null,
+      "legal_mask_equal": false,
+      "legal_policy_values": null,
+      "preaction_capture_elapsed_s": 1.38,
+      "raw_matched_neutral_history": false,
+      "recorded_choice_reconstructed": true,
+      "recorded_history_sha256": null,
+      "selected_option_id": "prior_splice_e015_r265",
+      "teacher_action": 6,
+      "teacher_neutral_prefix_passing_actions": [
+        "sustained_e070_r255"
+      ],
+      "teacher_neutral_prefix_passing_continuations": [
+        "sustained_e070_r255"
+      ],
+      "tick": 70
+    }
+  ],
+  "physics_seed": 93203,
+  "postbootstrap_prefix": [
+    {
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/round_001/teachers/result.json",
+        "sha256": "sha256:d23e5ddfc547332061dddd459b95b2db3175ce930c9cd6135f668c72020ebe2b"
+      },
+      "passing_schedules": [
+        "prior_splice_e015_r265",
+        "sustained_e015_r255",
+        "prior_splice_e050_r265",
+        "sustained_e070_r255"
+      ],
+      "scene_id": "primary_candidate_93203_1215",
+      "unknown_schedules": []
+    },
+    {
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/round_002/teachers/result.json",
+        "sha256": "sha256:864df6f48ab4dfd4bd3c735d0e493e27f4e89d2f38adef9ba4f7aa203a12dc63"
+      },
+      "passing_schedules": [],
+      "scene_id": "primary_candidate_93203_0951",
+      "unknown_schedules": []
+    },
+    {
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/round_003/teachers/result.json",
+        "sha256": "sha256:8e49a0e8be2c157e206efffd4e5a839ce0d5bbd91894778f89e5e3fc23dbc5b8"
+      },
+      "passing_schedules": [],
+      "scene_id": "primary_candidate_93203_0953",
+      "unknown_schedules": []
+    },
+    {
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/round_004/teachers/result.json",
+        "sha256": "sha256:dbcfdb398469883371b9b8d584b19c3e7c8edc8c933b47defbf51c55a0b4c5b4"
+      },
+      "passing_schedules": [],
+      "scene_id": "primary_candidate_93203_1154",
+      "unknown_schedules": []
+    },
+    {
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/round_005/teachers/result.json",
+        "sha256": "sha256:88b690714cf6cfc1df7a5591a6c511772acb0ac29488a0e8001438479423b772"
+      },
+      "passing_schedules": [
+        "sustained_e015_r255",
+        "sustained_e070_r255"
+      ],
+      "scene_id": "primary_candidate_93203_0847",
+      "unknown_schedules": []
+    }
+  ],
+  "preupdate": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/round_005/preupdate.json",
+    "sha256": "sha256:afab450b7258e718ba71510b645ae04d07c846a527cf48e57a707e4e975e4301"
+  },
+  "registry": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/registry.json",
+    "sha256": "sha256:a33af401fe9e6949baaddf63a67a5e37e8f62f87758e1ca373f926f9a3214c3c"
+  },
+  "run_id": "seed93203_reference_contrast",
+  "scene_id": "primary_candidate_93203_0847",
+  "schema": "motion2scene_acquired_selection_verification_v1",
+  "student_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/round_005/student/result.json",
+    "sha256": "sha256:aae1991f46c01eca55b3ebf6b595aacc00799d29b9f41efcee20aca6992ab530"
+  },
+  "student_physical_events": [
+    {
+      "kind": "verified_environment_contact",
+      "maximum_force_n": 1875.59033203125
+    }
+  ],
+  "student_raw_reaudited": true,
+  "student_task_outcome": "failure",
+  "switches": [
+    {
+      "clock_unchanged": true,
+      "from": "neutral",
+      "joint_jump_rad": 0.0,
+      "joint_state_unchanged": true,
+      "root_jump_m": 0.0,
+      "root_state_unchanged": true,
+      "tick": 15,
+      "time_s": 0.3,
+      "to": "prior_splice_e015_r265"
+    },
+    {
+      "clock_unchanged": true,
+      "from": "prior_splice_e015_r265",
+      "joint_jump_rad": 0.0,
+      "joint_state_unchanged": true,
+      "root_jump_m": 0.0,
+      "root_state_unchanged": true,
+      "tick": 265,
+      "time_s": 5.3,
+      "to": "neutral"
+    }
+  ],
+  "teacher_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/round_005/teachers/result.json",
+    "sha256": "sha256:88b690714cf6cfc1df7a5591a6c511772acb0ac29488a0e8001438479423b772"
+  },
+  "teacher_outcomes": {
+    "neutral": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "prior_splice_e015_r265": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "prior_splice_e050_r265": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "short_e015_r265": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "short_e070_r265": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "sustained_e015_r255": {
+      "outcome": "pass",
+      "passage_time_s": 3.46,
+      "steps": 1192
+    },
+    "sustained_e070_r255": {
+      "outcome": "pass",
+      "passage_time_s": 3.46,
+      "steps": 1192
+    }
+  },
+  "utc": "2026-09-10T06:25:46.546123+00:00",
+  "weighting": "uniform_per_phase"
+}

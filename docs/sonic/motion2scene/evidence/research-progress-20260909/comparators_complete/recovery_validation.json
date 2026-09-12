@@ -1,0 +1,19 @@
+{
+  "checked_frozen_sources": 174,
+  "completed_comparator_reuse": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/comparators_complete.json",
+    "sha256": "sha256:dfbda82b79da60129d4ed4dc832e03cf13bb2de66900c8e98474999791841ae8"
+  },
+  "implementation": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v6/run.py",
+    "sha256": "sha256:64875a3292fc46af7e29379bbe344562b23cd507d618aba36d2c6e9c59569ad0"
+  },
+  "new_physical_executions": 0,
+  "old_acquisition_process_terminal": true,
+  "old_coordinator_process_terminal": true,
+  "restored_preflight": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v6/restored_native_preflight.json",
+    "sha256": "sha256:a5a67b64e99eed22cadef77f77d64e038948365ba8be1e4cc72d2de52c1cd2d4"
+  },
+  "unchanged_orchestration_helpers": true
+}

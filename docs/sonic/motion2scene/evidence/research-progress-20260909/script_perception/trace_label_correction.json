@@ -1,0 +1,23 @@
+{
+  "changed_final_neutral_labels": [
+    {
+      "scene_id": "long_neutral_empty",
+      "tick": 70
+    }
+  ],
+  "corrected": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-script-perception-traces-20260910-v2/result.json",
+    "sha256": "sha256:c962d6c2a42bf41dff2f8fbf77b4a80889678094fbb76f0a5b3d8e74fe0595b8"
+  },
+  "new_physical_executions": 0,
+  "physical_commands_and_measurements_unchanged": true,
+  "previous": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-script-perception-traces-20260910-v1/result.json",
+    "sha256": "sha256:8caef6b46b740665c707f329a37f3847e33293e770ed4cf54ec3c2d202c1989f"
+  },
+  "previous_sources": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-script-perception-traces-20260910-v1/source_snapshots.json",
+    "sha256": "sha256:1e9d82ac6e9eb0d92f0f77f67fa068edafedefcef43974e880b99647c06a2da3"
+  },
+  "reason": "final neutral selection has no later registered entry; preserve WAIT label only while later entry ticks remain"
+}

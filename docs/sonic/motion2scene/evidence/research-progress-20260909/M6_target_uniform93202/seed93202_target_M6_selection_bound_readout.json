@@ -1,0 +1,200 @@
+{
+  "budget": 6,
+  "completion": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/controller/complete_006.json",
+    "sha256": "sha256:f98814f99a5c63da36baa61278bb896e3fdcf577fb996303ad276aed1d0b3404"
+  },
+  "cumulative_physics_steps": 65560,
+  "encounter_physics_steps": 9536,
+  "first_phase": {
+    "causal_features_and_legality_match": true,
+    "complete_legal_action_table": true,
+    "passing_complete_continuations": [
+      "sustained_e070_r255",
+      "sustained_e015_r255"
+    ],
+    "passing_immediate_actions": [
+      "neutral",
+      "sustained_e015_r255"
+    ],
+    "preaction_capture_elapsed_s": 0.28,
+    "raw_recorded_history_match": true,
+    "recorded_history_sha256": "0f84778e38defb10345622227d2518e9545902004eb48bd00329aa85cb725c59",
+    "teacher_action": 0,
+    "tick": 15
+  },
+  "generating_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/models/model_005/policy.npz",
+    "sha256": "sha256:1928380a5cb292f6e77859d4eafb96dd3318e4be5d4e910b4de09a23fe1096ca"
+  },
+  "interpretation": "The generating M5 student chooses failing early prior at a matched neutral prefix where passing early sustained and WAIT-to-late-sustained alternatives exist. Later neutral teacher prefixes are not alternative decisions after that commitment. This does not isolate WAIT information benefit because an early passing option also exists, and surface visibility does not prove semantic distinguishability. It is one acquired-scene selection failure, not new M6 or held-out policy evaluation. Both sustained schedules still cover all six acquired tasks; no new within-corpus passage complementarity is established.",
+  "learner_l2": 10.0,
+  "new_fits_from_verification": 0,
+  "new_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/models/model_006/policy.npz",
+    "sha256": "sha256:e26ccc661a77f87fcba1f4fa02ef52dc48cdb53c2b2b50f69847429dd1b4cca7"
+  },
+  "new_physics_from_verification": 0,
+  "original_teacher_prefix_preserved": true,
+  "physics_seed": 93202,
+  "prefix_response_summary": {
+    "adaptation_required_lower": 2,
+    "assigned_tasks": 6,
+    "bank_solvable_lower": 6,
+    "bank_solvable_upper": 6,
+    "bank_unsolvable": 0,
+    "best_fixed_passages_lower": 6,
+    "best_fixed_passages_upper": 6,
+    "best_fixed_schedule_ids": [
+      "sustained_e015_r255",
+      "sustained_e070_r255"
+    ],
+    "capability_minus_best_fixed_lower": 0,
+    "capability_minus_best_fixed_upper": 0,
+    "complete": true,
+    "fixed_schedules": {
+      "neutral": {
+        "failures": 2,
+        "passes": 4,
+        "unknown": 0
+      },
+      "prior_splice_e015_r265": {
+        "failures": 1,
+        "passes": 5,
+        "unknown": 0
+      },
+      "prior_splice_e050_r265": {
+        "failures": 1,
+        "passes": 5,
+        "unknown": 0
+      },
+      "short_e015_r265": {
+        "failures": 1,
+        "passes": 5,
+        "unknown": 0
+      },
+      "short_e070_r265": {
+        "failures": 1,
+        "passes": 5,
+        "unknown": 0
+      },
+      "sustained_e015_r255": {
+        "failures": 0,
+        "passes": 6,
+        "unknown": 0
+      },
+      "sustained_e070_r255": {
+        "failures": 0,
+        "passes": 6,
+        "unknown": 0
+      }
+    },
+    "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+    "minimum_cover_size": 1,
+    "minimum_schedule_covers": [
+      [
+        "sustained_e015_r255"
+      ],
+      [
+        "sustained_e070_r255"
+      ]
+    ],
+    "one_fixed_covers_every_solvable_task": true,
+    "passing_set_patterns": [
+      {
+        "schedules": [
+          "neutral",
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "tasks": 4
+      },
+      {
+        "schedules": [
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "tasks": 1
+      },
+      {
+        "schedules": [
+          "sustained_e015_r255",
+          "sustained_e070_r255"
+        ],
+        "tasks": 1
+      }
+    ],
+    "unknown_branch_outcomes": 0
+  },
+  "preupdate": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/round_006/preupdate.json",
+    "sha256": "sha256:8804bd4a3a99b6093c67206f99032688196a6129b69b003a000b370343f0646f"
+  },
+  "run_id": "seed93202_target_only",
+  "scene_id": "primary_candidate_93202_0935",
+  "schema": "motion2scene_acquired_selection_verification_v1",
+  "student_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/round_006/student/result.json",
+    "sha256": "sha256:93262778dea31a6b92282264f65438edc250e729b7c22916bbe927bf81a0a1a0"
+  },
+  "student_physical_events": [
+    {
+      "kind": "verified_environment_contact",
+      "maximum_force_n": 1630.713623046875
+    }
+  ],
+  "student_selected_schedule": "prior_splice_e015_r265",
+  "student_task_outcome": "failure",
+  "teacher_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/round_006/teachers/result.json",
+    "sha256": "sha256:d0dec58500ca57ab4676bc0d5e7d3ef585071d96136f39f4cf2767e50c445d52"
+  },
+  "teacher_outcomes": {
+    "neutral": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "prior_splice_e015_r265": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "prior_splice_e050_r265": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "short_e015_r265": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "short_e070_r265": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "sustained_e015_r255": {
+      "outcome": "pass",
+      "passage_time_s": 3.58,
+      "steps": 1192
+    },
+    "sustained_e070_r255": {
+      "outcome": "pass",
+      "passage_time_s": 3.58,
+      "steps": 1192
+    }
+  },
+  "utc": "2026-09-10T07:45:32.360117+00:00",
+  "verification_scope": "Hash-bound completed student/teacher and fitting records, unchanged prior teacher prefix, and recomputed first pre-action raw history digest. Uses original collection scoring outcomes; no second raw scoring of the full episodes.",
+  "weighting": "uniform_per_phase"
+}

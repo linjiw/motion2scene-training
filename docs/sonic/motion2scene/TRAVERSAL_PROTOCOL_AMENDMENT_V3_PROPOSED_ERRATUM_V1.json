@@ -1,0 +1,70 @@
+{
+  "adoption_remaining": {
+    "focused_tests_passed": 27,
+    "strong_script": "Register any future performance selection rule and relevant complete physical development evidence before adopting a strong multi-option baseline; runtime and one/two-beam development validation remain required. Neither the original90-setting proposal nor diagnostic72-setting sweep adopts parameters.",
+    "validation_tests": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/decoupled_wbc/tests/test_motion2scene_evaluation_protocol.py",
+      "sha256": "4c418ddc5deaaaf7c2b25eda24a1bf8afba9f40662c57dd1e33900d1a5c9a9b9"
+    },
+    "validator": "Reserved execution now also requires the canonical original V3 lock digest and hash-checked artifact evidence for each adoption gate. Evidence references are local audit artifacts, not a user permission mechanism.",
+    "validator_source": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/hallucination/motion2scene_evaluation_protocol.py",
+      "sha256": "b98fcf2692b7489391c1426c5ef9dc49dbb6031cf1ac193e5f4b7ddc48803d93"
+    }
+  },
+  "correction": {
+    "automatic_parameter_selection": false,
+    "configuration_count": 72,
+    "confirmed_before_sweep_by_owner": true,
+    "data_scope": "24 existing development sensor episodes: nine forced three-option teachers at seed8731 plus fifteen policy comparisons at seed8732. No seven-schedule physical counterfactual outcomes are imputed.",
+    "diagnostic_grid": {
+      "immediate_prior_band_count": [
+        1,
+        2
+      ],
+      "later_prior_band_count": [
+        1,
+        2,
+        3
+      ],
+      "minimum_observed_free_height_m": [
+        1.28,
+        1.32,
+        1.36,
+        1.4
+      ],
+      "sustained_minimum_hazard_bands": [
+        1,
+        2,
+        3
+      ]
+    },
+    "enumeration": "itertools.product in listed key/value order; minimum observed free height is outermost and sustained count innermost",
+    "json_path": "/baseline_protocol/strong_multi_option_script",
+    "parameter_tie_break": null,
+    "reporting": "Report every parameter configuration and diagnostic/family-surrogate agreement. These are not actual seven-schedule passage/time rankings and do not establish a tuned strong baseline.",
+    "required_reconstruction": "Exactly reproduce the old 0.5s/26-frame 100D base features at ticks15/50/70 on all24 episodes before computing new 2s/101-frame histories.",
+    "result_existed_at_erratum_creation": true,
+    "sequential_readout_scope": "Six actual never-adapted neutral trajectories, three forced-neutral teachers and three always-walk comparisons. Read until first selected adaptation, then stop; no counterfactual continuation after that action.",
+    "superseded_description": "The original proposal describes an unexecuted 90-setting physical-performance ranking over a future complete matched seven-schedule development corpus. That grid was not used by the separately registered diagnostic sweep.",
+    "within_rule_schedule_tie": "First currently legal matching schedule in registered request order."
+  },
+  "created_utc": "2026-09-08T20:30:58.264984+00:00",
+  "geometry_lock": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TRAVERSAL_EVALUATION_LOCK_V3.json",
+    "sha256": "509817600075888ef5cf681c1033c9dcd6796d7a08561e30ee4157049aff5181"
+  },
+  "original_proposal": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TRAVERSAL_PROTOCOL_AMENDMENT_V3_PROPOSED.json",
+    "sha256": "e2055154144cba54d9751205dff0b9cbf427175ebc61e39a4762995511954239"
+  },
+  "original_proposal_and_geometry_unchanged": true,
+  "registered_diagnostic_sweep": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-schedule-script-offline-review-v1/registration.json",
+    "sha256": "027615d1feea8baf493c328e40ebceacda5787151772858a8e49a284eaa3cb43"
+  },
+  "reserved_geometry_queries": 0,
+  "reserved_physics_episodes": 0,
+  "schema": "motion2scene_protocol_proposal_erratum_v1",
+  "status": "PROPOSED_NOT_ADOPTED_NO_EXECUTION_AUTHORITY"
+}

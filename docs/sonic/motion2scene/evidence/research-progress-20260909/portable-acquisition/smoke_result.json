@@ -1,0 +1,97 @@
+{
+  "guard": "Python-level original-path and runtime-import restrictions; not OS isolation",
+  "inspection": {
+    "all_inventory_hashes_valid": true,
+    "dataset_manifest_sha256": "sha256:044e7fa0ff96d2c67c33f3ad6773ddd9e9da626fa0bce08359daf3e41d24a727",
+    "declared_physics_steps": 27416,
+    "episodes": 23,
+    "feature_dimension": 114,
+    "files_verified": 1243,
+    "motion_assets_independently_qualified": false,
+    "new_physics_steps": 0,
+    "no_external_source_assets_opened": true,
+    "option_ids": [
+      "neutral",
+      "short_e015_r265",
+      "sustained_e015_r255",
+      "prior_splice_e015_r265",
+      "prior_splice_e050_r265",
+      "short_e070_r265",
+      "sustained_e070_r255"
+    ],
+    "phase_ticks": [
+      15,
+      50,
+      70
+    ],
+    "physical_label_scope": "Archived physical assessments; hashes and recorded continuations checked. Native contact audit remains the separate exporter audit.",
+    "schema": "motion2scene_portable_schedule_baseline_inspection_v1",
+    "sensor_rows": 6854,
+    "student_policy_bindings": [
+      {
+        "generating_checkpoint": 0,
+        "policy": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_000/policy.npz",
+          "sha256": "sha256:565f8751efb8814795f6528438afe5ef542b8e0bd08f36fb9201b79921e95cc2"
+        },
+        "round": 1
+      },
+      {
+        "generating_checkpoint": 1,
+        "policy": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_001/policy.npz",
+          "sha256": "sha256:c5e12dc7bda5302e5dcf2ac267f45cbf9bdefbb98c65486b3b9a58f8ade1fbde"
+        },
+        "round": 2
+      }
+    ],
+    "teacher_decisions": 9,
+    "teacher_groups": 3,
+    "wait_continuations_recomputed": true
+  },
+  "new_physics_steps": 0,
+  "reconstructed_fits": [
+    {
+      "checkpoint": 0,
+      "comparison": {
+        "maximum_array_differences": {
+          "bias": 0.0,
+          "l2": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "weights": 0.0
+        },
+        "maximum_legal_value_difference": 0.0,
+        "recorded_teacher_packet_choices_checked": 9
+      }
+    },
+    {
+      "checkpoint": 1,
+      "comparison": {
+        "maximum_array_differences": {
+          "bias": 0.0,
+          "l2": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "weights": 2.194270917860438e-17
+        },
+        "maximum_legal_value_difference": 0.0,
+        "recorded_teacher_packet_choices_checked": 9
+      }
+    },
+    {
+      "checkpoint": 2,
+      "comparison": {
+        "maximum_array_differences": {
+          "bias": 0.0,
+          "l2": 0.0,
+          "mean": 0.0,
+          "std": 0.0,
+          "weights": 5.266250202865051e-17
+        },
+        "maximum_legal_value_difference": 5.551115123125783e-17,
+        "recorded_teacher_packet_choices_checked": 9
+      }
+    }
+  ]
+}

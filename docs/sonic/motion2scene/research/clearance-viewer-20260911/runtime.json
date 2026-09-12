@@ -1,0 +1,12 @@
+{
+  "python": "3.11.16 (main, Aug 25 2026, 14:00:53) [Clang 22.1.3 ]",
+  "interpreter": "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "hostname": "linjiw-ubuntu",
+  "torch": "2.7.0+cu128",
+  "numpy": "1.26.4",
+  "plotly": "7.0.0",
+  "commit": "05b15a0970af13701a61ae7bfea615bd5f3578e4",
+  "snapshot_role": "post-execution runtime",
+  "server": "127.0.0.1:8765; static output folder only"
+}

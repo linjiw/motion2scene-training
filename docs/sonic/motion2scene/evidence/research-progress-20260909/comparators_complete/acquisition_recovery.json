@@ -1,0 +1,32 @@
+{
+  "acquisition_resume": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v5/acquisition_resumed.json",
+    "sha256": "sha256:024d6e6c821d0815f59359b66cd65f3eb802a6131759a790f56b8962814cc67f"
+  },
+  "comparator_exit": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v5/early_comparators_exit.json",
+    "sha256": "sha256:149609424ae0a5064dc99e92cd8e69ff5b94a1f266500f01c4c6dc4b8848fcd1"
+  },
+  "new_physics_steps_from_recovery": 0,
+  "original_acquisition_os_exit_status": null,
+  "original_acquisition_pid": 1955047,
+  "original_coordinator_exit_status": 1,
+  "original_worker_log": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260909-v3/expanded_M8.log",
+    "sha256": "sha256:6cae1bfea08d1c6dcef7465b65395782ae532ae6e93fb2ecb4d2dd82abe7dab0"
+  },
+  "predecessor": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v5/sequence.json",
+    "sha256": "sha256:919e1e38586d0f9fb55afd46f1e1ffe56245fe03820f781115e053c1ba2a0d3a"
+  },
+  "restored_preflight": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v6/restored_native_preflight.json",
+    "sha256": "sha256:a5a67b64e99eed22cadef77f77d64e038948365ba8be1e4cc72d2de52c1cd2d4"
+  },
+  "resume": "same plan, adoption, execution directories, committed boundaries, models, candidate order and branch receipts; no physical retry or history replacement",
+  "source_relocation": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-acquisition-pilot-20260910-v1/offline_source_relocation.json",
+    "sha256": "sha256:7b22d1c0046896f7b04305abd727d0979ae5f067a688a88d8d900ba3a2475cdb"
+  },
+  "verified_cause": "the sole editable package difference was the added offline complementary selector; preflight rejected before the next physical launch"
+}

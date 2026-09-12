@@ -1,0 +1,54 @@
+{
+  "active_processes": " 161884  108128    08:19:49 .venv_isaaclab/bin/python /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/dispatch.py --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json\n1955047 1955036    03:23:28 /home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python scripts/research/motion2scene_expanded_acquisition.py --plan /home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json --until-budget 8 --watch\n2174226  989222       13:13 .venv_research/bin/python /home/linjiw/research-data/groot-wbc/m2s-response-diversity-M4-watch-20260909-v1/watch.py\n2182465  161884       00:49 /home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python scripts/research/motion2scene_run_primary_acquisition.py run --plan /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-tie-proposed-v5/plan.json --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json --run-id seed93201_uniform --stop-after-round 4",
+  "completed_M4_models": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_004/result.json",
+      "sha256": "sha256:ac0b24df1beb2fa65da8f9039320d0505a03b67660c742124d001c8a4cc7053d"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_004/result.json",
+      "sha256": "sha256:65098295f529595e7855841998bc3f66060063153262e74026cbf2f522311440"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_004/result.json",
+      "sha256": "sha256:8d54fb1895015bd6d7e3815e7cf527a56d17a61822c64541cda3e4485dee7c89"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_004/result.json",
+      "sha256": "sha256:746b26b7c2a45a77661ea19dcff81d572f54cffb369f3148883c0c3f3bef110e"
+    }
+  ],
+  "created_utc": "2026-09-09T22:17:59.918889+00:00",
+  "current_turn_classification": "verified wait: monitored specific controller PID 2174339 through physical collection, fit and normal completed dispatcher boundary",
+  "method_or_queue_changes": [],
+  "new_physics_launched_by_this_turn": 0,
+  "next_required_comparison": "full M4 recorded-prefix audit after all twelve boundaries; registered M8 native policy panel after acquisition",
+  "observed_collections": [
+    {
+      "collection": "student",
+      "episodes": 1,
+      "physics_steps": 1192,
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/round_004/student/result.json",
+        "sha256": "sha256:1283c78f97728fc7ad3e1d572e693c4192a5bc30019a5559b4daddce1680cab8"
+      }
+    },
+    {
+      "collection": "teachers",
+      "episodes": 7,
+      "physics_steps": 8344,
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/round_004/teachers/result.json",
+        "sha256": "sha256:7eea3a9c04dbe24204c9a125bde97ea17339f9330779920e5fd67e55a16e131f"
+      }
+    }
+  ],
+  "observed_new_boundary": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/complete_051.json",
+    "sha256": "sha256:29bbd2c3f423133e38e22366864b5169c4d9c22f66eee2024586857c4f4bb9b2"
+  },
+  "previous_goal_turn_classification": "progress: third M4 corpus completed and the guarded M4 audit watcher was launched",
+  "schema": "motion2scene_verified_acquisition_wait_v1",
+  "scope": "verified live acquisition progress and completion receipts; no independent raw-capture re-audit or new policy comparison",
+  "watcher_tool_session": 91946
+}

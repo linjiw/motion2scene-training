@@ -1,0 +1,14 @@
+{
+  "inherited_training": "Excluded; total method training cost not reconstructed or claimed",
+  "original_selector_fit_cpu_wall_time": null,
+  "transition_bank": {
+    "inside_historical_6_6_boundary": false,
+    "physical_executions": 12,
+    "record": {
+      "bytes": 62881,
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-development-transition-bank-v2/run_record.json",
+      "sha256": "sha256:d362354b7af56d00407e9d2c8f2ea23f0cc261d8947d06b7ca260b33cfb8b9f4"
+    },
+    "rollout_process_hours": 0.10511548052357587
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "scope": "Audit outputs and revised manuscript; input-artifact-manifest.json binds experimental inputs. Historical hash drift and missing receipts remain explicit.",
+  "artifacts": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/ICRA_MANUSCRIPT.md",
+      "sha256": "784a623c2ac60b93043c0d640d8cb5db07cd4efdcc87b039ede054474d205028",
+      "bytes": 28958
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/PROJECT_COMPLETION_STATUS.md",
+      "sha256": "04d245da376a7e89dcc5e44428287721bf954b42c460cd99922b56eaf7a4275c",
+      "bytes": 29383
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/CLAIMS.md",
+      "sha256": "a4a9072590187f0315baf1df27e46c18e9e3d62d4e6b99d4511c441794239b70",
+      "bytes": 4687
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/PROPOSED_AMENDMENT.md",
+      "sha256": "0551e4d0da0fa4cb8b89fc6d5e6f0810b1db38dc634cc4d61b23eb725297a8ce",
+      "bytes": 2612
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/README.md",
+      "sha256": "3b478c0b0c86ecca6dc2d39de625704f35b273022b8eb5f445438a4a155876f8",
+      "bytes": 14566
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/access-boundary.json",
+      "sha256": "f11f2494eaf616ccb30ec0e0804b6f3514cd6296bf2b844f0ca95e2e66ffaf0e",
+      "bytes": 1205
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/aggregate-outcomes.csv",
+      "sha256": "2205fb064d36549d7faa6fb6dbcd9daf553a69f6c1e7817459cf33bb1da8af83",
+      "bytes": 4867
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/archive/ICRA_MANUSCRIPT.md",
+      "sha256": "ab275179977571ae8c4aafe0c9db89216bdac61c00a98af3b61281037a500eba",
+      "bytes": 28427
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/archive/POST_M8_DECISION_V1.md",
+      "sha256": "8374b608e0479551f8bf58ac17193d6aa8468a709f0c484add0d7f793c6c0427",
+      "bytes": 10564
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/archive/PROJECT_COMPLETION_STATUS.md",
+      "sha256": "05b86170b2de5c5d5f63406bc97c84e8156ccd5eb247959707a823a4c700fb7c",
+      "bytes": 28852
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/archive/SUPPORT_PRESERVING_ACQUISITION_PILOT_V1.md",
+      "sha256": "60b4350f9d9452c8167ed5b36b3ee121c2561568b22f67bc5e4460a3ca9b5377",
+      "bytes": 17247
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/archive/paper.pdf",
+      "sha256": "ce7d9806a55a529f6948cea0ef7e9ca42f155c922cefcdb3f757105d6e7d995a",
+      "bytes": 149719
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/archive/paper.tex",
+      "sha256": "df488f39e52fe5ac9a12c387622f26e543793cbdc6a72ff4013631f4f12ecc08",
+      "bytes": 37743
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/archive/submission-CURRENT_AUDIT.md",
+      "sha256": "a1d7ef7bb2361588ff1df28910de8ea3b1a5636dd8653648a24b37cbaa5a3a3a",
+      "bytes": 17971
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/archive/submission-README.md",
+      "sha256": "3858fda93bd83dc7460021f70acece0ca69f8d0c0c89af5859f8d1e679ef6151",
+      "bytes": 8349
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/archive/traversal_method_v2.pdf",
+      "sha256": "9d4727c2ed108d2bbdad2f1f3daf837bd3c8a48f260233367047768f27cfea8c",
+      "bytes": 839831
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/archive/traversal_method_v2.tex",
+      "sha256": "24a5762699162ed0b1a83dfc4a88b5660f8b176285b92863907b7945226e8633",
+      "bytes": 53670
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/archive/traversal_method_v2_supplement.tex",
+      "sha256": "1114a2d751f53edb6f6a443efe5c4691a39e37014da40262c5d7fb4703e41483",
+      "bytes": 32367
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/assignment-outcomes.csv",
+      "sha256": "b421c96ae59597e648a92c9400eb7d98006b009ef0e4c5b75d74bb68b03fffab",
+      "bytes": 229718
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/attempts.json",
+      "sha256": "c71c348effab0da4e52dfec0b22d9368971a1cd1631976b4872c4252cf177bb8",
+      "bytes": 1736816
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/build.log",
+      "sha256": "a6d6ebee1f0417212bae2e9bf8925a62965cf8269dae275a36ad4357bc9320d2",
+      "bytes": 870
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/calibration-record.json",
+      "sha256": "85fbd6f8f5fd93f5b6bd37f313d7b08457b5f404aa76275fccec75dc2f3f3f38",
+      "bytes": 50604
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/censoring-outcomes.csv",
+      "sha256": "20aa672536e50b15e6b5c5928319d5d00abec2aa47846dc4a3db0d35a6f7314f",
+      "bytes": 235329
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/censoring-summary.json",
+      "sha256": "9a1bfca70e40dd31f500b0bfea85ddb2de7cce07e8b6f035e91b58777a6686b0",
+      "bytes": 612
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/commit.txt",
+      "sha256": "eda62aee83894b2b4138f941db8212e581a70b87c35211b298fd8b09b9e466cc",
+      "bytes": 41
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/development-verified-rows.json",
+      "sha256": "fda29d304af02e273dd1469a72313c13e0494b3955d2fde4ca32c1a151ad064e",
+      "bytes": 28653
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/diagnostic-inputs.json",
+      "sha256": "2f0840f4192cc74fae23810c9029cde4162b913088ec137aeaa251d1b7a495fb",
+      "bytes": 15763
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/diagnostics.py",
+      "sha256": "305333f04c98eb3f1085a5bbaf228e9d6a92d3ecec7aa245c5b834e7bb3582a4",
+      "bytes": 5441
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/final-checks.json",
+      "sha256": "f029509ae622f62d76a8610b3dc44e4efa38c535761a9b187c372e84e5ed0963",
+      "bytes": 409
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/frozen-settings.json",
+      "sha256": "ee20ac35d65ffb5b4e536ece7b55629cb06df9765865e80d726a706b28da5891",
+      "bytes": 4502
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/gpu-snapshot.txt",
+      "sha256": "4e695da0e730d58987dab7c99a3eb042707b770d879f784a2bec5cdad121d9f2",
+      "bytes": 157
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/initial-git-status.txt",
+      "sha256": "6564974911d8c8b36a719153552138a53bedb1cd210381517ed939a5b5298b82",
+      "bytes": 64070
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/initial-working-tree.patch",
+      "sha256": "8065b0d30f53a3c58c3f18466d54b6cd492761215601c5a46d4ecd26b0bbd25a",
+      "bytes": 74641
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/input-artifact-manifest.json",
+      "sha256": "7af7ef5fd1ec6f2f7aa9624eb391ce769c8e512a829421f3e4840817c44d1ba7",
+      "bytes": 21300333
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/manuscript.patch",
+      "sha256": "571948f448a2cbdf9ab0ba7740220972c104ebc8aa6caa5e55c809ca13233448",
+      "bytes": 73279
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/paired-comparisons.json",
+      "sha256": "6356e8195d2dd026be0cb6dcfecb4d6c7819f652fae29821c735343262867d9a",
+      "bytes": 7293
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/pdfinfo.txt",
+      "sha256": "b3c171bd05d5dacb63f930ac5220250f5a7386dbdc6b1c69d8f2c488733ae43b",
+      "bytes": 415
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/physical-diagnostics.json",
+      "sha256": "fefb38fa394765ee554bac5e047bc774ce0737e1db5da418da5fa63191579fca",
+      "bytes": 2029937
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/prefix-verification.json",
+      "sha256": "d9c01fa81c3b95b353a71dff629eeb7bdfb55dcdf851b77c2d532d296b35db57",
+      "bytes": 990
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/proposal-cost.json",
+      "sha256": "d8598e6e2593fde2e31d7a07d4f56aac9eba965873a96d4c2aceecd3432da643",
+      "bytes": 2157
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/proposal-eligibility.csv",
+      "sha256": "6291ac26ff5dee818ff45dec694d20719641d38fd3a42f71446def0232df1451",
+      "bytes": 241850
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/reconcile.log",
+      "sha256": "564c6c6a39562ae93a268733ee76335606699390b66db9379774b4d516815340",
+      "bytes": 223
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/reconcile.py",
+      "sha256": "e54b6c26ebca075d1d578ea6c735a2a013b710f5b94d125b0a7a98209d1694ab",
+      "bytes": 12759
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/registration-inventory.json",
+      "sha256": "563d24733b01f5947c42fb38a6cac343cdbdd7c9e5762da4116a3645ef930748",
+      "bytes": 1011
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/runtime-identity.json",
+      "sha256": "1a34007833e2152dd34fe9249c5695cbce623419e1ac835f9587f404dcd580e6",
+      "bytes": 19798
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/runtime-packages.txt",
+      "sha256": "8814efff708647217980fcf6480a0d73ff954ee03982f14ad99ad18c9da0c79f",
+      "bytes": 87
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/selected-proposals.json",
+      "sha256": "ed3c9b2c78870f1716f324019abec57c332d106f07308ab8c529354995425d97",
+      "bytes": 15937
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/source-drift.json",
+      "sha256": "6f18eb6ea8b5caf3b3a26903c2aa7721e77e54ebcc566a0beef2bf4a7b1fc893",
+      "bytes": 1372
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/status-notices.patch",
+      "sha256": "550fc880f27f82fab3d71fa6e89ed89eb18fbf26566580f9bd63e13d1583a495",
+      "bytes": 12328
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/tests.log",
+      "sha256": "85c1151834645498124c0a21ceecc13a874c3be654c0451cbdfec15706d8ba57",
+      "bytes": 99
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/training-diagnostics.json",
+      "sha256": "47770bfa3e029d60280cc8f57528a89a4ae54643697c06b3c3b7be03349f29d5",
+      "bytes": 38489
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/validation-bank.json",
+      "sha256": "568ee4848ea3671e87ed9a0abb8f79d9c8705c4e52afd7862943af3b292fc1f9",
+      "bytes": 2392
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/verification.json",
+      "sha256": "6255f08b85a31382b8a6475f603e4a33ba78726c9d2b91ffe60940c13ea6ffab",
+      "bytes": 360565
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-pilot-boundary/worktrees.txt",
+      "sha256": "4c3825c6788541f1089371d31fb3ef2728dc2c23d18c8fccbabde84ca5e45102",
+      "bytes": 689
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/CURRENT_AUDIT.md",
+      "sha256": "3d6dd5c5adb1ab65260429018c3302b259f78c0ed8b2b76c4d9dcbded7547f48",
+      "bytes": 18176
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/README.md",
+      "sha256": "4c6490e969a3f8e2080edd1553e53e64b23a7b03a24b6f3105dc30e8935f2b7a",
+      "bytes": 1463
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/traversal_method_v2.log",
+      "sha256": "b202d67036021173cb101b01df75b15e2e926489b5c35ec2dab0760b1022eec4",
+      "bytes": 10186
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/traversal_method_v2.pdf",
+      "sha256": "0a106872b102c62bd4a070c691a8046093f2ad31ef1e0fbf4deb7699e0e2ada7",
+      "bytes": 57589
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/traversal_method_v2.tex",
+      "sha256": "6d1eb0b53e87fb43f23dde5a71382e9d360b6e60bde155d0750b984d48f5d8e7",
+      "bytes": 18970
+    }
+  ]
+}

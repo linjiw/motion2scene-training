@@ -1,0 +1,2013 @@
+{
+  "historical_documents": [
+    {
+      "current": {
+        "bytes": 4103,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/ACTION_LABEL_COMPLETION_V1.md",
+        "sha256": "sha256:8538fab898b519e67399dd72ffcf8216c6579f6cfa13b8bcfe91c65cea246503"
+      },
+      "git_versions": [
+        {
+          "commit": "38550cd912dbdcad7fb097f1f82582da8f644ce0",
+          "commit_time": "2026-09-06T14:17:32-04:00",
+          "document_sha256": "sha256:8538fab898b519e67399dd72ffcf8216c6579f6cfa13b8bcfe91c65cea246503"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 3070,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/ACTION_LABEL_COMPLETION_V1_RESULT.md",
+        "sha256": "sha256:2ce68d250ea4604312919c110275a73ff5959a90588a3bc42f28fa20fcccb5ee"
+      },
+      "git_versions": [
+        {
+          "commit": "38550cd912dbdcad7fb097f1f82582da8f644ce0",
+          "commit_time": "2026-09-06T14:17:32-04:00",
+          "document_sha256": "sha256:2ce68d250ea4604312919c110275a73ff5959a90588a3bc42f28fa20fcccb5ee"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1590,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/ANALYTIC_DISTINCT_V1.md",
+        "sha256": "sha256:1a4c855fb4c25e6e8d10da40dc8a6d38d1f8d62362ab8a98c4625112eb30f186"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:1a4c855fb4c25e6e8d10da40dc8a6d38d1f8d62362ab8a98c4625112eb30f186"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2563,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/ANALYTIC_GLOBAL_V1.md",
+        "sha256": "sha256:f2f795b87a6ef9a4f3372c7003a98531fba95630e821f5b1b4b2ef2ff2697acd"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:f2f795b87a6ef9a4f3372c7003a98531fba95630e821f5b1b4b2ef2ff2697acd"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1844,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/BEAM_D040_EXECUTION_V1.md",
+        "sha256": "sha256:fc472f2d326dc77d98bf85b2ab88e1e922132979454bebf5709ba376cc3a821a"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:fc472f2d326dc77d98bf85b2ab88e1e922132979454bebf5709ba376cc3a821a"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 3378,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/BEAM_D040_EXECUTION_V1_RESULT.md",
+        "sha256": "sha256:96779a4fbb2dd904af1ff6d842ae5718bff5f4389cf05d569d0b92911800f052"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:96779a4fbb2dd904af1ff6d842ae5718bff5f4389cf05d569d0b92911800f052"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1449,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/BEAM_EXECUTION_RESOURCE_V3.md",
+        "sha256": "sha256:3876f14c6e52c8d5a08d0a6cce9c51f11fed3da6033e4a7802b57f2a9a172c70"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:3876f14c6e52c8d5a08d0a6cce9c51f11fed3da6033e4a7802b57f2a9a172c70"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 7987,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/BEAM_EXECUTION_V3_RESULT.md",
+        "sha256": "sha256:507643d2d851cfe6d5532b88129bb4511cada2260ada2dd7011b0471609e1240"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:507643d2d851cfe6d5532b88129bb4511cada2260ada2dd7011b0471609e1240"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 9408,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/CARRIER_LEARNING_V1.md",
+        "sha256": "sha256:5b4bed2291caa7be4f372d70ebd7b54d6850ba889606f38ef22f9dd6067827d3"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:5b4bed2291caa7be4f372d70ebd7b54d6850ba889606f38ef22f9dd6067827d3"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 11047,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/CARRIER_LEARNING_V1_RESULT.md",
+        "sha256": "sha256:6a17c214cbe0013d488321b7f4868c9a55142fcf8c1377ce3d0c205aab7a4173"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:6a17c214cbe0013d488321b7f4868c9a55142fcf8c1377ce3d0c205aab7a4173"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 5527,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/COMPARATIVE_ACQUISITION_V1.md",
+        "sha256": "sha256:fda9b589a09c3cb015efb4e6553dadf19a4ee5a38d37fb399af067be2352a3fc"
+      },
+      "git_versions": [
+        {
+          "commit": "6674d414ac0841ba150ca672c972f383e03e2649",
+          "commit_time": "2026-09-06T14:59:09-04:00",
+          "document_sha256": "sha256:fda9b589a09c3cb015efb4e6553dadf19a4ee5a38d37fb399af067be2352a3fc"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 3113,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/COMPARATIVE_ACQUISITION_V1_RESULT.md",
+        "sha256": "sha256:e70857ea5920de279af36f148d9a413fbdd2d371f3564a89eece2071d5f5f6b2"
+      },
+      "git_versions": [
+        {
+          "commit": "6674d414ac0841ba150ca672c972f383e03e2649",
+          "commit_time": "2026-09-06T14:59:09-04:00",
+          "document_sha256": "sha256:e70857ea5920de279af36f148d9a413fbdd2d371f3564a89eece2071d5f5f6b2"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 5291,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/COMPARATIVE_CORPUS_COMPLETION_V1.md",
+        "sha256": "sha256:ded6b7c55596448705e2d94e63a66d3e56f60c4914dfabda3836c0995f3427c2"
+      },
+      "git_versions": [
+        {
+          "commit": "032cb7cab741c632412268ade487eadeba0727d3",
+          "commit_time": "2026-09-06T21:14:11-04:00",
+          "document_sha256": "sha256:ded6b7c55596448705e2d94e63a66d3e56f60c4914dfabda3836c0995f3427c2"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 9122,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/COMPARATIVE_CORPUS_STAGE_RESULT.md",
+        "sha256": "sha256:c64129ac69e086c47b32269edf40b9272a45889662dff7cf4cb2a40adf7df28f"
+      },
+      "git_versions": [
+        {
+          "commit": "032cb7cab741c632412268ade487eadeba0727d3",
+          "commit_time": "2026-09-06T21:14:11-04:00",
+          "document_sha256": "sha256:c64129ac69e086c47b32269edf40b9272a45889662dff7cf4cb2a40adf7df28f"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1908,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/CORPUS_STAGE_VALIDATION.md",
+        "sha256": "sha256:5dda84782e4e47ec3dc587cb73d056d790035f4f58e5ed0ed4b41b24cc536703"
+      },
+      "git_versions": [
+        {
+          "commit": "032cb7cab741c632412268ade487eadeba0727d3",
+          "commit_time": "2026-09-06T21:14:11-04:00",
+          "document_sha256": "sha256:5dda84782e4e47ec3dc587cb73d056d790035f4f58e5ed0ed4b41b24cc536703"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 12692,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/COUNTERFACTUAL_STAGE_V1.md",
+        "sha256": "sha256:dbc56ccfdd4f8fa33066ef86a34c332797ff11e0a5bd0579660532720fbb4bdd"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:dbc56ccfdd4f8fa33066ef86a34c332797ff11e0a5bd0579660532720fbb4bdd"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 13108,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/COUNTERFACTUAL_STAGE_V1_RESULT.md",
+        "sha256": "sha256:4558e7081821878c61df3a8ade6c9b6bd3ac3893e093a67d023b7740cfd1260f"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:4558e7081821878c61df3a8ade6c9b6bd3ac3893e093a67d023b7740cfd1260f"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4870,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/COVERAGE_DISTILLATION_V2.md",
+        "sha256": "sha256:32ef45d32386f9618cce2ec25cae0987408dd0d96a106fd22d72ce4fd3feedb8"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:32ef45d32386f9618cce2ec25cae0987408dd0d96a106fd22d72ce4fd3feedb8"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 7824,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/DATA_SCALING_DESIGN.md",
+        "sha256": "sha256:9e58c804ee22311107de688a9ea6eedbdd7697857be690d1be6572aa7eb5a48e"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:9e58c804ee22311107de688a9ea6eedbdd7697857be690d1be6572aa7eb5a48e"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 3081,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/DEVELOPMENT_TRANSITION_BANK_V1.md",
+        "sha256": "sha256:0d29d265fa54df129336f45b5f4f14fdcbdc4a30558af642c310569c1c8acf5b"
+      },
+      "git_versions": [
+        {
+          "commit": "af7b6665e4a9bfd9c4d702382fb44d4e33797d14",
+          "commit_time": "2026-09-07T00:47:20-04:00",
+          "document_sha256": "sha256:0d29d265fa54df129336f45b5f4f14fdcbdc4a30558af642c310569c1c8acf5b"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 5891,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/DEVELOPMENT_TRANSITION_BANK_V1_RESULT.md",
+        "sha256": "sha256:055a5999466851357a87040cd7d14e2f298a5ae8f2c4b742ed787940421cc430"
+      },
+      "git_versions": [
+        {
+          "commit": "ef048a26d705aa444fb34698b50eff4fe67fc3fb",
+          "commit_time": "2026-09-07T07:53:36-04:00",
+          "document_sha256": "sha256:055a5999466851357a87040cd7d14e2f298a5ae8f2c4b742ed787940421cc430"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 6265,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/DISTILLATION_V1.md",
+        "sha256": "sha256:ae8d6358be828c434f5d554447da5111b151ef25f5a844716bb197eac993c571"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:ae8d6358be828c434f5d554447da5111b151ef25f5a844716bb197eac993c571"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 11718,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/DISTILLATION_V1_RESULT.md",
+        "sha256": "sha256:2cab781b2abc4450763d71bbf0954d0c0ab198dd83a16ec602eb6ecc53fe154e"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:2cab781b2abc4450763d71bbf0954d0c0ab198dd83a16ec602eb6ecc53fe154e"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 17069,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/DOWNSTREAM_SENSOR_POLICY_PILOT_DESIGN.md",
+        "sha256": "sha256:ad0890a03198851f9c74a0a1e74585343d222a642d38b827bc9e96bd2fca1a2b"
+      },
+      "git_versions": [
+        {
+          "commit": "b760f252c595e7d1e487dd43e44bcb2acb121e61",
+          "commit_time": "2026-09-07T01:15:50-04:00",
+          "document_sha256": "sha256:ad0890a03198851f9c74a0a1e74585343d222a642d38b827bc9e96bd2fca1a2b"
+        },
+        {
+          "commit": "af7b6665e4a9bfd9c4d702382fb44d4e33797d14",
+          "commit_time": "2026-09-07T00:47:20-04:00",
+          "document_sha256": "sha256:629d70777a2ef123cd1d21a264d0b0f00800f15c525bd53a07c3e43d7ad608ae"
+        },
+        {
+          "commit": "0e7eaa9d78f383a25c0ef1976a68a71ac95b763b",
+          "commit_time": "2026-09-07T00:04:30-04:00",
+          "document_sha256": "sha256:998b9f60bea3f07f770ff0812a056ec94c6e650c870b6010253a017c54f538e4"
+        },
+        {
+          "commit": "65b5a9a8d443ce7bec23b8996f952587c9b90ae5",
+          "commit_time": "2026-09-06T22:43:31-04:00",
+          "document_sha256": "sha256:40e91df3224faa18e03f07938d1d215c8163134fb9a87084f3d12cfd6878bc84"
+        },
+        {
+          "commit": "032cb7cab741c632412268ade487eadeba0727d3",
+          "commit_time": "2026-09-06T21:14:11-04:00",
+          "document_sha256": "sha256:6503631cad10bac8a585767c4cc358968214ae23e49437f2ec1164f2d99b8ffc"
+        },
+        {
+          "commit": "6674d414ac0841ba150ca672c972f383e03e2649",
+          "commit_time": "2026-09-06T14:59:09-04:00",
+          "document_sha256": "sha256:548616d4650d50f9c130b9ce5217bc42fec5d60036e589219ad368024a36a0b3"
+        },
+        {
+          "commit": "38550cd912dbdcad7fb097f1f82582da8f644ce0",
+          "commit_time": "2026-09-06T14:17:32-04:00",
+          "document_sha256": "sha256:952e8c4b40ae369a940aeff4b1ae1b563cc0f22eb7ac54335e8c412e4b510199"
+        },
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:0af8e805b6c2cccd7de78adbce0637a1c9727a01743636b4463b6f21ee4f4b31"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 3231,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/ENVELOPE_TRADEOFF_V1.md",
+        "sha256": "sha256:3acdb2077e0163e709da1f1b378bd45361c5f13bcfd0f3205ca2cbdaf3faa05b"
+      },
+      "git_versions": [
+        {
+          "commit": "ef048a26d705aa444fb34698b50eff4fe67fc3fb",
+          "commit_time": "2026-09-07T07:53:36-04:00",
+          "document_sha256": "sha256:3acdb2077e0163e709da1f1b378bd45361c5f13bcfd0f3205ca2cbdaf3faa05b"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4585,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/ENVELOPE_TRADEOFF_V1_RESULT.md",
+        "sha256": "sha256:bca81604a4a0de651346a6d2d24ef17fff7ceb92790c21ad4f146ecc44bad8bd"
+      },
+      "git_versions": [
+        {
+          "commit": "1b38f1680978a12d531c035601211d172e64fe19",
+          "commit_time": "2026-09-07T07:56:29-04:00",
+          "document_sha256": "sha256:bca81604a4a0de651346a6d2d24ef17fff7ceb92790c21ad4f146ecc44bad8bd"
+        },
+        {
+          "commit": "ef048a26d705aa444fb34698b50eff4fe67fc3fb",
+          "commit_time": "2026-09-07T07:53:36-04:00",
+          "document_sha256": "sha256:570e6273f197ceab0f7ff2bc4838d40be9cbbe4b5666be739f2eb9bb4c524940"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 9027,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/EVENT_CONDITIONED_GENERATOR_DESIGN.md",
+        "sha256": "sha256:37921f4a116853946b60975641fc575bd7b7d30eb67e3faf3325445e94425278"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:37921f4a116853946b60975641fc575bd7b7d30eb67e3faf3325445e94425278"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 11571,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/EVENT_SCALING_V1.md",
+        "sha256": "sha256:4b4a347d7db9150570e406e5c439a10ee8848e06c2b9dbfcbdf5ea20d4977b02"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:4b4a347d7db9150570e406e5c439a10ee8848e06c2b9dbfcbdf5ea20d4977b02"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 16122,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/EVENT_SCALING_V1_RESULT.md",
+        "sha256": "sha256:b767a59f02bfa1cbb0e163d5904c65fd49ee43507492f2ee1d555f797ae74d3a"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:b767a59f02bfa1cbb0e163d5904c65fd49ee43507492f2ee1d555f797ae74d3a"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 5650,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/FABLE_ICRA_STATUS.md",
+        "sha256": "sha256:87e43fda5abe25eb7271539b577d5e55c1de692dd3fe9f17d969da11ecfbc6fd"
+      },
+      "git_versions": [
+        {
+          "commit": "05e318a89c326d789e4c556ca12c2b892b124eca",
+          "commit_time": "2026-09-07T07:18:21-04:00",
+          "document_sha256": "sha256:87e43fda5abe25eb7271539b577d5e55c1de692dd3fe9f17d969da11ecfbc6fd"
+        },
+        {
+          "commit": "b760f252c595e7d1e487dd43e44bcb2acb121e61",
+          "commit_time": "2026-09-07T01:15:50-04:00",
+          "document_sha256": "sha256:45421bd3e290deae11f2338411c4e254f861f69c31ae80accd872b1fd030586e"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2146,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/FINAL_SOURCE_PROVENANCE_RESERVATION_V1.md",
+        "sha256": "sha256:46f8a47c905246dc653794d9b63d2f1bbb83bd86aa547521c57fecba94a3919a"
+      },
+      "git_versions": [
+        {
+          "commit": "032cb7cab741c632412268ade487eadeba0727d3",
+          "commit_time": "2026-09-06T21:14:11-04:00",
+          "document_sha256": "sha256:46f8a47c905246dc653794d9b63d2f1bbb83bd86aa547521c57fecba94a3919a"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2942,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/FRESH_LOCAL_POSE_CERTIFICATE_V1.md",
+        "sha256": "sha256:4f4ca736cdd4f3110595ec680f8352d59481223bc9e8b66303cc2bc286035ab4"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:4f4ca736cdd4f3110595ec680f8352d59481223bc9e8b66303cc2bc286035ab4"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4985,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/FRESH_LOCAL_POSE_CERTIFICATE_V1_RESULT.md",
+        "sha256": "sha256:c8eca314a8c95b79852062d0606d19eeeca9f85b85f63ccfc2705fa9b792d00b"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:c8eca314a8c95b79852062d0606d19eeeca9f85b85f63ccfc2705fa9b792d00b"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2790,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/FRESH_NATIVE_TEMPORAL_V1.md",
+        "sha256": "sha256:590f7e995410ed3d4182c3f13d7c97da89ecb79807e707b72fe37ba231fc6746"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:590f7e995410ed3d4182c3f13d7c97da89ecb79807e707b72fe37ba231fc6746"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4287,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/FRESH_NATIVE_TEMPORAL_V1_RESULT.md",
+        "sha256": "sha256:a04e8497a583b2d2ffbe7fd66dc0a7934a678b3998dfbd30cfe51a5ad398089c"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:a04e8497a583b2d2ffbe7fd66dc0a7934a678b3998dfbd30cfe51a5ad398089c"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1892,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/FRESH_NATIVE_UNCAPPED_V2.md",
+        "sha256": "sha256:6ba79cfe83d12d21a782d343e82f13a2baf731f56e235327c85ebeaf6ec2d163"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:6ba79cfe83d12d21a782d343e82f13a2baf731f56e235327c85ebeaf6ec2d163"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 5215,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/FRESH_SOURCE_AUDIT_DESIGN.md",
+        "sha256": "sha256:0b46b93a9554ee43136ab36c248c239f20a05a62c9f7540c02d5f91ea23f458d"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:0b46b93a9554ee43136ab36c248c239f20a05a62c9f7540c02d5f91ea23f458d"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 7059,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/FRESH_SOURCE_V1.md",
+        "sha256": "sha256:21341689c9c7fafe07e6a680b10b004fa24bdf566f6128a2ee8ff392bd0951dd"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:21341689c9c7fafe07e6a680b10b004fa24bdf566f6128a2ee8ff392bd0951dd"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 14067,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/FRESH_SOURCE_V1_RESULT.md",
+        "sha256": "sha256:48387acf1dbd9e240123d56512da73ac1fc3983ce88114fcae700f133416bdb5"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:48387acf1dbd9e240123d56512da73ac1fc3983ce88114fcae700f133416bdb5"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 31978,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/ICRA_COMPLETION_PLAN.md",
+        "sha256": "sha256:ae4d8360a5007ef2eb1731a77b78e9c6d833489c0e5c164e0c3f98619b1064bd"
+      },
+      "git_versions": [
+        {
+          "commit": "05e318a89c326d789e4c556ca12c2b892b124eca",
+          "commit_time": "2026-09-07T07:18:21-04:00",
+          "document_sha256": "sha256:ae4d8360a5007ef2eb1731a77b78e9c6d833489c0e5c164e0c3f98619b1064bd"
+        },
+        {
+          "commit": "b760f252c595e7d1e487dd43e44bcb2acb121e61",
+          "commit_time": "2026-09-07T01:15:50-04:00",
+          "document_sha256": "sha256:1ea3257f1ea63e6506903cd195897ad2594c466628c7248bcce59dee354b4baa"
+        },
+        {
+          "commit": "af7b6665e4a9bfd9c4d702382fb44d4e33797d14",
+          "commit_time": "2026-09-07T00:47:20-04:00",
+          "document_sha256": "sha256:3b79861d31e2e4597a084081c12e1df4bf8f6f07b0b2f349a0ba3044cdc92e41"
+        },
+        {
+          "commit": "0e7eaa9d78f383a25c0ef1976a68a71ac95b763b",
+          "commit_time": "2026-09-07T00:04:30-04:00",
+          "document_sha256": "sha256:67301e6a2fdd68ce63324961d202e1c8ef577df83fbc4fd75f761c33c1defe35"
+        },
+        {
+          "commit": "65b5a9a8d443ce7bec23b8996f952587c9b90ae5",
+          "commit_time": "2026-09-06T22:43:31-04:00",
+          "document_sha256": "sha256:80e48195740d18b5c3709ddcc9c5076783772c7b2081f56f9fd078c364f8c483"
+        },
+        {
+          "commit": "032cb7cab741c632412268ade487eadeba0727d3",
+          "commit_time": "2026-09-06T21:14:11-04:00",
+          "document_sha256": "sha256:f4a95bcc99f16fd35b29fdd20936ec1da468fa8e671f20ba76e3b64b4eb47716"
+        },
+        {
+          "commit": "6674d414ac0841ba150ca672c972f383e03e2649",
+          "commit_time": "2026-09-06T14:59:09-04:00",
+          "document_sha256": "sha256:a0a75a5eec3c217b6091cb7fb9e064467bce2f4870e13b707d75e18d8e256151"
+        },
+        {
+          "commit": "38550cd912dbdcad7fb097f1f82582da8f644ce0",
+          "commit_time": "2026-09-06T14:17:32-04:00",
+          "document_sha256": "sha256:d913f7498a90984f7165d22981981aebd8a51ea2de5341a2c5206c79993584d0"
+        },
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:abfd2fb84fbf4839e43e98862ae2a1ffffe675ba052ecf51fecdd3209df683f9"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 27120,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/ICRA_MANUSCRIPT.md",
+        "sha256": "sha256:a1578dd33190a05be51403ce6e23aeddd7d1516e31801b94d26f580d5cb539e6"
+      },
+      "git_versions": [
+        {
+          "commit": "aa34931d91db24c56785975d4953831c96b94687",
+          "commit_time": "2026-09-07T22:33:18-04:00",
+          "document_sha256": "sha256:a1578dd33190a05be51403ce6e23aeddd7d1516e31801b94d26f580d5cb539e6"
+        },
+        {
+          "commit": "422459f541103ca85397fbcc5df25819d6b71a7b",
+          "commit_time": "2026-09-07T20:49:57-04:00",
+          "document_sha256": "sha256:aa223109b023f4c0a4017a1196d3c9f590da70514e1c935c3e8249ef93d7df19"
+        },
+        {
+          "commit": "e3d170f2dc3e724a2e1b9f59c90379057c2fc131",
+          "commit_time": "2026-09-07T08:03:43-04:00",
+          "document_sha256": "sha256:4855e9c268508c008f796d043a47536c16aa1449da9e3ac16afe7fa47e3978c2"
+        },
+        {
+          "commit": "107b50f5eb3f0dd8124658251a73c4da3e19a10a",
+          "commit_time": "2026-09-07T07:58:51-04:00",
+          "document_sha256": "sha256:0566bb30d15165f3161820ac0b228a90c9b137b5c9fe1b99ca4f29e8d14012de"
+        },
+        {
+          "commit": "220a5316f9b4dc8489c5741e9963e0c7926ccebd",
+          "commit_time": "2026-09-07T07:57:42-04:00",
+          "document_sha256": "sha256:cbfaeb1ae88d9edafa9dd90ef832e2123988fd1fb508057a06ebb68b6d961400"
+        },
+        {
+          "commit": "38a05cb374ec155de0f52c15aeef8bf8b9356436",
+          "commit_time": "2026-09-07T07:55:20-04:00",
+          "document_sha256": "sha256:9b34546729cc89c7122d04bbea6a911714a96d0b98a790a3cc004b7a536152b0"
+        },
+        {
+          "commit": "05e318a89c326d789e4c556ca12c2b892b124eca",
+          "commit_time": "2026-09-07T07:18:21-04:00",
+          "document_sha256": "sha256:bab0124c3325a935fb33afbc6754d8e8d680420cb6399fa31bef1bdc60822496"
+        },
+        {
+          "commit": "b760f252c595e7d1e487dd43e44bcb2acb121e61",
+          "commit_time": "2026-09-07T01:15:50-04:00",
+          "document_sha256": "sha256:ee37b9c56c6c1de3e093413dce199b70ce00d5ddbd77f445f5f0eb7342c8893c"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4724,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/INDEPENDENT_LAYOUT_EVALUATION_V1_PLAN.md",
+        "sha256": "sha256:0f811e012d3891b95cda4456811e2c2a51ae6201a9929e9bb96c6a4f8a164972"
+      },
+      "git_versions": [
+        {
+          "commit": "032cb7cab741c632412268ade487eadeba0727d3",
+          "commit_time": "2026-09-06T21:14:11-04:00",
+          "document_sha256": "sha256:0f811e012d3891b95cda4456811e2c2a51ae6201a9929e9bb96c6a4f8a164972"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4984,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/INDEPENDENT_LAYOUT_EXECUTION_V1.md",
+        "sha256": "sha256:eee3db3887f2b6e10c6f36338ce9b9d5f3ebe49cda5b9365c9474d491b62e1bc"
+      },
+      "git_versions": [
+        {
+          "commit": "65b5a9a8d443ce7bec23b8996f952587c9b90ae5",
+          "commit_time": "2026-09-06T22:43:31-04:00",
+          "document_sha256": "sha256:eee3db3887f2b6e10c6f36338ce9b9d5f3ebe49cda5b9365c9474d491b62e1bc"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 9924,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/INDEPENDENT_LAYOUT_V1_RESULT.md",
+        "sha256": "sha256:a6c6c7763dec3faaf3dc6d09b723e290b91af56aabe163b0e6424ef6d8417c5c"
+      },
+      "git_versions": [
+        {
+          "commit": "65b5a9a8d443ce7bec23b8996f952587c9b90ae5",
+          "commit_time": "2026-09-06T22:43:31-04:00",
+          "document_sha256": "sha256:a6c6c7763dec3faaf3dc6d09b723e290b91af56aabe163b0e6424ef6d8417c5c"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 5237,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/INVERSE_LEARNING_V1.md",
+        "sha256": "sha256:7e7bdf54bb195b422193b74f62527d60032e8445354cdb2bd73cce6f11644c1c"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:7e7bdf54bb195b422193b74f62527d60032e8445354cdb2bd73cce6f11644c1c"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 10140,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/INVERSE_LEARNING_V1_RESULT.md",
+        "sha256": "sha256:ee317a58a1557b22258a056b5058368332dab39850494a3376208cd85ba3b31b"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:ee317a58a1557b22258a056b5058368332dab39850494a3376208cd85ba3b31b"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1710,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/LADDER_EXTENSION_RESOURCE_V2.md",
+        "sha256": "sha256:3587fc4f5bf45f5c6469dceb5b5e8c4528def572e53fe701870f86082d8f3691"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:3587fc4f5bf45f5c6469dceb5b5e8c4528def572e53fe701870f86082d8f3691"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1656,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/LADDER_EXTENSION_V1.md",
+        "sha256": "sha256:e256c7cce5b45f182ee9ffe1b9cd12356ef3ac2fc30e00857a6bc73d1dcd0e52"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:e256c7cce5b45f182ee9ffe1b9cd12356ef3ac2fc30e00857a6bc73d1dcd0e52"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1882,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/LAYOUT_READOUT_DIAGNOSTIC_V1.md",
+        "sha256": "sha256:c73683605236d914d06f1ebeeaa974d2cf3884e6783969c9dcf79e224cf8ca17"
+      },
+      "git_versions": [
+        {
+          "commit": "65b5a9a8d443ce7bec23b8996f952587c9b90ae5",
+          "commit_time": "2026-09-06T22:43:31-04:00",
+          "document_sha256": "sha256:c73683605236d914d06f1ebeeaa974d2cf3884e6783969c9dcf79e224cf8ca17"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2392,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/LEARNED_COMMAND_CHECK_V1.md",
+        "sha256": "sha256:d1d37c07fdc7424bf88ccb113214ad38e8e96066a0835f472469b75769058d9c"
+      },
+      "git_versions": [
+        {
+          "commit": "032cb7cab741c632412268ade487eadeba0727d3",
+          "commit_time": "2026-09-06T21:14:11-04:00",
+          "document_sha256": "sha256:d1d37c07fdc7424bf88ccb113214ad38e8e96066a0835f472469b75769058d9c"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 31662,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/LEARNED_GENERATOR_FRAMEWORK.md",
+        "sha256": "sha256:ec5f3a53daa9cabed132776dc28f037ae7a20272832d33ce159d48e5af198d30"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:ec5f3a53daa9cabed132776dc28f037ae7a20272832d33ce159d48e5af198d30"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 8120,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/LEARNING_COMPARISON_METHODS_DRAFT.md",
+        "sha256": "sha256:44e248877c924bebd47e907b1025105180b635bfb75d40ab9b7dd17d7a985174"
+      },
+      "git_versions": [
+        {
+          "commit": "0e7eaa9d78f383a25c0ef1976a68a71ac95b763b",
+          "commit_time": "2026-09-07T00:04:30-04:00",
+          "document_sha256": "sha256:44e248877c924bebd47e907b1025105180b635bfb75d40ab9b7dd17d7a985174"
+        },
+        {
+          "commit": "65b5a9a8d443ce7bec23b8996f952587c9b90ae5",
+          "commit_time": "2026-09-06T22:43:31-04:00",
+          "document_sha256": "sha256:7988190eb9131b20e46b2abf955bc43b39bc01cc688fd0f37af433fd042fc6ee"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2132,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/LEARNING_CONTRACT_V2.md",
+        "sha256": "sha256:1199d77f406ad3b7eda18152fa052271fb41bbc06ed489dc1a016ba3f067acd8"
+      },
+      "git_versions": [
+        {
+          "commit": "38550cd912dbdcad7fb097f1f82582da8f644ce0",
+          "commit_time": "2026-09-06T14:17:32-04:00",
+          "document_sha256": "sha256:1199d77f406ad3b7eda18152fa052271fb41bbc06ed489dc1a016ba3f067acd8"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2098,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/LEARNING_INPUT_AUDIT_RESULT.md",
+        "sha256": "sha256:950e85efe7ebfcb6a37f0d63950f887bb7cc4e54514f1743a23c65bb8b65df63"
+      },
+      "git_versions": [
+        {
+          "commit": "38550cd912dbdcad7fb097f1f82582da8f644ce0",
+          "commit_time": "2026-09-06T14:17:32-04:00",
+          "document_sha256": "sha256:950e85efe7ebfcb6a37f0d63950f887bb7cc4e54514f1743a23c65bb8b65df63"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 12130,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/LEARNING_UTILITY_PLAN_V1.md",
+        "sha256": "sha256:9d81d5dd03192b58b428efb343af39d38840671877d3a17ba38eb35578303a9f"
+      },
+      "git_versions": [
+        {
+          "commit": "38550cd912dbdcad7fb097f1f82582da8f644ce0",
+          "commit_time": "2026-09-06T14:17:32-04:00",
+          "document_sha256": "sha256:9d81d5dd03192b58b428efb343af39d38840671877d3a17ba38eb35578303a9f"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 3840,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/LINEAR_SELECTOR_EXECUTION_V1.md",
+        "sha256": "sha256:e1d29faacff250072284a434d2cb10ec2f0debbfa1f257b0202ea93ab93d56f8"
+      },
+      "git_versions": [
+        {
+          "commit": "0e7eaa9d78f383a25c0ef1976a68a71ac95b763b",
+          "commit_time": "2026-09-07T00:04:30-04:00",
+          "document_sha256": "sha256:e1d29faacff250072284a434d2cb10ec2f0debbfa1f257b0202ea93ab93d56f8"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4528,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/LINEAR_SELECTOR_EXECUTION_V2.md",
+        "sha256": "sha256:34b287f6ccf5a20223d2fe16e51331123da8cfbdb61f102df2461128d9130e99"
+      },
+      "git_versions": [
+        {
+          "commit": "0e7eaa9d78f383a25c0ef1976a68a71ac95b763b",
+          "commit_time": "2026-09-07T00:04:30-04:00",
+          "document_sha256": "sha256:34b287f6ccf5a20223d2fe16e51331123da8cfbdb61f102df2461128d9130e99"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 6534,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/M2S_ICRA_366_RESULT.md",
+        "sha256": "sha256:415b37175cf8e6fe3cdd535dd7ae76b199fc914908ff412245655217ba1dcabf"
+      },
+      "git_versions": [
+        {
+          "commit": "05e318a89c326d789e4c556ca12c2b892b124eca",
+          "commit_time": "2026-09-07T07:18:21-04:00",
+          "document_sha256": "sha256:415b37175cf8e6fe3cdd535dd7ae76b199fc914908ff412245655217ba1dcabf"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 7139,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/M2S_ICRA_540_RESULT.md",
+        "sha256": "sha256:d8fca84a1de3490ab7896875db056ea4671e4d5c2f2065d2dfc34af7a7b02962"
+      },
+      "git_versions": [
+        {
+          "commit": "486900f9d777e5f171fa5247fbca4729029a91f4",
+          "commit_time": "2026-09-07T20:43:39-04:00",
+          "document_sha256": "sha256:d8fca84a1de3490ab7896875db056ea4671e4d5c2f2065d2dfc34af7a7b02962"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 3151,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/M2S_ICRA_EXECUTION_V1.md",
+        "sha256": "sha256:0e99aa8bb8599845cfb43dde50ae9e51ae99ef24e78ba8dd7799aff6908ee95e"
+      },
+      "git_versions": [
+        {
+          "commit": "b760f252c595e7d1e487dd43e44bcb2acb121e61",
+          "commit_time": "2026-09-07T01:15:50-04:00",
+          "document_sha256": "sha256:0e99aa8bb8599845cfb43dde50ae9e51ae99ef24e78ba8dd7799aff6908ee95e"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 6369,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/M2S_ICRA_NOMINAL_V1.md",
+        "sha256": "sha256:b2fd4391bd35985ee7a1dd7faa02c6cecd1433c13efc7125731818300c676a8e"
+      },
+      "git_versions": [
+        {
+          "commit": "ef048a26d705aa444fb34698b50eff4fe67fc3fb",
+          "commit_time": "2026-09-07T07:53:36-04:00",
+          "document_sha256": "sha256:b2fd4391bd35985ee7a1dd7faa02c6cecd1433c13efc7125731818300c676a8e"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 6610,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/M2S_ICRA_NOMINAL_V1_RESULT.md",
+        "sha256": "sha256:367f17fc22dcdf4cd5a12ebcc22344eb2283d9a27f07c24545caa599d45b4603"
+      },
+      "git_versions": [
+        {
+          "commit": "30bc74255c467e13f456b47480783e34b2c80489",
+          "commit_time": "2026-09-07T22:32:28-04:00",
+          "document_sha256": "sha256:367f17fc22dcdf4cd5a12ebcc22344eb2283d9a27f07c24545caa599d45b4603"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 7812,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/M2S_ICRA_V1.md",
+        "sha256": "sha256:8095e0fcc34a60dbc9ccfc1e5aa1b45ec11a2961cb9a0554eae2683f4c9a62f3"
+      },
+      "git_versions": [
+        {
+          "commit": "b760f252c595e7d1e487dd43e44bcb2acb121e61",
+          "commit_time": "2026-09-07T01:15:50-04:00",
+          "document_sha256": "sha256:8095e0fcc34a60dbc9ccfc1e5aa1b45ec11a2961cb9a0554eae2683f4c9a62f3"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 6933,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/MARGIN_LEARNING_V1.md",
+        "sha256": "sha256:7edb4a3b9fefec32874dd9a3ad3a9b5e2619a2c803ce3c3f8f0b2af38faa0a0c"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:7edb4a3b9fefec32874dd9a3ad3a9b5e2619a2c803ce3c3f8f0b2af38faa0a0c"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 10214,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/MARGIN_LEARNING_V1_RESULT.md",
+        "sha256": "sha256:b1256d995ec772ac6117d09065aefe6c0864926ab2e1bbdd0372d760bc4dc1bb"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:b1256d995ec772ac6117d09065aefe6c0864926ab2e1bbdd0372d760bc4dc1bb"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2715,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/NATIVE_BEAM_AUDIT_V1.md",
+        "sha256": "sha256:1ba2380760e85500e3c5d230a38f9477171d068b78e3609b099e6bbe45620331"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:1ba2380760e85500e3c5d230a38f9477171d068b78e3609b099e6bbe45620331"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4334,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/NATIVE_BEAM_AUDIT_V1_RESULT.md",
+        "sha256": "sha256:abfd8f2f7eac5c85f3c859760828ac9429b48697d68bcd51d2ad773e8b60855d"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:abfd8f2f7eac5c85f3c859760828ac9429b48697d68bcd51d2ad773e8b60855d"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1667,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/NATIVE_CROSSING_AUDIT_V1.md",
+        "sha256": "sha256:c6eb121742439203f8ff5fbeacece66c718e9f0e3c6cdf7850cd71cdef99eddd"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:c6eb121742439203f8ff5fbeacece66c718e9f0e3c6cdf7850cd71cdef99eddd"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2190,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/NATIVE_CROSSING_AUDIT_V1_RESULT.md",
+        "sha256": "sha256:daf0303c202e8b4e53c1eb2733f06b4bc455e3d2aa94edf352f68e2ad703efc6"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:daf0303c202e8b4e53c1eb2733f06b4bc455e3d2aa94edf352f68e2ad703efc6"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1632,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/NATIVE_FRAME_BINDING_V1.md",
+        "sha256": "sha256:bb2c999dc083339bb1d764e83f0e45665cfc3bd0f4c33783568fa353d1e778ea"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:bb2c999dc083339bb1d764e83f0e45665cfc3bd0f4c33783568fa353d1e778ea"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 33933,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/NEXT_RESEARCH_PLAN.md",
+        "sha256": "sha256:76f5bc64c33706bff33e2dc0806a431c6e74199fb4004e153196b8bef648c565"
+      },
+      "git_versions": [
+        {
+          "commit": "05e318a89c326d789e4c556ca12c2b892b124eca",
+          "commit_time": "2026-09-07T07:18:21-04:00",
+          "document_sha256": "sha256:76f5bc64c33706bff33e2dc0806a431c6e74199fb4004e153196b8bef648c565"
+        },
+        {
+          "commit": "b760f252c595e7d1e487dd43e44bcb2acb121e61",
+          "commit_time": "2026-09-07T01:15:50-04:00",
+          "document_sha256": "sha256:1253626bce9e0b5ef016f281a30315a57944589984186218b45074ba6f24a5fe"
+        },
+        {
+          "commit": "af7b6665e4a9bfd9c4d702382fb44d4e33797d14",
+          "commit_time": "2026-09-07T00:47:20-04:00",
+          "document_sha256": "sha256:dbcd72ac4573db8642036f754b8ad05917f193ade63630d7cb53058ae6275826"
+        },
+        {
+          "commit": "0e7eaa9d78f383a25c0ef1976a68a71ac95b763b",
+          "commit_time": "2026-09-07T00:04:30-04:00",
+          "document_sha256": "sha256:ceb1f4ec90b96a97a13e621acf7c1f68fd2e0aa4b9f1d8eb9d5ffa2d44ce14fc"
+        },
+        {
+          "commit": "65b5a9a8d443ce7bec23b8996f952587c9b90ae5",
+          "commit_time": "2026-09-06T22:43:31-04:00",
+          "document_sha256": "sha256:4059cdbd342d3d7fb288d1d49665b939e77c563d54b4edc3e014dd8d847f5158"
+        },
+        {
+          "commit": "032cb7cab741c632412268ade487eadeba0727d3",
+          "commit_time": "2026-09-06T21:14:11-04:00",
+          "document_sha256": "sha256:896ca463996fa474b3c999b5c5ace41585dc8a7ab156ff496f55f6420f535be0"
+        },
+        {
+          "commit": "6674d414ac0841ba150ca672c972f383e03e2649",
+          "commit_time": "2026-09-06T14:59:09-04:00",
+          "document_sha256": "sha256:7711f43a904118e3f2ed3ac262ea8cc5e2472d723048e549f02623df5600356b"
+        },
+        {
+          "commit": "38550cd912dbdcad7fb097f1f82582da8f644ce0",
+          "commit_time": "2026-09-06T14:17:32-04:00",
+          "document_sha256": "sha256:761b99d6f9d36157c744a5a0bb31e93253e733e84ad469fb04f4b2e0ebe92576"
+        },
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:f378c86f986da520c89777ec98cd9f6310b44a08d47c03af94c934383931decb"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 5437,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/NOMINAL_TRANSITION_NEXT_STAGE.md",
+        "sha256": "sha256:68df9b6d58f714ee908c7ae6caf3f6059fbf243c999f794b54937b6078ad4380"
+      },
+      "git_versions": [
+        {
+          "commit": "b760f252c595e7d1e487dd43e44bcb2acb121e61",
+          "commit_time": "2026-09-07T01:15:50-04:00",
+          "document_sha256": "sha256:68df9b6d58f714ee908c7ae6caf3f6059fbf243c999f794b54937b6078ad4380"
+        },
+        {
+          "commit": "af7b6665e4a9bfd9c4d702382fb44d4e33797d14",
+          "commit_time": "2026-09-07T00:47:20-04:00",
+          "document_sha256": "sha256:234f93096c1b7273fd80da4121cb64a09d1abda5558e8799e33371a38304f4b2"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1718,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/NO_CONTRAST_BASELINE_V1.md",
+        "sha256": "sha256:0a88016de8a67759aa33f618beec776c30b50ef875a62ccda895defb419fdbe7"
+      },
+      "git_versions": [
+        {
+          "commit": "38550cd912dbdcad7fb097f1f82582da8f644ce0",
+          "commit_time": "2026-09-06T14:17:32-04:00",
+          "document_sha256": "sha256:0a88016de8a67759aa33f618beec776c30b50ef875a62ccda895defb419fdbe7"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1688,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/NO_CONTRAST_BASELINE_V1_RESULT.md",
+        "sha256": "sha256:e1ffdff1ee4f2ef777e90d9879103ec16be96803a7d0595a79483b318b43c4f1"
+      },
+      "git_versions": [
+        {
+          "commit": "38550cd912dbdcad7fb097f1f82582da8f644ce0",
+          "commit_time": "2026-09-06T14:17:32-04:00",
+          "document_sha256": "sha256:e1ffdff1ee4f2ef777e90d9879103ec16be96803a7d0595a79483b318b43c4f1"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2540,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/OVERHANG_EVALUATION_BANK_V2.md",
+        "sha256": "sha256:66576c9e753a6d3b4096bba2408751b4de45aa52a771384ecf428afb389209c4"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:66576c9e753a6d3b4096bba2408751b4de45aa52a771384ecf428afb389209c4"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4486,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/OVERHANG_INTERFACE_V1.md",
+        "sha256": "sha256:f27051dab85d715eec233ca785b4e751e910d449b9ea69b2e711c6526e8be419"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:f27051dab85d715eec233ca785b4e751e910d449b9ea69b2e711c6526e8be419"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 7393,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/OVERHANG_INTERFACE_V2_RESULT.md",
+        "sha256": "sha256:e6beee40679f761cc98e7e8769dd2b869130d022c14bcb2fd2769649173ecb2b"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:e6beee40679f761cc98e7e8769dd2b869130d022c14bcb2fd2769649173ecb2b"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2896,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/OVERHANG_VARIATION_PANEL_DESIGN.md",
+        "sha256": "sha256:166e88081bbf460f31a945f93f4053d19c563bc38f82b8500b22069793e054e3"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:166e88081bbf460f31a945f93f4053d19c563bc38f82b8500b22069793e054e3"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4874,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/OVERHANG_VARIATION_V1.md",
+        "sha256": "sha256:47f472681a0ab9450ce2390b1895f3eb0d0225ae55092f7ea900aa87fe774b3c"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:47f472681a0ab9450ce2390b1895f3eb0d0225ae55092f7ea900aa87fe774b3c"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2695,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/OVERHANG_VARIATION_V1_RESULT.md",
+        "sha256": "sha256:8aa9d3eb996f333328216bdbcdae435b1fadb5188aa9fe38e4ede200f7bc8c7e"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:8aa9d3eb996f333328216bdbcdae435b1fadb5188aa9fe38e4ede200f7bc8c7e"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4115,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/PLACEMENT_CERTIFICATE_V1.md",
+        "sha256": "sha256:0422b271bb413b68ef380d765f77945cba0d2ab3270ae2ffb221d0f0c5132ccf"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:0422b271bb413b68ef380d765f77945cba0d2ab3270ae2ffb221d0f0c5132ccf"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 5196,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/PLACEMENT_CERTIFICATE_V1_RESULT.md",
+        "sha256": "sha256:a0eab3e6d85de7e7102cd61b2b3b140f2103528230e9e58bafd848da2c99d91e"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:a0eab3e6d85de7e7102cd61b2b3b140f2103528230e9e58bafd848da2c99d91e"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 3106,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/POLICY_READINESS_V1_RESULT.md",
+        "sha256": "sha256:365e77f934aa3e06ad05fd46d3fe2d4388625145ac45814aff190d3b654a62e9"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:365e77f934aa3e06ad05fd46d3fe2d4388625145ac45814aff190d3b654a62e9"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 16459,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/PROJECT_COMPLETION_STATUS.md",
+        "sha256": "sha256:19acb6b16e35f547f41778aae11e58da59d093f5ff5c392463c2d8c761a67bb5"
+      },
+      "git_versions": [
+        {
+          "commit": "05e318a89c326d789e4c556ca12c2b892b124eca",
+          "commit_time": "2026-09-07T07:18:21-04:00",
+          "document_sha256": "sha256:19acb6b16e35f547f41778aae11e58da59d093f5ff5c392463c2d8c761a67bb5"
+        },
+        {
+          "commit": "b760f252c595e7d1e487dd43e44bcb2acb121e61",
+          "commit_time": "2026-09-07T01:15:50-04:00",
+          "document_sha256": "sha256:261a29a1e561be59764f49738b7434ca0f79b05fe7e4d184cb88e0ad01415480"
+        },
+        {
+          "commit": "af7b6665e4a9bfd9c4d702382fb44d4e33797d14",
+          "commit_time": "2026-09-07T00:47:20-04:00",
+          "document_sha256": "sha256:1a5deb71188ab1d8d8e4c91313bd705095ee127b81d23d6a0b05b7d5b0e4e2cd"
+        },
+        {
+          "commit": "0e7eaa9d78f383a25c0ef1976a68a71ac95b763b",
+          "commit_time": "2026-09-07T00:04:30-04:00",
+          "document_sha256": "sha256:7549be2c3907a470d8b8e238e8a74259b344f071841dce48b6bd190454b060ec"
+        },
+        {
+          "commit": "65b5a9a8d443ce7bec23b8996f952587c9b90ae5",
+          "commit_time": "2026-09-06T22:43:31-04:00",
+          "document_sha256": "sha256:0da3f8f62aee564e102e46deae3a3fe47541213f7eb3adfbb36f2bee99d7009f"
+        },
+        {
+          "commit": "032cb7cab741c632412268ade487eadeba0727d3",
+          "commit_time": "2026-09-06T21:14:11-04:00",
+          "document_sha256": "sha256:946204c1fbffcab6e6df0c28322015db3059f95a96adcdb5642e092637e1802e"
+        },
+        {
+          "commit": "6674d414ac0841ba150ca672c972f383e03e2649",
+          "commit_time": "2026-09-06T14:59:09-04:00",
+          "document_sha256": "sha256:886d0b6630876acb41cbb2df7620c7b981c97a4f8f9fb3a9988fffa77d367132"
+        },
+        {
+          "commit": "38550cd912dbdcad7fb097f1f82582da8f644ce0",
+          "commit_time": "2026-09-06T14:17:32-04:00",
+          "document_sha256": "sha256:9bbd7024fcbc97d0515f2f8b17cccc0084607fe7e96a78c5f6a730b0a95a7ea1"
+        },
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:d1705198360f0f6d4219ee6148925bca9c7bf497734d8ae703bce178f68cfc2c"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1774,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/REACTIVE_INTERFACE_QUERY_V2.md",
+        "sha256": "sha256:5bba523942cd824c0707c843db007a2bccc487bea6e7f5a7973fd91eebbaacc2"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:5bba523942cd824c0707c843db007a2bccc487bea6e7f5a7973fd91eebbaacc2"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 998,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/REACTIVE_INTERFACE_RESOURCE_V1.md",
+        "sha256": "sha256:1f182829967bdcd308631a73a5f8c269eb90c3ac9ec81477dd456c16f5cd0d5b"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:1f182829967bdcd308631a73a5f8c269eb90c3ac9ec81477dd456c16f5cd0d5b"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2066,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/REACTIVE_INTERFACE_TYPED_V3.md",
+        "sha256": "sha256:e5bbf89e4142404b1576af3759f07bd77765a6ea51e6048a8918cb6874f5119d"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:e5bbf89e4142404b1576af3759f07bd77765a6ea51e6048a8918cb6874f5119d"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 3612,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/REACTIVE_INTERFACE_V1.md",
+        "sha256": "sha256:f94db763c05d2506af2ffbf0153e66c23189bdda2dd9976189990bd86eeab087"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:f94db763c05d2506af2ffbf0153e66c23189bdda2dd9976189990bd86eeab087"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 9041,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/REACTIVE_INTERFACE_V3_RESULT.md",
+        "sha256": "sha256:81bea31398062715d26991e888ad972da68df7323405d1a47943740a10b80681"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:81bea31398062715d26991e888ad972da68df7323405d1a47943740a10b80681"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 26796,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/README.md",
+        "sha256": "sha256:178e6dc2b968586bdd14c4b51317930192cd1756be7f3d046e8f98e765c7c091"
+      },
+      "git_versions": [
+        {
+          "commit": "05e318a89c326d789e4c556ca12c2b892b124eca",
+          "commit_time": "2026-09-07T07:18:21-04:00",
+          "document_sha256": "sha256:178e6dc2b968586bdd14c4b51317930192cd1756be7f3d046e8f98e765c7c091"
+        },
+        {
+          "commit": "b760f252c595e7d1e487dd43e44bcb2acb121e61",
+          "commit_time": "2026-09-07T01:15:50-04:00",
+          "document_sha256": "sha256:15076bc6dc03259fca4b7aaed317bc9ad69269d48a461c7808470b1d7ca3878f"
+        },
+        {
+          "commit": "af7b6665e4a9bfd9c4d702382fb44d4e33797d14",
+          "commit_time": "2026-09-07T00:47:20-04:00",
+          "document_sha256": "sha256:fddaa4eb7412d4dab01855c080911290412c34233d21e7d8a545ed7212b9b0e2"
+        },
+        {
+          "commit": "0e7eaa9d78f383a25c0ef1976a68a71ac95b763b",
+          "commit_time": "2026-09-07T00:04:30-04:00",
+          "document_sha256": "sha256:9e26ec10f288a36ff64547a7bdf4fbaca1faabee639f3e3e9e8b58590440c3cb"
+        },
+        {
+          "commit": "65b5a9a8d443ce7bec23b8996f952587c9b90ae5",
+          "commit_time": "2026-09-06T22:43:31-04:00",
+          "document_sha256": "sha256:11ab61ecf2a4bf6217e669fb34460d2da5e93f7702131dbcf6d40ab12675a237"
+        },
+        {
+          "commit": "032cb7cab741c632412268ade487eadeba0727d3",
+          "commit_time": "2026-09-06T21:14:11-04:00",
+          "document_sha256": "sha256:76acc0b19854749c8fe14581e637c08d89ba1a3a1db3f6c72301924600ad40db"
+        },
+        {
+          "commit": "6674d414ac0841ba150ca672c972f383e03e2649",
+          "commit_time": "2026-09-06T14:59:09-04:00",
+          "document_sha256": "sha256:6600bf59f0e96fae73f87b005f7ce73ffdf5925ffc309eb3ef8bd76719b4b7b4"
+        },
+        {
+          "commit": "38550cd912dbdcad7fb097f1f82582da8f644ce0",
+          "commit_time": "2026-09-06T14:17:32-04:00",
+          "document_sha256": "sha256:d33a452cec33cc80b7f534ccd22b5234b94621aea47904a9c3ad0803f72d20d5"
+        },
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:c3fb2cf48a5dbf38d64f163fcb2034bc2ffd0bf0372034e731752972b5098084"
+        },
+        {
+          "commit": "d3fa82d3fc29f0120c07bb35132b51ec509b9521",
+          "commit_time": "2026-09-05T11:27:57-04:00",
+          "document_sha256": "sha256:ce5c86b3dc0e15ea02b8f8b45ef5d9f00a44891bac798d2cb8423ac00134c065"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 5212,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/REFINEMENT_V1.md",
+        "sha256": "sha256:2e059b0cc6cb77027daae0871b988d514dc14d09bbde5f6f6f675f5055ac1697"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:2e059b0cc6cb77027daae0871b988d514dc14d09bbde5f6f6f675f5055ac1697"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 12152,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/REFINEMENT_V1_RESULT.md",
+        "sha256": "sha256:e9e3a11e0e6070766a12f822794fe30b502ea6f0231ae0aa061182459674b451"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:e9e3a11e0e6070766a12f822794fe30b502ea6f0231ae0aa061182459674b451"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4051,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/RELATED_WORK_POSITIONING_20260906.md",
+        "sha256": "sha256:6f51fa87868dac3b07b46c1adde87b708ee89064386221a4e56e42ec71ac38da"
+      },
+      "git_versions": [
+        {
+          "commit": "65b5a9a8d443ce7bec23b8996f952587c9b90ae5",
+          "commit_time": "2026-09-06T22:43:31-04:00",
+          "document_sha256": "sha256:6f51fa87868dac3b07b46c1adde87b708ee89064386221a4e56e42ec71ac38da"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2366,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/REPEATABILITY_V1.md",
+        "sha256": "sha256:4e86c3b3ac5b013fcffda80a4c78ba9cbfb6e631b185b7f7841975104df6df8d"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:4e86c3b3ac5b013fcffda80a4c78ba9cbfb6e631b185b7f7841975104df6df8d"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 11863,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/RESEARCH_DEEP_DIVE.md",
+        "sha256": "sha256:46d6b80fa2e9bf711f3034f40cdc7847c4a7e33c4d190ddedfd2f764001d5b91"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:46d6b80fa2e9bf711f3034f40cdc7847c4a7e33c4d190ddedfd2f764001d5b91"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2528,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/SCALING_SOURCE_NOTES.md",
+        "sha256": "sha256:95d3431af18858cb5c75e40e37e97af7df1568cafb0d684c4b8c8dfb6cfb834e"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:95d3431af18858cb5c75e40e37e97af7df1568cafb0d684c4b8c8dfb6cfb834e"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 10527,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/SELECTOR_BREAKPOINT_RESULT.md",
+        "sha256": "sha256:65ec7fa9002e650b56187fb8797ef8615e0ac8f45779cb361f75f6b2b6ce5f88"
+      },
+      "git_versions": [
+        {
+          "commit": "0e7eaa9d78f383a25c0ef1976a68a71ac95b763b",
+          "commit_time": "2026-09-07T00:04:30-04:00",
+          "document_sha256": "sha256:65ec7fa9002e650b56187fb8797ef8615e0ac8f45779cb361f75f6b2b6ce5f88"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 5668,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/SELECTOR_BREAKPOINT_STUDY_V1.md",
+        "sha256": "sha256:bdf3fad9080ec9ed615ff7292a7f94b0f1947a486797d30acc9128f668dc417a"
+      },
+      "git_versions": [
+        {
+          "commit": "0e7eaa9d78f383a25c0ef1976a68a71ac95b763b",
+          "commit_time": "2026-09-07T00:04:30-04:00",
+          "document_sha256": "sha256:bdf3fad9080ec9ed615ff7292a7f94b0f1947a486797d30acc9128f668dc417a"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 842,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/SELECTOR_DIAGNOSIS_NUMERICAL_REVISION_V2.md",
+        "sha256": "sha256:41aa9aa759b314801342f9ab2d0d6f496708a67ffd6c0736781181326e19a419"
+      },
+      "git_versions": [
+        {
+          "commit": "0e7eaa9d78f383a25c0ef1976a68a71ac95b763b",
+          "commit_time": "2026-09-07T00:04:30-04:00",
+          "document_sha256": "sha256:41aa9aa759b314801342f9ab2d0d6f496708a67ffd6c0736781181326e19a419"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2170,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/SOURCE_EXECUTION_RECOVERY_V1.md",
+        "sha256": "sha256:5d66831b7260cc72570a31121fffd14037481e4217491107fec44a38a9eee684"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:5d66831b7260cc72570a31121fffd14037481e4217491107fec44a38a9eee684"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 5717,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/SOURCE_EXECUTION_V1.md",
+        "sha256": "sha256:be4acb54b1eb86baa910aa195a7a61d52bd915b745f517f26e71b72f1b82f3a8"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:be4acb54b1eb86baa910aa195a7a61d52bd915b745f517f26e71b72f1b82f3a8"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 7271,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/SOURCE_EXECUTION_V1_RESULT.md",
+        "sha256": "sha256:7c575832e338d55499c84d83b54a12ec68a6a6478382e5c797afeb8421ca335c"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:7c575832e338d55499c84d83b54a12ec68a6a6478382e5c797afeb8421ca335c"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4546,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/SOURCE_PHASE_V1.md",
+        "sha256": "sha256:842fb1f13bd752d75dd68b850d55f62216e7f22e68efc7d15b515b66fb05007e"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:842fb1f13bd752d75dd68b850d55f62216e7f22e68efc7d15b515b66fb05007e"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 10895,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/SOURCE_PHASE_V1_RESULT.md",
+        "sha256": "sha256:bf5cdf7ac4c465c599eb9b0d4d1c435ef447f779dbffd867a1f348a77482c1be"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:bf5cdf7ac4c465c599eb9b0d4d1c435ef447f779dbffd867a1f348a77482c1be"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 5090,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/STATION_SEARCH_V1.md",
+        "sha256": "sha256:5009f3acbd6ce07ec763a11f87974d5e5020fee92002414cf085d6fe4c7ab722"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:5009f3acbd6ce07ec763a11f87974d5e5020fee92002414cf085d6fe4c7ab722"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 10251,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/STATION_SEARCH_V1_RESULT.md",
+        "sha256": "sha256:d10429be4973895e0394eeac9d39d8c2158f80c836a7e49b4e1781026abdb62c"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:d10429be4973895e0394eeac9d39d8c2158f80c836a7e49b4e1781026abdb62c"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4046,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/SUBMISSION_COMMAND_AUDIT_V1.md",
+        "sha256": "sha256:49abdb69e55895eb0e12da8971ebda7aa87ad2eec1a418e6fc794a0582629880"
+      },
+      "git_versions": []
+    },
+    {
+      "current": {
+        "bytes": 12495,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TEACHER_V1_RESULT.md",
+        "sha256": "sha256:57fed26cf483e934223e42c257c2bbf54c90b99a8f6982d1a1f8cc56d320429d"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:57fed26cf483e934223e42c257c2bbf54c90b99a8f6982d1a1f8cc56d320429d"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 2673,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TEMPORAL_NATIVE_AUDIT_V1.md",
+        "sha256": "sha256:a9c35f732c6c4f3646b5862a0163e310e294740785fb63bc1ad17aca45b5da89"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:a9c35f732c6c4f3646b5862a0163e310e294740785fb63bc1ad17aca45b5da89"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4658,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TEMPORAL_NATIVE_AUDIT_V1_RESULT.md",
+        "sha256": "sha256:dd22d5a131c42ec6200a089d2acea1bc092e748f1880e194100a7dde97bd5f96"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:dd22d5a131c42ec6200a089d2acea1bc092e748f1880e194100a7dde97bd5f96"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 4333,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TIMING_DIAGNOSTIC_V1.md",
+        "sha256": "sha256:523d374b39dd08080304cca6296aebd1d67d6e967aab52c60e9322fe086efe59"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:523d374b39dd08080304cca6296aebd1d67d6e967aab52c60e9322fe086efe59"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 7971,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TIMING_DIAGNOSTIC_V1_RESULT.md",
+        "sha256": "sha256:326f753c5af8a37916ee705250e2a44d63fafaf9fbba429f5728db6cce815b76"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:326f753c5af8a37916ee705250e2a44d63fafaf9fbba429f5728db6cce815b76"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 9801,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TRAIN_ONLY_DISTILLATION_DESIGN.md",
+        "sha256": "sha256:3c6cb54da7d3f6be005dbd67fa2fc251f4262b1c6903a024265f40fa5f82e2df"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:3c6cb54da7d3f6be005dbd67fa2fc251f4262b1c6903a024265f40fa5f82e2df"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 8531,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TRANSITION_AWARE_NEXT_STAGE.md",
+        "sha256": "sha256:bc9dc83d7b84c9ea4be253f2512c4adfeb071e90d6b600ff8f10baca7a38758c"
+      },
+      "git_versions": [
+        {
+          "commit": "af7b6665e4a9bfd9c4d702382fb44d4e33797d14",
+          "commit_time": "2026-09-07T00:47:20-04:00",
+          "document_sha256": "sha256:bc9dc83d7b84c9ea4be253f2512c4adfeb071e90d6b600ff8f10baca7a38758c"
+        },
+        {
+          "commit": "0e7eaa9d78f383a25c0ef1976a68a71ac95b763b",
+          "commit_time": "2026-09-07T00:04:30-04:00",
+          "document_sha256": "sha256:5e739e45f66e3372861300eece2625e761416f30e99a34543381d93951f9335c"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 3597,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TRANSITION_CONSTRUCTION_PILOT_V1.md",
+        "sha256": "sha256:52725696efd5f28018542fa48d95cdbf64d61d338cb52061ac6e618ba50875b1"
+      },
+      "git_versions": [
+        {
+          "commit": "af7b6665e4a9bfd9c4d702382fb44d4e33797d14",
+          "commit_time": "2026-09-07T00:47:20-04:00",
+          "document_sha256": "sha256:52725696efd5f28018542fa48d95cdbf64d61d338cb52061ac6e618ba50875b1"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 9204,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TRANSITION_CONSTRUCTION_RESULT.md",
+        "sha256": "sha256:2f249d54d523d70cb2c05a98ec3dd59451806da522a2e024a3abe7c4f1c17ae7"
+      },
+      "git_versions": [
+        {
+          "commit": "af7b6665e4a9bfd9c4d702382fb44d4e33797d14",
+          "commit_time": "2026-09-07T00:47:20-04:00",
+          "document_sha256": "sha256:2f249d54d523d70cb2c05a98ec3dd59451806da522a2e024a3abe7c4f1c17ae7"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1873,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TRANSITION_FORECAST_AUDIT_V1.md",
+        "sha256": "sha256:8108ff6fff0580fbd2e08ec817baf191808b1d82f8a6159ed1574ffabee74b02"
+      },
+      "git_versions": [
+        {
+          "commit": "0e7eaa9d78f383a25c0ef1976a68a71ac95b763b",
+          "commit_time": "2026-09-07T00:04:30-04:00",
+          "document_sha256": "sha256:8108ff6fff0580fbd2e08ec817baf191808b1d82f8a6159ed1574ffabee74b02"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 1753,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TRANSITION_SUPPORT_DIAGNOSTIC_V1.md",
+        "sha256": "sha256:77147ca91cf51ec1911e0562f5667e2478e135ac6621cced4a81aff50053b532"
+      },
+      "git_versions": [
+        {
+          "commit": "af7b6665e4a9bfd9c4d702382fb44d4e33797d14",
+          "commit_time": "2026-09-07T00:47:20-04:00",
+          "document_sha256": "sha256:77147ca91cf51ec1911e0562f5667e2478e135ac6621cced4a81aff50053b532"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 7557,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/UNCERTAINTY_LEARNING_V1.md",
+        "sha256": "sha256:fa716b8b571693e8036f0eb4822e3f9f27c5b13a388eb72a1024dceb4fd9166e"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:fa716b8b571693e8036f0eb4822e3f9f27c5b13a388eb72a1024dceb4fd9166e"
+        }
+      ]
+    },
+    {
+      "current": {
+        "bytes": 10535,
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/UNCERTAINTY_LEARNING_V1_RESULT.md",
+        "sha256": "sha256:c8d5497dd457ca5c6950a318cd562f5de91dc0370c40c289d8f59ddc5a4ca508"
+      },
+      "git_versions": [
+        {
+          "commit": "04f4ff35cc6a62fd4e0d7832d35beaf11dc7dc10",
+          "commit_time": "2026-09-06T13:26:01-04:00",
+          "document_sha256": "sha256:c8d5497dd457ca5c6950a318cd562f5de91dc0370c40c289d8f59ddc5a4ca508"
+        }
+      ]
+    }
+  ],
+  "local_timeline": [
+    {
+      "artifact": {
+        "bytes": 34087,
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-v1/registration.json",
+        "sha256": "sha256:a4e39e4a7b2770ed3312ebf65e7807bded7e7e51c11ba906aa3c96a057c39b01"
+      },
+      "filesystem_mtime_utc": "2026-09-07T04:55:32.261931+00:00"
+    },
+    {
+      "artifact": {
+        "bytes": 179054,
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-v1/proposals.json",
+        "sha256": "sha256:31512c5ed2ccc9f43f3a3c7987cfa845c13904cb9b395a02ba85171864ab434b"
+      },
+      "filesystem_mtime_utc": "2026-09-07T04:56:12.007671+00:00"
+    },
+    {
+      "artifact": {
+        "bytes": 32312,
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-learning-v1/registration.json",
+        "sha256": "sha256:73d30c6a0623fff5e7f12c9e52190074ad767ad5e8bf0bf3ff27425896fb1b84"
+      },
+      "filesystem_mtime_utc": "2026-09-07T05:07:42.482376+00:00"
+    },
+    {
+      "artifact": {
+        "bytes": 2363333,
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-learning-v1/comparison_366.json",
+        "sha256": "sha256:b8359f865349592090794509764235f28d64bf1c5934d8a2283d420ffbbc3236"
+      },
+      "filesystem_mtime_utc": "2026-09-07T11:05:35.990278+00:00"
+    },
+    {
+      "artifact": {
+        "bytes": 3474485,
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-learning-v1/comparison_540.json",
+        "sha256": "sha256:8af8d306879ad048319423ba592dc3b57a302a6fc26f436d65694425dd8ac540"
+      },
+      "filesystem_mtime_utc": "2026-09-08T00:34:29.652601+00:00"
+    },
+    {
+      "artifact": {
+        "bytes": 33993,
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-nominal-v1/registration.json",
+        "sha256": "sha256:0f9bb3b96e031d902534f61f49e0d8595c2b20645e9a7a7430d42ef5f37c51f3"
+      },
+      "filesystem_mtime_utc": "2026-09-07T11:46:53.614161+00:00"
+    },
+    {
+      "artifact": {
+        "bytes": 198359,
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-nominal-v1/proposals.json",
+        "sha256": "sha256:6a39892493eadd8f8978c9c0bda246c4dfab1a7cad9ae39e7b438e04280f6895"
+      },
+      "filesystem_mtime_utc": "2026-09-07T11:47:39.626699+00:00"
+    },
+    {
+      "artifact": {
+        "bytes": 33079,
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-nominal-learning-v1/registration.json",
+        "sha256": "sha256:016d16996361edef3d583b6da9b08d94fe20932136894d852f6fb9d4c2dfecc4"
+      },
+      "filesystem_mtime_utc": "2026-09-08T01:29:24.626115+00:00"
+    },
+    {
+      "artifact": {
+        "bytes": 19154,
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-submission-command-audit-v1/registration.json",
+        "sha256": "sha256:8c8cd9322c0e86f56135c7c61f898e1d33341c324d85924499f1e39a2dd8455d"
+      },
+      "filesystem_mtime_utc": "2026-09-08T04:31:20.713151+00:00"
+    }
+  ],
+  "scope": "Complete git revision/hash inventory of Motion2Scene root Markdown documents. This inventory is not a raw reproduction of every historical experiment. Local file mtimes and git timestamps are provenance clues, not trusted external registration timestamps or an exhaustive log of human inspection."
+}

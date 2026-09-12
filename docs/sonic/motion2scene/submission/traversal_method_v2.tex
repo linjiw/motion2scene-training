@@ -1,0 +1,314 @@
+\documentclass[letterpaper,10pt,conference]{ieeeconf}
+\IEEEoverridecommandlockouts
+\overrideIEEEmargins
+\usepackage{amsmath,amssymb,booktabs,graphicx,url}
+\title{Motion2Scene: When Executed-Motion Contrasts Do Not Improve Humanoid Decisions}
+\author{Anonymous submission}
+\begin{document}
+\maketitle
+\thispagestyle{empty}\pagestyle{empty}
+\begin{abstract}
+Motion-conditioned scene construction can concentrate physical labeling on
+encounters that require adaptation without teaching a policy to select between
+adaptations. We examine this distinction for humanoid overhead traversal using
+a frozen tracker, seven qualified schedules, and a causal three-phase selector.
+In a completed five-arm development comparison, executed-contrast construction
+and feasibility-screened uniform each pass five of six contexts at each of
+three acquisition seeds. Thirteen of fifteen learned policies choose a constant
+schedule across these contexts. Historical replay changes the fitted parameters
+but not the executed decisions. A retrospective screen audit recovers two of
+seven measured response-complementarity positives; its two selected positives
+do not establish population precision. These comparisons are consistent with
+positive-support filtering explaining part of the construction advantage over
+unscreened placement, but do not isolate a sole causal mechanism. A separately
+registered support-broadening pilot has completed acquisition; its validation
+panel remains incomplete after an interrupted execution. We report that status
+without drawing a pilot utility conclusion. The evidence motivates separating
+proposal geometry, physical labels, and downstream decision utility, while
+establishing neither population equivalence nor held-out or hardware benefit.
+\end{abstract}
+
+\section{Introduction}
+A humanoid that tracks walking and crouching motions still needs to decide when
+and how to adapt beneath an obstacle. Motion-conditioned scene construction
+addresses the collection problem: place constraints where an executed response
+is predicted to clear and another is predicted to interfere. This can improve
+the yield of physical labels. The consequential uncertainty is whether those
+labels teach better decisions than a simpler constructor that preserves
+predicted feasibility and samples uniformly.
+
+The distinction matters because individually useful contrasts can be redundant
+as a corpus. If one sustained response solves every training encounter, a
+constant policy can fit the preferred response without using its observations.
+Conversely, a policy can choose several schedules and still choose the wrong
+one where their physical capabilities differ. Response diversity is therefore
+a diagnostic of contextual selection, not a substitute for passage utility.
+A constant policy could also improve passage; non-constancy is not necessary
+for every possible utility gain.
+
+We investigate these possibilities in a fixed humanoid simulation interface.
+The completed development comparison does not show incremental passage benefit
+over feasibility-screened uniform. This finite result revises the contribution
+from a general data-utility claim to an analysis of the gap between geometric
+contrast, physical response complementarity, and learned selection. We retain
+the strongest script, all forced schedules, and reverse cases. The new pilot
+asks whether broader proposal support changes this result, but its incomplete
+outcomes cannot yet answer that question.
+
+\section{Related Work}
+Learning from Hallucination (LfH) constructs constrained navigation examples
+from motion in open environments~\cite{lfh}. Learning from Learned Hallucination
+(LfLH) learns obstacle configurations conditioned on existing plans and trains
+reactive navigation policies~\cite{lflh}. These works motivate motion-conditioned
+proposals. Dyna-LfLH extends learned hallucination to dynamic obstacles for
+ground navigation~\cite{dyna}. Their navigation results do not validate this
+humanoid pipeline or transfer their safety properties to it.
+
+Our distinction is experimental: executed humanoid alternatives propose
+constraints, obstacle-present closed-loop executions supply labels, and a fixed
+selector tests the resulting data. An empty-space envelope does not certify
+obstacle-present motion. A differentiable planner's reconstruction objective
+cannot replace the physical passage labels used here. The low-level tracker
+remains SONIC~\cite{sonic}; this study tests construction and selection within
+its qualified command interface, not a newly trained locomotion controller.
+
+\section{Decision Interface and Physical Outcome}
+Let $q$ denote a scene, $s$ a qualified complete schedule, and $K$ the frozen
+tracker. The measured response is
+\begin{equation}
+ \tau_s=\operatorname{Execute}(K,x_0,h_0,s,q,\xi),
+\end{equation}
+where $x_0,h_0$ specify the initial state and command history and $\xi$ is the
+simulation seed. The seven schedules comprise neutral walking, early and late
+short crouches, early and late sustained crouches, and two entries of a
+projected/spliced prior-derived reference. Authored crouches are not independently
+validated crawling skills. The interface permits one adaptation followed by
+recovery on a fixed route, with no stop or steering action.
+
+\begin{table}[t]\centering\small
+\begin{tabular}{lcc}\toprule
+Schedule & Entry (s) & Return (s)\\\midrule
+Neutral & --- & ---\\
+Short, early / late & 0.30 / 1.40 & 5.30\\
+Sustained, early / late & 0.30 / 1.40 & 5.10\\
+Prior derivative, early / late & 0.30 / 1.00 & 5.30\\\bottomrule
+\end{tabular}
+\caption{The complete seven-schedule bank. Each paired entry is a separate
+qualified schedule. These times define the command interface, not guaranteed
+obstacle clearance.}\label{tab:bank}
+\end{table}
+
+At reference ticks $15,50,70$ (0.30, 1.00, 1.40 s), a causal 114-dimensional
+floor/ceiling-history and robot-state input supports a choice of a legal schedule
+or WAIT. After commitment, the schedule specifies return. A WAIT target must
+include a complete future continuation rather than crediting an unfinished
+prefix. All construction arms share the complete-continuation teacher and the
+phase ridge learner with $\lambda=10$. The five-arm comparison consequently
+does not isolate the teacher's contribution.
+
+The 299-sample reference permits 298 recorded control rows at 50 Hz and 1,192
+physics substeps at 200 Hz. Contact evidence is retained at the physics rate.
+The registered criterion requires initial upstream approach, ordered crossing
+by all recorded body origins beyond the downstream face plus 0.1 m, and at least 0.30 s of upright stabilization.
+Upright means root height at least 0.5 m and negative projected-gravity $z$
+at least 0.5. Crossing is an origin-based criterion, not a certificate for every
+native collision shape. Beam contact uses the maximum normal-force norm across
+recorded bodies and time; the limit is 1.0 N. Multiple beams and other disallowed
+environment contacts are audited explicitly. Permitted foot--floor support and
+self-contact are recorded separately.
+
+A task pass additionally requires the registered recovery and acceptable
+contact and stability through the captured horizon. Insufficient stabilization
+before that horizon is a task failure. A verified early physical failure is
+retained even if later teaching targets are unavailable. Missing or unverifiable
+measurements remain unknown. An operating-system exit code alone does not
+classify physical success or technical failure. Successful passage time ends at
+crossing plus stabilization; it is distinct from whole-episode duration and
+recovery completion. No measured actuator work or energy claim is available.
+
+\section{Construction and the Completed Development Comparison}
+Executed contrasts use achieved empty-space body envelopes to rank candidate
+constraints with both a positive robustness gate and a negative interference
+gate. The positive test samples 81 geometric offsets. The negative test uses
+the declared nominal interference margin. These tests are proposal heuristics:
+obstacles may change tracking, contact, and the subsequent trajectory. Each
+selected encounter receives the same student execution and seven complete
+teacher branches. Outcomes, including all-fail response tables, remain in the
+acquisition record.
+
+The Gen~2 comparison evaluates five construction/training arms on six shared
+development contexts at three acquisition seeds. The physics seed is common.
+Screened Uniform retains predicted feasibility; Target-only is the weaker
+unscreened placement comparator in this study. The other arms use reference
+contrast, executed contrast, and executed contrast with historical replay.
+These arms must not be conflated with the strict, broad, and mixture arms of
+the subsequent pilot.
+
+\begin{table}[t]\centering\small
+\footnotesize
+\begin{tabular}{lccc}\toprule
+Learned arm at M8 & Seed 1 & Seed 2 & Seed 3\\\midrule
+Screened Uniform & 5/6 & 5/6 & 5/6\\
+Target-only & 4/6 & 4/6 & 5/6\\
+Reference contrast & 6/6 & 5/6 & 4/6\\
+Executed contrast & 5/6 & 5/6 & 5/6\\
+Executed contrast + replay & 5/6 & 5/6 & 5/6\\\midrule
+Strong script & \multicolumn{3}{c}{6/6}\\
+Neutral & \multicolumn{3}{c}{2/6}\\
+Short, early; late & \multicolumn{3}{c}{3/6; 3/6}\\
+Sustained, early; late & \multicolumn{3}{c}{4/6; 4/6}\\
+Prior derivative, early; late & \multicolumn{3}{c}{5/6; 5/6}\\
+Union of seven fixed schedules & \multicolumn{3}{c}{6/6}\\\bottomrule
+\end{tabular}
+\caption{Completed six-context development panel: 138 executions, including
+90 learned-policy, six script, and 42 forced-schedule assignments. Seed columns
+index acquisition seeds 93201--93203; all executions use seed 8732. Contexts are
+shared, so the cells are not independent experimental replicates.}
+\label{tab:development}
+\end{table}
+
+Executed contrast and Screened Uniform pass the same five contexts at every
+acquisition seed. Their paired passage difference is zero, with zero wins,
+zero losses, and eighteen ties across matched seed--context cells. Passage-time
+differences on mutually successful cells are also zero. This is no observed
+incremental benefit on this finite development panel; it is neither population
+equivalence nor evidence of non-inferiority. There is no registered
+non-inferiority margin or suitable uncertainty bound established here.
+
+The development panel was used during method development. In particular, its
+late complementary context was generated using a clearance predicate and
+ranking related to the constructor. It cannot provide independent confirmation
+of that constructor. We report the entire panel rather than a favorable subset.
+The strong script passes all six contexts, and no learned policy exceeds the
+measured capability of the seven-schedule bank.
+
+\section{Mechanism Diagnostics and Counterexamples}
+Thirteen of fifteen learned policies select a single schedule across the six
+contexts. The two non-constant policies arise from corpora requiring more than
+one schedule for coverage. This correspondence was noticed after inspecting
+outcomes; shared seeds and contexts also invalidate treating the fifteen
+corpora as independent observations for a simple association test. It is a
+post-hoc association, not proof that complementarity causes contextual learning.
+
+The reverse cases constrain the explanation. The third Target-only policy uses
+three schedules but still scores 5/6, selecting a failing short response on the
+late complementary context. The first reference-contrast policy reaches 6/6;
+its final acquired encounter was rejected by the executed positive robustness
+bar. Thus neither non-constancy nor passing the executed geometric gates is a
+necessary-and-sufficient description of useful decision data.
+
+Across 92 already executed encounters, the deployed negative screen identifies
+two of seven measured positives for the property that covering schedules fail
+while another schedule passes. Both selected cases are positive. The resulting
+2/2 precision is retrospective and selection-conditioned, not an estimate of
+established population precision. Relaxing the negative margin from $-10$ mm to
+zero recovers only one additional measured positive. Some missed encounters
+have predicted positive clearance for responses that physically fail; another
+is excluded by the positive gate. Negative-threshold relaxation therefore does
+not resolve every observed omission.
+
+Historical replay is a measured null on this panel. It changes fitted weights
+and biases while preserving every chosen schedule and outcome in the eighteen
+matched executions. Constancy here does not imply that the ridge model is
+structurally incapable of conditioning on observations. Complete-continuation
+teaching was common to the comparison and cannot receive causal credit from it.
+The positive-support explanation is consistent with the observed advantage
+over the weaker placement comparator and the tie with Screened Uniform. It
+remains one explanation among coupled changes in acquired data.
+
+\section{Registered Support-Broadening Pilot: Incomplete}
+The pilot preserves the original three proposal arms:
+\begin{itemize}
+\item A, strict: both unchanged executed-contrast gates and ranking.
+\item B, broad: valid task-domain candidates in draw order, with neither
+geometric gate applied.
+\item C, mixture: the committed strict/broad/strict/broad alternation.
+\end{itemize}
+The strict reservoir admission rate is approximately 6.4\%. B does not preserve
+the positive screen. C preserves broad proposal support, not universal geometric
+certification. All arms share, within each acquisition seed, the byte-identical
+four-encounter prefix and M4 checkpoint, frozen tracker, seven schedules, three
+phases, causal inputs, teacher, learner, and physics settings. The assignment
+ledger declares 288 new acquisition episodes over nine corpora, with four new
+encounters and eight executions per encounter. These totals are assignment
+budgets, not measured execution cost.
+
+Ten validation contexts were drawn by beam family and underside band using
+task geometry. The generation manifest reports zero clearance queries and zero
+physics steps and excludes physical outcomes from generation. Contexts are
+retained regardless of solvability and kept outside training and proposal
+selection. Eighteen reserved layouts remain outside this pilot. A contemporary
+hash verifies artifact integrity but cannot prove when registration occurred.
+
+The registered validation panel has 200 assignments: nine pilot policies,
+three reused M8 executed-contrast policies, the strong script, and seven fixed
+schedules on all ten contexts. It omits a contemporaneous Screened Uniform
+policy. The six-context 5/6 score cannot fill that missing comparison. A baseline
+utility test would require a separately registered and budgeted amendment;
+no episodes are silently added here.
+
+At the September 11 audit boundary, acquisition has 288 scored assignment
+receipts. Validation has 171 scored receipts, an interrupted assignment with
+no terminal attempt receipt or trajectory/contact streams, and 28 unrun
+assignments. The frozen runner refuses automatic retry of the interrupted
+launch. Execution is therefore blocked. We withhold pilot utility results
+until complete reconciliation; the partial panel is not a substitute for the
+registered comparison. No new physics was launched during this audit.
+
+The registered contrasts are B versus A and C versus A for broadening, and C
+versus B for guided-half value. Improvement over A cannot isolate removal of the
+negative gate because B also removes the positive gate. A C--B tie would not
+establish equivalence. Exact permutation inference would require an explicit
+exchangeability scheme respecting shared contexts, matched seeds, and corpora.
+No such scheme or multiplicity rule has been established for this incomplete
+panel, so inferential $p$-values are NA. Ten sampled contexts and three acquisition
+seeds cannot be reinterpreted as 200 independent replications. New audit
+comparisons are labeled exploratory after access to partial outcomes.
+
+\section{Scope, Adoption Gates, and Conclusion}
+The completed development evidence establishes a finite null for incremental
+passage over Screened Uniform. It leaves the broader population effect
+inconclusive. The pilot cannot yet support either broadening or guided-half
+utility, and its omitted baseline prevents a validation claim beyond
+feasibility-screened placement. More diverse schedules alone would not change
+these conclusions. A dataset utility claim additionally needs separate reuse,
+licensing, and reproduction evidence.
+
+Phase~3 remains closed. Before any reserved outcomes are opened, implementation
+and terminal-censoring policies must be locked and all adoption gates satisfied.
+Source-ancestry-held-out transfer must precede generalization claims. Realistic
+sensing, noise and dropout, timing, and a proposed $70^\circ$ field of view require
+a separate sensor specification and registration. The latter is not a measured
+deployed configuration. Delays of 100, 260, and 500 ms require matched sensing
+conditions; small historical panels do not define universal delay limits.
+Sequential decisions need matched aggregation and fresh labels across arms,
+qualification of every skill and transition, and whole-chain success. The
+existing crouch bank does not establish crawling, recovery chains, or steering.
+
+All physical evidence here is simulation. A MuJoCo visualization of a recorded
+trajectory is not a second dynamics experiment. Refusal in the recorded interface
+continues walking, and the 1 N contact threshold is a simulation convention.
+Neither supports hardware safety or protective stopping. Motion-conditioned
+construction is useful as a proposal mechanism; its downstream value must be
+measured against a strong screened comparator rather than inferred from
+geometric contrast or training-label diversity.
+
+\section*{Acknowledgments}
+OpenAI Codex (GPT-6) assisted with the September 11 evidence audit and generated
+revision text throughout this manuscript, including its abstract, interpretation,
+and limitations. It also generated the local reconciliation code. Submission
+requires author verification of the evidence, citations, and final text.
+
+\begin{thebibliography}{9}
+\bibitem{lfh} X. Xiao, B. Liu, G. Warnell, and P. Stone,
+``Toward agile maneuvers in highly constrained spaces: Learning from hallucination,''
+\emph{IEEE Robotics and Automation Letters}, vol. 6, no. 2, pp. 1503--1510, 2021.
+\bibitem{lflh} Z. Wang et al., ``From agile ground to aerial navigation:
+Learning from learned hallucination,'' in \emph{IROS}, pp. 148--153, 2021.
+\bibitem{dyna} S. A. Ghani, Z. Wang, P. Stone, and X. Xiao,
+``Dyna-LfLH: Learning agile navigation in dynamic environments from learned
+hallucination,'' arXiv:2403.17231, 2024.
+\bibitem{sonic} Z. Luo et al., ``SONIC: Supersizing motion tracking for natural
+humanoid whole-body control,'' arXiv:2511.07820, 2025.
+\end{thebibliography}
+\end{document}

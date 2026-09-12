@@ -1,0 +1,11 @@
+{
+  "physical_result": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-option-contrast-v1/result.json",
+    "sha256": "sha256:4948a826b6e39477eba9c798ce5fa5e88a963204a4da28c30f1c9fc64805e8e1"
+  },
+  "construction_result": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-solution-curriculum-v3/result.json",
+    "sha256": "sha256:132a0e370e05ae132fb812df55793fd1881cd45ac9582b484baed602f62761b3"
+  },
+  "caption": "Development evidence, not held-out performance. Left: actual first-episode root heights under five reference choices; root height is illustrative, not a clearance certificate. Middle: source 41002, physics seed 8731, route progress 0.55, underside 1.249 m; walk and d040 fail, while d055/d070/d085 pass with zero recorded beam force and legal entry/return. The scene was selected from empty-scene executed geometry and registered before these physical labels. Right: the same-context proposal ablation uses 64 draws per constructor per each of three development carriers; analytic resampling is stronger than the learned proposal here. Its denominator counts geometric proposals, not physical rollouts. Analytic search and model-fit costs are separately reported in the source result."
+}

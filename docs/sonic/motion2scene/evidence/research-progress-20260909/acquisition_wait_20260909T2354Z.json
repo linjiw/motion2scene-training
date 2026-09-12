@@ -1,0 +1,229 @@
+{
+  "created_utc": "2026-09-09T23:55:11.883671+00:00",
+  "scope": "Dispatcher-boundary and live-process verification; full M4 raw-capture audit has not yet run",
+  "completed_M4": 11,
+  "boundaries": [
+    {
+      "boundary": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/complete_048.json",
+        "sha256": "sha256:bd80cff42bc81847fea2f9c679c2c370b52f0e68e6fa6f1ec6b9a7b6eb505b17"
+      },
+      "assignment": {
+        "index": 48,
+        "run_id": "seed93203_uniform",
+        "stop_after_round": 4
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_004/result.json",
+        "sha256": "sha256:746b26b7c2a45a77661ea19dcff81d572f54cffb369f3148883c0c3f3bef110e"
+      },
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_004/policy.npz",
+        "sha256": "sha256:9843f9eefd13950ba1709dcb7147a4868b4956f44881b104c4162378a7a914d2"
+      }
+    },
+    {
+      "boundary": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/complete_049.json",
+        "sha256": "sha256:e09929ccf931c6800989d974fff9d0ffc0a76b5150d9a925460810dbc06fee30"
+      },
+      "assignment": {
+        "index": 49,
+        "run_id": "seed93202_analytic_contrast",
+        "stop_after_round": 4
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_004/result.json",
+        "sha256": "sha256:65098295f529595e7855841998bc3f66060063153262e74026cbf2f522311440"
+      },
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_004/policy.npz",
+        "sha256": "sha256:dab1b7b93e258b73f4047d537ea2ff9bd1767c8ecf3d2d244ab15d1d5fd2f3c1"
+      }
+    },
+    {
+      "boundary": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/complete_050.json",
+        "sha256": "sha256:061b361b4d18db90ddf768fcb1c5f438baf974827be2640da9bd0f4dc5bcbabb"
+      },
+      "assignment": {
+        "index": 50,
+        "run_id": "seed93202_target_only",
+        "stop_after_round": 4
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_004/result.json",
+        "sha256": "sha256:8d54fb1895015bd6d7e3815e7cf527a56d17a61822c64541cda3e4485dee7c89"
+      },
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_004/policy.npz",
+        "sha256": "sha256:342a3b9975920f18746600a104d5c41e4a692deed842d105e382a004baafa49b"
+      }
+    },
+    {
+      "boundary": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/complete_051.json",
+        "sha256": "sha256:29bbd2c3f423133e38e22366864b5169c4d9c22f66eee2024586857c4f4bb9b2"
+      },
+      "assignment": {
+        "index": 51,
+        "run_id": "seed93201_analytic_contrast",
+        "stop_after_round": 4
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_004/result.json",
+        "sha256": "sha256:ac0b24df1beb2fa65da8f9039320d0505a03b67660c742124d001c8a4cc7053d"
+      },
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_004/policy.npz",
+        "sha256": "sha256:f59f2c70f0b29ca0eb651399403df64505a3db28dedd5c1b0e229b64572950f1"
+      }
+    },
+    {
+      "boundary": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/complete_052.json",
+        "sha256": "sha256:1cc0345adb3a72b1b83f652b51fd2698e49c6a1bdfb556e8882743b54e7654cf"
+      },
+      "assignment": {
+        "index": 52,
+        "run_id": "seed93201_uniform",
+        "stop_after_round": 4
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_004/result.json",
+        "sha256": "sha256:b4eb0868ba0479528bbb8b1792c25d9af18c051616d17372fd655dd7c6a867c9"
+      },
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_004/policy.npz",
+        "sha256": "sha256:69b9c8593e4ac2509935dc921e179fa28f0f2cc3102fbad838cffc0783e93a4f"
+      }
+    },
+    {
+      "boundary": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/complete_053.json",
+        "sha256": "sha256:ded60284e89435bd25b5b88eeadc9c79009498824c605076e4ffb2b7c8a78f92"
+      },
+      "assignment": {
+        "index": 53,
+        "run_id": "seed93203_observation_curriculum",
+        "stop_after_round": 4
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_004/result.json",
+        "sha256": "sha256:6f4f10ec8f6f682a9c6c6bb9e08b140df6537329fae4bb884e3a8e0918adfd75"
+      },
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_004/policy.npz",
+        "sha256": "sha256:34229401c66d85c2346560462f2a2473e0eccbe3cf561f56d96084e5129af8c6"
+      }
+    },
+    {
+      "boundary": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/complete_054.json",
+        "sha256": "sha256:35c7fb276dca9c14ed0269043afb3ccf8c9cd05f0bb97a64936610a1752247e5"
+      },
+      "assignment": {
+        "index": 54,
+        "run_id": "seed93201_observation_curriculum",
+        "stop_after_round": 4
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_004/result.json",
+        "sha256": "sha256:b674d121622dbe038ffb6567d0f8c2b7898a53aef40b1d66cd0f915eadbc321b"
+      },
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_004/policy.npz",
+        "sha256": "sha256:35a3833245da6075f68fb5027f006a126a5ec9823a1ccd0a7f9cf2def0da2b0e"
+      }
+    },
+    {
+      "boundary": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/complete_055.json",
+        "sha256": "sha256:287b1118bd71e2484b361bc11b9b25839bf59d8b09050c77f97a36c071c1226d"
+      },
+      "assignment": {
+        "index": 55,
+        "run_id": "seed93202_uniform",
+        "stop_after_round": 4
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_004/result.json",
+        "sha256": "sha256:12b08500e1c179a4ca11e128d52144f1d6ae656a9dd52a13de1bf0cb7427b9a7"
+      },
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_004/policy.npz",
+        "sha256": "sha256:eaa697601b66cef7a263e4d46a29a3f9b7170d5889653327464f51740e449163"
+      }
+    },
+    {
+      "boundary": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/complete_056.json",
+        "sha256": "sha256:443c62482306fb41b6ed4901af24a10acbe5512fbe3f3731ee2048d0edd99d8d"
+      },
+      "assignment": {
+        "index": 56,
+        "run_id": "seed93203_target_only",
+        "stop_after_round": 4
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_004/result.json",
+        "sha256": "sha256:8d20a7c92dd152c44ac73d7ce0003338b89db0ae4eccb41c7593d092c8751f13"
+      },
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_004/policy.npz",
+        "sha256": "sha256:3417afb5eaee54e68c5827bddb66c4e6fb5bb0dddf6bd494d08d601d808fd2af"
+      }
+    },
+    {
+      "boundary": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/complete_057.json",
+        "sha256": "sha256:2f36b5312c5a1f0f9edc6819240260c8856e6aae7ad124e2be04edea65137fb5"
+      },
+      "assignment": {
+        "index": 57,
+        "run_id": "seed93203_analytic_contrast",
+        "stop_after_round": 4
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_004/result.json",
+        "sha256": "sha256:a5925c2fca6e3c5d9a040326a54de2b0915e31d7740f0ae5818e1955772053e4"
+      },
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_004/policy.npz",
+        "sha256": "sha256:08b2ab4da37c6ddb3f1a11a813a79f9c3987cd68366f4f3cd5f2a70a9d0f7bf4"
+      }
+    },
+    {
+      "boundary": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/complete_058.json",
+        "sha256": "sha256:7f33049f71acc7beee45c9e8e920d0bacd2a775de0654d777d0b1e72d4d197cd"
+      },
+      "assignment": {
+        "index": 58,
+        "run_id": "seed93201_target_only",
+        "stop_after_round": 4
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_004/result.json",
+        "sha256": "sha256:d4b0fe9af32704575f7ff0cc3c9d347dc27decc3c1c78abf93e921dc82d4c5fb"
+      },
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_004/policy.npz",
+        "sha256": "sha256:d5352218ca133790784ffe65de03d5da354e99d31f2f26460320dba80f97f0ce"
+      }
+    }
+  ],
+  "watcher_check": {
+    "status": "waiting_for_complete_original_M4",
+    "missing": [
+      "seed93202_observation_curriculum"
+    ],
+    "checked_references": 174,
+    "new_physics_steps": 0
+  },
+  "processes": "    PID    PPID     ELAPSED STAT COMMAND\n 161884  108128    09:57:01 Ss   .venv_isaaclab/bin/python /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/dispatch.py --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json\n1955047 1955036    05:00:40 S    /home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python scripts/research/motion2scene_expanded_acquisition.py --plan /home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json --until-budget 8 --watch\n2174226  989222    01:50:25 Ss   .venv_research/bin/python /home/linjiw/research-data/groot-wbc/m2s-response-diversity-M4-watch-20260909-v1/watch.py\n",
+  "audit_started": false,
+  "audit_complete": false,
+  "audit_failed": false,
+  "no_source_or_acquisition_queue_change": true
+}

@@ -1,0 +1,12 @@
+{
+  "amended_input_bindings_verified": 26,
+  "original_bindings_verified_via_snapshot": 26,
+  "geometry_reused_byte_identical": true,
+  "complete_fits": 10,
+  "failed_first_forward_attempts": 1,
+  "completed_updates": 2000,
+  "unique_target_rows": 175,
+  "tests_passed": 81,
+  "physics_steps": 0,
+  "evaluation_lock_verified": true
+}

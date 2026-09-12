@@ -1,0 +1,54 @@
+{
+  "candidate_id": "primary_candidate_93201_0338",
+  "checkpoint": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_analytic_contrast/controller/complete_005.json",
+    "sha256": "sha256:06c83afc02040bf787ae2b8d1b37ff6c2c1bff7c2920f45edf812bc02e876be0"
+  },
+  "evidence_scope": "Bound completed acquisition/fit receipts and recorded scores; full independent five-arm M4 raw audit remains separate. No M5 comparison checkpoint is added.",
+  "generating_policy": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_004/policy.npz",
+    "sha256": "sha256:f59f2c70f0b29ca0eb651399403df64505a3db28dedd5c1b0e229b64572950f1"
+  },
+  "interpretation": "Current encounter remains solvable by both prior schedules. Historical student outcome belongs to its exact generating M4 policy; no post-update/common-set improvement is inferred.",
+  "new_M5_encounter_steps": 9536,
+  "new_physics_from_verification": 0,
+  "policy": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_analytic_contrast/models/model_005/policy.npz",
+    "sha256": "sha256:39dc84efeba1d9c823c9a748ddb4a9a7b96dff94e2b68197d8ccf2d2d6ebb9d4"
+  },
+  "prefix_actual_steps": 56024,
+  "preupdate_student": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_analytic_contrast/round_005/student/result.json",
+    "sha256": "sha256:2fbb158b884014ad0fcced3fa371017e4b159dd4c4391266f3abf9024522e3ac"
+  },
+  "preupdate_student_steps": 1192,
+  "prior_M4_teacher_prefix_exactly_preserved": true,
+  "ridge_l2": 10,
+  "student_chosen_option": "prior_splice_e050_r265",
+  "student_minus_fastest_bank_time_s": 0.0,
+  "student_passage_time_s": 4.84,
+  "teacher": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_analytic_contrast/round_005/teachers/result.json",
+    "sha256": "sha256:43dae034b8603bcb6c1cbe68c6b7f406bdb6fad8403dbfb74d442679f6ca519b"
+  },
+  "teacher_failures": [
+    "short_e015_r265",
+    "short_e070_r265",
+    "neutral"
+  ],
+  "teacher_passage_times_s": {
+    "prior_splice_e015_r265": 4.84,
+    "prior_splice_e050_r265": 4.84,
+    "sustained_e015_r255": 5.4,
+    "sustained_e070_r255": 5.4
+  },
+  "teacher_prefix_matches": 14,
+  "teacher_steps": 8344,
+  "time_definition": "existing crossing-plus-stabilization score; complete capture is 5.96 seconds, distinct from this passage time",
+  "training_result": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_analytic_contrast/models/model_005/result.json",
+    "sha256": "sha256:1741ce301d8d941b0a3c306e9e8aeee8f57b29a043f85f31ceaeb2d8f2e9a696"
+  },
+  "verified_utc": "2026-09-10T03:55:53.879201+00:00",
+  "weighting": "uniform_per_phase"
+}

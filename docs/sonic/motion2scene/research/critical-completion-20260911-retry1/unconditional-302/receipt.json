@@ -1,0 +1,64 @@
+{
+  "variant": "unconditional",
+  "seed": 302,
+  "updates": 200,
+  "state": "complete",
+  "parameters": 27715,
+  "wall_seconds": 1.1177247090017772,
+  "history": [
+    {
+      "update": 1,
+      "cover": 7.0493645668029785,
+      "contrast": 0.0,
+      "completion": 0.0
+    },
+    {
+      "update": 26,
+      "cover": 6.088619232177734,
+      "contrast": 0.0,
+      "completion": 0.0
+    },
+    {
+      "update": 51,
+      "cover": 3.6028871536254883,
+      "contrast": 0.0,
+      "completion": 0.0
+    },
+    {
+      "update": 76,
+      "cover": 3.5074665546417236,
+      "contrast": -0.0,
+      "completion": -0.0
+    },
+    {
+      "update": 101,
+      "cover": 3.4997119903564453,
+      "contrast": 0.0,
+      "completion": 0.0
+    },
+    {
+      "update": 126,
+      "cover": 3.496131181716919,
+      "contrast": 0.0,
+      "completion": 0.0
+    },
+    {
+      "update": 151,
+      "cover": 3.4932844638824463,
+      "contrast": 0.0,
+      "completion": 0.0
+    },
+    {
+      "update": 176,
+      "cover": 3.490556478500366,
+      "contrast": 0.0,
+      "completion": 0.0
+    },
+    {
+      "update": 200,
+      "cover": 3.4883124828338623,
+      "contrast": 0.0,
+      "completion": 0.0
+    }
+  ]
+}

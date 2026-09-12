@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python",
+    "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/run.py"
+  ],
+  "implementation": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/run.py",
+    "sha256": "sha256:021231b3831c49a8daf1e2ab23059a251316e74ee398cf590bad7a29e6143744"
+  },
+  "launch_mechanism": "Popen start_new_session=True, persistent PID/log/stage exit receipts",
+  "pid": 2474326,
+  "start_ticks": "7930904",
+  "validation": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/validation.json",
+    "sha256": "sha256:0a81434446dc0eb1eeb38b8fe34b21218d1ef9fff1794ab9bca5e982f4082564"
+  }
+}

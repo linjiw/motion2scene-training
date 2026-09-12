@@ -1,0 +1,344 @@
+{
+  "completion": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_target_only/controller/complete_005.json",
+    "sha256": "sha256:820876dc3308e1209dceaf497eefe5da89f87592a66130fafeeed38f7d267874"
+  },
+  "cumulative_physics_steps": 56024,
+  "encounter_physics_steps": 9536,
+  "gap_rule": {
+    "common_safe_wait_override": false,
+    "cue": "surface",
+    "encounter_gap": "maximum_current_eligible_matched_phase_gap",
+    "length_edges_m": [
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "mixture": {
+      "coverage": 0.2,
+      "uniform": 0.2,
+      "verified_gap": 0.6
+    },
+    "no_positive_gap_fallback": "uniform_encounters_then_complete_phase_targets",
+    "required_beams": "all_collision_enabled",
+    "schema": "motion2scene_timed_schedule_replay_rule_v1",
+    "sensing_margin_s": 0.0
+  },
+  "generating_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_004/policy.npz",
+    "sha256": "sha256:3417afb5eaee54e68c5827bddb66c4e6fb5bb0dddf6bd494d08d601d808fd2af"
+  },
+  "implementation": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/verify_seed93203_target_M5.py",
+      "sha256": "sha256:b5fdc1921cc73f27d5bd6eb9aefc6bda89f4bdbe7314857d76ca30d258c91fb4"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_build_timed_replay.py",
+      "sha256": "sha256:c29fd8a7e2fb1f7103d4c7a9393b8a99e3824db762db735c8b45cad149ee62d7"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_expanded_acquisition.py",
+      "sha256": "sha256:28a3d91beb810f410c897bae448772484658c2f921e6da4b511d508ab528220c"
+    }
+  ],
+  "interpretation": "The generating M4 student missed the last passing prior entry at tick 50 on this acquired development condition. This is not an evaluation of the new M5 model or a held-out result. Historical physical gaps attach to the generating M4 policy; uniform target-only fitting weights are unchanged. Surface visibility does not establish semantic distinguishability.",
+  "learner_l2": 10.0,
+  "new_fits_from_verification": 0,
+  "new_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_target_only/models/model_005/policy.npz",
+    "sha256": "sha256:3e11da8d6e08c281e51fc0e623e37b66dc014f0d46bac5857adc568912b66761"
+  },
+  "new_physics_from_verification": 0,
+  "new_teacher_targets_raw_reaudited": true,
+  "original_teacher_prefix_preserved": true,
+  "phases": [
+    {
+      "admitted_continuation_counts": [
+        4,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "causal_features_equal": true,
+      "complete_legal_action_table": true,
+      "deadline": {
+        "common_safe_wait_override": false,
+        "cue": "surface",
+        "current_eligible": true,
+        "current_phase": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 0.28,
+          "phase_tick": 15,
+          "physical_decision_elapsed_s": 0.28,
+          "reason": "declared_causal_cue_deadline"
+        },
+        "scope": "later entry visibility is diagnostic only; no future cue is credited now",
+        "teacher_continuation_entry": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 0.98,
+          "phase_tick": 50,
+          "physical_decision_elapsed_s": 0.98,
+          "reason": "declared_causal_cue_deadline"
+        }
+      },
+      "expected_continuation_counts": [
+        4,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "gap_reasons": [],
+      "historical_physical_gap": 1.0,
+      "legal_mask_equal": true,
+      "legal_policy_values": {
+        "neutral": -0.0007224036069787574,
+        "prior_splice_e015_r265": -0.2086093669409852,
+        "short_e015_r265": -0.25723662076077036,
+        "sustained_e015_r255": -0.4500626689465241
+      },
+      "passing_continuations": [
+        "prior_splice_e050_r265",
+        "prior_splice_e015_r265"
+      ],
+      "passing_immediate_actions": [
+        "neutral",
+        "prior_splice_e015_r265"
+      ],
+      "preaction_capture_elapsed_s": 0.28,
+      "raw_matched_neutral_history": true,
+      "recorded_history_sha256": "b872eecc944ee94102c2e0ee19c42a39f43ab1e2a08d5699e4fdbe3c83f209d2",
+      "recorded_values_reconstructed": true,
+      "selected_option_id": "neutral",
+      "teacher_action": 0,
+      "tick": 15
+    },
+    {
+      "admitted_continuation_counts": [
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "causal_features_equal": true,
+      "complete_legal_action_table": true,
+      "deadline": {
+        "common_safe_wait_override": false,
+        "cue": "surface",
+        "current_eligible": true,
+        "current_phase": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 0.98,
+          "phase_tick": 50,
+          "physical_decision_elapsed_s": 0.98,
+          "reason": "declared_causal_cue_deadline"
+        },
+        "scope": "later entry visibility is diagnostic only; no future cue is credited now",
+        "teacher_continuation_entry": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 0.98,
+          "phase_tick": 50,
+          "physical_decision_elapsed_s": 0.98,
+          "reason": "declared_causal_cue_deadline"
+        }
+      },
+      "expected_continuation_counts": [
+        3,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "gap_reasons": [],
+      "historical_physical_gap": 1.0,
+      "legal_mask_equal": true,
+      "legal_policy_values": {
+        "neutral": -0.006943171593496672,
+        "prior_splice_e050_r265": -0.3474262790717618
+      },
+      "passing_continuations": [
+        "prior_splice_e050_r265"
+      ],
+      "passing_immediate_actions": [
+        "prior_splice_e050_r265"
+      ],
+      "preaction_capture_elapsed_s": 0.98,
+      "raw_matched_neutral_history": true,
+      "recorded_history_sha256": "8d2f4d54a05b0c8b52c27489e926a25d9fd244c15310574b871447482414b09d",
+      "recorded_values_reconstructed": true,
+      "selected_option_id": "neutral",
+      "teacher_action": 4,
+      "tick": 50
+    },
+    {
+      "admitted_continuation_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "causal_features_equal": true,
+      "complete_legal_action_table": true,
+      "deadline": {
+        "common_safe_wait_override": false,
+        "cue": "surface",
+        "current_eligible": true,
+        "current_phase": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 1.38,
+          "phase_tick": 70,
+          "physical_decision_elapsed_s": 1.38,
+          "reason": "declared_causal_cue_deadline"
+        },
+        "scope": "later entry visibility is diagnostic only; no future cue is credited now",
+        "teacher_continuation_entry": null
+      },
+      "expected_continuation_counts": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "gap_reasons": [
+        "no_complete_feasible_teacher"
+      ],
+      "historical_physical_gap": null,
+      "legal_mask_equal": true,
+      "legal_policy_values": {
+        "neutral": -0.19366062303791626,
+        "short_e070_r265": -0.11397618173733318,
+        "sustained_e070_r255": -0.3791837464946039
+      },
+      "passing_continuations": [],
+      "passing_immediate_actions": [],
+      "preaction_capture_elapsed_s": 1.38,
+      "raw_matched_neutral_history": true,
+      "recorded_history_sha256": "42b3c0f5b3b98d774eebfcfa7b7b6eb78e0a605b2bca1ac46374a41777f7a471",
+      "recorded_values_reconstructed": true,
+      "selected_option_id": "short_e070_r265",
+      "teacher_action": null,
+      "tick": 70
+    }
+  ],
+  "physics_seed": 93203,
+  "preupdate": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_target_only/round_005/preupdate.json",
+    "sha256": "sha256:0917d133e85952b56e73954e6f8e0bdb3fb423aa09271d9e5fa9239ad8c84ddf"
+  },
+  "registry": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/registry.json",
+    "sha256": "sha256:a33af401fe9e6949baaddf63a67a5e37e8f62f87758e1ca373f926f9a3214c3c"
+  },
+  "run_id": "seed93203_target_only",
+  "scene_id": "primary_candidate_93203_0612",
+  "schema": "motion2scene_acquired_selection_verification_v1",
+  "student_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_target_only/round_005/student/result.json",
+    "sha256": "sha256:e3950f4cc412da11c48df314910157cfb57ca90dfb400714a16d197c18d420df"
+  },
+  "student_physical_events": [
+    {
+      "kind": "verified_environment_contact",
+      "maximum_force_n": 731.5716552734375
+    }
+  ],
+  "student_raw_reaudited": true,
+  "student_selected_schedule": "short_e070_r265",
+  "student_task_outcome": "failure",
+  "teacher_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_target_only/round_005/teachers/result.json",
+    "sha256": "sha256:bee1ab75a98090687bab034d2c7dafa5ba2c398f63677fb2a8af6f1b147b6708"
+  },
+  "teacher_outcomes": {
+    "neutral": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "prior_splice_e015_r265": {
+      "outcome": "pass",
+      "passage_time_s": 2.44,
+      "steps": 1192
+    },
+    "prior_splice_e050_r265": {
+      "outcome": "pass",
+      "passage_time_s": 2.44,
+      "steps": 1192
+    },
+    "short_e015_r265": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "short_e070_r265": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "sustained_e015_r255": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "sustained_e070_r255": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    }
+  },
+  "utc": "2026-09-10T06:14:25.158576+00:00",
+  "weighting": "uniform_per_phase"
+}

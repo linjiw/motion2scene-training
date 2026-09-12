@@ -1,0 +1,51 @@
+{
+  "audit_new_model_fits": 0,
+  "audit_new_physics_steps": 0,
+  "candidate_id": "primary_candidate_93201_0848",
+  "checkpoint": 5,
+  "completion": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/complete_005.json",
+    "sha256": "sha256:570a78c40a4ceefabd89cf7fd8e996129519c3bc66cde7699cf58dd04d548423"
+  },
+  "cumulative_measured_physics_steps": 55632,
+  "earlier_M4_teacher_prefix_unchanged": true,
+  "learner_l2": 10.0,
+  "learner_weighting": "uniform_per_phase",
+  "new_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/models/model_005/policy.npz",
+    "sha256": "sha256:a1f9891202447ebd138179e64369bd1022d2a58ce02ebe39e13f6ee9ffaaf2ed"
+  },
+  "original_teacher_raw_reaudit_equal_to_saved_targets": true,
+  "prior_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/models/model_004/policy.npz",
+    "sha256": "sha256:8757b4c6f5d0a18965060f27ab7ec877e43eb8da051f6bd469158fb9da0a4c89"
+  },
+  "reconciliation": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/reconciliation.json",
+    "sha256": "sha256:ed25098d07157ea5d83750ba5ce62a3ca41b18794c7bfe4ca2fae889378c2733"
+  },
+  "reconciliation_new_physics_steps": 0,
+  "round_measured_physics_steps": 9144,
+  "run_id": "seed93201_reference_contrast",
+  "scope": "One completed reference-arm M5 acquisition encounter; no M5 common-set policy or M8/held-out result.",
+  "student": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_005/student/result.json",
+    "sha256": "sha256:02ffb225ab0464b524a756e50a263d347ccb07c10b4e0e92fd07511f7afdf05e"
+  },
+  "student_task_outcome": "unknown",
+  "teacher": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_005/teachers/result.json",
+    "sha256": "sha256:a60456735cd4a29a44ca46bea964fdf51502200c63f6a211a53a197412e89d8f"
+  },
+  "teacher_outcomes": {
+    "neutral": "failure",
+    "prior_splice_e015_r265": "pass",
+    "prior_splice_e050_r265": "pass",
+    "short_e015_r265": "failure",
+    "short_e070_r265": "failure",
+    "sustained_e015_r255": "failure",
+    "sustained_e070_r255": "failure"
+  },
+  "utc": "2026-09-10T04:53:05.898818+00:00",
+  "verification_invocation_note": "Initial read-only assertion expected shorthand uniform; corrected to the registered uniform_per_phase string. No fit, policy, data, or native source changed."
+}

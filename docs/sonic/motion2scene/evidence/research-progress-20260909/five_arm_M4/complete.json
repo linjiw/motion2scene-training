@@ -1,0 +1,11 @@
+{
+  "log": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-five-arm-M4-audit-watch-20260910-v1/analysis.log",
+    "sha256": "sha256:506d901f8dfeb6ef7b20d9b564ca29495dd666be958cb6e32d1aa64d1e03976c"
+  },
+  "new_physics_steps": 0,
+  "result": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-five-arm-M4-response-diversity-20260910-v1/result.json",
+    "sha256": "sha256:2a25c83e64a0bd34e3d4615a85aac90f52bf9acc4b1cfc0c08a4f09bb97c646e"
+  }
+}

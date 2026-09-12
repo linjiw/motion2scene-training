@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python",
+    "scripts/research/motion2scene_development_checkpoint_panel.py",
+    "run",
+    "--panel",
+    "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1"
+  ],
+  "pid": 2863023,
+  "start_ticks": "11446959",
+  "state": "R"
+}

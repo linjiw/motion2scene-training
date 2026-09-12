@@ -1,0 +1,7 @@
+{
+  "source_root": "/home/linjiw/groot-wbc-sonic-sim-trackb",
+  "source_head": "d402693abc47f63307ac0ae629f2c7e9204bb4bc",
+  "source_dirty": true,
+  "scope": "Working-tree snapshot, including uncommitted research; no claim that upstream HEAD contains it",
+  "motion2scene_root": "/home/linjiw/motion2scene"
+}

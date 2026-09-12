@@ -1,0 +1,15 @@
+{
+  "state": "passed",
+  "utc": "2026-09-11T17:41:26Z",
+  "prior_manifest_verified": true,
+  "outcome_rows": 154,
+  "projection_rows_recomputed": 77,
+  "frames_per_motion": 298,
+  "motions": 7,
+  "tests_passed": 27,
+  "test_wall_seconds": 1.13,
+  "lint": "Ruff E,F,I passed; Black passed; node syntax check passed",
+  "browser": "Final standalone browser test passed; localhost HTTP 200",
+  "no_new_training": true,
+  "no_new_physics": true
+}

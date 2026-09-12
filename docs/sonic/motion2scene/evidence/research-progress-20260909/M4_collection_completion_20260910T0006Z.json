@@ -1,0 +1,1306 @@
+{
+  "schema": "motion2scene_M4_collection_completion_snapshot_v1",
+  "created_utc": "2026-09-10T00:06:27.248292+00:00",
+  "plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-tie-proposed-v5/plan.json",
+    "sha256": "sha256:aacce6a9a2c2b3fc5bf6b674b5ede46d6fee61ac7ad205553554c4210d3d4508"
+  },
+  "scope": "Stored completed collection receipts and source identities; this script does not independently re-audit raw trajectories or complete the pending final fit",
+  "corpora": [
+    {
+      "run_id": "seed93201_uniform",
+      "arm": "uniform",
+      "physics_seed": 93201,
+      "collection_receipts": [
+        {
+          "round": 0,
+          "kind": "bootstrap_teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/bootstrap/teachers/result.json",
+            "sha256": "sha256:ccedb36ed9d3bde69df42ecfd4190694fa5931d29ff8edfe83744e34ce4a6779"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/round_001/teachers/result.json",
+            "sha256": "sha256:71b636af98614e518cce0d7e58d8796e67f23dc8699940b2af6b4b2e2134914c"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/round_001/student/result.json",
+            "sha256": "sha256:36a94da44654b7e2ce77320844bbca0533595c3b7096bee6270b1e8cf9ac1b8f"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 2,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/round_002/teachers/result.json",
+            "sha256": "sha256:72c354b17bf30456d2e88ab53160866823125d8ea0bb05eab6cd9fefd177129a"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 2,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/round_002/student/result.json",
+            "sha256": "sha256:223d2c05d87a5a821f862ed931bb343955265736db3e2b48a8af5df5fb539d2e"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 3,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/round_003/teachers/result.json",
+            "sha256": "sha256:a89c646c511e12d9ec4c828633dbfcd9ab1cadb22c20f0e37b71a3bbf3c85f97"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 3,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/round_003/student/result.json",
+            "sha256": "sha256:adba3ab67c606e3ae635d377eea7f2bceb667877608a29f0e4502beb63da3768"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 4,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/round_004/teachers/result.json",
+            "sha256": "sha256:9307b2b65eb2714970985137e0e471c3a3cdbeb9af210e6b8ca648f307a283c0"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 4,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/round_004/student/result.json",
+            "sha256": "sha256:2612c6f0c21ad680ecc3768252e77ebe6ddea76e7d74fed32cddb9a8876eaab6"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        }
+      ],
+      "costs": {
+        "bootstrap_teacher_steps": 8344,
+        "bootstrap_teacher_episodes": 7,
+        "teacher_steps": 33376,
+        "teacher_episodes": 28,
+        "student_steps": 4768,
+        "student_episodes": 4
+      },
+      "M4_fit_complete": true
+    },
+    {
+      "run_id": "seed93201_target_only",
+      "arm": "target_only",
+      "physics_seed": 93201,
+      "collection_receipts": [
+        {
+          "round": 0,
+          "kind": "bootstrap_teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/bootstrap/teachers/result.json",
+            "sha256": "sha256:55536ce939682d62c7e2a2a495931f687407e9020a364dea39e7bf0bf278427e"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/round_001/teachers/result.json",
+            "sha256": "sha256:e5dfc617578ac294655fb922bad3e458c3674c9b9ddd12c7460edd2489c707f4"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/round_001/student/result.json",
+            "sha256": "sha256:15cc1b13b87f5d38e08704e3dba3cc43ac6e76789ad9a97efb0987e86688bfaa"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 2,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/round_002/teachers/result.json",
+            "sha256": "sha256:fda4ac23974c7c15a9af65b7aa6951ca9affb9b453c59f75797eda2441d352c9"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 2,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/round_002/student/result.json",
+            "sha256": "sha256:8647e82940f71bbe0a750a7706b07e71f21b8f6e6c8cdb06c5244ee8f4dc36d7"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 3,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/round_003/teachers/result.json",
+            "sha256": "sha256:a07db55aaf7c7ceb753047b2d4e5e8ffc4977f0e60e355084908b71f4211b082"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 3,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/round_003/student/result.json",
+            "sha256": "sha256:31120dec2dcd8d0a204d13ae6a2fc9e219339eca7db9dbf13bd38de1a12d7ebf"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 4,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/round_004/teachers/result.json",
+            "sha256": "sha256:6cc2cb9d1cd4e2fd8ce7286b76a04f5a87f85c552c9a2697e14edd99a83218ab"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 4,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/round_004/student/result.json",
+            "sha256": "sha256:74086b9543bd606cfdf2236052237552b85a102988239edd35570606e566f98f"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        }
+      ],
+      "costs": {
+        "bootstrap_teacher_steps": 8344,
+        "bootstrap_teacher_episodes": 7,
+        "teacher_steps": 33376,
+        "teacher_episodes": 28,
+        "student_steps": 4768,
+        "student_episodes": 4
+      },
+      "M4_fit_complete": true
+    },
+    {
+      "run_id": "seed93201_analytic_contrast",
+      "arm": "analytic_contrast",
+      "physics_seed": 93201,
+      "collection_receipts": [
+        {
+          "round": 0,
+          "kind": "bootstrap_teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/bootstrap/teachers/result.json",
+            "sha256": "sha256:e0307e0e3f6c98a3b6985e408e4f62328b774740142f87dca55a3b071531d540"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/round_001/teachers/result.json",
+            "sha256": "sha256:3119e1da9a05a4839c6b2b82d498e0a0b3ffc58666d75dbf6887d62902f433a5"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/round_001/student/result.json",
+            "sha256": "sha256:68e42a9d3c40cc19e1a10ef705d59b18296d6a445c09b9bfcff15a58ff083e39"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 2,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/round_002/teachers/result.json",
+            "sha256": "sha256:a140b5845464acf683268053204fc64d2cb468ee2d6444cb192aa6eca91fa9a6"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 2,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/round_002/student/result.json",
+            "sha256": "sha256:d0d06e6194d429972ccfec0946fb3df1e4580bd5955513b19b6b3a1da9bdf53d"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 3,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/round_003/teachers/result.json",
+            "sha256": "sha256:b49de9ffc8a7ad9e5607c262d9b0a276b30175dad5fb947dffa821c34b00e563"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 3,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/round_003/student/result.json",
+            "sha256": "sha256:f01f367afc1c7652de0bc2b52f817cc90e7f5864a2307548017e52ac8a9b88ad"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 4,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/round_004/teachers/result.json",
+            "sha256": "sha256:7eea3a9c04dbe24204c9a125bde97ea17339f9330779920e5fd67e55a16e131f"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 4,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/round_004/student/result.json",
+            "sha256": "sha256:1283c78f97728fc7ad3e1d572e693c4192a5bc30019a5559b4daddce1680cab8"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        }
+      ],
+      "costs": {
+        "bootstrap_teacher_steps": 8344,
+        "bootstrap_teacher_episodes": 7,
+        "teacher_steps": 33376,
+        "teacher_episodes": 28,
+        "student_steps": 4768,
+        "student_episodes": 4
+      },
+      "M4_fit_complete": true
+    },
+    {
+      "run_id": "seed93201_observation_curriculum",
+      "arm": "observation_curriculum",
+      "physics_seed": 93201,
+      "collection_receipts": [
+        {
+          "round": 0,
+          "kind": "bootstrap_teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/bootstrap/teachers/result.json",
+            "sha256": "sha256:e42ffffaadd5c04bfe5b76edb26171b0a410dad328699c471aa6496838bb0010"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/round_001/teachers/result.json",
+            "sha256": "sha256:11250e1f6e1e88c4537e89d9a64c93e76cefa065c793f339c15cf2d20a4ede57"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/round_001/student/result.json",
+            "sha256": "sha256:6fb0dc6b0fdf690bf2e5de05d73bc7a91832b651fbf63d88471dcb2044b4b71d"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 2,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/round_002/teachers/result.json",
+            "sha256": "sha256:7a1ce46f59f5035109e0ec2fc8f3a522f5fed97a92089efd992256b19e58a684"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 2,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/round_002/student/result.json",
+            "sha256": "sha256:7a7c6848998c83df7e99d454e6bdf7827807319b59b998c35e9cb2af82b38dd4"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 3,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/round_003/teachers/result.json",
+            "sha256": "sha256:289666942614f54cf039568995f574d80a9ee580cd75235c5f2aebe6ca2272ad"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 3,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/round_003/student/result.json",
+            "sha256": "sha256:cac36b48963061291e7fcc21404e5da48021460327fcd079444ade1715a27500"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 4,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/round_004/teachers/result.json",
+            "sha256": "sha256:7ed615596714b369e96bf066f98b501f6ca5035803b7dd35592573ad8fabe322"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 4,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/round_004/student/result.json",
+            "sha256": "sha256:bcab9bbc344bfdf677ef2cad0dabe8b89842f1a2b7a9ea60675383232a3adff9"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        }
+      ],
+      "costs": {
+        "bootstrap_teacher_steps": 8344,
+        "bootstrap_teacher_episodes": 7,
+        "teacher_steps": 33376,
+        "teacher_episodes": 28,
+        "student_steps": 4768,
+        "student_episodes": 4
+      },
+      "M4_fit_complete": true
+    },
+    {
+      "run_id": "seed93202_uniform",
+      "arm": "uniform",
+      "physics_seed": 93202,
+      "collection_receipts": [
+        {
+          "round": 0,
+          "kind": "bootstrap_teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/bootstrap/teachers/result.json",
+            "sha256": "sha256:494425664b3c683dd396fe5053a8086968f749a3cd8349c7a61047f440b5d379"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/round_001/teachers/result.json",
+            "sha256": "sha256:51d0c797950b4dd57c1fcc7c43f7973c847e591820d30e984ceec88ab7e64ca1"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/round_001/student/result.json",
+            "sha256": "sha256:1a537fe57cb1386e70318d125406fafee94d58dd9313422235b252b0a7edcf9d"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 2,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/round_002/teachers/result.json",
+            "sha256": "sha256:bc558851265a609a42047b589facb2e1293e5fc3959fa084926b9f37d3519741"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 2,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/round_002/student/result.json",
+            "sha256": "sha256:526747f38e4b0c7b12ac563ab8bd00a76a4bdcc562281aac1ef51aead2d458f5"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 3,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/round_003/teachers/result.json",
+            "sha256": "sha256:856c9bfd6866680fadb9d4f164cce817b5563de5d71bc27dc9d8ca505f4977c3"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 3,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/round_003/student/result.json",
+            "sha256": "sha256:ce198a3db17ea0ed3c2278f39d297b87865571b56f0fd986c807e6517a6c2a36"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 4,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/round_004/teachers/result.json",
+            "sha256": "sha256:6c54199721d463c8af93d44b117885d61322c117daab7ff90a7d30e515900ce1"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 4,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/round_004/student/result.json",
+            "sha256": "sha256:b07ecb30f5a9ab9dd7fbab295ca671063e0200c9627cea3604d17c93c2678a42"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        }
+      ],
+      "costs": {
+        "bootstrap_teacher_steps": 8344,
+        "bootstrap_teacher_episodes": 7,
+        "teacher_steps": 33376,
+        "teacher_episodes": 28,
+        "student_steps": 4768,
+        "student_episodes": 4
+      },
+      "M4_fit_complete": true
+    },
+    {
+      "run_id": "seed93202_target_only",
+      "arm": "target_only",
+      "physics_seed": 93202,
+      "collection_receipts": [
+        {
+          "round": 0,
+          "kind": "bootstrap_teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/bootstrap/teachers/result.json",
+            "sha256": "sha256:4b9d19f9c9334da6ef80a8ff9fe98a4a1e451364c031f27f0e1ff3dabd4a241b"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/round_001/teachers/result.json",
+            "sha256": "sha256:600bb869a7540b4b6305a550c2eb4ddcacc51836c064520bf297b9d4f1b470e5"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/round_001/student/result.json",
+            "sha256": "sha256:9eb05339f79a8bb4d48cc108fcdac96e211765b484122c3b3dd6c1fe86cdfb73"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 2,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/round_002/teachers/result.json",
+            "sha256": "sha256:f816eb36ffe2e98b4b02fec97a9226ceafac9048a93091e06f88a0d69e467d5a"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 2,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/round_002/student/result.json",
+            "sha256": "sha256:953d9668c9dbe5d16ea57f4e99513030a3737b6ee7c178f2b4c41a035b7bd5c7"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 3,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/round_003/teachers/result.json",
+            "sha256": "sha256:db12687603174e1a850366a9c1a4766280122afbe54fb54ecacb0cecd7197652"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 3,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/round_003/student/result.json",
+            "sha256": "sha256:280d830a6211f5ee594c8014103087cafe0d4ca515d929055a0eb40982202f70"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 4,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/round_004/teachers/result.json",
+            "sha256": "sha256:654dbfed58a7bca1f71e9fcdaa082cd7406ae9fe100a1004942fda22c6845465"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 4,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/round_004/student/result.json",
+            "sha256": "sha256:3742a491319f190ba6002b9f6c4cc74f9905e03cf0dd8ff43a95b70d06532e51"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        }
+      ],
+      "costs": {
+        "bootstrap_teacher_steps": 8344,
+        "bootstrap_teacher_episodes": 7,
+        "teacher_steps": 33376,
+        "teacher_episodes": 28,
+        "student_steps": 4768,
+        "student_episodes": 4
+      },
+      "M4_fit_complete": true
+    },
+    {
+      "run_id": "seed93202_analytic_contrast",
+      "arm": "analytic_contrast",
+      "physics_seed": 93202,
+      "collection_receipts": [
+        {
+          "round": 0,
+          "kind": "bootstrap_teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/bootstrap/teachers/result.json",
+            "sha256": "sha256:0c6080536dbff4c9e2cbde86ffc246ff85c2badd40eb89f194856f5fc6e4dd73"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_001/teachers/result.json",
+            "sha256": "sha256:54b97f7dc7f08955994a6bac0395a4a64b3dfc2a628920385b0c60715659b258"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_001/student/result.json",
+            "sha256": "sha256:1c383afbaaa1fe2fbb124bf0dee2621c95affeab9245c06082596bbe343d4601"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 2,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_002/teachers/result.json",
+            "sha256": "sha256:3d951ba2251387ebebfb6e1fab436bbac72facbd1e282947930117794421941c"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 2,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_002/student/result.json",
+            "sha256": "sha256:e52d403efe336363885123300ed47daad5f6fceef913a48489b2966a73f2336b"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 3,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/result.json",
+            "sha256": "sha256:93edd067c4f3cdfb1e37e09eb4918ab34310b70a67d3f1e6376047200bde254b"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 3,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/student/result.json",
+            "sha256": "sha256:39f3ace4df12c7ac5b59060c2b15cdba79ec27d4b059029f90a425c5fac83ab0"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 4,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_004/teachers/result.json",
+            "sha256": "sha256:433fc65cfeed27fa1ae3a0441a6c5c2494d1c564a00f16e6e5a56df8c1559137"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 4,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_004/student/result.json",
+            "sha256": "sha256:889a2be7d17a88c9b3b262d1c73707457e88e30d7fd17ac1280d26b86be05aab"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        }
+      ],
+      "costs": {
+        "bootstrap_teacher_steps": 8344,
+        "bootstrap_teacher_episodes": 7,
+        "teacher_steps": 33376,
+        "teacher_episodes": 28,
+        "student_steps": 4768,
+        "student_episodes": 4
+      },
+      "M4_fit_complete": true
+    },
+    {
+      "run_id": "seed93202_observation_curriculum",
+      "arm": "observation_curriculum",
+      "physics_seed": 93202,
+      "collection_receipts": [
+        {
+          "round": 0,
+          "kind": "bootstrap_teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/bootstrap/teachers/result.json",
+            "sha256": "sha256:5c518951420a8edc0dbeb1ac358b0039ef7c224429979e3266a94c1920a25b5c"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/round_001/teachers/result.json",
+            "sha256": "sha256:04b8e59cf90d61c2d48e8779af706c4ef23005a54f92d92594bd99260391e27d"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/round_001/student/result.json",
+            "sha256": "sha256:4de29cdb48ce2073f5d79ad70a2ae141df820767b0491aea7e876b82e5db708b"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 2,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/round_002/teachers/result.json",
+            "sha256": "sha256:2ce57955c442c71127424b76bf3de7bb4323db4bc9e15287161deecef6a5e4f0"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 2,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/round_002/student/result.json",
+            "sha256": "sha256:9e6c4444457b1bcbc202cd54628ed7e9aeb920ed63c251d1a30f494d30671ff2"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 3,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/round_003/teachers/result.json",
+            "sha256": "sha256:32e76f13e683c99e8c441a61471d2e64b067b7a57dbb4f510729b76fceefa1db"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 3,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/round_003/student/result.json",
+            "sha256": "sha256:253e7735e125d1b0916f21f247090436e39cb01fa7e425494521f59a730af35c"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 4,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/round_004/teachers/result.json",
+            "sha256": "sha256:1046fff6bf4a68493023847ef5e45b7820da93dc3a3c7b9d1b85e1c0a1f920ed"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 4,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/round_004/student/result.json",
+            "sha256": "sha256:539d90fd2c53bfe755c7cafcee6d06c7d07e155fc3cb16d7e25518e508365e8d"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        }
+      ],
+      "costs": {
+        "bootstrap_teacher_steps": 8344,
+        "bootstrap_teacher_episodes": 7,
+        "teacher_steps": 33376,
+        "teacher_episodes": 28,
+        "student_steps": 4768,
+        "student_episodes": 4
+      },
+      "M4_fit_complete": false
+    },
+    {
+      "run_id": "seed93203_uniform",
+      "arm": "uniform",
+      "physics_seed": 93203,
+      "collection_receipts": [
+        {
+          "round": 0,
+          "kind": "bootstrap_teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/bootstrap/teachers/result.json",
+            "sha256": "sha256:f254a50a025c2d59b434e8b0c16ba2fc4d1b000d9e10c460d87594b1dfab2d3f"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/round_001/teachers/result.json",
+            "sha256": "sha256:fdcd589c888d749a1d7a6632b61942e3a2296058ea0dde3501a29ffd4d5f654e"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/round_001/student/result.json",
+            "sha256": "sha256:63595352ae94110831afe1d3f47429a963e8f84daa840c6f86f1a9ff3b958f5c"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 2,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/round_002/teachers/result.json",
+            "sha256": "sha256:1a9f23944b9f877465cbe914d7648bda273671ad42a76ed4b9c2cc744b34b60c"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 2,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/round_002/student/result.json",
+            "sha256": "sha256:4913e72d5c7b1af6525644687131f842cc098e8754640a4df12bb8c7a55cb531"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 3,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/round_003/teachers/result.json",
+            "sha256": "sha256:77746f20e8aa3c17b6cbf713729079e3bedeaddcf2e857d5e1b3c777520d56fb"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 3,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/round_003/student/result.json",
+            "sha256": "sha256:59ef8f1b327a5d7105999f2cc86a24b2dd3e383ec72926ebb8ac5be54e61743a"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 4,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/round_004/teachers/result.json",
+            "sha256": "sha256:dec3d82f3321f111ac206d28a1a2fdc389508fcef39ddd385fb4817b09055867"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 4,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/round_004/student/result.json",
+            "sha256": "sha256:985572798a6dd476c579f3bc6fb4adbfa3a95a3f5b90b529e43994d16d27b7dd"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        }
+      ],
+      "costs": {
+        "bootstrap_teacher_steps": 8344,
+        "bootstrap_teacher_episodes": 7,
+        "teacher_steps": 33376,
+        "teacher_episodes": 28,
+        "student_steps": 4768,
+        "student_episodes": 4
+      },
+      "M4_fit_complete": true
+    },
+    {
+      "run_id": "seed93203_target_only",
+      "arm": "target_only",
+      "physics_seed": 93203,
+      "collection_receipts": [
+        {
+          "round": 0,
+          "kind": "bootstrap_teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/bootstrap/teachers/result.json",
+            "sha256": "sha256:5abdd553ccb27f40cd0c4c02f24834a5e3455f575248cdbc016c0e3196a9a876"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/round_001/teachers/result.json",
+            "sha256": "sha256:f7c6d5d7c3f44801c09305c806166b62c50d62963d992c4896ebcbe0de45a2b0"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/round_001/student/result.json",
+            "sha256": "sha256:886bd351dfb929faf71cb381636e9ec87565faf9a60693c9eee3ab9c780440af"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 2,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/round_002/teachers/result.json",
+            "sha256": "sha256:07a5217bec0932f5a9f1fa3211fff3816f8942c93602853b8ba5414706c841a5"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 2,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/round_002/student/result.json",
+            "sha256": "sha256:d3d3a538172a15b1a3b2c975b23a034435539b7d03b26c1883b86dc9a3c9621a"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 3,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/round_003/teachers/result.json",
+            "sha256": "sha256:81f653a60ce8a361e301754f31f23f41fa9a9217a886436350cad011587eb5aa"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 3,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/round_003/student/result.json",
+            "sha256": "sha256:c11af65017496556ace1c3c8daf047b4eb7df308dfd1bd8eab2676e0ceed3ee4"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 4,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/round_004/teachers/result.json",
+            "sha256": "sha256:9b4d6c2fa5bc10c03df5f4aca28820ac4b7593d91ca9b6ff9f1c926cfa6b4265"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 4,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/round_004/student/result.json",
+            "sha256": "sha256:c48d826c8d4da825f6eadeee1f54f77c80e394dc7196e31dfce0768576b29740"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        }
+      ],
+      "costs": {
+        "bootstrap_teacher_steps": 8344,
+        "bootstrap_teacher_episodes": 7,
+        "teacher_steps": 33376,
+        "teacher_episodes": 28,
+        "student_steps": 4768,
+        "student_episodes": 4
+      },
+      "M4_fit_complete": true
+    },
+    {
+      "run_id": "seed93203_analytic_contrast",
+      "arm": "analytic_contrast",
+      "physics_seed": 93203,
+      "collection_receipts": [
+        {
+          "round": 0,
+          "kind": "bootstrap_teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/bootstrap/teachers/result.json",
+            "sha256": "sha256:8ed39339b68575f26cbb9b5726631a7690a1c2a7b0ffc3bdfdc3abdb9f2f283f"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/round_001/teachers/result.json",
+            "sha256": "sha256:398a609f0981b9258c2cd42081913e05c632252c08b4256e35b92a598bb131fc"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/round_001/student/result.json",
+            "sha256": "sha256:19c6e5effcd84e453d8f6b7504529ae5a0b74bb4c9976cdaaba3de1c789e4a06"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 2,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/round_002/teachers/result.json",
+            "sha256": "sha256:3207fac5fbb6397a3dff1d8cca4d915118f2c4a326c05087a2700a9035bd367d"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 2,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/round_002/student/result.json",
+            "sha256": "sha256:9e9626d85b70670055884d8a00c3e510c77387c4cbb6d4437314be6d6c48d9cb"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 3,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/round_003/teachers/result.json",
+            "sha256": "sha256:0c54ec1bdc8f1efc0a7e65bb43cba6c55824b115548bdcb28e85109ce38974b2"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 3,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/round_003/student/result.json",
+            "sha256": "sha256:6c899e8a064fb530f9a11ce0f7370b8187cdb8fc58d4e2b004138859e72c92bc"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 4,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/round_004/teachers/result.json",
+            "sha256": "sha256:192c47034edc0c143f06520cabaa9c552a8ca6f98c6d4ccdf832830b014b528f"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 4,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/round_004/student/result.json",
+            "sha256": "sha256:d08290017d00a34d892c71e72c09bb571677c0c3407ac14d8970e5eda7df36a3"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        }
+      ],
+      "costs": {
+        "bootstrap_teacher_steps": 8344,
+        "bootstrap_teacher_episodes": 7,
+        "teacher_steps": 33376,
+        "teacher_episodes": 28,
+        "student_steps": 4768,
+        "student_episodes": 4
+      },
+      "M4_fit_complete": true
+    },
+    {
+      "run_id": "seed93203_observation_curriculum",
+      "arm": "observation_curriculum",
+      "physics_seed": 93203,
+      "collection_receipts": [
+        {
+          "round": 0,
+          "kind": "bootstrap_teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/bootstrap/teachers/result.json",
+            "sha256": "sha256:174b1ae8a9818c06f79650b7f59bbc43591845e3fec013b69a04673f0b244b98"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/round_001/teachers/result.json",
+            "sha256": "sha256:6edd42c71be79b84faf3017259c26f1d0625149017bb377edfc36dff30f91f18"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 1,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/round_001/student/result.json",
+            "sha256": "sha256:055582dab2de12ca1823badb75496f190eed06d7716fdfa16f5b6b785628a9c6"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 2,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/round_002/teachers/result.json",
+            "sha256": "sha256:8da47510020e602e95076f11300036fd41af195048c12d5ff3245a8a7ea21fd9"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 2,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/round_002/student/result.json",
+            "sha256": "sha256:e1137a2d064c9cefaa78e0b43c828f828b0bf04a00cd4ba81b733c45f8b96d80"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 3,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/round_003/teachers/result.json",
+            "sha256": "sha256:75cc8f23a90204590ed075da339aaa63ab6b2c057e50deaac6860739a602918b"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 3,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/round_003/student/result.json",
+            "sha256": "sha256:79004c7d39d4bb0737796022d9fffb5d3c1469562a2668cec7283820938d7bb9"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        },
+        {
+          "round": 4,
+          "kind": "teacher",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/round_004/teachers/result.json",
+            "sha256": "sha256:29f71d5067891a76a11b0f552ab6e765667d4934251ba8e0cbb24bdd3bec1757"
+          },
+          "episodes": 7,
+          "recorded_steps": 8344
+        },
+        {
+          "round": 4,
+          "kind": "student",
+          "collection": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/round_004/student/result.json",
+            "sha256": "sha256:65d1453e414b4141e2af4626604f16b993362ae817892ddd2a18ea56f807d57f"
+          },
+          "episodes": 1,
+          "recorded_steps": 1192
+        }
+      ],
+      "costs": {
+        "bootstrap_teacher_steps": 8344,
+        "bootstrap_teacher_episodes": 7,
+        "teacher_steps": 33376,
+        "teacher_episodes": 28,
+        "student_steps": 4768,
+        "student_episodes": 4
+      },
+      "M4_fit_complete": true
+    }
+  ],
+  "cost_totals": {
+    "bootstrap_teacher_steps": 100128,
+    "bootstrap_teacher_episodes": 84,
+    "teacher_steps": 400512,
+    "teacher_episodes": 336,
+    "student_steps": 57216,
+    "student_episodes": 48
+  },
+  "outcome_counts": {
+    "teacher": {
+      "pass": 303,
+      "failure": 117
+    },
+    "student": {
+      "pass": 38,
+      "failure": 10
+    }
+  },
+  "unique_original_trajectory_paths": 468,
+  "M4_fit_receipts": 11,
+  "raw_reaudit_result_exists": false,
+  "new_physics_steps": 0,
+  "historical_startup_accounting": "Original zero measured startup steps and separate 1192-step reservation remain outside this completed prefix; reused bootstrap counted once through original plan slots"
+}

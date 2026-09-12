@@ -1,0 +1,11 @@
+{
+  "state": "complete",
+  "updates": 20,
+  "seed": 801,
+  "labels_sha256": "9ed54472c3b6bf77058b2431b3e45c42a40636ecda7fe52e1c34f74bc8152e52",
+  "checkpoint_sha256": "738f7b0120c647fd0fed4237c5b9cc66f904c9fcc06c318a208f1b7b8394f861",
+  "last_training_loss": 6.2367167472839355,
+  "physics_steps": 0,
+  "wall_seconds": 0.08254029000090668,
+  "claim": "Offline obstacle-scoring training only; no physical scene qualification"
+}

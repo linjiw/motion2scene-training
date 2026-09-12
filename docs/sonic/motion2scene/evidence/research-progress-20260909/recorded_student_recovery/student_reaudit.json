@@ -1,0 +1,32 @@
+{
+  "actual_source_admitted": true,
+  "captures": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_005/student/rollouts/learned_neutral/trajectories/000000.trajectory.pkl",
+      "physics_steps": 1192,
+      "role": "student",
+      "sha256": "sha256:012d5b989ef31740c932ad0932662d4da7040fe775b2344957e9ae361832762a"
+    }
+  ],
+  "collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_005/student/result.json",
+    "sha256": "sha256:02ffb225ab0464b524a756e50a263d347ccb07c10b4e0e92fd07511f7afdf05e"
+  },
+  "generating_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/models/model_004/policy.npz",
+    "sha256": "sha256:8757b4c6f5d0a18965060f27ab7ec877e43eb8da051f6bd469158fb9da0a4c89"
+  },
+  "new_physics_steps": 0,
+  "original_replay_auditor": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_build_timed_replay.py",
+    "sha256": "sha256:c29fd8a7e2fb1f7103d4c7a9393b8a99e3824db762db735c8b45cad149ee62d7"
+  },
+  "reconciliation": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/reconciliation.json",
+    "sha256": "sha256:ed25098d07157ea5d83750ba5ce62a3ca41b18794c7bfe4ca2fae889378c2733"
+  },
+  "students": 1,
+  "task_outcome": "unknown",
+  "task_outcome_admitted": false,
+  "unknown_physical_costs": []
+}

@@ -1,0 +1,22 @@
+worktree /home/linjiw/groot-wbc-sonic-sim-trackb
+HEAD 05b15a0970af13701a61ae7bfea615bd5f3578e4
+branch refs/heads/research/cg-wbc-v0-golden-path
+
+worktree /home/linjiw/kimodo/.codex/sonic-m3-contact
+HEAD 22be52cc1ad7e0be03086446a7f0f0b26f680083
+detached
+
+worktree /home/linjiw/kimodo/.codex/sonic-m3j
+HEAD 22be52cc1ad7e0be03086446a7f0f0b26f680083
+detached
+
+worktree /tmp/m2s-pages-20260906
+HEAD d5b6c8a1c30abc98bbc5b2c843513cc24cfa20b2
+detached
+prunable gitdir file points to non-existent location
+
+worktree /tmp/m2s-pages-progress
+HEAD 3d7e7cdde6249bc734fe8b55d6a72ab061905559
+branch refs/heads/research/motion2scene-progress-20260905
+prunable gitdir file points to non-existent location
+

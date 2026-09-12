@@ -1,0 +1,19 @@
+{
+  "geometry_placements": 1536,
+  "motion_placement_pairs": 10752,
+  "wall_seconds": 10.78025981499377,
+  "physics_steps": 0,
+  "training_cells": 1152,
+  "withheld_cells": 384,
+  "training_critical_counts": [
+    0,
+    21,
+    30,
+    20,
+    19,
+    21,
+    30
+  ],
+  "fields_sha256": "f017637b7b1021c329be05bec633095990d596e09032adeecf0c8b5f692c87bf",
+  "note": "Dense at 298 recorded frames, spatial capsule bounds; no temporal or dynamics certificate."
+}

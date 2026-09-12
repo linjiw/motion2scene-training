@@ -1,0 +1,1301 @@
+[
+  {
+    "added_solvable_encounters": 4,
+    "complete_consequential_decisions": 24,
+    "covering_schedules": [
+      "prior_splice_e015_r265",
+      "prior_splice_e050_r265"
+    ],
+    "encounters": [
+      {
+        "candidate_id": "primary_candidate_93201_0010",
+        "complete_measurement_branches": 7,
+        "index": 1,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_0016",
+        "complete_measurement_branches": 7,
+        "index": 2,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_0017",
+        "complete_measurement_branches": 7,
+        "index": 3,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_0059",
+        "complete_measurement_branches": 7,
+        "index": 4,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_1723",
+        "complete_measurement_branches": 7,
+        "index": 5,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_2355",
+        "complete_measurement_branches": 7,
+        "index": 6,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_2391",
+        "complete_measurement_branches": 7,
+        "index": 7,
+        "passing_schedules": [
+          "short_e070_r265",
+          "prior_splice_e015_r265",
+          "sustained_e070_r255",
+          "short_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e015_r255"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_1427",
+        "complete_measurement_branches": 7,
+        "index": 8,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      }
+    ],
+    "excluded_decision_indices": [
+      1,
+      11,
+      14
+    ],
+    "minimum_cover_size_of_solvable_encounters": 1,
+    "phase_l2": [
+      10.0,
+      10.0,
+      10.0
+    ],
+    "run_id": "seed93201_support_strict",
+    "solvable_encounters": 8,
+    "target_availability_note": "Passing branches do not certify causal target usability; target counts left NA pending teacher-dataset audit."
+  },
+  {
+    "added_solvable_encounters": 3,
+    "complete_consequential_decisions": 20,
+    "covering_schedules": [
+      "prior_splice_e015_r265",
+      "prior_splice_e050_r265"
+    ],
+    "encounters": [
+      {
+        "candidate_id": "primary_candidate_93201_0010",
+        "complete_measurement_branches": 7,
+        "index": 1,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_0016",
+        "complete_measurement_branches": 7,
+        "index": 2,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_0017",
+        "complete_measurement_branches": 7,
+        "index": 3,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_0059",
+        "complete_measurement_branches": 7,
+        "index": 4,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_1283",
+        "complete_measurement_branches": 7,
+        "index": 5,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265",
+          "neutral",
+          "short_e015_r265",
+          "short_e070_r265"
+        ],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_1280",
+        "complete_measurement_branches": 7,
+        "index": 6,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "sustained_e070_r255",
+          "prior_splice_e015_r265",
+          "neutral",
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "short_e070_r265"
+        ],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_1281",
+        "complete_measurement_branches": 7,
+        "index": 7,
+        "passing_schedules": [],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_1282",
+        "complete_measurement_branches": 7,
+        "index": 8,
+        "passing_schedules": [
+          "sustained_e070_r255",
+          "short_e015_r265",
+          "short_e070_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "neutral",
+          "prior_splice_e050_r265"
+        ],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      }
+    ],
+    "excluded_decision_indices": [
+      1,
+      11,
+      14,
+      20,
+      21,
+      22,
+      23
+    ],
+    "minimum_cover_size_of_solvable_encounters": 1,
+    "phase_l2": [
+      10.0,
+      10.0,
+      10.0
+    ],
+    "run_id": "seed93201_support_broad",
+    "solvable_encounters": 7,
+    "target_availability_note": "Passing branches do not certify causal target usability; target counts left NA pending teacher-dataset audit."
+  },
+  {
+    "added_solvable_encounters": 4,
+    "complete_consequential_decisions": 23,
+    "covering_schedules": [
+      "prior_splice_e015_r265",
+      "prior_splice_e050_r265"
+    ],
+    "encounters": [
+      {
+        "candidate_id": "primary_candidate_93201_0010",
+        "complete_measurement_branches": 7,
+        "index": 1,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_0016",
+        "complete_measurement_branches": 7,
+        "index": 2,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_0017",
+        "complete_measurement_branches": 7,
+        "index": 3,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_0059",
+        "complete_measurement_branches": 7,
+        "index": 4,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_1723",
+        "complete_measurement_branches": 7,
+        "index": 5,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_1280",
+        "complete_measurement_branches": 7,
+        "index": 6,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "sustained_e070_r255",
+          "prior_splice_e015_r265",
+          "neutral",
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "short_e070_r265"
+        ],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_2391",
+        "complete_measurement_branches": 7,
+        "index": 7,
+        "passing_schedules": [
+          "short_e070_r265",
+          "prior_splice_e015_r265",
+          "sustained_e070_r255",
+          "short_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e015_r255"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93201_1282",
+        "complete_measurement_branches": 7,
+        "index": 8,
+        "passing_schedules": [
+          "sustained_e070_r255",
+          "short_e015_r265",
+          "short_e070_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "neutral",
+          "prior_splice_e050_r265"
+        ],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      }
+    ],
+    "excluded_decision_indices": [
+      1,
+      11,
+      14,
+      20
+    ],
+    "minimum_cover_size_of_solvable_encounters": 1,
+    "phase_l2": [
+      10.0,
+      10.0,
+      10.0
+    ],
+    "run_id": "seed93201_support_mixture",
+    "solvable_encounters": 8,
+    "target_availability_note": "Passing branches do not certify causal target usability; target counts left NA pending teacher-dataset audit."
+  },
+  {
+    "added_solvable_encounters": 4,
+    "complete_consequential_decisions": 24,
+    "covering_schedules": [
+      "prior_splice_e015_r265",
+      "prior_splice_e050_r265"
+    ],
+    "encounters": [
+      {
+        "candidate_id": "primary_candidate_93202_0070",
+        "complete_measurement_branches": 7,
+        "index": 1,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "short_e015_r265",
+          "sustained_e070_r255",
+          "sustained_e015_r255"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_0081",
+        "complete_measurement_branches": 7,
+        "index": 2,
+        "passing_schedules": [
+          "short_e070_r265",
+          "sustained_e070_r255",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "short_e015_r265",
+          "prior_splice_e050_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_0132",
+        "complete_measurement_branches": 7,
+        "index": 3,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "sustained_e070_r255",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_0094",
+        "complete_measurement_branches": 7,
+        "index": 4,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_2078",
+        "complete_measurement_branches": 7,
+        "index": 5,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e015_r255",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_1825",
+        "complete_measurement_branches": 7,
+        "index": 6,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "short_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255",
+          "sustained_e015_r255"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_2141",
+        "complete_measurement_branches": 7,
+        "index": 7,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265",
+          "short_e070_r265",
+          "short_e015_r265",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_2387",
+        "complete_measurement_branches": 7,
+        "index": 8,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      }
+    ],
+    "excluded_decision_indices": [
+      1,
+      14,
+      26
+    ],
+    "minimum_cover_size_of_solvable_encounters": 1,
+    "phase_l2": [
+      10.0,
+      10.0,
+      10.0
+    ],
+    "run_id": "seed93202_support_strict",
+    "solvable_encounters": 8,
+    "target_availability_note": "Passing branches do not certify causal target usability; target counts left NA pending teacher-dataset audit."
+  },
+  {
+    "added_solvable_encounters": 0,
+    "complete_consequential_decisions": 13,
+    "covering_schedules": [
+      "prior_splice_e015_r265",
+      "prior_splice_e050_r265"
+    ],
+    "encounters": [
+      {
+        "candidate_id": "primary_candidate_93202_0070",
+        "complete_measurement_branches": 7,
+        "index": 1,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "short_e015_r265",
+          "sustained_e070_r255",
+          "sustained_e015_r255"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_0081",
+        "complete_measurement_branches": 7,
+        "index": 2,
+        "passing_schedules": [
+          "short_e070_r265",
+          "sustained_e070_r255",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "short_e015_r265",
+          "prior_splice_e050_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_0132",
+        "complete_measurement_branches": 7,
+        "index": 3,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "sustained_e070_r255",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_0094",
+        "complete_measurement_branches": 7,
+        "index": 4,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_1283",
+        "complete_measurement_branches": 1,
+        "index": 5,
+        "passing_schedules": [],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_1280",
+        "complete_measurement_branches": 5,
+        "index": 6,
+        "passing_schedules": [],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_1281",
+        "complete_measurement_branches": 6,
+        "index": 7,
+        "passing_schedules": [],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_1282",
+        "complete_measurement_branches": 0,
+        "index": 8,
+        "passing_schedules": [],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      }
+    ],
+    "excluded_decision_indices": [
+      1,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "minimum_cover_size_of_solvable_encounters": 1,
+    "phase_l2": [
+      10.0,
+      10.0,
+      10.0
+    ],
+    "run_id": "seed93202_support_broad",
+    "solvable_encounters": 4,
+    "target_availability_note": "Passing branches do not certify causal target usability; target counts left NA pending teacher-dataset audit."
+  },
+  {
+    "added_solvable_encounters": 2,
+    "complete_consequential_decisions": 19,
+    "covering_schedules": [
+      "prior_splice_e015_r265",
+      "prior_splice_e050_r265"
+    ],
+    "encounters": [
+      {
+        "candidate_id": "primary_candidate_93202_0070",
+        "complete_measurement_branches": 7,
+        "index": 1,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "short_e015_r265",
+          "sustained_e070_r255",
+          "sustained_e015_r255"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_0081",
+        "complete_measurement_branches": 7,
+        "index": 2,
+        "passing_schedules": [
+          "short_e070_r265",
+          "sustained_e070_r255",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "short_e015_r265",
+          "prior_splice_e050_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_0132",
+        "complete_measurement_branches": 7,
+        "index": 3,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "sustained_e070_r255",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_0094",
+        "complete_measurement_branches": 7,
+        "index": 4,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_2078",
+        "complete_measurement_branches": 7,
+        "index": 5,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e015_r255",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_1280",
+        "complete_measurement_branches": 5,
+        "index": 6,
+        "passing_schedules": [],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_2141",
+        "complete_measurement_branches": 7,
+        "index": 7,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265",
+          "short_e070_r265",
+          "short_e015_r265",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93202_1282",
+        "complete_measurement_branches": 0,
+        "index": 8,
+        "passing_schedules": [],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      }
+    ],
+    "excluded_decision_indices": [
+      1,
+      14,
+      18,
+      19,
+      20,
+      24,
+      25,
+      26
+    ],
+    "minimum_cover_size_of_solvable_encounters": 1,
+    "phase_l2": [
+      10.0,
+      10.0,
+      10.0
+    ],
+    "run_id": "seed93202_support_mixture",
+    "solvable_encounters": 6,
+    "target_availability_note": "Passing branches do not certify causal target usability; target counts left NA pending teacher-dataset audit."
+  },
+  {
+    "added_solvable_encounters": 4,
+    "complete_consequential_decisions": 25,
+    "covering_schedules": [
+      "prior_splice_e015_r265",
+      "prior_splice_e050_r265"
+    ],
+    "encounters": [
+      {
+        "candidate_id": "primary_candidate_93203_0135",
+        "complete_measurement_branches": 7,
+        "index": 1,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "short_e070_r265",
+          "prior_splice_e015_r265",
+          "short_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_0046",
+        "complete_measurement_branches": 7,
+        "index": 2,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "short_e015_r265",
+          "sustained_e070_r255",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_0008",
+        "complete_measurement_branches": 7,
+        "index": 3,
+        "passing_schedules": [
+          "sustained_e070_r255",
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265",
+          "sustained_e015_r255"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_0054",
+        "complete_measurement_branches": 7,
+        "index": 4,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_2337",
+        "complete_measurement_branches": 7,
+        "index": 5,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_2145",
+        "complete_measurement_branches": 7,
+        "index": 6,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "sustained_e070_r255",
+          "sustained_e015_r255",
+          "short_e015_r265",
+          "short_e070_r265",
+          "prior_splice_e050_r265"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_1386",
+        "complete_measurement_branches": 7,
+        "index": 7,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "short_e070_r265",
+          "sustained_e070_r255",
+          "prior_splice_e050_r265",
+          "sustained_e015_r255",
+          "short_e015_r265"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_1572",
+        "complete_measurement_branches": 7,
+        "index": 8,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "sustained_e070_r255",
+          "prior_splice_e015_r265",
+          "sustained_e015_r255"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      }
+    ],
+    "excluded_decision_indices": [
+      1,
+      14
+    ],
+    "minimum_cover_size_of_solvable_encounters": 1,
+    "phase_l2": [
+      10.0,
+      10.0,
+      10.0
+    ],
+    "run_id": "seed93203_support_strict",
+    "solvable_encounters": 8,
+    "target_availability_note": "Passing branches do not certify causal target usability; target counts left NA pending teacher-dataset audit."
+  },
+  {
+    "added_solvable_encounters": 2,
+    "complete_consequential_decisions": 19,
+    "covering_schedules": [],
+    "encounters": [
+      {
+        "candidate_id": "primary_candidate_93203_0135",
+        "complete_measurement_branches": 7,
+        "index": 1,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "short_e070_r265",
+          "prior_splice_e015_r265",
+          "short_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_0046",
+        "complete_measurement_branches": 7,
+        "index": 2,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "short_e015_r265",
+          "sustained_e070_r255",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_0008",
+        "complete_measurement_branches": 7,
+        "index": 3,
+        "passing_schedules": [
+          "sustained_e070_r255",
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265",
+          "sustained_e015_r255"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_0054",
+        "complete_measurement_branches": 7,
+        "index": 4,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_1282",
+        "complete_measurement_branches": 7,
+        "index": 5,
+        "passing_schedules": [],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_1280",
+        "complete_measurement_branches": 7,
+        "index": 6,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "short_e070_r265",
+          "sustained_e015_r255",
+          "prior_splice_e050_r265",
+          "short_e015_r265",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_1281",
+        "complete_measurement_branches": 7,
+        "index": 7,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_1287",
+        "complete_measurement_branches": 5,
+        "index": 8,
+        "passing_schedules": [],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      }
+    ],
+    "excluded_decision_indices": [
+      1,
+      14,
+      15,
+      16,
+      17,
+      24,
+      25,
+      26
+    ],
+    "minimum_cover_size_of_solvable_encounters": 2,
+    "phase_l2": [
+      10.0,
+      10.0,
+      10.0
+    ],
+    "run_id": "seed93203_support_broad",
+    "solvable_encounters": 6,
+    "target_availability_note": "Passing branches do not certify causal target usability; target counts left NA pending teacher-dataset audit."
+  },
+  {
+    "added_solvable_encounters": 3,
+    "complete_consequential_decisions": 22,
+    "covering_schedules": [
+      "prior_splice_e015_r265",
+      "prior_splice_e050_r265"
+    ],
+    "encounters": [
+      {
+        "candidate_id": "primary_candidate_93203_0135",
+        "complete_measurement_branches": 7,
+        "index": 1,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "short_e070_r265",
+          "prior_splice_e015_r265",
+          "short_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_0046",
+        "complete_measurement_branches": 7,
+        "index": 2,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "short_e015_r265",
+          "sustained_e070_r255",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_0008",
+        "complete_measurement_branches": 7,
+        "index": 3,
+        "passing_schedules": [
+          "sustained_e070_r255",
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265",
+          "sustained_e015_r255"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_0054",
+        "complete_measurement_branches": 7,
+        "index": 4,
+        "passing_schedules": [
+          "prior_splice_e050_r265",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": null,
+        "scored_branches": 7,
+        "shared_prefix": true,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_2337",
+        "complete_measurement_branches": 7,
+        "index": 5,
+        "passing_schedules": [
+          "sustained_e015_r255",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255",
+          "prior_splice_e015_r265"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_1280",
+        "complete_measurement_branches": 7,
+        "index": 6,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "short_e070_r265",
+          "sustained_e015_r255",
+          "prior_splice_e050_r265",
+          "short_e015_r265",
+          "sustained_e070_r255"
+        ],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_1386",
+        "complete_measurement_branches": 7,
+        "index": 7,
+        "passing_schedules": [
+          "prior_splice_e015_r265",
+          "short_e070_r265",
+          "sustained_e070_r255",
+          "prior_splice_e050_r265",
+          "sustained_e015_r255",
+          "short_e015_r265"
+        ],
+        "proposal_channel": "support_strict",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      },
+      {
+        "candidate_id": "primary_candidate_93203_1282",
+        "complete_measurement_branches": 7,
+        "index": 8,
+        "passing_schedules": [],
+        "proposal_channel": "support_broad",
+        "scored_branches": 7,
+        "shared_prefix": false,
+        "usable_continuation_target_count": null
+      }
+    ],
+    "excluded_decision_indices": [
+      1,
+      14,
+      24,
+      25,
+      26
+    ],
+    "minimum_cover_size_of_solvable_encounters": 1,
+    "phase_l2": [
+      10.0,
+      10.0,
+      10.0
+    ],
+    "run_id": "seed93203_support_mixture",
+    "solvable_encounters": 7,
+    "target_availability_note": "Passing branches do not certify causal target usability; target counts left NA pending teacher-dataset audit."
+  }
+]

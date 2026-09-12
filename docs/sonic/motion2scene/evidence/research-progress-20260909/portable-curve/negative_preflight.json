@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python",
+    "scripts/research/motion2scene_export_acquisition_curve_dataset.py",
+    "--audit",
+    "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M2-20260909-v1/result.json",
+    "--adoption",
+    "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json",
+    "--check"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_export_acquisition_curve_dataset.py\", line 394, in <module>\n    result = preflight(args.audit, args.adoption)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_export_acquisition_curve_dataset.py\", line 79, in preflight\n    budget = validate_audit(audit, plan)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_export_acquisition_curve_dataset.py\", line 55, in validate_audit\n    raise ValueError(\"a complete independently audited five-arm M8/M16/M32 prefix is required\")\nValueError: a complete independently audited five-arm M8/M16/M32 prefix is required\n",
+  "scope": "Actual completed M2 cannot substitute for the required five-arm checkpoint; check mode creates no export"
+}

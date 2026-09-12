@@ -1,0 +1,11 @@
+{
+  "log": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M4-watch-20260909-v1/analysis.log",
+    "sha256": "sha256:a3ed2ee61626ddf2548085399933e9088b5363dce840e0399eb7fdd72709e5e9"
+  },
+  "new_physics_steps": 0,
+  "result": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M4-20260909-v1/result.json",
+    "sha256": "sha256:e0340577761b4a26ac74204bcabbb8e9344740aa756b09157fe44abbc3bbad50"
+  }
+}

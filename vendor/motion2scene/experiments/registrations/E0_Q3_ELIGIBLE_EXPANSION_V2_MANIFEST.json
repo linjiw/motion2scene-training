@@ -1,0 +1,158 @@
+{
+  "schema_version": "motion2scene_physics_manifest_v1",
+  "experiment": "M2S-E0-Q3-eligible-expansion-v2-memory-guard",
+  "purpose": "Measure the three V1 expansion cells left without scientific outcomes, using a raised shared-machine launch guard and otherwise unchanged design.",
+  "authorization": {
+    "status": "self_approved",
+    "authority": "docs/hallucination/GOVERNANCE.md",
+    "claim5_isolation_verified": true,
+    "authorized_at": "2026-09-04T14:03:26-04:00",
+    "note": "Fresh external Motion2Scene lineage. V2 excludes the valid V1 walk-right result and retries only one infrastructure-only cell plus two never-started cells."
+  },
+  "execution_policy": {
+    "not_authorized": false,
+    "timing_override": "Scientific design is unchanged. V2 raises only the point-in-time free-VRAM launch guard from 6000 to 7500 MiB after V1 cuBLAS allocation failure at a 6825 MiB launch; no unmeasured motion outcome has been observed.",
+    "runtime": {
+      "free_gpu_mib_required": 7500,
+      "hang_timeout_seconds": 1800,
+      "serial_execution": true,
+      "render_ego": false,
+      "success_requires": [
+        "SONIC_EVAL_SUCCESS marker",
+        "success_manifest.json",
+        "exactly one trajectory pickle",
+        "recorded fps=50"
+      ]
+    },
+    "cost_ceiling": {
+      "rollouts": 3,
+      "seconds_per_rollout_contended": 375,
+      "gpu_hours_contended": 0.3125,
+      "daily_envelope_gpu_hours": 8.0
+    },
+    "capacity_evidence": {
+      "measured_rollout_memory_mib": 4874,
+      "required_launch_memory_mib": 7500,
+      "rationale": "The workload does not require 9000 MiB, but the shared-machine guard is raised after a transient competing allocation caused a cuBLAS startup failure at 6825 MiB free.",
+      "gpu_budget": {
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/gpu_budget.md",
+        "sha256": "sha256:6c58bba3b6e48ee198ae11cfc3631be3fc81cb30c7c05d7d70b3e4e80ddd273d"
+      },
+      "capacity_utility": {
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/gpu_capacity.py",
+        "sha256": "sha256:52ad8940a44a94674231989c3a73b59fe4a66e056434b8ebe864be17b3c344b1"
+      }
+    }
+  },
+  "implementation": {
+    "source_repository": "/home/linjiw/groot-wbc-sonic-sim-trackb",
+    "source_commit": "3c5b1f2aa2127952b1032a4cbbfe1169952c0e7f",
+    "rollout_driver": {
+      "path": "scripts/research/run_kimodo_sonic_rollout.sh",
+      "sha256": "sha256:0a48eed8d00336ec17a29be761ab6ebfbe0c9f444da71e1cd72fb9159c6d1eb2"
+    },
+    "manifest_driver": {
+      "path": "scripts/research/hallucination/run_approved_manifest.py",
+      "sha256": "sha256:ab67817b3ee00730a360c9c5e23dee8c59fafef9163e1c562be5b5c3e5e74383"
+    },
+    "checkpoint": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/sonic_release/last.pt",
+      "sha256": "sha256:e6bdab3f64a39336b3d41877d4f497d05f58af275f288ec0e6746c283ded8909"
+    },
+    "python": "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python"
+  },
+  "supersedes_attempt": {
+    "experiment": "M2S-E0-Q3-eligible-expansion-v1",
+    "run_record": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_expansion_v1/run_record.json",
+    "run_record_sha256": "sha256:53bd182d058bd7a7e027e7876cf771cc1fdb8c716076c7a1d135fa60382bf1b1",
+    "result_record": "/home/linjiw/motion2scene/experiments/registrations/E0_Q3_ELIGIBLE_EXPANSION_V1_RESULT.md",
+    "result_record_sha256": "sha256:103db967014f23fe6ebcad6d5c91eee95b657f5a8c27ba8fc1a243cd048be2d7",
+    "valid_prior_scientific_cell": "m2s_q3x_walk_right_002",
+    "reason": "V1 stopped on an infrastructure-only cuBLAS allocation failure; three motions have no scientific outcome."
+  },
+  "eligibility": {
+    "reference_gate": {
+      "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/reference_gate.json",
+      "sha256": "sha256:08a5f04eba17485aad17eb950183c0eb8a8c9b051a2d56e9418e1b0aa029e0b4"
+    },
+    "original_expansion_indices": [2, 3, 15, 17],
+    "valid_v1_indices": [2],
+    "selected_indices": [3, 15, 17]
+  },
+  "registered_predictions": {
+    "path": "/home/linjiw/motion2scene/experiments/registrations/E0_Q3_ELIGIBLE_EXPANSION_V2_MEMORY_AMENDMENT.md",
+    "sha256": "sha256:65ebcb61bd3f93cb1f4025c7dcf6737e2d129994709af4ba8add547d2d44a44b"
+  },
+  "stop_conditions": [
+    "refuse launch if any pinned motion, conversion provenance, controller, driver, prediction, or eligibility hash differs",
+    "yield without spending if free GPU memory is below 7500 MiB",
+    "run one cell at a time and stop on the first infrastructure failure",
+    "retain completed scientific rejections and do not retry them",
+    "do not make another infrastructure retry after a V2 allocation failure",
+    "stop before exceeding the 0.3125 contended GPU-hour ceiling",
+    "require zero external collision force before treating screen_empty as an obstacle-absent proxy",
+    "do not promote any result beyond Q3 single-seed feasibility"
+  ],
+  "cells": [
+    {
+      "cell_id": "m2s_q3xv2_duck_straight_003",
+      "body_mode": "duck_under",
+      "turn": "straight",
+      "runtime_seed": 52003,
+      "hydra_overrides": ["++seed=52003"],
+      "task_prompt": "A person walks at a steady pace in a straight line and ducks down low to pass under an obstacle",
+      "scene": {"scene_id": "screen_empty", "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda", "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"},
+      "motion": {
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_expansion_v1/motions/003_a_person_walks_at_a_steady_pace_in_a_straight_li_s0.pkl",
+        "sha256": "sha256:c400f54669b9af1373397382312a553992827423d6c3e55f7e4a870dc9809227",
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_expansion_v1/motions/003_a_person_walks_at_a_steady_pace_in_a_straight_li_s0.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:5f4eb46b7c4bbf43112cbf65c292698ccd87066c0de2141d6b2bc9cf6b234f22",
+        "scene_start_xyz": [0, 0, 0]
+      },
+      "scene_start_xyz_expected": [0, 0, 0],
+      "expectation": {"status": "preserved_aggregate_prediction_only"},
+      "verdict_policy": "reference_trackability",
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_expansion_v2/rollouts/m2s_q3xv2_duck_straight_003"
+    },
+    {
+      "cell_id": "m2s_q3xv2_carry_straight_015",
+      "body_mode": "carry_walk",
+      "turn": "straight",
+      "runtime_seed": 52015,
+      "hydra_overrides": ["++seed=52015"],
+      "task_prompt": "A person walks at a steady pace in a straight line while carrying something in both hands",
+      "scene": {"scene_id": "screen_empty", "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda", "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"},
+      "motion": {
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_expansion_v1/motions/015_a_person_walks_at_a_steady_pace_in_a_straight_li_s0.pkl",
+        "sha256": "sha256:42ea836f2d871184ae387c09738ab6f3bf26f51780e71453d6a9fee8a9d22c23",
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_expansion_v1/motions/015_a_person_walks_at_a_steady_pace_in_a_straight_li_s0.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:be65bca0141f12bf407f1c83ae62d709d5626e091d36e4a27edd52b729668648",
+        "scene_start_xyz": [0, 0, 0]
+      },
+      "scene_start_xyz_expected": [0, 0, 0],
+      "expectation": {"status": "preserved_aggregate_prediction_only"},
+      "verdict_policy": "reference_trackability",
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_expansion_v2/rollouts/m2s_q3xv2_carry_straight_015"
+    },
+    {
+      "cell_id": "m2s_q3xv2_carry_right_017",
+      "body_mode": "carry_walk",
+      "turn": "gentle_right",
+      "runtime_seed": 52017,
+      "hydra_overrides": ["++seed=52017"],
+      "task_prompt": "A person walks at a steady pace curving gently to the right while carrying something in both hands",
+      "scene": {"scene_id": "screen_empty", "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda", "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"},
+      "motion": {
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_expansion_v1/motions/017_a_person_walks_at_a_steady_pace_curving_gently_t_s0.pkl",
+        "sha256": "sha256:7ae35634509a04c8089efbc7748cee5a44c91ca11a10c00d8ac9f8407f47731c",
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_expansion_v1/motions/017_a_person_walks_at_a_steady_pace_curving_gently_t_s0.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:e40dbb2c5303f9cc7c8da9288e680c0162e45a7f0d4596e8530287f79a6ce1b8",
+        "scene_start_xyz": [0, 0, 0]
+      },
+      "scene_start_xyz_expected": [0, 0, 0],
+      "expectation": {"status": "preserved_aggregate_prediction_only"},
+      "verdict_policy": "reference_trackability",
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_expansion_v2/rollouts/m2s_q3xv2_carry_right_017"
+    }
+  ]
+}

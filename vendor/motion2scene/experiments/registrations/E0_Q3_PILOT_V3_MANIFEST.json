@@ -1,0 +1,207 @@
+{
+  "schema_version": "motion2scene_physics_manifest_v1",
+  "experiment": "M2S-E0-Q3-pilot-v3-memory-gate",
+  "purpose": "Obstacle-absent SONIC qualification of six references that passed the composed CPU eligibility gate.",
+  "authorization": {
+    "status": "self_approved",
+    "authority": "docs/hallucination/GOVERNANCE.md",
+    "claim5_isolation_verified": true,
+    "authorized_at": "2026-09-04T13:13:08-04:00",
+    "note": "Fresh external lineage; no historical corpus, frozen claim-5 input, or user-owned prediction-register artifact is modified. The user explicitly authorized proceeding below the superseded 9000 MiB pilot gate after reviewing whether it was necessary."
+  },
+  "execution_policy": {
+    "not_authorized": false,
+    "timing_override": "The scientific design and predictions are unchanged from V2. Before any cell was spent, the operational launch gate was amended from 9000 MiB to the repository's measured 6000 MiB serial-rollout threshold.",
+    "runtime": {
+      "free_gpu_mib_required": 6000,
+      "hang_timeout_seconds": 1800,
+      "serial_execution": true,
+      "success_requires": [
+        "SONIC_EVAL_SUCCESS marker",
+        "success_manifest.json",
+        "exactly one trajectory pickle",
+        "recorded fps=50"
+      ]
+    },
+    "cost_ceiling": {
+      "rollouts": 6,
+      "seconds_per_rollout_contended": 375,
+      "gpu_hours_contended": 0.625,
+      "daily_envelope_gpu_hours": 8.0
+    },
+    "capacity_evidence": {
+      "measured_rollout_memory_mib": 4874,
+      "required_launch_memory_mib": 6000,
+      "rationale": "One SONIC rollout used approximately 4.76 GiB. The 6000 MiB floor retains headroom for PhysX's initial allocation, scene, robot, and renderer. Only one rollout may be resident at a time.",
+      "gpu_budget": {
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/gpu_budget.md",
+        "sha256": "sha256:6c58bba3b6e48ee198ae11cfc3631be3fc81cb30c7c05d7d70b3e4e80ddd273d"
+      },
+      "capacity_utility": {
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/gpu_capacity.py",
+        "sha256": "sha256:52ad8940a44a94674231989c3a73b59fe4a66e056434b8ebe864be17b3c344b1"
+      }
+    }
+  },
+  "implementation": {
+    "source_repository": "/home/linjiw/groot-wbc-sonic-sim-trackb",
+    "source_commit": "5e941230715da692e6f303d594e601a451844e7b",
+    "rollout_driver": {
+      "path": "scripts/research/run_kimodo_sonic_rollout.sh",
+      "sha256": "sha256:7c3ca9bd06d13abc90702beed7122c6510de9906be8d6c1cfe24336f6cb9e7ca"
+    },
+    "manifest_driver": {
+      "path": "scripts/research/hallucination/run_approved_manifest.py",
+      "sha256": "sha256:aa918f4dd979fd4d0296af9eebbe55bd609d4da6912ea5f296aa8c94c14ced77"
+    },
+    "checkpoint": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/sonic_release/last.pt",
+      "sha256": "sha256:e6bdab3f64a39336b3d41877d4f497d05f58af275f288ec0e6746c283ded8909"
+    },
+    "python": "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python"
+  },
+  "eligibility": {
+    "reference_gate": {
+      "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/reference_gate.json",
+      "sha256": "sha256:08a5f04eba17485aad17eb950183c0eb8a8c9b051a2d56e9418e1b0aa029e0b4"
+    },
+    "worth_a_rollout": 10,
+    "attempted": 18,
+    "selected_indices": [0, 1, 5, 6, 11, 16]
+  },
+  "registered_predictions": {
+    "path": "/home/linjiw/motion2scene/experiments/registrations/E0_Q3_PILOT_V2_PREDICTIONS.md",
+    "sha256": "sha256:0bbc6941bb6ed0de608cc09c12fac564c200613f0e0b93533a533dd014f7f161"
+  },
+  "stop_conditions": [
+    "refuse launch if any pinned motion, conversion-provenance, controller, driver, prediction, or eligibility hash differs",
+    "yield without spending if free GPU memory is below 6000 MiB",
+    "stop the batch on the first CUDA, PhysX allocation, or renderer-memory infrastructure failure; do not lower the gate again in response",
+    "run one cell at a time and stop on the first infrastructure failure",
+    "retain completed scientific rejections and do not retry them as infrastructure",
+    "stop before exceeding the 0.625 contended GPU-hour manifest ceiling",
+    "do not promote any result beyond Q3 single-seed feasibility"
+  ],
+  "cells": [
+    {
+      "cell_id": "m2s_q3v3_walk_straight_000",
+      "body_mode": "walk",
+      "turn": "straight",
+      "runtime_seed": 52000,
+      "hydra_overrides": ["++seed=52000"],
+      "task_prompt": "A person walks at a steady pace in a straight line",
+      "scene": {"scene_id": "plane", "path": null, "sha256": null},
+      "motion": {
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v2/motions/000_a_person_walks_at_a_steady_pace_in_a_straight_li_s0.pkl",
+        "sha256": "sha256:8295da8f08ba57993755142ed98c626d02ec992a66efa27078274d9a56250042",
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v2/motions/000_a_person_walks_at_a_steady_pace_in_a_straight_li_s0.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:c587c79ecff289bd8011758d3aec569cc0c265c01decbe9f36a09b5cfec5c1bf",
+        "scene_start_xyz": [0.0, 0.0, 0.0]
+      },
+      "scene_start_xyz_expected": [0.0, 0.0, 0.0],
+      "expectation": {"outcome": "accepted", "status": "registered_single_seed_prediction"},
+      "verdict_policy": "reference_trackability",
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v3/rollouts/m2s_q3v3_walk_straight_000"
+    },
+    {
+      "cell_id": "m2s_q3v3_walk_left_001",
+      "body_mode": "walk",
+      "turn": "gentle_left",
+      "runtime_seed": 52001,
+      "hydra_overrides": ["++seed=52001"],
+      "task_prompt": "A person walks at a steady pace curving gently to the left",
+      "scene": {"scene_id": "plane", "path": null, "sha256": null},
+      "motion": {
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v2/motions/001_a_person_walks_at_a_steady_pace_curving_gently_t_s0.pkl",
+        "sha256": "sha256:822379b27e854df0c5e36b42d5085e0cdfbfbe0c1321104f7c432c133d959c12",
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v2/motions/001_a_person_walks_at_a_steady_pace_curving_gently_t_s0.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:4c03d66f91c3ca0a09c3c7a1b60b8979ee46efa6c6ecaf26b1d7a3c8a51a7576",
+        "scene_start_xyz": [0.0, 0.0, 0.0]
+      },
+      "scene_start_xyz_expected": [0.0, 0.0, 0.0],
+      "expectation": {"outcome": "accepted", "status": "registered_single_seed_prediction"},
+      "verdict_policy": "reference_trackability",
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v3/rollouts/m2s_q3v3_walk_left_001"
+    },
+    {
+      "cell_id": "m2s_q3v3_duck_right_005",
+      "body_mode": "duck_under",
+      "turn": "gentle_right",
+      "runtime_seed": 52005,
+      "hydra_overrides": ["++seed=52005"],
+      "task_prompt": "A person walks at a steady pace curving gently to the right and ducks down low to pass under an obstacle",
+      "scene": {"scene_id": "plane", "path": null, "sha256": null},
+      "motion": {
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v2/motions/005_a_person_walks_at_a_steady_pace_curving_gently_t_s0.pkl",
+        "sha256": "sha256:92f770256b371b3728d371fdfa9909f50acc0270e0099e2633f2e3853b962e9b",
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v2/motions/005_a_person_walks_at_a_steady_pace_curving_gently_t_s0.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:99d62b87596b5f6dc9be06797fdc396b68a3621d9d064643acfd88c28cd36358",
+        "scene_start_xyz": [0.0, 0.0, 0.0]
+      },
+      "scene_start_xyz_expected": [0.0, 0.0, 0.0],
+      "expectation": {"outcome": "accepted", "status": "registered_single_seed_prediction"},
+      "verdict_policy": "reference_trackability",
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v3/rollouts/m2s_q3v3_duck_right_005"
+    },
+    {
+      "cell_id": "m2s_q3v3_arm_tuck_straight_006",
+      "body_mode": "arm_tuck",
+      "turn": "straight",
+      "runtime_seed": 52006,
+      "hydra_overrides": ["++seed=52006"],
+      "task_prompt": "A person walks at a steady pace in a straight line holding both arms tight against the body to fit through a narrow gap",
+      "scene": {"scene_id": "plane", "path": null, "sha256": null},
+      "motion": {
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v2/motions/006_a_person_walks_at_a_steady_pace_in_a_straight_li_s0.pkl",
+        "sha256": "sha256:09d621854f1a1b65f676a20369a5c81d1ef3925cfecc9f44628eaf202040b325",
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v2/motions/006_a_person_walks_at_a_steady_pace_in_a_straight_li_s0.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:0b71730a41ff60a29fa6708fe089eebad8c1a16bb103c823c332430429991f8a",
+        "scene_start_xyz": [0.0, 0.0, 0.0]
+      },
+      "scene_start_xyz_expected": [0.0, 0.0, 0.0],
+      "expectation": {"outcome": "accepted", "status": "registered_single_seed_prediction"},
+      "verdict_policy": "reference_trackability",
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v3/rollouts/m2s_q3v3_arm_tuck_straight_006"
+    },
+    {
+      "cell_id": "m2s_q3v3_shoulder_right_011",
+      "body_mode": "shoulder_turn",
+      "turn": "gentle_right",
+      "runtime_seed": 52011,
+      "hydra_overrides": ["++seed=52011"],
+      "task_prompt": "A person walks at a steady pace curving gently to the right, turning one shoulder forward and twisting the torso sideways to slip through a narrow opening",
+      "scene": {"scene_id": "plane", "path": null, "sha256": null},
+      "motion": {
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v2/motions/011_a_person_walks_at_a_steady_pace_curving_gently_t_s0.pkl",
+        "sha256": "sha256:93aa2b5d65e08736a9cc77ddc5826d2a3dbc9d8af7d7729f952710644df34e45",
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v2/motions/011_a_person_walks_at_a_steady_pace_curving_gently_t_s0.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:b096f5e4077d754291c8a8fc5305b7402953cd290e40951fda66095a67b98b03",
+        "scene_start_xyz": [0.0, 0.0, 0.0]
+      },
+      "scene_start_xyz_expected": [0.0, 0.0, 0.0],
+      "expectation": {"outcome": "accepted", "status": "registered_single_seed_prediction"},
+      "verdict_policy": "reference_trackability",
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v3/rollouts/m2s_q3v3_shoulder_right_011"
+    },
+    {
+      "cell_id": "m2s_q3v3_carry_left_016",
+      "body_mode": "carry_walk",
+      "turn": "gentle_left",
+      "runtime_seed": 52016,
+      "hydra_overrides": ["++seed=52016"],
+      "task_prompt": "A person walks at a steady pace curving gently to the left while carrying something in both hands",
+      "scene": {"scene_id": "plane", "path": null, "sha256": null},
+      "motion": {
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v2/motions/016_a_person_walks_at_a_steady_pace_curving_gently_t_s0.pkl",
+        "sha256": "sha256:f1be425d0ac7f5eeb6a6c85a803d415e5fad77ede5f4f4348d265568e518714a",
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v2/motions/016_a_person_walks_at_a_steady_pace_curving_gently_t_s0.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:6859e7be31b72d481e03aaf9b85ff04f356598726764b9297ca43049539705d2",
+        "scene_start_xyz": [0.0, 0.0, 0.0]
+      },
+      "scene_start_xyz_expected": [0.0, 0.0, 0.0],
+      "expectation": {"outcome": "accepted", "status": "registered_single_seed_prediction"},
+      "verdict_policy": "reference_trackability",
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v3/rollouts/m2s_q3v3_carry_left_016"
+    }
+  ]
+}

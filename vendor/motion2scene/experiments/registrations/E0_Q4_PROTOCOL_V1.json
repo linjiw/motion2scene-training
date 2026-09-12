@@ -1,0 +1,41 @@
+{
+  "schema_version": "motion2scene_q4_protocol_v1",
+  "status": "registered_waiting_for_eligible_candidates",
+  "registered_candidate_count": 0,
+  "candidate_admission": {
+    "q3_tracker_survival": "required",
+    "reference_semantic_status": "route_aligned_S3_required",
+    "achieved_semantic_status": "controller_retained_S4_required",
+    "reference_route_valid": true,
+    "achieved_route_valid": true,
+    "candidate_hash_binding": "required_before_execution"
+  },
+  "physics_seeds": [
+    7401,
+    7402,
+    7403
+  ],
+  "independent_unit": "base_carrier_or_ladder_group",
+  "repeated_measure": "physics_seed",
+  "q4_robust": "at_least_2_of_3_tracker_survive_and_retain_semantics",
+  "q4_strict": "3_of_3_tracker_survive_and_retain_semantics",
+  "main_bank_admission": "q4_strict_only",
+  "stress_test_bank_admission": "q4_robust_but_not_strict",
+  "record_per_seed": [
+    "cutoff_or_fall",
+    "route_retention",
+    "semantic_retention",
+    "whole_body_envelope_loss",
+    "joint_tracking_error",
+    "floor_penetration",
+    "support_and_contact_statistics"
+  ],
+  "resource_contract": {
+    "camera": false,
+    "execution": "serial",
+    "minimum_free_vram_mib": 7500,
+    "stop_on_contention": true,
+    "reason": "completed trajectory-only runs fit below 4.9 GiB; 7.5 GiB guards startup contention without claiming a reservation"
+  },
+  "claim_boundary": "This protocol freezes Q4 classifications and seeds. It contains no candidates, rollouts, or robustness evidence."
+}

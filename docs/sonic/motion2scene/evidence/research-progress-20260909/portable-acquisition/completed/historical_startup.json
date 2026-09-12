@@ -1,0 +1,135 @@
+{
+  "bootstrap_already_in_M2_measured_total": true,
+  "charged_to_run_id": "seed93203_analytic_contrast",
+  "failed_initial_fit_preserved": true,
+  "new_physics_steps": 0,
+  "original_startup_task_outcome": "unknown",
+  "recorded_startup_physics_steps": 0,
+  "retained_conservative_reservation_steps": 1192,
+  "reused_bootstrap_episodes": 7,
+  "reused_bootstrap_physics_steps": 8344,
+  "reused_bootstrap_trajectories": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/bootstrap/teachers/rollouts/forced_neutral/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:f2e13cf2a857bea9b9a83bf69b5c3023eff4ef635ad3634f8451dffc41f84599"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/bootstrap/teachers/rollouts/forced_short_e015_r265/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:22440917c26d6f1593189063172acfd7a2b5c4173efac8719a09af5d4fd6bc5f"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/bootstrap/teachers/rollouts/forced_sustained_e015_r255/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:894183d368c2baf3df7427c494c173df8973c7fe1e700d5166514f16f7900afa"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/bootstrap/teachers/rollouts/forced_prior_splice_e015_r265/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:cde34cc21a841afb8fcb7f6802ea48ced80329fe4f780c64307d46f19910b163"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/bootstrap/teachers/rollouts/forced_prior_splice_e050_r265/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:0cde30154dd1235c551074dcaa050996027758ef5151a7b0592feefc5cb9fdec"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/bootstrap/teachers/rollouts/forced_short_e070_r265/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:22440917c26d6f1593189063172acfd7a2b5c4173efac8719a09af5d4fd6bc5f"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/bootstrap/teachers/rollouts/forced_sustained_e070_r255/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:63935f310745df2b8fadb72da3c02320bfdc261abcfd22f936d6e7e25d2e0ad6"
+    }
+  ],
+  "schema": "motion2scene_portable_historical_startup_v1",
+  "sources": {
+    "adoption": {
+      "file": "adoption.json",
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json",
+        "sha256": "sha256:f5e69567fc3984b0a6afb0cc896e63d9281a5fba39d629710c1c5780e1ed9860"
+      }
+    },
+    "bootstrap_collection": {
+      "file": "bootstrap_collection.json",
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/bootstrap/teachers/result.json",
+        "sha256": "sha256:8ed39339b68575f26cbb9b5726631a7690a1c2a7b0ffc3bdfdc3abdb9f2f283f"
+      }
+    },
+    "bootstrap_fit_failure": {
+      "file": "bootstrap_fit_failure.json",
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-tied-bootstrap-failure-v1/result.json",
+        "sha256": "sha256:b219b9ad6d6213df3122eff2f9eefb5e7571fa17c3be339c9822b6d596a3941c"
+      }
+    },
+    "bootstrap_manifest": {
+      "file": "bootstrap_manifest.json",
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/bootstrap/teachers/manifest.json",
+        "sha256": "sha256:aff4a1aa102d4825200965edfd1e4c4f3b46b924cfd882f600978f82decb6da7"
+      }
+    },
+    "bootstrap_reaudit": {
+      "file": "bootstrap_reaudit.json",
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-bootstrap-reuse-staged-v1/physical_reaudit_final.json",
+        "sha256": "sha256:d598af71595dd971a146093169d99dfaa1b9d4d8a087bc2fe9d2c6d61f3ddab5"
+      }
+    },
+    "bootstrap_reuse_declaration": {
+      "file": "bootstrap_reuse_declaration.json",
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-bootstrap-reuse-proposed-v1/declaration.json",
+        "sha256": "sha256:f17912aac225587d86885f68f06f652cf26fe5277f534cb7fb045d40cafc2ecc"
+      }
+    },
+    "failed_fit": {
+      "file": "failed_fit.json",
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/models/model_000/result.json",
+        "sha256": "sha256:fb99652b5dc6546b533ae86b29cca545756723a6bc077210c57c5edba326f622"
+      }
+    },
+    "failed_fit_registration": {
+      "file": "failed_fit_registration.json",
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/models/model_000/registration.json",
+        "sha256": "sha256:782df0babc42649a75a3c9bf4ca2755cba7f9b1459ec38b4537f6414b7146412"
+      }
+    },
+    "original_startup_assessment": {
+      "file": "original_startup_assessment.json",
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-proposed-v3/seed93203_analytic_contrast/controller/attempts/round000_teacher_forced_neutral/assessment.json",
+        "sha256": "sha256:49cf43c0badee599688bb90cba8c30f9e8b3a125f419e4f966753fed3ab3e5bf"
+      }
+    },
+    "original_startup_attempt": {
+      "file": "original_startup_attempt.json",
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-proposed-v3/seed93203_analytic_contrast/bootstrap/teachers/rollouts/forced_neutral/attempt.json",
+        "sha256": "sha256:d9f77b160ca8bd68f76abf1d6ea0ff39e9281acc135a5ba0395e8391d63c0f92"
+      }
+    },
+    "original_startup_launcher": {
+      "file": "original_startup_launcher.sh",
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-proposed-v3/seed93203_analytic_contrast/bootstrap/teachers/source_snapshot/scripts/research/run_kimodo_sonic_rollout.sh",
+        "sha256": "sha256:0a48eed8d00336ec17a29be761ab6ebfbe0c9f444da71e1cd72fb9159c6d1eb2"
+      }
+    },
+    "original_startup_log": {
+      "file": "original_startup_log.log",
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-proposed-v3/logs/000_attempt000.log",
+        "sha256": "sha256:6e70bf198730f4146bc16e3df7236219356afa43da34eab1de5da0291448a104"
+      }
+    },
+    "startup_resolution": {
+      "file": "startup_resolution.json",
+      "source": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-bootstrap-resolution-failure-v1/result.json",
+        "sha256": "sha256:61eaac3a31112a570c5ac3ee91a8ee7126005250c21d7e6301d30584012043fb"
+      }
+    }
+  }
+}

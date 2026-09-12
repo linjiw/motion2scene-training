@@ -1,0 +1,136 @@
+{
+  "checks": {
+    "all_outcomes_rescored": true,
+    "eight_pages_or_fewer": true,
+    "fonts_embedded": true,
+    "letter_paper": true,
+    "matched_commands_complete": true,
+    "matching_conditions": true,
+    "no_author_metadata": true,
+    "no_known_identifying_markers": true,
+    "no_original_pin_mismatch": true,
+    "no_overfull_tex_boxes": true,
+    "no_pdf_url_annotations": true,
+    "official_template_class_unchanged": true,
+    "video_duration": true,
+    "video_fps": true,
+    "video_height": true,
+    "video_progressive_all_frames": true,
+    "video_size": true
+  },
+  "created_at_utc": "2026-09-08T05:26:59.593892+00:00",
+  "identifying_markers": [],
+  "pdf": {
+    "bytes": 149719,
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/paper.pdf",
+    "sha256": "sha256:ce7d9806a55a529f6948cea0ef7e9ca42f155c922cefcdb3f757105d6e7d995a"
+  },
+  "pdf_fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nIHAIZV+LMRoman17-Regular-Identity-H  CID Type 0C       Identity-H       yes yes yes      4  0\nBZIVMZ+LMRoman12-Regular-Identity-H  CID Type 0C       Identity-H       yes yes yes      6  0\nIXFAWU+LMRoman9-Regular-Identity-H   CID Type 0C       Identity-H       yes yes yes      8  0\nTQTHRL+LMRoman10-Regular-Identity-H  CID Type 0C       Identity-H       yes yes yes     10  0\nAKHCZK+CMMI10                        Type 1C           Builtin          yes yes yes     12  0\nYEUUOC+LMRoman8-Regular-Identity-H   CID Type 0C       Identity-H       yes yes yes     30  0\nVDVGTR+CMR10                         Type 1C           Builtin          yes yes yes     32  0\nCAFSZL+CMMI7                         Type 1C           Builtin          yes yes yes     33  0\nDDIEWW+CMSY10                        Type 1C           Builtin          yes yes yes     34  0\nFKPJSN+CMR7                          Type 1C           Builtin          yes yes yes     35  0\nESKKDN+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     18  0\nPVTTLK+CMEX10                        Type 1C           Builtin          yes yes yes     39  0\nJAGKKY+CMSY9                         Type 1C           Builtin          yes yes yes     43  0\nNOMARO+CMSY6                         Type 1C           Builtin          yes yes yes     47  0\nKPXLOM+CMMI8                         Type 1C           Builtin          yes yes yes     48  0\nDKTNBX+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     53  0\nGNPEAR+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     68  0\nBYHKPR+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     90  0\nEKJKAO+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     97  0\n",
+  "pdf_metadata": {
+    "CreationDate": "Tue Sep  8 01:18:05 2026 EDT",
+    "Creator": "tectonic",
+    "Custom Metadata": "no",
+    "Encrypted": "no",
+    "File size": "149719 bytes",
+    "Form": "none",
+    "JavaScript": "no",
+    "Metadata Stream": "no",
+    "Optimized": "no",
+    "PDF version": "1.5",
+    "Page rot": "0",
+    "Page size": "612 x 792 pts (letter)",
+    "Pages": "8",
+    "Producer": "xdvipdfmx (0.1)",
+    "Suspects": "no",
+    "Tagged": "no",
+    "UserProperties": "no"
+  },
+  "pdf_urls": "Page  Type          URL\n",
+  "remaining": [
+    "Author order, affiliations and PaperPlaza PINs not supplied",
+    "Earlier AI-use history needs author reconciliation",
+    "Independent reader review not performed by this drafting agent",
+    "Portal field entry, validation and upload receipt not completed"
+  ],
+  "scope": "Local mechanical checks only; not portal acceptance or independent scientific review.",
+  "submission_ready": false,
+  "video": {
+    "bytes": 2571186,
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/motion2scene-anonymous.mp4",
+    "sha256": "sha256:c9d093d9be1ff94887153d5b38d8ebe928706d4d0dfda1ec1d72ae4a29658d48"
+  },
+  "video_frames_checked": 1400,
+  "video_probe": {
+    "format": {
+      "bit_rate": "367312",
+      "duration": "56.000000",
+      "filename": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/motion2scene-anonymous.mp4",
+      "format_long_name": "QuickTime / MOV",
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "nb_programs": 0,
+      "nb_streams": 1,
+      "probe_score": 100,
+      "size": "2571186",
+      "start_time": "0.000000",
+      "tags": {
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf61.1.100",
+        "major_brand": "isom",
+        "minor_version": "512"
+      }
+    },
+    "streams": [
+      {
+        "avg_frame_rate": "25/1",
+        "bit_rate": "364788",
+        "bits_per_raw_sample": "8",
+        "chroma_location": "left",
+        "closed_captions": 0,
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "codec_name": "h264",
+        "codec_tag": "0x31637661",
+        "codec_tag_string": "avc1",
+        "codec_type": "video",
+        "coded_height": 576,
+        "coded_width": 1024,
+        "disposition": {
+          "attached_pic": 0,
+          "clean_effects": 0,
+          "comment": 0,
+          "default": 1,
+          "dub": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "karaoke": 0,
+          "lyrics": 0,
+          "original": 0,
+          "timed_thumbnails": 0,
+          "visual_impaired": 0
+        },
+        "duration": "56.000000",
+        "duration_ts": 716800,
+        "has_b_frames": 2,
+        "height": 576,
+        "index": 0,
+        "is_avc": "true",
+        "level": 31,
+        "nal_length_size": "4",
+        "nb_frames": "1400",
+        "pix_fmt": "yuv420p",
+        "profile": "High",
+        "r_frame_rate": "25/1",
+        "refs": 1,
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "tags": {
+          "encoder": "Lavc61.3.100 libx264",
+          "handler_name": "VideoHandler",
+          "language": "und",
+          "vendor_id": "[0][0][0][0]"
+        },
+        "time_base": "1/12800",
+        "width": 1024
+      }
+    ]
+  }
+}

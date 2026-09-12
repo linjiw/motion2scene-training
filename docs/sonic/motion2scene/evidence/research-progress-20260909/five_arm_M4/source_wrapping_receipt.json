@@ -1,0 +1,31 @@
+{
+  "all_outputs_unchanged": true,
+  "current_generation": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/five_arm_M4/verification_and_generation_v2.json",
+    "sha256": "sha256:edff8967e5086e416ae9e505a0417c308b72209dac75605b4f6e79bb6f272023"
+  },
+  "current_source_identity": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_render_five_arm_m4.py",
+    "sha256": "sha256:09e5466691cf2f19eab64d8d312e7f153db6a44ae9495535f011cce010dd4c6a"
+  },
+  "new_model_fits": 0,
+  "new_physics_steps": 0,
+  "original_source_identity": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_render_five_arm_m4.py",
+    "sha256": "sha256:982608b81c40e1bd0eaa1b11efc320b5ee31c8c5fa6fa55f25bfb26a8c2df3a6"
+  },
+  "preserved_previous_source": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-five-arm-M4-report-source-20260910-v1/source_before_line_wrapping.py",
+    "sha256": "sha256:982608b81c40e1bd0eaa1b11efc320b5ee31c8c5fa6fa55f25bfb26a8c2df3a6"
+  },
+  "previous_generation": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/five_arm_M4/verification_and_generation.json",
+    "sha256": "sha256:a4245a05e91cf4f44e75741c6a3a235615a32a25b4314cb36d9aba2e6117fff7"
+  },
+  "reason": "Six long report strings were split into adjacent literals to satisfy Ruff E501. All measured outputs, tables, captions and source identities other than the renderer remain identical.",
+  "validation": {
+    "black": "passed",
+    "response_diversity_tests": 8,
+    "ruff": "passed"
+  }
+}

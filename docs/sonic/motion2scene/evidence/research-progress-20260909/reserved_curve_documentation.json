@@ -1,0 +1,60 @@
+{
+  "counts_scope": "file presence only; completed M2 independently audited earlier",
+  "created_utc": "2026-09-09T20:15:10.527800+00:00",
+  "files": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/RESERVED_EXPANDED_LEARNING_CURVE.md",
+      "sha256": "sha256:6a8761bb7170505368e3cb9674d0792d87911c0f13b28b2d3305a0e10eca6d6f"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/RESEARCH_STATE.md",
+      "sha256": "sha256:fb66c8ee8cf306c05e195d71e88a996c78b17ec2d3e793048942141f60c5841d"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/RESEARCH_PROGRESS_20260909.md",
+      "sha256": "sha256:b510b8acc441a0ba41024226ada175d8e0673f11d694a424a4576a48f7cecf3e"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/traversal_method_v2.tex",
+      "sha256": "sha256:3279a26d4572f9f47c675df86fcda0baf44483f624f54ce50cfd976671d2ad02"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/traversal_method_v2.pdf",
+      "sha256": "sha256:1d12407c2cfccbd138d832fbd9704c827879e1feea3d742048cad9ebcb53c6fd"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/traversal_method_v2.log",
+      "sha256": "sha256:d116806a0939f284e2183fb411479fcd26ad8bcc07690b2ee6c9e10e1f766277"
+    }
+  ],
+  "live_processes": [
+    {
+      "elapsed_s": 4839,
+      "kind": "expanded",
+      "parent": 1955036,
+      "pid": 1955047
+    },
+    {
+      "elapsed_s": 288,
+      "kind": "primary",
+      "parent": 161884,
+      "pid": 2066620,
+      "run_id": "seed93202_uniform"
+    },
+    {
+      "elapsed_s": 43,
+      "kind": "native",
+      "parent": 2070910,
+      "pid": 2070917
+    }
+  ],
+  "manuscript_build": "tectonic passed; existing underfull bibliography hbox warning",
+  "new_physics_steps_by_this_session": 0,
+  "primary_model_file_counts": {
+    "M0": 12,
+    "M1": 12,
+    "M2": 12,
+    "M3": 6,
+    "M4": 0
+  }
+}

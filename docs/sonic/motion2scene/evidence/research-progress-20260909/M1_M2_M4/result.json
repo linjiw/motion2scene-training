@@ -1,0 +1,52 @@
+{
+  "acquisition": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M1-20260909-v1/result.json",
+      "sha256": "sha256:2e76f63e2532ba03378dddb1eed17e1d66519fff3aea9fd54f8142a1c70f1cc9"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M2-20260909-v1/result.json",
+      "sha256": "sha256:1434dc5a5abf468d1dfe185887ce5985ae8850be651ce253b6d9033fdcce3fca"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M4-20260909-v1/result.json",
+      "sha256": "sha256:e0340577761b4a26ac74204bcabbb8e9344740aa756b09157fe44abbc3bbad50"
+    }
+  ],
+  "implementation": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_render_acquisition_evidence.py",
+    "sha256": "sha256:2a45aae47971d252360f5cf9fe50bd60d8d13851980d5cab16beb1f321afb4d3"
+  },
+  "interpretation": "Acquisition lines are corpus means with three individual trajectories, no confidence intervals. Constructor-specific training tasks are not a common evaluation set. WAIT bars are exact finite branch-table optima, not newly executed policies.",
+  "new_physics_steps": 0,
+  "outputs": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-M1-M2-M4-acquisition-evidence-20260910-v1/acquisition_by_corpus.csv",
+      "sha256": "sha256:000e1a59ec6ee28c108a7c06482c35b3d0a5d58f593ea88f97d2fe0a8fbbaaf1"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-M1-M2-M4-acquisition-evidence-20260910-v1/acquisition_yield.tex",
+      "sha256": "sha256:f6a8c435a1617f0487dbc81cddc19ffa8fb1f6a50173d6c34250631d5575a9c7"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-M1-M2-M4-acquisition-evidence-20260910-v1/acquisition_responses.pdf",
+      "sha256": "sha256:c55170ff64ad2d5c88f97937277d1e123b7b4b4c324c8e71f449f178331a97d4"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-M1-M2-M4-acquisition-evidence-20260910-v1/acquisition_responses.png",
+      "sha256": "sha256:13fbedb5c477f7c1685d92ca1d8cbd562a7e33cd79f213ba9a25361279954a0a"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-M1-M2-M4-acquisition-evidence-20260910-v1/wait_same_repertoire.pdf",
+      "sha256": "sha256:c5df58b7cd9387880abd5021def02308a56646888c3e5a4056bf05c20dc1c283"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-M1-M2-M4-acquisition-evidence-20260910-v1/wait_same_repertoire.png",
+      "sha256": "sha256:904ffd5914a7e8eaf0a6b6024d95ede797f3f691c4305f3477cd56b5345bf233"
+    }
+  ],
+  "wait": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-wait-information-control-20260909-v1/result.json",
+    "sha256": "sha256:5df3bd3ebff657b33acab8246c598cb055a589a559a4fe71468791180a622f4d"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "explanation": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/figures/script_perception/README.md",
+    "sha256": "sha256:b7a2166eb61f94f4ab0ee1c49b7957272159973558d42b5c10dadfa58b3f360a"
+  },
+  "figure_pdf": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/figures/script_perception/perception_to_decision.pdf",
+    "sha256": "sha256:9bd194d8fdee5673e597f0fe076eb0d80043ec7c9bfcc52e37fae39851a5508d"
+  },
+  "figure_png": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/figures/script_perception/perception_to_decision.png",
+    "sha256": "sha256:df46a1abd5f67d710b59cec621d53615860cd43729209b8eb14559c378b241e4"
+  },
+  "new_physical_executions": 0,
+  "plotter": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_plot_script_perception.py",
+    "sha256": "sha256:631b6bc748885469ebcd63488d945143dea5e2db9b0ab658520ab77b9c98f964"
+  },
+  "source": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-script-perception-traces-20260910-v2/result.json",
+    "sha256": "sha256:c962d6c2a42bf41dff2f8fbf77b4a80889678094fbb76f0a5b3d8e74fe0595b8"
+  },
+  "visually_inspected": true
+}

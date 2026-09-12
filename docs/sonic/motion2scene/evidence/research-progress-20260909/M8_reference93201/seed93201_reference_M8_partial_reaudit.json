@@ -1,0 +1,466 @@
+{
+  "budget": 8,
+  "implementation": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_collect_timed_schedules.py",
+      "sha256": "sha256:aff903769ae19189d2ebbaea0c579d508d9f2cd2c3240864f2c6245bbdd3b195"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/hallucination/motion2scene_timed_outcome.py",
+      "sha256": "sha256:cad833067341e6a9997a044d3223e2606f787d2155bf7e5fd47c590dcdba1fde"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/hallucination/motion2scene_environment_contacts.py",
+      "sha256": "sha256:3488af66ae3198613067b5d1f57d97728a06b0d67b8532850b05b23857bac07b"
+    }
+  ],
+  "interpretation": "Independent recomputation from the three hash-checked raw partial recordings, sensors and synchronized contact streams exactly reproduces their known task failures and recorded costs. Capture termination and measured physical events remain distinct. Later uncaptured fall, passage or recovery outcomes remain unknown. No retries, imputed full duration, unrelated raw re-audits, fitting or native changes.",
+  "new_fits": 0,
+  "new_physical_executions": 0,
+  "partial_captures": [
+    {
+      "assessment": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round008_teacher_forced_neutral/assessment.json",
+        "sha256": "sha256:e86e817f1e292fda645e7b3d8adfc687681b0a058a6699f1b243be7dedd895d9"
+      },
+      "attempt": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_neutral/attempt.json",
+        "sha256": "sha256:2212b5d4bd859d660f3249582a5da68b7dac96ed27c034a3a0d8a5f49a9c541d"
+      },
+      "contact_audit": {
+        "complete_synchronized_streams": true,
+        "external_contacts": [
+          {
+            "allowed_foot_floor_support": false,
+            "body": "torso_link",
+            "counterpart": "/World/ground/terrain/CounterfactualBeam",
+            "maximum_force_n": 1776.469970703125
+          },
+          {
+            "allowed_foot_floor_support": true,
+            "body": "left_ankle_roll_link",
+            "counterpart": "/World/ground/terrain/Structure/Floor",
+            "maximum_force_n": 2448.40478515625
+          },
+          {
+            "allowed_foot_floor_support": true,
+            "body": "right_ankle_roll_link",
+            "counterpart": "/World/ground/terrain/Structure/Floor",
+            "maximum_force_n": 400.13824462890625
+          }
+        ],
+        "maximum_pair_sum_net_residual_n": 0.0,
+        "maximum_undesired_environment_force_n": 1776.469970703125,
+        "no_undesired_measured_contact": false,
+        "normal_force_threshold_n": 1.0,
+        "normal_forces_only": true,
+        "physics_steps_with_undesired_environment_contact": 79,
+        "recorded_physics_steps": 628,
+        "schema": "motion2scene_environment_contact_audit_v1",
+        "scope": "Every robot body against exact robot/floor/four-wall/beam paths; self-contact is retained separately, not classified as an environment collision.",
+        "self_contacts": [
+          {
+            "body_pair": [
+              "left_hip_roll_link",
+              "left_wrist_yaw_link"
+            ],
+            "maximum_equal_opposite_residual_n": 0.0,
+            "maximum_force_n": 45.485557556152344,
+            "physics_steps_above_threshold": 152,
+            "present_in_declared_neutral_pairs": true
+          },
+          {
+            "body_pair": [
+              "right_hip_roll_link",
+              "right_wrist_yaw_link"
+            ],
+            "maximum_equal_opposite_residual_n": 0.0,
+            "maximum_force_n": 42.47556686401367,
+            "physics_steps_above_threshold": 227,
+            "present_in_declared_neutral_pairs": true
+          }
+        ],
+        "unexpected_self_contact_pairs": []
+      },
+      "log": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_neutral/rollout.log",
+        "sha256": "sha256:552c8fb804df9faa051a94c0a9f45331e2893a233a0cced530c17544edeef0fb"
+      },
+      "manifest": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/manifest.json",
+        "sha256": "sha256:dca22e714d45d3410c9d09cec645ad9fc6fb5e6316b8b9a370f7686a311f3069"
+      },
+      "measured_physics_steps": 628,
+      "outcome": {
+        "assigned_slots": 1,
+        "classification": "verified_task_failure",
+        "complete_measurement_admitted": false,
+        "complete_pass": false,
+        "exit_status": 1,
+        "measurement_diagnostics": [],
+        "measurement_status": "partial",
+        "phase_availability": [
+          {
+            "packet_index": 14,
+            "reason": null,
+            "sensor_preaction_available": true,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 15
+          },
+          {
+            "packet_index": 49,
+            "reason": null,
+            "sensor_preaction_available": true,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 50
+          },
+          {
+            "packet_index": 69,
+            "reason": null,
+            "sensor_preaction_available": true,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 70
+          }
+        ],
+        "physical_events": [
+          {
+            "kind": "verified_environment_contact",
+            "maximum_force_n": 1776.469970703125
+          }
+        ],
+        "physical_rows_recorded": 157,
+        "physics_steps_recorded": 628,
+        "schema": "motion2scene_timed_attempt_outcome_v1",
+        "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+        "sensor_packets_recorded": 156,
+        "task_outcome": "failure"
+      },
+      "raw_artifacts": {
+        "aborted_raw_recording": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_neutral/trajectories/aborted_raw_recording.pkl",
+          "sha256": "sha256:2c137855b4a6b94075ac345e59499c4445eb48e2faec47ba3a829de6e3e45f5a"
+        },
+        "all_body_contacts": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_neutral/trajectories/aborted_all_body_contacts.npz",
+          "sha256": "sha256:3b9c09dd6a733ea28156304ada002f151b340e3f1c0710d2590d96beb218c699"
+        },
+        "environment_mapping": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_neutral/trajectories/aborted_environment_contact_mapping.json",
+          "sha256": "sha256:9b671321fdbfa35b996f1f19efc169274e808cc70c704fefbe81ce2a21db6c2b"
+        },
+        "environment_pairs": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_neutral/trajectories/aborted_environment_pair_contacts.npz",
+          "sha256": "sha256:fce3004a230ccf8312b60375e3d17d694b91450ab781d372323b889c1e892d3a"
+        },
+        "sensor": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_neutral/trajectories/aborted_interface.json",
+          "sha256": "sha256:4c000cd4743f3dbb2e98b68b7385459721cb700bbc4fda5aa1d0c0500246b7fc"
+        }
+      },
+      "recomputed_row_equals_original": true,
+      "terminal_error_lines": [
+        "ValueError: non-repeated, in-horizon command tick required; clip wrap is forbidden"
+      ]
+    },
+    {
+      "assessment": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round008_teacher_forced_short_e015_r265/assessment.json",
+        "sha256": "sha256:513515778470b276e0bf1accfc6a189bbd93e4e57c2412d62bc4b9a664ae409a"
+      },
+      "attempt": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_short_e015_r265/attempt.json",
+        "sha256": "sha256:a3d1c80c4245db03cb06007af487d8b75eb7cc2691dca584fe41d9b11c83cc00"
+      },
+      "contact_audit": {
+        "complete_synchronized_streams": true,
+        "external_contacts": [
+          {
+            "allowed_foot_floor_support": false,
+            "body": "torso_link",
+            "counterpart": "/World/ground/terrain/CounterfactualBeam",
+            "maximum_force_n": 1649.5394287109375
+          },
+          {
+            "allowed_foot_floor_support": true,
+            "body": "left_ankle_roll_link",
+            "counterpart": "/World/ground/terrain/Structure/Floor",
+            "maximum_force_n": 752.7742919921875
+          },
+          {
+            "allowed_foot_floor_support": true,
+            "body": "right_ankle_roll_link",
+            "counterpart": "/World/ground/terrain/Structure/Floor",
+            "maximum_force_n": 782.2275390625
+          }
+        ],
+        "maximum_pair_sum_net_residual_n": 0.0,
+        "maximum_undesired_environment_force_n": 1649.5394287109375,
+        "no_undesired_measured_contact": false,
+        "normal_force_threshold_n": 1.0,
+        "normal_forces_only": true,
+        "physics_steps_with_undesired_environment_contact": 75,
+        "recorded_physics_steps": 644,
+        "schema": "motion2scene_environment_contact_audit_v1",
+        "scope": "Every robot body against exact robot/floor/four-wall/beam paths; self-contact is retained separately, not classified as an environment collision.",
+        "self_contacts": [
+          {
+            "body_pair": [
+              "left_hip_roll_link",
+              "left_wrist_yaw_link"
+            ],
+            "maximum_equal_opposite_residual_n": 0.0,
+            "maximum_force_n": 42.7587776184082,
+            "physics_steps_above_threshold": 150,
+            "present_in_declared_neutral_pairs": true
+          },
+          {
+            "body_pair": [
+              "right_hip_roll_link",
+              "right_wrist_yaw_link"
+            ],
+            "maximum_equal_opposite_residual_n": 0.0,
+            "maximum_force_n": 42.47556686401367,
+            "physics_steps_above_threshold": 231,
+            "present_in_declared_neutral_pairs": true
+          }
+        ],
+        "unexpected_self_contact_pairs": []
+      },
+      "log": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_short_e015_r265/rollout.log",
+        "sha256": "sha256:d550fb4994d8f3b267298d1eb1d92e947bde4b89968b8d1516f9f8d6950a8cd5"
+      },
+      "manifest": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/manifest.json",
+        "sha256": "sha256:dca22e714d45d3410c9d09cec645ad9fc6fb5e6316b8b9a370f7686a311f3069"
+      },
+      "measured_physics_steps": 644,
+      "outcome": {
+        "assigned_slots": 1,
+        "classification": "verified_task_failure",
+        "complete_measurement_admitted": false,
+        "complete_pass": false,
+        "exit_status": 1,
+        "measurement_diagnostics": [],
+        "measurement_status": "partial",
+        "phase_availability": [
+          {
+            "packet_index": 14,
+            "reason": null,
+            "sensor_preaction_available": true,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 15
+          },
+          {
+            "packet_index": null,
+            "reason": "not_a_neutral_preaction_state",
+            "sensor_preaction_available": false,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 50
+          },
+          {
+            "packet_index": null,
+            "reason": "not_a_neutral_preaction_state",
+            "sensor_preaction_available": false,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 70
+          }
+        ],
+        "physical_events": [
+          {
+            "kind": "verified_environment_contact",
+            "maximum_force_n": 1649.5394287109375
+          }
+        ],
+        "physical_rows_recorded": 161,
+        "physics_steps_recorded": 644,
+        "schema": "motion2scene_timed_attempt_outcome_v1",
+        "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+        "sensor_packets_recorded": 160,
+        "task_outcome": "failure"
+      },
+      "raw_artifacts": {
+        "aborted_raw_recording": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_short_e015_r265/trajectories/aborted_raw_recording.pkl",
+          "sha256": "sha256:c925d65961e53bdc746e4031647e98e51e28cfe002c84fd45a30d05cdf5f2c54"
+        },
+        "all_body_contacts": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_short_e015_r265/trajectories/aborted_all_body_contacts.npz",
+          "sha256": "sha256:e6bc86e837108fb32b3d332ea6350449d94f6d4680f7693ca2068b277e11fcc2"
+        },
+        "environment_mapping": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_short_e015_r265/trajectories/aborted_environment_contact_mapping.json",
+          "sha256": "sha256:9b671321fdbfa35b996f1f19efc169274e808cc70c704fefbe81ce2a21db6c2b"
+        },
+        "environment_pairs": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_short_e015_r265/trajectories/aborted_environment_pair_contacts.npz",
+          "sha256": "sha256:7ce6e86a431dac5984deb8e116694c311e3ca090f7af7c4ae4d0983a0b4b648b"
+        },
+        "sensor": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_short_e015_r265/trajectories/aborted_interface.json",
+          "sha256": "sha256:26bac5b20cf65aa623d2258144c99054907e9eb2d587a9eb3276bc1119e5a2c8"
+        }
+      },
+      "recomputed_row_equals_original": true,
+      "terminal_error_lines": [
+        "ValueError: non-repeated, in-horizon command tick required; clip wrap is forbidden"
+      ]
+    },
+    {
+      "assessment": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round008_teacher_forced_short_e070_r265/assessment.json",
+        "sha256": "sha256:8ad19407186b8263ad8c8a5ab4a5628ac211be282ea38df4e478b9ff8425e00f"
+      },
+      "attempt": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_short_e070_r265/attempt.json",
+        "sha256": "sha256:815a32405f12ca8319e77ec39c0621af4f01c042caf963ece1f5e5ff2e7cca8c"
+      },
+      "contact_audit": {
+        "complete_synchronized_streams": true,
+        "external_contacts": [
+          {
+            "allowed_foot_floor_support": false,
+            "body": "torso_link",
+            "counterpart": "/World/ground/terrain/CounterfactualBeam",
+            "maximum_force_n": 1649.5394287109375
+          },
+          {
+            "allowed_foot_floor_support": true,
+            "body": "left_ankle_roll_link",
+            "counterpart": "/World/ground/terrain/Structure/Floor",
+            "maximum_force_n": 752.7742919921875
+          },
+          {
+            "allowed_foot_floor_support": true,
+            "body": "right_ankle_roll_link",
+            "counterpart": "/World/ground/terrain/Structure/Floor",
+            "maximum_force_n": 782.2275390625
+          }
+        ],
+        "maximum_pair_sum_net_residual_n": 0.0,
+        "maximum_undesired_environment_force_n": 1649.5394287109375,
+        "no_undesired_measured_contact": false,
+        "normal_force_threshold_n": 1.0,
+        "normal_forces_only": true,
+        "physics_steps_with_undesired_environment_contact": 75,
+        "recorded_physics_steps": 644,
+        "schema": "motion2scene_environment_contact_audit_v1",
+        "scope": "Every robot body against exact robot/floor/four-wall/beam paths; self-contact is retained separately, not classified as an environment collision.",
+        "self_contacts": [
+          {
+            "body_pair": [
+              "left_hip_roll_link",
+              "left_wrist_yaw_link"
+            ],
+            "maximum_equal_opposite_residual_n": 0.0,
+            "maximum_force_n": 42.7587776184082,
+            "physics_steps_above_threshold": 150,
+            "present_in_declared_neutral_pairs": true
+          },
+          {
+            "body_pair": [
+              "right_hip_roll_link",
+              "right_wrist_yaw_link"
+            ],
+            "maximum_equal_opposite_residual_n": 0.0,
+            "maximum_force_n": 42.47556686401367,
+            "physics_steps_above_threshold": 231,
+            "present_in_declared_neutral_pairs": true
+          }
+        ],
+        "unexpected_self_contact_pairs": []
+      },
+      "log": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_short_e070_r265/rollout.log",
+        "sha256": "sha256:2d5459587b7b876739c0f73a6907f782aef25ede503ae793c55799717bd07e29"
+      },
+      "manifest": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/manifest.json",
+        "sha256": "sha256:dca22e714d45d3410c9d09cec645ad9fc6fb5e6316b8b9a370f7686a311f3069"
+      },
+      "measured_physics_steps": 644,
+      "outcome": {
+        "assigned_slots": 1,
+        "classification": "verified_task_failure",
+        "complete_measurement_admitted": false,
+        "complete_pass": false,
+        "exit_status": 1,
+        "measurement_diagnostics": [],
+        "measurement_status": "partial",
+        "phase_availability": [
+          {
+            "packet_index": 14,
+            "reason": null,
+            "sensor_preaction_available": true,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 15
+          },
+          {
+            "packet_index": 49,
+            "reason": null,
+            "sensor_preaction_available": true,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 50
+          },
+          {
+            "packet_index": 69,
+            "reason": null,
+            "sensor_preaction_available": true,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 70
+          }
+        ],
+        "physical_events": [
+          {
+            "kind": "verified_environment_contact",
+            "maximum_force_n": 1649.5394287109375
+          }
+        ],
+        "physical_rows_recorded": 161,
+        "physics_steps_recorded": 644,
+        "schema": "motion2scene_timed_attempt_outcome_v1",
+        "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+        "sensor_packets_recorded": 160,
+        "task_outcome": "failure"
+      },
+      "raw_artifacts": {
+        "aborted_raw_recording": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_short_e070_r265/trajectories/aborted_raw_recording.pkl",
+          "sha256": "sha256:c925d65961e53bdc746e4031647e98e51e28cfe002c84fd45a30d05cdf5f2c54"
+        },
+        "all_body_contacts": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_short_e070_r265/trajectories/aborted_all_body_contacts.npz",
+          "sha256": "sha256:e6bc86e837108fb32b3d332ea6350449d94f6d4680f7693ca2068b277e11fcc2"
+        },
+        "environment_mapping": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_short_e070_r265/trajectories/aborted_environment_contact_mapping.json",
+          "sha256": "sha256:9b671321fdbfa35b996f1f19efc169274e808cc70c704fefbe81ce2a21db6c2b"
+        },
+        "environment_pairs": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_short_e070_r265/trajectories/aborted_environment_pair_contacts.npz",
+          "sha256": "sha256:7ce6e86a431dac5984deb8e116694c311e3ca090f7af7c4ae4d0983a0b4b648b"
+        },
+        "sensor": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_short_e070_r265/trajectories/aborted_interface.json",
+          "sha256": "sha256:3ef456331cda40a475500489e868a8c6c36261444fb18ac6342ca3e27f8f0fef"
+        }
+      },
+      "recomputed_row_equals_original": true,
+      "terminal_error_lines": [
+        "ValueError: non-repeated, in-horizon command tick required; clip wrap is forbidden"
+      ]
+    }
+  ],
+  "run_id": "seed93201_reference_contrast",
+  "schema": "motion2scene_bounded_partial_failure_reaudit_v1",
+  "utc": "2026-09-10T12:30:33.003964+00:00"
+}

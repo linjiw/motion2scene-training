@@ -1,0 +1,2 @@
+# Held-out neutral-control prompt for relative route-retention validation.
+A person walks at a steady pace in a straight line

@@ -1,0 +1,1131 @@
+{
+  "actual_inherited_models_checked": [
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_000/policy.npz",
+        "sha256": "sha256:565f8751efb8814795f6528438afe5ef542b8e0bd08f36fb9201b79921e95cc2"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_000/result.json",
+        "sha256": "sha256:713b4101305f72f85d04d54bb37efdc4e4190994093d70eb63facc489cd96168"
+      },
+      "round": 0,
+      "run_id": "seed93201_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_001/policy.npz",
+        "sha256": "sha256:f2ed83481a75b1b49484f3b21b6ebc733ee97fecfda952ac87fcb9c550be611a"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_001/result.json",
+        "sha256": "sha256:d91f29390c37ee4b438bacfb4a052d0294eca85a1f9d72b3be73b5e9e644fdde"
+      },
+      "round": 1,
+      "run_id": "seed93201_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_002/policy.npz",
+        "sha256": "sha256:1c695dd58e8ea09a5bbed80564eed3921eff1f169728c98cb6f1a4e0a7ea8c85"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_002/result.json",
+        "sha256": "sha256:e0aec7e65523f34798888619e009301402e17a6c4333441036fc645f82b9ec65"
+      },
+      "round": 2,
+      "run_id": "seed93201_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_003/policy.npz",
+        "sha256": "sha256:a1feb6ab08ac754a566e9668de57d9c1f841992a52dac4e97b20e831f0101d06"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_003/result.json",
+        "sha256": "sha256:6092572b0e371ab495285dcdf7e025f1ed4f1867374abca26cbbe63ef42b0790"
+      },
+      "round": 3,
+      "run_id": "seed93201_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_004/policy.npz",
+        "sha256": "sha256:f59f2c70f0b29ca0eb651399403df64505a3db28dedd5c1b0e229b64572950f1"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_004/result.json",
+        "sha256": "sha256:ac0b24df1beb2fa65da8f9039320d0505a03b67660c742124d001c8a4cc7053d"
+      },
+      "round": 4,
+      "run_id": "seed93201_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_000/policy.npz",
+        "sha256": "sha256:565f8751efb8814795f6528438afe5ef542b8e0bd08f36fb9201b79921e95cc2"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_000/result.json",
+        "sha256": "sha256:41d8271cacf9153f409da557948bb52872c6e0a01303805c2557eee018d2e5fd"
+      },
+      "round": 0,
+      "run_id": "seed93201_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_001/policy.npz",
+        "sha256": "sha256:9119598f383650373e09daef85f29bc510eb608802faa75cb3b242b508fcc367"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_001/result.json",
+        "sha256": "sha256:75750a905c5bde385d2bf035d49029b65d5f421cbf704d282423dce9bf195ef6"
+      },
+      "round": 1,
+      "run_id": "seed93201_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_002/policy.npz",
+        "sha256": "sha256:4a8e5d638ab9c39b8640c6dd224d5fa8c4ddbf4de42404bb545926fa9814221d"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_002/result.json",
+        "sha256": "sha256:f5bbb5737254974ec5defae61f707389e27b76d649389180d773ca378294e5fd"
+      },
+      "round": 2,
+      "run_id": "seed93201_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_003/policy.npz",
+        "sha256": "sha256:4c91416f2a934efdaf7504bcd918906b4acbc915acc32eba7e4bc22503a5fab6"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_003/result.json",
+        "sha256": "sha256:8595736ca8baaa0727e94fd5e72549d5f53f739ae50271a1054bccfd943cf5d7"
+      },
+      "round": 3,
+      "run_id": "seed93201_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_004/policy.npz",
+        "sha256": "sha256:35a3833245da6075f68fb5027f006a126a5ec9823a1ccd0a7f9cf2def0da2b0e"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_004/result.json",
+        "sha256": "sha256:b674d121622dbe038ffb6567d0f8c2b7898a53aef40b1d66cd0f915eadbc321b"
+      },
+      "round": 4,
+      "run_id": "seed93201_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_000/policy.npz",
+        "sha256": "sha256:565f8751efb8814795f6528438afe5ef542b8e0bd08f36fb9201b79921e95cc2"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_000/result.json",
+        "sha256": "sha256:f927a6cd49ffa5e24c1d6d4fbb94a928490f41929702d89aaba4faef9d399e5e"
+      },
+      "round": 0,
+      "run_id": "seed93201_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_001/policy.npz",
+        "sha256": "sha256:3181aac59029cd7db426fa873076a681ed02901ff1624e53711af26e97a86aed"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_001/result.json",
+        "sha256": "sha256:e6a236964f12400989ad17b98c31ceb5f018ac8dc8bc95273ae02588f648e260"
+      },
+      "round": 1,
+      "run_id": "seed93201_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_002/policy.npz",
+        "sha256": "sha256:f832c7822e4623f13be52883ae3e52e597e9e353c10bf9b0fee82c6de482d1ab"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_002/result.json",
+        "sha256": "sha256:5c8f2a90d3e1dc27562bfb2dc862ebe1e517b544416d7109223fde6d3eb1246d"
+      },
+      "round": 2,
+      "run_id": "seed93201_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_003/policy.npz",
+        "sha256": "sha256:dbae351b5b8120906fa8c58b86d25b26fff8eccdeabc5e0b6c89a2cff19b1a05"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_003/result.json",
+        "sha256": "sha256:5ab44b4f3d68f615dcb73a4cff13fe82ad54a3fa10c04cec86486cbee38f5236"
+      },
+      "round": 3,
+      "run_id": "seed93201_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_004/policy.npz",
+        "sha256": "sha256:d5352218ca133790784ffe65de03d5da354e99d31f2f26460320dba80f97f0ce"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_004/result.json",
+        "sha256": "sha256:d4b0fe9af32704575f7ff0cc3c9d347dc27decc3c1c78abf93e921dc82d4c5fb"
+      },
+      "round": 4,
+      "run_id": "seed93201_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_000/policy.npz",
+        "sha256": "sha256:565f8751efb8814795f6528438afe5ef542b8e0bd08f36fb9201b79921e95cc2"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_000/result.json",
+        "sha256": "sha256:3bd4fc4e442059e530f3aab982f1250521afd6db334afd412179c9527ee9cd9a"
+      },
+      "round": 0,
+      "run_id": "seed93201_uniform"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_001/policy.npz",
+        "sha256": "sha256:c5e12dc7bda5302e5dcf2ac267f45cbf9bdefbb98c65486b3b9a58f8ade1fbde"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_001/result.json",
+        "sha256": "sha256:580a7e0856a61d3ec3519f07e33d581825d0e9661f0b28f28beeb49e6586979c"
+      },
+      "round": 1,
+      "run_id": "seed93201_uniform"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_002/policy.npz",
+        "sha256": "sha256:596d66474b4854de048a9bb06e6215de173f402d32ff80081fbbc2992324f215"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_002/result.json",
+        "sha256": "sha256:75f9917ba735ad84ffea7d416fa783e9cb09016ec81318c76540c40d9f76e75e"
+      },
+      "round": 2,
+      "run_id": "seed93201_uniform"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_003/policy.npz",
+        "sha256": "sha256:e4366041c2f8541353f39282dd93909b5da12a9eddff544783dbdd5b375e558f"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_003/result.json",
+        "sha256": "sha256:b225add457f2287c4a365ed3fad077d374985d89c0e34996b2b175ff0bfe8bae"
+      },
+      "round": 3,
+      "run_id": "seed93201_uniform"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_004/policy.npz",
+        "sha256": "sha256:69b9c8593e4ac2509935dc921e179fa28f0f2cc3102fbad838cffc0783e93a4f"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_004/result.json",
+        "sha256": "sha256:b4eb0868ba0479528bbb8b1792c25d9af18c051616d17372fd655dd7c6a867c9"
+      },
+      "round": 4,
+      "run_id": "seed93201_uniform"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_000/policy.npz",
+        "sha256": "sha256:bd3484cc3e5c9c0b88d57bdbc8895efb7102904cd8ee4b270b1fcc31e1e10ea0"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_000/result.json",
+        "sha256": "sha256:29327d587870c3b7ce7bf5c15617cee65f028fc464c1fcb3b392c9ebbe684fbc"
+      },
+      "round": 0,
+      "run_id": "seed93202_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_001/policy.npz",
+        "sha256": "sha256:cb27f105ecdcc89bbf96969c8792384a90b3a2323eb69bdcf06a0f3a208f8e5b"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_001/result.json",
+        "sha256": "sha256:aa6c57f04c3da1c9836a85f8136629f98d807915a3be08055cf95dad291229e2"
+      },
+      "round": 1,
+      "run_id": "seed93202_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_002/policy.npz",
+        "sha256": "sha256:5c9210ec6db137e23098e77f7175d693c9135d69bc2d3a5d4307c20d428c1283"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_002/result.json",
+        "sha256": "sha256:49f4bd294d29efc8c3539db5f4026be740689c77f55fcaf51661ca5e38513320"
+      },
+      "round": 2,
+      "run_id": "seed93202_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_003/policy.npz",
+        "sha256": "sha256:89e4465323a3a3a05c906f81761f4cc3b8ade27c1efc89f1695d22dd63300217"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_003/result.json",
+        "sha256": "sha256:7fa0eb4383210906dc7f31b96e74ff4f7af9439c8f97e5cbce4eced3500f66ba"
+      },
+      "round": 3,
+      "run_id": "seed93202_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_004/policy.npz",
+        "sha256": "sha256:dab1b7b93e258b73f4047d537ea2ff9bd1767c8ecf3d2d244ab15d1d5fd2f3c1"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_004/result.json",
+        "sha256": "sha256:65098295f529595e7855841998bc3f66060063153262e74026cbf2f522311440"
+      },
+      "round": 4,
+      "run_id": "seed93202_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_000/policy.npz",
+        "sha256": "sha256:bd3484cc3e5c9c0b88d57bdbc8895efb7102904cd8ee4b270b1fcc31e1e10ea0"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_000/result.json",
+        "sha256": "sha256:cd9a084eccb54c297f4d3a67600285ee667c1a3008a32f4789270a184e02c498"
+      },
+      "round": 0,
+      "run_id": "seed93202_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_001/policy.npz",
+        "sha256": "sha256:99de1af9c2ef23e997d996b59fcfb607a36764317c3d3689165a836a5a683073"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_001/result.json",
+        "sha256": "sha256:17d59169b063d50fef0f63e6f49e1487680966cd2fbdaa3b011a6fad3478e061"
+      },
+      "round": 1,
+      "run_id": "seed93202_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_002/policy.npz",
+        "sha256": "sha256:d9a275bd0be4058a0d2db94c3255a8053c5f1d95a7ccb7078839a88fa04cc0f7"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_002/result.json",
+        "sha256": "sha256:05e8995c00f1152dcf753ad080f598640ffd115b0247c79e619747cb004aea82"
+      },
+      "round": 2,
+      "run_id": "seed93202_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_003/policy.npz",
+        "sha256": "sha256:520188fe5951ff012cefa826a907206bb5da0e09bba9cc80b338df24fabb2a6b"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_003/result.json",
+        "sha256": "sha256:e26aee2ad27d3c2b476c7133f77fbe55b3003e1b40fa9d4873154e3c3aefead1"
+      },
+      "round": 3,
+      "run_id": "seed93202_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_004/policy.npz",
+        "sha256": "sha256:41acceb15231378bd96d0820646a506190ac43ab328901130cd1d636b18e9a47"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_004/result.json",
+        "sha256": "sha256:e9e6ff5de49821502202906edcc04f9ca0d6a21b2f94bd6897515f52ccb3593e"
+      },
+      "round": 4,
+      "run_id": "seed93202_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_000/policy.npz",
+        "sha256": "sha256:bd3484cc3e5c9c0b88d57bdbc8895efb7102904cd8ee4b270b1fcc31e1e10ea0"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_000/result.json",
+        "sha256": "sha256:beed4042cbf2423f9742cf8221e214244499ffdffd8cfed9849a9ba571bb485b"
+      },
+      "round": 0,
+      "run_id": "seed93202_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_001/policy.npz",
+        "sha256": "sha256:cb27f105ecdcc89bbf96969c8792384a90b3a2323eb69bdcf06a0f3a208f8e5b"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_001/result.json",
+        "sha256": "sha256:6c99615b08d6d7d422e19ec5f9d8103eef39b3dd0cd539b7bfc9e13692f60ffa"
+      },
+      "round": 1,
+      "run_id": "seed93202_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_002/policy.npz",
+        "sha256": "sha256:e72db73e8917f694669645a098a7684226009b60bab7e78263fb58a8ffdee5a1"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_002/result.json",
+        "sha256": "sha256:207bb5fef5daf21c7c24fec4a27a757ba69bb4059262f2a65c14173624a4dc29"
+      },
+      "round": 2,
+      "run_id": "seed93202_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_003/policy.npz",
+        "sha256": "sha256:332b99cd0e10aafba9cde5b11e8e82fa55da57a04a9fd983a809db56c3e69a8d"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_003/result.json",
+        "sha256": "sha256:8a3bd5e14fee4e432ffc057ef47b6ecc6311599b6b1a256ae09f66eb325be358"
+      },
+      "round": 3,
+      "run_id": "seed93202_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_004/policy.npz",
+        "sha256": "sha256:342a3b9975920f18746600a104d5c41e4a692deed842d105e382a004baafa49b"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_004/result.json",
+        "sha256": "sha256:8d54fb1895015bd6d7e3815e7cf527a56d17a61822c64541cda3e4485dee7c89"
+      },
+      "round": 4,
+      "run_id": "seed93202_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_000/policy.npz",
+        "sha256": "sha256:bd3484cc3e5c9c0b88d57bdbc8895efb7102904cd8ee4b270b1fcc31e1e10ea0"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_000/result.json",
+        "sha256": "sha256:2e65353f48f78e1b341b492271ab27f5d4721f9a8412dec1346309449556352a"
+      },
+      "round": 0,
+      "run_id": "seed93202_uniform"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_001/policy.npz",
+        "sha256": "sha256:27c0237bbf927634e11adeda50ea6fa0952680479ac97f3f600fcca2b3d14a4a"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_001/result.json",
+        "sha256": "sha256:3d2dc6648fabfb8eb6f6761b0013e01e945015d17397a90633a10a1c92c2faa3"
+      },
+      "round": 1,
+      "run_id": "seed93202_uniform"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_002/policy.npz",
+        "sha256": "sha256:b5b86400bf93c4727286318197862aacf6397f50d2a543a75dee94b9e574bf27"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_002/result.json",
+        "sha256": "sha256:206df5d0916c00e77d0e11d17fd27b7dbcd528349170fcc1c21e1d035f7a0d8f"
+      },
+      "round": 2,
+      "run_id": "seed93202_uniform"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_003/policy.npz",
+        "sha256": "sha256:c89fe3ff9e2e8cff5192bca05b84d8babb029066e2ec8f8cd9f085b47f1be401"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_003/result.json",
+        "sha256": "sha256:6ef520d1a4e368de638771eda249bc7bb66fcd7f2c361040a04e10d1a91717b2"
+      },
+      "round": 3,
+      "run_id": "seed93202_uniform"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_004/policy.npz",
+        "sha256": "sha256:eaa697601b66cef7a263e4d46a29a3f9b7170d5889653327464f51740e449163"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_004/result.json",
+        "sha256": "sha256:12b08500e1c179a4ca11e128d52144f1d6ae656a9dd52a13de1bf0cb7427b9a7"
+      },
+      "round": 4,
+      "run_id": "seed93202_uniform"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_000/policy.npz",
+        "sha256": "sha256:925a4e2e890c2a07203ef8658ae9d14bae14a729e19224a46635caf445fc77de"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_000/result.json",
+        "sha256": "sha256:08312d18351b325e94cce89237295a5355df6ee83282357f73d2927b09bdebce"
+      },
+      "round": 0,
+      "run_id": "seed93203_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_001/policy.npz",
+        "sha256": "sha256:b2b7f46ca1bed438ff8ed7f8caf1787efd14b857b9165de661a83cdf6088ed37"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_001/result.json",
+        "sha256": "sha256:28db7bebaafc0ce3d16d6248db8b726f7cdd33819f82714d0f286a57029a18c1"
+      },
+      "round": 1,
+      "run_id": "seed93203_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_002/policy.npz",
+        "sha256": "sha256:566b16ed7b9726fe35b724bdf3efc35bef67ce9e33e9b5e23d2f3966451f5f29"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_002/result.json",
+        "sha256": "sha256:430e22998c1aa6c88211014e69b284b960d8066833b7d118d859393ac1869dae"
+      },
+      "round": 2,
+      "run_id": "seed93203_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_003/policy.npz",
+        "sha256": "sha256:3ebf913f80344f390570bc4e9b0befd3430d874b95299edc5dd988829308ef05"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_003/result.json",
+        "sha256": "sha256:39b010058121dd16239aa98d8f7ac6523b6eecdfc7059cabf9a10f06885379c8"
+      },
+      "round": 3,
+      "run_id": "seed93203_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_004/policy.npz",
+        "sha256": "sha256:08b2ab4da37c6ddb3f1a11a813a79f9c3987cd68366f4f3cd5f2a70a9d0f7bf4"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_004/result.json",
+        "sha256": "sha256:a5925c2fca6e3c5d9a040326a54de2b0915e31d7740f0ae5818e1955772053e4"
+      },
+      "round": 4,
+      "run_id": "seed93203_analytic_contrast"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_000/policy.npz",
+        "sha256": "sha256:925a4e2e890c2a07203ef8658ae9d14bae14a729e19224a46635caf445fc77de"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_000/result.json",
+        "sha256": "sha256:df37ffa6560083ebdcaf50ea35e914b161c3f31a8bdcfee6bc46b2b422480efd"
+      },
+      "round": 0,
+      "run_id": "seed93203_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_001/policy.npz",
+        "sha256": "sha256:c0daa593a5faf30a6cc3036140956e913e918f1d6815106ef79bdb6764565fb7"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_001/result.json",
+        "sha256": "sha256:aed13def2bcec66bf11ba8fafeea2e2730d951dcfcad4a313811dfc317d95db7"
+      },
+      "round": 1,
+      "run_id": "seed93203_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_002/policy.npz",
+        "sha256": "sha256:f239a0b481107f52b9bfc9c8b5810770001af1a72bac8f9c9d7f49096ed35b0c"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_002/result.json",
+        "sha256": "sha256:cfde92feba37a44a3cbce14b80fc0016ce06ca07360d958ad63120f6717e6b35"
+      },
+      "round": 2,
+      "run_id": "seed93203_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_003/policy.npz",
+        "sha256": "sha256:64e69c2038bbf3106eca892cacd604c7c467637bd9230f29362591e07910849a"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_003/result.json",
+        "sha256": "sha256:97a0d64c36c326dc8d5619907992151abdd0e7be099e088631414e1232920e9d"
+      },
+      "round": 3,
+      "run_id": "seed93203_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_004/policy.npz",
+        "sha256": "sha256:34229401c66d85c2346560462f2a2473e0eccbe3cf561f56d96084e5129af8c6"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_004/result.json",
+        "sha256": "sha256:6f4f10ec8f6f682a9c6c6bb9e08b140df6537329fae4bb884e3a8e0918adfd75"
+      },
+      "round": 4,
+      "run_id": "seed93203_observation_curriculum"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_000/policy.npz",
+        "sha256": "sha256:925a4e2e890c2a07203ef8658ae9d14bae14a729e19224a46635caf445fc77de"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_000/result.json",
+        "sha256": "sha256:53fe69a5258074cb5b6f39234ede0a22ed95692dbc708006c8b428452855ff80"
+      },
+      "round": 0,
+      "run_id": "seed93203_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_001/policy.npz",
+        "sha256": "sha256:8819dbcb2a45111c6c1863b6b242d0a067f40c1449f51779591d1a56f4b3fce9"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_001/result.json",
+        "sha256": "sha256:9d9ec5111b884a6651385629998d208ad7e5d1eeb2b63c14bcf7522ac8095415"
+      },
+      "round": 1,
+      "run_id": "seed93203_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_002/policy.npz",
+        "sha256": "sha256:daed748888963bcf8ffc2df8b32544b7c5a658deff6d0550f93206e88f8ba44a"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_002/result.json",
+        "sha256": "sha256:087fba193134c39c40ae0c4fdadd71727bfb02a0d04c43fbf9726d5d9f6850dc"
+      },
+      "round": 2,
+      "run_id": "seed93203_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_003/policy.npz",
+        "sha256": "sha256:4275ec7247db9ca9286aa34a72b4943825d48e102e00f4ef90e4c6d5f1d3ca8d"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_003/result.json",
+        "sha256": "sha256:c6aa1e38e1892f4bccd93e1808fe87bccac7fecabdb6fe8d94d457783724fef7"
+      },
+      "round": 3,
+      "run_id": "seed93203_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_004/policy.npz",
+        "sha256": "sha256:3417afb5eaee54e68c5827bddb66c4e6fb5bb0dddf6bd494d08d601d808fd2af"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_004/result.json",
+        "sha256": "sha256:8d20a7c92dd152c44ac73d7ce0003338b89db0ae4eccb41c7593d092c8751f13"
+      },
+      "round": 4,
+      "run_id": "seed93203_target_only"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_000/policy.npz",
+        "sha256": "sha256:925a4e2e890c2a07203ef8658ae9d14bae14a729e19224a46635caf445fc77de"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_000/result.json",
+        "sha256": "sha256:cea482713f576667a4c0069ed80107a4ec2009ba5708825f6dceee35351013e2"
+      },
+      "round": 0,
+      "run_id": "seed93203_uniform"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_001/policy.npz",
+        "sha256": "sha256:fd472738aa05da7cdd85bb7d1b0fc1030a39acb24fda0511fc48b0ecc0ea04f4"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_001/result.json",
+        "sha256": "sha256:929ad1c6a17eefca8b0a33402eb309f083d420d54f15a72ffe92ad55a7568878"
+      },
+      "round": 1,
+      "run_id": "seed93203_uniform"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_002/policy.npz",
+        "sha256": "sha256:addf4228b96eb34d6ba1c3d3821d30b104601b0b92f2a27d847126174eb7d357"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_002/result.json",
+        "sha256": "sha256:7d6d7a76fa352b9522c24b94f1339d0a586c803769fc3be22061d3fcf5806463"
+      },
+      "round": 2,
+      "run_id": "seed93203_uniform"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_003/policy.npz",
+        "sha256": "sha256:05064683f4f98b10cf39be4fb7c857cb8135260e3cc46cb6dba66967afdbdec6"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_003/result.json",
+        "sha256": "sha256:4b5489e5e7e7ef861030b6f3e316cea6c6be21383233988a5051b104bb80c738"
+      },
+      "round": 3,
+      "run_id": "seed93203_uniform"
+    },
+    {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_004/policy.npz",
+        "sha256": "sha256:9843f9eefd13950ba1709dcb7147a4868b4956f44881b104c4162378a7a914d2"
+      },
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_004/result.json",
+        "sha256": "sha256:746b26b7c2a45a77661ea19dcff81d572f54cffb369f3148883c0c3f3bef110e"
+      },
+      "round": 4,
+      "run_id": "seed93203_uniform"
+    }
+  ],
+  "all_original_sources_unchanged": true,
+  "black_and_ruff": "passed",
+  "coordinator": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v7/run.py",
+    "sha256": "sha256:31255dfa7f34ca5c2d42827ded9f152ec2acf7238d0fcb235da7c4ceddfbd36f"
+  },
+  "existing_assessments": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round000_teacher_forced_neutral/assessment.json",
+      "sha256": "sha256:c310b57ef559237235b3d589b839bc25e859a576c560abe4f8a05febcb2071e7"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round000_teacher_forced_prior_splice_e015_r265/assessment.json",
+      "sha256": "sha256:4126c59c05e3f9e618603451e8d8292ac727ad23ae8900fc1b2b674f60d119d6"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round000_teacher_forced_prior_splice_e050_r265/assessment.json",
+      "sha256": "sha256:888d992e5c52a394cf51042e466046673df10ca54272059c211a003b8810b344"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round000_teacher_forced_short_e015_r265/assessment.json",
+      "sha256": "sha256:4bf77407046174b653b8b792951432dfd8f15820535a53d3ad6f8b18459fa03b"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round000_teacher_forced_short_e070_r265/assessment.json",
+      "sha256": "sha256:430acf28f3ea2ce9f6fb1b6a86073187f8319a67d913ee1559d606251d826c9a"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round000_teacher_forced_sustained_e015_r255/assessment.json",
+      "sha256": "sha256:727b93e2ebf00d06c470d74de7f2dd5e5f86fa0f430a7eb87e7c09e7359426c7"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round000_teacher_forced_sustained_e070_r255/assessment.json",
+      "sha256": "sha256:f44d02aad25aaaafafc97108f348b54e8497a633fcac97fe7dc658d5b5de6bd2"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round001_student_learned_neutral/assessment.json",
+      "sha256": "sha256:bd76565e157913b7a6e14617b462e886876716b5ff20750ee426c2dca0aafd13"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round001_teacher_forced_neutral/assessment.json",
+      "sha256": "sha256:b76d296e8d6a3936884cd02defa17227d8bda923f699183413e6ffbec55ce99e"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round001_teacher_forced_prior_splice_e015_r265/assessment.json",
+      "sha256": "sha256:f102a11e5b2635e3d2eccfe08f8ecd5c0cfd241f85442210653876aa0a486e30"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round001_teacher_forced_prior_splice_e050_r265/assessment.json",
+      "sha256": "sha256:b096d29262e640d3d01c3042518fda946c2a871e7b35dc362b13963275c64340"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round001_teacher_forced_short_e015_r265/assessment.json",
+      "sha256": "sha256:83eb2614d811e7e67d217df96467173fe87f2854fa31a2edb44f4797da9722de"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round001_teacher_forced_short_e070_r265/assessment.json",
+      "sha256": "sha256:e18de6fe30645549b3a7bb005a99b951ae096f1be70e81f41284187705a5e398"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round001_teacher_forced_sustained_e015_r255/assessment.json",
+      "sha256": "sha256:b37444d6a3d90f172fc3a9492d25c143b061ffc92749f59b10dc87b97434fe05"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round001_teacher_forced_sustained_e070_r255/assessment.json",
+      "sha256": "sha256:c671383db2ece3d8d9908bc4934a448f64416bd39e9026388bce2612031c10af"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round002_student_learned_neutral/assessment.json",
+      "sha256": "sha256:2f27522744eb54438376ca8d02e550d613cf9303a8688fa8920a1d465c547bf6"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round002_teacher_forced_neutral/assessment.json",
+      "sha256": "sha256:6cb13722c63ac222e2eddc5740700cf02b49a0fa608bccb77f8d51bb90bad111"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round002_teacher_forced_prior_splice_e015_r265/assessment.json",
+      "sha256": "sha256:f03f173bf3dac7abf2c478af038625bba6eb2d986154000fb02092a90df94988"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round002_teacher_forced_prior_splice_e050_r265/assessment.json",
+      "sha256": "sha256:72d73e993d116b5787d0c983ec0a57b0db5a50a2c8caefff1ff46bab3fa32637"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round002_teacher_forced_short_e015_r265/assessment.json",
+      "sha256": "sha256:69c4d619979b4963c2027877e500a92c827a6696d69d3695cc9e2acd49213dc4"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round002_teacher_forced_short_e070_r265/assessment.json",
+      "sha256": "sha256:f6f65605986093b45f55b74fc0d8fd1d7d0f3baf60d278ba73665b9aa43c0ae4"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round002_teacher_forced_sustained_e015_r255/assessment.json",
+      "sha256": "sha256:d9fc454a87e8d6fe629f52b0aab9fb66c9b6cab5ae402de4dad1d720ecd8b461"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round002_teacher_forced_sustained_e070_r255/assessment.json",
+      "sha256": "sha256:48afd96d37e6d06d7aae9b6681fa86df813558fe3f2751aa178b8ff6137a3c61"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round003_student_learned_neutral/assessment.json",
+      "sha256": "sha256:9875a840f986e01423c2aabf383e330061179899614a1b397d1a1fe21985fd5e"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round003_teacher_forced_neutral/assessment.json",
+      "sha256": "sha256:2564c4609dbd3facc80610a53d56f0056b29e0f2096112155b8da4405ffb6e6e"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round003_teacher_forced_prior_splice_e015_r265/assessment.json",
+      "sha256": "sha256:8ee3d7a023515ea360552496b9cab69924b5c4405487f97b677b27af602b917c"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round003_teacher_forced_prior_splice_e050_r265/assessment.json",
+      "sha256": "sha256:f63e5f5814ef7bd2e5e43502736206728d4fe77c9fa3088c4574031c9c0d7d1b"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round003_teacher_forced_short_e015_r265/assessment.json",
+      "sha256": "sha256:5db10398afed6a7a3dfe97f1daece90e29d1ef8e4e3cc0c53e698c343de5ac41"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round003_teacher_forced_short_e070_r265/assessment.json",
+      "sha256": "sha256:8e694d104443bd83fb4303672ca901b7fcdbc20bee89336b639e2a85010f45b0"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round003_teacher_forced_sustained_e015_r255/assessment.json",
+      "sha256": "sha256:af3944b7aa12a76a0a6e99e5872bba8a2ad616dd871c96cd348b88ca20ccdb20"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round003_teacher_forced_sustained_e070_r255/assessment.json",
+      "sha256": "sha256:f57e737beb2a938ce9f403191014e9b551bdd20d4fd3760270dd81b8b85a663b"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round000_teacher_forced_neutral/assessment.json",
+      "sha256": "sha256:7aa1e33ac10ee388822afd61c3832029dc25feb6b1aa33c3b0d4294bab7775fe"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round000_teacher_forced_prior_splice_e015_r265/assessment.json",
+      "sha256": "sha256:df43d1831e30a3dc2435b85271e8fc386ec9b8a622417c58e3b0d793a92b24ef"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round000_teacher_forced_prior_splice_e050_r265/assessment.json",
+      "sha256": "sha256:2b19dd0b9d10f59955abd04d93a9c3587ef3d2ab2b7eb31e9d23a23a8b646de0"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round000_teacher_forced_short_e015_r265/assessment.json",
+      "sha256": "sha256:80cf2ba0b16be655fb2d111eca74488b130ced8914ec13e882fb51eab50dc450"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round000_teacher_forced_short_e070_r265/assessment.json",
+      "sha256": "sha256:c2b91eef0e9af12adf43558630b475005bf9a5ec863eeb48816fe73ce2c70e6e"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round000_teacher_forced_sustained_e015_r255/assessment.json",
+      "sha256": "sha256:67c98cbed6659d6a04d3c947ae97f5933caee9a648e2dbb7318dbbf55c0a4555"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round000_teacher_forced_sustained_e070_r255/assessment.json",
+      "sha256": "sha256:476181ff25c0c27bd616a342b287441fe81c5ef5cbf9fe4832c49eaf73849eec"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round001_student_learned_neutral/assessment.json",
+      "sha256": "sha256:f380093bab198588b671b3aa373172006737659e5ed33f0fdf89dc89cb6090cf"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round001_teacher_forced_neutral/assessment.json",
+      "sha256": "sha256:c41c5d85c0f113657dc8fd557c90053bd66ee3bef6911705cec1e33afd2b1b87"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round001_teacher_forced_prior_splice_e015_r265/assessment.json",
+      "sha256": "sha256:7b667fae52a07f2fde0f60de63739ff17bc0791d79c40aa7a57cd469b3a0f5ea"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round001_teacher_forced_prior_splice_e050_r265/assessment.json",
+      "sha256": "sha256:17eefc622169feab2a5befa7f95fe6561befe4f646e34935e32a50d8bfe4f900"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round001_teacher_forced_short_e015_r265/assessment.json",
+      "sha256": "sha256:d51d6d786ce5453f73f1b333a2668d387d6493e37f0d8a67094fd1de00265640"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round001_teacher_forced_short_e070_r265/assessment.json",
+      "sha256": "sha256:302ff21002f4b46cda41937af210e534ddb7a2263a42cad5d6757c8fa639129a"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round001_teacher_forced_sustained_e015_r255/assessment.json",
+      "sha256": "sha256:fec57cc742d4e526645e8db8e2c3d0837ce9ca72a6063ed78123c4fa3ea6f23b"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round001_teacher_forced_sustained_e070_r255/assessment.json",
+      "sha256": "sha256:0306099b62174a4c677fedd84955e8812a880b735ac59c82d682073083b27985"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round002_student_learned_neutral/assessment.json",
+      "sha256": "sha256:b16a35fb60c686642767ac2ba7776a8325f24ab6986a3ec8724606f0dfa3589d"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round002_teacher_forced_neutral/assessment.json",
+      "sha256": "sha256:5463866dceaccac61980312925bb55f213900635193f9f8c7c33c300fc1a0200"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round002_teacher_forced_prior_splice_e015_r265/assessment.json",
+      "sha256": "sha256:2838f12c43d2f55249b1a2cf141d88b290c43bf67cacb73b02cd9ecfcc9868e2"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round002_teacher_forced_prior_splice_e050_r265/assessment.json",
+      "sha256": "sha256:0e33bf880eb8693ce06f65a032a9730357465420d740749832403740695098f0"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round002_teacher_forced_short_e015_r265/assessment.json",
+      "sha256": "sha256:a7b80ec8d47a2f8a753b6b8162ad6726bfb1504b14dbfecdf938a4c2424765c8"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round002_teacher_forced_short_e070_r265/assessment.json",
+      "sha256": "sha256:64fd41f108788bedd94f6184ac828a0ea1afabde9af67073d4f6376ca62cbdb8"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round002_teacher_forced_sustained_e015_r255/assessment.json",
+      "sha256": "sha256:4637a2236acf8f4c5cd08ea2d64f9e5c2c8bad1fece61bfd0042e5a9c2b4bf9b"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round002_teacher_forced_sustained_e070_r255/assessment.json",
+      "sha256": "sha256:ec7a797ac65cc1961510b044c433756520f42ed309a8a6b4d128a2aa3f92a073"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round003_student_learned_neutral/assessment.json",
+      "sha256": "sha256:f515d92768b5040746ff074fe4712d645b8422a11739916f1e4db769c0bfd98a"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round003_teacher_forced_neutral/assessment.json",
+      "sha256": "sha256:5033cd277508523e691629f691504a7f4f7e68a2390a7d78b6d607afcd006c29"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round003_teacher_forced_prior_splice_e015_r265/assessment.json",
+      "sha256": "sha256:3f1dc51c4891c0390fceb4b87453182f5208f8c3a92942a785af2a6dd5f0ec83"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round003_teacher_forced_prior_splice_e050_r265/assessment.json",
+      "sha256": "sha256:a68c4b5e1bbf807cfc3a05f52517a4d122880abb0d7b59a4594a0a954f3b0011"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round003_teacher_forced_short_e015_r265/assessment.json",
+      "sha256": "sha256:3a655dc4be6bb7ef615cdc51aea977ead1316637ceb49b869fff02770c85127a"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round003_teacher_forced_short_e070_r265/assessment.json",
+      "sha256": "sha256:6052d0369d0e655c300e882410d4b3317a806f8dd13c7c6bf3a139102f060e33"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round003_teacher_forced_sustained_e015_r255/assessment.json",
+      "sha256": "sha256:a18ec925338306528ad92e30c8b7ae0a7a468f526ee26782d609ed99bf38fcf4"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/attempts/round003_teacher_forced_sustained_e070_r255/assessment.json",
+      "sha256": "sha256:0bf89124ed4a23b392a76acc61aa1676132964afc68c552b60bd20096bd2f7a8"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round000_teacher_forced_neutral/assessment.json",
+      "sha256": "sha256:68c7b91616949a701e5dca5fd1bbc24603dc74687926a786184257a069b46e87"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round000_teacher_forced_prior_splice_e015_r265/assessment.json",
+      "sha256": "sha256:6e53018930d19641e59420f19e962ea9344db53cc97a805b1ed27e9784c6bce5"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round000_teacher_forced_prior_splice_e050_r265/assessment.json",
+      "sha256": "sha256:a5879ddccd3aeaf1359fb98efd7247eebfb3caae04fe4613db2d418bffaaa168"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round000_teacher_forced_short_e015_r265/assessment.json",
+      "sha256": "sha256:52676bf5ed4bc008b5186f448fb0b03956ef714c3740f7dc948a2e06b787d3ac"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round000_teacher_forced_short_e070_r265/assessment.json",
+      "sha256": "sha256:e7506779e9ec7e10b64de6f68e2e580e1be134bd9f4bde7bfba646d9b2dc0607"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round000_teacher_forced_sustained_e015_r255/assessment.json",
+      "sha256": "sha256:02d27962846db740bfed8ac210f5109ca7394782bb133e18afc50195a14caec3"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round000_teacher_forced_sustained_e070_r255/assessment.json",
+      "sha256": "sha256:dca8df241f85ac83bd053e1f0646f176b1f479fad0ca584ce1e5779251942085"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round001_student_learned_neutral/assessment.json",
+      "sha256": "sha256:f44bcdeae2ef87cfd325c2e0016a3897e4efe2c951a46701616292016d0f4462"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round001_teacher_forced_neutral/assessment.json",
+      "sha256": "sha256:b673caf0ebdeeb7910aaa9132f380fc5ce843ee10e25f0508eb4b9e20f51e3b9"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round001_teacher_forced_prior_splice_e015_r265/assessment.json",
+      "sha256": "sha256:5e63c5fadc04eb8e4934a59f8f78c66ad6f92afee7d9856a4ae7fb3766580c58"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round001_teacher_forced_prior_splice_e050_r265/assessment.json",
+      "sha256": "sha256:e07898e672cc00abffee537d7daad381c58dd54d84eebedd71ebad541452ef71"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round001_teacher_forced_short_e015_r265/assessment.json",
+      "sha256": "sha256:bf1d746e4d190dfaa64959a10d64a8bb8fcae7004d827a71b7d39639255817e6"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round001_teacher_forced_short_e070_r265/assessment.json",
+      "sha256": "sha256:0b6eb5ffb3e114d464dc9ecfdae082d27baa752070821c29505ffe16d92fab7a"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round001_teacher_forced_sustained_e015_r255/assessment.json",
+      "sha256": "sha256:fbf0ec5ae39f9ce6568211088043bdc5228f6736d8ce2a8849245a7c3897d059"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round001_teacher_forced_sustained_e070_r255/assessment.json",
+      "sha256": "sha256:af511da2fd344f8b6d2f584bf64b59543161ec36d5f12ea55496065c956bd89c"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round002_student_learned_neutral/assessment.json",
+      "sha256": "sha256:bf2d748257221312bc150ec63dc2bb32d79b223a93e89ef00c01aa20b63354ca"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round002_teacher_forced_neutral/assessment.json",
+      "sha256": "sha256:0a952f8f6284abaad41fd2ac98a893eba218c0a9b35f764663a7502b080471db"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round002_teacher_forced_prior_splice_e015_r265/assessment.json",
+      "sha256": "sha256:a46ddc9c53ae25c9d689e2db6a9066ee0cd7641054a7b755ff721f953f019141"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round002_teacher_forced_prior_splice_e050_r265/assessment.json",
+      "sha256": "sha256:8c9356cf7606e3fd9afcf313abd9c62314c5f8e06170af7ba8e510b5eea13d0c"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round002_teacher_forced_short_e015_r265/assessment.json",
+      "sha256": "sha256:04e1718114ac3bdb1b4a363319672269587b33d685a5ebeeb76f92fe63885a32"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round002_teacher_forced_short_e070_r265/assessment.json",
+      "sha256": "sha256:1bd78ca80caf7fef133f2847f07497fcfca941c8d2d166cc60f732c2007aabbe"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round002_teacher_forced_sustained_e015_r255/assessment.json",
+      "sha256": "sha256:e6f745dcdae69eb34c2395bf7bf5275b70ab5b47180db250c55c90866046b70b"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round002_teacher_forced_sustained_e070_r255/assessment.json",
+      "sha256": "sha256:efc841bf820f752cfb5dfed83c3de40ba49943341e4cd8096753907fb35b6f66"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round003_student_learned_neutral/assessment.json",
+      "sha256": "sha256:d377c93bc525d16094df62e256df9cffca2ba2d39ca6b3ffa0cb123d77431ee0"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round003_teacher_forced_neutral/assessment.json",
+      "sha256": "sha256:20bf383fb5066bd02a68d2f487928d320b9f2396f7db165b7bbf8461dd5e8af4"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round003_teacher_forced_prior_splice_e015_r265/assessment.json",
+      "sha256": "sha256:c3a970d62f9f99d31f20d4906f44311f943a9fee27f32623cde3d19886034b76"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round003_teacher_forced_prior_splice_e050_r265/assessment.json",
+      "sha256": "sha256:fb42ac314aa20c8f6ad105fcaedcfcbb9cb67b63b5b2d0e94f14f3ecc76c36cc"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round003_teacher_forced_short_e015_r265/assessment.json",
+      "sha256": "sha256:974d5dd1566d1d3b545c2681ac403104f5607f8ec4ed9cddfeb1b61fb497b4aa"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round003_teacher_forced_short_e070_r265/assessment.json",
+      "sha256": "sha256:30c3618c5956d6f1db070ac3160b58d7618365e4a9a0d15a0f2577696d00ce6a"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round003_teacher_forced_sustained_e015_r255/assessment.json",
+      "sha256": "sha256:989da5465303600fe7a4b2edf8defdc924cb75277fce1ca3aaf0de832b5f7781"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/controller/attempts/round003_teacher_forced_sustained_e070_r255/assessment.json",
+      "sha256": "sha256:3f24e69265913fcdb74982db3d8437a1981541f77f519cf7e5ceb2cce06d9433"
+    }
+  ],
+  "focused_test_command": ".venv_isaaclab/bin/python -m pytest -q decoupled_wbc/tests/test_motion2scene_resume_expanded_acquisition.py decoupled_wbc/tests/test_motion2scene_expanded_acquisition.py",
+  "focused_tests_passed": 10,
+  "initial_validation_invocation_error": "A preliminary read-only preflight used Path.resolve on the venv interpreter symlink and therefore invoked the base Python; the unchanged guard rejected its different inventory. Corrected to the literal declared venv executable before launch; no environment or freeze edit.",
+  "native_preflight": {
+    "checked_artifacts": 222,
+    "editable_sources_equal": true,
+    "effective_native_usd_cache": "/home/linjiw/.cache/isaaclab/usd/g1_model_12_dex",
+    "environment": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-native-runtime-freeze-v6/environment.json",
+      "sha256": "sha256:fa6ca426252193b14415b95faba6658150642d2c9463c57f185361dff46bd43c"
+    },
+    "new_physics_steps": 0,
+    "runtime_assets": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-native-runtime-freeze-v6/runtime_assets.json",
+      "sha256": "sha256:7d0cfa2d870ec67dabff4cc5ad16bde0312e5b9612102c89bf6482338b401753"
+    },
+    "runtime_inventory_equal": true,
+    "schema": "motion2scene_native_runtime_preflight_v1",
+    "status": "configuration_verified_before_launch"
+  },
+  "new_fits": 0,
+  "new_physics_steps": 0,
+  "repair": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v7/repair.json",
+    "sha256": "sha256:a2b9d4a97cbd67b99f6bba3e9158e62cb2ac7332c3ad99a7246538987fc2fe02"
+  },
+  "validated_utc": "2026-09-10T03:08:28.600248+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "analysis": "analysis.json",
+  "diagnostics": "diagnostics.json",
+  "figures": {
+    "acceptance-envelope": "analysis.envelope.rows; finite geometric diagnostic, not physical outcomes",
+    "executed-contrast": "nom_41001_analytic_00, both commands, actual bank and force records",
+    "full-input-aliasing": "analysis.studies.nominal.fit_diagnostics; all original groups retained",
+    "paired-outcomes": "analysis.seed_level_rows plus validated command_lookup; nominal four arms, seed8511 reused comparators"
+  },
+  "post_hoc_figures": true
+}

@@ -1,0 +1,71 @@
+{
+  "completed_comparators": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/comparators_complete.json",
+    "sha256": "sha256:dfbda82b79da60129d4ed4dc832e03cf13bb2de66900c8e98474999791841ae8"
+  },
+  "implementation": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/run.py",
+    "sha256": "sha256:021231b3831c49a8daf1e2ab23059a251316e74ee398cf590bad7a29e6143744"
+  },
+  "predecessor": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v7/sequence.json",
+    "sha256": "sha256:5e4ea0cf8ed52c2d0aceeaa11a9d0205b181fff054ef5ffb22389c7dcc9cde80"
+  },
+  "process": {
+    "argv": [
+      "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python",
+      "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/run.py"
+    ],
+    "pid": 2474326,
+    "start_ticks": "7930904",
+    "state": "R"
+  },
+  "reconciliation": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/reconciliation.json",
+    "sha256": "sha256:ed25098d07157ea5d83750ba5ce62a3ca41b18794c7bfe4ca2fae889378c2733"
+  },
+  "scope": "One known-cost unknown student retained, no retry; native method, histories, budgets and reserved split unchanged.",
+  "sequence": [
+    "same acquisition to M8",
+    "original 138-assignment development panel",
+    "same acquisition trajectories through M16/M32"
+  ],
+  "sources": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_resume_recorded_student.py",
+      "sha256": "sha256:4a28981fb8f23a1ca0a5fe1d4b436d2107b4210e4ec4d8ead76bb3a7aa3ce598"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_resume_expanded_acquisition.py",
+      "sha256": "sha256:d5f85cea8bb566e9e23e172ee9b51e8743d8206353b5f7be3dd2052333fea36d"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_development_ready.py",
+      "sha256": "sha256:93f0ae3263999e0054eb67850b349f69c8cf97f564cc03a1f6f18535c2b63d23"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_development_checkpoint_panel.py",
+      "sha256": "sha256:61fe70cb795c1c6ee4608c02ba42e1fe4334997e685a43fdcd23c7265276a552"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json",
+      "sha256": "sha256:bf551021c82fd42d0e6b002a2941a71b1358d72a469903105a2230bdfae3a4ed"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json",
+      "sha256": "sha256:f5e69567fc3984b0a6afb0cc896e63d9281a5fba39d629710c1c5780e1ed9860"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v7/repair.json",
+      "sha256": "sha256:a2b9d4a97cbd67b99f6bba3e9158e62cb2ac7332c3ad99a7246538987fc2fe02"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/reconciliation.json",
+      "sha256": "sha256:ed25098d07157ea5d83750ba5ce62a3ca41b18794c7bfe4ca2fae889378c2733"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/study.json",
+      "sha256": "sha256:ee75906a10e2d585f5b9c7172cd578d56068392ee88bed5a9b13e42f63b771b2"
+    }
+  ]
+}

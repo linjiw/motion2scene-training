@@ -1,0 +1,181 @@
+{
+  "budget": 8,
+  "corpora": [
+    {
+      "candidate_id": "primary_candidate_93202_0592",
+      "completion": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/controller/complete_008.json",
+        "sha256": "sha256:4159d881301f41dd28e49c431d6d864957e20ef793eb29cd8f7d2ef263536656"
+      },
+      "cumulative_physics_steps": 83848,
+      "generating_model": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/models/model_007/policy.npz",
+        "sha256": "sha256:963bcdc666ed40112751b4e347ea33583975fe154a784726892eca5255df5172"
+      },
+      "learner_l2": 10.0,
+      "new_encounter_physics_steps": 9536,
+      "new_model": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/models/model_008/policy.npz",
+        "sha256": "sha256:1f7dbb58d9654d537cc5da004aa2a6bbaf52b04c04535cf152886509c1f775d9"
+      },
+      "prefix_response_summary": {
+        "adaptation_required_lower": 4,
+        "assigned_tasks": 8,
+        "bank_solvable_lower": 4,
+        "bank_solvable_upper": 4,
+        "bank_unsolvable": 4,
+        "best_fixed_passages_lower": 4,
+        "best_fixed_passages_upper": 4,
+        "best_fixed_schedule_ids": [
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 8,
+            "passes": 0,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 4,
+            "passes": 4,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 4,
+            "passes": 4,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 8,
+            "passes": 0,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 8,
+            "passes": 0,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 5,
+            "passes": 3,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 5,
+            "passes": 3,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [],
+            "tasks": 4
+          },
+          {
+            "schedules": [
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265"
+            ],
+            "tasks": 1
+          },
+          {
+            "schedules": [
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 3
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      },
+      "preupdate": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/round_008/preupdate.json",
+        "sha256": "sha256:89ce0cbb5a8378dbe7ca24ed4c2f5e2a164c8e1bf1214c10b91fadd51623a41a"
+      },
+      "prior_teacher_prefix_preserved": true,
+      "run_id": "seed93202_reference_contrast",
+      "scene": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-candidate-pools-20260909-v1/seed_93202/definitions/primary_candidate_93202_0592.json",
+        "sha256": "sha256:9b38d41fa85997bf2e1d2f566ea387bccb05b140c6b9a6c64a2ed6fc0ad8e610"
+      },
+      "student_collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/round_008/student/result.json",
+        "sha256": "sha256:78914c8b16f9b4cd2f4d2d64297872093dc0057dbc3806376ea848d4d3050d5e"
+      },
+      "student_passage_time_s": 3.38,
+      "student_physics_steps": 1192,
+      "student_selected_schedule": "prior_splice_e015_r265",
+      "student_task_outcome": "pass",
+      "teacher_collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/round_008/teachers/result.json",
+        "sha256": "sha256:7e80056d6ac0706f3888624d945d4b9cccc39e6764d4ac3715ed07c81281923e"
+      },
+      "teacher_outcomes": {
+        "neutral": {
+          "outcome": "failure",
+          "passage_time_s": null,
+          "steps": 1192
+        },
+        "prior_splice_e015_r265": {
+          "outcome": "pass",
+          "passage_time_s": 3.38,
+          "steps": 1192
+        },
+        "prior_splice_e050_r265": {
+          "outcome": "pass",
+          "passage_time_s": 3.38,
+          "steps": 1192
+        },
+        "short_e015_r265": {
+          "outcome": "failure",
+          "passage_time_s": null,
+          "steps": 1192
+        },
+        "short_e070_r265": {
+          "outcome": "failure",
+          "passage_time_s": null,
+          "steps": 1192
+        },
+        "sustained_e015_r255": {
+          "outcome": "pass",
+          "passage_time_s": 3.44,
+          "steps": 1192
+        },
+        "sustained_e070_r255": {
+          "outcome": "pass",
+          "passage_time_s": 3.44,
+          "steps": 1192
+        }
+      },
+      "weighting": "uniform_per_phase"
+    }
+  ],
+  "interpretation": "One reference-arm acquired scene. The student outcome belongs to its generating M7 policy, not the new M8 fit or a common-set/held-out evaluation. All earlier bank-unsolvable tasks and the reconciled student unknown remain in the acquisition history and measured cost. Finite-bank coverage is not perceptual realizability. Passage time is crossing plus stabilization, not full adaptation/recovery completion. No queue, teacher, learner, scoring or reserved assignment changes.",
+  "new_fits_from_readout": 0,
+  "new_physics_from_readout": 0,
+  "physics_seed": 93202,
+  "plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json",
+    "sha256": "sha256:bf551021c82fd42d0e6b002a2941a71b1358d72a469903105a2230bdfae3a4ed"
+  },
+  "schema": "motion2scene_completed_acquired_corpora_readout_v1",
+  "utc": "2026-09-10T13:28:08.418339+00:00",
+  "verification_scope": "Hash-bound completed collection/training receipts, actual policy/scene/branch identities and unchanged previous teacher prefix. Uses original collection scoring; no second raw-record audit."
+}

@@ -1,0 +1,358 @@
+{
+  "schema": "motion2scene_duration_policy_comparison_figure_v1",
+  "source_result": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/result.json",
+    "sha256": "sha256:b39564dd4b45b6b95eb6a5cecb1494f35de2c8c02e199c90036b552ad9edf2ba"
+  },
+  "sources": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/learned/result.json",
+      "sha256": "sha256:6755c24b5caa60f624b16e9c20ea29f79bf23ca8c69fa2019a9c5c4c9fa900c8"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/learned/manifest.json",
+      "sha256": "sha256:612a456762559a1e4153c17603b6f992e80aced8c9fe2d99257f684eefc16ade"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/learned/rollouts/learned_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:c99dbbddd755904187d266a8095e2651883a079917d6f63261d2284d4aee362f"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/scripted_sustained/result.json",
+      "sha256": "sha256:e4fa1233aae2f574dc5b7eacf4c711fc4bcf2316cb16092db89b4263a2a4f734"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/scripted_sustained/manifest.json",
+      "sha256": "sha256:5ff5e44d39e9529cf5fc789e71ada548a5667b0e3c525f6b1953305c934924fe"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/scripted_sustained/rollouts/scripted_sustained_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:afedc8b3410a40b1202b9e2f69265c19d31292af42bcc6137f4f0c547240353f"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/constant_short/result.json",
+      "sha256": "sha256:dd81473a90ff697e6da2f572aa76f0fcda8aeedacd3d63c7e72e3900971004f6"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/constant_short/manifest.json",
+      "sha256": "sha256:8287dcba7b29d9fbba6c2be8497ba988fd69e80afadfa94eb54354b725d7ba27"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/constant_short/rollouts/constant_short_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:b2a613232cd8b612fa5d820361bee8f08a45214380daf7e966dd9ccc3a0b80a0"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/constant_sustained/result.json",
+      "sha256": "sha256:be83efd9c0cea77fa6739bff3448f2cab2ea91e4d7d7e99f171fe498c91b09ac"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/constant_sustained/manifest.json",
+      "sha256": "sha256:3fec492062705fa6932b7920509c1fabb0c322d9b90e620497e1cfb17eff1455"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/constant_sustained/rollouts/constant_sustained_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:c362c5865d893cfd65f1b4fee3a64864a8134f5efa83eddc99761a4c7f692b30"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/always_walk/result.json",
+      "sha256": "sha256:d965250b7fac1ce66c7ec3b269ffd283ced41d767f246f73e943a6dbc7419ec3"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/always_walk/manifest.json",
+      "sha256": "sha256:7e9c4f4f82f552d3a1f5a22c4681ef306e43a4268b9890294815a8dd2e89b3fd"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_00/always_walk/rollouts/always_walk_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:189de1be807370418c6849ded0818304fd46966a68df9e2f1df5ec2e5de0b4c1"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/learned/result.json",
+      "sha256": "sha256:43575092a3dacfe1d288aad083e1e8d6bded846709f22936dd57e8d8f6159f5e"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/learned/manifest.json",
+      "sha256": "sha256:0d43215fbe91cfbbdebfa6c839187e380e26fdbecec0722b6b345d15cab84d3e"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/learned/rollouts/learned_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:372eaa45e0cf3ee87aabebec054ab4cf32f01bb42149263fe2504c4d003aeab0"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/scripted_sustained/result.json",
+      "sha256": "sha256:eaa222c9d2e7f6d0ef261bb92e29fd4884e38842c6bf09f255bc816115500466"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/scripted_sustained/manifest.json",
+      "sha256": "sha256:77610a518474d327941a5aa80ff6230e9e51c51dbd9cbf4d4f331fa17585526a"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/scripted_sustained/rollouts/scripted_sustained_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:666e061f0c47e2c80fe3a2c9ff5bfbbf680631c8bf7ff3e8e2e2614e490db623"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/constant_short/result.json",
+      "sha256": "sha256:56cbde9d344fc7c14ddc82b7017830f8fa79917a5a2e35f36410ca7ccdc3f047"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/constant_short/manifest.json",
+      "sha256": "sha256:66d932de443ce335da4f81d0ecd3a5978103b8bc03088ae8c718eff8f083df2e"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/constant_short/rollouts/constant_short_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:e4218e97cd0d58b03d30723791abdee493ad80b0960efcfd0bdeb94ece288e8e"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/constant_sustained/result.json",
+      "sha256": "sha256:cd2fd4177296ddc57965f145435fb54218092e8041033486b3f1d590e13344a8"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/constant_sustained/manifest.json",
+      "sha256": "sha256:3cd6a6c6642bd7bbb084a069b3f28aafa4d6c04cc24e7efc2ef42389cdacfc30"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/constant_sustained/rollouts/constant_sustained_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:475628f1895ed3a71bfe0b4c7537c9f7e0583db4ce34bd2488ff161d125d1f32"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/always_walk/result.json",
+      "sha256": "sha256:905709a711ec0becf2db4432585bf0d15c44905ba2e20a924c65f118def6510a"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/always_walk/manifest.json",
+      "sha256": "sha256:5bbfe9a5c54e3070953e05f578c37523bed08d2ae2a76e36d69c6302861dc5f1"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_01/always_walk/rollouts/always_walk_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:d56a8b33e04640efa61563b9c681868b0e01c44d881a08f961b24cf9fb0a6633"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/learned/result.json",
+      "sha256": "sha256:e38c3721ab4955dc1d7a314a11001c382b8294799dbaf57a1f205e6e20db893d"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/learned/manifest.json",
+      "sha256": "sha256:0f3aa1dd441ed85835906ead0b86c01224f11d743710b53378bbbcd8f9ba8af2"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/learned/rollouts/learned_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:8a97d7e485ca703f4a76e2fa7d1c47654beb27f1fc0e249d47fd1cbd7402b85f"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/scripted_sustained/result.json",
+      "sha256": "sha256:b2036034173e317f20d6f696afc7137b0a4ba60626b8231b7c72eb67b122265d"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/scripted_sustained/manifest.json",
+      "sha256": "sha256:c7826dafb663a0ab382c83dc0837dc8f2da0ffd8f78bc8f643a262e4aba6c659"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/scripted_sustained/rollouts/scripted_sustained_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:d1c436009672ea9c41f991c42499526ce05637c2083eb5c0c0590c2658051251"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/constant_short/result.json",
+      "sha256": "sha256:c2899712de142cecc6bd02528076b48a12a10f17308be9cfc9a58b555dff7f6e"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/constant_short/manifest.json",
+      "sha256": "sha256:b48cb79d0ae59c22d939f0b12e9a425e72533092590d3d9b2cfaad17a2c31605"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/constant_short/rollouts/constant_short_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:e24a5f8f4793ead61de162fee6c75bc688f218354cbbce6f7db518856f0287a4"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/constant_sustained/result.json",
+      "sha256": "sha256:fb48e726f3c9cbc2d0f649fbbd21df990dfd6a46897fe8f4b3ceeaa704ab64ff"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/constant_sustained/manifest.json",
+      "sha256": "sha256:64981f8b1589532bc27d4b16c0ab3e1bdd214c201281c6701d43f46ea1872e11"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/constant_sustained/rollouts/constant_sustained_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:ea49a8ac0f344fccb78a895acec07e39de9847f96569010ae60763450350443f"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/always_walk/result.json",
+      "sha256": "sha256:9d0c6ee9f82d8d59af0037ef5e7c5bdafcd88ba1a04a221753273778c831e1d1"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/always_walk/manifest.json",
+      "sha256": "sha256:31a93444f554883ef725a4002695792eaf5cd249ef98b4d6cf80024695f36399"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-policy-comparison-v1/scene_02/always_walk/rollouts/always_walk_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:9fe3568dfc054bf714cb4d7ab3e1d95ccb4c31a45fa84151deaa1e83ecd8848f"
+    }
+  ],
+  "rows": [
+    {
+      "mode": "learned",
+      "scene_index": 0,
+      "pass": true,
+      "passage_time_s": 5.4,
+      "actual_entered_option_ids": [],
+      "terminal_hold_failure": false
+    },
+    {
+      "mode": "scripted_sustained",
+      "scene_index": 0,
+      "pass": true,
+      "passage_time_s": 5.4,
+      "actual_entered_option_ids": [],
+      "terminal_hold_failure": false
+    },
+    {
+      "mode": "constant_short",
+      "scene_index": 0,
+      "pass": true,
+      "passage_time_s": 5.9,
+      "actual_entered_option_ids": [
+        "short_e015_r265"
+      ],
+      "terminal_hold_failure": false
+    },
+    {
+      "mode": "constant_sustained",
+      "scene_index": 0,
+      "pass": false,
+      "passage_time_s": null,
+      "actual_entered_option_ids": [
+        "sustained_e015_r255"
+      ],
+      "terminal_hold_failure": true
+    },
+    {
+      "mode": "always_walk",
+      "scene_index": 0,
+      "pass": true,
+      "passage_time_s": 5.4,
+      "actual_entered_option_ids": [],
+      "terminal_hold_failure": false
+    },
+    {
+      "mode": "learned",
+      "scene_index": 1,
+      "pass": true,
+      "passage_time_s": 4.1,
+      "actual_entered_option_ids": [
+        "sustained_e015_r255"
+      ],
+      "terminal_hold_failure": false
+    },
+    {
+      "mode": "scripted_sustained",
+      "scene_index": 1,
+      "pass": true,
+      "passage_time_s": 4.1,
+      "actual_entered_option_ids": [
+        "sustained_e015_r255"
+      ],
+      "terminal_hold_failure": false
+    },
+    {
+      "mode": "constant_short",
+      "scene_index": 1,
+      "pass": true,
+      "passage_time_s": 4.06,
+      "actual_entered_option_ids": [
+        "short_e015_r265"
+      ],
+      "terminal_hold_failure": false
+    },
+    {
+      "mode": "constant_sustained",
+      "scene_index": 1,
+      "pass": true,
+      "passage_time_s": 4.1,
+      "actual_entered_option_ids": [
+        "sustained_e015_r255"
+      ],
+      "terminal_hold_failure": false
+    },
+    {
+      "mode": "always_walk",
+      "scene_index": 1,
+      "pass": false,
+      "passage_time_s": null,
+      "actual_entered_option_ids": [],
+      "terminal_hold_failure": false
+    },
+    {
+      "mode": "learned",
+      "scene_index": 2,
+      "pass": true,
+      "passage_time_s": 4.68,
+      "actual_entered_option_ids": [
+        "sustained_e015_r255"
+      ],
+      "terminal_hold_failure": false
+    },
+    {
+      "mode": "scripted_sustained",
+      "scene_index": 2,
+      "pass": true,
+      "passage_time_s": 4.68,
+      "actual_entered_option_ids": [
+        "sustained_e015_r255"
+      ],
+      "terminal_hold_failure": false
+    },
+    {
+      "mode": "constant_short",
+      "scene_index": 2,
+      "pass": false,
+      "passage_time_s": null,
+      "actual_entered_option_ids": [
+        "short_e015_r265"
+      ],
+      "terminal_hold_failure": false
+    },
+    {
+      "mode": "constant_sustained",
+      "scene_index": 2,
+      "pass": true,
+      "passage_time_s": 4.68,
+      "actual_entered_option_ids": [
+        "sustained_e015_r255"
+      ],
+      "terminal_hold_failure": false
+    },
+    {
+      "mode": "always_walk",
+      "scene_index": 2,
+      "pass": false,
+      "passage_time_s": null,
+      "actual_entered_option_ids": [],
+      "terminal_hold_failure": false
+    }
+  ],
+  "counts": {
+    "learned": 3,
+    "scripted_sustained": 3,
+    "constant_short": 2,
+    "constant_sustained": 2,
+    "always_walk": 1
+  },
+  "renderer": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/render_motion2scene_duration_policy_comparison.py",
+    "sha256": "sha256:c7bc0b2b7624386682ea6682b057a7909be8350b7e3f91aa0b2fadc15ac01985"
+  },
+  "artifacts": [
+    {
+      "path": "docs/motion2scene/evidence/traversal-v2/duration_policy_comparison.pdf",
+      "sha256": "sha256:c3133afd808507d1eece10dc4e6a12c4229837a0617537f3166e27c68da08aa3"
+    },
+    {
+      "path": "docs/motion2scene/evidence/traversal-v2/duration_policy_comparison.svg",
+      "sha256": "sha256:71b14da7d24e176aa01a9beb2d025a2fdcdb18c822982d2f47eb4ee7d04d5305"
+    },
+    {
+      "path": "docs/motion2scene/evidence/traversal-v2/duration_policy_comparison.png",
+      "sha256": "sha256:659a51030cd72f8206c2e09de9d3b2e0bfeaf98b804352704a9ece82ad80769c"
+    }
+  ],
+  "caption": "Fifteen actual six-second development episodes on the same three training layouts, physics seed 8732. Learned and scripted policies pass 3/3 with identical choices/times. Constant short passes 2/3 and is 0.04 s faster on the short beam. Constant sustained passes 2/3; empty crossing has insufficient remaining stabilization time under the registered finite horizon, without fall or contact. Always walk passes 1/3. No held-out, curriculum or learned duration-selection improvement is established.",
+  "new_physics_steps": 0
+}

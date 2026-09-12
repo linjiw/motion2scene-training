@@ -1,0 +1,1 @@
+/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python: No module named pip

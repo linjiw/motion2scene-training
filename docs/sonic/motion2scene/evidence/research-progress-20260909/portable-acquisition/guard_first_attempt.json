@@ -1,0 +1,6 @@
+{
+  "exit_status": 1,
+  "reason": "initial path guard also denied installed NumPy because the virtual environment is inside the repository",
+  "resolution": "allow installed site-packages while retaining runtime import denials and original project/data source denials",
+  "new_physics_steps": 0
+}

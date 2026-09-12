@@ -1,0 +1,19 @@
+{
+  "files": [
+    {
+      "path": "models/sonic_release.pt",
+      "sha256": "e6bdab3f64a39336b3d41877d4f497d05f58af275f288ec0e6746c283ded8909",
+      "bytes": 469418283
+    },
+    {
+      "path": "models/previous_teacher.pt",
+      "sha256": "48b3a1c04cdbbcd9ffe8ad10b2591aff781c253c03c61ccb8683348d862c54ed",
+      "bytes": 448604646
+    },
+    {
+      "path": "models/best_student.pt",
+      "sha256": "adfbe78bebb95e5ee269d3ac7af08473fddeca41554588e17e229e7c07f5bc5d",
+      "bytes": 12482133
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "analysis_sources": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_response_diversity.py",
+      "sha256": "sha256:4d11c1cf234e4f579def74979715433a57f3cdc4dfbbb00961072750b8f91fe8"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_wait_information_control.py",
+      "sha256": "sha256:b4f6763289240e4c957435bf30a5c73798a3b033d8fb24ebce0350d00739f29f"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_render_acquisition_evidence.py",
+      "sha256": "sha256:2a45aae47971d252360f5cf9fe50bd60d8d13851980d5cab16beb1f321afb4d3"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/decoupled_wbc/tests/test_motion2scene_response_diversity.py",
+      "sha256": "sha256:6e70d678e94a3f32fe440cecb6551d38574e0803f5b164b295606dce281cb7f8"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/decoupled_wbc/tests/test_motion2scene_wait_information_control.py",
+      "sha256": "sha256:831053043972bd0cf3ac4322f9405043ea15b47366a189604da6f6412d6db393"
+    }
+  ],
+  "correctness_tests": {
+    "passed": 54,
+    "command": "OPENBLAS_NUM_THREADS=1 .venv_isaaclab/bin/python -m pytest -q decoupled_wbc/tests/test_motion2scene_schedule_teacher.py decoupled_wbc/tests/test_motion2scene_timed_schedule_collector.py decoupled_wbc/tests/test_motion2scene_sensor_alignment.py decoupled_wbc/tests/test_motion2scene_primary_controller.py decoupled_wbc/tests/test_motion2scene_expanded_acquisition.py decoupled_wbc/tests/test_motion2scene_acquisition_pool.py decoupled_wbc/tests/test_motion2scene_timed_outcome.py decoupled_wbc/tests/test_motion2scene_observation_timing.py",
+    "warnings": 33,
+    "warning_type": "pre-existing invalid escape deprecation"
+  },
+  "analysis_tests": {
+    "passed": 28,
+    "command": "OPENBLAS_NUM_THREADS=1 .venv_isaaclab/bin/python -m pytest -q decoupled_wbc/tests/test_motion2scene_response_diversity.py decoupled_wbc/tests/test_motion2scene_wait_information_control.py decoupled_wbc/tests/test_motion2scene_acquisition_yield.py decoupled_wbc/tests/test_motion2scene_checkpoint_controls.py decoupled_wbc/tests/test_motion2scene_information_ablation.py decoupled_wbc/tests/test_motion2scene_observation_teacher.py"
+  },
+  "formatting": "Black --check and Ruff check passed on all five new source/test files",
+  "paper_build": "/home/linjiw/.local/bin/tectonic docs/motion2scene/submission/traversal_method_v2.tex --keep-logs",
+  "new_physics_launched_by_this_turn": 0
+}

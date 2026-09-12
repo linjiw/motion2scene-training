@@ -1,0 +1,16 @@
+{
+  "new_physical_executions": 0,
+  "rendered_report_exact": true,
+  "renderer": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_render_development_comparators.py",
+    "sha256": "sha256:f50b0a6e600dad31d1b74059f7e1f3a31502627831db9b984a94e7ca6626bf51"
+  },
+  "report": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/M8_DEVELOPMENT_COMPARATORS.md",
+    "sha256": "sha256:b748b35766805cc05abe835ad53ffb5acf4096c54dc8d437545516ca2354049c"
+  },
+  "result": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-development-comparators-summary-20260910-v2/result.json",
+    "sha256": "sha256:41891e2533d1da581fd99593dac0c2b6da095606d77886072f6c02e712dce795"
+  }
+}

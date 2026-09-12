@@ -1,0 +1,4799 @@
+{
+  "files": [
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/motion-ledger.json",
+      "sha256": "a21cb2edef7e7542b6fad2b59552afe5ab7a5f70a4721cf1487b63dcafd0506a",
+      "bytes": 590561
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/recipe.json",
+      "sha256": "80381672e4d7028b3df50663d58dd923534106cd2fe32914c689f8cd1dc3b610",
+      "bytes": 6080
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/summary.json",
+      "sha256": "98f011e912d2c41a26d83e8ab8592b2f1beab277d9beb8c3bda3f492814305c6",
+      "bytes": 717
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/manifest.json",
+      "sha256": "f80d03b00a0026865309726ee3498c7ab331fdafa8e49a4259d00b66178f0867",
+      "bytes": 141399
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00391.pkl",
+      "sha256": "580ba59f19a722821180912d3a3540893d4274990415f70a2c99752663ff4ebc",
+      "bytes": 52743
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00265.pkl",
+      "sha256": "2ec7fc63b54efbd76d9dc9d08ea9e4a8675dfd7dff2f58bef078da677aca62fb",
+      "bytes": 71739
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00904.pkl",
+      "sha256": "bcf9a3280fa9683ddd8800ef1a07d979f322561008981f1237e1d78a1e1e1215",
+      "bytes": 42585
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00860.pkl",
+      "sha256": "f8dd87ecc21b56361cb3de21993a59bfa0bc844771ce85bc4e4f1342895a16a3",
+      "bytes": 43227
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00707.pkl",
+      "sha256": "5e5f4a85ae6d9b9801b15598e4dff634c978ac69705d2d48690c01e1ca0bc937",
+      "bytes": 34159
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00522.pkl",
+      "sha256": "d7f2fa40a01ac1bce28eb187a61e0f87e625ee53fedecd665d508a3b9d5db84b",
+      "bytes": 40982
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00352.pkl",
+      "sha256": "492917f8c1c218a553bf17da341edd57cbf565df9c0e7163859519e6681891ff",
+      "bytes": 34101
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00584.pkl",
+      "sha256": "2a25c43acac0ef1598f65efb78747f8656036fc5bd598acb726d4f90a089682d",
+      "bytes": 62758
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00417.pkl",
+      "sha256": "d6825cca08976223e71ba2f7a073f9d552871be8ed248e7de85d5bda8cf41c54",
+      "bytes": 86981
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00908.pkl",
+      "sha256": "75a96939de633bcb80af7814dd13cb8655ffc0344519e416b47c21dda7acff28",
+      "bytes": 43614
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00271.pkl",
+      "sha256": "c4779f55966db9f312de53c5ddab964ae3deeaf0da9ed1b7a77eccd16c216700",
+      "bytes": 44009
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00693.pkl",
+      "sha256": "c7fbc2b363f5d486d38b2e9fab253885e38e93ff53289018f5a5104b011d28d4",
+      "bytes": 53665
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00185.pkl",
+      "sha256": "15e61dd16f3cda44273dec9b9a0b079e8163150380067f1fb242674497a06966",
+      "bytes": 44251
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00831.pkl",
+      "sha256": "9ff01b5d378655d802da4d2487cf8ebd4313e536e5773a39c4432bea7718febd",
+      "bytes": 53648
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00204.pkl",
+      "sha256": "c7fcb1fac69b9cde6d5748603ebaadf65fa66b8d917eb6474ee35d59a28a573f",
+      "bytes": 43999
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/metadata.pkl",
+      "sha256": "81696b8279b26ff44ff5a94f64ee145b7c0ca230e7f2c140934a95d9a51029a5",
+      "bytes": 529
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00463.pkl",
+      "sha256": "233a855d6ce0c5dfd3215291bb7c0b141feb6bfcd389be2339137f79bebaddc0",
+      "bytes": 62985
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00446.pkl",
+      "sha256": "a4c97dc729b399cc4fe8ea4fc44009070c9a2bf4058f0d421d4bf0e6f975bf32",
+      "bytes": 67707
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00205.pkl",
+      "sha256": "a7a4ea982729be4022653a5457ee21a51af90f1ba5c9fa99a6f200608a57b66c",
+      "bytes": 72469
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00950.pkl",
+      "sha256": "c9002d1eb6a62d539a1265455ba2312a1ebbe3ea89766fdf82b56d6a8ad36700",
+      "bytes": 91096
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00381.pkl",
+      "sha256": "9cdb345b9959dd5d03b175cd40e8edcd9ff8138357b8a09f7508edb5d8762128",
+      "bytes": 72553
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00679.pkl",
+      "sha256": "64d99cf1f4129db49957ae96079364fdf22d615cf3c8ac4f0a7e2061db954dcd",
+      "bytes": 53745
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00811.pkl",
+      "sha256": "f05461e1c9dc5ba14a22e4a7631f0f0bb2bc255bd908c7ab36f263136ccfc914",
+      "bytes": 82552
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00413.pkl",
+      "sha256": "7dbc9c7739b25b03797455d0632cf415d34cd50af622c03ae8620d3220ba370c",
+      "bytes": 89253
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00331.pkl",
+      "sha256": "87f572adf91363db2e977e6d90f03123138f77dc5c91e7453ed96682e88e5e10",
+      "bytes": 72639
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00455.pkl",
+      "sha256": "415cebd314f546c956782754b7b68c17c34c9913da9cf178764b376155a18bdf",
+      "bytes": 53824
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00865.pkl",
+      "sha256": "454dca88354eca93d0817b2ff4b399aac05523f32b86f4d4e9dd96d52fb1a345",
+      "bytes": 52411
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00120.pkl",
+      "sha256": "87f0c2247050bcbfd1301bdd6f7668faa525dc77bae0f89a1faa62e62160018d",
+      "bytes": 86402
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00256.pkl",
+      "sha256": "3477e8f3740fa83f3f366ffa81a8b82af30bd5e02a6ec964ccebdc5ff6de23ce",
+      "bytes": 44162
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00850.pkl",
+      "sha256": "5fd75f34daf6e68c668affe818e11567c0c4490cf47e6efce319ddd127294891",
+      "bytes": 44114
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00604.pkl",
+      "sha256": "c4be6c047efad400633905591e686c83aace29b4ae61892fcf1231acfbb5dffb",
+      "bytes": 77293
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00287.pkl",
+      "sha256": "a2e951245f18a525d5cd01cd2e346e09d3326605c1aa5513a1ea2ac7234ad03e",
+      "bytes": 50608
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00675.pkl",
+      "sha256": "67bd87f43156181d18e113f5c1c56cb899fcf42e698bb286b094137ae13aec94",
+      "bytes": 72390
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00499.pkl",
+      "sha256": "eebcc5d8c407782bf4ac631348293f919fb6a783473c4adc059859b28ae371fc",
+      "bytes": 33946
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00490.pkl",
+      "sha256": "7997388f24fc60818917da6205e129c180173ab43577405630e6d8499495d1c7",
+      "bytes": 49794
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00801.pkl",
+      "sha256": "226ce1561e269b3ffb627ff855f60cefb4cc29f97448f261837a01449889aeff",
+      "bytes": 95642
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00051.pkl",
+      "sha256": "b049b7e13ca887b1106d656059180b797aee69a18d6018cab84b0934e899faa8",
+      "bytes": 53823
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00119.pkl",
+      "sha256": "165c9984e3bb576edf59b52dd507a307977525ded87533c9e0ad0a9ce1b16821",
+      "bytes": 34121
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00976.pkl",
+      "sha256": "042d4c68eb0a24efa783326541b465eb07aa86464ce30f4fc11eec873b0f004b",
+      "bytes": 72139
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00891.pkl",
+      "sha256": "cbc28c9c47fe9f6749aa6b916ef6ff4565a7a9f5468a975a4ed2358745d88e38",
+      "bytes": 44366
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00134.pkl",
+      "sha256": "251c8c95fa1f901cb31df460e440ee80480f6845c115c83655b87f92ef6e3312",
+      "bytes": 63295
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00118.pkl",
+      "sha256": "cf26a973be7d9d5e282fb035961029cdd2e18800fd5d309a0c79aa66e628fc25",
+      "bytes": 33927
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00796.pkl",
+      "sha256": "0cff70bb28485a50dff8822c8bf8010eaea547d9d813e523f7ce28dec5720a55",
+      "bytes": 53956
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00384.pkl",
+      "sha256": "128df3eb1ff0ce302523128cda5524023d62a47744c77f90ec2abcf1d714d706",
+      "bytes": 72721
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00266.pkl",
+      "sha256": "f662b3a5007a4352d40e69aa16d37df0df6107d90704ff3d048ee6cba585305f",
+      "bytes": 63041
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00395.pkl",
+      "sha256": "73ebb0814f738a4a272291bc248da4253549c040f16d79ba86fc6a6bd1a2e6e6",
+      "bytes": 63007
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00116.pkl",
+      "sha256": "e9d941c8ead2d2b1fd4f0370fe93f9dd7f8326b4a9da8d816c4eee5cca7ef2e9",
+      "bytes": 44202
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00044.pkl",
+      "sha256": "3cfd5c0aa73b4bf7bb702031a283f17724392a9ac32f1981b149260e3bf72ce3",
+      "bytes": 77149
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00785.pkl",
+      "sha256": "5b90aac5d561b8de990d9e5a28f69b23443f437222a81accc9c71a67317c0a6d",
+      "bytes": 73186
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00805.pkl",
+      "sha256": "da49a60ea9ca68fc8915caff2bb75592be233d02f68e1b1bd21ea735d51293ff",
+      "bytes": 53801
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00163.pkl",
+      "sha256": "4a64d2f566e473cb8043d3c5832b351c75e27fd4fba1d9c92d5042566d02301d",
+      "bytes": 61513
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00494.pkl",
+      "sha256": "a17264250355d4215441da7a358fdd4bc12910794f5bc19e5442f65a65d99bcd",
+      "bytes": 65907
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00922.pkl",
+      "sha256": "ddfb462ff84a299831d9cbc98be109dcd0366eb8275ddf1544ceb228a8cd5fdd",
+      "bytes": 53765
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00711.pkl",
+      "sha256": "f06cc4e933faa869150bb84d0a30c79eb45511b9d073e9329bf419ee6e09f104",
+      "bytes": 67786
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00820.pkl",
+      "sha256": "92776b407d9a705dc66a34f42f0b960255b1dffc5429041b90c017db35978c11",
+      "bytes": 53778
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00953.pkl",
+      "sha256": "583a1487dd173d91cc87ec876b7aa843a5283395106b88255ed1015f04cac7a5",
+      "bytes": 62719
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00050.pkl",
+      "sha256": "be2baffcb87c03988dba60f011855dad693754e1ac986ac5ac443d417ccc48a2",
+      "bytes": 53383
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00382.pkl",
+      "sha256": "63a87769621b1a0abdb76b4b62f47841ddf511f7433e3bbeaee6f0f08f08270f",
+      "bytes": 67622
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00733.pkl",
+      "sha256": "b7af114ae319e0bf776725c2a60a557752ff866baa7ee4ef7b8710ccedc9e24d",
+      "bytes": 63200
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00521.pkl",
+      "sha256": "6a165b41c4c59a455202557edf6e9eb2df7054468f4716b6cea094de82fa8919",
+      "bytes": 86527
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00102.pkl",
+      "sha256": "d6f2d16208db2e893b298908a5e63a0e0b4eb057612c6bbd4e5fc18345c24d1d",
+      "bytes": 62418
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00893.pkl",
+      "sha256": "65b1ef240912cbbfd4110ee57f5c4b8ce70e0aaa2c47bea7760f23f6d103e3b5",
+      "bytes": 53756
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00713.pkl",
+      "sha256": "b79dd91eb5ea45cd061b238edb7d6192ba8498671f2ff6bfff9455abe0fec781",
+      "bytes": 57959
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00731.pkl",
+      "sha256": "552cbc3702de64117473f5c4d2280a17085402df80ced1b3aaf4d64e47f49f4c",
+      "bytes": 91529
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00015.pkl",
+      "sha256": "5fb660fb95ad94b7f0ec829e0fb2fa6e5ab212ae1bacc916fa4d7e35ff6626b2",
+      "bytes": 53053
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00720.pkl",
+      "sha256": "778c6fc902f6af4894e748d2123d77b7c41c7d8d71ce31801b356763feb683c1",
+      "bytes": 79846
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00246.pkl",
+      "sha256": "07f7c17bf07b08c237c432a9496666a7cdb232f3d8450c2b51e2576ade95eb62",
+      "bytes": 72000
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00470.pkl",
+      "sha256": "6ee5cb293abf5ccf2f49dd2bc3952f228fb539d33d4969d8c5273ee25dcc6b13",
+      "bytes": 86934
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00431.pkl",
+      "sha256": "42ea9f8d628a7dfd9e3d05fccf6b5dfd2d4929f2746fbf4ae5b15ff127bf386a",
+      "bytes": 43691
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00649.pkl",
+      "sha256": "10fdc7675cfa5b8ff3a2b7ca36c0d142bad1c6926343ea32fd6c880a958e4dc1",
+      "bytes": 44187
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00753.pkl",
+      "sha256": "ec12a4b1fdd54f17a39443d220df653c04980b9915e6bbe68964aefc814c3f85",
+      "bytes": 91062
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00916.pkl",
+      "sha256": "5b86fe2c52c2d3d27a0072e84f4eecb1d0339c5d5cb24a342811a1019dfed964",
+      "bytes": 61323
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00124.pkl",
+      "sha256": "b3f064ad44ae9a055875bf355a48c4f319bcc17e26550a4a49d6d93de3ad5ca1",
+      "bytes": 76047
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00350.pkl",
+      "sha256": "1b54aafc8c653cb6cebe469bbc062cec5cd6d474765c106f5ddd1519b7625bfa",
+      "bytes": 56568
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00526.pkl",
+      "sha256": "ffa08ebf3c049915260604bf044356cf96f81b00511a78dd594c57ba2cb42cbe",
+      "bytes": 72439
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00990.pkl",
+      "sha256": "f42d21748b607626737690772301e373089727eddefc96e39f1cf576de4410be",
+      "bytes": 44056
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00677.pkl",
+      "sha256": "1c8376697803d69269831e5cccb28aa216215a0cd0fe78b0cfbc83c1743e6925",
+      "bytes": 44256
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00781.pkl",
+      "sha256": "98140b9598d3b19ec47467bf37b4e04ee13b119d5a71dafe04f04a3afe3658b5",
+      "bytes": 63172
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00363.pkl",
+      "sha256": "49de5264594f70b669389f1c72ea2e895678630aa87b1707ef3179a5eb168a97",
+      "bytes": 82286
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00974.pkl",
+      "sha256": "afeff0ec425e51d59c4baad6d1cb619f66762e258bc28a8c4fb4d84b54f94fca",
+      "bytes": 34158
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00399.pkl",
+      "sha256": "2ecfb8919710dbe2988cb29c2001cb0081a87d1081472e1501db0efa381315e5",
+      "bytes": 90770
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00770.pkl",
+      "sha256": "75ce633d45b530fddf2ef7dbec446dcc301f30e2829d50171422f179c7738e6a",
+      "bytes": 58162
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00783.pkl",
+      "sha256": "4379e6c20313319ac54affedbf2297cf8f663eba85496148a0c46cf1dfd7fa0d",
+      "bytes": 76963
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00754.pkl",
+      "sha256": "670dccdb2d828a65cd50a24aa8ffd5cfda321446417e41c6bda424d951c83cf7",
+      "bytes": 63249
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00258.pkl",
+      "sha256": "ce5cb3c4b4ebbaeab0124d3906fa20d517757da9322f7a2f2c1f138b1453ea54",
+      "bytes": 53829
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00588.pkl",
+      "sha256": "981407f1cfae4dc58d5e553286b43672449aec4054dbed2b37ec6c578fa955c0",
+      "bytes": 81280
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00578.pkl",
+      "sha256": "2ef09089f23b83eb00ea38effdc59a0b9b2a699944d57089212856298f76d312",
+      "bytes": 43469
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00428.pkl",
+      "sha256": "41c240401f4f2e34bcd29a63988b304b4fe1e2f470bffb22f30d05d8532889d1",
+      "bytes": 44509
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00335.pkl",
+      "sha256": "1d652d7a0af3186f2c79750ed7c64acc1141f1d9bca46c75ae8a2eabf68d82be",
+      "bytes": 90340
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/train/hindsight_00421.pkl",
+      "sha256": "0c3c5457f95c3ccf0b221f4bafd6217b7d1caaa73e4566642e1370e0290748e5",
+      "bytes": 72335
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00981.pkl",
+      "sha256": "1194d664231bcdf152ac346954d6bd62eb2e23033878c0e956c83e56cf36c8c1",
+      "bytes": 54023
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00311.pkl",
+      "sha256": "9fe31847662cf98e0281bbfbe06f0831c18236c8f145caab9cdf2708e59a719f",
+      "bytes": 73905
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00744.pkl",
+      "sha256": "d7007d12857e010cd1da844c6a430cbe6106ff0992cefafffc4b0764c3766225",
+      "bytes": 53527
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00150.pkl",
+      "sha256": "d936a846f9b53da135f7696ddaaa6d96e61614b877470faf362de00d54eaf667",
+      "bytes": 53669
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/metadata.pkl",
+      "sha256": "282cd787d250af55051da979e2ba691839c5634c3fbc7a4d5034094f82410321",
+      "bytes": 183
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00207.pkl",
+      "sha256": "5098dfcced455c74b7dc7b8bc531b82223497f8eea7c675e96763df2360c236a",
+      "bytes": 53838
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00623.pkl",
+      "sha256": "3cb9f903bf698bd478a8775ef991eba53feb2a08b56a7eec1f0060819d9d08fc",
+      "bytes": 91474
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00611.pkl",
+      "sha256": "260f5b59e13ba1d0bacae0fc6ed9b8a29791ca641f32dcc96e6138723ba55b27",
+      "bytes": 53548
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00187.pkl",
+      "sha256": "777b709ca208341589d5bee195e296c5b5526a247d204a2cf2fa8ee4a6b99b7c",
+      "bytes": 67766
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00835.pkl",
+      "sha256": "5ce7bfaea646f02f9849a5f361dd9358764c5d2ed2b99286bff1463ad150e8c6",
+      "bytes": 53289
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00047.pkl",
+      "sha256": "6fc0b4e25947c959576df572f2690ce9c00869419629267c323e83f4878c9edf",
+      "bytes": 70201
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00980.pkl",
+      "sha256": "4f745166479a7a60a77ee6f6e94be16ba6383a46dcbed7bf84f24d742b20c6e9",
+      "bytes": 82385
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00547.pkl",
+      "sha256": "212b61096205823f1ec57774078cd6736b8db5092f2f4770c1cf50505f2f6fa6",
+      "bytes": 44226
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00921.pkl",
+      "sha256": "27fff36ae09d55556cae8732e0366a61d4b66c74562126931a1fd763453c2687",
+      "bytes": 70549
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00149.pkl",
+      "sha256": "ce05c1eef0bc1c2ea2c51a39437c6ca62c5504ba561de6fac00934f27cfb8740",
+      "bytes": 60535
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00714.pkl",
+      "sha256": "bc6b417751f6be615166c3450844438685c4ba2b6938517102e7fc50e167e49a",
+      "bytes": 44298
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00117.pkl",
+      "sha256": "05f17f2df2cff9fd124540c05662f7adb5acb3e2919a103d5d55c58ec3bb008a",
+      "bytes": 72641
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00379.pkl",
+      "sha256": "95590cb26ef5a18026ca28125f7722125b52e5ed158b240d02d2fd08b083ccbd",
+      "bytes": 54019
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/screened/development/hindsight_00802.pkl",
+      "sha256": "b0cfe7c930c380680794fd868ceb7a4a36f58f9d6352aa087d620371b1da6314",
+      "bytes": 53144
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00499.json",
+      "sha256": "a893ec4ebcaf36866cb5fba1c7f47b2022fb59a98223552626f687a613afb265",
+      "bytes": 4482
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00521.json",
+      "sha256": "9e1131b15c4107b0486080fb1b04dff4da488aa92002ae4ef70fccc3bd3a9f30",
+      "bytes": 4279
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00475.json",
+      "sha256": "ca454bac43686ccb6d738bf2d861fc686fa7d5f807721828d1debc1495124f4a",
+      "bytes": 4373
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00246.json",
+      "sha256": "a129e075c14f136b3321f394563188482255d0599fb0d51c8c75e2cfd320b496",
+      "bytes": 3734
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00547.json",
+      "sha256": "ca1b0bc0a0d2630b2b36f567bf6bd4dc8c90d00464cb1229b8cc5ae089256a62",
+      "bytes": 5267
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00597.json",
+      "sha256": "d998c399ad1f87efdcafa4c74a503d3e86c996727200c851c4e9694127275bbb",
+      "bytes": 6356
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00891.json",
+      "sha256": "8573fbf32780adc09a108c6c807d28669f28498428d8fd3031bbf355175d0dd4",
+      "bytes": 4448
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00921.json",
+      "sha256": "de8d4ca5a0225da4da81afb73e31fd190ee01eb7fc524e9cb2bed2e2184500b4",
+      "bytes": 3915
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00015.json",
+      "sha256": "c4c7833129ead851cf927ea19fddfd8ecb9b8b839f1cfec0ba37a21d08f8a876",
+      "bytes": 3786
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00421.json",
+      "sha256": "b3b3ddb446245f4b76624c9969864abbd0f5eef1e8276b28749513bd73fbcc9d",
+      "bytes": 3807
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00677.json",
+      "sha256": "d78606490a19439621b9e60aa73cf00c6f9ee7caa0a97707d9ad313db504a921",
+      "bytes": 3738
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00796.json",
+      "sha256": "a2fc8bf62e1ebc8f3ee2d45febf7ad6fd44ebbf0313dcb1cf43fba8794aeeb6e",
+      "bytes": 5432
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00413.json",
+      "sha256": "3e9c17059322ca9c1fec9fec47adb26faa201476a8727bd3d9ef2bc607b61bc2",
+      "bytes": 3993
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00185.json",
+      "sha256": "e9d4380198a0cf2998ea1cbfdab8e92b2de89aba54d3139f1a937813918e6414",
+      "bytes": 4339
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00382.json",
+      "sha256": "60b19eb014a8d05b2bf2913701bea2b945ccf68763036417da2d8fb99bbeb75d",
+      "bytes": 4787
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00333.json",
+      "sha256": "947d036f317dd68c7f6b2dcac30c94ce64f861c6cc4df89d889331b7bbc6819a",
+      "bytes": 4209
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00811.json",
+      "sha256": "faff939ce8e5f4bf0a967590bd740675c8f94b95d9fc915cde5626dead3f1163",
+      "bytes": 4636
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00163.json",
+      "sha256": "d684d1178d567caade33e48f2f58710ef347bf7084437391a50d5698943b77fd",
+      "bytes": 4478
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00526.json",
+      "sha256": "a2401a1a814eb0dbc3d74149364162291cf406edcc5bb663ac9b618766efb333",
+      "bytes": 4925
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00258.json",
+      "sha256": "5621e70bf97ca3f3cfc1c14dc86010b3733862eec7f3de7df08dae5addd964fb",
+      "bytes": 5685
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00679.json",
+      "sha256": "48bfcb82739bb175bb7da1d290a521c5479dbd5e341dfad45c6a633db44e4b72",
+      "bytes": 5078
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00950.json",
+      "sha256": "d7071c4203ae61b337f73d472f1442cd81240520651bbadf26e939a3082eca2b",
+      "bytes": 6479
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00714.json",
+      "sha256": "ac77b72f4cc8a5032657f1c688d1ac97c198f19a083701b86a51ae4c32d877f0",
+      "bytes": 5685
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00990.json",
+      "sha256": "1f5b3457d5de99a2f4c6b5af564079d3c3b5809b694a6918eebbf2d857cd9d23",
+      "bytes": 3785
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00384.json",
+      "sha256": "7bcd369fb9a25c0edc7df28f6a209315d78755b713df687588caa6bc67069939",
+      "bytes": 5400
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00731.json",
+      "sha256": "ff0149916c2873060ce9cf43960db7c2039dd15820024a3be607a4a342436de5",
+      "bytes": 5985
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00265.json",
+      "sha256": "f502c31db300e6fa415afcf2de502f1015cb7b49a5915fddd5192706da7b3095",
+      "bytes": 3760
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00885.json",
+      "sha256": "eeee9bc0057bab3c636a7b3017b8ab53b4a30eea237526a22278737507d978f5",
+      "bytes": 3903
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00604.json",
+      "sha256": "582fa6a7142e5a891e7122939b0fd6830c014667f4ad13ecbd99613620b867b7",
+      "bytes": 5371
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00980.json",
+      "sha256": "95394eb1cf1886386bf3cf8df7d4925d785b19574aa8e7987c6991674565deb9",
+      "bytes": 6495
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00118.json",
+      "sha256": "1ef66890189473b1cd2fd3635690c2cab05729077a009388a4dd4a33ca5202c1",
+      "bytes": 3805
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00713.json",
+      "sha256": "620a6c441f14f7bc0494d29cdf439a8cce58a992c0b8ada97911774e6b567a2a",
+      "bytes": 5251
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00865.json",
+      "sha256": "d326e83dbd505d4a4b9c876f358947653cc8f0358654848360f2c977de01cab5",
+      "bytes": 3968
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00134.json",
+      "sha256": "ccca652e3f1d47fffd7cdfbf3e15041a0790186455d9ceffbf66b3e473218c87",
+      "bytes": 5579
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00831.json",
+      "sha256": "7fb86be0b0a1a7811420c5a328b30bf15a189e549bfffdb5a48018821ea37b5f",
+      "bytes": 5131
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00350.json",
+      "sha256": "944097e5d047e80c354353d4096b4ea172c519916416dd5e203e27b0027e503f",
+      "bytes": 4321
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00707.json",
+      "sha256": "8c70df9027a63a043f59ead8373739ddc1227ae28a9a02b49687a216464bd829",
+      "bytes": 3963
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00770.json",
+      "sha256": "f528e9ffe57415b410d6f8576929cd30b21e7c3b46b10d160a487065803516f6",
+      "bytes": 4153
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00893.json",
+      "sha256": "d518691e6f3853ddc050e2aa3266bf133c02c61e33e9678c151882240ee2c8d0",
+      "bytes": 5043
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00119.json",
+      "sha256": "3dc5296aea92365a0ad53d623045df792a9c6e774930f0d1f8cfd4ea09d5025a",
+      "bytes": 4210
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00494.json",
+      "sha256": "f4c075d5cd390708ce1b3b05644eb1ae4d22365796c432d51f78525fc3a2f9e1",
+      "bytes": 3866
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00981.json",
+      "sha256": "67db317e6525eb8b8469185876aed518f47902d4d2a6bf20eaaaabbf3affea82",
+      "bytes": 3988
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00754.json",
+      "sha256": "4b8b3607189c2856643016cd83bf338066f3e3b57bb26c5b9875d82813e3d3d6",
+      "bytes": 5357
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00802.json",
+      "sha256": "c8abf4ae05a6fd577cfdef1cdd0dfcc0d7b00ff8d4ff5dc32f402a13bb2fc427",
+      "bytes": 5212
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00820.json",
+      "sha256": "18475162f9540591cb9f4bdc5ceb5841d3aa2d3ea8f40300d887030ed11cde4b",
+      "bytes": 5807
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00533.json",
+      "sha256": "d484da9d2924b0759091fd0051fcf196e34126c9192514f578b5ac59754dde4a",
+      "bytes": 3984
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00470.json",
+      "sha256": "ac5f4b47cfa376f694e5cd64fa120c3d28b61d707c5913b8578beafafebd4bc5",
+      "bytes": 5363
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00044.json",
+      "sha256": "3f888f6e05de417a986c0558c64d10b0f73443f51b6130c4ce9173fa8e57a123",
+      "bytes": 6775
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00328.json",
+      "sha256": "754123bb144dcac74461d8b389048c964e92e0fe52a97f4c78dbc72f4f248d66",
+      "bytes": 4379
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00850.json",
+      "sha256": "adbaf104eb41db50ab5fc13d8ced878e1ae865e62e33ca4debc852b8acee4142",
+      "bytes": 4883
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00271.json",
+      "sha256": "c74149b28bf6a7b8245cfe5e839a46c24f5f953b194612be40fe5694810faab9",
+      "bytes": 3820
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00720.json",
+      "sha256": "068c39b2dbd8b7e4a1ac6c57ee27e2005eaae1409cba108ceab10c8862a01f5e",
+      "bytes": 4161
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00428.json",
+      "sha256": "bf5daa0ff300ec482dc89cdd27e49a2aa1b548e4a0f044b69fed1c3b3ffeed8d",
+      "bytes": 3836
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00611.json",
+      "sha256": "d46f3b6664177c476d2e9abcdc5f547c01b31eb2d1df88bcfdb3f60db4a98d26",
+      "bytes": 5937
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00379.json",
+      "sha256": "abb0d69385abe8db1cff67cc0fe9819b3e49c194d12fbdf00a85e4929cb75832",
+      "bytes": 5550
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00584.json",
+      "sha256": "8cf012c84de2ecfaf654e720fc1aa4bc3b2b732363d99de4c4443e68d9cc5fb4",
+      "bytes": 3981
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00578.json",
+      "sha256": "2e299456dbf0edc7090c61c0be6f731ca6b9e16841963b435606ce0601f6fae1",
+      "bytes": 3814
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00287.json",
+      "sha256": "426f279e8c5555098aee64c327c72a4427389fc4f301198920ccf185dbdd60c0",
+      "bytes": 3762
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00953.json",
+      "sha256": "97686184bde1cb6f718e92d485f9fef1fdc6432f9baefaa71f158571ca82ec4a",
+      "bytes": 4410
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00455.json",
+      "sha256": "ae08b01b3835b26e0c2846a59332de7478e8bff9114490fa78ea5dfefea5a591",
+      "bytes": 3770
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00446.json",
+      "sha256": "92b5f3142439e30413e673c7e5cd029bbcd47dd14a2950df505da3802b943293",
+      "bytes": 3776
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00463.json",
+      "sha256": "61864e183ef9cb960a005eee53f37d0e64f28d9af159e0c2a335a4629af3169e",
+      "bytes": 6221
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00399.json",
+      "sha256": "2e8d6bcac9f55f56881febd1e25ff369ceef6c53a4154162fd59846cd52cfaf6",
+      "bytes": 5017
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00102.json",
+      "sha256": "3e96b9c1c0216961844cd164eaf1cd3c4910c2a124a3903d896fd215e9e29ca0",
+      "bytes": 3811
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00805.json",
+      "sha256": "9d991915c09cb7d5a0903d3c0ef58a83690bca43b600b6813710971443221af8",
+      "bytes": 4503
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00335.json",
+      "sha256": "3b0bca58ed55c3f3864815e5ef11ee6d3da9552954f5db326c918dce65bb3dfe",
+      "bytes": 7609
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00047.json",
+      "sha256": "55450240dab8c79e351d794989eb9d5978b88c365040aa662cefcf597d5bcb11",
+      "bytes": 3902
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00207.json",
+      "sha256": "6720ff4b88d25c8bcd6a8baf3e251bcad44a70413d91f2597b2bae516bb7a093",
+      "bytes": 4725
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00149.json",
+      "sha256": "0ab6f6ce68ee8512132ccd4b0f80002257f831b5630307377b143d51efb715ac",
+      "bytes": 3881
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00522.json",
+      "sha256": "a2b90649b2a3c2df36d196060ef3fed89365976e08c8c8213299b253be289947",
+      "bytes": 3784
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00700.json",
+      "sha256": "4c92ec1642c6c111b7631d44040f6ba9cce834c4b9439fac3b783dceb63173f6",
+      "bytes": 4426
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00174.json",
+      "sha256": "02f283a3ef20c9f67115fbf9029a8565293daa106195df101f22b7109240fe92",
+      "bytes": 3943
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00311.json",
+      "sha256": "542486109d04f8383028b2dadcc8ee35c1214cb68778948150a20a25a78412e8",
+      "bytes": 3902
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00120.json",
+      "sha256": "64a1d212c72bafc06627d2c59c89fc4a10b65e39dd8945ccacd9c3d72b158d27",
+      "bytes": 4655
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00167.json",
+      "sha256": "eb2adf7032fdf206760f9fcc6db34a67cf88b882371b8c2afb4ee39e35583093",
+      "bytes": 4037
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00785.json",
+      "sha256": "99deb7d0252bce7f4a839ad249410b097149131fcc4664cf8cf12719ce15b609",
+      "bytes": 5834
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00117.json",
+      "sha256": "d7734d01602cc640b1f662e97b0dd1cf91621267cc6cd9f7bdd7b61d31e65709",
+      "bytes": 3892
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00331.json",
+      "sha256": "0dc8f3810744fd7fb1b56b0edd65baee581434243fd8e45100777daaf9139e6c",
+      "bytes": 4143
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00391.json",
+      "sha256": "9ca0ab10475f56b3c9a6995c3471939d550b49b2ec772dc8468f9719389e74d0",
+      "bytes": 3861
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00431.json",
+      "sha256": "57de9a65aa9c3f258dcc9f4e7d5ef8db130ab84a5a55ac9657f56c300fc85d82",
+      "bytes": 4777
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00835.json",
+      "sha256": "96813beb247ebb0faac5b00cdec0fc872b9ba7761769bae51dd434013a11036f",
+      "bytes": 3887
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00623.json",
+      "sha256": "d87e1a5cffba64cfd28b6afad07f1cd30cd0ccd5c06ab38307010b4e24a5980c",
+      "bytes": 5413
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00256.json",
+      "sha256": "bcb46c2b250927f063b8048c46a2f9e064c63aa3bf5fc3e6084b1247c68438c6",
+      "bytes": 3782
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00363.json",
+      "sha256": "b2654d5e4ec3cb7ea4afee04925821093db26b582c4dcb31c45ee288bb2b58a1",
+      "bytes": 5773
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00187.json",
+      "sha256": "08802e1c8c2195bfc73ae57292992d5f136e50f781daf54c34fd86c52d1d5aaa",
+      "bytes": 6384
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00693.json",
+      "sha256": "1d494d3e8636f281ee13bbaecfa5886b28c5ee1bd3a9a2a9297c676464d19286",
+      "bytes": 4079
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00974.json",
+      "sha256": "fb830dcbee62913337e1eed3b773538d8d8862c0f7d8801d614b4e90802b0cba",
+      "bytes": 5230
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00860.json",
+      "sha256": "037c684df490d1937e92931592e2790ec30c600cf3e9c1dbe140d1650d9dea7d",
+      "bytes": 3768
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00150.json",
+      "sha256": "9af621c5a43ca93b0d86220fa9fa8e09e9a476aa78a707ba202a6fb2a4f0d551",
+      "bytes": 5913
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00116.json",
+      "sha256": "c6c55593551a7a36713cfbeecc6cc7cc950cf6a1cdfd4c659d9847cd5f77df6c",
+      "bytes": 4849
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00124.json",
+      "sha256": "6ab4ba509423c885bdc9e18dc2c2f8135acba1c74a4a032c0e92069a3b57d7da",
+      "bytes": 5496
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00949.json",
+      "sha256": "9a1806e35088d0b766d1fad958cf3c46cf4f4461d0aa7f334416c1cd43f7d3b9",
+      "bytes": 4800
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00266.json",
+      "sha256": "3c9911c42c333d182c76dc2e67f7f283bd530554fdfe1900f7320fad7e5d5602",
+      "bytes": 4689
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00783.json",
+      "sha256": "6db566258c274fe6f1082c2d17e91a64bc176bddc0ac347e9720cf729762e10c",
+      "bytes": 5265
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00204.json",
+      "sha256": "ebcef09363fd9d3a3391275a5c558b4f53b07f011f70cb77a7d4f171202e3dda",
+      "bytes": 3826
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00781.json",
+      "sha256": "e228684f3ab3dd680d6d305e228a7588db8a7ab52f7c2a9f78a6d25294d2a293",
+      "bytes": 4829
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00675.json",
+      "sha256": "20c8c067bbe7fd5493dc257dd427e3321a3c997ecc024b44d004dfc605217a0f",
+      "bytes": 3835
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00352.json",
+      "sha256": "0e6cb74972bc61baa30fd02edc7839bcc9adb97b4ed9e9836f782614cc1e13c3",
+      "bytes": 3880
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00227.json",
+      "sha256": "77dc33f92a957ee9c78d80756b4d5b2239fd49a8ee52f6f8474c89bb14b11da7",
+      "bytes": 4236
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00904.json",
+      "sha256": "a93634b2d5292d56741faa9d8e0a36b36d86f20d73eed4f186783e7005820fb7",
+      "bytes": 3892
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00753.json",
+      "sha256": "dba7a0aa10ae2daaa7ba42bd118f2cdd7c57f832b755a92977ee60f23ca54726",
+      "bytes": 5074
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00490.json",
+      "sha256": "8ac6e3df266b60452eff2e7e2f527b289a85f48b4cf8df2208b274cf3946fcaf",
+      "bytes": 3802
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00438.json",
+      "sha256": "b5ffbedbe6d03b4de950f5b833408141a61ba9189ea8566fe6eb3891ddc20067",
+      "bytes": 7134
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00744.json",
+      "sha256": "053afd8a077cbbd57a3323fc86ff5013a61b5730134cfcf11cb794db0e160514",
+      "bytes": 4116
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00801.json",
+      "sha256": "9838d46b3052896f9a7a8469affcc1de27d14dda48d0006a5e4876a6fe26b2bd",
+      "bytes": 3932
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00205.json",
+      "sha256": "6206974d2904a433e527f9539c82d57ba9adb272ea82e42b04dd51c25f14de66",
+      "bytes": 5415
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00051.json",
+      "sha256": "8ac7e7e5cc0c60849673a9523ddfb4350aa0e4e46f60e3f293210fdbe6d80880",
+      "bytes": 4099
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00050.json",
+      "sha256": "b25e5b7241ac7eef018433b37e6fafc45cd94978ce71862d47e45b09270fc77c",
+      "bytes": 5743
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00711.json",
+      "sha256": "e7db0f5ac3cbb33dd4c89a61f7b51a2c1fba5ec208a7fb489935900e0f89cd7c",
+      "bytes": 4268
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00649.json",
+      "sha256": "49aaf6256c87cfcd216d0f2f82c5097679e68cdcf005b86feee583fc595773d8",
+      "bytes": 5349
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00417.json",
+      "sha256": "6438dc4b3d68ae6399851ca21700a878408d1ee87a3512e22deb2032c6d21b74",
+      "bytes": 5145
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00916.json",
+      "sha256": "11a858720dae06082f91a96711ec5211cfb9fb3ed2dc00645daf689d2ddbd189",
+      "bytes": 3799
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00908.json",
+      "sha256": "2cee737a46a42bbbc59c4ea9617130eb850f8b09de6d0dc875ebdf6d16b248db",
+      "bytes": 3764
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00381.json",
+      "sha256": "7a8b01c4ec907b9a58c160f96fa17947497debf02446240fe46cd08993d4c21d",
+      "bytes": 4184
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00976.json",
+      "sha256": "a432207404d8ef438b52c89c477fd76b69e41c76995f0b50da4b144bd54b3b3f",
+      "bytes": 3834
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00588.json",
+      "sha256": "1a1cebf737d608647f92df209c8ec72d976c77f58fc0e0540e16f4594c0c9b7b",
+      "bytes": 4491
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00922.json",
+      "sha256": "2688770a5dadf1298c543f62c5952002a3a4fe674395c52a33b101bcdf1ec6d9",
+      "bytes": 4223
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00395.json",
+      "sha256": "25e3d00d26f6f93f77b07b852998a907312cb0b65f4c29b8521db38a9ff1af91",
+      "bytes": 4206
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00726.json",
+      "sha256": "beb5462e488cf7f40317f85809fe263236473d4e7ea1acbced095bf4e6fbb4fa",
+      "bytes": 4025
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/records/00733.json",
+      "sha256": "ba0827ad94a5ea31db3ac6a71f64c97b0d2571c841d4f8085b705cd1e5260dce",
+      "bytes": 5237
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00391.pkl",
+      "sha256": "580ba59f19a722821180912d3a3540893d4274990415f70a2c99752663ff4ebc",
+      "bytes": 52743
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00726.pkl",
+      "sha256": "e6c4abd5d457bfbcc4622638bb37d1f06a0a68863d47abf22daa32ce5d849c16",
+      "bytes": 33838
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00265.pkl",
+      "sha256": "2ec7fc63b54efbd76d9dc9d08ea9e4a8675dfd7dff2f58bef078da677aca62fb",
+      "bytes": 71739
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00904.pkl",
+      "sha256": "bcf9a3280fa9683ddd8800ef1a07d979f322561008981f1237e1d78a1e1e1215",
+      "bytes": 42585
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00860.pkl",
+      "sha256": "f8dd87ecc21b56361cb3de21993a59bfa0bc844771ce85bc4e4f1342895a16a3",
+      "bytes": 43227
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00707.pkl",
+      "sha256": "5e5f4a85ae6d9b9801b15598e4dff634c978ac69705d2d48690c01e1ca0bc937",
+      "bytes": 34159
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00522.pkl",
+      "sha256": "d7f2fa40a01ac1bce28eb187a61e0f87e625ee53fedecd665d508a3b9d5db84b",
+      "bytes": 40982
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00475.pkl",
+      "sha256": "d3b1bf0c3a604bccce9bb0ca3d4305ed8434ac7212a7aeb233dac37071ee9f2a",
+      "bytes": 90451
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00352.pkl",
+      "sha256": "492917f8c1c218a553bf17da341edd57cbf565df9c0e7163859519e6681891ff",
+      "bytes": 34101
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00584.pkl",
+      "sha256": "2a25c43acac0ef1598f65efb78747f8656036fc5bd598acb726d4f90a089682d",
+      "bytes": 62758
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00417.pkl",
+      "sha256": "d6825cca08976223e71ba2f7a073f9d552871be8ed248e7de85d5bda8cf41c54",
+      "bytes": 86981
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00328.pkl",
+      "sha256": "49118f8dcd2c96a4b6e90e1e367fe96f0271c8a4abf33cb1065cf1db3047dbdc",
+      "bytes": 77100
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00908.pkl",
+      "sha256": "75a96939de633bcb80af7814dd13cb8655ffc0344519e416b47c21dda7acff28",
+      "bytes": 43614
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00271.pkl",
+      "sha256": "c4779f55966db9f312de53c5ddab964ae3deeaf0da9ed1b7a77eccd16c216700",
+      "bytes": 44009
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00693.pkl",
+      "sha256": "c7fbc2b363f5d486d38b2e9fab253885e38e93ff53289018f5a5104b011d28d4",
+      "bytes": 53665
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00185.pkl",
+      "sha256": "15e61dd16f3cda44273dec9b9a0b079e8163150380067f1fb242674497a06966",
+      "bytes": 44251
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00831.pkl",
+      "sha256": "9ff01b5d378655d802da4d2487cf8ebd4313e536e5773a39c4432bea7718febd",
+      "bytes": 53648
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00204.pkl",
+      "sha256": "c7fcb1fac69b9cde6d5748603ebaadf65fa66b8d917eb6474ee35d59a28a573f",
+      "bytes": 43999
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/metadata.pkl",
+      "sha256": "9d2f04dc42c2962e75b233aaf01623f91d67aad18df422c7f9dc7ef080887b3d",
+      "bytes": 561
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00463.pkl",
+      "sha256": "233a855d6ce0c5dfd3215291bb7c0b141feb6bfcd389be2339137f79bebaddc0",
+      "bytes": 62985
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00446.pkl",
+      "sha256": "a4c97dc729b399cc4fe8ea4fc44009070c9a2bf4058f0d421d4bf0e6f975bf32",
+      "bytes": 67707
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00205.pkl",
+      "sha256": "a7a4ea982729be4022653a5457ee21a51af90f1ba5c9fa99a6f200608a57b66c",
+      "bytes": 72469
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00950.pkl",
+      "sha256": "c9002d1eb6a62d539a1265455ba2312a1ebbe3ea89766fdf82b56d6a8ad36700",
+      "bytes": 91096
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00381.pkl",
+      "sha256": "9cdb345b9959dd5d03b175cd40e8edcd9ff8138357b8a09f7508edb5d8762128",
+      "bytes": 72553
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00227.pkl",
+      "sha256": "c3099d478326b4f8d555d00c323de4677f8d162d00cb5b0a3e6bfe4c6ebdf863",
+      "bytes": 76953
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00679.pkl",
+      "sha256": "64d99cf1f4129db49957ae96079364fdf22d615cf3c8ac4f0a7e2061db954dcd",
+      "bytes": 53745
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00811.pkl",
+      "sha256": "f05461e1c9dc5ba14a22e4a7631f0f0bb2bc255bd908c7ab36f263136ccfc914",
+      "bytes": 82552
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00413.pkl",
+      "sha256": "7dbc9c7739b25b03797455d0632cf415d34cd50af622c03ae8620d3220ba370c",
+      "bytes": 89253
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00331.pkl",
+      "sha256": "87f572adf91363db2e977e6d90f03123138f77dc5c91e7453ed96682e88e5e10",
+      "bytes": 72639
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00455.pkl",
+      "sha256": "415cebd314f546c956782754b7b68c17c34c9913da9cf178764b376155a18bdf",
+      "bytes": 53824
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00865.pkl",
+      "sha256": "454dca88354eca93d0817b2ff4b399aac05523f32b86f4d4e9dd96d52fb1a345",
+      "bytes": 52411
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00120.pkl",
+      "sha256": "87f0c2247050bcbfd1301bdd6f7668faa525dc77bae0f89a1faa62e62160018d",
+      "bytes": 86402
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00256.pkl",
+      "sha256": "3477e8f3740fa83f3f366ffa81a8b82af30bd5e02a6ec964ccebdc5ff6de23ce",
+      "bytes": 44162
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00850.pkl",
+      "sha256": "5fd75f34daf6e68c668affe818e11567c0c4490cf47e6efce319ddd127294891",
+      "bytes": 44114
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00604.pkl",
+      "sha256": "c4be6c047efad400633905591e686c83aace29b4ae61892fcf1231acfbb5dffb",
+      "bytes": 77293
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00287.pkl",
+      "sha256": "a2e951245f18a525d5cd01cd2e346e09d3326605c1aa5513a1ea2ac7234ad03e",
+      "bytes": 50608
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00675.pkl",
+      "sha256": "67bd87f43156181d18e113f5c1c56cb899fcf42e698bb286b094137ae13aec94",
+      "bytes": 72390
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00499.pkl",
+      "sha256": "eebcc5d8c407782bf4ac631348293f919fb6a783473c4adc059859b28ae371fc",
+      "bytes": 33946
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00490.pkl",
+      "sha256": "7997388f24fc60818917da6205e129c180173ab43577405630e6d8499495d1c7",
+      "bytes": 49794
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00801.pkl",
+      "sha256": "226ce1561e269b3ffb627ff855f60cefb4cc29f97448f261837a01449889aeff",
+      "bytes": 95642
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00051.pkl",
+      "sha256": "b049b7e13ca887b1106d656059180b797aee69a18d6018cab84b0934e899faa8",
+      "bytes": 53823
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00119.pkl",
+      "sha256": "165c9984e3bb576edf59b52dd507a307977525ded87533c9e0ad0a9ce1b16821",
+      "bytes": 34121
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00976.pkl",
+      "sha256": "042d4c68eb0a24efa783326541b465eb07aa86464ce30f4fc11eec873b0f004b",
+      "bytes": 72139
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00891.pkl",
+      "sha256": "cbc28c9c47fe9f6749aa6b916ef6ff4565a7a9f5468a975a4ed2358745d88e38",
+      "bytes": 44366
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00134.pkl",
+      "sha256": "251c8c95fa1f901cb31df460e440ee80480f6845c115c83655b87f92ef6e3312",
+      "bytes": 63295
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00118.pkl",
+      "sha256": "cf26a973be7d9d5e282fb035961029cdd2e18800fd5d309a0c79aa66e628fc25",
+      "bytes": 33927
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00796.pkl",
+      "sha256": "0cff70bb28485a50dff8822c8bf8010eaea547d9d813e523f7ce28dec5720a55",
+      "bytes": 53956
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00384.pkl",
+      "sha256": "128df3eb1ff0ce302523128cda5524023d62a47744c77f90ec2abcf1d714d706",
+      "bytes": 72721
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00266.pkl",
+      "sha256": "f662b3a5007a4352d40e69aa16d37df0df6107d90704ff3d048ee6cba585305f",
+      "bytes": 63041
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00395.pkl",
+      "sha256": "73ebb0814f738a4a272291bc248da4253549c040f16d79ba86fc6a6bd1a2e6e6",
+      "bytes": 63007
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00116.pkl",
+      "sha256": "e9d941c8ead2d2b1fd4f0370fe93f9dd7f8326b4a9da8d816c4eee5cca7ef2e9",
+      "bytes": 44202
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00044.pkl",
+      "sha256": "3cfd5c0aa73b4bf7bb702031a283f17724392a9ac32f1981b149260e3bf72ce3",
+      "bytes": 77149
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00438.pkl",
+      "sha256": "62d52e3bdbd320161df633fbc2712110d8f08483c71a4960de13cfd190f3e4f4",
+      "bytes": 95736
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00785.pkl",
+      "sha256": "5b90aac5d561b8de990d9e5a28f69b23443f437222a81accc9c71a67317c0a6d",
+      "bytes": 73186
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00805.pkl",
+      "sha256": "da49a60ea9ca68fc8915caff2bb75592be233d02f68e1b1bd21ea735d51293ff",
+      "bytes": 53801
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00163.pkl",
+      "sha256": "4a64d2f566e473cb8043d3c5832b351c75e27fd4fba1d9c92d5042566d02301d",
+      "bytes": 61513
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00494.pkl",
+      "sha256": "a17264250355d4215441da7a358fdd4bc12910794f5bc19e5442f65a65d99bcd",
+      "bytes": 65907
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00922.pkl",
+      "sha256": "ddfb462ff84a299831d9cbc98be109dcd0366eb8275ddf1544ceb228a8cd5fdd",
+      "bytes": 53765
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00711.pkl",
+      "sha256": "f06cc4e933faa869150bb84d0a30c79eb45511b9d073e9329bf419ee6e09f104",
+      "bytes": 67786
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00820.pkl",
+      "sha256": "92776b407d9a705dc66a34f42f0b960255b1dffc5429041b90c017db35978c11",
+      "bytes": 53778
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00953.pkl",
+      "sha256": "583a1487dd173d91cc87ec876b7aa843a5283395106b88255ed1015f04cac7a5",
+      "bytes": 62719
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00597.pkl",
+      "sha256": "550c1098f9540fea71fac3317bfafb9cfc7b1cec0c153220a0610a27a14814d9",
+      "bytes": 90859
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00050.pkl",
+      "sha256": "be2baffcb87c03988dba60f011855dad693754e1ac986ac5ac443d417ccc48a2",
+      "bytes": 53383
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00382.pkl",
+      "sha256": "63a87769621b1a0abdb76b4b62f47841ddf511f7433e3bbeaee6f0f08f08270f",
+      "bytes": 67622
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00174.pkl",
+      "sha256": "40996c834dde86ca15f9b57d22b3c7e2b84e17e95fbcc42c5338c068625482f3",
+      "bytes": 71819
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00733.pkl",
+      "sha256": "b7af114ae319e0bf776725c2a60a557752ff866baa7ee4ef7b8710ccedc9e24d",
+      "bytes": 63200
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00521.pkl",
+      "sha256": "6a165b41c4c59a455202557edf6e9eb2df7054468f4716b6cea094de82fa8919",
+      "bytes": 86527
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00102.pkl",
+      "sha256": "d6f2d16208db2e893b298908a5e63a0e0b4eb057612c6bbd4e5fc18345c24d1d",
+      "bytes": 62418
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00893.pkl",
+      "sha256": "65b1ef240912cbbfd4110ee57f5c4b8ce70e0aaa2c47bea7760f23f6d103e3b5",
+      "bytes": 53756
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00713.pkl",
+      "sha256": "b79dd91eb5ea45cd061b238edb7d6192ba8498671f2ff6bfff9455abe0fec781",
+      "bytes": 57959
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00731.pkl",
+      "sha256": "552cbc3702de64117473f5c4d2280a17085402df80ced1b3aaf4d64e47f49f4c",
+      "bytes": 91529
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00015.pkl",
+      "sha256": "5fb660fb95ad94b7f0ec829e0fb2fa6e5ab212ae1bacc916fa4d7e35ff6626b2",
+      "bytes": 53053
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00720.pkl",
+      "sha256": "778c6fc902f6af4894e748d2123d77b7c41c7d8d71ce31801b356763feb683c1",
+      "bytes": 79846
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00246.pkl",
+      "sha256": "07f7c17bf07b08c237c432a9496666a7cdb232f3d8450c2b51e2576ade95eb62",
+      "bytes": 72000
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00470.pkl",
+      "sha256": "6ee5cb293abf5ccf2f49dd2bc3952f228fb539d33d4969d8c5273ee25dcc6b13",
+      "bytes": 86934
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00431.pkl",
+      "sha256": "42ea9f8d628a7dfd9e3d05fccf6b5dfd2d4929f2746fbf4ae5b15ff127bf386a",
+      "bytes": 43691
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00649.pkl",
+      "sha256": "10fdc7675cfa5b8ff3a2b7ca36c0d142bad1c6926343ea32fd6c880a958e4dc1",
+      "bytes": 44187
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00753.pkl",
+      "sha256": "ec12a4b1fdd54f17a39443d220df653c04980b9915e6bbe68964aefc814c3f85",
+      "bytes": 91062
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00916.pkl",
+      "sha256": "5b86fe2c52c2d3d27a0072e84f4eecb1d0339c5d5cb24a342811a1019dfed964",
+      "bytes": 61323
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00124.pkl",
+      "sha256": "b3f064ad44ae9a055875bf355a48c4f319bcc17e26550a4a49d6d93de3ad5ca1",
+      "bytes": 76047
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00885.pkl",
+      "sha256": "c87e7e60434bd6a4df0713c65f3e26730588155da92bf04308a54ee2740b8f00",
+      "bytes": 93912
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00350.pkl",
+      "sha256": "1b54aafc8c653cb6cebe469bbc062cec5cd6d474765c106f5ddd1519b7625bfa",
+      "bytes": 56568
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00526.pkl",
+      "sha256": "ffa08ebf3c049915260604bf044356cf96f81b00511a78dd594c57ba2cb42cbe",
+      "bytes": 72439
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00990.pkl",
+      "sha256": "f42d21748b607626737690772301e373089727eddefc96e39f1cf576de4410be",
+      "bytes": 44056
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00677.pkl",
+      "sha256": "1c8376697803d69269831e5cccb28aa216215a0cd0fe78b0cfbc83c1743e6925",
+      "bytes": 44256
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00781.pkl",
+      "sha256": "98140b9598d3b19ec47467bf37b4e04ee13b119d5a71dafe04f04a3afe3658b5",
+      "bytes": 63172
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00363.pkl",
+      "sha256": "49de5264594f70b669389f1c72ea2e895678630aa87b1707ef3179a5eb168a97",
+      "bytes": 82286
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00974.pkl",
+      "sha256": "afeff0ec425e51d59c4baad6d1cb619f66762e258bc28a8c4fb4d84b54f94fca",
+      "bytes": 34158
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00399.pkl",
+      "sha256": "2ecfb8919710dbe2988cb29c2001cb0081a87d1081472e1501db0efa381315e5",
+      "bytes": 90770
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00770.pkl",
+      "sha256": "75ce633d45b530fddf2ef7dbec446dcc301f30e2829d50171422f179c7738e6a",
+      "bytes": 58162
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00783.pkl",
+      "sha256": "4379e6c20313319ac54affedbf2297cf8f663eba85496148a0c46cf1dfd7fa0d",
+      "bytes": 76963
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00754.pkl",
+      "sha256": "670dccdb2d828a65cd50a24aa8ffd5cfda321446417e41c6bda424d951c83cf7",
+      "bytes": 63249
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00258.pkl",
+      "sha256": "ce5cb3c4b4ebbaeab0124d3906fa20d517757da9322f7a2f2c1f138b1453ea54",
+      "bytes": 53829
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00588.pkl",
+      "sha256": "981407f1cfae4dc58d5e553286b43672449aec4054dbed2b37ec6c578fa955c0",
+      "bytes": 81280
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00578.pkl",
+      "sha256": "2ef09089f23b83eb00ea38effdc59a0b9b2a699944d57089212856298f76d312",
+      "bytes": 43469
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00700.pkl",
+      "sha256": "269601b86ed9f9a9da2912540bfcaa87a44c52633751850e8caa106b5c199d31",
+      "bytes": 71071
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00533.pkl",
+      "sha256": "96e092ebc6231d5efee82b5e3b395c1d00e01900aaab74a44d75cdde182dfa40",
+      "bytes": 62996
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00428.pkl",
+      "sha256": "41c240401f4f2e34bcd29a63988b304b4fe1e2f470bffb22f30d05d8532889d1",
+      "bytes": 44509
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00335.pkl",
+      "sha256": "1d652d7a0af3186f2c79750ed7c64acc1141f1d9bca46c75ae8a2eabf68d82be",
+      "bytes": 90340
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00167.pkl",
+      "sha256": "50e491efc5e8caa56e35e085b969269c832d9f2a05ce44f8c72be116e6a20dde",
+      "bytes": 53906
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/train/hindsight_00421.pkl",
+      "sha256": "0c3c5457f95c3ccf0b221f4bafd6217b7d1caaa73e4566642e1370e0290748e5",
+      "bytes": 72335
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00949.pkl",
+      "sha256": "a0f3ba311c541c7d2ac7761f1e7eda49a7ff0bd6b1ed92364e7279710849c74b",
+      "bytes": 63031
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00981.pkl",
+      "sha256": "1194d664231bcdf152ac346954d6bd62eb2e23033878c0e956c83e56cf36c8c1",
+      "bytes": 54023
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00311.pkl",
+      "sha256": "9fe31847662cf98e0281bbfbe06f0831c18236c8f145caab9cdf2708e59a719f",
+      "bytes": 73905
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00744.pkl",
+      "sha256": "d7007d12857e010cd1da844c6a430cbe6106ff0992cefafffc4b0764c3766225",
+      "bytes": 53527
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00150.pkl",
+      "sha256": "d936a846f9b53da135f7696ddaaa6d96e61614b877470faf362de00d54eaf667",
+      "bytes": 53669
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/metadata.pkl",
+      "sha256": "7890a2be296dc4a212b61efa478b5deabbf446be40fdf2261e809eab631fc713",
+      "bytes": 189
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00207.pkl",
+      "sha256": "5098dfcced455c74b7dc7b8bc531b82223497f8eea7c675e96763df2360c236a",
+      "bytes": 53838
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00623.pkl",
+      "sha256": "3cb9f903bf698bd478a8775ef991eba53feb2a08b56a7eec1f0060819d9d08fc",
+      "bytes": 91474
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00611.pkl",
+      "sha256": "260f5b59e13ba1d0bacae0fc6ed9b8a29791ca641f32dcc96e6138723ba55b27",
+      "bytes": 53548
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00187.pkl",
+      "sha256": "777b709ca208341589d5bee195e296c5b5526a247d204a2cf2fa8ee4a6b99b7c",
+      "bytes": 67766
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00835.pkl",
+      "sha256": "5ce7bfaea646f02f9849a5f361dd9358764c5d2ed2b99286bff1463ad150e8c6",
+      "bytes": 53289
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00047.pkl",
+      "sha256": "6fc0b4e25947c959576df572f2690ce9c00869419629267c323e83f4878c9edf",
+      "bytes": 70201
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00980.pkl",
+      "sha256": "4f745166479a7a60a77ee6f6e94be16ba6383a46dcbed7bf84f24d742b20c6e9",
+      "bytes": 82385
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00547.pkl",
+      "sha256": "212b61096205823f1ec57774078cd6736b8db5092f2f4770c1cf50505f2f6fa6",
+      "bytes": 44226
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00921.pkl",
+      "sha256": "27fff36ae09d55556cae8732e0366a61d4b66c74562126931a1fd763453c2687",
+      "bytes": 70549
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00333.pkl",
+      "sha256": "7e9f10a2e93c1604f5116f740b5774b90a13e198be9c1cf29882b0bab0202e35",
+      "bytes": 93830
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00149.pkl",
+      "sha256": "ce05c1eef0bc1c2ea2c51a39437c6ca62c5504ba561de6fac00934f27cfb8740",
+      "bytes": 60535
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00714.pkl",
+      "sha256": "bc6b417751f6be615166c3450844438685c4ba2b6938517102e7fc50e167e49a",
+      "bytes": 44298
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00117.pkl",
+      "sha256": "05f17f2df2cff9fd124540c05662f7adb5acb3e2919a103d5d55c58ec3bb008a",
+      "bytes": 72641
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00379.pkl",
+      "sha256": "95590cb26ef5a18026ca28125f7722125b52e5ed158b240d02d2fd08b083ccbd",
+      "bytes": 54019
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/repaired/development/hindsight_00802.pkl",
+      "sha256": "b0cfe7c930c380680794fd868ceb7a4a36f58f9d6352aa087d620371b1da6314",
+      "bytes": 53144
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00391.pkl",
+      "sha256": "07cc3109478045efbdb801a62046564c44edd1f9f0329d028a259e5524dd2c6b",
+      "bytes": 53442
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00726.pkl",
+      "sha256": "497d89869c19ee47defe57ca1814731ae8204fcce510b46a7d8a1ca36dd5712d",
+      "bytes": 33938
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00265.pkl",
+      "sha256": "0f61e937b1f4fd5bc8b5a58c71628dd72fa03e3343822e5b416bbc1175306879",
+      "bytes": 71734
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00904.pkl",
+      "sha256": "8df55b59196d2f84d1f3e6c7d484b2fd06b9def614b4cd5e4ecac2f40084e818",
+      "bytes": 43637
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00860.pkl",
+      "sha256": "882e0a698cbf53af0d79b10abb0fff20762a20a6df7e227f253c299dc11a8899",
+      "bytes": 43204
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00707.pkl",
+      "sha256": "19b95474d8ae9604eefe14bc2797d2483adfc18f17321dde8bcf595a96116fb8",
+      "bytes": 34150
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00522.pkl",
+      "sha256": "90c2515e36106f2fc358d09cdf2049ec36e46cf829f3dbce28ba3692624274f5",
+      "bytes": 42708
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00475.pkl",
+      "sha256": "0f246d468bb45c339ffa8387970f8e18bb63400c2a0b35f56faa24db1bfa9d4d",
+      "bytes": 90559
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00352.pkl",
+      "sha256": "3038a242ed4b2d46c4a433132038abd06236587029eab3da7fd764c96acadf46",
+      "bytes": 34117
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00584.pkl",
+      "sha256": "841ca69ac3d22951e07ec1395604737094524eb1c9db0e2ff057697dfdbac4a3",
+      "bytes": 62855
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00417.pkl",
+      "sha256": "63da544583b9d9743a2ff303275b93fbb6bcd4c425b2572c2cae5353fc22a182",
+      "bytes": 87110
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00328.pkl",
+      "sha256": "5d5bb9b65e9f7e21c19aa81c5b26d5c204289cd4988b65458f0aedd842edb2f5",
+      "bytes": 77124
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00908.pkl",
+      "sha256": "2d6563815e3cb8930e2d529924859abae2d9d635ba41d953582dc229ac7cbf7e",
+      "bytes": 43593
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00271.pkl",
+      "sha256": "f9e730842dc46dab571e4befa6f610b540368148c7dc87604c5e9f4d9f06e846",
+      "bytes": 44038
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00693.pkl",
+      "sha256": "41508fdbc747c1351379606f3267d66ec6a50bf6940bfdb755fdf63c89f9e8e0",
+      "bytes": 53812
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00185.pkl",
+      "sha256": "a6343a99bd472b372e68f552117b285d50ec60f46c5ddf00759c8a019b519b7c",
+      "bytes": 44291
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00831.pkl",
+      "sha256": "4a5a24063618557f5470717a7eafd263e5c0a74ba45ce8759af7060f73ccd2e6",
+      "bytes": 53720
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00204.pkl",
+      "sha256": "d3a7fc5e7a4ed9280dbdca65991d5a36b3748bac981fde8c2812261f7027f4d0",
+      "bytes": 44155
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/metadata.pkl",
+      "sha256": "9d2f04dc42c2962e75b233aaf01623f91d67aad18df422c7f9dc7ef080887b3d",
+      "bytes": 561
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00463.pkl",
+      "sha256": "3a1109ad5075bf3de8b00e2bd3cf340a37780ce0e0c42ecf2bec37493d70157c",
+      "bytes": 62939
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00446.pkl",
+      "sha256": "7773012bed2023b768512f61fda537bd8f18c422b8e553a7783b811ec6a2e3f0",
+      "bytes": 70385
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00205.pkl",
+      "sha256": "947732ab46ef44eb5a21d92338402522383c63451ddf0a6527222a297c8631c4",
+      "bytes": 72483
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00950.pkl",
+      "sha256": "57eeac7c37bfaa62116a079ff75f3b9fb920b9c084eeee34a71f86365d25dcd0",
+      "bytes": 91237
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00381.pkl",
+      "sha256": "bc75177e841d03aff5c9b0af99ffe3040f2e289bab8a66b96d477ba3bfb62b1d",
+      "bytes": 72549
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00227.pkl",
+      "sha256": "a12f3e7e635342d99c203d3143606597fe7f69598174eed52bea61997845e21d",
+      "bytes": 77085
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00679.pkl",
+      "sha256": "474aba20fa864686183dd377cc2f7c83b8e5a468834b295aab15e5080572ba3e",
+      "bytes": 53825
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00811.pkl",
+      "sha256": "4434cf50910422cffdff6b6b8f7560ef2846ab963f8b2c1cd63998129bc9183c",
+      "bytes": 82601
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00413.pkl",
+      "sha256": "8fd80ee8af68e99664e068bcf44a8efa3c6a032841d95cbcec2cf5da0beb1f05",
+      "bytes": 89369
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00331.pkl",
+      "sha256": "7e2545d87987833c49717d01628a27e058e265a0329d11da9fc5a0d2b959fede",
+      "bytes": 72700
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00455.pkl",
+      "sha256": "6e4eb5beaaf2886ef0edbb7c5add1dee21f68524407f7ac35533b840faa9de76",
+      "bytes": 53878
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00865.pkl",
+      "sha256": "bd11922a8eb4e935d9fe71059cc834bf4ef0926438ad361779c457280f6abd79",
+      "bytes": 53261
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00120.pkl",
+      "sha256": "64cb17142df4b0c366709851851a00d1280ad5f7c80041cf854f001331ad65ed",
+      "bytes": 86361
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00256.pkl",
+      "sha256": "ead9782b00bf8ebcdbb31521e17b2a46e1ebbdf888a79d94ef67274b4f8d1c6f",
+      "bytes": 44084
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00850.pkl",
+      "sha256": "113a697f8a75cbb1d12f98705884f60873ab045ed8ab5cf95893506563f757de",
+      "bytes": 44047
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00604.pkl",
+      "sha256": "2f198a14d09760751d29421b5803a74125ba334a97bbdd37b5f03d7ab7538712",
+      "bytes": 77204
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00287.pkl",
+      "sha256": "3407fa5efd6bd0a786ad78a8fe1f0aa185615c540e830e4cd363c5c48fabf302",
+      "bytes": 50657
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00675.pkl",
+      "sha256": "ca85c4e2e17c5066dc4e3c2b8d58e42d60be96628267c49a75dcbe65775cd530",
+      "bytes": 72358
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00499.pkl",
+      "sha256": "6651f1980a7c67a9865806f9298c7e51162f72842a8a60c087e66414e3eae80c",
+      "bytes": 34025
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00490.pkl",
+      "sha256": "0dcfc5e26d132f22942fb1744d63795687ba765b5626f90a5c2a974baa8b9a43",
+      "bytes": 50719
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00801.pkl",
+      "sha256": "ba3e3c1a80b3153d5278776168e3a6066a1f351d862bb07219e7dab0d02a9caa",
+      "bytes": 95684
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00051.pkl",
+      "sha256": "5d033ea6079f1a5831dc85bcbcde0d48df12efae5f94597c5c5f0cb74b41f644",
+      "bytes": 53760
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00119.pkl",
+      "sha256": "e164da80529578b8d82d99c5f895635e685ea0015507e5068fb3cfa208c13fe0",
+      "bytes": 34135
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00976.pkl",
+      "sha256": "0ba4998bb5b3b6f1578ae232b566858c23af3beb32fca9cc5f3ced246cec7649",
+      "bytes": 72235
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00891.pkl",
+      "sha256": "725a613be39ed43b548c084ee74f30b1c9a550fef0be2db161756e5248178841",
+      "bytes": 44380
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00134.pkl",
+      "sha256": "3d91aa015d4404bf20dd06f4f0715babbb2f131da1de2c4919a303832e217376",
+      "bytes": 63401
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00118.pkl",
+      "sha256": "251ebff7cc8d12378ae7bbe36ce0462ff7ddf693aca6ddccde0ae82930c2c7ee",
+      "bytes": 34084
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00796.pkl",
+      "sha256": "38a04fd7ec6d5b7931bcbcda3d121feb28822a0850063a0a38e0591cc07ad986",
+      "bytes": 54076
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00384.pkl",
+      "sha256": "503d43a23f817a4de16a8f29c92a2301fdbb07ba493571a04eaf14cb967d4a3a",
+      "bytes": 72699
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00266.pkl",
+      "sha256": "792b19422326ab891ad8b3f70b57fe3731de46c09d9827b1c1547e648151bdc5",
+      "bytes": 63202
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00395.pkl",
+      "sha256": "b15f45e2f28aa9d8d7dc523cf9389c5db6e55641810380d7d81a470b0eb5e685",
+      "bytes": 63021
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00116.pkl",
+      "sha256": "df0d0651ab5bd638c55cd5f7171aabeaf684f737a19fdc5e48f5a4fbc42a8496",
+      "bytes": 44281
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00044.pkl",
+      "sha256": "ed5edb498a1dd8e3e2b9b3e5f70c299c8475aebca0144fcead6a5f32075980d0",
+      "bytes": 77216
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00438.pkl",
+      "sha256": "6413f3286f033d4005e0962246534b05b50f047add386f60b6f1450c124144b7",
+      "bytes": 95753
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00785.pkl",
+      "sha256": "cf79bbf7998195a45b016d2de01cd0fc479c0f58b9839a67ad587c0a5b59e266",
+      "bytes": 75413
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00805.pkl",
+      "sha256": "da6c275845b1361da3d259f50d8b1d532a0c20347cf8595cf7fad962818e47d4",
+      "bytes": 53806
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00163.pkl",
+      "sha256": "0cff2796d7318d1b27a9c2ae2d6d16fef27ffa77cefcbfa900a01292832e063a",
+      "bytes": 62057
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00494.pkl",
+      "sha256": "dc5ff09b6a17f40d8ae8e04ebcd70b32e11445edd99ccc423766d1aa2e85793b",
+      "bytes": 66778
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00922.pkl",
+      "sha256": "1cc26ef4a77b056dae09bd06afa5cf2509ced7e1e981ad99d5e0de454f4c1695",
+      "bytes": 53724
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00711.pkl",
+      "sha256": "98ee41d34262e4b310d237623f73815d49ef8ac181cd974c816c594911b925bd",
+      "bytes": 67829
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00820.pkl",
+      "sha256": "e9eb3fd5dc85681f174c9550f09a47311e083de3bd2e47a62a022cd399482c87",
+      "bytes": 53886
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00953.pkl",
+      "sha256": "f455c71bdaa76fdacee618550efcccc93bcdb7c6e2049852bd7641adaedd896f",
+      "bytes": 62804
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00597.pkl",
+      "sha256": "33116ed4f675cd3bdac7e42221e804bad4a38ac5a915ff939af07f586c9d893f",
+      "bytes": 91161
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00050.pkl",
+      "sha256": "eae91941ac054f0c696b97eac37b50238ea3cce6ff620be96c34c03891093cf1",
+      "bytes": 53410
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00382.pkl",
+      "sha256": "1a59e1c29df2c793a57e6935adb1dfd48f5502ed32062a1966bae82d5087fb2a",
+      "bytes": 67762
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00174.pkl",
+      "sha256": "76ad5bf1ece4eee3ee4b686f0ca15aaf83eaee8e86e3cce6758ce317fbb76df8",
+      "bytes": 71912
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00733.pkl",
+      "sha256": "d7c27328971833a18c0ccfb018d6aa86916aa5a4e8a3e0a7dc447b570a131d3a",
+      "bytes": 63244
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00521.pkl",
+      "sha256": "49e76f72f85f8adb3a02d29a7ca2daebb359cf01f5d2948bf0a5a0c048289b85",
+      "bytes": 86485
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00102.pkl",
+      "sha256": "df04230c410d01a90386f95f47551085c5015afe9cfe3991d74a5b8671092aaa",
+      "bytes": 62492
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00893.pkl",
+      "sha256": "ac08b40feb17d2d57c46c29d1ddd63c07705cf231fd9f5b0690f3a7cdb1200d7",
+      "bytes": 53832
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00713.pkl",
+      "sha256": "899a5dacdf76084b960733b702707a0c26348dd69e96100de514510fc41b58e3",
+      "bytes": 58227
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00731.pkl",
+      "sha256": "c0f1e150d61a37f55bb34b8c3f2e429c8f44b423e2488050260140074bd016b3",
+      "bytes": 91506
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00015.pkl",
+      "sha256": "03a7a3899cc7b1166a91baac4c2f6c3ab2a025ae360039c3d513f15891679fec",
+      "bytes": 53003
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00720.pkl",
+      "sha256": "3c10c1d45ce51d10c3c7b4f15d3ea59b47a2d2c06e773d189901e2844040fdc7",
+      "bytes": 80865
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00246.pkl",
+      "sha256": "c2f8f57ad74be6be2d1bbbe494ba18ec87761e05f102273632968563dcc1fb17",
+      "bytes": 72054
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00470.pkl",
+      "sha256": "21f270fdfa4b8c55cf957ce4d6a5af58e2eb4582fd5065dc4a372bda012ee6c9",
+      "bytes": 87033
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00431.pkl",
+      "sha256": "6dd6809e14efb66be5cc0ad242d820c22fce2f51ecee9a4ea1b190145a33c743",
+      "bytes": 43746
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00649.pkl",
+      "sha256": "e33261260930fcce404d9d89dd00e8c9ba145466c6ede2c211f829027fb7c238",
+      "bytes": 44230
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00753.pkl",
+      "sha256": "f045777520c81c8a873b9e239ec1d978462b9c2220a8a50db4e520db84aabeb6",
+      "bytes": 91186
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00916.pkl",
+      "sha256": "9ea57da5d47670b05b4cfe86f31ada9422e8ffe15a5727267824435417c4856d",
+      "bytes": 62100
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00124.pkl",
+      "sha256": "79c1e5106168296c67a304bd783a7d6d683c1b014271f5c3fb976a278c562671",
+      "bytes": 76289
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00885.pkl",
+      "sha256": "d5eed6cc3a6ecec6d0dec884d99179ef44ffd4f3482668e7bf6360e448a4645e",
+      "bytes": 94708
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00350.pkl",
+      "sha256": "a81ad97c0a99f0fa87e6e9ea471b8fc1ca3bb3442d3f58eae9cecdb1ea001e77",
+      "bytes": 57367
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00526.pkl",
+      "sha256": "e76f06bc1ccf719724ec1e2dba0187a5c739952b02ac79959cf0287d7bdbe936",
+      "bytes": 72486
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00990.pkl",
+      "sha256": "c5063d1630326a9bec23bd1d4afbf4c9251bb05f7c8c85c331e03aa524ffd691",
+      "bytes": 44137
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00677.pkl",
+      "sha256": "da3a6c2bf259cdfb5eed762107d81956d6f9f997a8778443b732aa961293454a",
+      "bytes": 44290
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00781.pkl",
+      "sha256": "75dc5adc4fff63008c9b4fa8f68609d77c3c27269a8ecf2449dbcbf04a808350",
+      "bytes": 63231
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00363.pkl",
+      "sha256": "471fe069f7977f59c8c32b6ec847a92310ba9baf630bea2bc735748de052c62f",
+      "bytes": 82324
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00974.pkl",
+      "sha256": "322d428d336146ffa4347915a8e5e0822709afd74a1f1fe6dd164caf61fdbe4f",
+      "bytes": 34241
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00399.pkl",
+      "sha256": "eda5c10b6dcc69a30670973f10409105ce5ae6e86721ef5ef4743141b238724f",
+      "bytes": 90802
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00770.pkl",
+      "sha256": "ab83877c86088e9ecbad520716e35fbb562e80e01e29c6ac0bd642011e88fe24",
+      "bytes": 58412
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00783.pkl",
+      "sha256": "3044fca7d9e2d56d2fd99f3087cafac57b279835dd0a32c60b09c4e9d63cdf11",
+      "bytes": 77112
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00754.pkl",
+      "sha256": "57fd2f0b5999eb6111f7cfd147c54de3ed7efb1e14881f2f58889ecb250150f6",
+      "bytes": 63235
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00258.pkl",
+      "sha256": "53bd297611b9f899b8dbb070fcf56fbd324be12b5231746ae0242175a2cbad03",
+      "bytes": 53732
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00588.pkl",
+      "sha256": "b3244b5ffbbc14f3939003dd6ecfd83dcc70b4725c40dfe98b30216e5bfc6a9a",
+      "bytes": 81331
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00578.pkl",
+      "sha256": "d3f28b0ebc3117356f08e00b8dccd0bb98c69f8c63abb5c522ef1f52a377500d",
+      "bytes": 43807
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00700.pkl",
+      "sha256": "bc0bdabaf73af0f5addc560eb09f25f6df066ea1e96bf74112d5672ac930e1a4",
+      "bytes": 71734
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00533.pkl",
+      "sha256": "17eaef1aa08b11378f971fe2d16f109c92cfbcada4fdd443ac8aa836e7dc71a1",
+      "bytes": 62946
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00428.pkl",
+      "sha256": "b5f4cb83ab3d188a9cbd8b7734fdb0dcb8a84afa91479a374cc9846ee2281fbc",
+      "bytes": 44420
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00335.pkl",
+      "sha256": "31e078bfb27b2c25a3eee2e492e407755de43df270b6cc11a9bc5a5f896f5538",
+      "bytes": 91163
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00167.pkl",
+      "sha256": "1b448ad6c2e60cd98cc8b82f4617476c52e0a2ffc6d5afb2ed07b98b0392a17e",
+      "bytes": 53913
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/train/hindsight_00421.pkl",
+      "sha256": "8a73b40744784deaf84256f6ae96625ece75dc6770a8a8a8ded47dfc6cc9d9e9",
+      "bytes": 72361
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00949.pkl",
+      "sha256": "b54d6f78e71220ebb4813d642b77ba14e0337575dcdfc19163bc2789d1d5f379",
+      "bytes": 63138
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00981.pkl",
+      "sha256": "e9478163af5d1bf090d608e6a2d46c01e77532351581ba88f371daad7a8a779d",
+      "bytes": 54063
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00311.pkl",
+      "sha256": "7fa50101aa710ae79d52e24cf4fbfdf97952f088e1d420b3330f4069b18bf862",
+      "bytes": 74875
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00744.pkl",
+      "sha256": "945d1d9ebda143671499e566488f4b4a53a28fadaa648e4dc166c4a193a3ab00",
+      "bytes": 53678
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00150.pkl",
+      "sha256": "66dc79efb8d71ce9ab902c55f9906b1e7079779532ca751e0422d0e17c02b9fb",
+      "bytes": 53739
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/metadata.pkl",
+      "sha256": "7890a2be296dc4a212b61efa478b5deabbf446be40fdf2261e809eab631fc713",
+      "bytes": 189
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00207.pkl",
+      "sha256": "d494d52cb14077b43a6ad47ee3e5b903e37f2ba5a5471c8e55a36eca1b91ad6e",
+      "bytes": 53881
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00623.pkl",
+      "sha256": "83ea68e65ef2e6503ad6c17cdce46653f4a13c7a6dc45ade8db74de3c072f60f",
+      "bytes": 91396
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00611.pkl",
+      "sha256": "dea17f95b099be4bd93524d066bf3414f103112a1b50c7fd368ef505f7ceb02a",
+      "bytes": 53777
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00187.pkl",
+      "sha256": "d5e2b79dae0f2ab308e247343593ef60aaf4a0db241c5147826a04a9afa006a7",
+      "bytes": 67816
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00835.pkl",
+      "sha256": "20c1b028c69c203c0d6ac6944824b1a35b61c3768e4b38cf6a6c388bf592f575",
+      "bytes": 53538
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00047.pkl",
+      "sha256": "62bb2a496076991adf00f1cd7a2185ea78e0a03e836f54c52223399d0fff383b",
+      "bytes": 70182
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00980.pkl",
+      "sha256": "4dd14eb29e052285238785c6b459a832679138c82d55bf628b05c6a86be75119",
+      "bytes": 82612
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00547.pkl",
+      "sha256": "cfd3878fa7f5e0894079e59a8b1e18b069b92a31d6181c8e7d658c1aa76f6362",
+      "bytes": 44225
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00921.pkl",
+      "sha256": "df49fdc977936beb44b6d3085104de3bfd8678b5fca64b68219bcb2ba2907162",
+      "bytes": 71116
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00333.pkl",
+      "sha256": "dc85d4425ba484c5d89e01ebc28e3181c1704099334204ac7a92b241a923c9d0",
+      "bytes": 94312
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00149.pkl",
+      "sha256": "0b854cd2f239ce9392af067e97cd9af63226272d00a3a4c82e8422864017a2b3",
+      "bytes": 60776
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00714.pkl",
+      "sha256": "06dbdd0c391256707a3e46bce4777e4c8240ab46de2c47a4b933907e4355de6c",
+      "bytes": 44359
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00117.pkl",
+      "sha256": "7bf8d8a0981ad0738d829ab1c91b2f5421c172049d270be60edcec18659a615f",
+      "bytes": 72626
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00379.pkl",
+      "sha256": "45fa7cef59a1c79a4987e995215a4522833f48f8a5c1f16a94a88e3b0fd2fb7d",
+      "bytes": 54078
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/grounding_only/development/hindsight_00802.pkl",
+      "sha256": "4dc9bb0393defb3ae4ee352143a84dee43e4376cc26997afe518d638e890fedb",
+      "bytes": 53730
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00391.pkl",
+      "sha256": "2b0d24e5f820654c83ea98dd7508174485f5c9176b770bc5ff7d863769b12b72",
+      "bytes": 52840
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00726.pkl",
+      "sha256": "b7d13ff27790fbbf25ceefc40b43568f6e9443dc78a43e04e41f43f1b52010ad",
+      "bytes": 32918
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00265.pkl",
+      "sha256": "4f651797a6c4bfdebf6e769efcd0822405d40f39a262b6e14e197b91de65dbf1",
+      "bytes": 71416
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00904.pkl",
+      "sha256": "bdb121db68141b65c848951aee6072fc8006e2dc87abd58c58d59b0207ce4f65",
+      "bytes": 42967
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00860.pkl",
+      "sha256": "bdf57e4fae8ade36534f5785b7a777362819af7f1008dd922a7433510e42c57c",
+      "bytes": 42338
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00707.pkl",
+      "sha256": "5c329d7ec23c6c3e687a6c9ecb85c2ca029ea6fa5226444d10ac055f30be3a1d",
+      "bytes": 33388
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00522.pkl",
+      "sha256": "023580af394250fb827d022df3cabf88ea741f450ef261275364c835701d5818",
+      "bytes": 41418
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00475.pkl",
+      "sha256": "03e861ba41f395bfa249f41e5329a00eec4d815dfd8aafcce39a806cb95dd220",
+      "bytes": 90693
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00352.pkl",
+      "sha256": "4651c901377b42aaaa07b63bdfa251494e2729f33f9e4869169e11b6e8301ea2",
+      "bytes": 33337
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00584.pkl",
+      "sha256": "d00c8caf24934b60d05534674583b9eaf6371fd593be95a77b076b29f77c0e95",
+      "bytes": 62508
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00417.pkl",
+      "sha256": "44a886924cc303e1ab1412f8ad59dc5199543e8091b2d84f19f076d2794b68ab",
+      "bytes": 87184
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00328.pkl",
+      "sha256": "b75a3b118ad71948b312e3fbc9b16b1bf915ab0060aa912641b40256da5bfc42",
+      "bytes": 76915
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00908.pkl",
+      "sha256": "f402778e36eb4c466a83b45f7589ad5a181129110b39b41511192d68b18bafd8",
+      "bytes": 42923
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00271.pkl",
+      "sha256": "17ca552d054cfd01dd63fb08952298832b79469f577f18fce1d63feb098c3050",
+      "bytes": 42520
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00693.pkl",
+      "sha256": "473af1ec6d1135ad8b5713586e567dcb76e4192015a70246d6132242b1dd48f7",
+      "bytes": 53160
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00185.pkl",
+      "sha256": "dbbd3ef11d8f1f03469054d4550693de42b0239368e9792931cc41f3e18078db",
+      "bytes": 43501
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00831.pkl",
+      "sha256": "7efd5f6bd765105505bd35eca9770e6188a3a2462ef09fc3ed5abcd59c4f2c8c",
+      "bytes": 53196
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00204.pkl",
+      "sha256": "11a5b982add7f829694fe2104ed8f65c04107c92625a04a25ff326df0990da72",
+      "bytes": 43420
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/metadata.pkl",
+      "sha256": "9d2f04dc42c2962e75b233aaf01623f91d67aad18df422c7f9dc7ef080887b3d",
+      "bytes": 561
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00463.pkl",
+      "sha256": "06d2cdbdf6b83288ffa81d71ddf61e500ca39b0a02c0941afacc8eee6bae07e8",
+      "bytes": 62624
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00446.pkl",
+      "sha256": "2ab496ec1dab295f5180f9b5b823dfac8998f5bcae3278a98845775567cadb48",
+      "bytes": 70023
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00205.pkl",
+      "sha256": "3b55c381472ca1db3acd46f808315b97429ed176e4fc34322de59bf875bdc9e6",
+      "bytes": 72212
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00950.pkl",
+      "sha256": "318c47666f583efaa2373a1c2a1aa37c64207c6b492a3d7df297a3e4bb878d1e",
+      "bytes": 91328
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00381.pkl",
+      "sha256": "f68650a38334de417af1c39210580a5516021c9e2a43e62b303abe9ec9781a3b",
+      "bytes": 72265
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00227.pkl",
+      "sha256": "cb9e0ec801a425a05376004fab652e5f297355990e0113d40b86f3a2113a2665",
+      "bytes": 77031
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00679.pkl",
+      "sha256": "6a1149ecb9c57e1bd2eab9eb3eabff35ac304ee321697e8ef07a8f399e3503de",
+      "bytes": 53253
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00811.pkl",
+      "sha256": "442272ddb7753aed4149471b978ff1d41ad2fb141b6a16cafab076d11486bc4c",
+      "bytes": 82463
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00413.pkl",
+      "sha256": "0593639382384fe45cb4a72cb1a2ad077b9e7e885261c6086bf5b09a6be2746f",
+      "bytes": 89557
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00331.pkl",
+      "sha256": "c7f11b3fc37c2888d5dfba29e1572c2a3494de3d845a6a7c1d5ada7ab80701ba",
+      "bytes": 72378
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00455.pkl",
+      "sha256": "9e27452fcaa4bbbce0a90f71fe1e4eee0860f70c778751c8764d2c947ef436a6",
+      "bytes": 53269
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00865.pkl",
+      "sha256": "4a437fd858412010e229709ef45a6315f915c7bc9e1f6359b755de39379da260",
+      "bytes": 52302
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00120.pkl",
+      "sha256": "763013fdc4cb13b4e2288e323e582bf08761ec52c2ac746adffa50f19a9ed94e",
+      "bytes": 86317
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00256.pkl",
+      "sha256": "362751a8afcccdeb43169d8a3bc725d859cbe06677c1f63d072832a3d626de1d",
+      "bytes": 43409
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00850.pkl",
+      "sha256": "82bc1239eaa03d017b9710d3d65ec04356651aa48230c809da26ed0c44b7c8a3",
+      "bytes": 43374
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00604.pkl",
+      "sha256": "5297dff55087e6c012141362037fc11c48da13bf925348508626acb822f1004c",
+      "bytes": 77092
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00287.pkl",
+      "sha256": "312d0886dcc4d2391c422c82cd63106a5ed1185ab268bf9fd9e67e3d52001ee3",
+      "bytes": 49713
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00675.pkl",
+      "sha256": "ddaa67de28556f08cfac9b982f135d79a9bb68dc08500fc1c34117912b4955f2",
+      "bytes": 72124
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00499.pkl",
+      "sha256": "28bb1474078f35cdba1fb7528af792c7029e730a9eb93656844bb0f722aee400",
+      "bytes": 33372
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00490.pkl",
+      "sha256": "e14517d1e2bd0656a3fac6f31a9a43ce63a7c32c08446bd89ce062946d2d7bb6",
+      "bytes": 49325
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00801.pkl",
+      "sha256": "278046caa0479988516ee3463643f65dfc3607d19362a9defbb763b919a0582f",
+      "bytes": 95923
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00051.pkl",
+      "sha256": "a46479ea89b7d79531ff6b9c2b32a36de90dc230dd7d1975753c08345f1fa907",
+      "bytes": 53265
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00119.pkl",
+      "sha256": "6f81af9b9cf2eb20e5c93a1a0ad8a40c639ef8ced2d1f45882a584e42c316cf0",
+      "bytes": 33441
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00976.pkl",
+      "sha256": "8bf773a6edb19595e3216d25a99411671b9761d54719fea94e7e2311f95aad66",
+      "bytes": 72016
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00891.pkl",
+      "sha256": "0d7b3fe2519279ff3eb4ddffe5a910040ec48c3caa86dc22df646203741dce14",
+      "bytes": 43842
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00134.pkl",
+      "sha256": "2628d9616164cc3436b746421ddb5ea7bb598b40af17a4eebf271eee1f975a18",
+      "bytes": 63038
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00118.pkl",
+      "sha256": "b5336f3d56a4d21d492ced28131dafdf14f7ad704fa2a654ab2a4e0fbbfe428d",
+      "bytes": 32818
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00796.pkl",
+      "sha256": "19feba90b2b8a6db388cc9a0b0f69e2744ea556060cd2a2a0a5c3f8d873f7ba6",
+      "bytes": 53567
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00384.pkl",
+      "sha256": "966fc9f8e6fac9e5f46a58b6669c1cd53f0d8694a0fa7f3cd5a7c5f295b4098d",
+      "bytes": 72387
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00266.pkl",
+      "sha256": "f7410106c3a21eb727f5c7577077136068b43f659d055aacfe637ed4d205ff4f",
+      "bytes": 62980
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00395.pkl",
+      "sha256": "f4d660dd5b49feaeac7a59b9198ce7c8715c98c7a29d792225801ad7b8e91205",
+      "bytes": 62801
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00116.pkl",
+      "sha256": "009885e49c276a1eeb44112d278ee4588692fd037f74074ceb1c3963c5c4dfd0",
+      "bytes": 43541
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00044.pkl",
+      "sha256": "d043513fd9cb7720414b18239ef747156c24cfbb723a3b90181540010cb2de1d",
+      "bytes": 77266
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00438.pkl",
+      "sha256": "3d2a7e969550c0ee69b8f6f7a704169f9ff8ef798829a8ff064b513189c128b4",
+      "bytes": 95958
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00785.pkl",
+      "sha256": "f3da227445dcdc2d981fc806a104370cbd0718b5f75d5adbe668af4da9f89305",
+      "bytes": 75051
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00805.pkl",
+      "sha256": "de99c2a68fca0d264d654e94237c879cb78ba88db390d7b77fe8ac8100e8db69",
+      "bytes": 53281
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00163.pkl",
+      "sha256": "d2d38ca9519bd3f13dde773a9f2777374aac4f049ce135c92d82a67c384941d3",
+      "bytes": 61556
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00494.pkl",
+      "sha256": "b2c86cf35850695d958f57d24ddf2a39ff84f0f595a3fe245760da5a7a3ec165",
+      "bytes": 66267
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00922.pkl",
+      "sha256": "72d46ad8f1fbda46b87d90a6f272a6c42d68d87e02f4e305269142c28902f8f1",
+      "bytes": 53144
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00711.pkl",
+      "sha256": "238560c943f109ed3365aef69b636089ffb696856efffbc3d1e46989166f81a2",
+      "bytes": 67406
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00820.pkl",
+      "sha256": "deec78243488bb15f8f0bbe3068594d4983f1cc985f722eb71eb1ef5b999c621",
+      "bytes": 53344
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00953.pkl",
+      "sha256": "bf46a25d1aea72f686ffb8fc1ed0b1d534017918c1041d8b51e4bddeb3630c26",
+      "bytes": 62560
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00597.pkl",
+      "sha256": "47db58bf374a00f93aa749994c1f484b67f11b40d152b1dab0577d2f3d67edec",
+      "bytes": 91359
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00050.pkl",
+      "sha256": "5a5d382e7cd1097d5c79eed208f2e7c509a3dcc397c2965af174afe69ba292b9",
+      "bytes": 52741
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00382.pkl",
+      "sha256": "83e5396b633994f3beef2a79fed17da20a5b1b8087f55a7dbe5994f3d23f8737",
+      "bytes": 67288
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00174.pkl",
+      "sha256": "ecead7a8da71fdf2adba0e986915ee14f8f97a82965489c723f035e8456868bb",
+      "bytes": 71642
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00733.pkl",
+      "sha256": "425bf71aaf03b7e27cf45c51be8b8a828d4fb7feb349d1809fdfe9093347d4c3",
+      "bytes": 62959
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00521.pkl",
+      "sha256": "786de6d15fc2a2a6b99a41ddfeaa290d3016fb72b7628952b07387af918fbc69",
+      "bytes": 86599
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00102.pkl",
+      "sha256": "cd211421359a54b0c2fe4ebdc69fc763493b46b53bafa374fa99826b2c83eb1d",
+      "bytes": 62139
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00893.pkl",
+      "sha256": "2671e230a6192a3d8f2fc2720a4afdf01386582995fde9834fa8655acb57f87e",
+      "bytes": 53254
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00713.pkl",
+      "sha256": "a4905ce215d3b9ac37099b8dcfd8119de3bf2f45dcc14ee83932a5e0aa005873",
+      "bytes": 57923
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00731.pkl",
+      "sha256": "95f25d562da2ed2a32fb0c40ad30b0ebd0831c6ee2d13cfc9baa5a9b963d0197",
+      "bytes": 91637
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00015.pkl",
+      "sha256": "7e1c878071e463b2d2d4d44ff0647393c8842b6c7c089eaa3b8d643acee5826b",
+      "bytes": 52314
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00720.pkl",
+      "sha256": "4b600185914e701a6cc6d4f515397fb37fc6fbe7e8197975f242d02342bef741",
+      "bytes": 80861
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00246.pkl",
+      "sha256": "539a964d65dc8dadff39b918e54fa8176003800e2cfab5bfe2a64ac2358df02c",
+      "bytes": 71631
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00470.pkl",
+      "sha256": "0b5d6230294ab996bb1b1ad321376d04b7445c484282481f9b40f5fa8e9496b3",
+      "bytes": 87045
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00431.pkl",
+      "sha256": "714cee9cfc9e9509d18f87ffe2f2e0b65aaf39b549da15e578f6e06a06dc91ed",
+      "bytes": 42704
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00649.pkl",
+      "sha256": "938b1bdfae67705d70f02c47a0b7fcfcaeb330f6c351e007806c0813ebae5ad8",
+      "bytes": 43627
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00753.pkl",
+      "sha256": "067e41ca85401e3460f302e343951e3494721cc418e0bbd3e49372023c7a9a62",
+      "bytes": 91193
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00916.pkl",
+      "sha256": "39ff7b25a415c61e1ba773f2ec352c9adf9aae38644f71d56b84f8fc4e59ea42",
+      "bytes": 61818
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00124.pkl",
+      "sha256": "6965c09721e655851a4788c6c85e47de4b56d19ce44e423f098bd2449d66893a",
+      "bytes": 75926
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00885.pkl",
+      "sha256": "6818fd0a44db4ec1e9d46c3cab9a148c85855952305bda4ae17325a0b74695c3",
+      "bytes": 94936
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00350.pkl",
+      "sha256": "ae0e762ca76d731d6abc17986bb1391988ab4df092ba9423b30153fe865f287c",
+      "bytes": 56846
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00526.pkl",
+      "sha256": "db07397766997af43187c8181d354e5cb28f285d8c6bc2c49b0e914ec6c377fd",
+      "bytes": 72284
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00990.pkl",
+      "sha256": "66671f747be407c7ca6ca417262ecb744a761b9822300bcce70c7908546aa3fa",
+      "bytes": 43070
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00677.pkl",
+      "sha256": "855b6588957bab5b8d67e5459307fc3087e714daaea88f84b9ca18072988c162",
+      "bytes": 43396
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00781.pkl",
+      "sha256": "fcede0238b3929d48545c2e2a2373ca07f37850731442c2d36f6454c1f607221",
+      "bytes": 62971
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00363.pkl",
+      "sha256": "686925ce28d03c5ddca7460d391fb7865342c7d2bdaff6a449dccc6af6f2e9d9",
+      "bytes": 82241
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00974.pkl",
+      "sha256": "9571f7122d9e4e5a05d3c7f7b697e9a8b87a5b7043a2f2c7af8ee5be01267734",
+      "bytes": 33423
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00399.pkl",
+      "sha256": "2159bb34bd2b2bd0b3131aa8509aadce7399b3830ad72f77ec283e5087aac154",
+      "bytes": 91037
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00770.pkl",
+      "sha256": "425c3ee3e9f4bbb05ea0843868ac97b218f67e36466f000def9a7e7bb1f09682",
+      "bytes": 57834
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00783.pkl",
+      "sha256": "7be088167939f9d5bfeba295e2115a782b4a8e2d7f44893f1c6b81d7aabc08d9",
+      "bytes": 77167
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00754.pkl",
+      "sha256": "9718deffde404d0512dab89b6d160ace6ef80e5845e52b24b61e6f2db394f29d",
+      "bytes": 63042
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00258.pkl",
+      "sha256": "7a8e11a61236269d80a54b192f41de450e4d421447beb1c86a58dd1b3da41557",
+      "bytes": 53232
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00588.pkl",
+      "sha256": "ba4ee55716310c638dfec5cdedcaf01617aa1b354c6c59b3fe2b0dcd776d0686",
+      "bytes": 81107
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00578.pkl",
+      "sha256": "ecdee89d409179b0213561d800d82c5f1f04b0f8890193b2f0d147e34c1a1f61",
+      "bytes": 42888
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00700.pkl",
+      "sha256": "208da632c071bf1a53e260cdc928557255d163a58206189177b1a546693dd7c0",
+      "bytes": 71400
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00533.pkl",
+      "sha256": "9151182b17a07e7526e93bd49f94e0a2792fa5ef71cd00054182b90c110e8eaf",
+      "bytes": 62660
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00428.pkl",
+      "sha256": "689ce27be60a68a77efaaf2a391daf33e00087b950384af982357abb8179542f",
+      "bytes": 43752
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00335.pkl",
+      "sha256": "5bbebef8a9296159e8a921b7311b7c372a4895aa1edd432892f5016f3b9c19b6",
+      "bytes": 91295
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00167.pkl",
+      "sha256": "7939b8ef55bdb8598f7c7406e920b176aae536614a005bfbd1b3de93571114c8",
+      "bytes": 53276
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/train/hindsight_00421.pkl",
+      "sha256": "da5f9772fe31e8cd0c8a3bb2adfac32d1972158e37096c97e6934c608713db1a",
+      "bytes": 72018
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00949.pkl",
+      "sha256": "a7255ecc1fc28f145e98b2f48cd2397d66c0f6ae798236a38c856b2293784990",
+      "bytes": 62996
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00981.pkl",
+      "sha256": "e57dfd9194e5287ce6973c8e4c84a43de9256d1e2bdd51a5f098a6c0f556de59",
+      "bytes": 53564
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00311.pkl",
+      "sha256": "8e001bc973df8253b79e7569cd4e5e6a87f82688750882b188ede38885fb08b3",
+      "bytes": 74347
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00744.pkl",
+      "sha256": "19709848d74827fabca9bbf34738f79491768a98a5fecc8edc3c3e83731f14cb",
+      "bytes": 52918
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00150.pkl",
+      "sha256": "42284940d56d59ba5f0c4df9a7c622e96ba2105afe87cc9ef65ac871d2cfc0b2",
+      "bytes": 53135
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/metadata.pkl",
+      "sha256": "7890a2be296dc4a212b61efa478b5deabbf446be40fdf2261e809eab631fc713",
+      "bytes": 189
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00207.pkl",
+      "sha256": "33ba60996ee33147055c8e71226e73e60287d8a73428777acabb1a380a33651c",
+      "bytes": 53414
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00623.pkl",
+      "sha256": "374eae9add2cfda22949ef04af3ed8c375c6423a0570778780aab5fd106f615e",
+      "bytes": 91491
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00611.pkl",
+      "sha256": "4335aea6ea1bbdfbbaf9126d4984a333b81242839041c9166e50b0bbd5aa5eb3",
+      "bytes": 53267
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00187.pkl",
+      "sha256": "3c52020a723a85165c011d0a93d045602c739385f28c645d2f24ae3320b5a734",
+      "bytes": 67408
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00835.pkl",
+      "sha256": "da734e42feb23d55a2a701feca948534af11bd5593bd95648cfde60574e62ca9",
+      "bytes": 53031
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00047.pkl",
+      "sha256": "16fa154c880dc5c8b4b1e55cb6f59d585ce0adfe82aa0eeeea2ba94ba0c7fb9a",
+      "bytes": 69795
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00980.pkl",
+      "sha256": "c368eadd7b4b33368349ce544020d46c8d90d73ff8f8d6c0b5d160a6b7421364",
+      "bytes": 82540
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00547.pkl",
+      "sha256": "e9028f5e9694763d8b382c0fde14ba30a7fd046800e2a802f33818e20952b98c",
+      "bytes": 43380
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00921.pkl",
+      "sha256": "504bbf2f6d3701982cb3c36000fad39704f21c15f79b6ce6e6e51557c760d390",
+      "bytes": 70813
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00333.pkl",
+      "sha256": "a7b2a8552b885cd3b369f15c9ad4c0e3e23257197c32a696391de86a19ed1645",
+      "bytes": 94596
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00149.pkl",
+      "sha256": "43dcc71d5b7bf18aa5eb4a574956d6f8338e27158d28190d1fa4f24f93cc7957",
+      "bytes": 60382
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00714.pkl",
+      "sha256": "37dc7120829c89e64d12ef38ef137f8e9510583bea1f9d993facc0c9c0e638f9",
+      "bytes": 43758
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00117.pkl",
+      "sha256": "75a691c934889f406b4646bad89cbe64e14c87a1e5b801d775c7cab0124e02a7",
+      "bytes": 72348
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00379.pkl",
+      "sha256": "d4c60ce7be6f2da0b3908a9d4e7306268e2e30c8d73a73998bdc0a78a42a4ecb",
+      "bytes": 53588
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/matched/original/development/hindsight_00802.pkl",
+      "sha256": "50dcc161023b95736669f8017d23291c7f7df13a88c8ef026f364c30a662d8b0",
+      "bytes": 53090
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00860.npz",
+      "sha256": "07dd2a3a87c15644aa23ea83ad882de523f8dbc2df884ed22c7737b473fe0cb2",
+      "bytes": 84717
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00796.npz",
+      "sha256": "3e8d59cd41c11ec7903eb22246010e105fb8c5f43f9314bd1dcbdade3b94c4b5",
+      "bytes": 101852
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00051.npz",
+      "sha256": "8e6afb3c5144e4957618acf54f74bfa78e094e5b148af9e60754c2664cd62d86",
+      "bytes": 101746
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00604.npz",
+      "sha256": "2d01a12cd55ca780a65bf3dbad132ea02228f48aa1db960e56d444a9cff313fa",
+      "bytes": 143506
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00350.npz",
+      "sha256": "e0ef5ecdb71ce4ba9b403ec323b1c7c51de9ae662faf1c1a47c73db4b579e562",
+      "bytes": 109124
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00711.npz",
+      "sha256": "f4f90abd6415ffea419f20c8cc31ed319c5c4145ae6c746b499e6b5aa8fdc2ca",
+      "bytes": 126677
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00835.npz",
+      "sha256": "847e7b69bdb889f7ccf245e2e4596fc0fcbd7a8b95c7f706a246ee3d1d8908c1",
+      "bytes": 101082
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00428.npz",
+      "sha256": "23838b1eada93d09f6a06a4abf3e5f027b0858a97e3de8c24e384e7d55a99a12",
+      "bytes": 85022
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00611.npz",
+      "sha256": "2498d0c9c667b1f0bc51b37958caa022e1034fe2dda7f972ed2514fc8bd752a4",
+      "bytes": 101729
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00526.npz",
+      "sha256": "72910b5b3c0b245a11823ae17e6a4ccf432e7c5aa744dd4a0876f287deffa39c",
+      "bytes": 135216
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00227.npz",
+      "sha256": "39c95b2606e6c4a7694f23d5fcd3339347e3ae7af1ef70306347ac2e39264a6b",
+      "bytes": 143436
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00167.npz",
+      "sha256": "67ada2b9bc0517013b1911244cd2e45c70ed50a30f1a27f4520118f6163ffb4a",
+      "bytes": 101798
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00820.npz",
+      "sha256": "3d36906ffbd4e596a77b781a6181b23aecb0f2e0114a096a741bb594cd14b6ad",
+      "bytes": 101850
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00865.npz",
+      "sha256": "ee7e27ce50312f363e75f471e95a064cf7e584d4cc5f3f1550186ec98f6914fa",
+      "bytes": 99476
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00679.npz",
+      "sha256": "dd6074cbebfd4440713966987bec1082b4807d2626f54e64dbbb3631c892a37b",
+      "bytes": 101877
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00783.npz",
+      "sha256": "47f6b1756daa0c40a811974fc340730662949bb9829aba0750ec068d0624e838",
+      "bytes": 143481
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00811.npz",
+      "sha256": "f9cd329401f84bef09baeddd1c19c599e9549e96754d87e9ea903b65ba0cb2b2",
+      "bytes": 151889
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00522.npz",
+      "sha256": "0ce64ad7ef49f55f58452782a0daec1abfb7a779afcff34720dd54202b473154",
+      "bytes": 81540
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00395.npz",
+      "sha256": "1d4ca4d5b5284481cb095bd8544870063cdbd39b28197142999f51344aaa22c5",
+      "bytes": 118467
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00119.npz",
+      "sha256": "d53e70eb8bf56881e745fbcf80488e5465d00001416797c74464b3e2a9182e57",
+      "bytes": 68376
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00382.npz",
+      "sha256": "9d5c98dea3495cf14824a3c8c3182275522272fcb351822725028b7f0e089624",
+      "bytes": 126705
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00163.npz",
+      "sha256": "bae24ab9be8e5fa891c71ee70cef6f3c4a9ac31be8a9c5a61de16d0c7f32cf05",
+      "bytes": 117762
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00588.npz",
+      "sha256": "86fb212dd920233a1f458672b74a6a9f08f1f96f7ec28936c12139a41fe0cd1a",
+      "bytes": 151779
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00446.npz",
+      "sha256": "c59474e4f37869503927ece9920c7c409725a05377d60ff2c7af144aba3beb7c",
+      "bytes": 129588
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00207.npz",
+      "sha256": "204fea0af0349d03cd386bb337e929667bd29d7f65688f53219822037b2f5d35",
+      "bytes": 101817
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00754.npz",
+      "sha256": "b5068a7faa491f31ed4477309bc83968a61bc2e2da656bd78aee27970ec1bb93",
+      "bytes": 118494
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00050.npz",
+      "sha256": "e3575666ec9ad000437dbdb4342499246ee61f063e6d6b74c8d347ab4fe40498",
+      "bytes": 101819
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00333.npz",
+      "sha256": "a23002223f8d67d72aa319e2339f605df4c8e87db172daa6c143a44143ffc2e0",
+      "bytes": 175608
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00981.npz",
+      "sha256": "bf997a3c9ab8a366cd56a39f1edea3d61703b112340c9f9e61f9a6f905dafe06",
+      "bytes": 101869
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00693.npz",
+      "sha256": "1c04c9493786fa0c77719f7779c5b321914add99c300245515dde35e1da53353",
+      "bytes": 101728
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00417.npz",
+      "sha256": "ad6604c7319058627e053b90842963995e0bdb153c077c21bef82a9d1946ba08",
+      "bytes": 160234
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00649.npz",
+      "sha256": "e18789ad38a4f9255d540bea49d204afe5d3f4bd7ecdcde536de7f8db9d44a48",
+      "bytes": 85091
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00118.npz",
+      "sha256": "0b9f66ee132456081014883694bf6834d8ea44d26f4e95b87cd963a927e24d2b",
+      "bytes": 68268
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00726.npz",
+      "sha256": "3d432762fe8ea4351a5a18aed54590549319a14063c0cb50d34736d14f6c3446",
+      "bytes": 68304
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00047.npz",
+      "sha256": "542dc9cf774e0daf2d1f56e5462116f73eb0b6950d4885adb247392ba9e89385",
+      "bytes": 134781
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00246.npz",
+      "sha256": "1cb2d51cd6ae9442f3d6ac0551c588ef5354123c35ae81fb1c0e71668d66149c",
+      "bytes": 134910
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00431.npz",
+      "sha256": "ff2d7231f1a43ff10bd1c1370a36ed81e046f6d5b80a0fcfa5c3f2ad0d511a5d",
+      "bytes": 85020
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00850.npz",
+      "sha256": "2ef4f84f6cb363b1c133c94fb1b2d01660eedc508aa03dbff4d0d54ceb09cf1a",
+      "bytes": 85087
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00584.npz",
+      "sha256": "fb1cb0a165a28a09260b6f5e05e8ba4fdc3eb19efc2dc1664df750618049a72f",
+      "bytes": 118319
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00885.npz",
+      "sha256": "41881078890af18f10b4004a2814dc6a00dfe7d71563890cedeccc2f709f975f",
+      "bytes": 175088
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00204.npz",
+      "sha256": "0ea034852f1436c94ffb261b98f6cbdf6633ceb957ef89194c4aaee32f0f68b8",
+      "bytes": 84662
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00271.npz",
+      "sha256": "a8fd62afa4ea968303f6705c6518d93245c666bc7597ede7f50badc891d9c4b9",
+      "bytes": 84553
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00720.npz",
+      "sha256": "0d7ef001ebd13f4748bf8f3315437917afa121e6ef2ac491093a8c3edd0e9b27",
+      "bytes": 150384
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00391.npz",
+      "sha256": "284d475f3f879fc1bfc68905f4497199138877b2ab26a1dc09c09178b1bf49c8",
+      "bytes": 101018
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00675.npz",
+      "sha256": "b2cb84cbe4e54abccf347f7af6c4c3ad2c061e5d52202a7662c9e940b10cc4c9",
+      "bytes": 135128
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00187.npz",
+      "sha256": "1eda5ef631583d7f2b3cb31cf56a00ecfe74793ec3965724f0bd58ecc81c51f9",
+      "bytes": 126788
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00802.npz",
+      "sha256": "deb1c54469e12b42c92aeb667683e644f8d05d6c58b57dd3a376ba665ca8715a",
+      "bytes": 101356
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00700.npz",
+      "sha256": "0555b47d1086c38db31864382715c8ea05c3a4d6d58a3260d4f0b67a022a8251",
+      "bytes": 134139
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00335.npz",
+      "sha256": "90c6cc0081b4e1991d735cbbceccc173b4ce805f0b13dba85c3336d6ff4ffa13",
+      "bytes": 168382
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00266.npz",
+      "sha256": "0aa32d07347480231e78e7b6e68f3b869a784a9acc1c9047ff827d8dd1d6838b",
+      "bytes": 118407
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00707.npz",
+      "sha256": "10b1ae0ce887b1cb36bec83c7c8b49057aa6c3c352882e27fd02b0d027884f35",
+      "bytes": 68325
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00124.npz",
+      "sha256": "df1f35abebe004405c4cef41751d73bdc31d15adb739cd864745a6a505ac70c0",
+      "bytes": 143491
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00116.npz",
+      "sha256": "056a774cbb9f60fe8746c64cbbc2aee925d72262a582696be448aa09414cc7f3",
+      "bytes": 85090
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00733.npz",
+      "sha256": "8c36f1fff7080f793969ad4a70a3de9a2e70e407fd1fb42698fcd9f8f5a49371",
+      "bytes": 118484
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00150.npz",
+      "sha256": "cbb71afe55d0503f7c44b06c52fec7d2fcffda96fe9e8faad4e9ae09431bfc40",
+      "bytes": 101836
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00770.npz",
+      "sha256": "3db1a5a7edda2c3e976847bdd4455e3d237fd70833245a1525c624bd8d1f6203",
+      "bytes": 109439
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00980.npz",
+      "sha256": "659ae975cde56516f039f51407869a56954306f35de7464f0528162d72e87e8c",
+      "bytes": 151931
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00470.npz",
+      "sha256": "ee91c27caef777e49cbf087b0a31ba6559c5531d56de441105b02b097eb0bb4b",
+      "bytes": 160196
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00205.npz",
+      "sha256": "77ab43541c8687fc8158c679546d1cdadf0ec8ddc8f068415c41a1378b181c0a",
+      "bytes": 135172
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00185.npz",
+      "sha256": "52fdd35f2dfa1236e9ce188d656d0d9eb63fde06aafc841e40cb7ba8c6d0322e",
+      "bytes": 85026
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00950.npz",
+      "sha256": "fec3c67f69a1847af5ce2d5921308fb6ad41c96724e23e894f6babcc18eed79a",
+      "bytes": 168634
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00893.npz",
+      "sha256": "b3c8daa5dfef27d17c8dc206bf0751c7a76b8f94f702c86f9e2e3d5bffd44e17",
+      "bytes": 101770
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00328.npz",
+      "sha256": "59a18f872b8180d936def166a234b61fe8334daa422016aa8ddfd196dcc9c0a3",
+      "bytes": 143386
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00379.npz",
+      "sha256": "566bd0ba5435349c7c4d7ed0919327a6a5f3908b38ee2c7dfd518b164f7b360d",
+      "bytes": 101860
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00490.npz",
+      "sha256": "dc5b4ac1a23396a6541dfed54f814f1373ba34b7cb9fe952a0ac1d9de0e7cc4d",
+      "bytes": 98786
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00990.npz",
+      "sha256": "eb24cea41d246d96cf6373fd52a2c072ba004cf111162729ffb5881c7b8a0639",
+      "bytes": 84938
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00731.npz",
+      "sha256": "5e343af4af3f2ba2226e39757e34cbca2bb77d29a6d2a6fa982410195bda2aea",
+      "bytes": 168639
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00908.npz",
+      "sha256": "6422c9613f9dc88705b6e92423059ec4cc74b8be18571d8c192ec624e566145c",
+      "bytes": 84760
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00287.npz",
+      "sha256": "aac13c7b8fcae0bc0b88fd8cb09cde3908489ec182294c182c9cee2126f3a96c",
+      "bytes": 101070
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00421.npz",
+      "sha256": "86dd59fef223e05c45d5961b07259ba77fcb445bdccd350fc9521d1340c42b60",
+      "bytes": 135077
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00753.npz",
+      "sha256": "5deac98cf5595fc87d2da1d06164ba4290d6d4ecc913d0c98f05cbcd2b555e8f",
+      "bytes": 168553
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00134.npz",
+      "sha256": "7852b3de22b9530e9c9e372c0779a8c996bb925f6adec8368551a2d4e44be296",
+      "bytes": 118510
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00831.npz",
+      "sha256": "cc590b2561b7d0d9c12facb213617bf8244d9095ef936e1680f58e2f13c97b9b",
+      "bytes": 101821
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00904.npz",
+      "sha256": "ecd708932e69ea6794c0fabe86663b3a2cdd1c6bfde7ee7e8c42d15be6403148",
+      "bytes": 84829
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00623.npz",
+      "sha256": "94424660784c7d4de51c95653f43fdf866ddd6731faaed7b17d86838fb1bfa86",
+      "bytes": 168630
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00256.npz",
+      "sha256": "ad12d01d9ac02da03f7d6f629d6a60359d7ed606470c8b9feac7955c978f77e9",
+      "bytes": 85025
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00149.npz",
+      "sha256": "d158c94f690f72cdd80715a9e8a6be226856f21d5e40a2d154c2b04472ec1337",
+      "bytes": 118030
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00363.npz",
+      "sha256": "d5db35cec58617b5ad974473eedecf1d232fb8ca234e7748ff3bb9b1d6b6418a",
+      "bytes": 151862
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00258.npz",
+      "sha256": "652f587d936ab509aeabaa703f421ff13169a5883c06ca58f9a5a38ff44d058d",
+      "bytes": 101859
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00494.npz",
+      "sha256": "5f066773855608d44b1a87e651e28ee5d3285c1fb1e892f86c87880aefc88658",
+      "bytes": 126154
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00117.npz",
+      "sha256": "77f8feb36b64bb11990c83a9b231b97c65310f8b965340aaf5e03de5c276bb24",
+      "bytes": 135075
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00463.npz",
+      "sha256": "fd5d438289b887113df0fd88036769842ed08e503c18318aacd5887fc6c79892",
+      "bytes": 118467
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00311.npz",
+      "sha256": "9d3ba105f772f62394d2cc9c7c86dee8abce690e1c3649dd6ca74e5c48d2c328",
+      "bytes": 141739
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00578.npz",
+      "sha256": "e14959ce0c411a4cfaab48571bf53e7f0edb66844ed17cd02635fe8c2da15c7b",
+      "bytes": 84753
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00714.npz",
+      "sha256": "a1ba46098172d4a9f361911f03c586aea8a8ae14b240af93f0e21ace2ce5249f",
+      "bytes": 85083
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00265.npz",
+      "sha256": "81d6564cdfde8ea1a13e963b8fd5adde3bf9b93627fd38da74d39dd15321c674",
+      "bytes": 134600
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00744.npz",
+      "sha256": "180134b0c798fb80f9ef0f2fc996d4d2b117ed3e5123dda5de6fcd1b4e9a9df3",
+      "bytes": 101714
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00475.npz",
+      "sha256": "04bfbfa9b4891663cd944dd9c9161eaa8223556aebad730c9ee361d3f9b96960",
+      "bytes": 168278
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00044.npz",
+      "sha256": "7dbe67bbf5d2165a7cf0d6c34ca97c1df0916e43f2bc78e3b9c2a3f489bcd1a4",
+      "bytes": 143534
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00805.npz",
+      "sha256": "27882f6671cf3f01111460ef711a9ba78dbbac22fd7e93d30815d2c915ce9783",
+      "bytes": 101797
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00533.npz",
+      "sha256": "77d9bc10b75c1259eb06f126b6ef8aa668737a8164bcf3bb3656dcd157795d0f",
+      "bytes": 118496
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00381.npz",
+      "sha256": "46e290822219154d5db137b1d12350afa634f72b28f401d64b5e638c1c4b0e6d",
+      "bytes": 135169
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00949.npz",
+      "sha256": "846a13b500d227af6fe8ba0bb86a2583cfa5678ea6a2ed1b533fcd49928dd751",
+      "bytes": 118528
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00922.npz",
+      "sha256": "fe9dbbec5193a486875ffbefc8aa79e4318e844a1b601baa3dface098b1c719a",
+      "bytes": 101746
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00547.npz",
+      "sha256": "a3fb6b535c156621af6dd2f6571ba0ed5469dcb868b52d2d3474e0e96d92ed87",
+      "bytes": 85121
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00120.npz",
+      "sha256": "94e17539dabaa8f8e0db891bc64379d808413d8af92907f432e62208f3daeb73",
+      "bytes": 160025
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00399.npz",
+      "sha256": "d6b08a2ddaf38c2721e22456453a668c2e48ee6e1c43d388d99accbfc681aebe",
+      "bytes": 168431
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00015.npz",
+      "sha256": "83e335028bee126cff63fc853ae6e309141877755f23c23bb879e3e33563c7ad",
+      "bytes": 101694
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00801.npz",
+      "sha256": "7e3d7d5605b37c9cd7e108b9d1e67201fe6ee40651ee300fdfb2d35a2b727344",
+      "bytes": 176795
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00953.npz",
+      "sha256": "f56f3aa73c160cf99af72b26f17d998f3aa399338c3e5b7885583b990a12fef8",
+      "bytes": 118454
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00352.npz",
+      "sha256": "a0d2a280abb13ddb752d7ec7bd850c4c522ce24166681e3e5ccf6f16edd0b072",
+      "bytes": 68325
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00413.npz",
+      "sha256": "31f8b175ff3fef55abbe49379ee5cbee0c4dfb71ede26b8fff6ca94d59b0e69c",
+      "bytes": 167741
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00521.npz",
+      "sha256": "c8984e15f805163544ded9d4375092ae9f95c7330f490255a65bd3c0dfbc0a1d",
+      "bytes": 159974
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00974.npz",
+      "sha256": "c6d1e96a9baab209a98a271e8e455f9e29097423b4e2f64fa5371a65d36e3667",
+      "bytes": 68498
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00785.npz",
+      "sha256": "5ce0677c21ea7d2b46b19a281e5c9b569ca9675b6276ec5cc4bc79c5b1909c01",
+      "bytes": 140807
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00976.npz",
+      "sha256": "d4bc37930e57cadc9bf57826e3fe1a786fff952e440f9e5bc0b09e9f628efa4b",
+      "bytes": 134835
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00455.npz",
+      "sha256": "98aeb3723ec1205c5388916b4ae2f1853dd5662ab852e5db216b6c3199abbf61",
+      "bytes": 101674
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00438.npz",
+      "sha256": "5694010d0c1b706972bacc28233b7dce283261ad77683346864a71afcc48ad2a",
+      "bytes": 177031
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00781.npz",
+      "sha256": "8b7c8e6a3648a5fe0741994b0f68bd2554392c4654cffb08c148d62bc3719067",
+      "bytes": 118442
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00921.npz",
+      "sha256": "dc0442b409b926b54fa45ef42f463751017765c5e9996420497b300a5ffa3705",
+      "bytes": 134681
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00713.npz",
+      "sha256": "db38a178e12505fdf1c1a79bf4c54f01ca36a9b8fb06986d25b6d44612de8c00",
+      "bytes": 110176
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00597.npz",
+      "sha256": "ea43ccdd37570ace286cb1f22c8e58aa18133ff8b477f8a0604cc0b08c45dd3e",
+      "bytes": 168537
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00677.npz",
+      "sha256": "434e4b363024dd15dcebc6e43a6f0bbf9b6401138493662c8eeabc3ca036425f",
+      "bytes": 84801
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00331.npz",
+      "sha256": "017b9ea34ced66a0ed4b480c42471e89b615674fef57834a03f75c4a533b7d8f",
+      "bytes": 135125
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00891.npz",
+      "sha256": "8322b37a19be831a57fabf77caac60343d881ad43de10cc0129623cb7d7e0efb",
+      "bytes": 85024
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00499.npz",
+      "sha256": "67e2a66f15297a4d709012836812666c3a4d96ba6b6d84bee4431c82be16fde4",
+      "bytes": 68464
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00384.npz",
+      "sha256": "0032249cd541cf4a5644c6a2d5db2ad5f5d985a2f1364c0dc88c2d62da550cbd",
+      "bytes": 135250
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00102.npz",
+      "sha256": "314fee020bfae7d836588563f17ded880a9d8483faa04758ce6d2e431cb1c302",
+      "bytes": 118338
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00916.npz",
+      "sha256": "ee3262337e8a7e60de60fd66601e0a5a7cc300131b990d49f2c8105b05182afe",
+      "bytes": 117598
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/repaired/00174.npz",
+      "sha256": "042fad49bea812c14a3ff2017c26c84928bc53700c5d2615abd4af4aa3592d62",
+      "bytes": 134807
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00860.npz",
+      "sha256": "a81cc967a0dd2aa172ba2418359995ba067920478a684d4ae585387f2a186e6a",
+      "bytes": 84726
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00796.npz",
+      "sha256": "46d7deae99f27cd5326ec349c76a297267d2cf1ae2275cab785c9d5fe1cdb86b",
+      "bytes": 101853
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00051.npz",
+      "sha256": "11983e0cbb621243ccdf2e0c0fa01280d7be040c1786ea5669fc236195b44892",
+      "bytes": 101763
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00604.npz",
+      "sha256": "e79e62bae140915b5c3aab73710b5234cfa43ca69aec6ea620ea1569879ff0e9",
+      "bytes": 143523
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00350.npz",
+      "sha256": "3cc5d56270f119a2aa5041a4bfce36a5b3c64f7f131c117f9da803e7d8e3e7d2",
+      "bytes": 109958
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00711.npz",
+      "sha256": "25850a5674a655ee08026d5d090b262d2777227c32c56f67fcd5298581af1ccf",
+      "bytes": 126740
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00835.npz",
+      "sha256": "dc29ce6c06657101ccdeb65051d1ad5626562093acee57b3e59f8299ceb4acbc",
+      "bytes": 101651
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00428.npz",
+      "sha256": "05adedcd47bfe3cd406a5db91efbd1b230565bb7c40afe81e5df75813b6792e2",
+      "bytes": 85086
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00611.npz",
+      "sha256": "f04e6b61a794bba494af762f9f9184d08ce94d56fbdf1d465426c2d0b7235cd6",
+      "bytes": 101850
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00526.npz",
+      "sha256": "1609071d5b2502776a81fc7892604c0ad72c443e7c3f507ae30bd5a38bca153c",
+      "bytes": 135252
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00227.npz",
+      "sha256": "dd811b3caa603fbfe677901147f5126217d549a4bff8477cb3f601a5b9a92a0c",
+      "bytes": 143428
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00167.npz",
+      "sha256": "e1244b5800a30bf9f4688143ff1a191d1a4517dc09b3a6b9de5fa419fd602233",
+      "bytes": 101805
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00820.npz",
+      "sha256": "81902bba2ced3efc0b1e22ba30dc8d5426d1fd62b28f029414b17837fe03393f",
+      "bytes": 101809
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00865.npz",
+      "sha256": "ec5f02e69dd75172e75270705980e76606142327f5884df58f0c70c226566554",
+      "bytes": 101627
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00679.npz",
+      "sha256": "b07d595e5036e9f102e79fe1c89d46ca2f2ba014c4c67e25802cf91674e8455c",
+      "bytes": 101930
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00783.npz",
+      "sha256": "d1ed8007e764e63859eecbe6d451b36eeffed25a1820a7ac376a6905c4b7a9d9",
+      "bytes": 143460
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00811.npz",
+      "sha256": "215c12454e3a4676e0c2747b3869b7c9fc794864bc9f67908fef71e90924ee5e",
+      "bytes": 151885
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00522.npz",
+      "sha256": "928e45af945ed6d07891bf3aa816cf6eb7da0f1f1789d22b336b6f59253f6abd",
+      "bytes": 84488
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00395.npz",
+      "sha256": "0199b8f482c8552464c79477b2008e35753bc2a3ade79bca28deeaf0c48f82c1",
+      "bytes": 118451
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00119.npz",
+      "sha256": "e21ab455a375b16b60e7d1dbf97fc3ef66bf3ae7921f287255c5fab152cfdf46",
+      "bytes": 68422
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00382.npz",
+      "sha256": "1f6fd4af007f1725a234c57cc81d54e17c43f95d0e26d27471a25ef140e35f2a",
+      "bytes": 126745
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00163.npz",
+      "sha256": "9e67c5d1f543ffbdb1a162def9cf79fa827f95a2a3a75981ce08c2c2b8807bdc",
+      "bytes": 118155
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00588.npz",
+      "sha256": "c84dc66b2024a26ee11d308a3156d5fcf3e1951522f0e04b4b8a43c83d64d2d9",
+      "bytes": 151837
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00446.npz",
+      "sha256": "1add3fc64a035e0ccbd337b436a3a4d1337b8a8f6a662ad4565e213af4e9ab9d",
+      "bytes": 134476
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00207.npz",
+      "sha256": "4337d2a824c0170beca12160aeaf2c04112d59ea479fa70332667f692f724bf7",
+      "bytes": 101840
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00754.npz",
+      "sha256": "c61fce9d341b35f68bc39c20846256c84fa07ee2973c1e85585c7a7132319d43",
+      "bytes": 118511
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00050.npz",
+      "sha256": "6e9a439538fef37a1e13eecc6851980a2568c542639eada5e4c0a7b1c7075ee8",
+      "bytes": 101828
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00333.npz",
+      "sha256": "6e7436cab5dc6d68c1907c784506c161cf40f2ad3a0dfde899f8a256a60298ea",
+      "bytes": 176641
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00981.npz",
+      "sha256": "144753dcb6c98a3ce3b26b70f44b85efaf49133a0aa9c53aeffe50581ca1bde6",
+      "bytes": 101875
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00693.npz",
+      "sha256": "6095d2d60e8a99e3fc144f9d98a42c13b8f69bc31e88c2449537b7833212a0f5",
+      "bytes": 101764
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00417.npz",
+      "sha256": "602747d1f5ca0c4245893c71eb0a72bcff4900205adf2ae0604981ab94692568",
+      "bytes": 160162
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00649.npz",
+      "sha256": "8c884357d882c858dc7307213381f6cd6e9bb56468da46d6fddec42fae7af782",
+      "bytes": 85092
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00118.npz",
+      "sha256": "54cf2c65d070a6e10e9041e2f4db2aad51dc5cf399b51db0f579c624bd740991",
+      "bytes": 68320
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00726.npz",
+      "sha256": "5890b48ef7613207191728cfab79c74a8e2c4d3ecfcb27969b47f065bbd8db3a",
+      "bytes": 68372
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00047.npz",
+      "sha256": "57d65766da023c89b81468a7f4380525fba34f137715dffb04e339d58ad2250d",
+      "bytes": 134798
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00246.npz",
+      "sha256": "17e246ddeabfa9ff696b8b63b7b10a5462039041b6137cdfe9b4fa83c1d09169",
+      "bytes": 134918
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00431.npz",
+      "sha256": "b27ecd538bff0b835d30b3ce87673a5cc092c7451e91b9dfe40d446de2a220b9",
+      "bytes": 85001
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00850.npz",
+      "sha256": "4cedea994d5c6ed4f9c260040c423d50c71cac224c28e48b65c3e3f6d267437a",
+      "bytes": 85053
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00584.npz",
+      "sha256": "6da0ce546258d4407e8c851db04062363f29e8f8d95fc7c93bf2b75503018bc4",
+      "bytes": 118395
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00885.npz",
+      "sha256": "f424ae54441303445555d622caa34d7d68c6f7c7ce6d4804c49c2ea4b4d044ed",
+      "bytes": 176272
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00204.npz",
+      "sha256": "575f5d0f6bf78bf3d34805a821dbfbe49a1d3988fa450545bd6a296f1e2791a6",
+      "bytes": 84950
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00271.npz",
+      "sha256": "ba1bfbec8e450ec83f16a5493c9f21df5089cf8c54203691c8a5940ccce14938",
+      "bytes": 84567
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00720.npz",
+      "sha256": "e15258088156ec2c7943d4a81a8101bea7df957756f1177898542794f63f8ed8",
+      "bytes": 151649
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00391.npz",
+      "sha256": "3cbf9b013aee86f29fd0a2fb51f2cb213853e0f86834bce8c07d06f6bc824849",
+      "bytes": 101765
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00675.npz",
+      "sha256": "e232d0fb7a3e13ac9ef733f9ee331c03da1eb3d37b8703bd9d4c2f2d66a340e3",
+      "bytes": 135053
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00187.npz",
+      "sha256": "e8749e5a305018998f4d9fc823f808618b4ef6b452f5dd912437bd3613a4c754",
+      "bytes": 126825
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00802.npz",
+      "sha256": "84f089649153250742555ef9b919207844e913ae7a66819041e69f2121b18a0b",
+      "bytes": 101845
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00700.npz",
+      "sha256": "80f1fecc2934740514ef120ca5110bbe775fa814842abeb9f6c7619bfe78663c",
+      "bytes": 135017
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00335.npz",
+      "sha256": "da11803374fe0d0427d61a0b829877c3cdb6000474d66e505904dfe06ae3691b",
+      "bytes": 168664
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00266.npz",
+      "sha256": "b922191bb3e51f13ab3130e42c7aa277cdb4c8a909bdcd2be77df58a9b0b37ea",
+      "bytes": 118504
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00707.npz",
+      "sha256": "b816a5111c79d7fccbc5c4a0be6aa59c2d3ed95ea9ceb7537bbb8e3f5451e64b",
+      "bytes": 68321
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00124.npz",
+      "sha256": "a4001ac7d418604f250a6376abc22689ab8694afd9156526b0e6ba02a003ec7d",
+      "bytes": 143453
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00116.npz",
+      "sha256": "bf47742afb34d2842c81ed4dc07b4e36261d067c99b984e446a9ff5fdd59d50e",
+      "bytes": 85072
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00733.npz",
+      "sha256": "9f41eb54924cc323a608de4e58ce02e308101dbb045cd716b14dd4c25d71caf6",
+      "bytes": 118502
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00150.npz",
+      "sha256": "506a146d0b0b2e96ab8760a56fbc6da7c8d326b0f096c0277e7d6389e91448b5",
+      "bytes": 101810
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00770.npz",
+      "sha256": "5a1b4dd6edae676bb7342e1f81072ac264bbf6fe9678c818c4aae5529caba1e1",
+      "bytes": 109783
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00980.npz",
+      "sha256": "128e1c569e7e29f6700adb74f042d576988765541af1f31efec57761c3c9136e",
+      "bytes": 151912
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00470.npz",
+      "sha256": "89e61a1b294f891f7600d2533be26b7e8953743563e30ae2c15b33e4b7d21689",
+      "bytes": 160249
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00205.npz",
+      "sha256": "2c03c7196c4d3a52bec692a529a48089da97f132034c5025c3cd9260caa97758",
+      "bytes": 135225
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00185.npz",
+      "sha256": "3c2fb0e1368003c927931ab3f8325975b2273a0915320d1439dde1f0d6ca7a38",
+      "bytes": 85063
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00950.npz",
+      "sha256": "eb4083336565564e6612f33a9684c5e7233dc3f9fec9032e120b0f8990195b0e",
+      "bytes": 168613
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00893.npz",
+      "sha256": "61e00ee759a81fcbc84352a681b722c99ba1fc42ccfdca13b6ca9aad4acb020b",
+      "bytes": 101769
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00328.npz",
+      "sha256": "ecb44989c077a8295e4f4e1fd5d8c901affbbdbfa4716bb2c1467121694bc81c",
+      "bytes": 143354
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00379.npz",
+      "sha256": "6181614addb7cb72e6b88051a8dbbab2c23c1f4d207a88fe042acb3ccbe9ef1c",
+      "bytes": 101870
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00490.npz",
+      "sha256": "34799582f0d4789e2f5f0ff5deca8716b55af03543736e97130fe2df62536664",
+      "bytes": 100914
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00990.npz",
+      "sha256": "16e7e5c84500fbf0868b44e57757b61d692f2ef4892bceeb23befc82d516e9e3",
+      "bytes": 84929
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00731.npz",
+      "sha256": "c92b84a556ff8a218b9fa6bb873920674060b98083e7768db41bbca4e60654bd",
+      "bytes": 168735
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00908.npz",
+      "sha256": "8da7f364e00b18623c513abd11edc9339180fca8695fc550f49307a9705a5973",
+      "bytes": 84744
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00287.npz",
+      "sha256": "82a75561320332be80c6e92341c8c426772cc52273cc93efe0e1dbcb49603a2d",
+      "bytes": 101011
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00421.npz",
+      "sha256": "9ce030b306cc8435d571b4173caaddbb4fd48baf60ba799aa38cb5be03c32834",
+      "bytes": 135063
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00753.npz",
+      "sha256": "f03c0ce75de1b978ea7926dba8bebe92b8c8e1ac24da24d5010f1e3f18578f02",
+      "bytes": 168611
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00134.npz",
+      "sha256": "a1a617b052bf9c10533718830b6bc724fb69f7fd8533a15f6ec620175a3f1780",
+      "bytes": 118546
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00831.npz",
+      "sha256": "0bc6abff6b7c23c9126302e6aee080af76c39933f8a805e25f94ce160658fa8f",
+      "bytes": 101809
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00904.npz",
+      "sha256": "953b56bc476f24138dcd13114fa2008f94677376a673c553468316eb62cacf90",
+      "bytes": 85108
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00623.npz",
+      "sha256": "673cef71cef8ed9dbfbff1875f7ed7cd30ce3726ee633137647e53479272319c",
+      "bytes": 168617
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00256.npz",
+      "sha256": "bf1adcfacfacf5bb0e6a104fee33ca7b7f55f707494098e4c378ea83b253cd28",
+      "bytes": 85036
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00149.npz",
+      "sha256": "63c38d888ee2374ea3eb74f1a1eafab39dc041813201d93aae1d6ed6de78431e",
+      "bytes": 118099
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00363.npz",
+      "sha256": "92a76ce27368a3cf8ad6628c7f43e87e35dc590ffe30ec1733df2c07990d516e",
+      "bytes": 151909
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00258.npz",
+      "sha256": "8d772f1f1bc64eabda929bb8433b6ce604e9e85d5db56ef697ec976e2b120f4a",
+      "bytes": 101844
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00494.npz",
+      "sha256": "71b577ce6da60ac9a555c4ee45e6c23868564664c488be147990e321cf64b300",
+      "bytes": 126652
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00117.npz",
+      "sha256": "10effaf4b0afc60ba33a6a4ca0ac6577973f356dce5ff45e5a8fa1e011283118",
+      "bytes": 135052
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00463.npz",
+      "sha256": "42853d44b835ac52f9f9f9d55860125f3dbdb7ae414f08a69a8a3efc98ba960a",
+      "bytes": 118457
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00311.npz",
+      "sha256": "ab078f4a85d70986a3bf8b54df46b827fae7b7a88b29e9df3e74f241e5111b63",
+      "bytes": 142998
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00578.npz",
+      "sha256": "7ac51b5ca0682b931529c2e55a50e12df94e2bd216691f61b849813dc68dae19",
+      "bytes": 84968
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00714.npz",
+      "sha256": "a8c517a76e28bd8611874485c4d846f691acfe5c885aa294dbcc3f4cb65c298f",
+      "bytes": 85080
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00265.npz",
+      "sha256": "d1df50a1ab06d051d980e8dfa284748c1a1d7956a324728bf88e85348b38ae3c",
+      "bytes": 134669
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00744.npz",
+      "sha256": "73fc5f2bd46c491054957397b6cfa03c9b62a4d230d7e03bf48efc4bd6d7f2c0",
+      "bytes": 101651
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00475.npz",
+      "sha256": "c2b1eb59346fb3a934d159d944d8478713719a96547cf82b382eb65cae678331",
+      "bytes": 168483
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00044.npz",
+      "sha256": "e65ccc3e8f9546dbbe1c935c55eef7618af93ab7dfbc18d22d32990bb11a0a3d",
+      "bytes": 143491
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00805.npz",
+      "sha256": "fdbe6a5ec7ebbf573493dfc8f9d51515fe9d2c4c00ab83c0e9eda8bf58f78f3c",
+      "bytes": 101838
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00533.npz",
+      "sha256": "3d50a4d91ece041e15f0fc3519d6012c2294f807c5e4b864850ee1290cfe0b17",
+      "bytes": 118464
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00381.npz",
+      "sha256": "666f9dba5efcf67ea1c9a52a8107d339817975825062fa0fed8e879754d4691c",
+      "bytes": 135184
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00949.npz",
+      "sha256": "a5fdf8a5bd595045d4d0c89ffdf6deb3420b6258e8dded198fdc01959f0259bb",
+      "bytes": 118583
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00922.npz",
+      "sha256": "981ca58f418e1025f728f769e1e2e10044576b86307397f6a16b7bd85e58c5ad",
+      "bytes": 101779
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00547.npz",
+      "sha256": "28d82644fdd570c3f7eb730bf946b80cda4b3f3a92111f0c38855db14891b70e",
+      "bytes": 85128
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00120.npz",
+      "sha256": "22bcdad3870ef5ee4823bb1a3028c9abe9ddd367b66173c7006a8ac4da8aa2fc",
+      "bytes": 160092
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00399.npz",
+      "sha256": "7578b3a85c71d38173b30d74010279b0a2e795342174b3b2ff147937647d11ce",
+      "bytes": 168462
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00015.npz",
+      "sha256": "651c306cd3db6ee792dc0509a2be0d6d8f616b06422205078aae5e64f41d7ac8",
+      "bytes": 101738
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00801.npz",
+      "sha256": "a9c50dc7718f6e049a639b34f4a1257559d3cad4e26dcbccc66fb22ef35536cb",
+      "bytes": 176778
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00953.npz",
+      "sha256": "08da248b9f043012530e8ed72bc5633183ee5f9adf63bc33a2261c8ff98d04e1",
+      "bytes": 118449
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00352.npz",
+      "sha256": "64388ec4ae7408e1cff4275a320c77403cf9b799fef595195ff9c26c46acb29f",
+      "bytes": 68355
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00413.npz",
+      "sha256": "336bc0b7e47512790983ba2480cf410f4079439955b229b6fe91ed44da7ab5b8",
+      "bytes": 167976
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00521.npz",
+      "sha256": "f9138dc2668e59b77c87e98fbf69cab1bc1c9f0fdd40e0092af72c11d3b5a578",
+      "bytes": 160019
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00974.npz",
+      "sha256": "96e421f9a59d9a3ae892662f26408689f31adef6bac6c53c409df114c8150e81",
+      "bytes": 68479
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00785.npz",
+      "sha256": "12159c05cd1e51f593191f2cbc209fbae156f38c55dd0fda4980fec51e3b447c",
+      "bytes": 143217
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00976.npz",
+      "sha256": "22c75b456b8f03417ec854c9db493873de561a4ee1a07f3ed8f03cbd358566e5",
+      "bytes": 134823
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00455.npz",
+      "sha256": "4f3b02523324174b0b5e44c27e77c6c22523881dc85f9e825df85e2c1ce039ba",
+      "bytes": 101677
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00438.npz",
+      "sha256": "994091605152a60708edf18327a4cd43f06544c9d8905778589072ff860f67b7",
+      "bytes": 176997
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00781.npz",
+      "sha256": "35bfa64f2703c58143d7bf02ec6c3e10ef908e21995d3bdd34e7100bd2a71149",
+      "bytes": 118463
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00921.npz",
+      "sha256": "563f591c5b5d86b809e82b569a297094f93c3c26bc9759ca65bbc4f08bdc5a52",
+      "bytes": 135088
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00713.npz",
+      "sha256": "9b0d6632f904d2281a31c2189901dd035f71a9b277f223fb5dfd510ea6a09724",
+      "bytes": 110116
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00597.npz",
+      "sha256": "3fb096e196e106077dc0258153a0864c422cf31adbcad521a0504ee1380a4d7f",
+      "bytes": 168751
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00677.npz",
+      "sha256": "32be8514bea528ac146a3e0b5255b3e60038042d3af351fd88b08ba568aadf44",
+      "bytes": 84805
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00331.npz",
+      "sha256": "d59571d449220c973e5f1c8a109193d2efb3c51e89b1a066a6826c3657671dd6",
+      "bytes": 135119
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00891.npz",
+      "sha256": "55a1300c65e7b91cf19eccc4144d7235c0166749e73cf3c56b6239f5fab0c9dc",
+      "bytes": 85040
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00499.npz",
+      "sha256": "459a7a0ba0f50309568eef976d473cd1197ff5192077d0d8f025b0bb325fa0f8",
+      "bytes": 68462
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00384.npz",
+      "sha256": "4e06ea6406ffdc1a76fd2fc237245f15be324c14a19e8d3f657da6efb7610b90",
+      "bytes": 135219
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00102.npz",
+      "sha256": "ed05ee56a2df70aff59d8834c805e02e2fa77099b378d44536b250c3784e9058",
+      "bytes": 118283
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00916.npz",
+      "sha256": "650d4ff6eb733b5a081c2847efa13632eeb65049548b436330bc8864504e361b",
+      "bytes": 118317
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/grounding_only/00174.npz",
+      "sha256": "d4fc6634efdbacc276582352d3eece4b34899b248893c79eb78816d3bf1e6ca8",
+      "bytes": 134792
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00860.npz",
+      "sha256": "196666fc91d58972af083ba91c394464e0eb433655758f5769a2b3d182dde69d",
+      "bytes": 84630
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00796.npz",
+      "sha256": "42104208d9556cca2ef23aa0014190b67ed0389c9cdfc8bf59c70f9a41ee5fd6",
+      "bytes": 101687
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00051.npz",
+      "sha256": "e30c1063858e1b405a42e86249d388674c971c80915a063cdca5dda917a7629f",
+      "bytes": 101599
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00604.npz",
+      "sha256": "7239b5394e312cff4352ef6a9a12b783f4134f0bcd99e70bebfb4f9d55b36ede",
+      "bytes": 143317
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00350.npz",
+      "sha256": "9770450afbbb66439386f6436ac22cfd8bade88e2247da88aa852680430609f9",
+      "bytes": 109871
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00711.npz",
+      "sha256": "6522a3375856c826fd8ad8dd8a059a47f84366d083551ef3cd61ce76086bf45c",
+      "bytes": 126545
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00835.npz",
+      "sha256": "d773c7bd510e71dbcbf4e0530e34520bbdd3a9175a41749f034a9b388cdccab9",
+      "bytes": 101500
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00428.npz",
+      "sha256": "2a3fd3634df72ce324702c63d3d75d68083c4508918e647f825ccb8ae5927ed5",
+      "bytes": 84931
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00611.npz",
+      "sha256": "0bdd2f9e6f416b2f48ffa4b0ab355c3764742b256899b255d944c7055bf98a3e",
+      "bytes": 101745
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00526.npz",
+      "sha256": "514a47fe6fe7b74a171b793f345e7dcc0850b0d3072cb3d54e1e6419395b0ad5",
+      "bytes": 135056
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00227.npz",
+      "sha256": "9803a633394a7ab0107579685a3e355431d492bdbe188bb8534becc5ad9feb9a",
+      "bytes": 143246
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00167.npz",
+      "sha256": "4d00ae5ee1b52e0707246320c09e221b053b7b47c08cc4bb2277dbdc501e9c4f",
+      "bytes": 101724
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00820.npz",
+      "sha256": "4ff9437780708321b1425c71650d8a2d0bdf74c7854463fbf1f335fdafc32db7",
+      "bytes": 101679
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00865.npz",
+      "sha256": "a4bc4651fdee681b2c304ffa5e27e929cca1f4bbe0be1dfb37b9197e996442c8",
+      "bytes": 101450
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00679.npz",
+      "sha256": "2146be1a2099005d14fb964e11a5fa08d3d2884d762fe7616af10ba937bf9361",
+      "bytes": 101754
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00783.npz",
+      "sha256": "28f395d72a8f910f95a5fb9c271865a2f7003b7d0ca81831dd78c69c6806d476",
+      "bytes": 143279
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00811.npz",
+      "sha256": "90f5d2c65cb203a6a6e70988fa4f03e1965d960fb7862de273dbde40cbe17c67",
+      "bytes": 151655
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00522.npz",
+      "sha256": "625670b5a4a1733349ed717477fd06d87d63f1d2c2949a1634966495aa58a2f6",
+      "bytes": 84468
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00395.npz",
+      "sha256": "0c4213f750cfcfe3aa11e06d23470cd75c693a60a7b70e3e1b721701c3dd66d2",
+      "bytes": 118266
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00119.npz",
+      "sha256": "d96a7cc0440de662a5b3cd9ab6e822db48ddffdaad4a2351ebe80a5d21eed655",
+      "bytes": 68290
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00382.npz",
+      "sha256": "dba822f7f0ce8c598fad2d1cf246a18096ff32c0444b71e7eae0b1718a70dd65",
+      "bytes": 126538
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00163.npz",
+      "sha256": "dbd5d2fab7f188b35ee4096ddd8304139f4de06d82a711ac12e9eba5bc70d9ba",
+      "bytes": 118012
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00588.npz",
+      "sha256": "72194867a0cf9f8e5ae1e387141845541801c525ab3e86c062869a5527aa6337",
+      "bytes": 151602
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00446.npz",
+      "sha256": "65a3e2856f9f51496b38392aa7b01973d529b598fe63a98fa7926e43499d2d1e",
+      "bytes": 134445
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00207.npz",
+      "sha256": "1b24d2a4d86ff92bbcd8e96c484470ca33e0384102046590a04959a31f716c0d",
+      "bytes": 101700
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00754.npz",
+      "sha256": "864808521801a765e90833fb273fbe56251b3806bed8363eff4159a62a0200b6",
+      "bytes": 118317
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00050.npz",
+      "sha256": "d5e931a16f0fc52b8ba84772ab7c1ca3fdfc16a43539003756b4a7406d40c301",
+      "bytes": 101722
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00333.npz",
+      "sha256": "9d16d8ef0534ccc99617575e45b8c7a2724044bbf8e946d1df16436ad0c82ae9",
+      "bytes": 176452
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00981.npz",
+      "sha256": "0b61cdf716fdb596d13737f824847d255f8cad80282ed3bafe66e563d118c0d9",
+      "bytes": 101715
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00693.npz",
+      "sha256": "f1b5db176894e9a8a06efb6f8560e18e0436f89ed8a09032621bc6787d84e26c",
+      "bytes": 101610
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00417.npz",
+      "sha256": "4a30c005272b2638fc414c8fa688602ab99198570a272991074a500f118c2f81",
+      "bytes": 159941
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00649.npz",
+      "sha256": "05f79d773c9159ac9fa943468f6bb6619007a34e0dd0eeecee86561821fdbe4f",
+      "bytes": 84978
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00118.npz",
+      "sha256": "8b2e77912c9c9397d01828a078e23adb8af41bc186bcc3396c16f3520fcdc03f",
+      "bytes": 68228
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00726.npz",
+      "sha256": "9800651bd515af6d2d53ac04e7f5363d947fef91aee1a09ce00091d51dba58f2",
+      "bytes": 68297
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00047.npz",
+      "sha256": "fcd378de3b721c75ee809ea346c4c84e44a10876d637ff7cc5c180ebf02671c2",
+      "bytes": 134626
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00246.npz",
+      "sha256": "3cddd35460523da1d0e242e325eeaccd714593ff31bdcc749fc220b9cf13ebff",
+      "bytes": 134708
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00431.npz",
+      "sha256": "e8f353096ab78681f9ceea4f0a394098460732ae219ffae93e149b112bfd5331",
+      "bytes": 84875
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00850.npz",
+      "sha256": "a7e84943f4ce26b334a2283915a65513efb052fdea5f27a9c6bc2250d1d36a58",
+      "bytes": 84922
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00584.npz",
+      "sha256": "ba2443c04ec8980f90c8e3c8e5fd00b8a594f5b1bddf9c26cf49a6c4fa0a4c9d",
+      "bytes": 118220
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00885.npz",
+      "sha256": "7d03366ec77fe05e057079559b73c83bdf81982117ae2f66f9f34afece861e23",
+      "bytes": 176133
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00204.npz",
+      "sha256": "d0c40ce3c24dd6217009b1f2afad96234c6cd728135518893b6780d753fcc2ef",
+      "bytes": 84834
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00271.npz",
+      "sha256": "86e079f75131440fb666af0f92ef2742f2bb6c558359fd882e0586c19d10f961",
+      "bytes": 84544
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00720.npz",
+      "sha256": "19bcb7610fa84a65e7869d73800a191b4f063cd0a4cf146658f0e9fb5b15b892",
+      "bytes": 151450
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00391.npz",
+      "sha256": "febbf9ee4fe37521664cffe51c288558922a0d2a3f3fb2f4b1a8b97536a191d8",
+      "bytes": 101599
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00675.npz",
+      "sha256": "d01b239e69f0be87bbb4a7721df8a1c570aa551805683556963857a7a32be77a",
+      "bytes": 134897
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00187.npz",
+      "sha256": "5da74f42a360c351e1968f53ac124a32003174f748a1b83bfeaeb26ace29e95c",
+      "bytes": 126685
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00802.npz",
+      "sha256": "a249975ea8271aad6159a5579d55866cc51c9493d2017419d32be23d706bd7a2",
+      "bytes": 101676
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00700.npz",
+      "sha256": "ef6acb863902ee325acd76d91f8188ba449e2df993a373aaa7c914cb5ce50934",
+      "bytes": 134914
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00335.npz",
+      "sha256": "dbff7e3851f4bb85884a50c6546341ba75d27ca0b50b47b9f60f3cd30ef09951",
+      "bytes": 168497
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00266.npz",
+      "sha256": "4f4eefc2aaa45b28a9dee3473abfc1156dc7b72e70623ce2a8886efc5d760255",
+      "bytes": 118309
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00707.npz",
+      "sha256": "a271d7a3a40d60227fc693dd7435e70d9d6cd8c9df8738a2ef536d54a0271b8c",
+      "bytes": 68235
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00124.npz",
+      "sha256": "e0e9e609b382dce16e487212537ddbffa9799bf1bb42cb92ce30b414e53b1a4a",
+      "bytes": 143267
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00116.npz",
+      "sha256": "d9d2be89184a9ee39a3eeb94ca69f58e573f076611e3ed19559fbe6a1263dcde",
+      "bytes": 84941
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00733.npz",
+      "sha256": "36eaf5db1a151e71b81128d30953049832876d70ebcd9ee1fee53b220d8aef9c",
+      "bytes": 118314
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00150.npz",
+      "sha256": "228cc812b975b6b5c61fa78e6324fec450e65681c405e074ca5bf1e79488dff7",
+      "bytes": 101654
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00770.npz",
+      "sha256": "dd32756fd2fe2821122445573470978e79b97e4e9a0ffd7b1444fa8995d220fb",
+      "bytes": 109711
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00980.npz",
+      "sha256": "1812f4942c4cca6e8348460a6a5c1fce3b04534ade0f92325bfefb9651dd8f36",
+      "bytes": 151708
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00470.npz",
+      "sha256": "59ca9a0d0943e9bcf1bc78b169598aa2256f5655deb0434e25edc9f467be489a",
+      "bytes": 159966
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00205.npz",
+      "sha256": "9959b3bbda8887328ebe1c729eeed85ad8dbc4b0474731fe022f1179ed03d4dc",
+      "bytes": 135077
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00185.npz",
+      "sha256": "c3023c4f88d97fd2d38f908b7283e24e36fd6bd0e1a928a50563769c2817a04e",
+      "bytes": 84919
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00950.npz",
+      "sha256": "d8b597435902c564ff7042bda101b0143c8c8405c0d271415eb6215b5076421b",
+      "bytes": 168334
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00893.npz",
+      "sha256": "5379de87b729135c84497cada140b4db6736b38f2e9b7adae9fbf45a58ecdf85",
+      "bytes": 101609
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00328.npz",
+      "sha256": "908d71049dde7961da115896175d09bf4158002584ccb6ce687cdb02805188c8",
+      "bytes": 143186
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00379.npz",
+      "sha256": "9cb9b6de10e8e7f2ff0fa17a178e10a54336a316191bb5df78a3b7a39bad589c",
+      "bytes": 101726
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00490.npz",
+      "sha256": "66386d2167abec42ca25b79f85bda56e5477bec67970a8530612943b0c42481c",
+      "bytes": 100850
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00990.npz",
+      "sha256": "42607ac35a7e896a5917f4002f0679a7e7533964d90d43518d37f9f86d1161c2",
+      "bytes": 84812
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00731.npz",
+      "sha256": "573de23278f08853739ca79c89fbef0a0c341e75235ce1f803d4b2de2fd4f7a3",
+      "bytes": 168464
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00908.npz",
+      "sha256": "f9ca598d2f1727c7b7791b3e33d10b628901354283061dc4d388aded52a7b02c",
+      "bytes": 84650
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00287.npz",
+      "sha256": "65339f0642a4c6a0a7cab05d03b2261979d37af5db97a16101d4c8744e367228",
+      "bytes": 100952
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00421.npz",
+      "sha256": "7a3cdc8e82df8f2ef9dccdc245e37bf7714c1e0e4def4160918548860739b06e",
+      "bytes": 134884
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00753.npz",
+      "sha256": "8a0d5c2eb77f45d58501d9c8161c839ecccc1de4a8675669e40c6e0d4bb49697",
+      "bytes": 168364
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00134.npz",
+      "sha256": "aad1f78908e75be178ccd08e29b25e46c895ddc0673a9018a850ce6bfede9731",
+      "bytes": 118347
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00831.npz",
+      "sha256": "4164ccaa0e77fd12aece194ca63fe29ec41f758b598a6df2e3b9c2ec7621a59b",
+      "bytes": 101667
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00904.npz",
+      "sha256": "c757b96dd9e32e60745e17b002e14b23a58ff5aab758c37ef826abd3495237a7",
+      "bytes": 84979
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00623.npz",
+      "sha256": "b93a83e6a3da4906e7acc843d9b5f2645065d7556b575adebc8a3e0cbde1eee2",
+      "bytes": 168369
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00256.npz",
+      "sha256": "1de6ac201a3cac2adbc7721edc3d8f69261ffe75a0ce1a721db9f22eb29581aa",
+      "bytes": 84908
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00149.npz",
+      "sha256": "86173126d20be3fcadcc51464f826b0d4835b5b24840836bcb766dc6db2e6c87",
+      "bytes": 117921
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00363.npz",
+      "sha256": "2e15116a04a2e9f4bae625a93bda5f35ad35c382b152277f0375e9475d156fdc",
+      "bytes": 151693
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00258.npz",
+      "sha256": "d42d8f82fac292389afc3d2b644a95e1db8421b7a257dc96ae134ae0267b7fea",
+      "bytes": 101703
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00494.npz",
+      "sha256": "b2ec26cb5d0060ebe11f562c025a953f33aec8b2e1edb39c3963234c512b6371",
+      "bytes": 126468
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00117.npz",
+      "sha256": "30311232bbd46e06219c58aa25afe1536d0f31122270683ac188bb00f52e0705",
+      "bytes": 134851
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00463.npz",
+      "sha256": "b45532c4d0e2ba6c6f5261b612b35bf0e76165fe5db05d3364863c2e095a1340",
+      "bytes": 118332
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00311.npz",
+      "sha256": "6ca689fd9e2329180a0d98506ea2626a496c54228f8c874d9b0089dad9ff047c",
+      "bytes": 142773
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00578.npz",
+      "sha256": "8dec683807f745bef3d667c9a148f099b0c69a297e61763541bddca82e9474f0",
+      "bytes": 84871
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00714.npz",
+      "sha256": "ff188d08912c6ceef6a211e5f2ca0812ba93e7e9809b6affafdaed8d97a5e6d5",
+      "bytes": 84974
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00265.npz",
+      "sha256": "c34b8be648edc36077179331bc452571d9504e513164dc153bd4c1906ccabe69",
+      "bytes": 134473
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00744.npz",
+      "sha256": "a2cdb037fa3dbc9dbb914d692987a89e798f7b07648ec31e403ec4f8d34cb4f5",
+      "bytes": 101488
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00475.npz",
+      "sha256": "2193f5366853277226cf5e64699880e378c074d51fc59c23916204c87496773b",
+      "bytes": 168257
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00044.npz",
+      "sha256": "b49f1b95aa1acc47d5b2ab166340bf09ed0f2c68bf9c0326c26ddb9dfd24ffea",
+      "bytes": 143355
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00805.npz",
+      "sha256": "11483208dc6b7916d53293bce6e7d1edcde54e3f4fc8e6a908226f12905d7146",
+      "bytes": 101676
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00533.npz",
+      "sha256": "df4aeeca40afcebdf34c30c296955f6697eb922b01f268d3a25594496c456b6b",
+      "bytes": 118378
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00381.npz",
+      "sha256": "f33b92aab36fdfe76b742ce7a6b5416afeeb517c32be94a3776251d2d4983774",
+      "bytes": 134992
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00949.npz",
+      "sha256": "04e6dfe8a9ec83d8c7878e707c089c9b13cc2c148fb2737f7e3e7cec49caceeb",
+      "bytes": 118392
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00922.npz",
+      "sha256": "088fec9a813a2df106838b8a71b795de9d2a16f70e5ceadff2bce847f7ec98b8",
+      "bytes": 101628
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00547.npz",
+      "sha256": "270c3c1ce29a0f182953caaf89015e3b96e5d8dc8f0473e7d93365ecc8046d59",
+      "bytes": 85014
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00120.npz",
+      "sha256": "6f67d4ccf60da9f6eb69741508c2a063d062e81d1ad0067f88dc66d964398ce0",
+      "bytes": 159863
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00399.npz",
+      "sha256": "9184cfbc18a770d6306a90fa48a60655776b10deb06641cc44e60cbcf4a538cc",
+      "bytes": 168230
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00015.npz",
+      "sha256": "1ad98da0d0e2c013cfca39c39f164642aaa5957dd069f148e07797c102e90250",
+      "bytes": 101580
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00801.npz",
+      "sha256": "8fbbf8f5681b4a58acd96be1f7dbfc3097c8d97715ef758a29e82224907090e9",
+      "bytes": 176512
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00953.npz",
+      "sha256": "8282d4c3c20240f3fd20451581d61d422251d9e2dd7f75ead214cfd7dea2d987",
+      "bytes": 118312
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00352.npz",
+      "sha256": "b15bea2dfbb5ca1c1c6444428f7769fe23e1f2c55b2e7209e0bca010142031ea",
+      "bytes": 68270
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00413.npz",
+      "sha256": "f5402811c9fa34fc1e302fb53e26c8b8e344bbd2e627d107b0262e8894d61d76",
+      "bytes": 167799
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00521.npz",
+      "sha256": "8bcb99fbf4907cf2e7470218ab6ed4072f5763bcb2a5cd2d9741090cdf8af766",
+      "bytes": 159853
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00974.npz",
+      "sha256": "e22ddd504807fedaa5fa9a36f3f195b2c0af633de60ab4ee1d38116bb3ebfc7f",
+      "bytes": 68335
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00785.npz",
+      "sha256": "c1bef7ae88489342d257170fd83d5b4034c9f34e6f8fe88e72df8528b1fa71dd",
+      "bytes": 143115
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00976.npz",
+      "sha256": "4cc54a450fed6b7160123c9ee3827bd941f4e4bf3bb0843ea9d6444ddc8865f3",
+      "bytes": 134632
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00455.npz",
+      "sha256": "a334522d72fa31a6fbb0836c15a6b37321bde3e2b5d4b3c8eae0de3bf3c41d00",
+      "bytes": 101495
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00438.npz",
+      "sha256": "620475cabd4f159c9efe5144aad3359a1f79e4d8b70939ff745c5c4376ea5e8c",
+      "bytes": 176851
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00781.npz",
+      "sha256": "717e6b75be3b2f267c25c853d63874b2a0ac97964ad73061bf8142554dc1cc89",
+      "bytes": 118294
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00921.npz",
+      "sha256": "85d67c72e0af9a71301988f8fea7df3245b90bc837d2434a8f600c855be55ff8",
+      "bytes": 134924
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00713.npz",
+      "sha256": "b7ea313634f39dc9ebec4a10b6312718472b653ad91b67bd3a08f520f4319158",
+      "bytes": 109961
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00597.npz",
+      "sha256": "bf6cc5ff8efbd6f9fc8479a63bcde5cc37c7c6e677510ad300aad7dc17214487",
+      "bytes": 168576
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00677.npz",
+      "sha256": "468a92b995f4c8ab3edb23ec8e5b9b771b9dc7a5ae695680fc6332c92bbe7714",
+      "bytes": 84692
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00331.npz",
+      "sha256": "cdd6f468d794a6531418d4bb613b0a6cad317e07052f561165ab02c0ed704a7f",
+      "bytes": 134920
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00891.npz",
+      "sha256": "e3ab6da2fc7be1516005a5d5bcdb9219014ebd1b86edc8ffba859106566bcc62",
+      "bytes": 84899
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00499.npz",
+      "sha256": "489057ef0a28c86a494c1a2e4aa7f578d09931e08c6dcff70909674828f443a1",
+      "bytes": 68318
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00384.npz",
+      "sha256": "2e0e371976e0b1f4f9eb148d5bbfe26c177895ec37236557bab49fa6ee70805c",
+      "bytes": 135036
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00102.npz",
+      "sha256": "4df9bb8731ec0d02cff6894bbf4332202adaee3a2db9e45a2ea5d6c56381be54",
+      "bytes": 118123
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00916.npz",
+      "sha256": "dc508c6b770f84536d6feca57c141ba7db32bc4bb163782bca9b9816856ab220",
+      "bytes": 118165
+    },
+    {
+      "path": "m2s-sonic-repaired-v1_1-20260912/frames/original/00174.npz",
+      "sha256": "c86741684b2655362da4b8fe1e4772263735be8d2a0a574ee7973c3ad0661bf5",
+      "bytes": 134632
+    }
+  ]
+}

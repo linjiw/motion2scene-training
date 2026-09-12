@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=67"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "motion2scene-training-kit"
+version = "0.1.0"
+description = "Portable Motion2Scene datasets, scene generation and SONIC teacher/student workflows"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+view = ["numpy", "matplotlib", "imageio", "imageio-ffmpeg"]
+test = ["pytest"]
+
+[project.scripts]
+m2s = "m2s_package.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+[tool.ruff.lint]
+select = ["E", "F", "I"]

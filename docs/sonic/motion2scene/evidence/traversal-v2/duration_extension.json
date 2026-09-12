@@ -1,0 +1,279 @@
+{
+  "analysis_correction": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-duration-teachers-v1/analysis_correction_registration.json",
+    "sha256": "sha256:7c14679c2a39b091ff4ee26530ceabd8e035eba2fd13c21ab4175c3ec7280d30"
+  },
+  "caption": "Six-second development extension with a frozen tracker. A: conservative native outer-body envelope heights reconstructed from three actual empty-scene qualification trajectories, plotted against recorded physical elapsed time (298 samples, 0\u20135.94 s). These are executed body envelopes, not target-reference or root heights. B\u2013C: the two development beam spans and signed geometric witnesses, selected before their physical outcomes. The positive margin is the minimum over 81 finite world-position/yaw offsets; the negative margin is nominal only. The screen used earlier empty-scene captures whose original strict net-force qualification failed; those failures remain recorded. Separate new captures subsequently qualified the same options under a declared environment-contact criterion that resolves self-contact. Physical tables are the independently recorded nominal passage outcomes: both adaptations pass the short beam, while only the sustained option passes the long passage. Costs are measured passage times within each scene; finish planes differ between scenes. A positive finite-offset geometric margin does not establish physical robustness. This figure establishes a development duration capability distinction, not learned-policy, curriculum, held-out, or navigation gains.",
+  "curves": [
+    {
+      "max_m": 1.314493077363644,
+      "min_m": 1.2505968763954636,
+      "option_id": "neutral",
+      "samples": 298
+    },
+    {
+      "max_m": 1.314493077363644,
+      "min_m": 1.1954138025258072,
+      "option_id": "short_e015_r265",
+      "samples": 298
+    },
+    {
+      "max_m": 1.314493077363644,
+      "min_m": 1.1876183008258892,
+      "option_id": "sustained_e015_r255",
+      "samples": 298
+    }
+  ],
+  "driver": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/render_motion2scene_duration_extension.py",
+    "sha256": "sha256:8849088a94800e2c68076f581583491b5bb8a10a4c654f1b78bb8ccf49626852"
+  },
+  "outputs": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/traversal-v2/duration_extension.pdf",
+      "sha256": "sha256:e041886d431acdb67bee1ff19e75489f37f3544eef5dbe2bc72fe6337eaf0009"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/traversal-v2/duration_extension.svg",
+      "sha256": "sha256:aedf4c8b39065c3b2fa931941e2bd9d5d49bd30ca261c776b17d440ff2d2e6d7"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/traversal-v2/duration_extension.png",
+      "sha256": "sha256:7bacf1d7497b6fd092b514f77208ca54a2b7ee4c906a1091100052579f07e80f"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/traversal-v2/duration_extension.npz",
+      "sha256": "sha256:a07b57587d26d77d5d4c39ec8679d6f68376290e161a10f4b076d9928c55499a"
+    }
+  ],
+  "physical_registration": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-duration-teachers-v1/registration.json",
+    "sha256": "sha256:be6dea17df29e4495da12aafc5bc23aceb0d6b023375c1077d4fd069e5989272"
+  },
+  "physical_result": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-duration-teachers-v1/result.json",
+    "sha256": "sha256:de1c280f2024f022c1eec88db2d55810c9a6f67627664d511d30810762fa40c3"
+  },
+  "qualification": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-environment-contact-qualification-v1/environment_result.json",
+    "sha256": "sha256:49643b8b6969881467c561d9a61163e70900b4d5aedbda8f201bff51305f6c69"
+  },
+  "scenes": [
+    {
+      "beam": {
+        "center_xy_m": [
+          2.2579720255402065,
+          -0.12197244826640312
+        ],
+        "lateral_offset_m": 0.0,
+        "length_m": 0.1,
+        "route_progress": 0.45,
+        "route_progress_fraction": 0.45,
+        "thickness_m": 0.1,
+        "underside_m": 1.2650000000000001,
+        "width_m": 1.2,
+        "yaw_offset_rad": 0.0,
+        "yaw_rad": -0.056217447586436806
+      },
+      "grid_index": 187,
+      "outcomes": [
+        {
+          "option_id": "neutral",
+          "pass": false,
+          "passage_time_s": null
+        },
+        {
+          "option_id": "short_e015_r265",
+          "pass": true,
+          "passage_time_s": 4.04
+        },
+        {
+          "option_id": "sustained_e015_r255",
+          "pass": true,
+          "passage_time_s": 4.06
+        }
+      ],
+      "witness": {
+        "eligible": true,
+        "grid_index": 187,
+        "negative": "neutral",
+        "negative_nominal_m": -0.03366673151468991,
+        "positive": "short_e015_r265",
+        "positive_min_m": 0.03458000570771301,
+        "slack_m": 0.023666731514689905
+      }
+    },
+    {
+      "beam": {
+        "center_xy_m": [
+          2.2579720255402065,
+          -0.12197244826640312
+        ],
+        "lateral_offset_m": 0.0,
+        "length_m": 1.0,
+        "route_progress": 0.45,
+        "route_progress_fraction": 0.45,
+        "thickness_m": 0.1,
+        "underside_m": 1.275,
+        "width_m": 1.2,
+        "yaw_offset_rad": 0.0,
+        "yaw_rad": -0.056217447586436806
+      },
+      "grid_index": 247,
+      "outcomes": [
+        {
+          "option_id": "neutral",
+          "pass": false,
+          "passage_time_s": null
+        },
+        {
+          "option_id": "short_e015_r265",
+          "pass": false,
+          "passage_time_s": null
+        },
+        {
+          "option_id": "sustained_e015_r255",
+          "pass": true,
+          "passage_time_s": 4.64
+        }
+      ],
+      "witness": {
+        "eligible": true,
+        "grid_index": 247,
+        "negative": "short_e015_r265",
+        "negative_nominal_m": -0.027079196073998876,
+        "positive": "sustained_e015_r255",
+        "positive_min_m": 0.030078955837827326,
+        "slack_m": 0.017079196073998874
+      }
+    }
+  ],
+  "schema": "motion2scene_duration_extension_figure_v1",
+  "scope": "development_only",
+  "screen": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-scene-screen-v1/result.json",
+    "sha256": "sha256:e7007656a344a101811206dd385be61a93d7c44ac0df61f48bec41f2f5bd57b2"
+  },
+  "screen_registration": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-scene-screen-v1/registration.json",
+    "sha256": "sha256:e7e6203683c7485a0d91f4e20eaefa5ef813ed236c0a9b5b0ff1c0a341a0e790"
+  },
+  "screen_source_qualification_status": {
+    "neutral": false,
+    "short_e015_r265": false,
+    "sustained_e015_r255": false
+  },
+  "screen_source_references": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-long-schedule-qualification-v3/result.json",
+      "sha256": "sha256:81f36b4c8c6648dbe2b9f022aec3d94700e6ba814d9c41922dd5127fedcd976d"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-long-schedule-qualification-v3/manifest.json",
+      "sha256": "sha256:d5175c520dc966b75bd9903e98f7ce4e19abda804fb1e84af3563c584fa0ec3d"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-native-beam-audit-v1/geometry.json",
+      "sha256": "sha256:07d7b540cfa19ff526279436ce628055ee974f5b61fe592d61e327f5078ea529"
+    },
+    {
+      "path": "/home/linjiw/.cache/isaaclab/usd/g1_model_12_dex/main.usd",
+      "sha256": "sha256:88bd275f989accba16fbd8196a1703289c0639cf181affb0c15f076c4b747c10"
+    },
+    {
+      "path": "/home/linjiw/.cache/isaaclab/usd/g1_model_12_dex/configuration/main_sensor.usd",
+      "sha256": "sha256:950a4ebae64be45179e6267fe0d8eb8aa9d2206ef65087a12a7d17456fa8ac8f"
+    },
+    {
+      "path": "/home/linjiw/.cache/isaaclab/usd/g1_model_12_dex/configuration/main_physics.usd",
+      "sha256": "sha256:4a663ada0c0d7871a9069b52b5e8b529468de5d5cd95cde154f376dc5b04d578"
+    },
+    {
+      "path": "/home/linjiw/.cache/isaaclab/usd/g1_model_12_dex/configuration/main_base.usd",
+      "sha256": "sha256:a4ff0e10bad6ce5b4376d60bb9f69553a313fe687ff1f0a9f3f6d9cbfdcf95a1"
+    },
+    {
+      "path": "/home/linjiw/.cache/isaaclab/usd/g1_model_12_dex/configuration/main_robot.usd",
+      "sha256": "sha256:f5d56cad6a994cd13c077ce0e45a535cfe0e6a612b3cbeed07e06b5b8eaa50d5"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-long-schedule-qualification-v3/rollouts/neutral/trajectories/qualification_evidence.json",
+      "sha256": "sha256:f5e2da0e3fae4260bd0b35741d0fc4c73570e16b1d43e5f80c45d64007d3e7ff"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-long-schedule-qualification-v3/rollouts/neutral/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:438a96d65fc274ea0881a0e72f7f18a2334762e68fad07df18b5394839727fdd"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-long-schedule-qualification-v3/rollouts/short_e015_r265/trajectories/qualification_evidence.json",
+      "sha256": "sha256:9d7d0e82088fd3ba8fe5116dc1a6d7e04c00997f2d6767d70c50f0866f50cc49"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-long-schedule-qualification-v3/rollouts/short_e015_r265/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:d1a4a71e4e5b09017c747b78361d142c9e38ed42a888c5bc3ae7b31c62deb716"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-long-schedule-qualification-v3/rollouts/sustained_e015_r255/trajectories/qualification_evidence.json",
+      "sha256": "sha256:1794c6409ed889219774a8edea80428cb053c83adedd59aaee4dd3ae0d3d4d5c"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-long-schedule-qualification-v3/rollouts/sustained_e015_r255/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:fbbeff38091c8836f10370acb8c74c232d112287e83c03deadd34fc18db73358"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-longer-reference-development-v1/neutral.pkl",
+      "sha256": "sha256:ef33c2139f7a6278d670c012edc9db70671d08b6842e8757d15dc6a6b61b3990"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-longer-neutral-qualification-v2/scene/long_neutral_empty.usda",
+      "scene_id": "long_neutral_empty",
+      "sha256": "sha256:4a8ae7b9202da3db1cec3e1c4ce44f20c9406cec8afbf533e2b071b9752a7369"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-environment-contact-qualification-v1/rollouts/neutral/trajectories/environment_qualification_evidence.json",
+      "sha256": "sha256:44952ba7550ec862479629b8612caeb9636008da1832361ff76d45e6aefd46c7"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-environment-contact-qualification-v1/rollouts/neutral/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:438a96d65fc274ea0881a0e72f7f18a2334762e68fad07df18b5394839727fdd"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-environment-contact-qualification-v1/rollouts/short_e015_r265/trajectories/environment_qualification_evidence.json",
+      "sha256": "sha256:7bbe96d03d7a7a23ad9c4741f5e0ad9f7b50e098431c42e8df19b8b3fac355d1"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-environment-contact-qualification-v1/rollouts/short_e015_r265/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:d1a4a71e4e5b09017c747b78361d142c9e38ed42a888c5bc3ae7b31c62deb716"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-environment-contact-qualification-v1/rollouts/sustained_e015_r255/trajectories/environment_qualification_evidence.json",
+      "sha256": "sha256:9a6f3be944a9d3f480b23af5c6035c097111722c997a6c4a510a211a460bbe7f"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-environment-contact-qualification-v1/rollouts/sustained_e015_r255/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:fbbeff38091c8836f10370acb8c74c232d112287e83c03deadd34fc18db73358"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-duration-teachers-v1/empty/result.json",
+      "sha256": "sha256:a7caadc761aa3833c64d7a847b120b70b6f826c86d96ae989bb5e4f6004d1d73"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-duration-teachers-v1/short_beam/result.json",
+      "sha256": "sha256:667428b5d3d36cc1c748fd81d734e28f16290198954101172591ca8ef3e8d003"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-duration-teachers-v1/long_passage/result.json",
+      "sha256": "sha256:a6bb153abc86222c57427ff9b48c4c9c9d58160d368481c0b0ee1c7d72dc32fd"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-scene-screen-v1/timed_development_0187.json",
+      "sha256": "sha256:6dca2d113e306c344eaa877d162d050589c87c981fe943e70a0c7fa21d158398"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-scene-screen-v1/timed_development_0247.json",
+      "sha256": "sha256:b52a2873e62e2781b6f12201594eb58e1cea5742f017649b112a5867db94c0ab"
+    }
+  ]
+}

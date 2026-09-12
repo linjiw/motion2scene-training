@@ -1,0 +1,1910 @@
+{
+  "student_admitted": true,
+  "student_generating_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_002/result.json",
+    "sha256": "sha256:49f4bd294d29efc8c3539db5f4026be740689c77f55fcaf51661ca5e38513320"
+  },
+  "task": {
+    "arm": "analytic_contrast",
+    "candidate_id": "primary_candidate_93202_0132",
+    "collection": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/result.json",
+      "sha256": "sha256:93edd067c4f3cdfb1e37e09eb4918ab34310b70a67d3f1e6376047200bde254b"
+    },
+    "geometry_key": "sha256:b3589b0b85df554d99349394e16ffec4fecabd482705890c045b5d850fac8be7",
+    "outcomes": {
+      "neutral": "failure",
+      "prior_splice_e015_r265": "pass",
+      "prior_splice_e050_r265": "pass",
+      "short_e015_r265": "failure",
+      "short_e070_r265": "failure",
+      "sustained_e015_r255": "pass",
+      "sustained_e070_r255": "pass"
+    },
+    "physical_events": {
+      "neutral": [
+        {
+          "kind": "verified_environment_contact",
+          "maximum_force_n": 2504.764404296875
+        }
+      ],
+      "prior_splice_e015_r265": [],
+      "prior_splice_e050_r265": [],
+      "short_e015_r265": [
+        {
+          "kind": "verified_environment_contact",
+          "maximum_force_n": 3778.28076171875
+        }
+      ],
+      "short_e070_r265": [
+        {
+          "kind": "verified_environment_contact",
+          "maximum_force_n": 3778.28076171875
+        }
+      ],
+      "sustained_e015_r255": [],
+      "sustained_e070_r255": []
+    },
+    "round": 3,
+    "run_id": "seed93202_analytic_contrast",
+    "seed": 93202,
+    "stratum": "early_constraint",
+    "student_collection": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/student/result.json",
+      "sha256": "sha256:39f3ace4df12c7ac5b59060c2b15cdba79ec27d4b059029f90a425c5fac83ab0"
+    },
+    "student_outcome": "pass",
+    "student_steps": 1192,
+    "teacher_steps": 8344
+  },
+  "teacher_reaudit": {
+    "assigned_branches": 7,
+    "branch_assessments": [
+      {
+        "attempt": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/rollouts/forced_neutral/attempt.json",
+          "sha256": "sha256:1f36779873611a08381d16d0e0761e129fff5686958a371045d5c018294f45ee"
+        },
+        "available_prefix_ticks": [
+          15,
+          50,
+          70
+        ],
+        "cell_id": "forced_neutral",
+        "measurement_admitted": true,
+        "option_id": "neutral",
+        "outcome": {
+          "assigned_slots": 1,
+          "classification": "verified_task_failure",
+          "complete_measurement_admitted": true,
+          "complete_pass": false,
+          "exit_status": 0,
+          "measurement_diagnostics": [],
+          "measurement_status": "complete",
+          "phase_availability": [
+            {
+              "packet_index": 14,
+              "reason": null,
+              "sensor_preaction_available": true,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 15
+            },
+            {
+              "packet_index": 49,
+              "reason": null,
+              "sensor_preaction_available": true,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 50
+            },
+            {
+              "packet_index": 69,
+              "reason": null,
+              "sensor_preaction_available": true,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 70
+            }
+          ],
+          "physical_events": [
+            {
+              "kind": "verified_environment_contact",
+              "maximum_force_n": 2504.764404296875
+            }
+          ],
+          "physical_rows_recorded": 298,
+          "physics_steps_recorded": 1192,
+          "schema": "motion2scene_timed_attempt_outcome_v1",
+          "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+          "sensor_packets_recorded": 298,
+          "task_outcome": "failure"
+        },
+        "physics_steps": 1192,
+        "raw_artifacts": null,
+        "status": "complete_capture",
+        "task_outcome": "failure",
+        "task_outcome_admitted": true
+      },
+      {
+        "attempt": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/rollouts/forced_short_e015_r265/attempt.json",
+          "sha256": "sha256:aac13c703baa6965a3090e355864865752008814750498ba50fff27e3a27889a"
+        },
+        "available_prefix_ticks": [
+          15
+        ],
+        "cell_id": "forced_short_e015_r265",
+        "measurement_admitted": true,
+        "option_id": "short_e015_r265",
+        "outcome": {
+          "assigned_slots": 1,
+          "classification": "verified_task_failure",
+          "complete_measurement_admitted": true,
+          "complete_pass": false,
+          "exit_status": 0,
+          "measurement_diagnostics": [],
+          "measurement_status": "complete",
+          "phase_availability": [
+            {
+              "packet_index": 14,
+              "reason": null,
+              "sensor_preaction_available": true,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 15
+            },
+            {
+              "packet_index": null,
+              "reason": "not_a_neutral_preaction_state",
+              "sensor_preaction_available": false,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 50
+            },
+            {
+              "packet_index": null,
+              "reason": "not_a_neutral_preaction_state",
+              "sensor_preaction_available": false,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 70
+            }
+          ],
+          "physical_events": [
+            {
+              "kind": "verified_environment_contact",
+              "maximum_force_n": 3778.28076171875
+            }
+          ],
+          "physical_rows_recorded": 298,
+          "physics_steps_recorded": 1192,
+          "schema": "motion2scene_timed_attempt_outcome_v1",
+          "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+          "sensor_packets_recorded": 298,
+          "task_outcome": "failure"
+        },
+        "physics_steps": 1192,
+        "raw_artifacts": null,
+        "status": "complete_capture",
+        "task_outcome": "failure",
+        "task_outcome_admitted": true
+      },
+      {
+        "attempt": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/rollouts/forced_sustained_e015_r255/attempt.json",
+          "sha256": "sha256:5e78e05039f4eadc88a4f9aed8c042085499fe19c05b789360b2a0785d33cac0"
+        },
+        "available_prefix_ticks": [
+          15
+        ],
+        "cell_id": "forced_sustained_e015_r255",
+        "measurement_admitted": true,
+        "option_id": "sustained_e015_r255",
+        "outcome": {
+          "assigned_slots": 1,
+          "classification": "complete_pass",
+          "complete_measurement_admitted": true,
+          "complete_pass": true,
+          "exit_status": 0,
+          "measurement_diagnostics": [],
+          "measurement_status": "complete",
+          "phase_availability": [
+            {
+              "packet_index": 14,
+              "reason": null,
+              "sensor_preaction_available": true,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 15
+            },
+            {
+              "packet_index": null,
+              "reason": "not_a_neutral_preaction_state",
+              "sensor_preaction_available": false,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 50
+            },
+            {
+              "packet_index": null,
+              "reason": "not_a_neutral_preaction_state",
+              "sensor_preaction_available": false,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 70
+            }
+          ],
+          "physical_events": [],
+          "physical_rows_recorded": 298,
+          "physics_steps_recorded": 1192,
+          "schema": "motion2scene_timed_attempt_outcome_v1",
+          "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+          "sensor_packets_recorded": 298,
+          "task_outcome": "pass"
+        },
+        "physics_steps": 1192,
+        "raw_artifacts": null,
+        "status": "complete_capture",
+        "task_outcome": "pass",
+        "task_outcome_admitted": true
+      },
+      {
+        "attempt": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/rollouts/forced_prior_splice_e015_r265/attempt.json",
+          "sha256": "sha256:0e20dcacd94f1a787dd2ebf8984cc5d4ab3fd84db06e35b6055f2d9447786e51"
+        },
+        "available_prefix_ticks": [
+          15
+        ],
+        "cell_id": "forced_prior_splice_e015_r265",
+        "measurement_admitted": true,
+        "option_id": "prior_splice_e015_r265",
+        "outcome": {
+          "assigned_slots": 1,
+          "classification": "complete_pass",
+          "complete_measurement_admitted": true,
+          "complete_pass": true,
+          "exit_status": 0,
+          "measurement_diagnostics": [],
+          "measurement_status": "complete",
+          "phase_availability": [
+            {
+              "packet_index": 14,
+              "reason": null,
+              "sensor_preaction_available": true,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 15
+            },
+            {
+              "packet_index": null,
+              "reason": "not_a_neutral_preaction_state",
+              "sensor_preaction_available": false,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 50
+            },
+            {
+              "packet_index": null,
+              "reason": "not_a_neutral_preaction_state",
+              "sensor_preaction_available": false,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 70
+            }
+          ],
+          "physical_events": [],
+          "physical_rows_recorded": 298,
+          "physics_steps_recorded": 1192,
+          "schema": "motion2scene_timed_attempt_outcome_v1",
+          "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+          "sensor_packets_recorded": 298,
+          "task_outcome": "pass"
+        },
+        "physics_steps": 1192,
+        "raw_artifacts": null,
+        "status": "complete_capture",
+        "task_outcome": "pass",
+        "task_outcome_admitted": true
+      },
+      {
+        "attempt": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/rollouts/forced_prior_splice_e050_r265/attempt.json",
+          "sha256": "sha256:237f470d29ba50eddb87a1686966374e73f9000636d4725c44ed1035a4db1047"
+        },
+        "available_prefix_ticks": [
+          15,
+          50
+        ],
+        "cell_id": "forced_prior_splice_e050_r265",
+        "measurement_admitted": true,
+        "option_id": "prior_splice_e050_r265",
+        "outcome": {
+          "assigned_slots": 1,
+          "classification": "complete_pass",
+          "complete_measurement_admitted": true,
+          "complete_pass": true,
+          "exit_status": 0,
+          "measurement_diagnostics": [],
+          "measurement_status": "complete",
+          "phase_availability": [
+            {
+              "packet_index": 14,
+              "reason": null,
+              "sensor_preaction_available": true,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 15
+            },
+            {
+              "packet_index": 49,
+              "reason": null,
+              "sensor_preaction_available": true,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 50
+            },
+            {
+              "packet_index": null,
+              "reason": "not_a_neutral_preaction_state",
+              "sensor_preaction_available": false,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 70
+            }
+          ],
+          "physical_events": [],
+          "physical_rows_recorded": 298,
+          "physics_steps_recorded": 1192,
+          "schema": "motion2scene_timed_attempt_outcome_v1",
+          "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+          "sensor_packets_recorded": 298,
+          "task_outcome": "pass"
+        },
+        "physics_steps": 1192,
+        "raw_artifacts": null,
+        "status": "complete_capture",
+        "task_outcome": "pass",
+        "task_outcome_admitted": true
+      },
+      {
+        "attempt": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/rollouts/forced_short_e070_r265/attempt.json",
+          "sha256": "sha256:3a884d1868a20242705cd7e105f6d53a7d95c2b7479d4f448558a8d2614a3efb"
+        },
+        "available_prefix_ticks": [
+          15,
+          50,
+          70
+        ],
+        "cell_id": "forced_short_e070_r265",
+        "measurement_admitted": true,
+        "option_id": "short_e070_r265",
+        "outcome": {
+          "assigned_slots": 1,
+          "classification": "verified_task_failure",
+          "complete_measurement_admitted": true,
+          "complete_pass": false,
+          "exit_status": 0,
+          "measurement_diagnostics": [],
+          "measurement_status": "complete",
+          "phase_availability": [
+            {
+              "packet_index": 14,
+              "reason": null,
+              "sensor_preaction_available": true,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 15
+            },
+            {
+              "packet_index": 49,
+              "reason": null,
+              "sensor_preaction_available": true,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 50
+            },
+            {
+              "packet_index": 69,
+              "reason": null,
+              "sensor_preaction_available": true,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 70
+            }
+          ],
+          "physical_events": [
+            {
+              "kind": "verified_environment_contact",
+              "maximum_force_n": 3778.28076171875
+            }
+          ],
+          "physical_rows_recorded": 298,
+          "physics_steps_recorded": 1192,
+          "schema": "motion2scene_timed_attempt_outcome_v1",
+          "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+          "sensor_packets_recorded": 298,
+          "task_outcome": "failure"
+        },
+        "physics_steps": 1192,
+        "raw_artifacts": null,
+        "status": "complete_capture",
+        "task_outcome": "failure",
+        "task_outcome_admitted": true
+      },
+      {
+        "attempt": {
+          "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/rollouts/forced_sustained_e070_r255/attempt.json",
+          "sha256": "sha256:3d8bf8f089bdad0d6b4b25bcb0ae294fe5825403c58326b3de7e29f9fd67c074"
+        },
+        "available_prefix_ticks": [
+          15,
+          50,
+          70
+        ],
+        "cell_id": "forced_sustained_e070_r255",
+        "measurement_admitted": true,
+        "option_id": "sustained_e070_r255",
+        "outcome": {
+          "assigned_slots": 1,
+          "classification": "complete_pass",
+          "complete_measurement_admitted": true,
+          "complete_pass": true,
+          "exit_status": 0,
+          "measurement_diagnostics": [],
+          "measurement_status": "complete",
+          "phase_availability": [
+            {
+              "packet_index": 14,
+              "reason": null,
+              "sensor_preaction_available": true,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 15
+            },
+            {
+              "packet_index": 49,
+              "reason": null,
+              "sensor_preaction_available": true,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 50
+            },
+            {
+              "packet_index": 69,
+              "reason": null,
+              "sensor_preaction_available": true,
+              "teacher_scope": "requires separately complete matched future schedule outcomes",
+              "teacher_target_available": false,
+              "tick": 70
+            }
+          ],
+          "physical_events": [],
+          "physical_rows_recorded": 298,
+          "physics_steps_recorded": 1192,
+          "schema": "motion2scene_timed_attempt_outcome_v1",
+          "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+          "sensor_packets_recorded": 298,
+          "task_outcome": "pass"
+        },
+        "physics_steps": 1192,
+        "raw_artifacts": null,
+        "status": "complete_capture",
+        "task_outcome": "pass",
+        "task_outcome_admitted": true
+      }
+    ],
+    "collection": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/result.json",
+      "sha256": "sha256:93edd067c4f3cdfb1e37e09eb4918ab34310b70a67d3f1e6376047200bde254b"
+    },
+    "option_ids": [
+      "neutral",
+      "short_e015_r265",
+      "sustained_e015_r255",
+      "prior_splice_e015_r265",
+      "prior_splice_e050_r265",
+      "short_e070_r265",
+      "sustained_e070_r255"
+    ],
+    "physics_seed": 93202,
+    "physics_steps": 8344,
+    "physics_steps_unknown_branches": 0,
+    "prefix_comparisons": [
+      {
+        "matched": true,
+        "option_id": "neutral",
+        "phase_tick": 15,
+        "prefix": {
+          "clock_validation": {
+            "cross_branch_recorded_arrays": "unchanged exact equality, including recorded times",
+            "maximum_residual_s_by_branch": [
+              0.0,
+              0.0
+            ],
+            "rule": "consecutive integer50Hz tick identity plus <=1e-9s numerical residual"
+          },
+          "exact_match": true,
+          "frames": 15,
+          "max_abs_errors": {
+            "action_motion_token": 0.0,
+            "applied_joint_action": 0.0,
+            "dof_pos": 0.0,
+            "dof_vel": 0.0,
+            "motion_time_s": 0.0,
+            "reference_g1_qpos": 0.0,
+            "root_ang_vel_w": 0.0,
+            "root_lin_vel_w": 0.0,
+            "root_pos_w": 0.0,
+            "root_quat_w": 0.0
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "matched": true,
+        "option_id": "short_e015_r265",
+        "phase_tick": 15,
+        "prefix": {
+          "clock_validation": {
+            "cross_branch_recorded_arrays": "unchanged exact equality, including recorded times",
+            "maximum_residual_s_by_branch": [
+              0.0,
+              0.0
+            ],
+            "rule": "consecutive integer50Hz tick identity plus <=1e-9s numerical residual"
+          },
+          "exact_match": true,
+          "frames": 15,
+          "max_abs_errors": {
+            "action_motion_token": 0.0,
+            "applied_joint_action": 0.0,
+            "dof_pos": 0.0,
+            "dof_vel": 0.0,
+            "motion_time_s": 0.0,
+            "reference_g1_qpos": 0.0,
+            "root_ang_vel_w": 0.0,
+            "root_lin_vel_w": 0.0,
+            "root_pos_w": 0.0,
+            "root_quat_w": 0.0
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "matched": true,
+        "option_id": "sustained_e015_r255",
+        "phase_tick": 15,
+        "prefix": {
+          "clock_validation": {
+            "cross_branch_recorded_arrays": "unchanged exact equality, including recorded times",
+            "maximum_residual_s_by_branch": [
+              0.0,
+              0.0
+            ],
+            "rule": "consecutive integer50Hz tick identity plus <=1e-9s numerical residual"
+          },
+          "exact_match": true,
+          "frames": 15,
+          "max_abs_errors": {
+            "action_motion_token": 0.0,
+            "applied_joint_action": 0.0,
+            "dof_pos": 0.0,
+            "dof_vel": 0.0,
+            "motion_time_s": 0.0,
+            "reference_g1_qpos": 0.0,
+            "root_ang_vel_w": 0.0,
+            "root_lin_vel_w": 0.0,
+            "root_pos_w": 0.0,
+            "root_quat_w": 0.0
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "matched": true,
+        "option_id": "prior_splice_e015_r265",
+        "phase_tick": 15,
+        "prefix": {
+          "clock_validation": {
+            "cross_branch_recorded_arrays": "unchanged exact equality, including recorded times",
+            "maximum_residual_s_by_branch": [
+              0.0,
+              0.0
+            ],
+            "rule": "consecutive integer50Hz tick identity plus <=1e-9s numerical residual"
+          },
+          "exact_match": true,
+          "frames": 15,
+          "max_abs_errors": {
+            "action_motion_token": 0.0,
+            "applied_joint_action": 0.0,
+            "dof_pos": 0.0,
+            "dof_vel": 0.0,
+            "motion_time_s": 0.0,
+            "reference_g1_qpos": 0.0,
+            "root_ang_vel_w": 0.0,
+            "root_lin_vel_w": 0.0,
+            "root_pos_w": 0.0,
+            "root_quat_w": 0.0
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "matched": true,
+        "option_id": "prior_splice_e050_r265",
+        "phase_tick": 15,
+        "prefix": {
+          "clock_validation": {
+            "cross_branch_recorded_arrays": "unchanged exact equality, including recorded times",
+            "maximum_residual_s_by_branch": [
+              0.0,
+              0.0
+            ],
+            "rule": "consecutive integer50Hz tick identity plus <=1e-9s numerical residual"
+          },
+          "exact_match": true,
+          "frames": 15,
+          "max_abs_errors": {
+            "action_motion_token": 0.0,
+            "applied_joint_action": 0.0,
+            "dof_pos": 0.0,
+            "dof_vel": 0.0,
+            "motion_time_s": 0.0,
+            "reference_g1_qpos": 0.0,
+            "root_ang_vel_w": 0.0,
+            "root_lin_vel_w": 0.0,
+            "root_pos_w": 0.0,
+            "root_quat_w": 0.0
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "matched": true,
+        "option_id": "short_e070_r265",
+        "phase_tick": 15,
+        "prefix": {
+          "clock_validation": {
+            "cross_branch_recorded_arrays": "unchanged exact equality, including recorded times",
+            "maximum_residual_s_by_branch": [
+              0.0,
+              0.0
+            ],
+            "rule": "consecutive integer50Hz tick identity plus <=1e-9s numerical residual"
+          },
+          "exact_match": true,
+          "frames": 15,
+          "max_abs_errors": {
+            "action_motion_token": 0.0,
+            "applied_joint_action": 0.0,
+            "dof_pos": 0.0,
+            "dof_vel": 0.0,
+            "motion_time_s": 0.0,
+            "reference_g1_qpos": 0.0,
+            "root_ang_vel_w": 0.0,
+            "root_lin_vel_w": 0.0,
+            "root_pos_w": 0.0,
+            "root_quat_w": 0.0
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "matched": true,
+        "option_id": "sustained_e070_r255",
+        "phase_tick": 15,
+        "prefix": {
+          "clock_validation": {
+            "cross_branch_recorded_arrays": "unchanged exact equality, including recorded times",
+            "maximum_residual_s_by_branch": [
+              0.0,
+              0.0
+            ],
+            "rule": "consecutive integer50Hz tick identity plus <=1e-9s numerical residual"
+          },
+          "exact_match": true,
+          "frames": 15,
+          "max_abs_errors": {
+            "action_motion_token": 0.0,
+            "applied_joint_action": 0.0,
+            "dof_pos": 0.0,
+            "dof_vel": 0.0,
+            "motion_time_s": 0.0,
+            "reference_g1_qpos": 0.0,
+            "root_ang_vel_w": 0.0,
+            "root_lin_vel_w": 0.0,
+            "root_pos_w": 0.0,
+            "root_quat_w": 0.0
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "matched": true,
+        "option_id": "neutral",
+        "phase_tick": 50,
+        "prefix": {
+          "clock_validation": {
+            "cross_branch_recorded_arrays": "unchanged exact equality, including recorded times",
+            "maximum_residual_s_by_branch": [
+              1.1102230246251565e-16,
+              1.1102230246251565e-16
+            ],
+            "rule": "consecutive integer50Hz tick identity plus <=1e-9s numerical residual"
+          },
+          "exact_match": true,
+          "frames": 50,
+          "max_abs_errors": {
+            "action_motion_token": 0.0,
+            "applied_joint_action": 0.0,
+            "dof_pos": 0.0,
+            "dof_vel": 0.0,
+            "motion_time_s": 0.0,
+            "reference_g1_qpos": 0.0,
+            "root_ang_vel_w": 0.0,
+            "root_lin_vel_w": 0.0,
+            "root_pos_w": 0.0,
+            "root_quat_w": 0.0
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "matched": true,
+        "option_id": "prior_splice_e050_r265",
+        "phase_tick": 50,
+        "prefix": {
+          "clock_validation": {
+            "cross_branch_recorded_arrays": "unchanged exact equality, including recorded times",
+            "maximum_residual_s_by_branch": [
+              1.1102230246251565e-16,
+              1.1102230246251565e-16
+            ],
+            "rule": "consecutive integer50Hz tick identity plus <=1e-9s numerical residual"
+          },
+          "exact_match": true,
+          "frames": 50,
+          "max_abs_errors": {
+            "action_motion_token": 0.0,
+            "applied_joint_action": 0.0,
+            "dof_pos": 0.0,
+            "dof_vel": 0.0,
+            "motion_time_s": 0.0,
+            "reference_g1_qpos": 0.0,
+            "root_ang_vel_w": 0.0,
+            "root_lin_vel_w": 0.0,
+            "root_pos_w": 0.0,
+            "root_quat_w": 0.0
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "matched": true,
+        "option_id": "short_e070_r265",
+        "phase_tick": 50,
+        "prefix": {
+          "clock_validation": {
+            "cross_branch_recorded_arrays": "unchanged exact equality, including recorded times",
+            "maximum_residual_s_by_branch": [
+              1.1102230246251565e-16,
+              1.1102230246251565e-16
+            ],
+            "rule": "consecutive integer50Hz tick identity plus <=1e-9s numerical residual"
+          },
+          "exact_match": true,
+          "frames": 50,
+          "max_abs_errors": {
+            "action_motion_token": 0.0,
+            "applied_joint_action": 0.0,
+            "dof_pos": 0.0,
+            "dof_vel": 0.0,
+            "motion_time_s": 0.0,
+            "reference_g1_qpos": 0.0,
+            "root_ang_vel_w": 0.0,
+            "root_lin_vel_w": 0.0,
+            "root_pos_w": 0.0,
+            "root_quat_w": 0.0
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "matched": true,
+        "option_id": "sustained_e070_r255",
+        "phase_tick": 50,
+        "prefix": {
+          "clock_validation": {
+            "cross_branch_recorded_arrays": "unchanged exact equality, including recorded times",
+            "maximum_residual_s_by_branch": [
+              1.1102230246251565e-16,
+              1.1102230246251565e-16
+            ],
+            "rule": "consecutive integer50Hz tick identity plus <=1e-9s numerical residual"
+          },
+          "exact_match": true,
+          "frames": 50,
+          "max_abs_errors": {
+            "action_motion_token": 0.0,
+            "applied_joint_action": 0.0,
+            "dof_pos": 0.0,
+            "dof_vel": 0.0,
+            "motion_time_s": 0.0,
+            "reference_g1_qpos": 0.0,
+            "root_ang_vel_w": 0.0,
+            "root_lin_vel_w": 0.0,
+            "root_pos_w": 0.0,
+            "root_quat_w": 0.0
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "matched": true,
+        "option_id": "neutral",
+        "phase_tick": 70,
+        "prefix": {
+          "clock_validation": {
+            "cross_branch_recorded_arrays": "unchanged exact equality, including recorded times",
+            "maximum_residual_s_by_branch": [
+              2.220446049250313e-16,
+              2.220446049250313e-16
+            ],
+            "rule": "consecutive integer50Hz tick identity plus <=1e-9s numerical residual"
+          },
+          "exact_match": true,
+          "frames": 70,
+          "max_abs_errors": {
+            "action_motion_token": 0.0,
+            "applied_joint_action": 0.0,
+            "dof_pos": 0.0,
+            "dof_vel": 0.0,
+            "motion_time_s": 0.0,
+            "reference_g1_qpos": 0.0,
+            "root_ang_vel_w": 0.0,
+            "root_lin_vel_w": 0.0,
+            "root_pos_w": 0.0,
+            "root_quat_w": 0.0
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "matched": true,
+        "option_id": "short_e070_r265",
+        "phase_tick": 70,
+        "prefix": {
+          "clock_validation": {
+            "cross_branch_recorded_arrays": "unchanged exact equality, including recorded times",
+            "maximum_residual_s_by_branch": [
+              2.220446049250313e-16,
+              2.220446049250313e-16
+            ],
+            "rule": "consecutive integer50Hz tick identity plus <=1e-9s numerical residual"
+          },
+          "exact_match": true,
+          "frames": 70,
+          "max_abs_errors": {
+            "action_motion_token": 0.0,
+            "applied_joint_action": 0.0,
+            "dof_pos": 0.0,
+            "dof_vel": 0.0,
+            "motion_time_s": 0.0,
+            "reference_g1_qpos": 0.0,
+            "root_ang_vel_w": 0.0,
+            "root_lin_vel_w": 0.0,
+            "root_pos_w": 0.0,
+            "root_quat_w": 0.0
+          }
+        },
+        "unavailable_reason": null
+      },
+      {
+        "matched": true,
+        "option_id": "sustained_e070_r255",
+        "phase_tick": 70,
+        "prefix": {
+          "clock_validation": {
+            "cross_branch_recorded_arrays": "unchanged exact equality, including recorded times",
+            "maximum_residual_s_by_branch": [
+              2.220446049250313e-16,
+              2.220446049250313e-16
+            ],
+            "rule": "consecutive integer50Hz tick identity plus <=1e-9s numerical residual"
+          },
+          "exact_match": true,
+          "frames": 70,
+          "max_abs_errors": {
+            "action_motion_token": 0.0,
+            "applied_joint_action": 0.0,
+            "dof_pos": 0.0,
+            "dof_vel": 0.0,
+            "motion_time_s": 0.0,
+            "reference_g1_qpos": 0.0,
+            "root_ang_vel_w": 0.0,
+            "root_lin_vel_w": 0.0,
+            "root_pos_w": 0.0,
+            "root_quat_w": 0.0
+          }
+        },
+        "unavailable_reason": null
+      }
+    ],
+    "scene_id": "primary_candidate_93202_0132",
+    "targets": [
+      {
+        "admitted": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "admitted_continuation_counts": [
+          4,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "available": true,
+        "complete_legal_action_table": true,
+        "continuation_branch_ids": [
+          "forced_prior_splice_e050_r265",
+          "forced_short_e015_r265",
+          "forced_sustained_e015_r255",
+          "forced_prior_splice_e015_r265",
+          null,
+          null,
+          null
+        ],
+        "continuation_option_indices": [
+          4,
+          1,
+          2,
+          3,
+          null,
+          null,
+          null
+        ],
+        "expected_continuation_counts": [
+          4,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "feature_names": [
+          "corridor_0_0.75_floor_fraction",
+          "corridor_0_0.75_ceiling_fraction",
+          "corridor_0_0.75_minimum_ceiling_m",
+          "corridor_0_0.75_maximum_floor_m",
+          "corridor_0_0.75_upper_hit",
+          "corridor_0_0.75_lower_free_fraction",
+          "corridor_0_0.75_unknown_fraction",
+          "corridor_0.75_1.5_floor_fraction",
+          "corridor_0.75_1.5_ceiling_fraction",
+          "corridor_0.75_1.5_minimum_ceiling_m",
+          "corridor_0.75_1.5_maximum_floor_m",
+          "corridor_0.75_1.5_upper_hit",
+          "corridor_0.75_1.5_lower_free_fraction",
+          "corridor_0.75_1.5_unknown_fraction",
+          "corridor_1.5_2.5_floor_fraction",
+          "corridor_1.5_2.5_ceiling_fraction",
+          "corridor_1.5_2.5_minimum_ceiling_m",
+          "corridor_1.5_2.5_maximum_floor_m",
+          "corridor_1.5_2.5_upper_hit",
+          "corridor_1.5_2.5_lower_free_fraction",
+          "corridor_1.5_2.5_unknown_fraction",
+          "corridor_2.5_4_floor_fraction",
+          "corridor_2.5_4_ceiling_fraction",
+          "corridor_2.5_4_minimum_ceiling_m",
+          "corridor_2.5_4_maximum_floor_m",
+          "corridor_2.5_4_upper_hit",
+          "corridor_2.5_4_lower_free_fraction",
+          "corridor_2.5_4_unknown_fraction",
+          "projected_gravity_b_0",
+          "projected_gravity_b_1",
+          "projected_gravity_b_2",
+          "root_lin_vel_w_0",
+          "root_lin_vel_w_1",
+          "root_lin_vel_w_2",
+          "root_ang_vel_w_0",
+          "root_ang_vel_w_1",
+          "root_ang_vel_w_2",
+          "dof_pos_0",
+          "dof_pos_1",
+          "dof_pos_2",
+          "dof_pos_3",
+          "dof_pos_4",
+          "dof_pos_5",
+          "dof_pos_6",
+          "dof_pos_7",
+          "dof_pos_8",
+          "dof_pos_9",
+          "dof_pos_10",
+          "dof_pos_11",
+          "dof_pos_12",
+          "dof_pos_13",
+          "dof_pos_14",
+          "dof_pos_15",
+          "dof_pos_16",
+          "dof_pos_17",
+          "dof_pos_18",
+          "dof_pos_19",
+          "dof_pos_20",
+          "dof_pos_21",
+          "dof_pos_22",
+          "dof_pos_23",
+          "dof_pos_24",
+          "dof_pos_25",
+          "dof_pos_26",
+          "dof_pos_27",
+          "dof_pos_28",
+          "dof_vel_0",
+          "dof_vel_1",
+          "dof_vel_2",
+          "dof_vel_3",
+          "dof_vel_4",
+          "dof_vel_5",
+          "dof_vel_6",
+          "dof_vel_7",
+          "dof_vel_8",
+          "dof_vel_9",
+          "dof_vel_10",
+          "dof_vel_11",
+          "dof_vel_12",
+          "dof_vel_13",
+          "dof_vel_14",
+          "dof_vel_15",
+          "dof_vel_16",
+          "dof_vel_17",
+          "dof_vel_18",
+          "dof_vel_19",
+          "dof_vel_20",
+          "dof_vel_21",
+          "dof_vel_22",
+          "dof_vel_23",
+          "dof_vel_24",
+          "dof_vel_25",
+          "dof_vel_26",
+          "dof_vel_27",
+          "dof_vel_28",
+          "phase_s",
+          "active_skill",
+          "observation_age_s",
+          "walk_legal",
+          "adapt_legal",
+          "active_option_0",
+          "active_option_1",
+          "active_option_2",
+          "active_option_3",
+          "active_option_4",
+          "active_option_5",
+          "active_option_6",
+          "option_0_legal",
+          "option_1_legal",
+          "option_2_legal",
+          "option_3_legal",
+          "option_4_legal",
+          "option_5_legal",
+          "option_6_legal"
+        ],
+        "features": [
+          0.15000000596046448,
+          0.0,
+          0.0,
+          -0.7816493511199951,
+          0.0,
+          0.38749998807907104,
+          0.7333333492279053,
+          0.3333333432674408,
+          0.0,
+          0.0,
+          -0.7816495299339294,
+          0.0,
+          0.699999988079071,
+          0.5066666603088379,
+          0.0,
+          0.23999999463558197,
+          0.4949672520160675,
+          0.0,
+          1.0,
+          0.44999998807907104,
+          0.6933333277702332,
+          0.07500000298023224,
+          0.0,
+          0.0,
+          -0.7816498279571533,
+          0.0,
+          0.17499999701976776,
+          0.875,
+          0.030745159834623337,
+          0.007103581912815571,
+          -0.9995020031929016,
+          -0.025542229413986206,
+          -0.06300655007362366,
+          0.028157813474535942,
+          0.22543199360370636,
+          0.24612849950790405,
+          -0.21777714788913727,
+          0.010055930353701115,
+          0.022908780723810196,
+          -0.07773762196302414,
+          0.12904755771160126,
+          -0.038924816995859146,
+          0.0555984266102314,
+          0.06846022605895996,
+          -0.27929529547691345,
+          0.01794607751071453,
+          0.20223085582256317,
+          0.20169149339199066,
+          -0.034514419734478,
+          -0.011739668436348438,
+          -0.22531792521476746,
+          -0.24746617674827576,
+          0.32911962270736694,
+          -0.22686326503753662,
+          -0.10329777002334595,
+          0.011789616197347641,
+          -0.5840858221054077,
+          0.4560129642486572,
+          1.0574579238891602,
+          1.063224196434021,
+          0.13615772128105164,
+          -0.082637719810009,
+          -0.097706139087677,
+          -0.07747140526771545,
+          0.09366326779127121,
+          -0.08883215487003326,
+          -0.1792851984500885,
+          -0.22100771963596344,
+          0.1358223557472229,
+          -0.10972528159618378,
+          -0.016249336302280426,
+          -0.18497759103775024,
+          0.20470190048217773,
+          0.2191402018070221,
+          0.04820648580789566,
+          -0.15933401882648468,
+          -0.3288632035255432,
+          0.040513694286346436,
+          -0.06683898717164993,
+          0.43294379115104675,
+          0.33503761887550354,
+          0.1640685796737671,
+          -0.038129642605781555,
+          -0.19965440034866333,
+          -0.9838845133781433,
+          0.1512952744960785,
+          0.14694084227085114,
+          -0.1210600733757019,
+          0.1326548457145691,
+          -0.4332239627838135,
+          0.24132075905799866,
+          0.031131383031606674,
+          -0.09477680176496506,
+          -0.18731236457824707,
+          -0.09929563850164413,
+          0.30000001192092896,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "legal_mask": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "pass_labels": [
+          true,
+          false,
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "passage_time_s": [
+          3.36,
+          null,
+          3.42,
+          3.36,
+          null,
+          null,
+          null
+        ],
+        "phase_tick": 15,
+        "recorded_history_sha256": "ca05183da57f1a73d17b0dddf1bc866b3ec6d2e46065d8ec6a265f7d5f2598a9",
+        "scope": "finite verified full schedules; actual repeated student decisions still require execution",
+        "teacher_action": 0,
+        "waiting_has_future_adaptation": true
+      },
+      {
+        "admitted": [
+          true,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "admitted_continuation_counts": [
+          3,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "available": true,
+        "complete_legal_action_table": true,
+        "continuation_branch_ids": [
+          "forced_sustained_e070_r255",
+          null,
+          null,
+          null,
+          "forced_prior_splice_e050_r265",
+          null,
+          null
+        ],
+        "continuation_option_indices": [
+          6,
+          null,
+          null,
+          null,
+          4,
+          null,
+          null
+        ],
+        "expected_continuation_counts": [
+          3,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "feature_names": [
+          "corridor_0_0.75_floor_fraction",
+          "corridor_0_0.75_ceiling_fraction",
+          "corridor_0_0.75_minimum_ceiling_m",
+          "corridor_0_0.75_maximum_floor_m",
+          "corridor_0_0.75_upper_hit",
+          "corridor_0_0.75_lower_free_fraction",
+          "corridor_0_0.75_unknown_fraction",
+          "corridor_0.75_1.5_floor_fraction",
+          "corridor_0.75_1.5_ceiling_fraction",
+          "corridor_0.75_1.5_minimum_ceiling_m",
+          "corridor_0.75_1.5_maximum_floor_m",
+          "corridor_0.75_1.5_upper_hit",
+          "corridor_0.75_1.5_lower_free_fraction",
+          "corridor_0.75_1.5_unknown_fraction",
+          "corridor_1.5_2.5_floor_fraction",
+          "corridor_1.5_2.5_ceiling_fraction",
+          "corridor_1.5_2.5_minimum_ceiling_m",
+          "corridor_1.5_2.5_maximum_floor_m",
+          "corridor_1.5_2.5_upper_hit",
+          "corridor_1.5_2.5_lower_free_fraction",
+          "corridor_1.5_2.5_unknown_fraction",
+          "corridor_2.5_4_floor_fraction",
+          "corridor_2.5_4_ceiling_fraction",
+          "corridor_2.5_4_minimum_ceiling_m",
+          "corridor_2.5_4_maximum_floor_m",
+          "corridor_2.5_4_upper_hit",
+          "corridor_2.5_4_lower_free_fraction",
+          "corridor_2.5_4_unknown_fraction",
+          "projected_gravity_b_0",
+          "projected_gravity_b_1",
+          "projected_gravity_b_2",
+          "root_lin_vel_w_0",
+          "root_lin_vel_w_1",
+          "root_lin_vel_w_2",
+          "root_ang_vel_w_0",
+          "root_ang_vel_w_1",
+          "root_ang_vel_w_2",
+          "dof_pos_0",
+          "dof_pos_1",
+          "dof_pos_2",
+          "dof_pos_3",
+          "dof_pos_4",
+          "dof_pos_5",
+          "dof_pos_6",
+          "dof_pos_7",
+          "dof_pos_8",
+          "dof_pos_9",
+          "dof_pos_10",
+          "dof_pos_11",
+          "dof_pos_12",
+          "dof_pos_13",
+          "dof_pos_14",
+          "dof_pos_15",
+          "dof_pos_16",
+          "dof_pos_17",
+          "dof_pos_18",
+          "dof_pos_19",
+          "dof_pos_20",
+          "dof_pos_21",
+          "dof_pos_22",
+          "dof_pos_23",
+          "dof_pos_24",
+          "dof_pos_25",
+          "dof_pos_26",
+          "dof_pos_27",
+          "dof_pos_28",
+          "dof_vel_0",
+          "dof_vel_1",
+          "dof_vel_2",
+          "dof_vel_3",
+          "dof_vel_4",
+          "dof_vel_5",
+          "dof_vel_6",
+          "dof_vel_7",
+          "dof_vel_8",
+          "dof_vel_9",
+          "dof_vel_10",
+          "dof_vel_11",
+          "dof_vel_12",
+          "dof_vel_13",
+          "dof_vel_14",
+          "dof_vel_15",
+          "dof_vel_16",
+          "dof_vel_17",
+          "dof_vel_18",
+          "dof_vel_19",
+          "dof_vel_20",
+          "dof_vel_21",
+          "dof_vel_22",
+          "dof_vel_23",
+          "dof_vel_24",
+          "dof_vel_25",
+          "dof_vel_26",
+          "dof_vel_27",
+          "dof_vel_28",
+          "phase_s",
+          "active_skill",
+          "observation_age_s",
+          "walk_legal",
+          "adapt_legal",
+          "active_option_0",
+          "active_option_1",
+          "active_option_2",
+          "active_option_3",
+          "active_option_4",
+          "active_option_5",
+          "active_option_6",
+          "option_0_legal",
+          "option_1_legal",
+          "option_2_legal",
+          "option_3_legal",
+          "option_4_legal",
+          "option_5_legal",
+          "option_6_legal"
+        ],
+        "features": [
+          0.20000000298023224,
+          0.0,
+          0.0,
+          -0.7447866201400757,
+          0.0,
+          0.6499999761581421,
+          0.5799999833106995,
+          0.5333333611488342,
+          0.3333333432674408,
+          0.5318299531936646,
+          -0.7447867393493652,
+          1.0,
+          0.6666666865348816,
+          0.4533333480358124,
+          0.0,
+          0.20000000298023224,
+          0.5318298935890198,
+          0.0,
+          1.0,
+          0.7400000095367432,
+          0.4906666576862335,
+          0.15000000596046448,
+          0.0,
+          0.0,
+          -0.7447869181632996,
+          0.0,
+          0.45625001192092896,
+          0.6933333277702332,
+          0.09699755162000656,
+          0.0007354405242949724,
+          -0.9952843189239502,
+          0.6645253300666809,
+          0.24536219239234924,
+          -0.23859402537345886,
+          -0.10066840052604675,
+          0.2872990071773529,
+          -0.23825949430465698,
+          -0.6802388429641724,
+          0.1621847003698349,
+          0.03652007877826691,
+          0.13951659202575684,
+          -0.04946067929267883,
+          0.04519220069050789,
+          0.11195237189531326,
+          -0.22302661836147308,
+          0.019155025482177734,
+          0.2799798548221588,
+          0.2429443597793579,
+          0.13152894377708435,
+          0.04742379114031792,
+          -0.02411390282213688,
+          -0.48890814185142517,
+          0.2919844388961792,
+          -0.30200424790382385,
+          -0.03607971966266632,
+          0.06947202235460281,
+          -0.3975624144077301,
+          0.4379146993160248,
+          1.071419358253479,
+          1.0449965000152588,
+          0.18176113069057465,
+          0.04261477664113045,
+          0.017771629616618156,
+          -0.08809493482112885,
+          0.07998333126306534,
+          -0.1027538925409317,
+          -0.8596302270889282,
+          0.6963410973548889,
+          0.5105801224708557,
+          -0.3100024461746216,
+          -0.35988619923591614,
+          -0.2727121412754059,
+          0.5146674513816833,
+          0.1711961030960083,
+          -0.03753386065363884,
+          -0.48264455795288086,
+          0.03480158746242523,
+          -0.09903523325920105,
+          0.05612678453326225,
+          0.6949893832206726,
+          -0.6691677570343018,
+          -0.10225652158260345,
+          -0.1642395257949829,
+          0.3450036346912384,
+          -0.10520434379577637,
+          0.08713461458683014,
+          0.31294411420822144,
+          0.32086417078971863,
+          -0.2585594654083252,
+          -0.03474743664264679,
+          -0.7217903137207031,
+          -0.08961191773414612,
+          0.1374204009771347,
+          -0.22652892768383026,
+          0.04606607183814049,
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "legal_mask": [
+          true,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "pass_labels": [
+          true,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false
+        ],
+        "passage_time_s": [
+          3.42,
+          null,
+          null,
+          null,
+          3.36,
+          null,
+          null
+        ],
+        "phase_tick": 50,
+        "recorded_history_sha256": "645de4f7c2284fa397a815c009896954b4064559e3b957a9180e0d95e2a2653b",
+        "scope": "finite verified full schedules; actual repeated student decisions still require execution",
+        "teacher_action": 4,
+        "waiting_has_future_adaptation": true
+      },
+      {
+        "admitted": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "admitted_continuation_counts": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "available": true,
+        "complete_legal_action_table": true,
+        "continuation_branch_ids": [
+          "forced_neutral",
+          null,
+          null,
+          null,
+          null,
+          "forced_short_e070_r265",
+          "forced_sustained_e070_r255"
+        ],
+        "continuation_option_indices": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          5,
+          6
+        ],
+        "expected_continuation_counts": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "feature_names": [
+          "corridor_0_0.75_floor_fraction",
+          "corridor_0_0.75_ceiling_fraction",
+          "corridor_0_0.75_minimum_ceiling_m",
+          "corridor_0_0.75_maximum_floor_m",
+          "corridor_0_0.75_upper_hit",
+          "corridor_0_0.75_lower_free_fraction",
+          "corridor_0_0.75_unknown_fraction",
+          "corridor_0.75_1.5_floor_fraction",
+          "corridor_0.75_1.5_ceiling_fraction",
+          "corridor_0.75_1.5_minimum_ceiling_m",
+          "corridor_0.75_1.5_maximum_floor_m",
+          "corridor_0.75_1.5_upper_hit",
+          "corridor_0.75_1.5_lower_free_fraction",
+          "corridor_0.75_1.5_unknown_fraction",
+          "corridor_1.5_2.5_floor_fraction",
+          "corridor_1.5_2.5_ceiling_fraction",
+          "corridor_1.5_2.5_minimum_ceiling_m",
+          "corridor_1.5_2.5_maximum_floor_m",
+          "corridor_1.5_2.5_upper_hit",
+          "corridor_1.5_2.5_lower_free_fraction",
+          "corridor_1.5_2.5_unknown_fraction",
+          "corridor_2.5_4_floor_fraction",
+          "corridor_2.5_4_ceiling_fraction",
+          "corridor_2.5_4_minimum_ceiling_m",
+          "corridor_2.5_4_maximum_floor_m",
+          "corridor_2.5_4_upper_hit",
+          "corridor_2.5_4_lower_free_fraction",
+          "corridor_2.5_4_unknown_fraction",
+          "projected_gravity_b_0",
+          "projected_gravity_b_1",
+          "projected_gravity_b_2",
+          "root_lin_vel_w_0",
+          "root_lin_vel_w_1",
+          "root_lin_vel_w_2",
+          "root_ang_vel_w_0",
+          "root_ang_vel_w_1",
+          "root_ang_vel_w_2",
+          "dof_pos_0",
+          "dof_pos_1",
+          "dof_pos_2",
+          "dof_pos_3",
+          "dof_pos_4",
+          "dof_pos_5",
+          "dof_pos_6",
+          "dof_pos_7",
+          "dof_pos_8",
+          "dof_pos_9",
+          "dof_pos_10",
+          "dof_pos_11",
+          "dof_pos_12",
+          "dof_pos_13",
+          "dof_pos_14",
+          "dof_pos_15",
+          "dof_pos_16",
+          "dof_pos_17",
+          "dof_pos_18",
+          "dof_pos_19",
+          "dof_pos_20",
+          "dof_pos_21",
+          "dof_pos_22",
+          "dof_pos_23",
+          "dof_pos_24",
+          "dof_pos_25",
+          "dof_pos_26",
+          "dof_pos_27",
+          "dof_pos_28",
+          "dof_vel_0",
+          "dof_vel_1",
+          "dof_vel_2",
+          "dof_vel_3",
+          "dof_vel_4",
+          "dof_vel_5",
+          "dof_vel_6",
+          "dof_vel_7",
+          "dof_vel_8",
+          "dof_vel_9",
+          "dof_vel_10",
+          "dof_vel_11",
+          "dof_vel_12",
+          "dof_vel_13",
+          "dof_vel_14",
+          "dof_vel_15",
+          "dof_vel_16",
+          "dof_vel_17",
+          "dof_vel_18",
+          "dof_vel_19",
+          "dof_vel_20",
+          "dof_vel_21",
+          "dof_vel_22",
+          "dof_vel_23",
+          "dof_vel_24",
+          "dof_vel_25",
+          "dof_vel_26",
+          "dof_vel_27",
+          "dof_vel_28",
+          "phase_s",
+          "active_skill",
+          "observation_age_s",
+          "walk_legal",
+          "adapt_legal",
+          "active_option_0",
+          "active_option_1",
+          "active_option_2",
+          "active_option_3",
+          "active_option_4",
+          "active_option_5",
+          "active_option_6",
+          "option_0_legal",
+          "option_1_legal",
+          "option_2_legal",
+          "option_3_legal",
+          "option_4_legal",
+          "option_5_legal",
+          "option_6_legal"
+        ],
+        "features": [
+          0.550000011920929,
+          0.0,
+          0.0,
+          -0.7622460126876831,
+          0.0,
+          0.862500011920929,
+          0.38333332538604736,
+          0.9333333373069763,
+          0.6666666865348816,
+          0.5143705010414124,
+          -0.7622461318969727,
+          1.0,
+          0.949999988079071,
+          0.3199999928474426,
+          0.1599999964237213,
+          0.0,
+          0.0,
+          -0.7622463703155518,
+          0.0,
+          0.8399999737739563,
+          0.4346666634082794,
+          0.22499999403953552,
+          0.0,
+          0.0,
+          -0.762246310710907,
+          0.0,
+          0.44999998807907104,
+          0.6949999928474426,
+          0.01985922083258629,
+          -0.05511728301644325,
+          -0.9982823729515076,
+          0.6003223061561584,
+          0.04912156984210014,
+          0.128960981965065,
+          -0.16037996113300323,
+          -0.3770373463630676,
+          0.4953959882259369,
+          -0.31989338994026184,
+          -0.25917336344718933,
+          -0.02820139192044735,
+          -0.08602922409772873,
+          -0.32939383387565613,
+          -0.07254574447870255,
+          0.1924142986536026,
+          -0.14340326189994812,
+          0.018066922202706337,
+          0.47707051038742065,
+          1.2772482633590698,
+          0.04842621460556984,
+          0.013282652013003826,
+          -0.18895471096038818,
+          -0.06036967784166336,
+          0.34852975606918335,
+          -0.24524317681789398,
+          0.1079510971903801,
+          0.03238098695874214,
+          -0.49503204226493835,
+          0.3952621519565582,
+          1.158661127090454,
+          0.9783002138137817,
+          0.22881180047988892,
+          -0.01056984905153513,
+          0.019745098426938057,
+          -0.032324377447366714,
+          0.06292299926280975,
+          -0.12401044368743896,
+          1.7844582796096802,
+          -2.2562451362609863,
+          -0.6775645017623901,
+          -0.3772284686565399,
+          0.24732498824596405,
+          0.2713930010795593,
+          -0.57010817527771,
+          -0.3795359432697296,
+          -0.31784871220588684,
+          -1.0414674282073975,
+          1.4033620357513428,
+          -0.4997698664665222,
+          0.10113104432821274,
+          -0.3378438651561737,
+          -1.91696298122406,
+          0.48221349716186523,
+          -0.2182035744190216,
+          0.0503392219543457,
+          -0.34574031829833984,
+          -0.3023110628128052,
+          -0.060524508357048035,
+          -0.14231590926647186,
+          -0.8333081603050232,
+          0.5184791088104248,
+          0.2409420907497406,
+          0.16870024800300598,
+          0.15162621438503265,
+          0.21983928978443146,
+          -0.07942814379930496,
+          1.399999976158142,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "legal_mask": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true
+        ],
+        "pass_labels": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ],
+        "passage_time_s": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          3.42
+        ],
+        "phase_tick": 70,
+        "recorded_history_sha256": "9d44e7d85fa29780231a04ac75fe270209151519e9aed73794dc3180b0c7b18b",
+        "scope": "finite verified full schedules; actual repeated student decisions still require execution",
+        "teacher_action": 6,
+        "waiting_has_future_adaptation": false
+      }
+    ],
+    "trajectory_identities": [
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/rollouts/forced_neutral/trajectories/000000.trajectory.pkl",
+        "sha256": "sha256:b2321966f5de5ced47a5cdbfe92732ece4dfb82051cee0938319701280d0d20f"
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/rollouts/forced_short_e015_r265/trajectories/000000.trajectory.pkl",
+        "sha256": "sha256:0f3fdd5a505492ba61aecad8cff227cebfc2dba9682335fc724b6ea4dd089440"
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/rollouts/forced_sustained_e015_r255/trajectories/000000.trajectory.pkl",
+        "sha256": "sha256:72009c3b03e621d361487911fc7299c3e0955d87ca3a58c6a69c0f0b6dcda211"
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/rollouts/forced_prior_splice_e015_r265/trajectories/000000.trajectory.pkl",
+        "sha256": "sha256:9203d5162ed9a1278ae23243a2d3198103ce5888e88c0472887b86367163f58e"
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/rollouts/forced_prior_splice_e050_r265/trajectories/000000.trajectory.pkl",
+        "sha256": "sha256:86c5ce353d808f545772e4ba977daa52ee81895328b13ac817b81c47b073a440"
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/rollouts/forced_short_e070_r265/trajectories/000000.trajectory.pkl",
+        "sha256": "sha256:0f3fdd5a505492ba61aecad8cff227cebfc2dba9682335fc724b6ea4dd089440"
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/rollouts/forced_sustained_e070_r255/trajectories/000000.trajectory.pkl",
+        "sha256": "sha256:72009c3b03e621d361487911fc7299c3e0955d87ca3a58c6a69c0f0b6dcda211"
+      }
+    ]
+  }
+}

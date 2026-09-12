@@ -1,0 +1,73 @@
+{
+  "example_cells": [
+    "nom_41001_analytic_00_a0",
+    "nom_41001_analytic_00_a1"
+  ],
+  "inputs": [
+    {
+      "bytes": 3857074,
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/evidence/analysis.json",
+      "sha256": "sha256:8fa0071789a7c4244ccc513e4d85f76417187ad5acde17fd6009aa51a54c8593"
+    },
+    {
+      "bytes": 262183,
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/evidence/diagnostics.json",
+      "sha256": "sha256:2f315437312e724d1e196436ddfc6dcf1076f9e852405a643d94c95d94463853"
+    },
+    {
+      "bytes": 66653,
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-nominal-v1-labels-00/result.json",
+      "sha256": "sha256:fb824e453f38774241c21578e703feda4003db843230f2f5eb16b5be48e54d18"
+    },
+    {
+      "bytes": 450829,
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-nominal-v1-labels-00/rollouts/nom_41001_analytic_00_a0/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:dbc28fb11993bcf562651dd8d36e85341ccd6cb58dfb5adf5602ed123b6999ed"
+    },
+    {
+      "bytes": 28100,
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-nominal-v1-labels-00/rollouts/nom_41001_analytic_00_a0/trajectories/loaded_reference_bank.npz",
+      "sha256": "sha256:2d8580469b471c53be44ec878b584db29f1dbb0c0e60bc4679ff12eda940a635"
+    },
+    {
+      "bytes": 1203,
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-nominal-v1-labels-00/rollouts/nom_41001_analytic_00_a0/trajectories/beam_contacts.npz",
+      "sha256": "sha256:64af4dddb81d83c7bda5381cc2097effa081239d14b3f2141f57e300a4b7b3f7"
+    },
+    {
+      "bytes": 3335,
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-nominal-v1-labels-00/rollouts/nom_41001_analytic_00_a0/trajectories/physics_beam_contacts.npz",
+      "sha256": "sha256:df3f3bf7c5ba65b0c353db3e36233bd2fd311b9a4c19f78d85e7777c8aa9f86e"
+    },
+    {
+      "bytes": 450829,
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-nominal-v1-labels-00/rollouts/nom_41001_analytic_00_a1/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:d74d459979ddcb8dbd4fc3e81a0c5ae72484a81773a38878809d4e59799d46c9"
+    },
+    {
+      "bytes": 28100,
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-nominal-v1-labels-00/rollouts/nom_41001_analytic_00_a1/trajectories/loaded_reference_bank.npz",
+      "sha256": "sha256:2d8580469b471c53be44ec878b584db29f1dbb0c0e60bc4679ff12eda940a635"
+    },
+    {
+      "bytes": 3401358,
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-nominal-v1-labels-00/rollouts/nom_41001_analytic_00_a1/trajectories/reactive_interface.json",
+      "sha256": "sha256:9d7897dd233a7dd2bc5fcf26f0ab69c905a76222aa304a9bafee3f2d2c6ca5af"
+    },
+    {
+      "bytes": 996,
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-nominal-v1-labels-00/rollouts/nom_41001_analytic_00_a1/trajectories/beam_contacts.npz",
+      "sha256": "sha256:35175795d927a7c1503aa9a36a2eb00461590649b6c5535f4634a9ec30d16aaa"
+    },
+    {
+      "bytes": 2735,
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-icra-nominal-v1-labels-00/rollouts/nom_41001_analytic_00_a1/trajectories/physics_beam_contacts.npz",
+      "sha256": "sha256:66b297c4d8755a1345971faef9d0013d785ca7750d40617c8dafb03eda2928e3"
+    }
+  ],
+  "script": {
+    "bytes": 15046,
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/render_motion2scene_submission.py",
+    "sha256": "sha256:7de326839723c92b44962e106153630f45a32ba5aa833e28af661d205e6b9b1d"
+  }
+}

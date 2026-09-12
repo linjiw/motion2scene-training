@@ -1,0 +1,22 @@
+[
+  {
+    "actual": "973334216a15783cb8a152373b3668df577f3d3b00f5874e589e89e36a1144e9",
+    "expected": "sha256:5a28e123a89d1a5475ec2a347cbff7a5b30269b62d98b810b007f11950788e14",
+    "issue": "hash_mismatch",
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/hallucination/motion2scene_timed_schedule_learning.py",
+    "reference_count": 1,
+    "referenced_by": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/bootstrap/teachers/result.json",
+    "verified_matching_archives": [
+      "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/bootstrap/teachers/analysis_source_snapshot/gear_sonic/dataset_generation/hallucination/motion2scene_timed_schedule_learning.py"
+    ]
+  },
+  {
+    "actual": "24d291ecf1155f85c696009f5712c71919a3cace951a172ef837d1a07bfaa1db",
+    "expected": "sha256:0a48eed8d00336ec17a29be761ab6ebfbe0c9f444da71e1cd72fb9159c6d1eb2",
+    "issue": "hash_mismatch",
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/run_kimodo_sonic_rollout.sh",
+    "reference_count": 760,
+    "referenced_by": "/home/linjiw/research-data/groot-wbc/m2s-support-pilot-acquisition-20260910-v1/seed93201_support_strict/round_005/student/manifest.json",
+    "verified_matching_archives": []
+  }
+]

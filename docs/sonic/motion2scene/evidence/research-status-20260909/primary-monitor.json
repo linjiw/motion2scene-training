@@ -1,0 +1,637 @@
+{
+  "active_or_completed_runs": [
+    {
+      "additional_recorded_steps_beyond_ledger_v8": 17880,
+      "already_in_ledger_v8_steps": 0,
+      "assessed": 15,
+      "assessed_unknown": 0,
+      "assigned": 39,
+      "complete": 15,
+      "conservative_intent_charge": 17880,
+      "failed": 2,
+      "known_partial_failures": 0,
+      "models": [
+        {
+          "name": "model_000",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_000/policy.npz",
+            "sha256": "sha256:565f8751efb8814795f6528438afe5ef542b8e0bd08f36fb9201b79921e95cc2"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_000/result.json",
+            "sha256": "sha256:3bd4fc4e442059e530f3aab982f1250521afd6db334afd412179c9527ee9cd9a"
+          }
+        },
+        {
+          "name": "model_001",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_001/policy.npz",
+            "sha256": "sha256:c5e12dc7bda5302e5dcf2ac267f45cbf9bdefbb98c65486b3b9a58f8ade1fbde"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_001/result.json",
+            "sha256": "sha256:580a7e0856a61d3ec3519f07e33d581825d0e9661f0b28f28beeb49e6586979c"
+          }
+        }
+      ],
+      "passed": 13,
+      "recorded_steps": 17880,
+      "reused_original_steps": 0,
+      "run_id": "seed93201_uniform",
+      "unassessed_intents": 0,
+      "unique_intents": 15,
+      "unknown_recorded_step_attempts": 0
+    },
+    {
+      "additional_recorded_steps_beyond_ledger_v8": 27416,
+      "already_in_ledger_v8_steps": 0,
+      "assessed": 23,
+      "assessed_unknown": 0,
+      "assigned": 39,
+      "complete": 23,
+      "conservative_intent_charge": 27416,
+      "failed": 8,
+      "known_partial_failures": 0,
+      "models": [
+        {
+          "name": "model_000",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_000/policy.npz",
+            "sha256": "sha256:565f8751efb8814795f6528438afe5ef542b8e0bd08f36fb9201b79921e95cc2"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_000/result.json",
+            "sha256": "sha256:f927a6cd49ffa5e24c1d6d4fbb94a928490f41929702d89aaba4faef9d399e5e"
+          }
+        },
+        {
+          "name": "model_001",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_001/policy.npz",
+            "sha256": "sha256:3181aac59029cd7db426fa873076a681ed02901ff1624e53711af26e97a86aed"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_001/result.json",
+            "sha256": "sha256:e6a236964f12400989ad17b98c31ceb5f018ac8dc8bc95273ae02588f648e260"
+          }
+        },
+        {
+          "name": "model_002",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_002/policy.npz",
+            "sha256": "sha256:f832c7822e4623f13be52883ae3e52e597e9e353c10bf9b0fee82c6de482d1ab"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_002/result.json",
+            "sha256": "sha256:5c8f2a90d3e1dc27562bfb2dc862ebe1e517b544416d7109223fde6d3eb1246d"
+          }
+        }
+      ],
+      "passed": 15,
+      "recorded_steps": 27416,
+      "reused_original_steps": 0,
+      "run_id": "seed93201_target_only",
+      "unassessed_intents": 0,
+      "unique_intents": 23,
+      "unknown_recorded_step_attempts": 0
+    },
+    {
+      "additional_recorded_steps_beyond_ledger_v8": 26224,
+      "already_in_ledger_v8_steps": 0,
+      "assessed": 22,
+      "assessed_unknown": 0,
+      "assigned": 39,
+      "complete": 22,
+      "conservative_intent_charge": 27416,
+      "failed": 8,
+      "known_partial_failures": 0,
+      "models": [
+        {
+          "name": "model_000",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_000/policy.npz",
+            "sha256": "sha256:565f8751efb8814795f6528438afe5ef542b8e0bd08f36fb9201b79921e95cc2"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_000/result.json",
+            "sha256": "sha256:713b4101305f72f85d04d54bb37efdc4e4190994093d70eb63facc489cd96168"
+          }
+        },
+        {
+          "name": "model_001",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_001/policy.npz",
+            "sha256": "sha256:f2ed83481a75b1b49484f3b21b6ebc733ee97fecfda952ac87fcb9c550be611a"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_001/result.json",
+            "sha256": "sha256:d91f29390c37ee4b438bacfb4a052d0294eca85a1f9d72b3be73b5e9e644fdde"
+          }
+        }
+      ],
+      "passed": 14,
+      "recorded_steps": 26224,
+      "reused_original_steps": 0,
+      "run_id": "seed93201_analytic_contrast",
+      "unassessed_intents": 1,
+      "unique_intents": 23,
+      "unknown_recorded_step_attempts": 1
+    },
+    {
+      "additional_recorded_steps_beyond_ledger_v8": 27416,
+      "already_in_ledger_v8_steps": 0,
+      "assessed": 23,
+      "assessed_unknown": 0,
+      "assigned": 39,
+      "complete": 23,
+      "conservative_intent_charge": 27416,
+      "failed": 9,
+      "known_partial_failures": 0,
+      "models": [
+        {
+          "name": "model_000",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_000/policy.npz",
+            "sha256": "sha256:565f8751efb8814795f6528438afe5ef542b8e0bd08f36fb9201b79921e95cc2"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_000/result.json",
+            "sha256": "sha256:41d8271cacf9153f409da557948bb52872c6e0a01303805c2557eee018d2e5fd"
+          }
+        },
+        {
+          "name": "model_001",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_001/policy.npz",
+            "sha256": "sha256:9119598f383650373e09daef85f29bc510eb608802faa75cb3b242b508fcc367"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_001/result.json",
+            "sha256": "sha256:75750a905c5bde385d2bf035d49029b65d5f421cbf704d282423dce9bf195ef6"
+          }
+        },
+        {
+          "name": "model_002",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_002/policy.npz",
+            "sha256": "sha256:4a8e5d638ab9c39b8640c6dd224d5fa8c4ddbf4de42404bb545926fa9814221d"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_002/result.json",
+            "sha256": "sha256:f5bbb5737254974ec5defae61f707389e27b76d649389180d773ca378294e5fd"
+          }
+        }
+      ],
+      "passed": 14,
+      "recorded_steps": 27416,
+      "reused_original_steps": 0,
+      "run_id": "seed93201_observation_curriculum",
+      "unassessed_intents": 0,
+      "unique_intents": 23,
+      "unknown_recorded_step_attempts": 0
+    },
+    {
+      "additional_recorded_steps_beyond_ledger_v8": 27416,
+      "already_in_ledger_v8_steps": 0,
+      "assessed": 23,
+      "assessed_unknown": 0,
+      "assigned": 39,
+      "complete": 23,
+      "conservative_intent_charge": 27416,
+      "failed": 2,
+      "known_partial_failures": 0,
+      "models": [
+        {
+          "name": "model_000",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_000/policy.npz",
+            "sha256": "sha256:bd3484cc3e5c9c0b88d57bdbc8895efb7102904cd8ee4b270b1fcc31e1e10ea0"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_000/result.json",
+            "sha256": "sha256:2e65353f48f78e1b341b492271ab27f5d4721f9a8412dec1346309449556352a"
+          }
+        },
+        {
+          "name": "model_001",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_001/policy.npz",
+            "sha256": "sha256:27c0237bbf927634e11adeda50ea6fa0952680479ac97f3f600fcca2b3d14a4a"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_001/result.json",
+            "sha256": "sha256:3d2dc6648fabfb8eb6f6761b0013e01e945015d17397a90633a10a1c92c2faa3"
+          }
+        },
+        {
+          "name": "model_002",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_002/policy.npz",
+            "sha256": "sha256:b5b86400bf93c4727286318197862aacf6397f50d2a543a75dee94b9e574bf27"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_002/result.json",
+            "sha256": "sha256:206df5d0916c00e77d0e11d17fd27b7dbcd528349170fcc1c21e1d035f7a0d8f"
+          }
+        }
+      ],
+      "passed": 21,
+      "recorded_steps": 27416,
+      "reused_original_steps": 0,
+      "run_id": "seed93202_uniform",
+      "unassessed_intents": 0,
+      "unique_intents": 23,
+      "unknown_recorded_step_attempts": 0
+    },
+    {
+      "additional_recorded_steps_beyond_ledger_v8": 27416,
+      "already_in_ledger_v8_steps": 0,
+      "assessed": 23,
+      "assessed_unknown": 0,
+      "assigned": 39,
+      "complete": 23,
+      "conservative_intent_charge": 27416,
+      "failed": 4,
+      "known_partial_failures": 0,
+      "models": [
+        {
+          "name": "model_000",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_000/policy.npz",
+            "sha256": "sha256:bd3484cc3e5c9c0b88d57bdbc8895efb7102904cd8ee4b270b1fcc31e1e10ea0"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_000/result.json",
+            "sha256": "sha256:beed4042cbf2423f9742cf8221e214244499ffdffd8cfed9849a9ba571bb485b"
+          }
+        },
+        {
+          "name": "model_001",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_001/policy.npz",
+            "sha256": "sha256:cb27f105ecdcc89bbf96969c8792384a90b3a2323eb69bdcf06a0f3a208f8e5b"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_001/result.json",
+            "sha256": "sha256:6c99615b08d6d7d422e19ec5f9d8103eef39b3dd0cd539b7bfc9e13692f60ffa"
+          }
+        },
+        {
+          "name": "model_002",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_002/policy.npz",
+            "sha256": "sha256:e72db73e8917f694669645a098a7684226009b60bab7e78263fb58a8ffdee5a1"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_002/result.json",
+            "sha256": "sha256:207bb5fef5daf21c7c24fec4a27a757ba69bb4059262f2a65c14173624a4dc29"
+          }
+        }
+      ],
+      "passed": 19,
+      "recorded_steps": 27416,
+      "reused_original_steps": 0,
+      "run_id": "seed93202_target_only",
+      "unassessed_intents": 0,
+      "unique_intents": 23,
+      "unknown_recorded_step_attempts": 0
+    },
+    {
+      "additional_recorded_steps_beyond_ledger_v8": 27416,
+      "already_in_ledger_v8_steps": 0,
+      "assessed": 23,
+      "assessed_unknown": 0,
+      "assigned": 39,
+      "complete": 23,
+      "conservative_intent_charge": 27416,
+      "failed": 5,
+      "known_partial_failures": 0,
+      "models": [
+        {
+          "name": "model_000",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_000/policy.npz",
+            "sha256": "sha256:bd3484cc3e5c9c0b88d57bdbc8895efb7102904cd8ee4b270b1fcc31e1e10ea0"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_000/result.json",
+            "sha256": "sha256:29327d587870c3b7ce7bf5c15617cee65f028fc464c1fcb3b392c9ebbe684fbc"
+          }
+        },
+        {
+          "name": "model_001",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_001/policy.npz",
+            "sha256": "sha256:cb27f105ecdcc89bbf96969c8792384a90b3a2323eb69bdcf06a0f3a208f8e5b"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_001/result.json",
+            "sha256": "sha256:aa6c57f04c3da1c9836a85f8136629f98d807915a3be08055cf95dad291229e2"
+          }
+        },
+        {
+          "name": "model_002",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_002/policy.npz",
+            "sha256": "sha256:5c9210ec6db137e23098e77f7175d693c9135d69bc2d3a5d4307c20d428c1283"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_002/result.json",
+            "sha256": "sha256:49f4bd294d29efc8c3539db5f4026be740689c77f55fcaf51661ca5e38513320"
+          }
+        }
+      ],
+      "passed": 18,
+      "recorded_steps": 27416,
+      "reused_original_steps": 0,
+      "run_id": "seed93202_analytic_contrast",
+      "unassessed_intents": 0,
+      "unique_intents": 23,
+      "unknown_recorded_step_attempts": 0
+    },
+    {
+      "additional_recorded_steps_beyond_ledger_v8": 17880,
+      "already_in_ledger_v8_steps": 0,
+      "assessed": 15,
+      "assessed_unknown": 0,
+      "assigned": 39,
+      "complete": 15,
+      "conservative_intent_charge": 17880,
+      "failed": 4,
+      "known_partial_failures": 0,
+      "models": [
+        {
+          "name": "model_000",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_000/policy.npz",
+            "sha256": "sha256:bd3484cc3e5c9c0b88d57bdbc8895efb7102904cd8ee4b270b1fcc31e1e10ea0"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_000/result.json",
+            "sha256": "sha256:cd9a084eccb54c297f4d3a67600285ee667c1a3008a32f4789270a184e02c498"
+          }
+        },
+        {
+          "name": "model_001",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_001/policy.npz",
+            "sha256": "sha256:99de1af9c2ef23e997d996b59fcfb607a36764317c3d3689165a836a5a683073"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_001/result.json",
+            "sha256": "sha256:17d59169b063d50fef0f63e6f49e1487680966cd2fbdaa3b011a6fad3478e061"
+          }
+        }
+      ],
+      "passed": 11,
+      "recorded_steps": 17880,
+      "reused_original_steps": 0,
+      "run_id": "seed93202_observation_curriculum",
+      "unassessed_intents": 0,
+      "unique_intents": 15,
+      "unknown_recorded_step_attempts": 0
+    },
+    {
+      "additional_recorded_steps_beyond_ledger_v8": 17880,
+      "already_in_ledger_v8_steps": 0,
+      "assessed": 15,
+      "assessed_unknown": 0,
+      "assigned": 39,
+      "complete": 15,
+      "conservative_intent_charge": 17880,
+      "failed": 2,
+      "known_partial_failures": 0,
+      "models": [
+        {
+          "name": "model_000",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_000/policy.npz",
+            "sha256": "sha256:925a4e2e890c2a07203ef8658ae9d14bae14a729e19224a46635caf445fc77de"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_000/result.json",
+            "sha256": "sha256:cea482713f576667a4c0069ed80107a4ec2009ba5708825f6dceee35351013e2"
+          }
+        },
+        {
+          "name": "model_001",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_001/policy.npz",
+            "sha256": "sha256:fd472738aa05da7cdd85bb7d1b0fc1030a39acb24fda0511fc48b0ecc0ea04f4"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_001/result.json",
+            "sha256": "sha256:929ad1c6a17eefca8b0a33402eb309f083d420d54f15a72ffe92ad55a7568878"
+          }
+        }
+      ],
+      "passed": 13,
+      "recorded_steps": 17880,
+      "reused_original_steps": 0,
+      "run_id": "seed93203_uniform",
+      "unassessed_intents": 0,
+      "unique_intents": 15,
+      "unknown_recorded_step_attempts": 0
+    },
+    {
+      "additional_recorded_steps_beyond_ledger_v8": 27416,
+      "already_in_ledger_v8_steps": 0,
+      "assessed": 23,
+      "assessed_unknown": 0,
+      "assigned": 39,
+      "complete": 23,
+      "conservative_intent_charge": 27416,
+      "failed": 5,
+      "known_partial_failures": 0,
+      "models": [
+        {
+          "name": "model_000",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_000/policy.npz",
+            "sha256": "sha256:925a4e2e890c2a07203ef8658ae9d14bae14a729e19224a46635caf445fc77de"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_000/result.json",
+            "sha256": "sha256:53fe69a5258074cb5b6f39234ede0a22ed95692dbc708006c8b428452855ff80"
+          }
+        },
+        {
+          "name": "model_001",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_001/policy.npz",
+            "sha256": "sha256:8819dbcb2a45111c6c1863b6b242d0a067f40c1449f51779591d1a56f4b3fce9"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_001/result.json",
+            "sha256": "sha256:9d9ec5111b884a6651385629998d208ad7e5d1eeb2b63c14bcf7522ac8095415"
+          }
+        },
+        {
+          "name": "model_002",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_002/policy.npz",
+            "sha256": "sha256:daed748888963bcf8ffc2df8b32544b7c5a658deff6d0550f93206e88f8ba44a"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_002/result.json",
+            "sha256": "sha256:087fba193134c39c40ae0c4fdadd71727bfb02a0d04c43fbf9726d5d9f6850dc"
+          }
+        }
+      ],
+      "passed": 18,
+      "recorded_steps": 27416,
+      "reused_original_steps": 0,
+      "run_id": "seed93203_target_only",
+      "unassessed_intents": 0,
+      "unique_intents": 23,
+      "unknown_recorded_step_attempts": 0
+    },
+    {
+      "additional_recorded_steps_beyond_ledger_v8": 19072,
+      "already_in_ledger_v8_steps": 8344,
+      "assessed": 23,
+      "assessed_unknown": 0,
+      "assigned": 39,
+      "complete": 23,
+      "conservative_intent_charge": 27416,
+      "failed": 5,
+      "known_partial_failures": 0,
+      "models": [
+        {
+          "name": "model_000",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_000/policy.npz",
+            "sha256": "sha256:925a4e2e890c2a07203ef8658ae9d14bae14a729e19224a46635caf445fc77de"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_000/result.json",
+            "sha256": "sha256:08312d18351b325e94cce89237295a5355df6ee83282357f73d2927b09bdebce"
+          }
+        },
+        {
+          "name": "model_001",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_001/policy.npz",
+            "sha256": "sha256:b2b7f46ca1bed438ff8ed7f8caf1787efd14b857b9165de661a83cdf6088ed37"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_001/result.json",
+            "sha256": "sha256:28db7bebaafc0ce3d16d6248db8b726f7cdd33819f82714d0f286a57029a18c1"
+          }
+        },
+        {
+          "name": "model_002",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_002/policy.npz",
+            "sha256": "sha256:566b16ed7b9726fe35b724bdf3efc35bef67ce9e33e9b5e23d2f3966451f5f29"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_002/result.json",
+            "sha256": "sha256:430e22998c1aa6c88211014e69b284b960d8066833b7d118d859393ac1869dae"
+          }
+        }
+      ],
+      "passed": 18,
+      "recorded_steps": 27416,
+      "reused_original_steps": 8344,
+      "run_id": "seed93203_analytic_contrast",
+      "unassessed_intents": 0,
+      "unique_intents": 23,
+      "unknown_recorded_step_attempts": 0
+    },
+    {
+      "additional_recorded_steps_beyond_ledger_v8": 27416,
+      "already_in_ledger_v8_steps": 0,
+      "assessed": 23,
+      "assessed_unknown": 0,
+      "assigned": 39,
+      "complete": 23,
+      "conservative_intent_charge": 27416,
+      "failed": 5,
+      "known_partial_failures": 0,
+      "models": [
+        {
+          "name": "model_000",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_000/policy.npz",
+            "sha256": "sha256:925a4e2e890c2a07203ef8658ae9d14bae14a729e19224a46635caf445fc77de"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_000/result.json",
+            "sha256": "sha256:df37ffa6560083ebdcaf50ea35e914b161c3f31a8bdcfee6bc46b2b422480efd"
+          }
+        },
+        {
+          "name": "model_001",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_001/policy.npz",
+            "sha256": "sha256:c0daa593a5faf30a6cc3036140956e913e918f1d6815106ef79bdb6764565fb7"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_001/result.json",
+            "sha256": "sha256:aed13def2bcec66bf11ba8fafeea2e2730d951dcfcad4a313811dfc317d95db7"
+          }
+        },
+        {
+          "name": "model_002",
+          "policy": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_002/policy.npz",
+            "sha256": "sha256:f239a0b481107f52b9bfc9c8b5810770001af1a72bac8f9c9d7f49096ed35b0c"
+          },
+          "result": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_002/result.json",
+            "sha256": "sha256:cfde92feba37a44a3cbce14b80fc0016ce06ca07360d958ad63120f6717e6b35"
+          }
+        }
+      ],
+      "passed": 18,
+      "recorded_steps": 27416,
+      "reused_original_steps": 0,
+      "run_id": "seed93203_observation_curriculum",
+      "unassessed_intents": 0,
+      "unique_intents": 23,
+      "unknown_recorded_step_attempts": 0
+    }
+  ],
+  "adoption": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json",
+    "sha256": "sha256:f5e69567fc3984b0a6afb0cc896e63d9281a5fba39d629710c1c5780e1ed9860"
+  },
+  "completed_models": 32,
+  "count_rule": "Original canonical capture path plus hash; matching reused receipts are counted once. Equal bytes from distinct actual capture paths remain distinct. Missing counts remain unknown, never zero-filled.",
+  "duplicate_receipt_sightings": [],
+  "expected_adoption_path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json",
+  "ledger": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-traversal-acquisition-ledger-v8.json",
+    "sha256": "sha256:b67dad2dd088d1c9d42027fc705330925634fd6dec160808105bfd12238c25b9"
+  },
+  "ledger_rule": "V8 already includes the original seven bootstrap captures. Add only additional_recorded_steps_beyond_ledger_v8 when extending that ledger.",
+  "new_physics_steps_by_monitor": 0,
+  "plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-tie-proposed-v5/plan.json",
+    "sha256": "sha256:aacce6a9a2c2b3fc5bf6b674b5ede46d6fee61ac7ad205553554c4210d3d4508"
+  },
+  "predecessor_presimulator_recorded_steps": 0,
+  "predecessor_separate_reserved_steps": 1192,
+  "schema": "motion2scene_primary_operational_monitor_v2",
+  "scope": "Read-only controller assessment and capture-identity summary; no physical scoring recomputation, model selection, outcome-based action or launch.",
+  "status": "adopted_plan_monitor",
+  "totals": {
+    "additional_recorded_steps_beyond_ledger_v8": 290848,
+    "already_in_ledger_v8_steps": 8344,
+    "assessed": 251,
+    "assessed_unknown": 0,
+    "assigned": 468,
+    "complete": 251,
+    "conservative_intent_charge": 300384,
+    "failed": 59,
+    "known_partial_failures": 0,
+    "passed": 192,
+    "recorded_steps": 299192,
+    "reused_original_steps": 8344,
+    "unassessed_intents": 1,
+    "unique_intents": 252,
+    "unknown_recorded_step_attempts": 1
+  },
+  "utc": "2026-09-09T18:17:41.548475+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "limits": "This is a visual/layout check, not an independent review or portal receipt.",
+  "method": "Rendered all pages at 1400-pixel height; inspected all four figures and six tables. Reinspected Figure 4 after correcting an overlapping legend.",
+  "no_detected_clipping_or_overlapping_labels": true,
+  "no_visible_identifying_authorship": true,
+  "pdf": {
+    "bytes": 149719,
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/paper.pdf",
+    "sha256": "sha256:ce7d9806a55a529f6948cea0ef7e9ca42f155c922cefcdb3f757105d6e7d995a"
+  },
+  "pdf_pages_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "recorded_at_utc": "2026-09-08T05:23:52.973901+00:00",
+  "reviewed_by": "drafting agent; not independent scientific review",
+  "video": {
+    "bytes": 2571186,
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/motion2scene-anonymous.mp4",
+    "sha256": "sha256:c9d093d9be1ff94887153d5b38d8ebe928706d4d0dfda1ec1d72ae4a29658d48"
+  },
+  "video_inspection": "Training and missed-adaptation replay previews, observability card; metadata and all-frame progressive scan checked separately. Captions generated from pinned records."
+}

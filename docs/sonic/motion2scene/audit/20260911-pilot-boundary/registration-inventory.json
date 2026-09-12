@@ -1,0 +1,20 @@
+[
+  {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-support-pilot-plan-20260910-v1/plan.json",
+    "mtime_ns": 1789066362662323411,
+    "sha256": "2ad428d49229ed5512d3d68c8857f6378940306eda66f93264f806a987b69c66",
+    "chronology": "Filesystem timestamp and present hash are not independent preregistration evidence."
+  },
+  {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-support-validation-panel-20260910-v1/study.json",
+    "mtime_ns": 1789088457151078120,
+    "sha256": "e5bddf552bea3210641d07f996a8657f5f706b8ae89438ae3d3b2077887cfca4",
+    "chronology": "Filesystem timestamp and present hash are not independent preregistration evidence."
+  },
+  {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-support-validation-sample-20260910-v1/registration.json",
+    "mtime_ns": 1789066130350161095,
+    "sha256": "7ecc896daf6ec9129336e7755fbf1e7fcde5f2e28456e0c11b4c15365b01a15e",
+    "chronology": "Filesystem timestamp and present hash are not independent preregistration evidence."
+  }
+]

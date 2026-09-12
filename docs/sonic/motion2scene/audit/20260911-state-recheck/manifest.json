@@ -1,0 +1,35 @@
+{
+  "scope": "Fresh state recheck; no physics; original audit preserved",
+  "artifacts": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-state-recheck/README.md",
+      "sha256": "685b3014ac818cedcee505f50be12a09ff33652c9acdabc7e5a4efa787037746",
+      "bytes": 6755
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-state-recheck/gpu-snapshot.txt",
+      "sha256": "f06cda16bf8c668bc1ea3e306bc13ea3542d55a6f0dd96b635756c4cfc4b5a1f",
+      "bytes": 155
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-state-recheck/tests.log",
+      "sha256": "cc5bdcddcf036d3663875b4360fb08125951d4755e70a0a6f48d867dba7057cd",
+      "bytes": 99
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-state-recheck/verification.json",
+      "sha256": "b4f16d5a26cf4b07172aad6c10a41cc72b6ed40c0251e4faee230e55fd4f6556",
+      "bytes": 16288
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-state-recheck/verify.py",
+      "sha256": "1b35c5d296a5098c49a601bc36bc60f3bc00aaa5c0589f93534bbeddc977eaac",
+      "bytes": 2944
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/audit/20260911-state-recheck/working-tree-status.txt",
+      "sha256": "1cac7a8b61ba79aa9bd779ff9b7b245bf57ef4d5956b1987f1a7696b70f69758",
+      "bytes": 26904
+    }
+  ]
+}

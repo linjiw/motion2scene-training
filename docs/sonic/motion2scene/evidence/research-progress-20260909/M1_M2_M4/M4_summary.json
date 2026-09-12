@@ -1,0 +1,1140 @@
+{
+  "schema": "motion2scene_M4_completed_evidence_summary_v1",
+  "audit": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M4-20260909-v1/result.json",
+    "sha256": "sha256:e0340577761b4a26ac74204bcabbb8e9344740aa756b09157fe44abbc3bbad50"
+  },
+  "readout_completion": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-checkpoint-readouts-20260909-v1/M4/complete.json",
+    "sha256": "sha256:11c1067576a81dbbba682ab27e7288e27838c857f4ce833461ce71aac2acb26a"
+  },
+  "renderer": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M1-M2-M4-acquisition-evidence-20260910-v1/result.json",
+    "sha256": "sha256:28367416de4f01b42d49de1651d0b714a6999cc882e6f597ce9a6dbc344b4ea8"
+  },
+  "assigned_acquisition_episodes": 468,
+  "recorded_physics_steps": 557856,
+  "steps_per_corpus": 46488,
+  "steps_per_arm": 139464,
+  "unknown_branch_outcomes": 0,
+  "bank_unsolvable_assigned_tasks": 0,
+  "unique_condition_capability": {
+    "assigned_tasks": 34,
+    "complete": true,
+    "bank_solvable_lower": 34,
+    "bank_solvable_upper": 34,
+    "bank_unsolvable": 0,
+    "unknown_branch_outcomes": 0,
+    "adaptation_required_lower": 16,
+    "fixed_schedules": {
+      "neutral": {
+        "passes": 18,
+        "failures": 16,
+        "unknown": 0
+      },
+      "prior_splice_e015_r265": {
+        "passes": 32,
+        "failures": 2,
+        "unknown": 0
+      },
+      "prior_splice_e050_r265": {
+        "passes": 32,
+        "failures": 2,
+        "unknown": 0
+      },
+      "short_e015_r265": {
+        "passes": 23,
+        "failures": 11,
+        "unknown": 0
+      },
+      "short_e070_r265": {
+        "passes": 23,
+        "failures": 11,
+        "unknown": 0
+      },
+      "sustained_e015_r255": {
+        "passes": 28,
+        "failures": 6,
+        "unknown": 0
+      },
+      "sustained_e070_r255": {
+        "passes": 29,
+        "failures": 5,
+        "unknown": 0
+      }
+    },
+    "best_fixed_passages_lower": 32,
+    "best_fixed_passages_upper": 32,
+    "best_fixed_schedule_ids": [
+      "prior_splice_e015_r265",
+      "prior_splice_e050_r265"
+    ],
+    "capability_minus_best_fixed_lower": 2,
+    "capability_minus_best_fixed_upper": 2,
+    "minimum_cover_size": 2,
+    "minimum_schedule_covers": [
+      [
+        "prior_splice_e015_r265",
+        "sustained_e015_r255"
+      ],
+      [
+        "prior_splice_e015_r265",
+        "sustained_e070_r255"
+      ],
+      [
+        "prior_splice_e050_r265",
+        "sustained_e015_r255"
+      ],
+      [
+        "prior_splice_e050_r265",
+        "sustained_e070_r255"
+      ]
+    ],
+    "one_fixed_covers_every_solvable_task": false,
+    "passing_set_patterns": [
+      {
+        "schedules": [
+          "neutral",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e015_r265",
+          "short_e070_r265",
+          "sustained_e015_r255",
+          "sustained_e070_r255"
+        ],
+        "tasks": 18
+      },
+      {
+        "schedules": [
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265"
+        ],
+        "tasks": 5
+      },
+      {
+        "schedules": [
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e015_r265",
+          "short_e070_r265",
+          "sustained_e015_r255",
+          "sustained_e070_r255"
+        ],
+        "tasks": 4
+      },
+      {
+        "schedules": [
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e015_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "tasks": 1
+      },
+      {
+        "schedules": [
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e015_r255",
+          "sustained_e070_r255"
+        ],
+        "tasks": 4
+      },
+      {
+        "schedules": [
+          "sustained_e015_r255",
+          "sustained_e070_r255"
+        ],
+        "tasks": 2
+      }
+    ],
+    "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance"
+  },
+  "unique_conditions": [
+    {
+      "geometry_key": "sha256:d1d96346aa3a4a34ebf46c2bfad2be3ba1ba0b7426a7d4d2405a7e6bb939cb22",
+      "seed": 93201,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93201_uniform",
+          "round": 1,
+          "candidate_id": "primary_candidate_93201_0000"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:6dd9c686b2453e5be240712f863d142acbd993d4845eba13bd43cf6fbc7b1eae",
+      "seed": 93201,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93201_uniform",
+          "round": 2,
+          "candidate_id": "primary_candidate_93201_0006"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:02c2b7c8670a7fe351f89b4ef490333fb525c12e8093e992d270378aa6f26255",
+      "seed": 93201,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93201_uniform",
+          "round": 3,
+          "candidate_id": "primary_candidate_93201_0002"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:9794281cb394cb3adea39a5ab952c43debd00754cf91231b78adfcb0c8d8a739",
+      "seed": 93201,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "failure",
+        "short_e070_r265": "failure",
+        "sustained_e015_r255": "failure",
+        "sustained_e070_r255": "failure"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93201_uniform",
+          "round": 4,
+          "candidate_id": "primary_candidate_93201_0009"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:272eb4397a0ccd11868e1cb993d745c2498afc0a65fae74789d888a5561d5dd1",
+      "seed": 93201,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "failure",
+        "prior_splice_e050_r265": "failure",
+        "short_e015_r265": "failure",
+        "short_e070_r265": "failure",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93201_target_only",
+          "round": 1,
+          "candidate_id": "primary_candidate_93201_0155"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:d9e41b59380dbb767045d23d7b9cd09e236d9d2db7a181890ecc4a8af3a2b2d1",
+      "seed": 93201,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93201_target_only",
+          "round": 2,
+          "candidate_id": "primary_candidate_93201_0141"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:4604cd47bfc63ef6ec2426975750e0ce4c5ccf1161e66595e4ed7d6c459e8103",
+      "seed": 93201,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93201_target_only",
+          "round": 3,
+          "candidate_id": "primary_candidate_93201_0152"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:f0bfadab08cd1875d24e8e916be5519d16b1030395fb2d45749bd9133dd0ee20",
+      "seed": 93201,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93201_target_only",
+          "round": 4,
+          "candidate_id": "primary_candidate_93201_0129"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:993f44b4919fa1d55547d8e6dd3832b2f7827e537b1b83656c99aa1f354a9e3b",
+      "seed": 93201,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "failure",
+        "short_e070_r265": "failure",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93201_analytic_contrast",
+          "round": 1,
+          "candidate_id": "primary_candidate_93201_0010"
+        },
+        {
+          "run_id": "seed93201_observation_curriculum",
+          "round": 1,
+          "candidate_id": "primary_candidate_93201_0010"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:49c05ca7cee835c5064a0db8b45345ff5f7d87c56e8d22d8ada05ef7cbc85798",
+      "seed": 93201,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "failure",
+        "short_e070_r265": "failure",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93201_analytic_contrast",
+          "round": 2,
+          "candidate_id": "primary_candidate_93201_0016"
+        },
+        {
+          "run_id": "seed93201_observation_curriculum",
+          "round": 2,
+          "candidate_id": "primary_candidate_93201_0016"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:08e5fbe2ded62b2064f38ce88b82ce7ede615b8d309e613327689a4005feba64",
+      "seed": 93201,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "failure",
+        "short_e070_r265": "failure",
+        "sustained_e015_r255": "failure",
+        "sustained_e070_r255": "failure"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93201_analytic_contrast",
+          "round": 3,
+          "candidate_id": "primary_candidate_93201_0017"
+        },
+        {
+          "run_id": "seed93201_observation_curriculum",
+          "round": 3,
+          "candidate_id": "primary_candidate_93201_0017"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:32dcfda4b82fc95a38b880bfe6b78f82d132c1dfd7aeafc803210914e203d858",
+      "seed": 93201,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "failure",
+        "short_e070_r265": "failure",
+        "sustained_e015_r255": "failure",
+        "sustained_e070_r255": "failure"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93201_analytic_contrast",
+          "round": 4,
+          "candidate_id": "primary_candidate_93201_0059"
+        },
+        {
+          "run_id": "seed93201_observation_curriculum",
+          "round": 4,
+          "candidate_id": "primary_candidate_93201_0059"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:9ecf23dc65adaefeee6cd28c91bbef751af8307ae1db361cd0c67327e18d1a91",
+      "seed": 93202,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93202_uniform",
+          "round": 1,
+          "candidate_id": "primary_candidate_93202_0000"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:91a4111b6cb504e7de653d0a09cb0b5864cea59b9e032a3aa91cef921d94df5b",
+      "seed": 93202,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93202_uniform",
+          "round": 2,
+          "candidate_id": "primary_candidate_93202_0011"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:d0970bbf1ec6a2b4256dbebf42a55993be70cec541023f1b8d04f476059f4ae8",
+      "seed": 93202,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93202_uniform",
+          "round": 3,
+          "candidate_id": "primary_candidate_93202_0007"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:c6d69f70c31f271e51aad811995c07171fbd23679ec01bb5c05b896e83d84579",
+      "seed": 93202,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93202_uniform",
+          "round": 4,
+          "candidate_id": "primary_candidate_93202_0054"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:69813264bea1bfc753f191fb957370edf914f21d6289778bac1a1641a555f486",
+      "seed": 93202,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93202_target_only",
+          "round": 1,
+          "candidate_id": "primary_candidate_93202_0070"
+        },
+        {
+          "run_id": "seed93202_analytic_contrast",
+          "round": 1,
+          "candidate_id": "primary_candidate_93202_0070"
+        },
+        {
+          "run_id": "seed93202_observation_curriculum",
+          "round": 1,
+          "candidate_id": "primary_candidate_93202_0070"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:5172db45ec8ef634d7c97cb219df877ec1cea9e1aa522ab79879e2aecd11c35e",
+      "seed": 93202,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93202_target_only",
+          "round": 2,
+          "candidate_id": "primary_candidate_93202_0066"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:781c1ed06c3bad54d8e434cb7d26ec4a0d41723648d220d20013655478e2ed38",
+      "seed": 93202,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93202_target_only",
+          "round": 3,
+          "candidate_id": "primary_candidate_93202_0047"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:f4031a2ddd11d9a74cd9e2283a0063ac84949cdc946eeacf5378f5d59f02f381",
+      "seed": 93202,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93202_target_only",
+          "round": 4,
+          "candidate_id": "primary_candidate_93202_0109"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:c589ed11153fa7a070cd6a04dbf79686167a7e3da4ba9af67ad0aac650aa5487",
+      "seed": 93202,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93202_analytic_contrast",
+          "round": 2,
+          "candidate_id": "primary_candidate_93202_0081"
+        },
+        {
+          "run_id": "seed93202_observation_curriculum",
+          "round": 2,
+          "candidate_id": "primary_candidate_93202_0081"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:b3589b0b85df554d99349394e16ffec4fecabd482705890c045b5d850fac8be7",
+      "seed": 93202,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "failure",
+        "short_e070_r265": "failure",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93202_analytic_contrast",
+          "round": 3,
+          "candidate_id": "primary_candidate_93202_0132"
+        },
+        {
+          "run_id": "seed93202_observation_curriculum",
+          "round": 3,
+          "candidate_id": "primary_candidate_93202_0132"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:778269255d386a0dc3b632577730a1261eceafb570bb6700401a5e42471553f5",
+      "seed": 93202,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "failure",
+        "short_e070_r265": "failure",
+        "sustained_e015_r255": "failure",
+        "sustained_e070_r255": "failure"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93202_analytic_contrast",
+          "round": 4,
+          "candidate_id": "primary_candidate_93202_0094"
+        },
+        {
+          "run_id": "seed93202_observation_curriculum",
+          "round": 4,
+          "candidate_id": "primary_candidate_93202_0094"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:2c2fa69e5c339f18c0a026639c67a562f9941b720f3ddba2d78b1c5b9b49453a",
+      "seed": 93203,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93203_uniform",
+          "round": 1,
+          "candidate_id": "primary_candidate_93203_0000"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:de464929e4b4692ba56893d25a83010f340fdb963b684aa9fb8c43ae4d1cd7c1",
+      "seed": 93203,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93203_uniform",
+          "round": 2,
+          "candidate_id": "primary_candidate_93203_0001"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:5b5385e382c23d2a43723111837e018a02eddc7397caeb78f1a5f7365c0f06a5",
+      "seed": 93203,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "failure",
+        "short_e070_r265": "failure",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93203_uniform",
+          "round": 3,
+          "candidate_id": "primary_candidate_93203_0008"
+        },
+        {
+          "run_id": "seed93203_analytic_contrast",
+          "round": 3,
+          "candidate_id": "primary_candidate_93203_0008"
+        },
+        {
+          "run_id": "seed93203_observation_curriculum",
+          "round": 3,
+          "candidate_id": "primary_candidate_93203_0008"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:0a1ef317f07596e64fc591fba998d72ae700a1430bca431ad5c35f479e94f45a",
+      "seed": 93203,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93203_uniform",
+          "round": 4,
+          "candidate_id": "primary_candidate_93203_0014"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:67f6bda9a6df99e015096fb6c79b079864ec09a82ff1458386c5a91dd20d52af",
+      "seed": 93203,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "failure",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93203_target_only",
+          "round": 1,
+          "candidate_id": "primary_candidate_93203_0035"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:fe88849b86a947415ecebd5e294a3b794d4286193426bb378ecd8e48797c6a5b",
+      "seed": 93203,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93203_target_only",
+          "round": 2,
+          "candidate_id": "primary_candidate_93203_0116"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:9fd4380b43c8a654d48233800cac2d50549418c7fb2e10f4e92e2e63f1e5ffe4",
+      "seed": 93203,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "failure",
+        "prior_splice_e050_r265": "failure",
+        "short_e015_r265": "failure",
+        "short_e070_r265": "failure",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93203_target_only",
+          "round": 3,
+          "candidate_id": "primary_candidate_93203_0148"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:341a8e621a36a64cffe00443742ee418ade5c4f6d8d53ac7f08968ff2ce0c079",
+      "seed": 93203,
+      "outcomes": {
+        "neutral": "pass",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93203_target_only",
+          "round": 4,
+          "candidate_id": "primary_candidate_93203_0119"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:ca10be04b3f4a06e34dc6728626d45555bceeb79e23d75e0cc2bc938c0407120",
+      "seed": 93203,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93203_analytic_contrast",
+          "round": 1,
+          "candidate_id": "primary_candidate_93203_0135"
+        },
+        {
+          "run_id": "seed93203_observation_curriculum",
+          "round": 1,
+          "candidate_id": "primary_candidate_93203_0135"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:ac6e6ff5ad9afac7e06e0d5ee51b851a96d4b265a1a6751cc701cd767137d02c",
+      "seed": 93203,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "pass",
+        "short_e070_r265": "pass",
+        "sustained_e015_r255": "pass",
+        "sustained_e070_r255": "pass"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93203_analytic_contrast",
+          "round": 2,
+          "candidate_id": "primary_candidate_93203_0046"
+        },
+        {
+          "run_id": "seed93203_observation_curriculum",
+          "round": 2,
+          "candidate_id": "primary_candidate_93203_0046"
+        }
+      ]
+    },
+    {
+      "geometry_key": "sha256:cd6399cd913b2b4861b1863a014aff2fb7138c8ba23a720299db8059ad1efe15",
+      "seed": 93203,
+      "outcomes": {
+        "neutral": "failure",
+        "prior_splice_e015_r265": "pass",
+        "prior_splice_e050_r265": "pass",
+        "short_e015_r265": "failure",
+        "short_e070_r265": "failure",
+        "sustained_e015_r255": "failure",
+        "sustained_e070_r255": "failure"
+      },
+      "assigned_occurrences": [
+        {
+          "run_id": "seed93203_analytic_contrast",
+          "round": 4,
+          "candidate_id": "primary_candidate_93203_0054"
+        },
+        {
+          "run_id": "seed93203_observation_curriculum",
+          "round": 4,
+          "candidate_id": "primary_candidate_93203_0054"
+        }
+      ]
+    }
+  ],
+  "cross_corpus_rows": [
+    {
+      "arm": "uniform",
+      "bank_capability": 22,
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_004/result.json",
+        "sha256": "sha256:b4eb0868ba0479528bbb8b1792c25d9af18c051616d17372fd655dd7c6a867c9"
+      },
+      "constant_prior_passages": 21,
+      "contexts": 22,
+      "mean_paired_proxy_time_difference_s": 0.010476190476190464,
+      "mutually_successful_contexts": 21,
+      "passing_branch_proxies": 21,
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_004/policy.npz",
+        "sha256": "sha256:69b9c8593e4ac2509935dc921e179fa28f0f2cc3102fbad838cffc0783e93a4f"
+      },
+      "run_id": "seed93201_uniform",
+      "seed": 93201
+    },
+    {
+      "arm": "target_only",
+      "bank_capability": 22,
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_004/result.json",
+        "sha256": "sha256:d4b0fe9af32704575f7ff0cc3c9d347dc27decc3c1c78abf93e921dc82d4c5fb"
+      },
+      "constant_prior_passages": 21,
+      "contexts": 22,
+      "mean_paired_proxy_time_difference_s": 0.15249999999999986,
+      "mutually_successful_contexts": 16,
+      "passing_branch_proxies": 16,
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_004/policy.npz",
+        "sha256": "sha256:d5352218ca133790784ffe65de03d5da354e99d31f2f26460320dba80f97f0ce"
+      },
+      "run_id": "seed93201_target_only",
+      "seed": 93201
+    },
+    {
+      "arm": "analytic_contrast",
+      "bank_capability": 22,
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_004/result.json",
+        "sha256": "sha256:ac0b24df1beb2fa65da8f9039320d0505a03b67660c742124d001c8a4cc7053d"
+      },
+      "constant_prior_passages": 21,
+      "contexts": 22,
+      "mean_paired_proxy_time_difference_s": 0.010476190476190464,
+      "mutually_successful_contexts": 21,
+      "passing_branch_proxies": 21,
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_004/policy.npz",
+        "sha256": "sha256:f59f2c70f0b29ca0eb651399403df64505a3db28dedd5c1b0e229b64572950f1"
+      },
+      "run_id": "seed93201_analytic_contrast",
+      "seed": 93201
+    },
+    {
+      "arm": "observation_curriculum",
+      "bank_capability": 22,
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_004/result.json",
+        "sha256": "sha256:b674d121622dbe038ffb6567d0f8c2b7898a53aef40b1d66cd0f915eadbc321b"
+      },
+      "constant_prior_passages": 21,
+      "contexts": 22,
+      "mean_paired_proxy_time_difference_s": 0.010476190476190464,
+      "mutually_successful_contexts": 21,
+      "passing_branch_proxies": 21,
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_004/policy.npz",
+        "sha256": "sha256:35a3833245da6075f68fb5027f006a126a5ec9823a1ccd0a7f9cf2def0da2b0e"
+      },
+      "run_id": "seed93201_observation_curriculum",
+      "seed": 93201
+    },
+    {
+      "arm": "uniform",
+      "bank_capability": 23,
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_004/result.json",
+        "sha256": "sha256:12b08500e1c179a4ca11e128d52144f1d6ae656a9dd52a13de1bf0cb7427b9a7"
+      },
+      "constant_prior_passages": 21,
+      "contexts": 23,
+      "mean_paired_proxy_time_difference_s": 0.0,
+      "mutually_successful_contexts": 21,
+      "passing_branch_proxies": 21,
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_004/policy.npz",
+        "sha256": "sha256:eaa697601b66cef7a263e4d46a29a3f9b7170d5889653327464f51740e449163"
+      },
+      "run_id": "seed93202_uniform",
+      "seed": 93202
+    },
+    {
+      "arm": "target_only",
+      "bank_capability": 23,
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_004/result.json",
+        "sha256": "sha256:8d54fb1895015bd6d7e3815e7cf527a56d17a61822c64541cda3e4485dee7c89"
+      },
+      "constant_prior_passages": 21,
+      "contexts": 23,
+      "mean_paired_proxy_time_difference_s": 0.0,
+      "mutually_successful_contexts": 21,
+      "passing_branch_proxies": 21,
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_004/policy.npz",
+        "sha256": "sha256:342a3b9975920f18746600a104d5c41e4a692deed842d105e382a004baafa49b"
+      },
+      "run_id": "seed93202_target_only",
+      "seed": 93202
+    },
+    {
+      "arm": "analytic_contrast",
+      "bank_capability": 23,
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_004/result.json",
+        "sha256": "sha256:65098295f529595e7855841998bc3f66060063153262e74026cbf2f522311440"
+      },
+      "constant_prior_passages": 21,
+      "contexts": 23,
+      "mean_paired_proxy_time_difference_s": 0.0,
+      "mutually_successful_contexts": 21,
+      "passing_branch_proxies": 21,
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_004/policy.npz",
+        "sha256": "sha256:dab1b7b93e258b73f4047d537ea2ff9bd1767c8ecf3d2d244ab15d1d5fd2f3c1"
+      },
+      "run_id": "seed93202_analytic_contrast",
+      "seed": 93202
+    },
+    {
+      "arm": "observation_curriculum",
+      "bank_capability": 23,
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_004/result.json",
+        "sha256": "sha256:e9e6ff5de49821502202906edcc04f9ca0d6a21b2f94bd6897515f52ccb3593e"
+      },
+      "constant_prior_passages": 21,
+      "contexts": 23,
+      "mean_paired_proxy_time_difference_s": 0.0,
+      "mutually_successful_contexts": 21,
+      "passing_branch_proxies": 21,
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_004/policy.npz",
+        "sha256": "sha256:41acceb15231378bd96d0820646a506190ac43ab328901130cd1d636b18e9a47"
+      },
+      "run_id": "seed93202_observation_curriculum",
+      "seed": 93202
+    },
+    {
+      "arm": "uniform",
+      "bank_capability": 23,
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_004/result.json",
+        "sha256": "sha256:746b26b7c2a45a77661ea19dcff81d572f54cffb369f3148883c0c3f3bef110e"
+      },
+      "constant_prior_passages": 22,
+      "contexts": 23,
+      "mean_paired_proxy_time_difference_s": 0.010909090909090879,
+      "mutually_successful_contexts": 22,
+      "passing_branch_proxies": 22,
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_004/policy.npz",
+        "sha256": "sha256:9843f9eefd13950ba1709dcb7147a4868b4956f44881b104c4162378a7a914d2"
+      },
+      "run_id": "seed93203_uniform",
+      "seed": 93203
+    },
+    {
+      "arm": "target_only",
+      "bank_capability": 23,
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_004/result.json",
+        "sha256": "sha256:8d20a7c92dd152c44ac73d7ce0003338b89db0ae4eccb41c7593d092c8751f13"
+      },
+      "constant_prior_passages": 22,
+      "contexts": 23,
+      "mean_paired_proxy_time_difference_s": 0.27874999999999994,
+      "mutually_successful_contexts": 16,
+      "passing_branch_proxies": 16,
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_004/policy.npz",
+        "sha256": "sha256:3417afb5eaee54e68c5827bddb66c4e6fb5bb0dddf6bd494d08d601d808fd2af"
+      },
+      "run_id": "seed93203_target_only",
+      "seed": 93203
+    },
+    {
+      "arm": "analytic_contrast",
+      "bank_capability": 23,
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_004/result.json",
+        "sha256": "sha256:a5925c2fca6e3c5d9a040326a54de2b0915e31d7740f0ae5818e1955772053e4"
+      },
+      "constant_prior_passages": 22,
+      "contexts": 23,
+      "mean_paired_proxy_time_difference_s": 0.010909090909090879,
+      "mutually_successful_contexts": 22,
+      "passing_branch_proxies": 22,
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_004/policy.npz",
+        "sha256": "sha256:08b2ab4da37c6ddb3f1a11a813a79f9c3987cd68366f4f3cd5f2a70a9d0f7bf4"
+      },
+      "run_id": "seed93203_analytic_contrast",
+      "seed": 93203
+    },
+    {
+      "arm": "observation_curriculum",
+      "bank_capability": 23,
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_004/result.json",
+        "sha256": "sha256:6f4f10ec8f6f682a9c6c6bb9e08b140df6537329fae4bb884e3a8e0918adfd75"
+      },
+      "constant_prior_passages": 22,
+      "contexts": 23,
+      "mean_paired_proxy_time_difference_s": 0.010909090909090879,
+      "mutually_successful_contexts": 22,
+      "passing_branch_proxies": 22,
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_004/policy.npz",
+        "sha256": "sha256:34229401c66d85c2346560462f2a2473e0eccbe3cf561f56d96084e5129af8c6"
+      },
+      "run_id": "seed93203_observation_curriculum",
+      "seed": 93203
+    }
+  ],
+  "all_assigned_corpora_admit_one_fixed_schedule": true,
+  "new_physics_steps": 0,
+  "new_model_fits": 0,
+  "scope": "Independent complete-prefix raw audit; cross-corpus results reuse recorded teacher branches; all assigned construction tasks retained; no held-out or newly executed policy claim"
+}

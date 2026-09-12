@@ -1,0 +1,42 @@
+[
+  {
+    "original": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_prepare_complementary_pilot.py",
+      "sha256": "sha256:1a95c755a40f132129110118481b9a47cda80d76c1b6657654dcb5d25449a87a"
+    },
+    "snapshot": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-acquisition-pilot-20260910-v1/source_snapshot/motion2scene_prepare_complementary_pilot.py",
+      "sha256": "sha256:1a95c755a40f132129110118481b9a47cda80d76c1b6657654dcb5d25449a87a"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/hallucination/motion2scene_complementary_acquisition.py",
+      "sha256": "sha256:8a5337b5093afb588da71228aa9cce799a6e8c41af525b8bca6996a1c3e1f684"
+    },
+    "snapshot": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-acquisition-pilot-20260910-v1/source_snapshot/motion2scene_complementary_acquisition.py",
+      "sha256": "sha256:8a5337b5093afb588da71228aa9cce799a6e8c41af525b8bca6996a1c3e1f684"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/hallucination/motion2scene_acquisition_pool.py",
+      "sha256": "sha256:153f2eabce01a5e4559d1bbb78f7662c74386a9459ec292b6f53052d93e60f31"
+    },
+    "snapshot": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-acquisition-pilot-20260910-v1/source_snapshot/motion2scene_acquisition_pool.py",
+      "sha256": "sha256:153f2eabce01a5e4559d1bbb78f7662c74386a9459ec292b6f53052d93e60f31"
+    }
+  },
+  {
+    "original": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_cross_corpus_readout.py",
+      "sha256": "sha256:068599c8b27b24a89503bac7218a662a150ec2dd4dbccc1bfa9fb194e9938811"
+    },
+    "snapshot": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-acquisition-pilot-20260910-v1/source_snapshot/motion2scene_cross_corpus_readout.py",
+      "sha256": "sha256:068599c8b27b24a89503bac7218a662a150ec2dd4dbccc1bfa9fb194e9938811"
+    }
+  }
+]

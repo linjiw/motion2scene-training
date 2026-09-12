@@ -1,0 +1,98 @@
+[
+  {
+    "architecture": "unconditional",
+    "seed": 101,
+    "draws": 56,
+    "parameters": 4,
+    "train_seconds": 0.6738108129993634,
+    "reconstruction_count": 5,
+    "capsule_clear_count": 20,
+    "capsule_contrast_count": 1,
+    "sampled_target_penetration_count": 36,
+    "sparse_false_clear_count": 2
+  },
+  {
+    "architecture": "mlp",
+    "seed": 101,
+    "draws": 56,
+    "parameters": 10628,
+    "train_seconds": 0.6389803920010309,
+    "reconstruction_count": 4,
+    "capsule_clear_count": 52,
+    "capsule_contrast_count": 1,
+    "sampled_target_penetration_count": 4,
+    "sparse_false_clear_count": 1
+  },
+  {
+    "architecture": "conv",
+    "seed": 101,
+    "draws": 56,
+    "parameters": 5764,
+    "train_seconds": 0.7013912689999415,
+    "reconstruction_count": 12,
+    "capsule_clear_count": 56,
+    "capsule_contrast_count": 0,
+    "sampled_target_penetration_count": 0,
+    "sparse_false_clear_count": 0
+  },
+  {
+    "architecture": "transformer",
+    "seed": 101,
+    "draws": 56,
+    "parameters": 9412,
+    "train_seconds": 0.7204835739994451,
+    "reconstruction_count": 6,
+    "capsule_clear_count": 32,
+    "capsule_contrast_count": 0,
+    "sampled_target_penetration_count": 21,
+    "sparse_false_clear_count": 2
+  },
+  {
+    "architecture": "unconditional",
+    "seed": 102,
+    "draws": 56,
+    "parameters": 4,
+    "train_seconds": 0.5917935630004649,
+    "reconstruction_count": 11,
+    "capsule_clear_count": 21,
+    "capsule_contrast_count": 4,
+    "sampled_target_penetration_count": 35,
+    "sparse_false_clear_count": 2
+  },
+  {
+    "architecture": "mlp",
+    "seed": 102,
+    "draws": 56,
+    "parameters": 10628,
+    "train_seconds": 0.6030364520011062,
+    "reconstruction_count": 7,
+    "capsule_clear_count": 56,
+    "capsule_contrast_count": 0,
+    "sampled_target_penetration_count": 0,
+    "sparse_false_clear_count": 0
+  },
+  {
+    "architecture": "conv",
+    "seed": 102,
+    "draws": 56,
+    "parameters": 5764,
+    "train_seconds": 0.6480831230001058,
+    "reconstruction_count": 8,
+    "capsule_clear_count": 56,
+    "capsule_contrast_count": 0,
+    "sampled_target_penetration_count": 0,
+    "sparse_false_clear_count": 0
+  },
+  {
+    "architecture": "transformer",
+    "seed": 102,
+    "draws": 56,
+    "parameters": 9412,
+    "train_seconds": 0.669728758999554,
+    "reconstruction_count": 5,
+    "capsule_clear_count": 55,
+    "capsule_contrast_count": 0,
+    "sampled_target_penetration_count": 0,
+    "sparse_false_clear_count": 1
+  }
+]

@@ -1,0 +1,215 @@
+{
+  "changed_rows": [
+    {
+      "assignment_id": "episode_007",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_020",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_021",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_022",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_025",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_028",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_035",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_036",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_037",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_041",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_045",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_052",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_053",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_054",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_059",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_063",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_065",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_067",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_070",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_075",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_079",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_085",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_087",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_092",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_095",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_101",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_104",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_108",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_110",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_111",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_115",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_119",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_122",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_123",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_125",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_129",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_130",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_132",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    },
+    {
+      "assignment_id": "episode_135",
+      "corrected": "not_observed",
+      "previous": "unknown"
+    }
+  ],
+  "corrected": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-development-comparators-summary-20260910-v2/result.json",
+    "sha256": "sha256:41891e2533d1da581fd99593dac0c2b6da095606d77886072f6c02e712dce795"
+  },
+  "new_physical_executions": 0,
+  "passage_time_cost_capability_unchanged": true,
+  "preserved_v1_sources": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-development-comparators-summary-20260910-v1/source_snapshots.json",
+    "sha256": "sha256:4c58370de9319ea2045df59b1c4273dcd74a65e585cbbaeb80b367e0a55299f4"
+  },
+  "previous": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-development-comparators-summary-20260910-v1/result.json",
+    "sha256": "sha256:5a956c1d897f2bd2b33b2c96df9ab75a92f884950235be491bbe9c1a7c38809c"
+  },
+  "raw_results_unchanged": true,
+  "reason": "read single-beam fall_observed over whole first episode; retain separately named course horizon"
+}

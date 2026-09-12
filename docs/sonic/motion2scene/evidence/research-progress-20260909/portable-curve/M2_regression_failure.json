@@ -1,0 +1,9 @@
+{
+  "status": "failed_before_fitting",
+  "cause": "export source references add size_bytes; compare path/hash identities while retaining size in manifest",
+  "source": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-curve-portability-validation-20260909-v1/toolkit_readonly/scripts/research/motion2scene_acquisition_curve_dataset_baseline.py",
+    "sha256": "sha256:02c4d0b77ec87c48a6d0d6841a3648523063f55759a0a176c4ca140243302dc9"
+  },
+  "new_physics_steps": 0
+}

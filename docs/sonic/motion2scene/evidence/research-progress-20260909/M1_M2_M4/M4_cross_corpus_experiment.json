@@ -1,0 +1,21 @@
+{
+  "budget": 4,
+  "exclusions": "paired replay duplicate source, same seed, shared training geometry and duplicate validation geometry",
+  "implementation": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_cross_corpus_readout.py",
+    "sha256": "sha256:068599c8b27b24a89503bac7218a662a150ec2dd4dbccc1bfa9fb194e9938811"
+  },
+  "interpretation": "exploratory cross-corpus recorded-branch readout; not new closed-loop or reserved evaluation",
+  "matching": "all four arms for a training seed share the same validation encounters",
+  "new_physics_steps": 0,
+  "plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-tie-proposed-v5/plan.json",
+    "sha256": "sha256:aacce6a9a2c2b3fc5bf6b674b5ede46d6fee61ac7ad205553554c4210d3d4508"
+  },
+  "selection": "other acquisition seeds, all assigned nonempty encounters through the same budget",
+  "validation_source_arms": [
+    "uniform",
+    "target_only",
+    "analytic_contrast"
+  ]
+}

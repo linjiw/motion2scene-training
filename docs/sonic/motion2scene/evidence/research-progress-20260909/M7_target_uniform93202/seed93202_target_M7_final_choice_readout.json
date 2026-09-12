@@ -1,0 +1,161 @@
+{
+  "budget": 7,
+  "causal_features_match": true,
+  "completion": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/controller/complete_007.json",
+    "sha256": "sha256:8ef5a6c3357c42220baf2b76057b50a17348432f4ec704567a31e60edc6375e8"
+  },
+  "generating_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/models/model_006/policy.npz",
+    "sha256": "sha256:e26ccc661a77f87fcba1f4fa02ef52dc48cdb53c2b2b50f69847429dd1b4cca7"
+  },
+  "interpretation": "At the same recorded neutral prefix at tick70, the generating M6 student selects failing late short while late sustained is legal, has a complete passing teacher continuation, and passes its actual forced execution. This is an acquired-scene final-choice failure relative to measured finite-bank capability. It does not prove perceptual realizability across scenes, isolate WAIT information benefit, or evaluate the new M7 model. Earlier WAIT choices must not be assigned this whole-continuation failure as separate immediate errors. The digest binds recorded history, not unrecorded simulator hidden state.",
+  "learner_l2": 10.0,
+  "legal_mask_matches": true,
+  "new_fits": 0,
+  "new_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/models/model_007/policy.npz",
+    "sha256": "sha256:87a61c6ab32d81a01f8833a304ae45a21803d02f318af73c71cfa3b810a39511"
+  },
+  "new_physical_executions": 0,
+  "original_teacher_prefix_preserved": true,
+  "passing_immediate_actions": [
+    "sustained_e070_r255"
+  ],
+  "passing_teacher_outcome": {
+    "assigned_slots": 1,
+    "classification": "complete_pass",
+    "complete_measurement_admitted": true,
+    "complete_pass": true,
+    "exit_status": 0,
+    "measurement_diagnostics": [],
+    "measurement_status": "complete",
+    "phase_availability": [
+      {
+        "packet_index": 14,
+        "reason": null,
+        "sensor_preaction_available": true,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 15
+      },
+      {
+        "packet_index": 49,
+        "reason": null,
+        "sensor_preaction_available": true,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 50
+      },
+      {
+        "packet_index": 69,
+        "reason": null,
+        "sensor_preaction_available": true,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 70
+      }
+    ],
+    "physical_events": [],
+    "physical_rows_recorded": 298,
+    "physics_steps_recorded": 1192,
+    "schema": "motion2scene_timed_attempt_outcome_v1",
+    "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+    "sensor_packets_recorded": 298,
+    "task_outcome": "pass"
+  },
+  "passing_teacher_passage_time_s": 5.76,
+  "passing_teacher_raw_trajectory": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/round_007/teachers/rollouts/forced_sustained_e070_r255/trajectories/000000.trajectory.pkl",
+    "sha256": "sha256:72009c3b03e621d361487911fc7299c3e0955d87ca3a58c6a69c0f0b6dcda211"
+  },
+  "passing_teacher_sensor": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/round_007/teachers/rollouts/forced_sustained_e070_r255/trajectories/reactive_interface.json",
+    "sha256": "sha256:48525b4073953e7d0d0554b932ce900fc868b5fce47449dcd2c5644f55a2d503"
+  },
+  "phase_tick": 70,
+  "physics_seed": 93202,
+  "preaction_capture_elapsed_s": 1.38,
+  "preupdate": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/round_007/preupdate.json",
+    "sha256": "sha256:f85fcea95bed74ae9d20daaf36ccaee0cb2a7f4fb1a405fb58af2e966350de16"
+  },
+  "recorded_history_sha256": "fb2a98e3e68fcc54a11828d4c4217454b5cf4cf95a1225e062c636fb804a122e",
+  "registry": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/registry.json",
+    "sha256": "sha256:a33af401fe9e6949baaddf63a67a5e37e8f62f87758e1ca373f926f9a3214c3c"
+  },
+  "run_id": "seed93202_target_only",
+  "scene_id": "primary_candidate_93202_0966",
+  "schema": "motion2scene_matched_final_choice_readout_v1",
+  "selected_option_id": "short_e070_r265",
+  "stored_complete_teacher_prefix_matches": true,
+  "student_and_passing_teacher_recorded_histories_match": true,
+  "student_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/round_007/student/result.json",
+    "sha256": "sha256:6c8aab1da3f0f64eb5dd7eae42768dd9ea0b414d89dc8b13fb28f625ccb637da"
+  },
+  "student_outcome": {
+    "assigned_slots": 1,
+    "classification": "verified_task_failure",
+    "complete_measurement_admitted": true,
+    "complete_pass": false,
+    "exit_status": 0,
+    "measurement_diagnostics": [],
+    "measurement_status": "complete",
+    "phase_availability": [
+      {
+        "packet_index": 14,
+        "reason": null,
+        "sensor_preaction_available": true,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 15
+      },
+      {
+        "packet_index": 49,
+        "reason": null,
+        "sensor_preaction_available": true,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 50
+      },
+      {
+        "packet_index": 69,
+        "reason": null,
+        "sensor_preaction_available": true,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 70
+      }
+    ],
+    "physical_events": [
+      {
+        "kind": "verified_environment_contact",
+        "maximum_force_n": 1084.68994140625
+      }
+    ],
+    "physical_rows_recorded": 298,
+    "physics_steps_recorded": 1192,
+    "schema": "motion2scene_timed_attempt_outcome_v1",
+    "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+    "sensor_packets_recorded": 298,
+    "task_outcome": "failure"
+  },
+  "student_raw_trajectory": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/round_007/student/rollouts/learned_neutral/trajectories/000000.trajectory.pkl",
+    "sha256": "sha256:b3a969a892cc77c7553c18c86d658769d22f4e437ddf5606ad711f8e8efa6df1"
+  },
+  "student_sensor": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/round_007/student/rollouts/learned_neutral/trajectories/reactive_interface.json",
+    "sha256": "sha256:7df6ccb09a8757d2e5ec2eb8e65aa62f570a5428be7119497242fce7c5d3b0e3"
+  },
+  "teacher_action": 6,
+  "teacher_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/round_007/teachers/result.json",
+    "sha256": "sha256:5c9383ee0c1c42453d9386082d1393b732903806769dfd7ab5cd7173b63e68e7"
+  },
+  "utc": "2026-09-10T10:19:51.580892+00:00",
+  "verification_scope": "Recomputed one final pre-action history digest from hash-checked raw trajectories and interfaces, compared with the completed teacher target. Uses bound original outcome scoring; no second full-episode raw scoring or refit.",
+  "weighting": "uniform_per_phase"
+}

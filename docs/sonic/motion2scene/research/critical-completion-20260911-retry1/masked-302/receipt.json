@@ -1,0 +1,64 @@
+{
+  "variant": "masked",
+  "seed": 302,
+  "updates": 200,
+  "state": "complete",
+  "parameters": 27715,
+  "wall_seconds": 2.3458364219986834,
+  "history": [
+    {
+      "update": 1,
+      "cover": 7.049488067626953,
+      "contrast": 0.0,
+      "completion": 0.30907678604125977
+    },
+    {
+      "update": 26,
+      "cover": 5.808849811553955,
+      "contrast": 0.0,
+      "completion": 0.2267138957977295
+    },
+    {
+      "update": 51,
+      "cover": 4.136969089508057,
+      "contrast": 0.0,
+      "completion": 0.10407113283872604
+    },
+    {
+      "update": 76,
+      "cover": 3.5945091247558594,
+      "contrast": 0.0,
+      "completion": 0.08699878305196762
+    },
+    {
+      "update": 101,
+      "cover": 3.5066401958465576,
+      "contrast": 0.0,
+      "completion": 0.03385324403643608
+    },
+    {
+      "update": 126,
+      "cover": 3.4656171798706055,
+      "contrast": 0.0,
+      "completion": 0.020044585689902306
+    },
+    {
+      "update": 151,
+      "cover": 3.549664258956909,
+      "contrast": 0.0,
+      "completion": 0.017573928460478783
+    },
+    {
+      "update": 176,
+      "cover": 3.4315872192382812,
+      "contrast": 0.0,
+      "completion": 0.015811163932085037
+    },
+    {
+      "update": 200,
+      "cover": 3.6137475967407227,
+      "contrast": 0.0,
+      "completion": 0.016760606318712234
+    }
+  ]
+}

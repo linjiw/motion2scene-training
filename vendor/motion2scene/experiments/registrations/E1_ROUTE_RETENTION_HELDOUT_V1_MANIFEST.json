@@ -1,0 +1,382 @@
+{
+  "authorization": {
+    "authority": "docs/hallucination/GOVERNANCE.md",
+    "claim5_isolation_verified": true,
+    "note": "Fresh Motion2Scene lineage authorized by the user; no historical protected claim inputs are modified.",
+    "status": "self_approved"
+  },
+  "cells": [
+    {
+      "base_carrier_id": "heldout_seed_42001",
+      "body_mode": "walk",
+      "cell_id": "m2s_route_heldout_seed_42001",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7700"
+      ],
+      "ladder_group_id": "heldout_seed_42001",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42001.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:46635c6094d03acbc97db6f9ced5f1b5aea71f626be4f145d99f686dc0e1b4aa",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42001.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:d3164eeb3ffe282a1c6aec2265d4913bbc96a0e9c18813f169f14b2542853dd7"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/q3/rollouts/m2s_route_heldout_seed_42001",
+      "runtime_seed": 7700,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "heldout_seed_42002",
+      "body_mode": "walk",
+      "cell_id": "m2s_route_heldout_seed_42002",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7700"
+      ],
+      "ladder_group_id": "heldout_seed_42002",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42002.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:48bb47df227682d22bff982901dffb4cb4d7f829247ded6a7f6dff84f8c7b80b",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42002.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:d035fec32f62573e0e830c17c088cdbb936e3b139c4f6427192841af96fd4896"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/q3/rollouts/m2s_route_heldout_seed_42002",
+      "runtime_seed": 7700,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "heldout_seed_42003",
+      "body_mode": "walk",
+      "cell_id": "m2s_route_heldout_seed_42003",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7700"
+      ],
+      "ladder_group_id": "heldout_seed_42003",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42003.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:23bd0d4395a305a62e3e9800420bae27c61db484691d783317a1ab849d10ee9e",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42003.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:1ae2d1216d89438566efabaf83ad320930ec71cf4963f7050a994b88b3c30808"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/q3/rollouts/m2s_route_heldout_seed_42003",
+      "runtime_seed": 7700,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "heldout_seed_42004",
+      "body_mode": "walk",
+      "cell_id": "m2s_route_heldout_seed_42004",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7700"
+      ],
+      "ladder_group_id": "heldout_seed_42004",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42004.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:e8141ff7ccfae32111a39653aee4da988f57643a224dbc3204cc794f54d56ad6",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42004.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:a0dd246d7b5d3d2a4e1552d497c28fba6786a27ecfdf05c5cb366c2471229b3e"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/q3/rollouts/m2s_route_heldout_seed_42004",
+      "runtime_seed": 7700,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "heldout_seed_42005",
+      "body_mode": "walk",
+      "cell_id": "m2s_route_heldout_seed_42005",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7700"
+      ],
+      "ladder_group_id": "heldout_seed_42005",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42005.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:e0ff13db9096233827e379488d8ab6eb4613101c7f4e47ec3fdd71e3e03f0029",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42005.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:317cc92475ee71c261b139ec2a314eab2748ec9fe9a6fdfea916567cef0a094d"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/q3/rollouts/m2s_route_heldout_seed_42005",
+      "runtime_seed": 7700,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "heldout_seed_42006",
+      "body_mode": "walk",
+      "cell_id": "m2s_route_heldout_seed_42006",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7700"
+      ],
+      "ladder_group_id": "heldout_seed_42006",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42006.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:256773c4f6495822ed2afb29faddcfaf719c219a68948fe26845df3aa1407ef2",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42006.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:e797cd465d4148a2741ff9ca872d1583e4da3cec6875028b5e5e9e849a7f6845"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/q3/rollouts/m2s_route_heldout_seed_42006",
+      "runtime_seed": 7700,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "heldout_seed_42007",
+      "body_mode": "walk",
+      "cell_id": "m2s_route_heldout_seed_42007",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7700"
+      ],
+      "ladder_group_id": "heldout_seed_42007",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42007.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:9ef5519f38e70fbaec7ca3de50e6ec8a73817ef2450ba1ac49a1593c258b9e31",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42007.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:7d088e5ddc0bea073237a280eb7364681fa3afbde608a506e772dac818eb039f"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/q3/rollouts/m2s_route_heldout_seed_42007",
+      "runtime_seed": 7700,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "heldout_seed_42008",
+      "body_mode": "walk",
+      "cell_id": "m2s_route_heldout_seed_42008",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7700"
+      ],
+      "ladder_group_id": "heldout_seed_42008",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42008.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:cbc63c64479b6874937d3191c71bbd785a777c68c0f9b2987f78d31523efca0e",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/sonic/seed_42008.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:46acaea397c68cf3d337ecc5ed70b7a23232c8f5d466205468d4c294b99176e1"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/q3/rollouts/m2s_route_heldout_seed_42008",
+      "runtime_seed": 7700,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    }
+  ],
+  "eligibility": {
+    "reference_gate": {
+      "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-route-retention-heldout-v1/reference_census.json",
+      "sha256": "sha256:3c0990843e7a5cde53e19252cd7bd33bf87133cc4d748daf8bba8ae822449d02"
+    },
+    "rule": "all registered Q0/Q1-valid straight neutral references"
+  },
+  "execution_policy": {
+    "cost_ceiling": {
+      "daily_envelope_gpu_hours": 8.0,
+      "gpu_hours_contended": 0.8333333333333334,
+      "rollouts": 8,
+      "seconds_per_rollout_contended": 375
+    },
+    "not_authorized": false,
+    "runtime": {
+      "free_gpu_mib_required": 7500,
+      "hang_timeout_seconds": 1800,
+      "render_ego": false,
+      "serial_execution": true,
+      "success_requires": [
+        "SONIC_EVAL_SUCCESS marker",
+        "success_manifest.json",
+        "exactly one trajectory pickle",
+        "recorded fps=50"
+      ]
+    },
+    "timing_override": "Fresh neutral seeds and relative route gate frozen before generation; one rollout per admitted carrier at seed 7700, serial trajectory-only."
+  },
+  "experiment": "M2S-E1-route-retention-heldout-v1",
+  "implementation": {
+    "checkpoint": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/sonic_release/last.pt",
+      "sha256": "sha256:e6bdab3f64a39336b3d41877d4f497d05f58af275f288ec0e6746c283ded8909"
+    },
+    "manifest_driver": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/hallucination/run_approved_manifest.py",
+      "sha256": "sha256:ab67817b3ee00730a360c9c5e23dee8c59fafef9163e1c562be5b5c3e5e74383"
+    },
+    "python": "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python",
+    "rollout_driver": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/run_kimodo_sonic_rollout.sh",
+      "sha256": "sha256:0a48eed8d00336ec17a29be761ab6ebfbe0c9f444da71e1cd72fb9159c6d1eb2"
+    },
+    "source_commit": "cfda4299e9ac8240975e921525014f2c3b23769e",
+    "source_repository": "/home/linjiw/groot-wbc-sonic-sim-trackb"
+  },
+  "purpose": "Validate the frozen reference-relative route-retention gate on newly generated and newly executed neutral walk carriers.",
+  "registered_predictions": {
+    "path": "/home/linjiw/motion2scene/experiments/registrations/E1_ROUTE_RETENTION_HELDOUT_V1_PREDICTIONS.md",
+    "sha256": "sha256:04232ed573025fe1e10260e28465af9c8f74f8b173b3dcd4da06e6594afc389b"
+  },
+  "schema_version": "motion2scene_physics_manifest_v1",
+  "stop_conditions": [
+    "refuse artifact hash changes",
+    "yield below 7500 MiB free VRAM",
+    "stop on infrastructure failure",
+    "retain all scientific rejections without retry",
+    "neutral-only route validation cannot admit adapted motions to Q4"
+  ]
+}

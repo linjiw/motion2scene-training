@@ -1,0 +1,24 @@
+{
+  "export": [
+    {
+      "state": "complete",
+      "wall_seconds": 0.3656121849999181
+    }
+  ],
+  "browser": [
+    {
+      "state": "technical_launch_failure",
+      "reason": "Playwright expected uninstalled Chromium revision 1243; no viewer loaded"
+    },
+    {
+      "state": "passed",
+      "reason": "Explicit existing Chromium 1234 executable"
+    },
+    {
+      "state": "passed",
+      "reason": "Repeat after abstention-display fix; HTTP HEAD 200"
+    }
+  ],
+  "training": [],
+  "physics": []
+}

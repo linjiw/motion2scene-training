@@ -1,0 +1,116 @@
+{
+  "schema_version": "motion2scene_e1_controlled_duck_ladders_registration_v1",
+  "status": "registered_not_started",
+  "experiment_id": "e1-controlled-duck-ladders-v1",
+  "role": "pilot_matched_ladder_acquisition",
+  "independent_experimental_unit": "base_carrier_generation_seed",
+  "source_corpus": "cg-wbc-v2-shared-seed-confirmatory",
+  "source_reference_evaluation": {
+    "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e0_shared_seed_reference_eval_v2.json",
+    "sha256": "sha256:e8eb82cffe7c16fcca62afe2b6ec380a08697ff0f42bc988e2ebf6407cdf79b7"
+  },
+  "base_selection_rule": [
+    "body_mode equals walk",
+    "requested route equals straight",
+    "route predicate is valid_straight",
+    "Q0 joint reachability passes",
+    "Q1 self-intersection passes"
+  ],
+  "base_carriers": [
+    {
+      "motion_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s0",
+      "generation_seed": 41001,
+      "route": "straight",
+      "csv": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/motions/000_a_person_walks_at_a_steady_pace_in_a_straight_li_s0.csv",
+      "csv_sha256": "sha256:1dcfba989aed236f6736c1d0f6562ad57969907c784ca6206f2f7223b287af85"
+    },
+    {
+      "motion_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s1",
+      "generation_seed": 41002,
+      "route": "straight",
+      "csv": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/motions/000_a_person_walks_at_a_steady_pace_in_a_straight_li_s1.csv",
+      "csv_sha256": "sha256:df5a759a3ce821f69c35f1d9a8da1299d099719b1c5bd16c21553d81a8812ac2"
+    },
+    {
+      "motion_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s2",
+      "generation_seed": 41003,
+      "route": "straight",
+      "csv": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/motions/000_a_person_walks_at_a_steady_pace_in_a_straight_li_s2.csv",
+      "csv_sha256": "sha256:c54b857d53275733ee9678fc8310d1061b5f56f9ecfa702e0635de9f1667bde0"
+    },
+    {
+      "motion_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s3",
+      "generation_seed": 41004,
+      "route": "straight",
+      "csv": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/motions/000_a_person_walks_at_a_steady_pace_in_a_straight_li_s3.csv",
+      "csv_sha256": "sha256:4953fd8885c9dbe509c1a4ed01373baa73a834803af0362145d49f2907dc6e05"
+    },
+    {
+      "motion_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s4",
+      "generation_seed": 41005,
+      "route": "straight",
+      "csv": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/motions/000_a_person_walks_at_a_steady_pace_in_a_straight_li_s4.csv",
+      "csv_sha256": "sha256:1e50bc897bdb539297eaed42b9a35ce503f6948a2ca06588f4148b9ee36c7cf4"
+    },
+    {
+      "motion_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s5",
+      "generation_seed": 41006,
+      "route": "straight",
+      "csv": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/motions/000_a_person_walks_at_a_steady_pace_in_a_straight_li_s5.csv",
+      "csv_sha256": "sha256:8ff232fe8f1bb0a831858fc1137af91ebbfbbbb61ab7f53d6ea3b42cac589d4d"
+    },
+    {
+      "motion_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s6",
+      "generation_seed": 41007,
+      "route": "straight",
+      "csv": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/motions/000_a_person_walks_at_a_steady_pace_in_a_straight_li_s6.csv",
+      "csv_sha256": "sha256:01dbe9da82d76760e59fc8de953db54d2aceac54e6dba8af625a7403ed527812"
+    },
+    {
+      "motion_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s7",
+      "generation_seed": 41008,
+      "route": "straight",
+      "csv": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/motions/000_a_person_walks_at_a_steady_pace_in_a_straight_li_s7.csv",
+      "csv_sha256": "sha256:1cfa2f9be7fcf456a8c015456594990f3921952dbaaac3153a8444e16c0caa2f"
+    }
+  ],
+  "operator": {
+    "name": "local_crouch",
+    "station_progress": 0.55,
+    "window_progress": 0.30,
+    "target_drops_m": [0.040, 0.055, 0.070, 0.085],
+    "source_implementation": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/local_adaptation.py"
+  },
+  "semantic_policy": {
+    "version": "paired_functional_reduction_v2",
+    "minimum_effect_m": 0.05,
+    "minimum_reference_status_for_candidate": "localized"
+  },
+  "analytic_interval": {
+    "selection_rule": "ordinal_minimal_feasible",
+    "target_safety_margin_m": 0.010,
+    "weaker_strike_margin_m": 0.010
+  },
+  "candidate_rule": {
+    "minimum_levels_including_neutral": 3,
+    "each_level_requires": ["Q0_pass", "Q1_pass"],
+    "adapted_level_requires": "semantic_status_localized_or_higher",
+    "functional_reduction_must_be_strictly_ordered": true
+  },
+  "promotion_boundary": {
+    "q3_q4_admission_requires_future_execution": true,
+    "dataset_eligible_intervals_at_reference_stage": 0,
+    "hallucinator_training_allowed": false,
+    "gate_a_target_ladder_groups": 12,
+    "this_pilot_maximum_groups": 8
+  },
+  "mjcf": {
+    "path": "/home/linjiw/kimodo/kimodo/assets/skeletons/g1skel34/xml/g1.xml",
+    "sha256": "sha256:5d76cf92f00dd49d6eb9fae38d7d38e46886848b602ac691051e886c3bcccfb1"
+  },
+  "builder": {
+    "path": "experiments/e1_build_controlled_duck_ladders.py",
+    "sha256": "sha256:1b666dc0a2bc604dc998ffc60910512c0a3792985fcf09ad44c3a627856772cf",
+    "repository_commit": "325ddc2cd0860e8090a2f3143efaa70045ef3ecd"
+  }
+}

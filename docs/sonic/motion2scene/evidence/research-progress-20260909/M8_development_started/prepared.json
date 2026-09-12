@@ -1,0 +1,2362 @@
+{
+  "assignments": [
+    {
+      "assignment_id": "episode_000",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_000/manifest.json",
+        "sha256": "sha256:2bffce8bbdfddfb8b743d5d9553a5ed415b3bc7d3a446c042108ae8d5fff0093"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_uniform",
+      "run_id": "seed93202_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_001",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_001/manifest.json",
+        "sha256": "sha256:6e4c150a69402ac58c172689faec3a9cd6ac6604cad3166f9c7541f431527188"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_target_only",
+      "run_id": "seed93201_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_002",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_002/manifest.json",
+        "sha256": "sha256:f6f65803e3d9aba1b2867520ee9a69e936ffc676e2c5a6a537953b4d379aa834"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_observation_curriculum",
+      "run_id": "seed93202_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_003",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_003/manifest.json",
+        "sha256": "sha256:073f541f51226d05b95fe58404f31b3dd8aa1b5884fb3f96c54f7bac9339f5eb"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_uniform",
+      "run_id": "seed93203_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_004",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_004/manifest.json",
+        "sha256": "sha256:5814e69f4132c9b5cf66df5874dcb7a2e2eaf5c9ae0b7da00e09bf3fcde81c60"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_target_only",
+      "run_id": "seed93202_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_005",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_005/manifest.json",
+        "sha256": "sha256:3a437ca617523971baa194f0acf751abf73d8253baf328310489157a330bc639"
+      },
+      "mode": "forced",
+      "option_id": "short_e015_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_short_e015_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_006",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_006/manifest.json",
+        "sha256": "sha256:87ad8aaddd7fb45f1204116796624ba708ea52aa807c7257fda2d5c07492e07c"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_observation_curriculum",
+      "run_id": "seed93203_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_007",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_007/manifest.json",
+        "sha256": "sha256:6b3b10a478dc073a6416b552726cf3eedd2a91b2b8d1ad7fbe09c041a7d45a18"
+      },
+      "mode": "forced",
+      "option_id": "sustained_e070_r255",
+      "physics_seed": 8732,
+      "policy_id": "fixed_sustained_e070_r255",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_008",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_008/manifest.json",
+        "sha256": "sha256:79731b22b2d1627390b9e96624dd3a042df2a329b50402d5cf49ac34765b5ebb"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_uniform",
+      "run_id": "seed93203_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_009",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_009/manifest.json",
+        "sha256": "sha256:fc39832927a0c3ab0bd21472b840c9e43fcb65fc3c593c1eb5e8426ec4cdbd6a"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_target_only",
+      "run_id": "seed93203_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_010",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_010/manifest.json",
+        "sha256": "sha256:94a480a3c8c54b23a88e289a3442df4d53f55103814d027d76bf90b54131926e"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_uniform",
+      "run_id": "seed93202_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_011",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_011/manifest.json",
+        "sha256": "sha256:ca6692fa2700224bf6970863eb3b7bd62b05e837d954c9d98631e415a2c49a1c"
+      },
+      "mode": "forced",
+      "option_id": "prior_splice_e015_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_prior_splice_e015_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_012",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_012/manifest.json",
+        "sha256": "sha256:ea2490e6c22858bf92d1953b24cd39e4864cceefcf560ea547a733c7218c6832"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_target_only",
+      "run_id": "seed93203_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_013",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_013/manifest.json",
+        "sha256": "sha256:5031c73f90a09ae3f97a94e078c7405fdfe20427f58b85702a38e7b32c4c0f66"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_uniform",
+      "run_id": "seed93202_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_014",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_014/manifest.json",
+        "sha256": "sha256:e930aaa89c173c45d371b2d4b693c896fdf69e38b4a119b2089848baf4081f0c"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_uniform",
+      "run_id": "seed93203_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_015",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_015/manifest.json",
+        "sha256": "sha256:d7b544681b8dd4c8650963501289dfa94111673e5e4c435d26db33c2eaa5c868"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_observation_curriculum",
+      "run_id": "seed93201_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_016",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_016/manifest.json",
+        "sha256": "sha256:857aa3dfdad843f1a7b3be2b3717f24f1fb29a8d3a01a913ad7f3771bcc8a6c2"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_target_only",
+      "run_id": "seed93203_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_017",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_017/manifest.json",
+        "sha256": "sha256:b322296e614bcd18b4b68cfd1879e0900584fac99db52b8be128d40d223a48a4"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_observation_curriculum",
+      "run_id": "seed93202_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_018",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_018/manifest.json",
+        "sha256": "sha256:746bbbfee8129e84228791bc4a8d05a8f9a3397851d37fe27adb5e4df5ee5402"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_analytic_contrast",
+      "run_id": "seed93201_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_019",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_019/manifest.json",
+        "sha256": "sha256:2472b571521de450a080d28153cdfd6384820b8e12ddf8a9855109c691d43c74"
+      },
+      "mode": "forced",
+      "option_id": "sustained_e070_r255",
+      "physics_seed": 8732,
+      "policy_id": "fixed_sustained_e070_r255",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_020",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_020/manifest.json",
+        "sha256": "sha256:612b43c52e35a0f4de22d164174b8b5564eefedaeb3be0fcb82d819cf96a7dcf"
+      },
+      "mode": "forced",
+      "option_id": "short_e070_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_short_e070_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_021",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_021/manifest.json",
+        "sha256": "sha256:817f05400e859dd568fd78da3586183d070a1a8623424dbd7b18dd9380b4fc9a"
+      },
+      "mode": "forced",
+      "option_id": "neutral",
+      "physics_seed": 8732,
+      "policy_id": "fixed_neutral",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_022",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_022/manifest.json",
+        "sha256": "sha256:1a628dea1eeb5d85313399ca901b5153a5662d38e5bc909809bb2bdcd1088fcb"
+      },
+      "mode": "forced",
+      "option_id": "sustained_e015_r255",
+      "physics_seed": 8732,
+      "policy_id": "fixed_sustained_e015_r255",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_023",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_023/manifest.json",
+        "sha256": "sha256:4202a02218dc553fdcc6cefbabba3a1292a55e2c12ee502df32d29190bed363b"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_observation_curriculum",
+      "run_id": "seed93201_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_024",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_024/manifest.json",
+        "sha256": "sha256:90dea27f678f9756ce8ef24bc53284a1ce8f7ed50bdb3f27796331ade05dbe27"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_analytic_contrast",
+      "run_id": "seed93202_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_025",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_025/manifest.json",
+        "sha256": "sha256:36677e89b1e24944ccb82dcfcba1532768382a3f9564ffcd25f8271404e8b2b8"
+      },
+      "mode": "forced",
+      "option_id": "short_e015_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_short_e015_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_026",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_026/manifest.json",
+        "sha256": "sha256:5578fda6e79b13359d7ee738650f5f2a89b9a62df745c9e24cfe2987e5d68b4b"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_target_only",
+      "run_id": "seed93201_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_027",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_027/manifest.json",
+        "sha256": "sha256:93b3e09a3fbf38e6f0248a339e24d45bbfd9b0cb78d956bf76899192c26ff4b5"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_reference_contrast",
+      "run_id": "seed93203_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_028",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_028/manifest.json",
+        "sha256": "sha256:438e47b43e0a6898bff620117c2852eb13e610b9df5b7b21cbc02ad75c272e74"
+      },
+      "mode": "forced",
+      "option_id": "short_e015_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_short_e015_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_029",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_029/manifest.json",
+        "sha256": "sha256:6a83562e31f018152d794e7de5d498297dbbfd206f0755b8543fc18503ac695d"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_target_only",
+      "run_id": "seed93202_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_030",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_030/manifest.json",
+        "sha256": "sha256:c128b81f818c8178ab869db33bdb4be77ae0d9f3f251a6557deb21920ce2d2c1"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_reference_contrast",
+      "run_id": "seed93201_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_031",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_031/manifest.json",
+        "sha256": "sha256:c152653d428f53c32663fedc7fc6aa153644c0fa514ed6c1a1f0b289b45881b2"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_uniform",
+      "run_id": "seed93201_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_032",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_032/manifest.json",
+        "sha256": "sha256:56999efd1b2c64061050f9ca22295b4ef8f878ac7bbe6fced8e585cdd62d2b10"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_analytic_contrast",
+      "run_id": "seed93202_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_033",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_033/manifest.json",
+        "sha256": "sha256:c4d6209b98736364e4a723215b252b418f57e9564b898688a95e58aa7f426314"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_uniform",
+      "run_id": "seed93203_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_034",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_034/manifest.json",
+        "sha256": "sha256:f265ce71f779d7cd3746f3ebfa426530a3e39c5fdacf8e751a882aa340691d55"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_target_only",
+      "run_id": "seed93202_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_035",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_035/manifest.json",
+        "sha256": "sha256:c54588e92190c9c46c7228c6061d5acfd3faac963a5bee29ba66e69421596477"
+      },
+      "mode": "forced",
+      "option_id": "sustained_e015_r255",
+      "physics_seed": 8732,
+      "policy_id": "fixed_sustained_e015_r255",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_036",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_036/manifest.json",
+        "sha256": "sha256:20fa4189b8dd39c7be912d3c4ff69b4001a078080301afde7797e00bcbd42960"
+      },
+      "mode": "forced",
+      "option_id": "sustained_e015_r255",
+      "physics_seed": 8732,
+      "policy_id": "fixed_sustained_e015_r255",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_037",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_037/manifest.json",
+        "sha256": "sha256:bb93369483aaf474813869ee596f4c95dc927d220ce223a1a54a6061b555fc1b"
+      },
+      "mode": "forced",
+      "option_id": "prior_splice_e015_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_prior_splice_e015_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_038",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_038/manifest.json",
+        "sha256": "sha256:f89ac20d9f4ef5cb5b52746c1cb58e0ae0fb872b5f98ca80c90e74fa4c31d6e4"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_target_only",
+      "run_id": "seed93201_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_039",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_039/manifest.json",
+        "sha256": "sha256:042366827cdc06c06bc256891df239262f4a3383855ab83548f49c3c546e0fd1"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_analytic_contrast",
+      "run_id": "seed93203_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_040",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_040/manifest.json",
+        "sha256": "sha256:668f8fee3ac4e5c934b792f5c49cba282b6e87b729856451285b918304d37f9f"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_target_only",
+      "run_id": "seed93201_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_041",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_041/manifest.json",
+        "sha256": "sha256:c49635d98cc65363505bba1c61737f554976fbb97ca5be86a8e9d497c5a6a175"
+      },
+      "mode": "forced",
+      "option_id": "neutral",
+      "physics_seed": 8732,
+      "policy_id": "fixed_neutral",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_042",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_042/manifest.json",
+        "sha256": "sha256:bac73d5cf1f886e44f90d582cb8f8e81923f06e4f0f3c18a0b831d7c1edcf758"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_uniform",
+      "run_id": "seed93203_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_043",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_043/manifest.json",
+        "sha256": "sha256:90dd97026138c3bd58e655e71eb1e13f019883406ad9908cc0bf888f864725fb"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_observation_curriculum",
+      "run_id": "seed93202_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_044",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_044/manifest.json",
+        "sha256": "sha256:875be9b0f65bd3839778f88d0f90809acaecc483e315c72fb6efe31867d23f11"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_reference_contrast",
+      "run_id": "seed93202_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_045",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_045/manifest.json",
+        "sha256": "sha256:fb64ed31fc7c2b64536408dc78546277d596f3011684ef867302e1a8a99ee4ac"
+      },
+      "mode": "forced",
+      "option_id": "short_e070_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_short_e070_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_046",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_046/manifest.json",
+        "sha256": "sha256:f33e8e9bdafa6c4ed8f3735242076e6d409fa820a35ea35a2c33fd8be0dd3a45"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_reference_contrast",
+      "run_id": "seed93203_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_047",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_047/manifest.json",
+        "sha256": "sha256:4204d373bba2bf14406746420222d6ac6aebada01c73d381eb2e7b1ec166ed35"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_analytic_contrast",
+      "run_id": "seed93201_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_048",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_048/manifest.json",
+        "sha256": "sha256:2f23cf253c22f63f8c0392e1c84b2e133880a2595ad5964f2f27d9233020966a"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_reference_contrast",
+      "run_id": "seed93201_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_049",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_049/manifest.json",
+        "sha256": "sha256:a3fa40b511fbf5460e5002eeefa926fea12f95331239f038fee4a44c49c5b2e5"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_analytic_contrast",
+      "run_id": "seed93201_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_050",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_050/manifest.json",
+        "sha256": "sha256:22cef9ddde314fed52c8e1a9fe2987018b83b71d05e1cfbef4ab005bd1cc9672"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_observation_curriculum",
+      "run_id": "seed93203_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_051",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_051/manifest.json",
+        "sha256": "sha256:5abee14f23646c0af6d6300e56e8d0453fee627810538f96054a3ee1717c4b38"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_reference_contrast",
+      "run_id": "seed93203_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_052",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_052/manifest.json",
+        "sha256": "sha256:7d8ccd7a9016464aee5b58533794deac88e595f7f75cc065b976a889d4996873"
+      },
+      "mode": "forced",
+      "option_id": "sustained_e015_r255",
+      "physics_seed": 8732,
+      "policy_id": "fixed_sustained_e015_r255",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_053",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_053/manifest.json",
+        "sha256": "sha256:a609b63acaab11812b5c3eefc37f9bb0964459a0a23bebf5aaab5f6af81c600f"
+      },
+      "mode": "forced",
+      "option_id": "prior_splice_e015_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_prior_splice_e015_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_054",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_054/manifest.json",
+        "sha256": "sha256:a072a24354fe1a12f6c9b4d62c02c70fa974a259ddf04a2b9c1d8f90eeb6a621"
+      },
+      "mode": "forced",
+      "option_id": "prior_splice_e015_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_prior_splice_e015_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_055",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_055/manifest.json",
+        "sha256": "sha256:5dcb568dec28de7eb93ca300751695afe331fff19f2b5a5cf102f9f4a830c4cf"
+      },
+      "mode": "forced",
+      "option_id": "neutral",
+      "physics_seed": 8732,
+      "policy_id": "fixed_neutral",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_056",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_056/manifest.json",
+        "sha256": "sha256:92c2c5aed42ce644b7567f71993089a155b1d9340590ab4da5123e9f46698bed"
+      },
+      "mode": "scripted_multi",
+      "physics_seed": 8732,
+      "policy_id": "script",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_057",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_057/manifest.json",
+        "sha256": "sha256:4bed4aa6a8c0b8f31b84a980712eb753846aff962ef0d4db5037c0b4439d0c9b"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_uniform",
+      "run_id": "seed93202_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_058",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_058/manifest.json",
+        "sha256": "sha256:2a9a15bd7ff00a18cef2f12774ea659106725a88401695d45d745e3e97b50490"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_reference_contrast",
+      "run_id": "seed93201_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_059",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_059/manifest.json",
+        "sha256": "sha256:88c0884d2c8df7bcccf48c109528274315dc071b9007f0fb7f00404769d0f0c8"
+      },
+      "mode": "forced",
+      "option_id": "short_e070_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_short_e070_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_060",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_060/manifest.json",
+        "sha256": "sha256:26f1053cacc3330ba4c44a4d2f09462841903ada636b89660bf6654f6594b199"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_observation_curriculum",
+      "run_id": "seed93202_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_061",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_061/manifest.json",
+        "sha256": "sha256:887cc509eab1452cf006a48aa77e5baca8b96c2dee7fffcbf635bd5d7fb10037"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_target_only",
+      "run_id": "seed93203_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_062",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_062/manifest.json",
+        "sha256": "sha256:263eac1f7a086c2e2e6f8fb96cc0b643102278b7845bdcfe1232d31f703e525e"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_target_only",
+      "run_id": "seed93201_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_063",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_063/manifest.json",
+        "sha256": "sha256:627aeadafebf36371445edfeb158d383505745a4100c967c28cc80a0f6748cd7"
+      },
+      "mode": "forced",
+      "option_id": "neutral",
+      "physics_seed": 8732,
+      "policy_id": "fixed_neutral",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_064",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_064/manifest.json",
+        "sha256": "sha256:3aec9685fbef08c6dde8fed62fe9b0309fd25bfedfc2310fafb5ec1885966bd0"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_analytic_contrast",
+      "run_id": "seed93201_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_065",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_065/manifest.json",
+        "sha256": "sha256:ff1d385c8a5b8c71d97782dcf766c43a83a60b07f3e37ba23aaf7b216c28db60"
+      },
+      "mode": "forced",
+      "option_id": "neutral",
+      "physics_seed": 8732,
+      "policy_id": "fixed_neutral",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_066",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_066/manifest.json",
+        "sha256": "sha256:89f4cf21cd13024ba17c58a3c754f48f354786e9931c0a910639f992c3322b8a"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_analytic_contrast",
+      "run_id": "seed93202_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_067",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_067/manifest.json",
+        "sha256": "sha256:8f4aaca851416bfac5cce1c91c8ee082015eed6a551377a63323977a8bead0d7"
+      },
+      "mode": "forced",
+      "option_id": "sustained_e015_r255",
+      "physics_seed": 8732,
+      "policy_id": "fixed_sustained_e015_r255",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_068",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_068/manifest.json",
+        "sha256": "sha256:36f9243b7b18eee15753c70d61eab1cdff3b58f16b9ffe625a87358946039f8d"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_reference_contrast",
+      "run_id": "seed93202_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_069",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_069/manifest.json",
+        "sha256": "sha256:7bcfce6db21954323b8085450a7b0431b3cd2e4c1e6e8010de634dcbd1b1fd00"
+      },
+      "mode": "forced",
+      "option_id": "prior_splice_e050_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_prior_splice_e050_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_070",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_070/manifest.json",
+        "sha256": "sha256:22be8cbc95730287db2badb402c4b455cfc1253f91a796e7a14899474011aeca"
+      },
+      "mode": "forced",
+      "option_id": "prior_splice_e050_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_prior_splice_e050_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_071",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_071/manifest.json",
+        "sha256": "sha256:35d8e8afadf9bf68fbb07d0abf6802c0a2333ea22faa27b50c4b0a693433eaae"
+      },
+      "mode": "forced",
+      "option_id": "sustained_e015_r255",
+      "physics_seed": 8732,
+      "policy_id": "fixed_sustained_e015_r255",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_072",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_072/manifest.json",
+        "sha256": "sha256:e109353a93e10359057bf5270313ce92fda48ab6c6036be60259eb3bc57a5c51"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_observation_curriculum",
+      "run_id": "seed93201_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_073",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_073/manifest.json",
+        "sha256": "sha256:98efa81776a32f771515e9ed3cc9fe819bb794f99715c3de052940c76095ce6d"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_analytic_contrast",
+      "run_id": "seed93203_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_074",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_074/manifest.json",
+        "sha256": "sha256:f3ddf71b60b2bd27091b3062543dacddbdb5d09f32f4f527e3ae4d866485bba9"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_reference_contrast",
+      "run_id": "seed93203_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_075",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_075/manifest.json",
+        "sha256": "sha256:d544aef267a1edb138b3589598d3c72f38e638fdcbaff1367bb3e28045e5ce33"
+      },
+      "mode": "scripted_multi",
+      "physics_seed": 8732,
+      "policy_id": "script",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_076",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_076/manifest.json",
+        "sha256": "sha256:ecbec4b323c2207b847cfce71cdaddf8e6bc3408daa4d80fc7e06bfa852ac391"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_target_only",
+      "run_id": "seed93203_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_077",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_077/manifest.json",
+        "sha256": "sha256:c25927ef80cf243c66ea29b0f9b41b042faf1f26f7d6a99a60e2225274462748"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_observation_curriculum",
+      "run_id": "seed93201_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_078",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_078/manifest.json",
+        "sha256": "sha256:0f5c2248251d7f47a15cf25740f987fbb0cb9ed029ec3de8fcd5e2704fb857a5"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_observation_curriculum",
+      "run_id": "seed93203_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_079",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_079/manifest.json",
+        "sha256": "sha256:dc58add839677ab8729735275de8b439d9b38bcd016d0bdf4a0b86151bb29a94"
+      },
+      "mode": "forced",
+      "option_id": "short_e070_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_short_e070_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_080",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_080/manifest.json",
+        "sha256": "sha256:5cc8175bbfc7ce2150c9667b9b8eb37a09b0f3a463130a31b3cf891b7dce3cd6"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_uniform",
+      "run_id": "seed93201_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_081",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_081/manifest.json",
+        "sha256": "sha256:c8022e0fe4a8e4bdf9ad9809dc592ac90eb38456501e58ae4d24aa6036bbe38a"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_analytic_contrast",
+      "run_id": "seed93203_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_082",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_082/manifest.json",
+        "sha256": "sha256:3ecb9ce631812b77c75bbaea9f73b5c7e7f2a05071c9bf2bb19f014c971764e2"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_analytic_contrast",
+      "run_id": "seed93203_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_083",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_083/manifest.json",
+        "sha256": "sha256:d3fdf5ff6a0ce969850fdad4f9c3f05b4449292b3a3d3cb0a44c20c5897d47ab"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_observation_curriculum",
+      "run_id": "seed93203_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_084",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_084/manifest.json",
+        "sha256": "sha256:a9bc88f0ce79f3e641cc4277f3ef187563d5bd588659682b35b6a88d3856cc33"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_target_only",
+      "run_id": "seed93202_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_085",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_085/manifest.json",
+        "sha256": "sha256:d2a7a31f68b01e4158d686f0d4994b28128a47cf09db4f309881181567e0fc81"
+      },
+      "mode": "forced",
+      "option_id": "short_e015_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_short_e015_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_086",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_086/manifest.json",
+        "sha256": "sha256:7189b947c17bcaff35978d2f3b966417546c5044adf692163c7026cdc9530940"
+      },
+      "mode": "forced",
+      "option_id": "neutral",
+      "physics_seed": 8732,
+      "policy_id": "fixed_neutral",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_087",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_087/manifest.json",
+        "sha256": "sha256:bedde8ab2b06ac66582b64efd55cad8e94e4b966d5946ad81e4a1cbdebc11ef5"
+      },
+      "mode": "scripted_multi",
+      "physics_seed": 8732,
+      "policy_id": "script",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_088",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_088/manifest.json",
+        "sha256": "sha256:85420b0bcbd2c5391c5f3d64bbaf2852327085c852472234f59ea81692061fa1"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_reference_contrast",
+      "run_id": "seed93201_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_089",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_089/manifest.json",
+        "sha256": "sha256:99fd0912270904e400ca28bf26a4ca87a3e8f99be5d186347da11965ee43a4e2"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_reference_contrast",
+      "run_id": "seed93202_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_090",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_090/manifest.json",
+        "sha256": "sha256:b31be3ec6eb2344fba682f8ae0d7a0582329f0614e7fcc2526ad9a67a439f012"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_uniform",
+      "run_id": "seed93202_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_091",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_091/manifest.json",
+        "sha256": "sha256:d500da7b924ee7de4b8264fe082909f1dafc62441bc30d774eb3c01a42f131ae"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_uniform",
+      "run_id": "seed93202_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_092",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_092/manifest.json",
+        "sha256": "sha256:9cec2a4ea0200bf994523d6f26dd8d0862b5bc2a60523eb5fcc2da8b5ea915e7"
+      },
+      "mode": "forced",
+      "option_id": "sustained_e070_r255",
+      "physics_seed": 8732,
+      "policy_id": "fixed_sustained_e070_r255",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_093",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_093/manifest.json",
+        "sha256": "sha256:2ed5ae7aa9f85909157c4b3ef6e0d288853af356ee309ddbee86ce2e035330e7"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_reference_contrast",
+      "run_id": "seed93203_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_094",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_094/manifest.json",
+        "sha256": "sha256:59e301363d4792bc85f0d7d9eae24b2a6df537d4ee8a16d17952bfbb2ed3cb76"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_uniform",
+      "run_id": "seed93201_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_095",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_095/manifest.json",
+        "sha256": "sha256:70823cf8ee653a8d2222f8b5a4fb5c516ed4dadfc942e486f7aa2c6ed90c109c"
+      },
+      "mode": "forced",
+      "option_id": "short_e015_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_short_e015_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_096",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_096/manifest.json",
+        "sha256": "sha256:be7945f569df1de9f0f8904e4e59c2e9f4acde6286666a7cae133b9db3cd2c21"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_analytic_contrast",
+      "run_id": "seed93201_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_097",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_097/manifest.json",
+        "sha256": "sha256:a33fca59d0601401717ba903ca5755d391fd9819565c306fc8ce1bd6574bc29c"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_observation_curriculum",
+      "run_id": "seed93203_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_098",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_098/manifest.json",
+        "sha256": "sha256:d64298940e06e90bb0775742a35c95b55773a46026c30de3510af49fa7c14f31"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_target_only",
+      "run_id": "seed93202_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_099",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_099/manifest.json",
+        "sha256": "sha256:5c2b236e20b4b4bc8d19c53eb35736665521a9ea3c63b7bec1c0e9b868bf214e"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_reference_contrast",
+      "run_id": "seed93201_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_100",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_100/manifest.json",
+        "sha256": "sha256:b7ba63d313996b1bd949c37d1aa56a4e25bbcb0604fd33f7aff7453c3e7ea00f"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_reference_contrast",
+      "run_id": "seed93202_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_101",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_101/manifest.json",
+        "sha256": "sha256:292a534074e4573babd431f5b2db9924f5b0f3eae8348f7fc2feead4d1c183fe"
+      },
+      "mode": "forced",
+      "option_id": "prior_splice_e050_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_prior_splice_e050_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_102",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_102/manifest.json",
+        "sha256": "sha256:529edc995f7852dff626b47ebad8b89880fface835c8e4bfbfd6488a97c395c0"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_analytic_contrast",
+      "run_id": "seed93202_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_103",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_103/manifest.json",
+        "sha256": "sha256:b0d62ac2f82b0323b4cf1fdc7ad75b649d3bbaaaca266a1dea43ef8d850ff1b3"
+      },
+      "mode": "forced",
+      "option_id": "short_e070_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_short_e070_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_104",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_104/manifest.json",
+        "sha256": "sha256:a97cf5c9357c36d6c061b42059cbf96566bed7683cf2e9c62b9fcac85d6a37c1"
+      },
+      "mode": "forced",
+      "option_id": "prior_splice_e050_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_prior_splice_e050_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_105",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_105/manifest.json",
+        "sha256": "sha256:3aaa273f8ca662755e22f31513c83ca3a09b0609ce7c5de9851c9b61c6d34fb7"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_analytic_contrast",
+      "run_id": "seed93201_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_106",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_106/manifest.json",
+        "sha256": "sha256:b4c9dd50d24e1d547f0eb4e3cb64ac33b0f0e44ab56d8242e56f977fa2f2688c"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_analytic_contrast",
+      "run_id": "seed93202_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_107",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_107/manifest.json",
+        "sha256": "sha256:2def9e2fec3264582380c3c1b6b64426f032a97c29f378bd2cb72b9ef58671a4"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_observation_curriculum",
+      "run_id": "seed93202_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_108",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_108/manifest.json",
+        "sha256": "sha256:5db012ba3012619d7c92e6984c887efe36435e90d144091b7d0d410d8a30bc15"
+      },
+      "mode": "forced",
+      "option_id": "prior_splice_e015_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_prior_splice_e015_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_109",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_109/manifest.json",
+        "sha256": "sha256:5f6525108292118c0449574cf31c268863738ec9e8b8eaf66fc1e814dbeb2f25"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_reference_contrast",
+      "run_id": "seed93203_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_110",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_110/manifest.json",
+        "sha256": "sha256:082f1c3efaf0bee0050aac4e5d6d74ae0545102490125b57c91976d9e24cd856"
+      },
+      "mode": "forced",
+      "option_id": "sustained_e070_r255",
+      "physics_seed": 8732,
+      "policy_id": "fixed_sustained_e070_r255",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_111",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_111/manifest.json",
+        "sha256": "sha256:d593508109e7587f590d388b6aafb784701839cee7e8e9619832414fca28c790"
+      },
+      "mode": "forced",
+      "option_id": "sustained_e070_r255",
+      "physics_seed": 8732,
+      "policy_id": "fixed_sustained_e070_r255",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_112",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_112/manifest.json",
+        "sha256": "sha256:ff8671b81668651d685afb380c5fbc6197c61ab272fb69e40db269916a3f61ac"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_analytic_contrast",
+      "run_id": "seed93203_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_113",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_113/manifest.json",
+        "sha256": "sha256:5ecbae12c8a7849310992230d3dd69f378ff7f3d20ca92188aeb7c1d92057aa0"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_analytic_contrast",
+      "run_id": "seed93202_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_114",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_114/manifest.json",
+        "sha256": "sha256:aff6489eaa2888ce2ef99576c654d952629364d2eb52525bb823f8c1464a1844"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_observation_curriculum",
+      "run_id": "seed93201_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_115",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_115/manifest.json",
+        "sha256": "sha256:b8ad1b688e3167e4de33a57305712407ba49d9d7b610b3273c7c590cae10c355"
+      },
+      "mode": "forced",
+      "option_id": "prior_splice_e015_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_prior_splice_e015_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_116",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_116/manifest.json",
+        "sha256": "sha256:bcbffa635e18fed13e335aa80b353da21b47a38ce87c595bd18d33b6e920d3ae"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_target_only",
+      "run_id": "seed93202_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_117",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_117/manifest.json",
+        "sha256": "sha256:9c601f2f9765ffdc461906cbcbde318e9d0f414965be0699859d20272cd45ff7"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_uniform",
+      "run_id": "seed93201_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_118",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_118/manifest.json",
+        "sha256": "sha256:4491f76a40c3c410b9e9769d5825358af3eefde0f6e5f1ad10980cd4ca3d7a86"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_reference_contrast",
+      "run_id": "seed93202_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_119",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_119/manifest.json",
+        "sha256": "sha256:b39d30b44c3aefb12a3a01cd53125fde9823d7dc2bb501fbb5e40848a7830138"
+      },
+      "mode": "forced",
+      "option_id": "prior_splice_e050_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_prior_splice_e050_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_120",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_120/manifest.json",
+        "sha256": "sha256:1b5391597cbc9e19a21c2e38d22725f4b357969c5e3f9669097cc14bff2cec4e"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_uniform",
+      "run_id": "seed93203_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_121",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_121/manifest.json",
+        "sha256": "sha256:df1b8aa71a89118d4f27a83e4e1fa401f6ac70eb2d2234f8ee1a04b5a3979274"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_uniform",
+      "run_id": "seed93201_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_122",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_122/manifest.json",
+        "sha256": "sha256:0b90ecebad5d716911edd42afcfa86bac6cdbaad89cbfac08aec3e10c6941b6c"
+      },
+      "mode": "scripted_multi",
+      "physics_seed": 8732,
+      "policy_id": "script",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-late-screen-v1/complementary_late_development_0100.json",
+        "sha256": "sha256:bf6096d2883c22989924966d940c48c9187d71ecf231c3f153af330ab3bc236b"
+      },
+      "scene_id": "complementary_late_development_0100"
+    },
+    {
+      "assignment_id": "episode_123",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_123/manifest.json",
+        "sha256": "sha256:af7e4ece11ddaa4d5ed85f1f5da459d989508a99ff687cf45c551899a370d80e"
+      },
+      "mode": "forced",
+      "option_id": "prior_splice_e050_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_prior_splice_e050_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_124",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_124/manifest.json",
+        "sha256": "sha256:6b30913f6f44d943f52164b11caf410ec9edae5245758326a500428ae2e19b14"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_observation_curriculum",
+      "run_id": "seed93202_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_125",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_125/manifest.json",
+        "sha256": "sha256:1fb8c3b63a6dfd58583b6230b59864f24205dde034fd78273d965f2030fc92d6"
+      },
+      "mode": "forced",
+      "option_id": "short_e070_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_short_e070_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_126",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_126/manifest.json",
+        "sha256": "sha256:f8813dd69f509cd125f176ddcb6e54a65a3b1b36f70991dfbfaed3b17659f7cd"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_analytic_contrast",
+      "run_id": "seed93203_analytic_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_127",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_127/manifest.json",
+        "sha256": "sha256:e7b690145e60121dfcb1dcec2249d8451b2607bb1d5665409ff742b371a4d433"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_uniform",
+      "run_id": "seed93201_uniform",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_128",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_128/manifest.json",
+        "sha256": "sha256:bb23a2fb3ca82fe383a562713baaa81a1e77f1c3752afb53b6156147c902b835"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_target_only",
+      "run_id": "seed93203_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_129",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_129/manifest.json",
+        "sha256": "sha256:4f15be2a4965b9ee461293af3cc4a670d3d50d8eb46315c600b683ee07b55219"
+      },
+      "mode": "forced",
+      "option_id": "short_e015_r265",
+      "physics_seed": 8732,
+      "policy_id": "fixed_short_e015_r265",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_130",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_130/manifest.json",
+        "sha256": "sha256:2fc314ebdcf0a2a1f47838c1381c7bafa7efa8f843f06106f4e359fc646ad6d6"
+      },
+      "mode": "forced",
+      "option_id": "sustained_e070_r255",
+      "physics_seed": 8732,
+      "policy_id": "fixed_sustained_e070_r255",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_131",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_131/manifest.json",
+        "sha256": "sha256:9cafbeda04ee9a3f7b2173fe9fc7f8e032c1bac2478c8a6ec1feaaf6cd47b7e0"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_reference_contrast",
+      "run_id": "seed93201_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_132",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_132/manifest.json",
+        "sha256": "sha256:c0a2e5e71a5aacf5a3dafb08735d3bdbdb767e8da2dac978a6136607dca54524"
+      },
+      "mode": "scripted_multi",
+      "physics_seed": 8732,
+      "policy_id": "script",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/long_passage.json",
+        "sha256": "sha256:89b6bfe446d3b308c2fef5188deb3cfd78f3f6d25398e014784d5b698d3acaa8"
+      },
+      "scene_id": "timed_development_0247"
+    },
+    {
+      "assignment_id": "episode_133",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_133/manifest.json",
+        "sha256": "sha256:c1d8a9da8d04ab24588ae97a89d44d0921c3ba7e80860ff514bd93c5fdde6a7f"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93203_observation_curriculum",
+      "run_id": "seed93203_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    },
+    {
+      "assignment_id": "episode_134",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_134/manifest.json",
+        "sha256": "sha256:84738f355b2e9785d16469d6cad354c3057fe1827e51905815fdb553223082e8"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93202_reference_contrast",
+      "run_id": "seed93202_reference_contrast",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/empty.json",
+        "sha256": "sha256:07cccb8354b5ec54c95455285cb2acc75f0bb0d8b42f34216ba497176581d577"
+      },
+      "scene_id": "long_neutral_empty"
+    },
+    {
+      "assignment_id": "episode_135",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_135/manifest.json",
+        "sha256": "sha256:f4f124179cfc2799c907ff175736b53356569d761eb69ec30f1f5a1e828eed24"
+      },
+      "mode": "scripted_multi",
+      "physics_seed": 8732,
+      "policy_id": "script",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_development_0284.json",
+        "sha256": "sha256:7300b71ba931f664a13347ebf73878b0bd3ca4f5d3e9b0dc90d6b866e4303aba"
+      },
+      "scene_id": "early_prior_development_0284"
+    },
+    {
+      "assignment_id": "episode_136",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_136/manifest.json",
+        "sha256": "sha256:3090367655dfe960e57cf67b9455b63e697cf7328e995fac4a984be3e3fd172b"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_target_only",
+      "run_id": "seed93201_target_only",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-early-option-scene-screen-v1/early_prior_two_beam_development_v1.json",
+        "sha256": "sha256:47410e8e3925ec3f9c7670063826bbe8b2d93268c4b96cb6dc0a5d67bd5ddbbc"
+      },
+      "scene_id": "early_prior_two_beam_development_v1"
+    },
+    {
+      "assignment_id": "episode_137",
+      "collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_137/manifest.json",
+        "sha256": "sha256:a688378c926ee8075a578d726804b538e06bff4052d862f92a376e84286c7e88"
+      },
+      "mode": "learned",
+      "physics_seed": 8732,
+      "policy_id": "seed93201_observation_curriculum",
+      "run_id": "seed93201_observation_curriculum",
+      "scene_definition": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-timed-schedule-development-inputs-v1/short_beam.json",
+        "sha256": "sha256:c56b60dadc537426cf2eb4d4364d572ddb894c7bf416dbe5e5aab3acc021785c"
+      },
+      "scene_id": "timed_development_0187"
+    }
+  ],
+  "models": {
+    "seed93201_analytic_contrast": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_analytic_contrast/models/model_008/policy.npz",
+        "sha256": "sha256:c64423482f5da301b91578136114df02b5a6812cbc6b4535b8fb0884926e3926"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_analytic_contrast/models/model_008/result.json",
+        "sha256": "sha256:de7321e1dbf0434b834c86c3729360ba238984cfe404f3117d0975bf51621c22"
+      }
+    },
+    "seed93201_observation_curriculum": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_observation_curriculum/models/model_008/policy.npz",
+        "sha256": "sha256:9b171d0a9bd4bf80e1734692980adb25a242aeeb0099a5b304bce3c0a0774152"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_observation_curriculum/models/model_008/result.json",
+        "sha256": "sha256:3c8074a6a6c7fa0f237daa13608c24ad2b181b0dd19dfa237130d0471adde466"
+      }
+    },
+    "seed93201_reference_contrast": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/models/model_008/policy.npz",
+        "sha256": "sha256:fddf26aa1c66ae5dcfc6bce26e24e790da496ab7da7255bcc32aea6013299038"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/models/model_008/result.json",
+        "sha256": "sha256:236aaa546b65640bc6975e98c068ed8914d5661bfff403497a683dfe8c1ea125"
+      }
+    },
+    "seed93201_target_only": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_target_only/models/model_008/policy.npz",
+        "sha256": "sha256:2bb811ee5ac6138d12bfdbb1efe45cb6ea38d19a81c8030eb13276855e4e981b"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_target_only/models/model_008/result.json",
+        "sha256": "sha256:65b90f7ef221e3794d60f48021ac7afc1f1f4240fb2889f8c28c952299a10d10"
+      }
+    },
+    "seed93201_uniform": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_uniform/models/model_008/policy.npz",
+        "sha256": "sha256:7d2094d56b18ba1bc3ad88c199e8fd56b4730fa64909d54e9ee60f705e6bf8b2"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_uniform/models/model_008/result.json",
+        "sha256": "sha256:64be2b1a2daca691d16ba703d17fad0add218a8ff3ce635fb7d259e55bbcdce1"
+      }
+    },
+    "seed93202_analytic_contrast": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_analytic_contrast/models/model_008/policy.npz",
+        "sha256": "sha256:92a2af4ca587b7b2d466744d96e6f994f18d1e4f73c7bf8a62ff104010fe7f96"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_analytic_contrast/models/model_008/result.json",
+        "sha256": "sha256:39ada5c40086d208440c13e4b19de4fc96fa79b1b0d71ac16ff0178eed1cb034"
+      }
+    },
+    "seed93202_observation_curriculum": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_observation_curriculum/models/model_008/policy.npz",
+        "sha256": "sha256:5771de8f51787064ea97221ff735c578b92a73576d619b2b82c5294d1375a12f"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_observation_curriculum/models/model_008/result.json",
+        "sha256": "sha256:4f4075f22a365fe7540045406da118425d674ff18797f14621ee2dc6d84063a8"
+      }
+    },
+    "seed93202_reference_contrast": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/models/model_008/policy.npz",
+        "sha256": "sha256:1f7dbb58d9654d537cc5da004aa2a6bbaf52b04c04535cf152886509c1f775d9"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/models/model_008/result.json",
+        "sha256": "sha256:790cb201aa8cece8c9f40f99a088f850745bb0b72565a6f53c8f8290e935491e"
+      }
+    },
+    "seed93202_target_only": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/models/model_008/policy.npz",
+        "sha256": "sha256:f1a4b325d02b836af39057a00095a3bb24a55d6500bef50d700b6e474e670ad9"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/models/model_008/result.json",
+        "sha256": "sha256:a09df05cf19897309484413a062f0dfdc830b2c6140c345e85b3f9f7c40dba07"
+      }
+    },
+    "seed93202_uniform": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_uniform/models/model_008/policy.npz",
+        "sha256": "sha256:30aad9ecb23b3f7569b0a9a502709e7196ebffbb44c2daa719f3d1d21f88969b"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_uniform/models/model_008/result.json",
+        "sha256": "sha256:7c6c405d2101c7b0a6df02fcd654c0e1f8abafa5a7e5f8aab697db2986ddf525"
+      }
+    },
+    "seed93203_analytic_contrast": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_analytic_contrast/models/model_008/policy.npz",
+        "sha256": "sha256:1883d2052f0e3c3d3cac07903ab2024c08d4653e06af06e8e2543fa7c626c041"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_analytic_contrast/models/model_008/result.json",
+        "sha256": "sha256:d5af5fe016a9b0627e412cc0bbdc4b9ba40301a382fca6116c3d7fc874388eaa"
+      }
+    },
+    "seed93203_observation_curriculum": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_observation_curriculum/models/model_008/policy.npz",
+        "sha256": "sha256:8b61a250d6d6a4eb9fdb1b90e410b6ffe581efc60a931214a33ee24da3f4fdde"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_observation_curriculum/models/model_008/result.json",
+        "sha256": "sha256:eabf098d0ecb9a5f3e72d79b4fa36b8d01304812a7d919d5ca62e027eebef92a"
+      }
+    },
+    "seed93203_reference_contrast": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/models/model_008/policy.npz",
+        "sha256": "sha256:2d6f7ef9de86ff5352aa836dbd57282e2739eb1bf9a9e6445fe1a1122316bdef"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_reference_contrast/models/model_008/result.json",
+        "sha256": "sha256:2e6e4d86e38d53f127bb0e14d45e8c94dab481939d40609d63614a040ebe719d"
+      }
+    },
+    "seed93203_target_only": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_target_only/models/model_008/policy.npz",
+        "sha256": "sha256:c292a8c52c3261e0b763cec9d010e7e34d8d8aacecd2e141219d8759773f55df"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_target_only/models/model_008/result.json",
+        "sha256": "sha256:23aab25aaea0f9f5ea239f9e8503d36205191414eff505add230a34ff27db647"
+      }
+    },
+    "seed93203_uniform": {
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_uniform/models/model_008/policy.npz",
+        "sha256": "sha256:c4e21b9401ed7327ce3690d2b7a93c00a7214627693ea0cadf9823a03b7a0e0f"
+      },
+      "training_result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_uniform/models/model_008/result.json",
+        "sha256": "sha256:9668754f9cade54955732d9f3a1b07f2352811a87fcbc285fcb21304527a7279"
+      }
+    }
+  },
+  "study": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/study.json",
+    "sha256": "sha256:ee75906a10e2d585f5b9c7172cd578d56068392ee88bed5a9b13e42f63b771b2"
+  }
+}

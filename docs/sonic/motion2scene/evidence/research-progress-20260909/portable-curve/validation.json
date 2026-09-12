@@ -1,0 +1,90 @@
+{
+  "schema": "motion2scene_acquisition_curve_portability_validation_v1",
+  "created_utc": "2026-09-09T23:50:14.826629+00:00",
+  "status": "completed_implementation_validation_not_later_acquisition_export",
+  "source_files": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_acquisition_curve_dataset_baseline.py",
+      "sha256": "sha256:59519588b61d7c2bbb5b2084da881e865434ac11020b09dcd8f8e208211b0df0"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_export_acquisition_curve_dataset.py",
+      "sha256": "sha256:1b1d15759d0a369573ceab9ed6ff799e97374ae85d388dac98f4e37f2ec6e625"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/decoupled_wbc/tests/test_motion2scene_acquisition_curve_dataset.py",
+      "sha256": "sha256:741c241bcc66c599f640b1d7e2abcd8ebbff2d02c488fe863db94195f0c0dedc"
+    }
+  ],
+  "unit_tests": {
+    "command": "OPENBLAS_NUM_THREADS=1 .venv_isaaclab/bin/python -m pytest -q decoupled_wbc/tests/test_motion2scene_acquisition_curve_dataset.py decoupled_wbc/tests/test_motion2scene_acquisition_dataset_baseline.py decoupled_wbc/tests/test_motion2scene_schedule_dataset_baseline.py decoupled_wbc/tests/test_motion2scene_timed_schedule_dataset.py decoupled_wbc/tests/test_motion2scene_expanded_acquisition.py decoupled_wbc/tests/test_motion2scene_checkpoint_controls.py decoupled_wbc/tests/test_motion2scene_response_diversity.py",
+    "observed_result": "61 passed in 2.00s",
+    "new_tests": 22
+  },
+  "formatting": {
+    "black": "3 files unchanged",
+    "ruff": "all checks passed"
+  },
+  "reconstructions": {
+    "M2": {
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-curve-portability-validation-20260909-v1/M2_regression_v3/result.json",
+        "sha256": "sha256:be631a47557fcd6bff97fc3f5704857859516438bd9df269beba3f7d888ccaf0"
+      },
+      "models": 36,
+      "recorded_packet_choices": 324,
+      "maximum_array_difference": 5.551115123125783e-17,
+      "maximum_legal_value_difference": 1.1102230246251565e-16
+    },
+    "expanded_format": {
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-curve-portability-validation-20260909-v1/expanded_format_reconstruction.json",
+        "sha256": "sha256:c166393e5145f2e0e0083698422f250aa9f2af1a39135984c2ad1e76e532359e"
+      },
+      "models": 3,
+      "recorded_packet_choices": 27,
+      "maximum_array_difference": 3.122502256758253e-17,
+      "maximum_legal_value_difference": 1.1102230246251565e-16
+    }
+  },
+  "source_release": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-20260909-v1/release.json",
+    "sha256": "sha256:5264da65d97e0c4ecb50412a28fe429bbb9b34a11782ac83ee90980e6ec9961d"
+  },
+  "native_format_inputs": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-curve-portability-validation-20260909-v1/expanded_format_validation/result.json",
+    "sha256": "sha256:9e12efa662f9710eb24aae9653532af27b01c232ccf499918d03413865659ceb"
+  },
+  "final_toolkit": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-curve-portability-validation-20260909-v1/registration_v3.json",
+    "sha256": "sha256:2582487be8a1f901105f6d237b7a64cf361048cc69b552066be085dfaf40ce52"
+  },
+  "negative_preflight": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-curve-portability-validation-20260909-v1/negative_preflight.json",
+    "sha256": "sha256:49beb9fcfe2fbd85d7784464eb8c97ef40374d7c186527b105245f8f6c3dfd9c"
+  },
+  "actual_cpu_fits": {
+    "native_expanded_format": 3,
+    "portable_expanded_format": 3,
+    "M2_v2": 36,
+    "M2_v3": 36,
+    "total": 78
+  },
+  "failed_pre_fit_validations": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-curve-portability-validation-20260909-v1/M2_regression_failure.json",
+      "sha256": "sha256:c56fef88ba02fc2bdb7d8cfcedfe58345d7f1a95e59eb5ed253c3d53977d2cc5"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-curve-portability-validation-20260909-v1/expanded_format_failure_v2.json",
+      "sha256": "sha256:05527d921c87b2dee13a571b1b8641cc702a9bcda49dc3c2197e134ac56b17e9"
+    }
+  ],
+  "new_physics_steps": 0,
+  "limits": [
+    "No M8/M16/M32 acquisition export has run; required physical prefixes incomplete",
+    "Physical export schema currently requires complete neutral histories and full recorded captures; unsupported partial data are rejected without dropping assigned tasks",
+    "Guard is Python-level trusted-reader isolation, not an OS sandbox",
+    "Historical sidecars are bound at export and re-audited, not retroactively bound by the original fit result"
+  ]
+}

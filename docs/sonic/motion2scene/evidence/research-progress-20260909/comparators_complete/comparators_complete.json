@@ -1,0 +1,346 @@
+{
+  "assigned_panel_episodes": 138,
+  "assignments": [
+    {
+      "assignment_id": "episode_005",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_005/result.json",
+        "sha256": "sha256:288287cd8adfa82a7aea8dc84ec01ae1a855bf4bde105e3e215bd451bf53adc0"
+      }
+    },
+    {
+      "assignment_id": "episode_007",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_007/result.json",
+        "sha256": "sha256:a3b8be6feb8388d6631c9cb0490a5af383113841b1d1921c5c00b97227fc463a"
+      }
+    },
+    {
+      "assignment_id": "episode_011",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_011/result.json",
+        "sha256": "sha256:57307a826620ed44cb005c6835d8b6c6f52f6d46b1f6c1a30e6f0e4feeb6a80d"
+      }
+    },
+    {
+      "assignment_id": "episode_019",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_019/result.json",
+        "sha256": "sha256:c84d8bd7678b456fb7c2a7a31d3226d1aa20ab9b175943e616a655b4a214e0d0"
+      }
+    },
+    {
+      "assignment_id": "episode_020",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_020/result.json",
+        "sha256": "sha256:7a10d68bfdc56df029ac1ba421f04c290d5f59e027d6ec86bfb34c78cbbd2092"
+      }
+    },
+    {
+      "assignment_id": "episode_021",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_021/result.json",
+        "sha256": "sha256:0259b2923bc761120825a3a67bdaeb4e961347011f3ea88b1525b7e505ab66df"
+      }
+    },
+    {
+      "assignment_id": "episode_022",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_022/result.json",
+        "sha256": "sha256:0abd3c1728e429a4ced6f567ecd7b8f15f34700bb3c6bb2406407d0e91b88598"
+      }
+    },
+    {
+      "assignment_id": "episode_025",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_025/result.json",
+        "sha256": "sha256:145b78bc26eb31ef0956819f2499cf9dc294756ff2fc011a7ea60925be40b17e"
+      }
+    },
+    {
+      "assignment_id": "episode_028",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_028/result.json",
+        "sha256": "sha256:0df329194d2f47c03d70cd035075e215bbfa3fbcdb71c89afa46bd0cd0f6bb9b"
+      }
+    },
+    {
+      "assignment_id": "episode_035",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_035/result.json",
+        "sha256": "sha256:8f5ce23cb8dbaa5d907c338c8d992442cf63a0b4b4c154f9bbaf9037ca895914"
+      }
+    },
+    {
+      "assignment_id": "episode_036",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_036/result.json",
+        "sha256": "sha256:5d2153ec1cb5a02e6557075c7a5a19dd5daeefeec3a92005abd72c791b590fe3"
+      }
+    },
+    {
+      "assignment_id": "episode_037",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_037/result.json",
+        "sha256": "sha256:f42907f32d104866d5946a49c4f55c0519820af8d51ed9f24ac5009c256d5f20"
+      }
+    },
+    {
+      "assignment_id": "episode_041",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_041/result.json",
+        "sha256": "sha256:8995c5e6ef51b7025359a84bca1f7ba3f4e3590fceac019c7a0f228c546e1679"
+      }
+    },
+    {
+      "assignment_id": "episode_045",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_045/result.json",
+        "sha256": "sha256:ea1b3239af251ee9bf52214894931aed5e29fdfd5074f607dfd200ce4ad20cbf"
+      }
+    },
+    {
+      "assignment_id": "episode_052",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_052/result.json",
+        "sha256": "sha256:3e48be70fa9177e791684620a5f0d6af8fae32ad1425ccb22eac2a411ae7ec47"
+      }
+    },
+    {
+      "assignment_id": "episode_053",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_053/result.json",
+        "sha256": "sha256:fc19ab100bdf2435ebc3833677e967ed4e1102142f804b4f40aee5bb87426d99"
+      }
+    },
+    {
+      "assignment_id": "episode_054",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_054/result.json",
+        "sha256": "sha256:b6583c22caf076e9b35b38ff2a3f55ed2422185e58a036d6c6f21fab9d46dad9"
+      }
+    },
+    {
+      "assignment_id": "episode_055",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_055/result.json",
+        "sha256": "sha256:86b6644a86b5a074d443175f6b10ed7cd1812f28e2b20a2e567b5e4459742c33"
+      }
+    },
+    {
+      "assignment_id": "episode_056",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_056/result.json",
+        "sha256": "sha256:5a3fc0435d3842c18dfcba5d719b16db1f93f21dde2abe1b156c26df08c4408f"
+      }
+    },
+    {
+      "assignment_id": "episode_059",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_059/result.json",
+        "sha256": "sha256:72fd29837a9b3595a21a30e6ca2d35d2382be178fef193d975c894b119b81c80"
+      }
+    },
+    {
+      "assignment_id": "episode_063",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_063/result.json",
+        "sha256": "sha256:c1b77e881e1388db03b64ef558b8f8a5ce53cf0a388aee3bd4058525ce8c40d2"
+      }
+    },
+    {
+      "assignment_id": "episode_065",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_065/result.json",
+        "sha256": "sha256:dc6361da70b7a10117bea278b81dd4ee0dcd36387f65caf7afca4486661b96b9"
+      }
+    },
+    {
+      "assignment_id": "episode_067",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_067/result.json",
+        "sha256": "sha256:39162c1f2f0ced970f5a536dbb388ba5a93f65ab0a79cad4d1eee4d486fbaa92"
+      }
+    },
+    {
+      "assignment_id": "episode_069",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_069/result.json",
+        "sha256": "sha256:b16685ae61e7406e6c0b86c7cad2e54864d0bf0e216a419f903528567d4f5a70"
+      }
+    },
+    {
+      "assignment_id": "episode_070",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_070/result.json",
+        "sha256": "sha256:e84b097cda7d88618a1adb3ad9d97677795cb82eb9b2c755165f43ef06c97ed6"
+      }
+    },
+    {
+      "assignment_id": "episode_071",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_071/result.json",
+        "sha256": "sha256:80ffc8f72366a6af1a8838d4aadb35ae4a9314b5dc0e4d4b846afc666a9b4767"
+      }
+    },
+    {
+      "assignment_id": "episode_075",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_075/result.json",
+        "sha256": "sha256:3b8de96fe121b167aa36b0e7ec8461973cba03f102a8339c5c172e4e5d3bcb2f"
+      }
+    },
+    {
+      "assignment_id": "episode_079",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_079/result.json",
+        "sha256": "sha256:ba261aac10c77170231afa4e8e5a05cd81bf6acfe171d409212d694df981211d"
+      }
+    },
+    {
+      "assignment_id": "episode_085",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_085/result.json",
+        "sha256": "sha256:eaefa72837083856e3d3cbd81f66072121b73e3551fa779c5ee19a3db41341bb"
+      }
+    },
+    {
+      "assignment_id": "episode_086",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_086/result.json",
+        "sha256": "sha256:abe84b4cfdb5b6a6087ba00de4d9752cbe5d8ecb28a34921bb0f5a8abc578ce5"
+      }
+    },
+    {
+      "assignment_id": "episode_087",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_087/result.json",
+        "sha256": "sha256:49126a990c2727f21f12373490b24fcc4da36945ae30b92715f1afdd35cfdd61"
+      }
+    },
+    {
+      "assignment_id": "episode_092",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_092/result.json",
+        "sha256": "sha256:ea3fd31b7ce2aff493c1d60b967658bd9d9e10994eaa65236dc9cf4060648ec6"
+      }
+    },
+    {
+      "assignment_id": "episode_095",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_095/result.json",
+        "sha256": "sha256:cc22109a1c260fdbe0fde169103e7bb7c2a9b36b2da2690c55c67aa941f099c5"
+      }
+    },
+    {
+      "assignment_id": "episode_101",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_101/result.json",
+        "sha256": "sha256:17f1964254a73c3d26d3397c08f4c974ab3707a019add4fc74082c9f40224dcb"
+      }
+    },
+    {
+      "assignment_id": "episode_103",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_103/result.json",
+        "sha256": "sha256:7c9cf8172af4c31c0a29127db78e046a50ba9de88a5b3a0dfe1d95a4f4fbb4e5"
+      }
+    },
+    {
+      "assignment_id": "episode_104",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_104/result.json",
+        "sha256": "sha256:466bff491f23686fd1beeec6a3273e4f338b924cfb6e8f7e09d302ddb1def328"
+      }
+    },
+    {
+      "assignment_id": "episode_108",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_108/result.json",
+        "sha256": "sha256:025332495e0222c7768fb0b7915fb01b8790ea6de75a45e844ad8d9716727766"
+      }
+    },
+    {
+      "assignment_id": "episode_110",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_110/result.json",
+        "sha256": "sha256:e5cef2170970d5c5a24fdea275f9980371e17fe90cfd78d8f227d3115b964a6b"
+      }
+    },
+    {
+      "assignment_id": "episode_111",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_111/result.json",
+        "sha256": "sha256:633eb05950025a4f8b6a664d085da3bec99fa2ee81991f8eaa8143548539d11e"
+      }
+    },
+    {
+      "assignment_id": "episode_115",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_115/result.json",
+        "sha256": "sha256:8aa615b0b483e77845db4ada733eb3c428424903fa65c3428a0c89574b8f76d7"
+      }
+    },
+    {
+      "assignment_id": "episode_119",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_119/result.json",
+        "sha256": "sha256:cf100fe1234b90e29a45272b058d12825faa763ad42c4dcab19b58c7d7e31ec6"
+      }
+    },
+    {
+      "assignment_id": "episode_122",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_122/result.json",
+        "sha256": "sha256:fe09ac6f8ec7b488ab0df9f30f945f7d6a585c1cba7d64ccf992430825f5b5f0"
+      }
+    },
+    {
+      "assignment_id": "episode_123",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_123/result.json",
+        "sha256": "sha256:ed4475e5653e3f25176baa45d177358eb75fdec9420df0d12ffe37913fb64c6a"
+      }
+    },
+    {
+      "assignment_id": "episode_125",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_125/result.json",
+        "sha256": "sha256:453125a807e1211a76e8460eed3b6c1a931e2f943f98cf95013a818b533df911"
+      }
+    },
+    {
+      "assignment_id": "episode_129",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_129/result.json",
+        "sha256": "sha256:1cb8ada488bd3a8588fedd35cf65eda307132dbf7630cf0144f49a3f430462a3"
+      }
+    },
+    {
+      "assignment_id": "episode_130",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_130/result.json",
+        "sha256": "sha256:c289112777aba68fb58bdfae391a5007ee5ca0219757ae75cb2d45c20dfe891c"
+      }
+    },
+    {
+      "assignment_id": "episode_132",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_132/result.json",
+        "sha256": "sha256:0be2a0f975733fc772f3ef14314614292392edeac98f344cf32776a3f3e00288"
+      }
+    },
+    {
+      "assignment_id": "episode_135",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_135/result.json",
+        "sha256": "sha256:e3027b406095488a72325f9333b3b75b04e54e0b4b9dc1e9a74241e95d706250"
+      }
+    }
+  ],
+  "complete_panel": false,
+  "readiness": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/readiness.json",
+    "sha256": "sha256:226faf9c2343be042cdefd241474bbb9dad9aa44bbd16f6136e4fc415c931468"
+  }
+}

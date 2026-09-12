@@ -1,0 +1,42 @@
+{
+  "all_source_and_archive_bytes_match": true,
+  "archive": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-20260909-v1-hardlinks.tar.gz",
+    "sha256": "sha256:fc4e6b590613eecf0953fc2b168fe1ebcc8c8740cffd7da971a271eb768e5137",
+    "size_bytes": 728923512
+  },
+  "archive_wall_seconds": 108.38458829699812,
+  "hardlink_members": 12948,
+  "implementation": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/package_release.py",
+    "sha256": "sha256:17c73486c56657813300e62a159660e2e5027c94ea4204da43e498b8a7c41fcd",
+    "size_bytes": 10585
+  },
+  "logical_file_bytes": 54058653825,
+  "member_count": 17233,
+  "member_inventory": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/archive_members.json",
+    "sha256": "sha256:bb79e3d62729509aa5935b53e4f586c7fb68ad547b87da6a399789dca43e609e",
+    "size_bytes": 4780195
+  },
+  "new_fits": 0,
+  "new_physics_steps": 0,
+  "reconstruction": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/full_reconstruction/result.json",
+    "sha256": "sha256:6fe05d49ce788f225970614a9f8f9dd70337e6dd990d37a37584847a403b98ca",
+    "size_bytes": 331337
+  },
+  "release": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-20260909-v1/release.json",
+    "sha256": "sha256:5264da65d97e0c4ecb50412a28fe429bbb9b34a11782ac83ee90980e6ec9961d",
+    "size_bytes": 67961
+  },
+  "schema": "motion2scene_acquisition_compact_archive_v1",
+  "status": "complete",
+  "stored_regular_bytes": 8960272648,
+  "tar_helper": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-deterministic-hardlink-release-v1/repack.py",
+    "sha256": "sha256:d7b393372933675733d51efa32fe30c298c598bd2f922f68038db1d6e42612f6",
+    "size_bytes": 13174
+  }
+}

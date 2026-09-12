@@ -1,0 +1,9 @@
+architecture,seed,draws,parameters,train_seconds,reconstruction_count,capsule_clear_count,capsule_contrast_count,sampled_target_penetration_count,sparse_false_clear_count
+unconditional,101,56,4,0.6738108129993634,5,20,1,36,2
+mlp,101,56,10628,0.6389803920010309,4,52,1,4,1
+conv,101,56,5764,0.7013912689999415,12,56,0,0,0
+transformer,101,56,9412,0.7204835739994451,6,32,0,21,2
+unconditional,102,56,4,0.5917935630004649,11,21,4,35,2
+mlp,102,56,10628,0.6030364520011062,7,56,0,0,0
+conv,102,56,5764,0.6480831230001058,8,56,0,0,0
+transformer,102,56,9412,0.669728758999554,5,55,0,0,1

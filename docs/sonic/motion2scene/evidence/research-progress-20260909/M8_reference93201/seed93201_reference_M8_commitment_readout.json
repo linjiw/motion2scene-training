@@ -1,0 +1,190 @@
+{
+  "all_teacher_outcomes": {
+    "neutral": "failure",
+    "prior_splice_e015_r265": "failure",
+    "prior_splice_e050_r265": "failure",
+    "short_e015_r265": "failure",
+    "short_e070_r265": "failure",
+    "sustained_e015_r255": "pass",
+    "sustained_e070_r255": "pass"
+  },
+  "budget": 8,
+  "causal_features_match": true,
+  "completion": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/complete_008.json",
+    "sha256": "sha256:062d071c811384392e346497cea41ce88ccc1bfc8426d0a3cf60972700590ac9"
+  },
+  "generating_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/models/model_007/policy.npz",
+    "sha256": "sha256:df9a213df473ed3f00495a28bd8767d3b4573470ee7f8fb58c2e6717abd5eb53"
+  },
+  "interpretation": "At the same recorded neutral prefix at tick50, the generating M7 student commits to failing late prior while legal WAIT retains a complete passing late-sustained continuation. WAIT has all three expected continuation outcomes and selects the physically passing sustained branch. This is an acquired-scene commitment failure relative to measured finite-bank capability. It does not prove perceptual realizability across scenes, isolate WAIT information benefit from selecting the same complete schedule initially, or evaluate the new M8 model. The earlier tick15 WAIT must not be assigned this later commitment failure as a separate immediate error. Student tick70 is already committed and is not treated as a matched neutral decision. The digest binds recorded history, not unrecorded simulator hidden state.",
+  "learner_l2": 10.0,
+  "legal_mask_matches": true,
+  "new_fits": 0,
+  "new_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/models/model_008/policy.npz",
+    "sha256": "sha256:fddf26aa1c66ae5dcfc6bce26e24e790da496ab7da7255bcc32aea6013299038"
+  },
+  "new_physical_executions": 0,
+  "original_teacher_prefix_preserved": true,
+  "passing_immediate_actions": [
+    "neutral"
+  ],
+  "passing_teacher_outcome": {
+    "assigned_slots": 1,
+    "classification": "complete_pass",
+    "complete_measurement_admitted": true,
+    "complete_pass": true,
+    "exit_status": 0,
+    "measurement_diagnostics": [],
+    "measurement_status": "complete",
+    "phase_availability": [
+      {
+        "packet_index": 14,
+        "reason": null,
+        "sensor_preaction_available": true,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 15
+      },
+      {
+        "packet_index": 49,
+        "reason": null,
+        "sensor_preaction_available": true,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 50
+      },
+      {
+        "packet_index": 69,
+        "reason": null,
+        "sensor_preaction_available": true,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 70
+      }
+    ],
+    "physical_events": [],
+    "physical_rows_recorded": 298,
+    "physics_steps_recorded": 1192,
+    "schema": "motion2scene_timed_attempt_outcome_v1",
+    "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+    "sensor_packets_recorded": 298,
+    "task_outcome": "pass"
+  },
+  "passing_teacher_passage_time_s": 3.48,
+  "passing_teacher_raw_trajectory": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_sustained_e070_r255/trajectories/000000.trajectory.pkl",
+    "sha256": "sha256:f6d47cae243d69b138abe5e1f21f8b0affd13762741f17b9df7c76a54d591cb4"
+  },
+  "passing_teacher_sensor": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/rollouts/forced_sustained_e070_r255/trajectories/reactive_interface.json",
+    "sha256": "sha256:fe30081a570da67a2d0fe296ba2ab92dd41c8293a73e0392fed268ac230a179a"
+  },
+  "passing_wait_continuation": "sustained_e070_r255",
+  "phase_tick": 50,
+  "physics_seed": 93201,
+  "preaction_capture_elapsed_s": 0.98,
+  "preupdate": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/preupdate.json",
+    "sha256": "sha256:b581125ada188b83e8051596b2e7184a03e8868bcfe439ad6456a88cb1789de3"
+  },
+  "recorded_history_sha256": "870a85506fa59596595d6aa1c5c5472d1f7270ddf80fa745046d0ed5b0c5fd09",
+  "registry": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/registry.json",
+    "sha256": "sha256:a33af401fe9e6949baaddf63a67a5e37e8f62f87758e1ca373f926f9a3214c3c"
+  },
+  "run_id": "seed93201_reference_contrast",
+  "scene_id": "primary_candidate_93201_0417",
+  "schema": "motion2scene_matched_wait_commitment_readout_v1",
+  "selected_option_id": "prior_splice_e050_r265",
+  "stored_complete_teacher_prefix_matches": true,
+  "student_and_passing_teacher_recorded_histories_match": true,
+  "student_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/student/result.json",
+    "sha256": "sha256:a65596a90ceca3faa386821c4c3e7bdc58e81b06b29801b08ca487354abc3f07"
+  },
+  "student_outcome": {
+    "assigned_slots": 1,
+    "classification": "verified_task_failure",
+    "complete_measurement_admitted": true,
+    "complete_pass": false,
+    "exit_status": 0,
+    "measurement_diagnostics": [],
+    "measurement_status": "complete",
+    "phase_availability": [
+      {
+        "packet_index": 14,
+        "reason": null,
+        "sensor_preaction_available": true,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 15
+      },
+      {
+        "packet_index": 49,
+        "reason": null,
+        "sensor_preaction_available": true,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 50
+      },
+      {
+        "packet_index": null,
+        "reason": "not_a_neutral_preaction_state",
+        "sensor_preaction_available": false,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 70
+      }
+    ],
+    "physical_events": [
+      {
+        "kind": "verified_environment_contact",
+        "maximum_force_n": 2301.01611328125
+      }
+    ],
+    "physical_rows_recorded": 298,
+    "physics_steps_recorded": 1192,
+    "schema": "motion2scene_timed_attempt_outcome_v1",
+    "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+    "sensor_packets_recorded": 298,
+    "task_outcome": "failure"
+  },
+  "student_raw_trajectory": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/student/rollouts/learned_neutral/trajectories/000000.trajectory.pkl",
+    "sha256": "sha256:e3caae8736dd27532739d926d6c1ba552834882141bd3f5634d4de6a150baeba"
+  },
+  "student_sensor": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/student/rollouts/learned_neutral/trajectories/reactive_interface.json",
+    "sha256": "sha256:178249c43e34e4a1acb4bc413e7ce55ea031a21bb07520bc8cce2c8e31fcfc7a"
+  },
+  "teacher_action": 0,
+  "teacher_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_008/teachers/result.json",
+    "sha256": "sha256:a9eea43482f29d250e7746f431db6604035f5b4db78e1840bcd6123992e23c0f"
+  },
+  "utc": "2026-09-10T12:30:34.085524+00:00",
+  "verification_scope": "Recomputed the tick50 pre-commitment history digest from hash-checked raw trajectories and interfaces and compared it with the completed teacher target and WAIT continuation binding. Uses bound original outcome scoring; no second full-episode raw scoring or refit.",
+  "wait_continuation_branch_ids": [
+    "forced_sustained_e070_r255",
+    null,
+    null,
+    null,
+    "forced_prior_splice_e050_r265",
+    null,
+    null
+  ],
+  "wait_continuation_option_indices": [
+    6,
+    null,
+    null,
+    null,
+    4,
+    null,
+    null
+  ],
+  "wait_semantics": "Continue neutral execution while retaining the later legal adaptation choice; not stop.",
+  "weighting": "uniform_per_phase"
+}

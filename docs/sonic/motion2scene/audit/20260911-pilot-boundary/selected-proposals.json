@@ -1,0 +1,478 @@
+{
+  "rows": [
+    {
+      "mixture_channels": [
+        "support_strict",
+        "support_broad",
+        "support_strict",
+        "support_broad"
+      ],
+      "physical_outcomes_consulted": false,
+      "realised_mixture_strict_fraction": 0.5,
+      "seed": 93201,
+      "selected": {
+        "support_broad": [
+          {
+            "candidate_id": "primary_candidate_93201_1283",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": false,
+            "inside_positive_screen": true,
+            "original_queue_rank": 3,
+            "proposal_channel": "support_broad",
+            "slot": 0,
+            "stratum": "short_then_short"
+          },
+          {
+            "candidate_id": "primary_candidate_93201_1280",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": false,
+            "inside_positive_screen": true,
+            "original_queue_rank": 0,
+            "proposal_channel": "support_broad",
+            "slot": 1,
+            "stratum": "short"
+          },
+          {
+            "candidate_id": "primary_candidate_93201_1281",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": true,
+            "inside_positive_screen": false,
+            "original_queue_rank": 1,
+            "proposal_channel": "support_broad",
+            "slot": 2,
+            "stratum": "sustained"
+          },
+          {
+            "candidate_id": "primary_candidate_93201_1282",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": false,
+            "inside_positive_screen": true,
+            "original_queue_rank": 2,
+            "proposal_channel": "support_broad",
+            "slot": 3,
+            "stratum": "early_constraint"
+          }
+        ],
+        "support_mixture": [
+          {
+            "candidate_id": "primary_candidate_93201_1723",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 10,
+            "proposal_channel": "support_strict",
+            "slot": 0,
+            "stratum": "short_then_short"
+          },
+          {
+            "candidate_id": "primary_candidate_93201_1280",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": false,
+            "inside_positive_screen": true,
+            "original_queue_rank": 0,
+            "proposal_channel": "support_broad",
+            "slot": 1,
+            "stratum": "short"
+          },
+          {
+            "candidate_id": "primary_candidate_93201_2391",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 1,
+            "proposal_channel": "support_strict",
+            "slot": 2,
+            "stratum": "sustained"
+          },
+          {
+            "candidate_id": "primary_candidate_93201_1282",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": false,
+            "inside_positive_screen": true,
+            "original_queue_rank": 2,
+            "proposal_channel": "support_broad",
+            "slot": 3,
+            "stratum": "early_constraint"
+          }
+        ],
+        "support_strict": [
+          {
+            "candidate_id": "primary_candidate_93201_1723",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 10,
+            "proposal_channel": "support_strict",
+            "slot": 0,
+            "stratum": "short_then_short"
+          },
+          {
+            "candidate_id": "primary_candidate_93201_2355",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 0,
+            "proposal_channel": "support_strict",
+            "slot": 1,
+            "stratum": "short"
+          },
+          {
+            "candidate_id": "primary_candidate_93201_2391",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 1,
+            "proposal_channel": "support_strict",
+            "slot": 2,
+            "stratum": "sustained"
+          },
+          {
+            "candidate_id": "primary_candidate_93201_1427",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 20,
+            "proposal_channel": "support_strict",
+            "slot": 3,
+            "stratum": "early_constraint"
+          }
+        ]
+      },
+      "shared_prefix_candidates": [
+        "primary_candidate_93201_0010",
+        "primary_candidate_93201_0016",
+        "primary_candidate_93201_0017",
+        "primary_candidate_93201_0059"
+      ],
+      "shared_prefix_strata": [
+        "short",
+        "sustained",
+        "early_constraint",
+        "short_then_sustained"
+      ],
+      "shortfalls": [],
+      "stratum_schedule": [
+        "short_then_short",
+        "short",
+        "sustained",
+        "early_constraint"
+      ]
+    },
+    {
+      "mixture_channels": [
+        "support_strict",
+        "support_broad",
+        "support_strict",
+        "support_broad"
+      ],
+      "physical_outcomes_consulted": false,
+      "realised_mixture_strict_fraction": 0.5,
+      "seed": 93202,
+      "selected": {
+        "support_broad": [
+          {
+            "candidate_id": "primary_candidate_93202_1283",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": true,
+            "inside_positive_screen": false,
+            "original_queue_rank": 3,
+            "proposal_channel": "support_broad",
+            "slot": 0,
+            "stratum": "short_then_short"
+          },
+          {
+            "candidate_id": "primary_candidate_93202_1280",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": true,
+            "inside_positive_screen": false,
+            "original_queue_rank": 0,
+            "proposal_channel": "support_broad",
+            "slot": 1,
+            "stratum": "short"
+          },
+          {
+            "candidate_id": "primary_candidate_93202_1281",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": true,
+            "inside_positive_screen": false,
+            "original_queue_rank": 1,
+            "proposal_channel": "support_broad",
+            "slot": 2,
+            "stratum": "sustained"
+          },
+          {
+            "candidate_id": "primary_candidate_93202_1282",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": true,
+            "inside_positive_screen": false,
+            "original_queue_rank": 2,
+            "proposal_channel": "support_broad",
+            "slot": 3,
+            "stratum": "early_constraint"
+          }
+        ],
+        "support_mixture": [
+          {
+            "candidate_id": "primary_candidate_93202_2078",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 23,
+            "proposal_channel": "support_strict",
+            "slot": 0,
+            "stratum": "short_then_short"
+          },
+          {
+            "candidate_id": "primary_candidate_93202_1280",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": true,
+            "inside_positive_screen": false,
+            "original_queue_rank": 0,
+            "proposal_channel": "support_broad",
+            "slot": 1,
+            "stratum": "short"
+          },
+          {
+            "candidate_id": "primary_candidate_93202_2141",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 0,
+            "proposal_channel": "support_strict",
+            "slot": 2,
+            "stratum": "sustained"
+          },
+          {
+            "candidate_id": "primary_candidate_93202_1282",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": true,
+            "inside_positive_screen": false,
+            "original_queue_rank": 2,
+            "proposal_channel": "support_broad",
+            "slot": 3,
+            "stratum": "early_constraint"
+          }
+        ],
+        "support_strict": [
+          {
+            "candidate_id": "primary_candidate_93202_2078",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 23,
+            "proposal_channel": "support_strict",
+            "slot": 0,
+            "stratum": "short_then_short"
+          },
+          {
+            "candidate_id": "primary_candidate_93202_1825",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 2,
+            "proposal_channel": "support_strict",
+            "slot": 1,
+            "stratum": "short"
+          },
+          {
+            "candidate_id": "primary_candidate_93202_2141",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 0,
+            "proposal_channel": "support_strict",
+            "slot": 2,
+            "stratum": "sustained"
+          },
+          {
+            "candidate_id": "primary_candidate_93202_2387",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 43,
+            "proposal_channel": "support_strict",
+            "slot": 3,
+            "stratum": "early_constraint"
+          }
+        ]
+      },
+      "shared_prefix_candidates": [
+        "primary_candidate_93202_0070",
+        "primary_candidate_93202_0081",
+        "primary_candidate_93202_0132",
+        "primary_candidate_93202_0094"
+      ],
+      "shared_prefix_strata": [
+        "short",
+        "sustained",
+        "early_constraint",
+        "short_then_sustained"
+      ],
+      "shortfalls": [],
+      "stratum_schedule": [
+        "short_then_short",
+        "short",
+        "sustained",
+        "early_constraint"
+      ]
+    },
+    {
+      "mixture_channels": [
+        "support_strict",
+        "support_broad",
+        "support_strict",
+        "support_broad"
+      ],
+      "physical_outcomes_consulted": false,
+      "realised_mixture_strict_fraction": 0.5,
+      "seed": 93203,
+      "selected": {
+        "support_broad": [
+          {
+            "candidate_id": "primary_candidate_93203_1282",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": true,
+            "inside_positive_screen": false,
+            "original_queue_rank": 2,
+            "proposal_channel": "support_broad",
+            "slot": 0,
+            "stratum": "early_constraint"
+          },
+          {
+            "candidate_id": "primary_candidate_93203_1280",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 0,
+            "proposal_channel": "support_broad",
+            "slot": 1,
+            "stratum": "short"
+          },
+          {
+            "candidate_id": "primary_candidate_93203_1281",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 1,
+            "proposal_channel": "support_broad",
+            "slot": 2,
+            "stratum": "sustained"
+          },
+          {
+            "candidate_id": "primary_candidate_93203_1287",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": true,
+            "inside_positive_screen": false,
+            "original_queue_rank": 7,
+            "proposal_channel": "support_broad",
+            "slot": 3,
+            "stratum": "early_constraint"
+          }
+        ],
+        "support_mixture": [
+          {
+            "candidate_id": "primary_candidate_93203_2337",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 26,
+            "proposal_channel": "support_strict",
+            "slot": 0,
+            "stratum": "early_constraint"
+          },
+          {
+            "candidate_id": "primary_candidate_93203_1280",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 0,
+            "proposal_channel": "support_broad",
+            "slot": 1,
+            "stratum": "short"
+          },
+          {
+            "candidate_id": "primary_candidate_93203_1386",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 3,
+            "proposal_channel": "support_strict",
+            "slot": 2,
+            "stratum": "sustained"
+          },
+          {
+            "candidate_id": "primary_candidate_93203_1282",
+            "geometric_screen_passed": false,
+            "inside_negative_screen": true,
+            "inside_positive_screen": false,
+            "original_queue_rank": 2,
+            "proposal_channel": "support_broad",
+            "slot": 3,
+            "stratum": "early_constraint"
+          }
+        ],
+        "support_strict": [
+          {
+            "candidate_id": "primary_candidate_93203_2337",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 26,
+            "proposal_channel": "support_strict",
+            "slot": 0,
+            "stratum": "early_constraint"
+          },
+          {
+            "candidate_id": "primary_candidate_93203_2145",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 0,
+            "proposal_channel": "support_strict",
+            "slot": 1,
+            "stratum": "short"
+          },
+          {
+            "candidate_id": "primary_candidate_93203_1386",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 3,
+            "proposal_channel": "support_strict",
+            "slot": 2,
+            "stratum": "sustained"
+          },
+          {
+            "candidate_id": "primary_candidate_93203_1572",
+            "geometric_screen_passed": true,
+            "inside_negative_screen": true,
+            "inside_positive_screen": true,
+            "original_queue_rank": 33,
+            "proposal_channel": "support_strict",
+            "slot": 3,
+            "stratum": "early_constraint"
+          }
+        ]
+      },
+      "shared_prefix_candidates": [
+        "primary_candidate_93203_0135",
+        "primary_candidate_93203_0046",
+        "primary_candidate_93203_0008",
+        "primary_candidate_93203_0054"
+      ],
+      "shared_prefix_strata": [
+        "short",
+        "sustained",
+        "short_then_short",
+        "short_then_sustained"
+      ],
+      "shortfalls": [],
+      "stratum_schedule": [
+        "early_constraint",
+        "short",
+        "sustained",
+        "early_constraint"
+      ]
+    }
+  ]
+}

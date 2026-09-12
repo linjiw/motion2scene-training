@@ -1,0 +1,15 @@
+scene,candidate_id,seed,schedule_id,outcome
+A,primary_candidate_93201_0155,93201,neutral,failure
+A,primary_candidate_93201_0155,93201,short_e015_r265,failure
+A,primary_candidate_93201_0155,93201,sustained_e015_r255,pass
+A,primary_candidate_93201_0155,93201,prior_splice_e015_r265,failure
+A,primary_candidate_93201_0155,93201,prior_splice_e050_r265,failure
+A,primary_candidate_93201_0155,93201,short_e070_r265,failure
+A,primary_candidate_93201_0155,93201,sustained_e070_r255,pass
+B,primary_candidate_93201_0017,93201,neutral,failure
+B,primary_candidate_93201_0017,93201,short_e015_r265,failure
+B,primary_candidate_93201_0017,93201,sustained_e015_r255,failure
+B,primary_candidate_93201_0017,93201,prior_splice_e015_r265,pass
+B,primary_candidate_93201_0017,93201,prior_splice_e050_r265,pass
+B,primary_candidate_93201_0017,93201,short_e070_r265,failure
+B,primary_candidate_93201_0017,93201,sustained_e070_r255,failure

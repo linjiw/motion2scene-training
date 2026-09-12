@@ -1,0 +1,49 @@
+{
+  "black": "three files unchanged",
+  "completed_corpus_receipts": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-20260909-v1/receipts/seed93201_target_only.json",
+      "sha256": "sha256:de180aebaa009691b308f854fc7d272a69416be02e309e4deb3ef649cde63c58"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-20260909-v1/receipts/seed93201_uniform.json",
+      "sha256": "sha256:60f4dd132d5869c593a2b52a1a48d73ae166d839b0c0736309d06a30f760f7de"
+    }
+  ],
+  "created_utc": "2026-09-09T20:56:21.522255+00:00",
+  "export_registration": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-20260909-v1/registration.json",
+    "sha256": "sha256:7416d73bf6fcfebd8016ed6b359a6d418b3556acfefdcb2b7c6b2073d75acf21"
+  },
+  "export_tool_session": 27508,
+  "full_reconstruction_executed": false,
+  "guarded_smoke_command": "OPENBLAS_NUM_THREADS=1 .venv_research/bin/python -I /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/guard_v2.py /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/smoke.py",
+  "new_physics_steps": 0,
+  "process_snapshot": "    PID    PPID     ELAPSED %CPU COMMAND\n 161884  108128    06:58:11  0.0 .venv_isaaclab/bin/python /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/dispatch.py --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json\n1955047 1955036    02:01:50  0.0 /home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python scripts/research/motion2scene_expanded_acquisition.py --plan /home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json --until-budget 8 --watch\n2104917  989222       11:20 98.5 .venv_isaaclab/bin/python scripts/research/motion2scene_export_acquisition_dataset.py --audit /home/linjiw/research-data/groot-wbc/m2s-response-diversity-M2-20260909-v1/result.json --out /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-20260909-v1\n2109535  161884       07:34 17.5 /home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python scripts/research/motion2scene_run_primary_acquisition.py run --plan /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-tie-proposed-v5/plan.json --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json --run-id seed93203_target_only --stop-after-round 3\n",
+  "release_complete": false,
+  "ruff": "all checks passed",
+  "schema": "motion2scene_portable_acquisition_progress_v1",
+  "smoke_result": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/smoke_result.json",
+    "sha256": "sha256:78a93b7597065b2e265b7563bb168f2a118e19d77a216ff9db004f47c6ac7362"
+  },
+  "sources": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/source_snapshots/motion2scene_acquisition_dataset_baseline.py",
+      "sha256": "sha256:5818e4450e47186034cc99154f70f52199d10552c01caf26543e40b963ec4822"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/source_snapshots/motion2scene_export_acquisition_dataset.py",
+      "sha256": "sha256:b4289400ae3ed2efe096b0954e51058825734c34db4e72564adbc0bce50ea361"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/source_snapshots/test_motion2scene_acquisition_dataset_baseline.py",
+      "sha256": "sha256:8d658499bf61ef42fc15bb8217213025b62a1e79d9e6eaea0f6fb620485ac1f2"
+    }
+  ],
+  "tests": {
+    "command": "OPENBLAS_NUM_THREADS=1 .venv_isaaclab/bin/python -m pytest -q decoupled_wbc/tests/test_motion2scene_acquisition_dataset_baseline.py decoupled_wbc/tests/test_motion2scene_schedule_dataset_baseline.py decoupled_wbc/tests/test_motion2scene_timed_schedule_dataset.py",
+    "passed": 20,
+    "seconds": 2.2
+  }
+}

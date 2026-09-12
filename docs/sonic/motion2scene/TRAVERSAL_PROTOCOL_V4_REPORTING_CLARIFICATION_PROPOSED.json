@@ -1,0 +1,478 @@
+{
+  "amendment_scope": {
+    "adoption_created": false,
+    "change": "Add acquired-corpus resampling to the primary descriptive interval; retain the original layout-only procedure as an explicitly secondary sensitivity.",
+    "future_adoption_requirement": "A separately adopted protocol must bind this complete artifact by path and SHA-256, together with the reviewed statistics implementation; this artifact provides no execution authority.",
+    "geometry_changed": false,
+    "original_uncertainty_text_verbatim": "Pair by layout/source/seed; cluster-bootstrap18layout means with20000 draws seed202609081822, and independently report variability across3 acquired corpora. Courses with6layouts retain small-sample limitation.",
+    "physics_assignments_changed": false,
+    "primary_assigned_episodes": 972,
+    "primary_maximum_evaluation_physics_steps": 1158624,
+    "runtime_or_scoring_changed": false,
+    "stress_and_higher_budget_followups_enabled": false,
+    "timing": "Declared before primary acquisition outcomes, reserved evaluation outcomes, or adoption; prior development outcomes exist and remain development evidence."
+  },
+  "assignment_preview": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-evaluation-v4-proposal-preview-v1/assignments.json",
+    "sha256": "d53cc021c77a15634596a1e15648a400bd950b990a10e1592b87b2420a28f9cc"
+  },
+  "bootstrap": {
+    "corpus_weights": "Per draw, multiplicity of each corpus index divided by 3.",
+    "draw_order": [
+      "rng = np.random.default_rng(202609081822)",
+      "corpus_indices = rng.integers(3, size=(20000, 3))",
+      "layout_indices = rng.integers(18, size=(20000, 18))"
+    ],
+    "draws": 20000,
+    "interpretation": "Descriptive 95% percentile interval from paired crossed corpus/layout resampling, not a population-coverage or significance guarantee.",
+    "joint_weights": "Product of corpus and layout weights; evaluation-seed weights remain equal.",
+    "layout_weights": "Per draw, multiplicity of each layout index divided by 18.",
+    "percentiles": [
+      0.025,
+      0.975
+    ],
+    "primary_interval_field": "crossed_95_percentile",
+    "primary_time_interval_field": "crossed_95_percentile_s",
+    "quantile_method": "np.quantile(values, [0.025, 0.975], method=\"linear\")",
+    "random_generator": "numpy.random.default_rng (PCG64)",
+    "seed": 202609081822,
+    "sensitivity": {
+      "completion_field": "layout_only_95_percentile",
+      "definition": "Use the same sampled layout weights with fixed corpus weights 1/3; this preserves the original V4 layout-only proposal as a named sensitivity, not the clarified primary interval.",
+      "time_field": "layout_only_95_percentile_s"
+    },
+    "shared_draws": "Generate these two matrices once and reuse both unchanged for all 34 registered comparisons, both checkpoints, completion and time.",
+    "subgroup_scope": "Primary intervals are for the entire 18-layout nominal panel. Report the declared layout-family strata descriptively; no additional subgroup interval family is introduced here."
+  },
+  "builder": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-evaluation-v4-reporting-clarification-proposed-v1/build_clarification.py",
+    "sha256": "1e55d439af95d3f584f001dd82749a7ee8a18d63c0aa92a9d3f3ab37b01f545b"
+  },
+  "comparison_count": 34,
+  "comparisons": [
+    {
+      "comparison_id": "analytic_observation_curriculum:M2__minus__analytic_contrast:M2",
+      "contrast_direction": "left_minus_right",
+      "kind": "constructor_at_matched_checkpoint",
+      "left": "analytic_observation_curriculum",
+      "left_checkpoint": "M2",
+      "right": "analytic_contrast",
+      "right_checkpoint": "M2"
+    },
+    {
+      "comparison_id": "analytic_contrast:M2__minus__uniform:M2",
+      "contrast_direction": "left_minus_right",
+      "kind": "constructor_at_matched_checkpoint",
+      "left": "analytic_contrast",
+      "left_checkpoint": "M2",
+      "right": "uniform",
+      "right_checkpoint": "M2"
+    },
+    {
+      "comparison_id": "analytic_contrast:M2__minus__target_only:M2",
+      "contrast_direction": "left_minus_right",
+      "kind": "constructor_at_matched_checkpoint",
+      "left": "analytic_contrast",
+      "left_checkpoint": "M2",
+      "right": "target_only",
+      "right_checkpoint": "M2"
+    },
+    {
+      "comparison_id": "uniform:M2__minus__always_walk:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "uniform",
+      "left_checkpoint": "M2",
+      "right": "always_walk",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "uniform:M2__minus__constant_development_selected:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "uniform",
+      "left_checkpoint": "M2",
+      "right": "constant_development_selected",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "uniform:M2__minus__scripted_multi_option:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "uniform",
+      "left_checkpoint": "M2",
+      "right": "scripted_multi_option",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "target_only:M2__minus__always_walk:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "target_only",
+      "left_checkpoint": "M2",
+      "right": "always_walk",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "target_only:M2__minus__constant_development_selected:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "target_only",
+      "left_checkpoint": "M2",
+      "right": "constant_development_selected",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "target_only:M2__minus__scripted_multi_option:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "target_only",
+      "left_checkpoint": "M2",
+      "right": "scripted_multi_option",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "analytic_contrast:M2__minus__always_walk:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "analytic_contrast",
+      "left_checkpoint": "M2",
+      "right": "always_walk",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "analytic_contrast:M2__minus__constant_development_selected:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "analytic_contrast",
+      "left_checkpoint": "M2",
+      "right": "constant_development_selected",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "analytic_contrast:M2__minus__scripted_multi_option:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "analytic_contrast",
+      "left_checkpoint": "M2",
+      "right": "scripted_multi_option",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "analytic_observation_curriculum:M2__minus__always_walk:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "analytic_observation_curriculum",
+      "left_checkpoint": "M2",
+      "right": "always_walk",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "analytic_observation_curriculum:M2__minus__constant_development_selected:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "analytic_observation_curriculum",
+      "left_checkpoint": "M2",
+      "right": "constant_development_selected",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "analytic_observation_curriculum:M2__minus__scripted_multi_option:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "analytic_observation_curriculum",
+      "left_checkpoint": "M2",
+      "right": "scripted_multi_option",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "analytic_observation_curriculum:M4__minus__analytic_contrast:M4",
+      "contrast_direction": "left_minus_right",
+      "kind": "constructor_at_matched_checkpoint",
+      "left": "analytic_observation_curriculum",
+      "left_checkpoint": "M4",
+      "right": "analytic_contrast",
+      "right_checkpoint": "M4"
+    },
+    {
+      "comparison_id": "analytic_contrast:M4__minus__uniform:M4",
+      "contrast_direction": "left_minus_right",
+      "kind": "constructor_at_matched_checkpoint",
+      "left": "analytic_contrast",
+      "left_checkpoint": "M4",
+      "right": "uniform",
+      "right_checkpoint": "M4"
+    },
+    {
+      "comparison_id": "analytic_contrast:M4__minus__target_only:M4",
+      "contrast_direction": "left_minus_right",
+      "kind": "constructor_at_matched_checkpoint",
+      "left": "analytic_contrast",
+      "left_checkpoint": "M4",
+      "right": "target_only",
+      "right_checkpoint": "M4"
+    },
+    {
+      "comparison_id": "uniform:M4__minus__always_walk:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "uniform",
+      "left_checkpoint": "M4",
+      "right": "always_walk",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "uniform:M4__minus__constant_development_selected:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "uniform",
+      "left_checkpoint": "M4",
+      "right": "constant_development_selected",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "uniform:M4__minus__scripted_multi_option:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "uniform",
+      "left_checkpoint": "M4",
+      "right": "scripted_multi_option",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "target_only:M4__minus__always_walk:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "target_only",
+      "left_checkpoint": "M4",
+      "right": "always_walk",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "target_only:M4__minus__constant_development_selected:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "target_only",
+      "left_checkpoint": "M4",
+      "right": "constant_development_selected",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "target_only:M4__minus__scripted_multi_option:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "target_only",
+      "left_checkpoint": "M4",
+      "right": "scripted_multi_option",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "analytic_contrast:M4__minus__always_walk:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "analytic_contrast",
+      "left_checkpoint": "M4",
+      "right": "always_walk",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "analytic_contrast:M4__minus__constant_development_selected:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "analytic_contrast",
+      "left_checkpoint": "M4",
+      "right": "constant_development_selected",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "analytic_contrast:M4__minus__scripted_multi_option:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "analytic_contrast",
+      "left_checkpoint": "M4",
+      "right": "scripted_multi_option",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "analytic_observation_curriculum:M4__minus__always_walk:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "analytic_observation_curriculum",
+      "left_checkpoint": "M4",
+      "right": "always_walk",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "analytic_observation_curriculum:M4__minus__constant_development_selected:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "analytic_observation_curriculum",
+      "left_checkpoint": "M4",
+      "right": "constant_development_selected",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "analytic_observation_curriculum:M4__minus__scripted_multi_option:fixed",
+      "contrast_direction": "left_minus_right",
+      "kind": "checkpoint_vs_shared_baseline",
+      "left": "analytic_observation_curriculum",
+      "left_checkpoint": "M4",
+      "right": "scripted_multi_option",
+      "right_checkpoint": null
+    },
+    {
+      "comparison_id": "uniform:M4__minus__uniform:M2",
+      "contrast_direction": "left_minus_right",
+      "kind": "within_corpus_checkpoint_update",
+      "left": "uniform",
+      "left_checkpoint": "M4",
+      "right": "uniform",
+      "right_checkpoint": "M2"
+    },
+    {
+      "comparison_id": "target_only:M4__minus__target_only:M2",
+      "contrast_direction": "left_minus_right",
+      "kind": "within_corpus_checkpoint_update",
+      "left": "target_only",
+      "left_checkpoint": "M4",
+      "right": "target_only",
+      "right_checkpoint": "M2"
+    },
+    {
+      "comparison_id": "analytic_contrast:M4__minus__analytic_contrast:M2",
+      "contrast_direction": "left_minus_right",
+      "kind": "within_corpus_checkpoint_update",
+      "left": "analytic_contrast",
+      "left_checkpoint": "M4",
+      "right": "analytic_contrast",
+      "right_checkpoint": "M2"
+    },
+    {
+      "comparison_id": "analytic_observation_curriculum:M4__minus__analytic_observation_curriculum:M2",
+      "contrast_direction": "left_minus_right",
+      "kind": "within_corpus_checkpoint_update",
+      "left": "analytic_observation_curriculum",
+      "left_checkpoint": "M4",
+      "right": "analytic_observation_curriculum",
+      "right_checkpoint": "M2"
+    }
+  ],
+  "completion_estimand": {
+    "bootstrap_estimate": "Average paired seed differences within each corpus/layout cell, then sum those cell means using the product sampled corpus/layout weights.",
+    "complete_point_estimate": "Equal-weight mean of left-minus-right differences over 3 corpora x 18 layouts x 2 evaluation seeds.",
+    "failure_semantics": "A fully measured invalid_initial_approach is a named task-criterion failure, not a fabricated collision/fall. Preserve the scorer/runner recorded category and its assigned denominator.",
+    "outcome_coding": "Verified task pass=1; verified task-criterion failure=0. Technical missing and not-run remain unknown assigned outcomes.",
+    "unknown_bounds": "For each policy S/N <= completion <= (S+U)/N, where U includes all assigned unknown outcomes. Contrast lower = left_lower - right_upper; upper = left_upper - right_lower. Never drop an assigned unknown episode.",
+    "unknown_interval_rule": "Withhold both crossed and layout-only completion intervals if any participating assigned outcome is unknown.",
+    "unknown_point_rule": "Report no complete-outcome mean difference if any participating assigned outcome is unknown; retain the lower/upper contrast bounds and measured-only summaries with explicit denominators."
+  },
+  "created_utc": "2026-09-09T02:35:28.416265+00:00",
+  "execution_authorized": false,
+  "geometry_lock": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TRAVERSAL_EVALUATION_LOCK_V3.json",
+    "sha256": "509817600075888ef5cf681c1033c9dcd6796d7a08561e30ee4157049aff5181"
+  },
+  "input_output_contract": {
+    "assigned_row_count": 972,
+    "input_forms": [
+      "final result body with report.rows",
+      "paused evaluation_status event wrapper with receipt.report.rows"
+    ],
+    "input_schema": "motion2scene_reserved_execution_v4",
+    "output_schema": "motion2scene_reserved_statistics_v1",
+    "paired_comparison_key": "left, right, left_checkpoint, right_checkpoint; direction is always left-minus-right",
+    "physical_evidence_boundary": "The statistics CLI validates report identities and denominators; independent execution/source/physical admission remains the runner responsibility. A supplied statistics receipt is not simulator qualification."
+  },
+  "limitations": [
+    "Only three independent acquired corpora per arm: crossed bootstrap intervals can be unstable and are descriptive, not a large-sample guarantee.",
+    "Finite locked layouts, reused motion-source ancestry and ideal simulator sensing limit generalization.",
+    "M2/M4 are paired checkpoints, not independent replications.",
+    "No multiplicity adjustment: 34 descriptive intervals are not simultaneous significance claims.",
+    "Conditional successful-time differences cannot by themselves establish better passage capability.",
+    "This reporting clarification adopts neither the acquisition plan nor the reserved evaluation protocol."
+  ],
+  "parent_v4_proposal": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TRAVERSAL_PROTOCOL_AMENDMENT_V4_PROPOSED.json",
+    "sha256": "966d45ed93066a73a945a55f33c769459fe4c1736a455d4eec4ba581d40de2fd"
+  },
+  "per_corpus_and_learning_curve_reporting": {
+    "cost_accounting": "Baseline evaluation is recorded once. M2/M4 reuse a corpus trajectory; exporting, fitting or computing statistics adds no acquisition physics.",
+    "learning_curve_x": "Use each checkpoint actual recorded acquisition physics steps; report M2 assigned maximum 27416 and M4 assigned maximum 46488 separately. Means across corpora do not replace the individual points.",
+    "learning_curve_y": "Report completion means or bounds with assigned denominators and measured successful-time comparisons with their pair counts.",
+    "per_corpus": "Report each corpus mean or completion bounds, matched time means/counts, and paired differences separately.",
+    "variation": "Report across the three corpus means the mean, sample standard deviation (ddof=1), minimum and maximum; when unknowns exist, summarize lower and upper bounds separately."
+  },
+  "primary_acquisition_plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-proposed-v3/plan.json",
+    "sha256": "sha256:2d7b0b24a19116024bb3b3ffaede0a12d075afcc355e5755584efaf965675012"
+  },
+  "schema": "motion2scene_v4_reporting_clarification_v1",
+  "status": "PROPOSED_REPORTING_CLARIFICATION_NOT_ADOPTED",
+  "time_estimand": {
+    "bootstrap_estimate": "Reweighted sum of mutually successful paired time differences divided by reweighted number of those pairs, using the same corpus/layout matrices as completion.",
+    "counts": [
+      "mutually_successful_pairs",
+      "unique_left_successful_episodes_used",
+      "unique_right_successful_episodes_used",
+      "assigned_matched_pairs",
+      "complete_matched_pairs",
+      "unknown_matched_pairs"
+    ],
+    "no_imputation": "Do not assign success time to failure, unknown, or not-run episodes and do not compare unpaired sets of policy successes.",
+    "no_mutual_success_rule": "If no mutually successful matched pairs exist, time mean and both intervals are null with a reason.",
+    "point_estimate": "Mean left-minus-right measured successful passage time only over mutually successful matched corpus/layout/evaluation-seed cells.",
+    "shared_baseline_count": "A baseline may participate in up to 108 paired cells but has at most 36 unique right-hand episodes; disclose both counts.",
+    "unknown_interval_rule": "Any participating assigned unknown outcome withholds both time intervals even if observed mutually successful pairs exist; their mean and counts remain explicitly descriptive.",
+    "zero_support_rule": "For each bootstrap scheme independently, if any of its 20000 draws has zero mutually successful support, withhold that entire time interval, report its zero-support draw count and reason. Never discard/redraw empty draws or condition the interval on nonempty draws."
+  },
+  "units": {
+    "acquired_corpus_seeds_in_order": [
+      93201,
+      93202,
+      93203
+    ],
+    "arms_in_order": [
+      "uniform",
+      "target_only",
+      "analytic_contrast",
+      "analytic_observation_curriculum"
+    ],
+    "baseline_policy_ids": [
+      "always_walk",
+      "constant_development_selected",
+      "scripted_multi_option"
+    ],
+    "checkpoint_dependence": "M2 and M4 share one acquisition trajectory; there are three independently acquired corpora per arm, not six independent checkpoint corpora.",
+    "checkpoints_in_order": [
+      "M2",
+      "M4"
+    ],
+    "evaluation_seed_dependence": "Keep both evaluation seeds together within each sampled layout; neither seed is an independent scene sample.",
+    "evaluation_seeds_in_order": [
+      94301,
+      94302
+    ],
+    "layout_ids_in_order": [
+      "locked_v3_course_00",
+      "locked_v3_course_01",
+      "locked_v3_course_02",
+      "locked_v3_course_03",
+      "locked_v3_course_04",
+      "locked_v3_course_05",
+      "locked_v3_single_00",
+      "locked_v3_single_01",
+      "locked_v3_single_02",
+      "locked_v3_single_03",
+      "locked_v3_single_04",
+      "locked_v3_single_05",
+      "locked_v3_single_06",
+      "locked_v3_single_07",
+      "locked_v3_single_08",
+      "locked_v3_single_09",
+      "locked_v3_single_10",
+      "locked_v3_single_11"
+    ],
+    "paired_arm_blocks": "Use the same acquired-corpus seed block across compared arms and checkpoints, and the same layout block across every policy.",
+    "shared_baselines": "Each baseline has 36 unique physical episodes. Broadcast its layout-by-seed outcomes for algebraic comparison with three corpora; never create, independently sample, or count additional baseline replicates."
+  }
+}

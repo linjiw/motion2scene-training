@@ -1,0 +1,70 @@
+{
+  "utc": "2026-09-11T17:49:26Z",
+  "current_training": {
+    "executed_schedules": 7,
+    "frames_each": 298,
+    "fps": 50,
+    "motion_ids": [
+      "neutral",
+      "short_e015_r265",
+      "sustained_e015_r255",
+      "prior_splice_e015_r265",
+      "prior_splice_e050_r265",
+      "short_e070_r265",
+      "sustained_e070_r255"
+    ],
+    "coordinate_training_cells": 1152,
+    "coordinate_evaluation_cells": 384,
+    "independent_motion_holdout": false
+  },
+  "historical_pool": {
+    "records": 150,
+    "worth_a_rollout": 94,
+    "body_modes": {
+      "walk": 15,
+      "walk_pause": 15,
+      "walk_look": 15,
+      "crouch_walk": 3,
+      "duck_under": 15,
+      "side_step": 3,
+      "backward": 15,
+      "stand_to_walk": 15,
+      "walk_to_stop": 9,
+      "step_over": 15,
+      "turn_in_place": 3,
+      "carry_walk": 15,
+      "reach_walk": 9,
+      "squat_pick": 3
+    },
+    "recorded_directory": "/data/robotixx/groot-wbc-kimodo-m0/sweepcf_release/motions/clips",
+    "recorded_directory_exists": false,
+    "status": "Recorded reference-screen results, not reverified physics"
+  },
+  "separate_local_amass_candidate_bank": {
+    "csv_files": 900,
+    "manifest_rows": 900,
+    "manifest_status_counts": {
+      "OK": 900
+    },
+    "qualification": "Conversion records only; SONIC qualification and Motion2Scene ancestry/split compatibility not established",
+    "raw_data_copied": false
+  },
+  "bindings": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/clearance-viewer-20260911/data.json",
+      "sha256": "53a2a703f116cdb9f6ab26d12fdd969eece54820c49da2f638f2a675fadf852d"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/hallucination/coverage/reference_gate.json",
+      "sha256": "c3dab67cdff8cc7394b24d10fa6daa9dff0b30f223278c2cd42459ba8e3d1bd8"
+    },
+    {
+      "path": "/home/linjiw/dataset/amass-licensed/phase-g-bank-rebuilt-fmt8/manifest.jsonl",
+      "sha256": "5a448b9d3128d61b7e1f3cdde6df2f21a6709947807bc96235789f4f8bc1c32d"
+    },
+    {
+      "path": "/home/linjiw/dataset/amass-licensed/README.md",
+      "sha256": "d67493d09f73c32f161dd8f571c4ee440fda85e9207f3eed1299303046611b53"
+    }
+  ]
+}

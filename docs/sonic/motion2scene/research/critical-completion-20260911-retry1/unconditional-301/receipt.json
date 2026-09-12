@@ -1,0 +1,64 @@
+{
+  "variant": "unconditional",
+  "seed": 301,
+  "updates": 200,
+  "state": "complete",
+  "parameters": 27715,
+  "wall_seconds": 1.1072363710045465,
+  "history": [
+    {
+      "update": 1,
+      "cover": 7.048877716064453,
+      "contrast": -0.0,
+      "completion": -0.0
+    },
+    {
+      "update": 26,
+      "cover": 5.691499710083008,
+      "contrast": -0.0,
+      "completion": -0.0
+    },
+    {
+      "update": 51,
+      "cover": 3.597548723220825,
+      "contrast": -0.0,
+      "completion": -0.0
+    },
+    {
+      "update": 76,
+      "cover": 3.50239634513855,
+      "contrast": -0.0,
+      "completion": -0.0
+    },
+    {
+      "update": 101,
+      "cover": 3.4809067249298096,
+      "contrast": -0.0,
+      "completion": -0.0
+    },
+    {
+      "update": 126,
+      "cover": 3.461860418319702,
+      "contrast": -0.0,
+      "completion": -0.0
+    },
+    {
+      "update": 151,
+      "cover": 3.4332497119903564,
+      "contrast": -0.0,
+      "completion": -0.0
+    },
+    {
+      "update": 176,
+      "cover": 3.4177815914154053,
+      "contrast": -0.0,
+      "completion": -0.0
+    },
+    {
+      "update": 200,
+      "cover": 3.4172656536102295,
+      "contrast": -0.0,
+      "completion": -0.0
+    }
+  ]
+}

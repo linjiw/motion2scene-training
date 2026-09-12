@@ -1,0 +1,23 @@
+{
+  "scope": "Inventory and illustrative samples; no new training or physics",
+  "probability_rows_verified": 29568,
+  "normalized_distributions_verified": 77,
+  "artifacts": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/motion-inventory-assets-20260911/PLAN.md",
+      "sha256": "a02cee5630cf21f19ac64412ae6524e0b894e9592e3f57374ff295cde817e167"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/motion-inventory-assets-20260911/inventory.json",
+      "sha256": "4d614ade88d247ea1071cf543f0a84b3b1d2e0637dfef3956916f6b81d05c143"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/motion-inventory-assets-20260911/placement-probabilities.csv",
+      "sha256": "fcf5d4b61879c29f20d39c6b234965890509bcb90a9b9c488b64b9cf858dadec"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/motion-inventory-assets-20260911/sampled-beams.json",
+      "sha256": "11b56425c709e349caaf0217365697f3bc591f607627cdfa8923ede6f3ab2bd4"
+    }
+  ]
+}

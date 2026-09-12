@@ -1,0 +1,365 @@
+{
+  "scope": "Exploratory LfLH method research; no new physics. Prior pilot preserved.",
+  "artifacts": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/decoupled_wbc/tests/test_motion2scene_lflh_geometry.py",
+      "sha256": "5e3fc3426ab6b60537202efbf5fb9977d4aade88a27def60525554b7c9309327",
+      "bytes": 2652
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/RECEIPT.md",
+      "sha256": "7aa9a56c00c01d65ee06a41627b279f97ba0008396fe0800c8757b41b6f84399",
+      "bytes": 7533
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/RESEARCH_REPORT.md",
+      "sha256": "1992e6808e9ff16f6755093ae9a0cf85f287caaeee285ef3926cce263bdd4d90",
+      "bytes": 39003
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/analysis.log",
+      "sha256": "04dde2960d27fca1eabdba0fd80d9e06c7429f6ae4d2a4eb79e91b5abf04f43c",
+      "bytes": 2497
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/architecture-diagnostic.pdf",
+      "sha256": "be87741545952d791f397d5d3d0edc409aea198b690b67ef64a9b0782de52506",
+      "bytes": 19583
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/architecture-diagnostic.png",
+      "sha256": "534f8b55f0945f87b4479e6e37b6ed60db1f6b8ae827450799b9d9024d2f2eb4",
+      "bytes": 79025
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/architecture-results.csv",
+      "sha256": "fad988ae3830803d0b5afed579ff943ecdbf4223ca428c3f630299b57683b2b2",
+      "bytes": 586
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/bank.pt",
+      "sha256": "ea8356572af5643659da282b5f6c3213e5084b316746efbe879a041350336eb9",
+      "bytes": 7917880
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/conv-101/model.pt",
+      "sha256": "c0636ce78bb5c4201cbc71cfb392fa69c57811e472b0de276dd12f769454c323",
+      "bytes": 26993
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/conv-101/receipt.json",
+      "sha256": "e1b15aeec6c759b9558361afd9576fd952dce5114daacde21b40407743825c2c",
+      "bytes": 40913
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/conv-102/model.pt",
+      "sha256": "5533d7321faa281ffad8a75af43f9718ba842e7a2bd44ec795a3ec6c34f6cdb6",
+      "bytes": 26993
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/conv-102/receipt.json",
+      "sha256": "a2d82df441a51facdc183e3a42704985d60de23d4852816918750feb54786534",
+      "bytes": 40861
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/design.json",
+      "sha256": "0ef2cd30dbac8b47c9e81c5a0a9ee5de1e7ff21e415b866a8cb9e594bb8e8c52",
+      "bytes": 8188
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/draws.csv",
+      "sha256": "c1ada76656cad312a320dd4662d4741f19f59b19773ee3120ab2fb7a4fb18e85",
+      "bytes": 151102
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/mlp-101/model.pt",
+      "sha256": "525d67c3272b0accc024d90f14bb6a0e20fa0cd1815221fda1400707d51848af",
+      "bytes": 46449
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/mlp-101/receipt.json",
+      "sha256": "bd2be947cd023a8980a2f41157170d4c74761d2c4a1ff14f5fc9f81d8536ad77",
+      "bytes": 41068
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/mlp-102/model.pt",
+      "sha256": "4264e2a49f9171a32c6de6210e30fc98e3f30b88aa880c93cde88a1ab2be6ab7",
+      "bytes": 46449
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/mlp-102/receipt.json",
+      "sha256": "a49838c59a5fb66540778646030d8e75e0ccef769f53759181fd0bdbc1f8bdd0",
+      "bytes": 41008
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/posthoc-analysis.json",
+      "sha256": "52045129c708eaade4eca8703ca1ff43bf272a8bce43738401ce8f3802594a66",
+      "bytes": 2943
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/results.json",
+      "sha256": "1282cb8e9f80e73fdbd71299b8d73ded672b2e621fb5bfc9fc52ca636a185b41",
+      "bytes": 5299
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/run.log",
+      "sha256": "ce29ccce049f33437602026f6b3ef1d1b607746ffc764d658b4bf34924ba9848",
+      "bytes": 4226
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/started.json",
+      "sha256": "af55c366302eddec8da9a0d55aa0e48989463f32c900f76d3c44c4921d648430",
+      "bytes": 583
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/transformer-101/model.pt",
+      "sha256": "e38cab73dd70baafa7fb76bf1b4d1c9c7ad39fbaca8c6579dffe1e5dad7107cc",
+      "bytes": 44280
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/transformer-101/receipt.json",
+      "sha256": "66178d2394f47da5b9b6e8b3737486a1849d706ccf7830fc118bab19a7bcda63",
+      "bytes": 41268
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/transformer-102/model.pt",
+      "sha256": "faafdd197deafc33b4d2e0d5d64b940e291a00113ef84badf5f808b836f6dbd7",
+      "bytes": 44280
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/transformer-102/receipt.json",
+      "sha256": "f27eddf14cc8da668d22a31ee48625e1ef07d38ff42f8706b82729c3ff21101f",
+      "bytes": 40985
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/unconditional-101/model.pt",
+      "sha256": "fafe85e05f753fc6392b902f9d331540de3f65a85dfe941834d313a3ffe82db2",
+      "bytes": 2767
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/unconditional-101/receipt.json",
+      "sha256": "43cfb1f3992979585fb63d01e9d47937a41f422c8cc245d47f987861b62a1a25",
+      "bytes": 41353
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/unconditional-102/model.pt",
+      "sha256": "0a9c38b5519d59ea4d94b7f610d20b8243593f51cda3856e02f5344973bf07a3",
+      "bytes": 2767
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/benchmark/unconditional-102/receipt.json",
+      "sha256": "69059c01c69105c9cf47494c2539b32cb91228edd3cc5805c3089d94be62965a",
+      "bytes": 41331
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/checks.json",
+      "sha256": "1fccba2a55d484d9ac856e079a387d73e2b44d1dc75212b62e78a4f54a6e5ba1",
+      "bytes": 185
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/commit.txt",
+      "sha256": "eda62aee83894b2b4138f941db8212e581a70b87c35211b298fd8b09b9e466cc",
+      "bytes": 41
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/git-status.txt",
+      "sha256": "6884ef1e12b24b04b6de7d43feb31b1c150825cb2d783ce07e623e342a01ef76",
+      "bytes": 27024
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/implementation.patch",
+      "sha256": "147e366a8868d343cfa4d75fbfbeb325937d58397cd592a5c3ec27044c2ac3ec",
+      "bytes": 23522
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/plot_results.py",
+      "sha256": "04dc506708c312a614212dec9d85e442d4ff549d641ed9de1be4edceb72e8c59",
+      "bytes": 1413
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/runtime-packages.json",
+      "sha256": "76f2e0aaed24c9750fd2aac67d59b636599d252c3b6417534916b2c5ff2b839b",
+      "bytes": 7554
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/decoupled_wbc/__init__.py",
+      "sha256": "dddffffc674c613c1b5d19e63690c1d9813adf6a83dc5b8bcc369b2900bdfe59",
+      "bytes": 83
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/decoupled_wbc/tests/test_motion2scene_lflh_geometry.py",
+      "sha256": "5e3fc3426ab6b60537202efbf5fb9977d4aade88a27def60525554b7c9309327",
+      "bytes": 2652
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/decoupled_wbc/version.py",
+      "sha256": "9b92825310bc4038a56b7899ccfb018e5a74acde6ea59ff9604f6967330c5ddf",
+      "bytes": 390
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/data_process/convert_soma_csv_to_motion_lib.py",
+      "sha256": "ab8361a08894c19b7160278d25cf3d47aad924f5be78c72fc0f1a38eba68e9dd",
+      "bytes": 21308
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/dataset_generation/__init__.py",
+      "sha256": "59de2061275cb4365f847f2b0b2f089f87d72186b30c6085552e6af0735e04e6",
+      "bytes": 1267
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/dataset_generation/hallucination/__init__.py",
+      "sha256": "53868897b56c73ff1d681e694b8b76143278ed25e22065cd5e01dd1b28885be1",
+      "bytes": 229
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/dataset_generation/hallucination/constraint_spec.py",
+      "sha256": "9eb388c8ee82506b74ad4d74f66f21b86b01e122eecc6c06a05e20a6e9e41e93",
+      "bytes": 19684
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/dataset_generation/hallucination/motion2scene_reset_capture.py",
+      "sha256": "fd2d48a6c74afd7621b39af7496cf246ce0baa172ddad993ccd878531c0e8098",
+      "bytes": 1308
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/dataset_generation/hallucination/sdf_decoder.py",
+      "sha256": "a0a9cc5750a0db015b59cb58bc39ec3dec2302c3695c747281d94d5b257c29a9",
+      "bytes": 5722
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/dataset_generation/kimodo_motion_adapter.py",
+      "sha256": "bcd4d1f7a2145304864404f10ee6ddafeea5e652e134fade072d3076e14cc68f",
+      "bytes": 7646
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/dataset_generation/schemas.py",
+      "sha256": "8f0f0b3314b242679da42b30c479e7cd3c0d8a9c85f80fad21f33bbd25a8ee35",
+      "bytes": 28201
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/dataset_generation/swept_volume.py",
+      "sha256": "7b283d5fe991567629e559bc2121b7649eb2ec27e84b8b3c6a5741e8f1246a68",
+      "bytes": 15368
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/dataset_generation/trajectory_segments.py",
+      "sha256": "7adf547065ab3e30eef648d5a8acf6209841cac7a07bb1ee86f58fea37e2e50d",
+      "bytes": 6491
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/dataset_generation/trajectory_validation.py",
+      "sha256": "d2528201481d46b4c46d04f033fc9298d63ae01576c95e8ed4d05b9141c55f12",
+      "bytes": 10860
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/isaac_utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/isaac_utils/maths.py",
+      "sha256": "6664aca11cf24e78d749a6c415422566a8c1c29ddd7b8221732874a423ce5bce",
+      "bytes": 1569
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/isaac_utils/rotations.py",
+      "sha256": "b800cc97757ea452e04c12b16b70a2847b5cb08c041b521e32e7347b05479d99",
+      "bytes": 23728
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/trl/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/trl/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/trl/utils/kornia_transform.py",
+      "sha256": "576c2209f8f85f38c59c182d6f504cde34899adca68fea2ad50e626c5e03a0f1",
+      "bytes": 36506
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/trl/utils/torch_transform.py",
+      "sha256": "4d40e3ac765cb2541aacd8af60f1162914e4ce97b4cc8fadc871a7c6a2fe7b41",
+      "bytes": 20616
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/utils/motion_lib/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/gear_sonic/utils/motion_lib/torch_humanoid_batch.py",
+      "sha256": "41e5d4a44497547784a1f22fb968d112039f0a7b0eb85e166022e6ac3c4988d1",
+      "bytes": 36315
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/scripts/__init__.py",
+      "sha256": "778fea6f887f6701c8283c6943442064bf6a9015936138bc7a6dd13b7cc8e323",
+      "bytes": 39
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/scripts/research/__init__.py",
+      "sha256": "90b901bfc4fff0ac7fa148c0df4804d623e480042807a30bedb97a62e38637ae",
+      "bytes": 59
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/scripts/research/lflh_next/__init__.py",
+      "sha256": "f6415493a28c1b73c4b7fae3efe5a2c565b5bdaa2a6758045d9cdb70a807364d",
+      "bytes": 81
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/scripts/research/lflh_next/analyze.py",
+      "sha256": "5511adf3abf41f0d6da3befc938b9b76d07db9ef914a2b3c7b92034d51396cf9",
+      "bytes": 4312
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/scripts/research/lflh_next/benchmark.py",
+      "sha256": "6557ecc7f6832fc50929b6fbb0ca08116798f67be40f6df3321bf0530059425c",
+      "bytes": 13453
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/source_snapshot/scripts/research/lflh_next/geometry.py",
+      "sha256": "513a2388acf8bc73ab1143c8c2bb81fff46a0eadca371f3fe17e9fc1a45f32c8",
+      "bytes": 2206
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/research/lflh-next-20260911/tests.log",
+      "sha256": "bed512b39dc6ab88d38c6c089b5c8f74c905a0fd9d2052b36b250cc019ff9928",
+      "bytes": 179
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/lflh_next/__init__.py",
+      "sha256": "f6415493a28c1b73c4b7fae3efe5a2c565b5bdaa2a6758045d9cdb70a807364d",
+      "bytes": 81
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/lflh_next/analyze.py",
+      "sha256": "5511adf3abf41f0d6da3befc938b9b76d07db9ef914a2b3c7b92034d51396cf9",
+      "bytes": 4312
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/lflh_next/benchmark.py",
+      "sha256": "6557ecc7f6832fc50929b6fbb0ca08116798f67be40f6df3321bf0530059425c",
+      "bytes": 13453
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/lflh_next/geometry.py",
+      "sha256": "513a2388acf8bc73ab1143c8c2bb81fff46a0eadca371f3fe17e9fc1a45f32c8",
+      "bytes": 2206
+    }
+  ]
+}

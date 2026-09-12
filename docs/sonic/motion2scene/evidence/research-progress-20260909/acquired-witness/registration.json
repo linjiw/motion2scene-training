@@ -1,0 +1,76 @@
+{
+  "implementation": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_acquired_response_witness.py",
+    "sha256": "sha256:fea0a0a85b5030fd083e8c494c4b4dfa3fd113d3c61e94218c0ec75e34aea082"
+  },
+  "new_collections": [
+    {
+      "previous_model": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_002/result.json",
+        "sha256": "sha256:e0aec7e65523f34798888619e009301402e17a6c4333441036fc645f82b9ec65"
+      },
+      "run_id": "seed93201_analytic_contrast",
+      "student": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/round_003/student/result.json",
+        "sha256": "sha256:f01f367afc1c7652de0bc2b52f817cc90e7f5864a2307548017e52ac8a9b88ad"
+      },
+      "teacher": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/round_003/teachers/result.json",
+        "sha256": "sha256:b49de9ffc8a7ad9e5607c262d9b0a276b30175dad5fb947dffa821c34b00e563"
+      },
+      "trained": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_003/result.json",
+        "sha256": "sha256:6092572b0e371ab495285dcdf7e025f1ed4f1867374abca26cbbe63ef42b0790"
+      }
+    },
+    {
+      "previous_model": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_002/result.json",
+        "sha256": "sha256:49f4bd294d29efc8c3539db5f4026be740689c77f55fcaf51661ca5e38513320"
+      },
+      "run_id": "seed93202_analytic_contrast",
+      "student": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/student/result.json",
+        "sha256": "sha256:39f3ace4df12c7ac5b59060c2b15cdba79ec27d4b059029f90a425c5fac83ab0"
+      },
+      "teacher": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_003/teachers/result.json",
+        "sha256": "sha256:93edd067c4f3cdfb1e37e09eb4918ab34310b70a67d3f1e6376047200bde254b"
+      },
+      "trained": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_003/result.json",
+        "sha256": "sha256:7fa0eb4383210906dc7f31b96e74ff4f7af9439c8f97e5cbce4eced3500f66ba"
+      }
+    },
+    {
+      "previous_model": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_002/result.json",
+        "sha256": "sha256:430e22998c1aa6c88211014e69b284b960d8066833b7d118d859393ac1869dae"
+      },
+      "run_id": "seed93203_analytic_contrast",
+      "student": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/round_003/student/result.json",
+        "sha256": "sha256:6c899e8a064fb530f9a11ce0f7370b8187cdb8fc58d4e2b004138859e72c92bc"
+      },
+      "teacher": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/round_003/teachers/result.json",
+        "sha256": "sha256:0c54ec1bdc8f1efc0a7e65bb43cba6c55824b115548bdcb28e85109ce38974b2"
+      },
+      "trained": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_003/result.json",
+        "sha256": "sha256:39b010058121dd16239aa98d8f7ac6523b6eecdfc7059cabf9a10f06885379c8"
+      }
+    }
+  ],
+  "new_physics_steps": 0,
+  "plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-tie-proposed-v5/plan.json",
+    "sha256": "sha256:aacce6a9a2c2b3fc5bf6b674b5ede46d6fee61ac7ad205553554c4210d3d4508"
+  },
+  "previous_audit": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M2-20260909-v1/result.json",
+    "sha256": "sha256:1434dc5a5abf468d1dfe185887ce5985ae8850be651ce253b6d9033fdcce3fca"
+  },
+  "scope": "Verify the first early-constraint encounters and acquired response diversity.\n\nThis is an interim development mechanism analysis, not an extra checkpoint\nperformance comparison. The complete audited M2 pool is extended by all three\nexecuted-contrast round-3 encounters. No training, proposal, or physics is run.\n",
+  "selection": "all three assigned executed-contrast round-3 encounters; witnesses identified after outcome inspection"
+}

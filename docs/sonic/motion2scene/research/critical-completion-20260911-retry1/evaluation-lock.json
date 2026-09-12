@@ -1,0 +1,47 @@
+{
+  "utc": "2026-09-11T17:05:53Z",
+  "models": [
+    {
+      "path": "docs/motion2scene/research/critical-completion-20260911-retry1/unconditional-301/model.pt",
+      "sha256": "f44723a50c1e4d91996a9c7f1806697d7fd78405f9f60453ad52dddcdf0f13c1"
+    },
+    {
+      "path": "docs/motion2scene/research/critical-completion-20260911-retry1/cover-301/model.pt",
+      "sha256": "20a6cd2650c93e97ef889406612253d809284c8f3bf75447e3935583bf6a181a"
+    },
+    {
+      "path": "docs/motion2scene/research/critical-completion-20260911-retry1/masked-301/model.pt",
+      "sha256": "c8f8680439ae1316123d8e6f11cddef336dd62cc7647c829f5c72d8574f70dd0"
+    },
+    {
+      "path": "docs/motion2scene/research/critical-completion-20260911-retry1/contrast-301/model.pt",
+      "sha256": "6c9390501f83d283dc729a6691e01338dcf7e71c3b334bb9ef87ac71d5f10050"
+    },
+    {
+      "path": "docs/motion2scene/research/critical-completion-20260911-retry1/combined-301/model.pt",
+      "sha256": "17eee07206b991aba714f163a6c3b97b4c58e80427bc0153b3a312fac8e945f1"
+    },
+    {
+      "path": "docs/motion2scene/research/critical-completion-20260911-retry1/unconditional-302/model.pt",
+      "sha256": "1575209818daeb186e2f9b5a6a8763be5dc3afd1f6edc8e486682134bf809580"
+    },
+    {
+      "path": "docs/motion2scene/research/critical-completion-20260911-retry1/cover-302/model.pt",
+      "sha256": "c7496ec89fc4f1d983842f49967f4bde0093572af39e8085f7a050f63bfad8bf"
+    },
+    {
+      "path": "docs/motion2scene/research/critical-completion-20260911-retry1/masked-302/model.pt",
+      "sha256": "7f28953e5a2b98a9a0070c4071f6b1ea56cb5dc42eb4c0c70f326a6b6421f5fb"
+    },
+    {
+      "path": "docs/motion2scene/research/critical-completion-20260911-retry1/contrast-302/model.pt",
+      "sha256": "8e78c55ad125da6116707b56034f2db82b4a18cf224b7770a8e4cc50633c1a9f"
+    },
+    {
+      "path": "docs/motion2scene/research/critical-completion-20260911-retry1/combined-302/model.pt",
+      "sha256": "3cddcf5578ae2b8ac3b8fae5c8df71c73903e0e00359db4afc4ac68dc32df453"
+    }
+  ],
+  "evaluator_sha256": "75cf8b316bbfd7a9e2e8a8a3bcc4017424046df9249536dc5a6f6e200ff13f19",
+  "status": "locked before evaluator reads withheld fields"
+}

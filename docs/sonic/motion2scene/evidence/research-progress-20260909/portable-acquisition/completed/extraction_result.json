@@ -1,0 +1,17 @@
+{
+  "all_extracted_bytes_match": true,
+  "archive": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-20260909-v1-hardlinks.tar.gz",
+    "sha256": "sha256:fc4e6b590613eecf0953fc2b168fe1ebcc8c8740cffd7da971a271eb768e5137",
+    "size_bytes": 728923512
+  },
+  "file_paths": 15162,
+  "members": 17233,
+  "new_fits": 0,
+  "new_physics_steps": 0,
+  "root": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/relocated",
+  "schema": "motion2scene_acquisition_archive_extraction_v1",
+  "status": "complete",
+  "unique_file_inodes": 2214,
+  "wall_seconds": 25.31442607599456
+}

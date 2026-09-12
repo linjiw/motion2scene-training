@@ -1,0 +1,35 @@
+{
+  "utc": "2026-09-09T19:15:13.003736+00:00",
+  "completed_original_model_receipts": {
+    "M0": 12,
+    "M1": 12,
+    "M2": 12,
+    "M3": 1,
+    "M4": 0
+  },
+  "manuscript": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/traversal_method_v2.tex",
+      "sha256": "sha256:2818984189bb7ca245d518bb3b314db507dc34a6ceb43c586c9a2f87017c0cdc"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/traversal_method_v2_supplement.tex",
+      "sha256": "sha256:0b390098c8aa0edfabd207e0f355c1b1fb924e875783d3e0c3de05ac70cc917a"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/traversal_method_v2.pdf",
+      "sha256": "sha256:2b3de84b3d1ca506e75fedbf804bfe1ede8e8fada4b48f0845635c16f36d2dd6"
+    }
+  ],
+  "completed_this_session": [
+    "M1 and M2 independent acquisition prefix audit",
+    "same-seven-schedule WAIT information control",
+    "source-bound curves, table and corpus CSV",
+    "M2 replay mechanism readout",
+    "current manuscript build, pitches and persistent state"
+  ],
+  "remaining": "original M4, five-arm M8/M16/M32, matched native panels, final freeze and reserved evaluation",
+  "next_decisive_experiment": "registered 138-episode M8 development native policy/capability panel",
+  "research_complete": false,
+  "new_physics_launched_by_this_session": 0
+}

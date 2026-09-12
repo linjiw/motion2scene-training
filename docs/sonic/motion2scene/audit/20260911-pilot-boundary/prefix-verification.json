@@ -1,0 +1,20 @@
+[
+  {
+    "byte_identical_serialized_prefix_across_arms": true,
+    "m4_result": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_004/result.json",
+    "prefix_sha256": "7e506e76cd708d901faf0fb30d880e03e5c3ee9805bd9df39816d807f70e34ee",
+    "seed": 93201
+  },
+  {
+    "byte_identical_serialized_prefix_across_arms": true,
+    "m4_result": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_004/result.json",
+    "prefix_sha256": "d450082de89a81f2d51de47a4e07c309f18053f4687e11b45051ed538db9ead5",
+    "seed": 93202
+  },
+  {
+    "byte_identical_serialized_prefix_across_arms": true,
+    "m4_result": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_004/result.json",
+    "prefix_sha256": "cb784692da6e2431ef6808037c351060fced1422b6f86bbaee06bdbcf308255c",
+    "seed": 93203
+  }
+]

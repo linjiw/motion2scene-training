@@ -1,0 +1,165 @@
+{
+  "candidate_id": "primary_candidate_93202_0428",
+  "corpora": [
+    {
+      "completion": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_analytic_contrast/controller/complete_005.json",
+        "sha256": "sha256:d1ee51c370e4cc907d29a823311624f40ba46d49dc805c4eb2bd55ca83240d1b"
+      },
+      "cumulative_physics_steps": 56024,
+      "generating_model": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_004/policy.npz",
+        "sha256": "sha256:dab1b7b93e258b73f4047d537ea2ff9bd1767c8ecf3d2d244ab15d1d5fd2f3c1"
+      },
+      "learner_l2": 10.0,
+      "new_encounter_physics_steps": 9536,
+      "new_model": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_analytic_contrast/models/model_005/policy.npz",
+        "sha256": "sha256:8429e69e58070277c5694d3203ca1720b1b6d0f41e6377520684331bb3f8e23c"
+      },
+      "new_teacher_targets_reaudited": true,
+      "preupdate": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_analytic_contrast/round_005/preupdate.json",
+        "sha256": "sha256:e34f02dc89574129512068cf20402d0f79833b032f83f31ccfcb0dea9ab46b9f"
+      },
+      "prior_teacher_prefix_preserved": true,
+      "run_id": "seed93202_analytic_contrast",
+      "student_collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_analytic_contrast/round_005/student/result.json",
+        "sha256": "sha256:abc9456eabc8bcce0c12971cac9451d41bc3ac84571cfd05c7c05be545f3eed0"
+      },
+      "student_passage_time_s": 4.82,
+      "student_selected_schedule": "prior_splice_e015_r265",
+      "student_task_outcome": "pass",
+      "teacher_collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_analytic_contrast/round_005/teachers/result.json",
+        "sha256": "sha256:074f1e17eaa01f423de8556c1b77150fbaab422c38f3ff49611986dd11b6e630"
+      },
+      "teacher_outcomes": {
+        "neutral": {
+          "outcome": "failure",
+          "passage_time_s": null,
+          "steps": 1192
+        },
+        "prior_splice_e015_r265": {
+          "outcome": "pass",
+          "passage_time_s": 4.82,
+          "steps": 1192
+        },
+        "prior_splice_e050_r265": {
+          "outcome": "pass",
+          "passage_time_s": 4.82,
+          "steps": 1192
+        },
+        "short_e015_r265": {
+          "outcome": "failure",
+          "passage_time_s": null,
+          "steps": 1192
+        },
+        "short_e070_r265": {
+          "outcome": "failure",
+          "passage_time_s": null,
+          "steps": 1192
+        },
+        "sustained_e015_r255": {
+          "outcome": "pass",
+          "passage_time_s": 5.36,
+          "steps": 1192
+        },
+        "sustained_e070_r255": {
+          "outcome": "pass",
+          "passage_time_s": 5.36,
+          "steps": 1192
+        }
+      },
+      "weighting": "uniform_per_phase"
+    },
+    {
+      "completion": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_observation_curriculum/controller/complete_005.json",
+        "sha256": "sha256:6d065e64c059ca5c7334e91b243c7fada63c363792d4dfdf5453d8ef09537926"
+      },
+      "cumulative_physics_steps": 56024,
+      "generating_model": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_004/policy.npz",
+        "sha256": "sha256:41acceb15231378bd96d0820646a506190ac43ab328901130cd1d636b18e9a47"
+      },
+      "learner_l2": 10.0,
+      "new_encounter_physics_steps": 9536,
+      "new_model": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_observation_curriculum/models/model_005/policy.npz",
+        "sha256": "sha256:bbebb9a5de38a70cbfede266d13e82bf607f02330443fffc67f23ee7207b4fc8"
+      },
+      "new_teacher_targets_reaudited": true,
+      "preupdate": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_observation_curriculum/round_005/preupdate.json",
+        "sha256": "sha256:38a62d4364d241a29e2f7cdddf2d67367ab2826ed85b5299c448fb9b6ae38bfe"
+      },
+      "prior_teacher_prefix_preserved": true,
+      "run_id": "seed93202_observation_curriculum",
+      "student_collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_observation_curriculum/round_005/student/result.json",
+        "sha256": "sha256:c26d7a2c9f9b0994a00c89eec4f70420ee470e64ef51fb924ef555b2978051d4"
+      },
+      "student_passage_time_s": 4.82,
+      "student_selected_schedule": "prior_splice_e015_r265",
+      "student_task_outcome": "pass",
+      "teacher_collection": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_observation_curriculum/round_005/teachers/result.json",
+        "sha256": "sha256:db6aa4b01ebab28af53271ccb5e710e2e7657a6c1977edcb16bec757c122f585"
+      },
+      "teacher_outcomes": {
+        "neutral": {
+          "outcome": "failure",
+          "passage_time_s": null,
+          "steps": 1192
+        },
+        "prior_splice_e015_r265": {
+          "outcome": "pass",
+          "passage_time_s": 4.82,
+          "steps": 1192
+        },
+        "prior_splice_e050_r265": {
+          "outcome": "pass",
+          "passage_time_s": 4.82,
+          "steps": 1192
+        },
+        "short_e015_r265": {
+          "outcome": "failure",
+          "passage_time_s": null,
+          "steps": 1192
+        },
+        "short_e070_r265": {
+          "outcome": "failure",
+          "passage_time_s": null,
+          "steps": 1192
+        },
+        "sustained_e015_r255": {
+          "outcome": "pass",
+          "passage_time_s": 5.36,
+          "steps": 1192
+        },
+        "sustained_e070_r255": {
+          "outcome": "pass",
+          "passage_time_s": 5.36,
+          "steps": 1192
+        }
+      },
+      "weighting": "historical_observation_gap"
+    }
+  ],
+  "identical_candidate_scene_and_branch_order_through_M5": true,
+  "matched_student_passage_difference": 0,
+  "matched_student_time_difference_s": 0.0,
+  "new_fits_from_verification": 0,
+  "new_physics_from_verification": 0,
+  "plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json",
+    "sha256": "sha256:bf551021c82fd42d0e6b002a2941a71b1358d72a469903105a2230bdfae3a4ed"
+  },
+  "schema": "motion2scene_paired_M5_verification_v1",
+  "scope": "Two actual pre-update M4 policies on their shared M5 acquisition encounter; this is not post-update M5 or common-set/held-out performance.",
+  "seed": 93202,
+  "teacher_outcome_and_passage_time_tables_equal": true,
+  "utc": "2026-09-10T05:10:16.354500+00:00"
+}

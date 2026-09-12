@@ -1,0 +1,48 @@
+{
+  "acquisition": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M1-20260909-v1/result.json",
+      "sha256": "sha256:2e76f63e2532ba03378dddb1eed17e1d66519fff3aea9fd54f8142a1c70f1cc9"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M2-20260909-v1/result.json",
+      "sha256": "sha256:1434dc5a5abf468d1dfe185887ce5985ae8850be651ce253b6d9033fdcce3fca"
+    }
+  ],
+  "implementation": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_render_acquisition_evidence.py",
+    "sha256": "sha256:2a45aae47971d252360f5cf9fe50bd60d8d13851980d5cab16beb1f321afb4d3"
+  },
+  "interpretation": "Acquisition lines are corpus means with three individual trajectories, no confidence intervals. Constructor-specific training tasks are not a common evaluation set. WAIT bars are exact finite branch-table optima, not newly executed policies.",
+  "new_physics_steps": 0,
+  "outputs": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M1_M2/acquisition_by_corpus.csv",
+      "sha256": "sha256:009eda6d21f5ac17d2524fa7be4862ae13290bbbad1184243875ca3353b616d1"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M1_M2/acquisition_yield.tex",
+      "sha256": "sha256:7e9a638199ae002902489e15125ecec4fd26a73821336288b159e031e2c62844"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M1_M2/acquisition_responses.pdf",
+      "sha256": "sha256:8900136c55a1bd763e5048c20c577df5bb7363540aec139a8b06522cc65fa50b"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M1_M2/acquisition_responses.png",
+      "sha256": "sha256:87dd00cdfc31ff4f9df8dd82263b69e127494f00fc3891a4d04c74cfe4af34df"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M1_M2/wait_same_repertoire.pdf",
+      "sha256": "sha256:80c84d4dc721a399fdaa6665cc2daa604072a269c079db83807763a958a2344c"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M1_M2/wait_same_repertoire.png",
+      "sha256": "sha256:904ffd5914a7e8eaf0a6b6024d95ede797f3f691c4305f3477cd56b5345bf233"
+    }
+  ],
+  "wait": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-wait-information-control-20260909-v1/result.json",
+    "sha256": "sha256:5df3bd3ebff657b33acab8246c598cb055a589a559a4fe71468791180a622f4d"
+  }
+}

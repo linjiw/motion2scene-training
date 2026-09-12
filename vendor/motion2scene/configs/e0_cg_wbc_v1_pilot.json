@@ -1,0 +1,96 @@
+{
+  "schema_version": "motion2scene_import_v1",
+  "dataset_id": "cg-wbc-v1-pilot",
+  "experiment": "E0_motion_bank_qualification",
+  "status": "q3_v8_complete_single_seed",
+  "source_repository": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb",
+    "branch": "research/cg-wbc-v0-golden-path",
+    "commit": "cfc9b5447e740fb69453ebb9b01333f872ebbd6b",
+    "working_tree_note": "Consumed research plumbing is committed here; unrelated user-owned working-tree changes remain outside this import."
+  },
+  "corpus_root": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot",
+  "lineage": "fresh_2026_09_04_not_pooled_with_missing_historical_bundle",
+  "sampling": {
+    "generated": 18,
+    "samples_per_prompt": 1,
+    "body_modes": {
+      "walk": 3,
+      "duck_under": 3,
+      "arm_tuck": 3,
+      "shoulder_turn": 3,
+      "step_over": 3,
+      "carry_walk": 3
+    },
+    "route_styles": {
+      "straight": 6,
+      "gentle_left": 6,
+      "gentle_right": 6
+    },
+    "speed_styles": {
+      "steady": 18
+    }
+  },
+  "evidence": {
+    "M": "measured",
+    "Q0": {
+      "status": "measured",
+      "passed": 17,
+      "attempted": 18,
+      "rejected_motion_index": 4,
+      "reason": "saturated_cell_fraction 0.0094827586 exceeded 0.009 gate"
+    },
+    "Q1": {
+      "status": "measured",
+      "self_collision_free": 18,
+      "attempted": 18
+    },
+    "Q2": "not_measured",
+    "semantic_reference_gate": {
+      "status": "measured",
+      "passed": 5,
+      "failed": 7,
+      "not_measured": 6,
+      "worth_a_rollout": 10,
+      "attempted": 18,
+      "note": "Walk and carry have no predicate; not_measured is not a semantic pass."
+    },
+    "Q3": {
+      "status": "measured_single_seed",
+      "accepted": 5,
+      "rejected": 1,
+      "attempted": 6,
+      "eligible_indices": [0, 1, 5, 11, 16],
+      "rejected_index": 6,
+      "rejection_reason": "reference_endpoint_tracking_error",
+      "zero_external_collision_force": 6,
+      "scene": "screen_empty gradeable obstacle-absent proxy",
+      "capture": "trajectory_only_50_hz"
+    },
+    "Q4": "not_measured",
+    "G": "compatible_only_scene_preflight_measured_for_6_cell_pilot",
+    "T": {
+      "status": "measured_obstacle_absent_proxy_single_seed",
+      "accepted": 5,
+      "attempted": 6
+    },
+    "P": "not_measured"
+  },
+  "artifact_hashes": {
+    "taxonomy_json": "sha256:afbd7465f1d835493a5799bc64103e6b178b2cdf9aac50da94ad556c7afb16d3",
+    "prompts_txt": "sha256:f47568604dfe53c6f17898ca61061955150b757e0d1722c0b236628f9bc6751b",
+    "prompt_cache_npz": "sha256:2fae07f73c801b079ee8200d79c3ee54d334d4797ccb8c9fa966ccb4327d2be2",
+    "q0_screen_json": "sha256:01dcfb0e6af5396a8dfd87610bba00edd5b9fbd118e459d1e69ff31ac2888230",
+    "composed_reference_gate_json": "sha256:08a5f04eba17485aad17eb950183c0eb8a8c9b051a2d56e9418e1b0aa029e0b4",
+    "corpus_manifest_v1_MQ1": "sha256:98a8a2f57bdbcccb5c577f2bdc21e103006a01ece51597211d24a5833334d304",
+    "compatible_scene_manifest": "sha256:15dd8a92fe2fdcd1a7d0c9740afb80e2b236e49ba18978715360509a8753871f",
+    "compatible_scene_preflight": "sha256:0802e75957be4054d97cdddc296140a6b0312567738d2e9af638fd284fc870ac",
+    "q3_v8_manifest": "sha256:8e656064c04a973ab4cafd35afaf07f8d5154c8e57458f86fdf2327a01750425",
+    "q3_v8_run_record": "sha256:3e6d4aab0f068615fa702dba5832794f9a9c19bd2539294bed4022aa9f4ba9b5",
+    "q3_v8_evaluation": "sha256:dc8fcd6cd762c003192f9fc5d0cc4e02b6ef7f655bfb3ad435a4178c5ad94d9a",
+    "q3_v8_diversity_all": "sha256:2cc80670cfbf522eb883ea8b85c175e1319b1713d16b91b6f05c24ec6e57d47b",
+    "q3_v8_diversity_accepted": "sha256:4d8d720fdfbcc631db7ddd75a9c4da2b56408ab39edb42f672493b368eecd017",
+    "corpus_manifest_v1_MQ3": "sha256:58f93db540c0e785872749c737e96590480574e5e3fedfd749a155ce7ca5012a"
+  },
+  "claim_boundary": "Five motions have Q3 single-seed obstacle-absent-proxy evidence. The bank contains no matched alternatives and cannot establish robustness or critical-scene inference."
+}

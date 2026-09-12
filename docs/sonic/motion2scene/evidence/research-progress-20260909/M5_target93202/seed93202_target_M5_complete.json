@@ -1,0 +1,88 @@
+{
+  "adaptation_required": false,
+  "completion": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/controller/complete_005.json",
+    "sha256": "sha256:a258afca645e52534001452f7658a7905f554c242c3ab2ac28c4412ccb462a72"
+  },
+  "cumulative_measured_steps": 56024,
+  "generating_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_004/policy.npz",
+    "sha256": "sha256:342a3b9975920f18746600a104d5c41e4a692deed842d105e382a004baafa49b"
+  },
+  "interpretation": "All schedules pass, but measured passage costs differ. This is one target-only acquisition encounter, not a common-set construction comparison or M5 policy evaluation.",
+  "learner_l2": 10.0,
+  "new_fits_from_record_check": 0,
+  "new_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/models/model_005/policy.npz",
+    "sha256": "sha256:1928380a5cb292f6e77859d4eafb96dd3318e4be5d4e910b4de09a23fe1096ca"
+  },
+  "new_physics_from_record_check": 0,
+  "prior_teacher_prefix_preserved": true,
+  "round_measured_steps": 9536,
+  "run_id": "seed93202_target_only",
+  "schema": "motion2scene_target_M5_record_check_v1",
+  "student": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/round_005/student/result.json",
+    "sha256": "sha256:f8a05596d1a702fa7f05fc8046f8c6457ee40df391b0ca1e4bcb89176f5968d9"
+  },
+  "student_crossing_plus_stabilization_s": 5.28,
+  "student_outcome": "pass",
+  "teacher": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_target_only/round_005/teachers/result.json",
+    "sha256": "sha256:2d45ce3cd831c4addacd4976371748489e570481c5057910e73a4f712042b128"
+  },
+  "teacher_rows": [
+    {
+      "crossing_plus_stabilization_s": 5.42,
+      "full_recorded_horizon_s": 5.96,
+      "outcome": "pass",
+      "physics_steps": 1192,
+      "schedule": "short_e070_r265"
+    },
+    {
+      "crossing_plus_stabilization_s": 5.28,
+      "full_recorded_horizon_s": 5.96,
+      "outcome": "pass",
+      "physics_steps": 1192,
+      "schedule": "prior_splice_e015_r265"
+    },
+    {
+      "crossing_plus_stabilization_s": 5.84,
+      "full_recorded_horizon_s": 5.96,
+      "outcome": "pass",
+      "physics_steps": 1192,
+      "schedule": "sustained_e070_r255"
+    },
+    {
+      "crossing_plus_stabilization_s": 5.28,
+      "full_recorded_horizon_s": 5.96,
+      "outcome": "pass",
+      "physics_steps": 1192,
+      "schedule": "neutral"
+    },
+    {
+      "crossing_plus_stabilization_s": 5.28,
+      "full_recorded_horizon_s": 5.96,
+      "outcome": "pass",
+      "physics_steps": 1192,
+      "schedule": "prior_splice_e050_r265"
+    },
+    {
+      "crossing_plus_stabilization_s": 5.42,
+      "full_recorded_horizon_s": 5.96,
+      "outcome": "pass",
+      "physics_steps": 1192,
+      "schedule": "short_e015_r265"
+    },
+    {
+      "crossing_plus_stabilization_s": 5.84,
+      "full_recorded_horizon_s": 5.96,
+      "outcome": "pass",
+      "physics_steps": 1192,
+      "schedule": "sustained_e015_r255"
+    }
+  ],
+  "utc": "2026-09-10T05:20:24.192694+00:00",
+  "verification_scope": "Bound controller, collector, invocation and model-prefix receipts; no second raw rescore or new policy execution.",
+  "weighting": "uniform_per_phase"
+}

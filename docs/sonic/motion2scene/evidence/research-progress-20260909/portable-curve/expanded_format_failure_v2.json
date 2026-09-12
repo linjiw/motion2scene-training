@@ -1,0 +1,9 @@
+{
+  "status": "failed_before_fitting",
+  "cause": "JSON converts nested coverage-key tuples to lists; restore hashable coverage identity for exact historical weighting",
+  "source": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-curve-portability-validation-20260909-v1/toolkit_readonly_v2/scripts/research/motion2scene_acquisition_curve_dataset_baseline.py",
+    "sha256": "sha256:7a7821d7cfd37752b74311e20131ab6c4fb434e9751034fcebd630b625018081"
+  },
+  "new_physics_steps": 0
+}

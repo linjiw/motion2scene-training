@@ -1,0 +1,2 @@
+name, uuid, driver_version, memory.free [MiB], utilization.gpu [%]
+NVIDIA GeForce RTX 5080, GPU-6f038fe9-2d14-e61c-65d6-5b5ac147d073, 595.84, 12272 MiB, 5 %

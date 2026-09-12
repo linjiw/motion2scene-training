@@ -1,0 +1,28 @@
+{
+  "candidate_id": "primary_candidate_93201_0338",
+  "exact_original_M4_preupdate_policy": true,
+  "expanded_plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json",
+    "sha256": "sha256:bf551021c82fd42d0e6b002a2941a71b1358d72a469903105a2230bdfae3a4ed"
+  },
+  "measured_physics_steps": 1192,
+  "new_physics_from_check": 0,
+  "no_current_teacher_in_preupdate_fit": true,
+  "original_inherited_M4_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_004/result.json",
+    "sha256": "sha256:ac0b24df1beb2fa65da8f9039320d0505a03b67660c742124d001c8a4cc7053d"
+  },
+  "outcome": "pass",
+  "preupdate": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_analytic_contrast/round_005/preupdate.json",
+    "sha256": "sha256:ae33513da02134fe6647ac3561a699010a0278812f686884fde02a2b0bfc097a"
+  },
+  "round": 5,
+  "run_id": "seed93201_analytic_contrast",
+  "scope": "Actual M5 pre-update acquisition execution, not an M5 or M8 post-update common-set policy result.",
+  "student": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_analytic_contrast/round_005/student/result.json",
+    "sha256": "sha256:2fbb158b884014ad0fcced3fa371017e4b159dd4c4391266f3abf9024522e3ac"
+  },
+  "verified_utc": "2026-09-10T03:46:40.677218+00:00"
+}

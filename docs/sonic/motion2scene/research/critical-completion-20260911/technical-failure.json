@@ -1,0 +1,10 @@
+{
+  "exit_code": 1,
+  "reason": "First model forward rejected float64 observation fields with float32 Conv2d weights",
+  "fit": "unconditional-301",
+  "completed_updates": 0,
+  "new_physics_steps": 0,
+  "wall_seconds": null,
+  "wall_reason": "No terminal timer captured on exception; not inferred from timestamps",
+  "checkpoint_present": false
+}

@@ -1,0 +1,20 @@
+{
+  "active_command": "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python scripts/research/motion2scene_run_primary_acquisition.py run --plan /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-tie-proposed-v5/plan.json --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json --run-id seed93202_target_only --stop-after-round 4 ",
+  "active_pid": 2165908,
+  "classification": "verified wait",
+  "completed_M4_models": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_004/result.json",
+      "sha256": "sha256:65098295f529595e7855841998bc3f66060063153262e74026cbf2f522311440"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_004/result.json",
+      "sha256": "sha256:746b26b7c2a45a77661ea19dcff81d572f54cffb369f3148883c0c3f3bef110e"
+    }
+  ],
+  "created_utc": "2026-09-09T21:54:28.928437+00:00",
+  "new_physics_launched_by_this_turn": 0,
+  "next_declared_full_comparison_checkpoint": 4,
+  "schema": "motion2scene_verified_acquisition_wait_v1",
+  "source_changes": []
+}

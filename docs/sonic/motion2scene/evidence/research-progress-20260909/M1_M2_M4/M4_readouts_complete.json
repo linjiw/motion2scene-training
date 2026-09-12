@@ -1,0 +1,15 @@
+{
+  "budget": 4,
+  "cross_corpus": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-checkpoint-readouts-20260909-v1/M4/cross_corpus/result.json",
+    "sha256": "sha256:55cecf17b6ef5fc9e1dd02a241336eab6db00bbce21976505eb618f820d5f79b"
+  },
+  "experiment": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-checkpoint-readouts-20260909-v1/experiment.json",
+    "sha256": "sha256:5054641387b32d857839f3e13231c725ad8755bd905df0ea3fc44805909abcac"
+  },
+  "task_yield": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-checkpoint-readouts-20260909-v1/M4/task_yield/result.json",
+    "sha256": "sha256:e20946cd9ccea76a08f4c90b79e49fe06a0294696b678a799558e6a666f12ddd"
+  }
+}

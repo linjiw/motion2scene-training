@@ -1,0 +1,117 @@
+{
+  "scope": "Illustrative five draws, not a benchmark or physics result; one beam per scene",
+  "seed": 20260911,
+  "replacement": true,
+  "draws": [
+    {
+      "draw": 0,
+      "cell": 244,
+      "target": "sustained_e015_r255",
+      "model": "contrast-301",
+      "categorical_probability": 0.14032762752017577,
+      "raw_probability": 0.11120795458555222,
+      "center_xyz_m": [
+        3.2421875,
+        0,
+        1.3640624046325684
+      ],
+      "dimensions_xyz_m": [
+        0.3,
+        2.0,
+        0.2
+      ],
+      "yaw_rad": 0,
+      "lower_capsule_gap_m": 0.020451821386814117,
+      "geometrically_critical": true,
+      "physical_passage": null
+    },
+    {
+      "draw": 1,
+      "cell": 127,
+      "target": "sustained_e015_r255",
+      "model": "contrast-301",
+      "categorical_probability": 0.1347131042961406,
+      "raw_probability": 0.10675851255655289,
+      "center_xyz_m": [
+        2.1484375,
+        0,
+        1.3442708015441895
+      ],
+      "dimensions_xyz_m": [
+        0.3,
+        2.0,
+        0.2
+      ],
+      "yaw_rad": 0,
+      "lower_capsule_gap_m": 0.014818303287029266,
+      "geometrically_critical": true,
+      "physical_passage": null
+    },
+    {
+      "draw": 2,
+      "cell": 139,
+      "target": "sustained_e015_r255",
+      "model": "contrast-301",
+      "categorical_probability": 0.18033826708894068,
+      "raw_probability": 0.14291590452194214,
+      "center_xyz_m": [
+        2.2578125,
+        0,
+        1.3442708015441895
+      ],
+      "dimensions_xyz_m": [
+        0.3,
+        2.0,
+        0.2
+      ],
+      "yaw_rad": 0,
+      "lower_capsule_gap_m": 0.011221900582313538,
+      "geometrically_critical": true,
+      "physical_passage": null
+    },
+    {
+      "draw": 3,
+      "cell": 245,
+      "target": "sustained_e015_r255",
+      "model": "contrast-301",
+      "categorical_probability": 0.05757277107718265,
+      "raw_probability": 0.045625727623701096,
+      "center_xyz_m": [
+        3.2421875,
+        0,
+        1.383854126930237
+      ],
+      "dimensions_xyz_m": [
+        0.3,
+        2.0,
+        0.2
+      ],
+      "yaw_rad": 0,
+      "lower_capsule_gap_m": 0.04015517234802246,
+      "geometrically_critical": true,
+      "physical_passage": null
+    },
+    {
+      "draw": 4,
+      "cell": 244,
+      "target": "sustained_e015_r255",
+      "model": "contrast-301",
+      "categorical_probability": 0.14032762752017577,
+      "raw_probability": 0.11120795458555222,
+      "center_xyz_m": [
+        3.2421875,
+        0,
+        1.3640624046325684
+      ],
+      "dimensions_xyz_m": [
+        0.3,
+        2.0,
+        0.2
+      ],
+      "yaw_rad": 0,
+      "lower_capsule_gap_m": 0.020451821386814117,
+      "geometrically_critical": true,
+      "physical_passage": null
+    }
+  ]
+}

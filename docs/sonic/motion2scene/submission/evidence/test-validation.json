@@ -1,0 +1,47 @@
+{
+  "black_check": "7 files unchanged",
+  "checked_files": [
+    {
+      "bytes": 35606,
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/audit_motion2scene_submission.py",
+      "sha256": "sha256:203aa14e8f709c1b8ee908d04eee70376ecb4c67b1ff9e2ef3c35a1c17ee718d"
+    },
+    {
+      "bytes": 7785,
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_submission_command_audit.py",
+      "sha256": "sha256:725ffff1a40590c63352a67374edd240e6bfb2db615b5c371c6a72b5bf170ea6"
+    },
+    {
+      "bytes": 18754,
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_submission_diagnostics.py",
+      "sha256": "sha256:aafb6146d619e56f9ed12a9c03f524a27f139c1da58663ff15c5cb655e483dc7"
+    },
+    {
+      "bytes": 15046,
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/render_motion2scene_submission.py",
+      "sha256": "sha256:7de326839723c92b44962e106153630f45a32ba5aa833e28af661d205e6b9b1d"
+    },
+    {
+      "bytes": 9877,
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/render_motion2scene_submission_video.py",
+      "sha256": "sha256:6745fbb048a5f3b6a8f67914d741c986a28cee8337cdd7a170fb2725ae613926"
+    },
+    {
+      "bytes": 20404,
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/package_motion2scene_submission.py",
+      "sha256": "sha256:a96d543a4f95bf4d6ca048465e6c860aca48026fddbd5a85ced49343552b8eda"
+    },
+    {
+      "bytes": 1980,
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/decoupled_wbc/tests/test_motion2scene_submission_audit.py",
+      "sha256": "sha256:7f93a67469d48eb55d1248971adb97219e1f55a274d5516c442b7843e5eb3b87"
+    }
+  ],
+  "exit_code": 0,
+  "git_diff_check": "Passed; all task changes are additive, historical tracked files unchanged",
+  "recorded_at_utc": "2026-09-08T05:23:52.975669+00:00",
+  "ruff_check": "All checks passed",
+  "scope": "Focused impacted suite; no claim that the full repository suite or deployment build ran.",
+  "test_command": "PYTHONPATH=.:scripts/research .venv_research/bin/python -m pytest -q decoupled_wbc/tests/test_motion2scene_submission_audit.py tests/research/test_motion2scene_nominal_contract.py tests/dataset_generation/test_motion2scene_passage.py tests/dataset_generation/test_motion2scene_action_contract.py tests/dataset_generation/test_motion2scene_icra_compare.py tests/dataset_generation/test_motion2scene_icra_readout.py tests/dataset_generation/test_motion2scene_empirical_ambiguity.py",
+  "test_result": "25 passed in 0.98s"
+}

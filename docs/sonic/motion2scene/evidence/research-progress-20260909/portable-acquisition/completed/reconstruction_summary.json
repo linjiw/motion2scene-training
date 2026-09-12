@@ -1,0 +1,34 @@
+{
+  "corpora": 12,
+  "episode_outcomes": [
+    {
+      "episodes": 200,
+      "mode": "forced",
+      "outcome": "pass"
+    },
+    {
+      "episodes": 52,
+      "mode": "forced",
+      "outcome": "failure"
+    },
+    {
+      "episodes": 15,
+      "mode": "learned",
+      "outcome": "pass"
+    },
+    {
+      "episodes": 9,
+      "mode": "learned",
+      "outcome": "failure"
+    }
+  ],
+  "files_verified": 14916,
+  "maximum_coefficient_difference": 5.551115123125783e-17,
+  "maximum_legal_value_difference": 1.1102230246251565e-16,
+  "models": 36,
+  "new_physics_steps": 0,
+  "recorded_teacher_packet_choice_checks": 324,
+  "scope": "offline reconstruction and acquisition yield from portable recorded episodes; no new traversal",
+  "sensor_rows": 82248,
+  "teacher_phase_tables": 108
+}

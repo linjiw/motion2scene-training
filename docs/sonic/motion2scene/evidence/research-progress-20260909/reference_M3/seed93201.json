@@ -1,0 +1,39 @@
+{
+  "assigned_prefix_captures": 31,
+  "checkpoint": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/complete_003.json",
+    "sha256": "sha256:19428c1b082c0a15b3eb98074524106158d3f1f92554782d47ae8ddafbb4e4f4"
+  },
+  "complete_continuation_teacher": true,
+  "expanded_plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json",
+    "sha256": "sha256:bf551021c82fd42d0e6b002a2941a71b1358d72a469903105a2230bdfae3a4ed"
+  },
+  "interpretation": "training acquisition prefix; not held-out post-update policy performance",
+  "learner": "unchanged phase-specific ridge l2=10 with uniform phase weighting",
+  "model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/models/model_003/result.json",
+    "sha256": "sha256:387796f2a7801134c602ceae9fe36e77de7017b906333c3b22ff633ce7cec9f8"
+  },
+  "new_encounter_teacher_failures": 5,
+  "new_encounter_teacher_passes": 2,
+  "new_physics_from_verification": 0,
+  "policy": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/models/model_003/policy.npz",
+    "sha256": "sha256:8757b4c6f5d0a18965060f27ab7ec877e43eb8da051f6bd469158fb9da0a4c89"
+  },
+  "prefix_actual_steps": 36952,
+  "preupdate_policy_is_exact_M2": true,
+  "preupdate_student": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_003/student/result.json",
+    "sha256": "sha256:600a963832f38954d1bd06eddfb08646893eb7214ad184bc280dbb8d3ff1e499"
+  },
+  "preupdate_student_outcome": "pass",
+  "preupdate_student_steps": 1192,
+  "teacher": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_003/teachers/result.json",
+    "sha256": "sha256:39f6b2d0500411d93fd12d2d0b6b183ca8d43d129b48f44e52402cd76025d464"
+  },
+  "teacher_scene_and_branch_order_match": true,
+  "teacher_steps": 8344
+}

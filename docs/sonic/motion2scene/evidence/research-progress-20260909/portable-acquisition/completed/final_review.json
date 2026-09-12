@@ -1,0 +1,65 @@
+{
+  "artifacts": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/README.md",
+      "sha256": "sha256:4f1cfbbe0cb376300f8fb654577c2a4459481d3934551b192d447e2fd4276893",
+      "size_bytes": 36108
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/RESEARCH_STATE.md",
+      "sha256": "sha256:1e7b9cb1654b2a58c0793df1390fc28882ce965589be4629c35d3853df8b081f",
+      "size_bytes": 13235
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/RESEARCH_PROGRESS_20260909.md",
+      "sha256": "sha256:7636ec58821179d644897059b5173a2d1b5da31b85f015bfc6bd7b613bb6f263",
+      "size_bytes": 14877
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/PORTABLE_ACQUISITION_M2_V1.md",
+      "sha256": "sha256:eaf11951e56964c75b9446b46705785b6f5c7a2475faf24cc37bc1543b9822d8",
+      "size_bytes": 6947
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/traversal_method_v2.tex",
+      "sha256": "sha256:aa40edc858915a0befc88c1fd850584449972a307658c1776c513c8e579556a7",
+      "size_bytes": 51544
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/traversal_method_v2_supplement.tex",
+      "sha256": "sha256:3118cd19506eb288d32a4536de639f59259b76da851b20cd0670f00dd0c6eeb8",
+      "size_bytes": 30666
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/traversal_method_v2.pdf",
+      "sha256": "sha256:0870b9e2045341939201c6dff5e583dc606921dec10c136889de67ef9b90002f",
+      "size_bytes": 820185
+    }
+  ],
+  "black": {
+    "command": ".venv_research/bin/python -m black --check scripts/research/motion2scene_export_acquisition_dataset.py scripts/research/motion2scene_acquisition_dataset_baseline.py decoupled_wbc/tests/test_motion2scene_acquisition_dataset_baseline.py",
+    "exit_code": 0,
+    "result": "3 files unchanged"
+  },
+  "created_utc": "2026-09-09T21:48:03.711812+00:00",
+  "manuscript": {
+    "command": "/home/linjiw/.local/bin/tectonic traversal_method_v2.tex",
+    "cwd": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission",
+    "exit_code": 0,
+    "new_portability_paragraph_verified_in_pdf_text": true,
+    "pages": 20,
+    "warning": "existing underfull hbox near bibliography line 848"
+  },
+  "new_physics_steps": 0,
+  "ruff": {
+    "command": ".venv_research/bin/python -m ruff check scripts/research/motion2scene_export_acquisition_dataset.py scripts/research/motion2scene_acquisition_dataset_baseline.py decoupled_wbc/tests/test_motion2scene_acquisition_dataset_baseline.py",
+    "exit_code": 0,
+    "result": "All checks passed"
+  },
+  "schema": "motion2scene_portable_acquisition_final_review_v1",
+  "validation": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/validation.json",
+    "sha256": "sha256:daeeb405959381c04c3aa8b6791bb3d67a68d40cbe4643053a263ab6f99cb786",
+    "size_bytes": 18475
+  }
+}

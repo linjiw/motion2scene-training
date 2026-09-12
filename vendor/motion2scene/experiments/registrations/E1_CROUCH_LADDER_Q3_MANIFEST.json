@@ -1,0 +1,144 @@
+{
+  "schema_version": "motion2scene_physics_manifest_v1",
+  "experiment": "M2S-E1-crouch-ladder-q3-v1",
+  "purpose": "Single-seed, obstacle-absent SONIC qualification of two deterministic crouch edits derived from the accepted fresh Kimodo index-000 carrier.",
+  "authorization": {
+    "status": "self_approved",
+    "authority": "docs/hallucination/GOVERNANCE.md",
+    "claim5_isolation_verified": true,
+    "authorized_at": "2026-09-04T13:48:45-04:00",
+    "note": "Fresh external Motion2Scene lineage. The user authorized continued research execution. This batch does not modify the historical corpus or frozen claim-5 inputs."
+  },
+  "execution_policy": {
+    "not_authorized": false,
+    "timing_override": "The two cells, motions, common seed, controller, trajectory-only recorder, 6000 MiB serial memory gate, scientific predictions, and cost ceiling were fixed before either edited motion was launched.",
+    "runtime": {
+      "free_gpu_mib_required": 6000,
+      "hang_timeout_seconds": 1800,
+      "serial_execution": true,
+      "render_ego": false,
+      "success_requires": [
+        "SONIC_EVAL_SUCCESS marker",
+        "success_manifest.json",
+        "exactly one trajectory pickle",
+        "recorded fps=50"
+      ]
+    },
+    "cost_ceiling": {
+      "rollouts": 2,
+      "seconds_per_rollout_contended": 375,
+      "gpu_hours_contended": 0.208334,
+      "daily_envelope_gpu_hours": 8.0
+    },
+    "capacity_evidence": {
+      "measured_rollout_memory_mib": 4874,
+      "required_launch_memory_mib": 6000,
+      "rationale": "The completed E0-Q3 V8 trajectory-only batch established that 9000 MiB is unnecessary for camera-free SONIC capture. Cells remain serial and retain the 6000 MiB launch floor.",
+      "gpu_budget": {
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/gpu_budget.md",
+        "sha256": "sha256:6c58bba3b6e48ee198ae11cfc3631be3fc81cb30c7c05d7d70b3e4e80ddd273d"
+      },
+      "capacity_utility": {
+        "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/gpu_capacity.py",
+        "sha256": "sha256:52ad8940a44a94674231989c3a73b59fe4a66e056434b8ebe864be17b3c344b1"
+      }
+    }
+  },
+  "implementation": {
+    "source_repository": "/home/linjiw/groot-wbc-sonic-sim-trackb",
+    "source_commit": "3c5b1f2aa2127952b1032a4cbbfe1169952c0e7f",
+    "rollout_driver": {
+      "path": "scripts/research/run_kimodo_sonic_rollout.sh",
+      "sha256": "sha256:0a48eed8d00336ec17a29be761ab6ebfbe0c9f444da71e1cd72fb9159c6d1eb2"
+    },
+    "manifest_driver": {
+      "path": "scripts/research/hallucination/run_approved_manifest.py",
+      "sha256": "sha256:ab67817b3ee00730a360c9c5e23dee8c59fafef9163e1c562be5b5c3e5e74383"
+    },
+    "checkpoint": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/sonic_release/last.pt",
+      "sha256": "sha256:e6bdab3f64a39336b3d41877d4f497d05f58af275f288ec0e6746c283ded8909"
+    },
+    "python": "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python"
+  },
+  "lineage": {
+    "ladder_candidates": {
+      "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e1_crouch_ladder/candidates/candidates.json",
+      "sha256": "sha256:f1d72361bf765b5c79c5a5037297aa63125886c0abcfa3c8b9a531cfdf7fb544"
+    },
+    "nominal_q3_run": {
+      "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e0_q3_pilot_v8/run_record.json",
+      "sha256": "sha256:3e6d4aab0f068615fa702dba5832794f9a9c19bd2539294bed4022aa9f4ba9b5"
+    },
+    "nominal_cell": "m2s_q3v8_walk_straight_000",
+    "nominal_outcome": "accepted"
+  },
+  "registered_predictions": {
+    "path": "/home/linjiw/motion2scene/experiments/registrations/E1_CROUCH_LADDER_Q3_PREDICTIONS.md",
+    "sha256": "sha256:135fe8270d1097faf06dadfde7bd81425d11590031bf60e1acfe405f34920105"
+  },
+  "stop_conditions": [
+    "refuse launch if any pinned motion, conversion provenance, controller, driver, or prediction hash differs",
+    "yield without spending if free GPU memory is below 6000 MiB",
+    "run one cell at a time and stop on the first infrastructure failure",
+    "retain completed scientific rejections and do not retry them",
+    "stop before exceeding the 0.208334 contended GPU-hour ceiling",
+    "require zero external collision force before treating screen_empty as an obstacle-absent proxy",
+    "do not promote any result beyond Q3 single-seed feasibility"
+  ],
+  "cells": [
+    {
+      "cell_id": "m2s_e1_ladder_000_d040",
+      "body_mode": "controlled_crouch",
+      "turn": "straight",
+      "runtime_seed": 52000,
+      "hydra_overrides": ["++seed=52000"],
+      "task_prompt": "A person walks straight and makes a shallow crouch near the middle of the route",
+      "scene": {
+        "scene_id": "screen_empty",
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "motion": {
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e1_crouch_ladder/candidates/ladder_000/d040.pkl",
+        "sha256": "sha256:823f432ba09d5483c5b7555f3c53bb50c2497c6ea88d545e1909923f59677cb0",
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e1_crouch_ladder/candidates/ladder_000/d040.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:27074ee59ba74a9dab1e20e766ad5bec41615628065576b968bd929a98f54060",
+        "scene_start_xyz": [0, 0, 0]
+      },
+      "scene_start_xyz_expected": [0, 0, 0],
+      "expectation": {
+        "outcome": "accepted",
+        "status": "registered_single_seed_prediction"
+      },
+      "verdict_policy": "reference_trackability",
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e1_crouch_ladder/q3_v1/rollouts/m2s_e1_ladder_000_d040"
+    },
+    {
+      "cell_id": "m2s_e1_ladder_000_d055",
+      "body_mode": "controlled_crouch",
+      "turn": "straight",
+      "runtime_seed": 52000,
+      "hydra_overrides": ["++seed=52000"],
+      "task_prompt": "A person walks straight and makes a medium crouch near the middle of the route",
+      "scene": {
+        "scene_id": "screen_empty",
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "motion": {
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e1_crouch_ladder/candidates/ladder_000/d055.pkl",
+        "sha256": "sha256:08c49c9cca1933862d209d4f17b997a54b52b60a646e6c9e9a64138fbbd4bd45",
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e1_crouch_ladder/candidates/ladder_000/d055.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:981ca96fb51163ea0217558bd03cb8f9d1a6a19ec7959806b2d2c128ac73919b",
+        "scene_start_xyz": [0, 0, 0]
+      },
+      "scene_start_xyz_expected": [0, 0, 0],
+      "expectation": {
+        "status": "registered_measurement_without_directional_prediction"
+      },
+      "verdict_policy": "reference_trackability",
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/e1_crouch_ladder/q3_v1/rollouts/m2s_e1_ladder_000_d055"
+    }
+  ]
+}

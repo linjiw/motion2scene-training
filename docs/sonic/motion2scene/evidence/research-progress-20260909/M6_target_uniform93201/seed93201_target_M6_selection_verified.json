@@ -1,0 +1,331 @@
+{
+  "budget": 6,
+  "completion": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_target_only/controller/complete_006.json",
+    "sha256": "sha256:0f041f2241051a1e2c9f0b676303364f799f8743be10031035547c5dd9c27f67"
+  },
+  "cumulative_physics_steps": 65560,
+  "encounter_physics_steps": 9536,
+  "generating_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_target_only/models/model_005/policy.npz",
+    "sha256": "sha256:62ccfc14392d2efaa5c14a17db2d27700979be818e9d5d0c4820bd60c4c7fa20"
+  },
+  "interpretation": "Generating M5 student on one acquired development condition. Historical physical gaps describe its measured complete outcome, not isolated immediate-action errors. Passing late adaptation is still available at tick 70, where neutral commitment retains no later adaptation choice. Surface visibility does not establish semantic distinguishability. The new M6 fit is not evaluated here; no constructor comparison or held-out evidence is supplied.",
+  "learner_l2": 10.0,
+  "new_fits_from_verification": 0,
+  "new_model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_target_only/models/model_006/policy.npz",
+    "sha256": "sha256:7c86a5e31a4d493f87803663264a574285d38d90792f7e5f25aa7cb298e2da5b"
+  },
+  "new_physics_from_verification": 0,
+  "phases": [
+    {
+      "actual_selected_option_id": "neutral",
+      "complete_legal_action_table": true,
+      "deadline": {
+        "common_safe_wait_override": false,
+        "cue": "surface",
+        "current_eligible": true,
+        "current_phase": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 0.28,
+          "phase_tick": 15,
+          "physical_decision_elapsed_s": 0.28,
+          "reason": "declared_causal_cue_deadline"
+        },
+        "scope": "later entry visibility is diagnostic only; no future cue is credited now",
+        "teacher_continuation_entry": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 0.98,
+          "phase_tick": 50,
+          "physical_decision_elapsed_s": 0.98,
+          "reason": "declared_causal_cue_deadline"
+        }
+      },
+      "gap_reasons": [],
+      "historical_physical_gap": 1.0,
+      "matched_history_features_legality": true,
+      "passing_legal_actions": [
+        "neutral",
+        "short_e015_r265",
+        "sustained_e015_r255",
+        "prior_splice_e015_r265"
+      ],
+      "recorded_history_sha256": "af9a66f16eca83b2608581e3a4048e7f2a0548a90391a674c5769fe8e7e5ccf4",
+      "teacher_action": 0,
+      "tick": 15
+    },
+    {
+      "actual_selected_option_id": "neutral",
+      "complete_legal_action_table": true,
+      "deadline": {
+        "common_safe_wait_override": false,
+        "cue": "surface",
+        "current_eligible": true,
+        "current_phase": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 0.98,
+          "phase_tick": 50,
+          "physical_decision_elapsed_s": 0.98,
+          "reason": "declared_causal_cue_deadline"
+        },
+        "scope": "later entry visibility is diagnostic only; no future cue is credited now",
+        "teacher_continuation_entry": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 0.98,
+          "phase_tick": 50,
+          "physical_decision_elapsed_s": 0.98,
+          "reason": "declared_causal_cue_deadline"
+        }
+      },
+      "gap_reasons": [],
+      "historical_physical_gap": 1.0,
+      "matched_history_features_legality": true,
+      "passing_legal_actions": [
+        "neutral",
+        "prior_splice_e050_r265"
+      ],
+      "recorded_history_sha256": "2bf7e1681f180bb1e612322c02f02945e5bd02220b103580c6753a84bcaaef4a",
+      "teacher_action": 4,
+      "tick": 50
+    },
+    {
+      "actual_selected_option_id": "neutral",
+      "complete_legal_action_table": true,
+      "deadline": {
+        "common_safe_wait_override": false,
+        "cue": "surface",
+        "current_eligible": true,
+        "current_phase": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 1.38,
+          "phase_tick": 70,
+          "physical_decision_elapsed_s": 1.38,
+          "reason": "declared_causal_cue_deadline"
+        },
+        "scope": "later entry visibility is diagnostic only; no future cue is credited now",
+        "teacher_continuation_entry": {
+          "beams": [
+            {
+              "beam_index": 0,
+              "eligible": true,
+              "first_delivery_elapsed_s": 0.0
+            }
+          ],
+          "eligible": true,
+          "latest_delivery_elapsed_s": 1.38,
+          "phase_tick": 70,
+          "physical_decision_elapsed_s": 1.38,
+          "reason": "declared_causal_cue_deadline"
+        }
+      },
+      "gap_reasons": [],
+      "historical_physical_gap": 1.0,
+      "matched_history_features_legality": true,
+      "passing_legal_actions": [
+        "short_e070_r265",
+        "sustained_e070_r255"
+      ],
+      "recorded_history_sha256": "8867d5d85e6b5cfe729b095e339a45ccc89630726f8233d365c9da757ebe6164",
+      "teacher_action": 5,
+      "tick": 70
+    }
+  ],
+  "physics_seed": 93201,
+  "prefix_response_summary": {
+    "adaptation_required_lower": 2,
+    "assigned_tasks": 6,
+    "bank_solvable_lower": 6,
+    "bank_solvable_upper": 6,
+    "bank_unsolvable": 0,
+    "best_fixed_passages_lower": 6,
+    "best_fixed_passages_upper": 6,
+    "best_fixed_schedule_ids": [
+      "sustained_e015_r255",
+      "sustained_e070_r255"
+    ],
+    "capability_minus_best_fixed_lower": 0,
+    "capability_minus_best_fixed_upper": 0,
+    "complete": true,
+    "fixed_schedules": {
+      "neutral": {
+        "failures": 2,
+        "passes": 4,
+        "unknown": 0
+      },
+      "prior_splice_e015_r265": {
+        "failures": 1,
+        "passes": 5,
+        "unknown": 0
+      },
+      "prior_splice_e050_r265": {
+        "failures": 1,
+        "passes": 5,
+        "unknown": 0
+      },
+      "short_e015_r265": {
+        "failures": 1,
+        "passes": 5,
+        "unknown": 0
+      },
+      "short_e070_r265": {
+        "failures": 1,
+        "passes": 5,
+        "unknown": 0
+      },
+      "sustained_e015_r255": {
+        "failures": 0,
+        "passes": 6,
+        "unknown": 0
+      },
+      "sustained_e070_r255": {
+        "failures": 0,
+        "passes": 6,
+        "unknown": 0
+      }
+    },
+    "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+    "minimum_cover_size": 1,
+    "minimum_schedule_covers": [
+      [
+        "sustained_e015_r255"
+      ],
+      [
+        "sustained_e070_r255"
+      ]
+    ],
+    "one_fixed_covers_every_solvable_task": true,
+    "passing_set_patterns": [
+      {
+        "schedules": [
+          "neutral",
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "tasks": 4
+      },
+      {
+        "schedules": [
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "tasks": 1
+      },
+      {
+        "schedules": [
+          "sustained_e015_r255",
+          "sustained_e070_r255"
+        ],
+        "tasks": 1
+      }
+    ],
+    "unknown_branch_outcomes": 0
+  },
+  "preupdate": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_target_only/round_006/preupdate.json",
+    "sha256": "sha256:592427218dd1a6f440638f42d0ce7dcaedef6b34515154789dd3626414d51aed"
+  },
+  "prior_teacher_prefix_preserved": true,
+  "run_id": "seed93201_target_only",
+  "scene_id": "primary_candidate_93201_0420",
+  "schema": "motion2scene_acquired_selection_verification_v1",
+  "student_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_target_only/round_006/student/result.json",
+    "sha256": "sha256:71822beea45bfd2a68b28150a5854f7f4e1e7718d13900fafd277bc9870276f6"
+  },
+  "student_physical_events": [
+    {
+      "kind": "verified_environment_contact",
+      "maximum_force_n": 1108.0684814453125
+    }
+  ],
+  "student_raw_reaudited": true,
+  "student_task_outcome": "failure",
+  "teacher_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_target_only/round_006/teachers/result.json",
+    "sha256": "sha256:6b55ad53549fc935cc31fcd1bca37fd4f70c60e85b109d8266c6017ca31df597"
+  },
+  "teacher_outcomes": {
+    "neutral": {
+      "outcome": "failure",
+      "passage_time_s": null,
+      "steps": 1192
+    },
+    "prior_splice_e015_r265": {
+      "outcome": "pass",
+      "passage_time_s": 5.28,
+      "steps": 1192
+    },
+    "prior_splice_e050_r265": {
+      "outcome": "pass",
+      "passage_time_s": 5.28,
+      "steps": 1192
+    },
+    "short_e015_r265": {
+      "outcome": "pass",
+      "passage_time_s": 5.44,
+      "steps": 1192
+    },
+    "short_e070_r265": {
+      "outcome": "pass",
+      "passage_time_s": 5.44,
+      "steps": 1192
+    },
+    "sustained_e015_r255": {
+      "outcome": "pass",
+      "passage_time_s": 5.82,
+      "steps": 1192
+    },
+    "sustained_e070_r255": {
+      "outcome": "pass",
+      "passage_time_s": 5.82,
+      "steps": 1192
+    }
+  },
+  "utc": "2026-09-10T06:54:13.972289+00:00",
+  "verification_scope": "Original raw student re-audit; exact recorded-history/features/legality match against SHA-bound completed teacher targets. Teacher collection uses the original acquisition audit; no second teacher raw re-audit.",
+  "weighting": "uniform_per_phase"
+}

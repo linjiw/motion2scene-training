@@ -1,0 +1,46 @@
+{
+  "state": "passed",
+  "browser": "151.0.7922.34",
+  "raw": "75.71%",
+  "constrained": "95.53%",
+  "finalFrame": "205",
+  "traces": [
+    {
+      "type": "scatter3d",
+      "points": 384
+    },
+    {
+      "type": "scatter3d",
+      "points": 298
+    },
+    {
+      "type": "scatter3d",
+      "points": 2250
+    },
+    {
+      "type": "mesh3d",
+      "points": 2880
+    },
+    {
+      "type": "mesh3d",
+      "points": 8
+    },
+    {
+      "type": "mesh3d",
+      "points": 2880
+    }
+  ],
+  "errors": [],
+  "checks": [
+    "offline file load",
+    "raw/constrained switch",
+    "seven-motion selector including zero-critical neutral",
+    "alternative motion overlay",
+    "frame scrub",
+    "play/pause",
+    "sample obstacle",
+    "geometric coloring",
+    "uniform comparator"
+  ],
+  "note": "Headless Chromium software WebGL; screenshots are replay visualization, not dynamics."
+}

@@ -1,0 +1,57 @@
+{
+  "M3_analysis_preflight": {
+    "command": "OPENBLAS_NUM_THREADS=1 .venv_isaaclab/bin/python scripts/research/motion2scene_response_diversity.py --plan /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-tie-proposed-v5/plan.json --budget 3 --out /home/linjiw/research-data/groot-wbc/m2s-response-diversity-M3-20260909-v1",
+    "exit_code": 1,
+    "implementation_changed": false,
+    "interpretation": "M3 is not a declared full comparison checkpoint; preserve gate and use M4 after all corpora finish",
+    "output_directory_created": false,
+    "reason": "a declared acquisition checkpoint is required"
+  },
+  "M8_assignments": 138,
+  "M8_missing_models": 15,
+  "checked_handoff_references": 180,
+  "created_utc": "2026-09-09T21:52:58.847541+00:00",
+  "current_turn_classification": "verified wait: live original acquisition advanced from student-only to completed teacher collection",
+  "hash_mismatches": [],
+  "new_physics_launched_by_this_turn": 0,
+  "observed_completed_collections": [
+    {
+      "collection": "student",
+      "outcomes": [
+        "pass"
+      ],
+      "physics_steps": 1192,
+      "recorded_rows": 1,
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_004/student/result.json",
+        "sha256": "sha256:889a2be7d17a88c9b3b262d1c73707457e88e30d7fd17ac1280d26b86be05aab"
+      }
+    },
+    {
+      "collection": "teachers",
+      "outcomes": [
+        "failure",
+        "failure",
+        "failure",
+        "failure",
+        "pass",
+        "pass",
+        "failure"
+      ],
+      "physics_steps": 8344,
+      "recorded_rows": 7,
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_004/teachers/result.json",
+        "sha256": "sha256:433fc65cfeed27fa1ae3a0441a6c5c2494d1c564a00f16e6e5a56df8c1559137"
+      }
+    }
+  ],
+  "original_acquisition_processes": " 161884  108128    07:54:48 .venv_isaaclab/bin/python /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/dispatch.py --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json\n1955047 1955036    02:58:27 /home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python scripts/research/motion2scene_expanded_acquisition.py --plan /home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json --until-budget 8 --watch",
+  "previous_goal_turn_classification": "progress: completed M2 export and guarded archive reconstruction",
+  "schema": "motion2scene_verified_acquisition_wait_v1",
+  "scope": "read-only handoff verification and observation of already running physical acquisition; no independent physical re-audit or policy result",
+  "sequence": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260909-v3/sequence.json",
+    "sha256": "sha256:dc4c23c2483740e23757661ef3dfd2e3603866f46a767b45500db5bf3794fddd"
+  }
+}

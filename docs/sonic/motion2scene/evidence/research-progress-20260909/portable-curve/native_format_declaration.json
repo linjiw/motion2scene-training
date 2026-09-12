@@ -1,0 +1,17 @@
+{
+  "scope": "CPU format validation of the registered expanded fitter on recorded M2 data; not M8 acquisition, not an online trajectory and not a policy performance experiment",
+  "original_plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-tie-proposed-v5/plan.json",
+    "sha256": "sha256:aacce6a9a2c2b3fc5bf6b674b5ede46d6fee61ac7ad205553554c4210d3d4508"
+  },
+  "run_id": "seed93201_observation_curriculum",
+  "native_fitter": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_expanded_acquisition.py",
+    "sha256": "sha256:28a3d91beb810f410c897bae448772484658c2f921e6da4b511d508ab528220c"
+  },
+  "replay_rule": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-common-freeze-v2/replay_rule.json",
+    "sha256": "sha256:caf35faa12929360fe05137ef2afdd0d5287d9cbbf04e636fbb929699d8bb027"
+  },
+  "new_physics_steps": 0
+}

@@ -1,0 +1,1188 @@
+--- a/docs/motion2scene/submission/traversal_method_v2.tex
++++ b/docs/motion2scene/submission/traversal_method_v2.tex
+@@ -1,895 +1,314 @@
+-\documentclass[10pt]{article}
+-\usepackage[margin=0.85in]{geometry}
+-\usepackage{amsmath,amssymb,booktabs,tabularx,graphicx}
+-\usepackage[hidelinks]{hyperref}
+-\newcommand{\A}{\mathcal{A}}
+-\newcommand{\U}{\mathcal{U}}
+-\newcommand{\E}{\mathcal{E}}
+-\title{Motion2Scene: Execution-Conditioned Teaching for Perceptive Humanoid Traversal}
+-\author{Working method revision}
+-\date{September 2026}
++\documentclass[letterpaper,10pt,conference]{ieeeconf}
++\IEEEoverridecommandlockouts
++\overrideIEEEmargins
++\usepackage{amsmath,amssymb,booktabs,graphicx,url}
++\title{Motion2Scene: When Executed-Motion Contrasts Do Not Improve Humanoid Decisions}
++\author{Anonymous submission}
+ \begin{document}
+ \maketitle
++\thispagestyle{empty}\pagestyle{empty}
+ \begin{abstract}
+-A motion repertoire is useful for traversal only when the robot can execute a
+-suitable alternative and select it from information available before commitment.
+-We develop Motion2Scene, an execution-aware curriculum for humanoid overhead
+-traversal with a frozen low-level tracker. Executed body envelopes construct
+-solution-preserving geometric proposals; complete physical schedule branches
+-supply passage-first, measured-time teaching targets. A 114-dimensional causal
+-floor/ceiling-history policy can wait at three legal phases before one adaptation
+-and recovery. Historical replay and information-consistent teaching are evaluated
+-as separate development extensions. In 42 forced-schedule simulation episodes on six
+-development contexts, seven qualified schedules provide a passing alternative
+-for every context; the strongest constant passes five. A prior-derived option
+-and an authored sustained option solve complementary constraints. A 36-episode
+-policy comparison on the same six development contexts shows that adding the
+-complementary teaching data raises learned passage from five to six contexts,
+-matching a script retuned on the same data. Both updated policies take 0.50 s
+-longer on each of two previously solved passages. These results establish a
+-constructive option-and-data extension with a measured efficiency tradeoff;
+-independent curriculum benefit and held-out improvement remain open.
++Motion-conditioned scene construction can concentrate physical labeling on
++encounters that require adaptation without teaching a policy to select between
++adaptations. We examine this distinction for humanoid overhead traversal using
++a frozen tracker, seven qualified schedules, and a causal three-phase selector.
++In a completed five-arm development comparison, executed-contrast construction
++and feasibility-screened uniform each pass five of six contexts at each of
++three acquisition seeds. Thirteen of fifteen learned policies choose a constant
++schedule across these contexts. Historical replay changes the fitted parameters
++but not the executed decisions. A retrospective screen audit recovers two of
++seven measured response-complementarity positives; its two selected positives
++do not establish population precision. These comparisons are consistent with
++positive-support filtering explaining part of the construction advantage over
++unscreened placement, but do not isolate a sole causal mechanism. A separately
++registered support-broadening pilot has completed acquisition; its validation
++panel remains incomplete after an interrupted execution. We report that status
++without drawing a pilot utility conclusion. The evidence motivates separating
++proposal geometry, physical labels, and downstream decision utility, while
++establishing neither population equivalence nor held-out or hardware benefit.
+ \end{abstract}
+ 
+ \section{Introduction}
+-A humanoid may track diverse motions yet fail to use them in a constrained room.
+-An overhead passage requires a whole-body transition early enough to clear its
+-front edge, a sufficiently low executed shape throughout its length, and a legal
+-return to locomotion. A reference pose fitting beneath the obstacle establishes
+-none of these conditions. A training scene also provides little decision value
+-when its relevant sensor evidence arrives after the useful transition.
+-
+-The teaching problem is to expose decisions that matter. An obstacle cleared by
+-every motion may teach timing preferences but not the need to change body shape;
+-an obstacle defeating every motion cannot be solved by improving selection alone.
+-Our approach constructs constraints from the swept body geometry of executed
+-alternatives. A useful contrast leaves one schedule geometrically clear while
+-intersecting another, concentrating physical labeling on candidate decisions
+-where the available responses differ.
+-
+-We retain the frozen SONIC tracker~\cite{sonic} and expose qualified
+-entry--reference--return schedules built from generated and authored motions.
+-The selector learns when to commit from egocentric floor and ceiling history.
+-Crucially, WAIT retains later choices: its target must evaluate a complete
+-continuation, and that continuation must be selectable from the information
+-available at the later decision. Figure~\ref{fig:complementary_execution} shows
+-why selecting between alternatives matters: the prior-derived and sustained
+-responses solve different constraints.
+-
+-Motion-conditioned scene construction has precedent in Learning from
+-Hallucination (LfH), Learning from Learned Hallucination (LfLH), and
+-LfH-CP~\cite{lfh,lflh,lfhcp}; PAIRED and ACCEL guide environment design through
+-performance gaps~\cite{paired,accel}, while Prioritized Level Replay selects
+-previous environments according to estimated learning potential~\cite{plr}.
+-Motion2Scene links construction and learning through measured humanoid
+-execution. Executed contrasts propose scenes, complete physical continuations
+-teach commitment, and pre-update student outcomes provide a separate replay
+-signal. The geometric candidate queues remain fixed throughout acquisition.
+-
+-Our technical contributions are execution-conditioned contrast construction and
+-complete-continuation supervision for multi-phase perceptive commitment. We also
+-formulate an observation-consistent teacher on the finite decision tree and
+-compare replay signals within a common learner. Experiments distinguish the
+-effects of extending physical capability, acquiring teaching encounters and
+-reweighting those encounters. The completed development results establish
+-complementary responses and a closed-loop teaching-data benefit with a time
+-regression. The broader acquisition study tests whether construction and
+-supervision produce a repeatable downstream advantage.
+-
+-\begin{figure}[!t]
+-\centering
+-\includegraphics[width=0.96\linewidth]{../evidence/traversal-v2/early_prior_contact.png}
+-\includegraphics[width=0.96\linewidth]{../evidence/traversal-v2/complementary_prior_contact.png}
+-\caption{Complementary development capability. Top: the prior-derived schedule
+-passes an early beam that walking and sustained adaptation contact. Bottom:
+-sustained adaptation passes a different passage that the prior derivative
+-contacts. Images replay recorded Isaac Lab states and measured native forces;
+-MuJoCo provides visualization only. Complete episode measurements determine the
+-labels.}
+-\label{fig:complementary_execution}
+-\end{figure}
++A humanoid that tracks walking and crouching motions still needs to decide when
++and how to adapt beneath an obstacle. Motion-conditioned scene construction
++addresses the collection problem: place constraints where an executed response
++is predicted to clear and another is predicted to interfere. This can improve
++the yield of physical labels. The consequential uncertainty is whether those
++labels teach better decisions than a simpler constructor that preserves
++predicted feasibility and samples uniformly.
++
++The distinction matters because individually useful contrasts can be redundant
++as a corpus. If one sustained response solves every training encounter, a
++constant policy can fit the preferred response without using its observations.
++Conversely, a policy can choose several schedules and still choose the wrong
++one where their physical capabilities differ. Response diversity is therefore
++a diagnostic of contextual selection, not a substitute for passage utility.
++A constant policy could also improve passage; non-constancy is not necessary
++for every possible utility gain.
++
++We investigate these possibilities in a fixed humanoid simulation interface.
++The completed development comparison does not show incremental passage benefit
++over feasibility-screened uniform. This finite result revises the contribution
++from a general data-utility claim to an analysis of the gap between geometric
++contrast, physical response complementarity, and learned selection. We retain
++the strongest script, all forced schedules, and reverse cases. The new pilot
++asks whether broader proposal support changes this result, but its incomplete
++outcomes cannot yet answer that question.
+ 
+ \section{Related Work}
+-\paragraph{Inverse construction from motion.}
+-LfH constructs obstacle environments around motion plans; LfLH learns the inverse
+-map through a planner decoder; LfH-CP uses critical spatial and temporal
+-constraints to obtain varied dynamic navigation examples~\cite{lfh,lflh,lfhcp}.
+-LfH already collects executed motions in obstacle-free space. Motion2Scene
+-retains this inverse-construction idea and tests a more specific teaching design:
+-contrasting complete humanoid schedules through executed body geometry, then
+-physically labeling their transitions and recovery in the proposed scene.
+-Complete continuation targets connect these measurements to legal perceptive
+-decisions. The benefit over simpler construction remains an empirical question.
+-
+-\paragraph{Curricula and imitation.}
+-PAIRED optimizes a protagonist--antagonist gap and ACCEL evolves environments
+-through regret-based editing~\cite{paired,accel}. Prioritized Level Replay (PLR)
+-selects environments using estimates of future learning potential, including
+-temporal-difference error~\cite{plr}. Our replay component reweights
+-fixed acquired encounters, gated by measured sensor delivery and an
+-actual matched student failure or time gap, without editing their geometry.
+-DAgger motivates labeling
+-student-visited states~\cite{dagger}, but a one-entry schedule bank may already
+-cover every neutral decision prefix; adding a student episode does not by itself
+-establish new state coverage. Our refreshed-error control uses supervised regret
+-residuals on recorded teacher inputs; it adapts the learning-potential idea to
+-supervised fitting rather than reproducing PLR's RL algorithm.
+-
+-\paragraph{Teaching under asymmetric information.}
+-A privileged expert can demand decisions that a partially observed student
+-cannot reproduce. Adaptive asymmetric DAgger jointly modifies the expert and
+-trainee~\cite{a2d}; Student-Informed Teacher Training penalizes teacher--student
+-action differences and adds an alignment step~\cite{sitt}. Guided Policy
+-Optimization likewise co-trains an aligned privileged guider and
+-learner~\cite{gpo}. Our finite continuation extension addresses this established
+-information mismatch through shared actions within declared observation groups,
+-using complete measured schedule tables rather than jointly trained RL policies.
+-
+-\paragraph{Perceptive humanoid control.}
+-SONIC supplies motion tracking and contextual kinematic planning~\cite{sonic}.
+-Kimodo already demonstrates generated G1 motions tracked by GEAR-SONIC in
+-simulation~\cite{kimodo}. Our research question concerns how executed alternatives
+-construct useful teaching scenes and inform perceptive commitment decisions.
+-Perceptive Humanoid Parkour combines motion composition, tracking experts and a
+-perceptive student~\cite{php}; HumanoidPF combines obstacle representations with
+-realistic and procedural scenes~\cite{humanoidpf}. Our comparison concerns
+-training-data construction for a common frozen tracker, option set and sensor
+-interface. It does not reproduce their broader navigation or parkour scope.
+-
+-\section{Problem and Executable Interface}
+-We separate two questions: does the option bank contain a passing response, and
+-can the sensor policy select that response with low measured passage cost? A
+-scene $q$ contains an overhead constraint or two ordered constraints along a
+-fixed approach. From robot state $x_t$, executed command history $h_t$, and
+-simulator seed $\xi$, the frozen tracker $K$ produces
++Learning from Hallucination (LfH) constructs constrained navigation examples
++from motion in open environments~\cite{lfh}. Learning from Learned Hallucination
++(LfLH) learns obstacle configurations conditioned on existing plans and trains
++reactive navigation policies~\cite{lflh}. These works motivate motion-conditioned
++proposals. Dyna-LfLH extends learned hallucination to dynamic obstacles for
++ground navigation~\cite{dyna}. Their navigation results do not validate this
++humanoid pipeline or transfer their safety properties to it.
++
++Our distinction is experimental: executed humanoid alternatives propose
++constraints, obstacle-present closed-loop executions supply labels, and a fixed
++selector tests the resulting data. An empty-space envelope does not certify
++obstacle-present motion. A differentiable planner's reconstruction objective
++cannot replace the physical passage labels used here. The low-level tracker
++remains SONIC~\cite{sonic}; this study tests construction and selection within
++its qualified command interface, not a newly trained locomotion controller.
++
++\section{Decision Interface and Physical Outcome}
++Let $q$ denote a scene, $s$ a qualified complete schedule, and $K$ the frozen
++tracker. The measured response is
+ \begin{equation}
+- \tau_s=\operatorname{Execute}(K,x_t,h_t,s,q,\xi),
++ \tau_s=\operatorname{Execute}(K,x_0,h_0,s,q,\xi),
+ \end{equation}
+-where $s$ is a complete qualified schedule. The reference bank contains neutral,
+-short and sustained authored crouches, and one projected/spliced prior derivative.
+-Table~\ref{tab:schedules} defines the seven available schedules. Neutral and the
+-longer carrier were generated with the installed Kimodo prior. Short and sustained
+-are local authored variants of that neutral, not independently generated skills.
+-The derivative retains the provenance of its separate constrained prior sample
+-and its explicit repair operator.
+-
+-\begin{table}[t]
+-\centering\small
+-\begin{tabular}{lcc}
+-\toprule
+-Complete schedule & Entry phase (s) & Return phase (s) \\
+-\midrule
+-Neutral & --- & --- \\
+-Short, early / late & 0.30 / 1.40 & 5.30 \\
+-Sustained, early / late & 0.30 / 1.40 & 5.10 \\
+-Projected/spliced prior, early / late & 0.30 / 1.00 & 5.30 \\
+-\bottomrule
++where $x_0,h_0$ specify the initial state and command history and $\xi$ is the
++simulation seed. The seven schedules comprise neutral walking, early and late
++short crouches, early and late sustained crouches, and two entries of a
++projected/spliced prior-derived reference. Authored crouches are not independently
++validated crawling skills. The interface permits one adaptation followed by
++recovery on a fixed route, with no stop or steering action.
++
++\begin{table}[t]\centering\small
++\begin{tabular}{lcc}\toprule
++Schedule & Entry (s) & Return (s)\\\midrule
++Neutral & --- & ---\\
++Short, early / late & 0.30 / 1.40 & 5.30\\
++Sustained, early / late & 0.30 / 1.40 & 5.10\\
++Prior derivative, early / late & 0.30 / 1.00 & 5.30\\\bottomrule
+ \end{tabular}
+-\caption{Seven physically qualified schedules from four references. Paired
+-entries denote two separately qualified schedules. One adaptation per episode;
+-mandatory recovery is part of the option.}
+-\label{tab:schedules}
++\caption{The complete seven-schedule bank. Each paired entry is a separate
++qualified schedule. These times define the command interface, not guaranteed
++obstacle clearance.}\label{tab:bank}
+ \end{table}
+ 
+-The high-level policy decides while neutral at reference ticks $k\in\{15,50,70\}$
+-(0.30, 1.00 and 1.40 s). It may commit to a currently legal schedule or WAIT.
+-After commitment, the qualified schedule controls holding and return; no second
+-entry, adaptation-to-adaptation switch, arbitrary duration, stop or steering
+-command is available. Different request phases can precede the same physical
+-adaptation onset, so entry time alone is not a measured capability improvement.
+-
+-A six-second, 180-frame 30 Hz reference loads as 299 native 50 Hz samples. Each
+-complete bounded episode records 298 synchronized control rows and 1,192 physics substeps.
+-The last sensor capture is at elapsed 5.94 s, before the wrap callback. At a
+-reference tick $k$, the preaction sensor packet is captured at $(k-1)/50$ s.
+-Entry/return phases use the reference clock; passage time uses the physical
+-recording clock.
+-
+-Passage requires initial approach upstream of every enabled beam, ordered full
+-body-origin crossing and the registered 0.30 s stabilization hold, legal recovery,
+-no fall/reset, and no disallowed environmental contact throughout the recorded
+-horizon. Explicit body/counterpart forces are measured at 200 Hz; the registered
+-contact limit is 1 N, with permitted foot--floor support and internal self-contact
+-reported separately. A crossed finish with insufficient remaining hold is a
+-finite-horizon task failure. An admitted early contact, fall or refusal can
+-establish failure even when later supervision is unavailable; unverified outcomes
+-remain unknown. Mechanical work is unavailable
+-in this interface because applied actuator torque is not measured; it is stored
+-as null. Teaching cost uses measured successful passage time, without an invented
+-crouching or energy penalty. Specifically, passage time ends at crossing plus
+-stabilization; success additionally requires recovery and acceptable contact
+-through the remaining horizon. Thus a 2.72 s passage may precede a 5.30 s return
+-phase. Passage time is not the duration of the complete adaptation--recovery
+-maneuver, and does not measure readiness to begin a second adaptation.
+-
+-For each fixed task, $\max_s\mathbf1[\tau_s\text{ passes}]$ measures the capability
+-of this finite bank. Actual policy completion additionally depends on choosing a
+-usable schedule. A teacher search over all seven complete schedules establishes
+-the bank's tested capability, not a globally optimal humanoid response.
+-
+-\section{Execution-Conditioned Teaching}
+-Figure~\ref{fig:curriculum_overview} connects the construction, physical teaching
+-and replay stages. The same qualified schedules and observation interface serve
+-all acquisition arms.
+-
+-\begin{figure}[!t]
+-\centering
+-\includegraphics[width=\linewidth]{../evidence/traversal-v2/method_overview.pdf}
+-\caption{Execution-conditioned teaching. Executed alternatives screen candidate
+-scenes at 81 geometric offsets. Each acquired scene supplies a pre-update student
+-execution and seven matched teacher branches. Complete continuations supervise
+-commitment timing; uniform, coverage and observable historical-gap components
+-weight the next fit.}
+-\label{fig:curriculum_overview}
+-\end{figure}
+-
+-\subsection{Qualified executions construct candidate scenes}
+-Qualification verifies each complete schedule from the relevant neutral approach,
+-including entry, maintained adaptation and return. Its measured native body poses
+-transform conservative outer primitives and inner primitive witnesses. We
+-construct scenes using these executed envelopes, not reference heights. For a
+-positive schedule $s^+$ and a negative alternative $s^-$, the analytic screen is
+-\begin{equation}
+- \min_{\delta\in\U}c^{\mathrm{outer}}_{s^+}(q\oplus\delta)\ge m,
+- \qquad c^{\mathrm{inner}}_{s^-}(q)\le -m.
+- \label{eq:screen}
+-\end{equation}
+-The six-second development screen uses $m=0.01$ m and 81 combinations of world
+-$x/y$ offsets $\{-0.02,0,0.02\}$ m, underside offsets $\{-0.005,0,0.005\}$ m,
+-and yaw offsets $\{-0.02,0,0.02\}$ rad. Positive clearance is required across
+-this finite set; negative interference is required only at nominal placement.
+-These are sampled geometric proposal conditions, not physical robustness
+-certificates. Obstacles can change the subsequently executed trajectory.
+-
+-The primary candidate pool is drawn before acquisition outcomes. Target-only
+-assigns its positive schedule by a frozen random draw before geometric queries.
+-Uniform uses the first robust positive in the original draw order, while analytic
+-contrast searches distinct positive/negative pairs and maximizes minimum slack.
+-These queues differ in geometric eligibility; target-only does not use a negative
+-outcome. Common-support quotas select four distinct
+-available scene strata per corpus in frozen queue order; no physical failure
+-causes replacement or geometry re-selection. The analytic and observation
+-curriculum arms use exactly the same candidate IDs, order and teacher schedules,
+-so that their comparison isolates replay under the common acquisition design.
+-
+-The reference-envelope comparator applies native URDF forward kinematics to
+-the commanded full schedules, including entry and return, and uses identical
+-collision shapes, candidate scenes, margins and placement offsets. We first
+-check this kinematic map against native body poses using recorded root and joint
+-states. The comparison then changes only commanded versus executed body poses;
+-both constructors receive the same complete physical labeling and downstream
+-learner.
+-
+-\subsection{Causal observation and complete-continuation teaching}
+-The student receives 114 named values: 100 sensor/history, phase and robot-state
+-features, seven preaction active-schedule indicators and seven legality entries.
+-Sixty-five ideal mounted PhysX rays and normals accumulate for at most two
+-seconds or 101 frames in an egocentric floor/ceiling representation with separate
+-observed/unknown masks. Scene parameters, object identities, physical labels and
+-postdecision actions are excluded. This is an ideal simulated range interface,
+-not a noisy depth-camera result or dense vertical-free-space guarantee.
+-
+-Each scene is executed under all seven forced schedules with a matched physics
+-seed. Before a teacher branch can label a decision, its recorded state, prior
+-actions, reference tokens, causal sensor history, feature vector and legality
+-must match the forced-neutral branch's preaction prefix exactly. This supplies
+-bootstrap targets even without an actual student episode. Matching an actual
+-student's visited neutral prefix is an additional requirement for gap-based
+-replay below. For action $a$ at phase $k$, let $\mathcal S_k(a)$ be all registered
+-complete schedules sharing
+-that immediate decision. A current commitment has its corresponding schedule;
+-WAIT includes neutral continuation and every legal later-entry schedule. A
+-complete WAIT target therefore cannot be replaced by the forced-walking outcome.
+-
+-Every expected continuation must have an admitted outcome before its immediate
+-action table is complete. From a complete table with a successful continuation,
+-\begin{equation}
+- s_k^\star=\arg\min_{s\in\bigcup_a\mathcal S_k(a),\ \tau_s\text{ passes}}T_s.
+-\end{equation}
+-The immediate teacher action is the first action of $s_k^\star$. An action's value
+-uses its best passing complete continuation, or its measured failure if none
+-passes. Missing branches and unavailable later phases are not failures. Tables
+-without a successful continuation provide no fitting target. Ordinarily, fitting
+-also requires consequential passage or cost differences. A narrow measured-tie
+-initialization rule below handles an otherwise unsupported phase; all physical
+-recordings and costs remain in the data.
+-
+-The common student fits a separate linear ridge head at each legal phase to
+-negative measured regret. For a complete decision table, failure has regret one;
+-a passing action has
+-\begin{equation}
+- R_k(a)=\frac{T_k(a)-T_k^\star}
+- {\max_{b\in\A_k,\ b\ \mathrm{passes}}T_k(b)}.
+-\end{equation}
+-Per-phase input normalization uses a standard-deviation floor of 0.05; intercepts
+-are unpenalized. Regression weights are normalized per legal action. Runtime
+-scores are negative predicted regrets: masked score argmax selects the legal
+-action with minimum predicted regret. These
+-unconstrained estimates are not success probabilities, and regression does not
+-preserve the teacher's lexicographic success preference as a guarantee. The
+-common penalty $\lambda=10$ was selected on five development layouts from a
+-registered finite sweep, before primary acquisition.
+-
+-At bootstrap, a phase with only complete, equally successful and equal-time
+-alternatives receives zero regret targets and deterministic tie breaking. Once
+-consequential examples arrive, they determine that phase's fit. The exact rule
+-and its development history appear in Appendix~\ref{app:initialization}.
+-
+-\subsection{Observation-consistent continuation supervision}
+-Scene-wise schedule search can overvalue WAIT when later successful actions
+-depend on information unavailable to the student. We implement a finite
+-information-group teacher to test and address this failure. Let $I_k$ contain
+-encounters with exactly equal available 114-dimensional student vectors at phase
+-$k$. For this dynamic program, successive partitions must refine: later groups
+-must retain earlier distinctions. Inputs that violate this condition require
+-an explicit memory representation or a different policy solver.
+-
+-Starting at the last phase, retain every legal commitment that passes in all
+-members of $I_k$. Retain WAIT only when every successor group admits a common
+-passing continuation. In notation,
+-\begin{equation}
+- \A_k^+(I_k)=\{a\in\A_k^{\mathrm{commit}}:\ Y_i(a)=1\ \forall i\in I_k\}
+- \ \cup\ \{\mathrm{WAIT}:\A_{k+1}^+(J)\ne\varnothing\ \forall J\subseteq I_k\},
+-\end{equation}
+-where $J$ ranges over successor information groups; at the last phase WAIT
+-means the complete neutral schedule. $Y_i(a)$ is the measured full-schedule
+-outcome. Incomplete continuation tables withhold supervision. Among passing
+-policies, choose the one minimizing mean measured passage time within the group;
+-retain all passing actions and all exact time minimizers as set-valued targets.
+-This enforces equal actions for equivalent information while allowing later
+-observations to distinguish tasks.
+-
+-When no common policy passes the entire group, the teacher maximizes attainable
+-passage count $N_a$ before minimizing the successful-time sum $C_a$. A commitment
+-uses its measured schedule; WAIT sums the optimal successor-group values.
+-Backward induction retains all equal optima under uniform empirical encounter
+-mass. Let $N^*=\max_a N_a$ and let $C_*,C^*$ be the minimum and maximum costs
+-among actions attaining $N^*$. For $N^*>0$, shared regret targets are
+-\begin{equation}
+- R_I(a)=\begin{cases}
+- (N^*-N_a)/N^*,&N_a<N^*,\\
+- (C_a-C_*)/(N^*C^*),&N_a=N^*.
+- \end{cases}
+-\end{equation}
+-Positive passage times make every equal-count time regret smaller than losing
+-one passage. Singleton groups recover the original regret exactly. These
+-explicit targets train the same ridge equations; unknown or all-failing groups
+-provide no passing supervision. The teacher is a development extension;
+-the ongoing acquisition comparison retains its original scene-wise teacher.
+-
+-\subsection{Historical physical gaps prioritize replay}
+-At acquisition round $r$, the student model $M_{r-1}$ is committed with exactly
+-bootstrap and earlier-round teacher data before the current student's scene is
+-executed. All seven current teacher branches follow that actual student episode.
+-This order prevents current-scene labels from entering the model used to measure
+-its gap. Every arm uses the same student-before-teachers encounter structure
+-and branch budget.
+-
+-For a matched neutral phase with a complete feasible teacher, compare the actual
+-full student outcome with the teacher's best continuation:
+-\begin{equation}
+- g_{r,k}=\begin{cases}
+- 1,&\text{verified student failure},\\
+- \max\!\left(0,\dfrac{T_{M_{r-1}}-T_k^\star}
+- {\max(T_{M_{r-1}},T_k^\star)}\right),&\text{student passes}.
+- \end{cases}
+-\end{equation}
+-Unverified, unmatched or unavailable outcomes receive no gap priority. Recorded
+-ray endpoints are associated with beam geometry only for training-time cue scoring.
+-The primary rule requires each enabled beam's surface cue to have been delivered
+-by the current decision's physical timestamp. It does not require an underside
+-return and does not prove that two tasks are distinguishable. A future-entry cue
+-is separately recorded and is never credited as current information. Safe WAIT
+-without a current cue remains eligible for ordinary teacher training, but receives
+-no regret priority under this rule.
+-
+-Replay mixes 0.2 uniform, 0.2 declared option/length/phase/entry/return coverage,
+-and 0.6 verified-gap mass. We normalize encounter mass before distributing it
+-across supervised phases, preventing extra WAIT opportunities from tripling an
+-encounter's weight. An encounter's gap is the maximum of its eligible phase gaps.
+-When all gaps are zero or unavailable, only the 0.6 gap component falls back to
+-uniform: the resulting mixture is \emph{0.8 uniform plus 0.2 coverage}. Missing
+-supervision gets zero fitting weight, not a fabricated label.
+-
+-Coverage uses a joint key consisting of the best continuation's reference,
+-ordered enabled-beam length bins, current phase, entry tick and return tick.
+-Length edges are $\{0.25,0.5,1,2\}$ m; an exact edge belongs to the upper bin.
+-Let $n_b$ count encounters containing key $b$, counted once per encounter, and
+-$v_{ik}=1/n_{b(i,k)}$ for its supervised phases $K_i$. Define
+-\begin{equation}
+- u_i=\frac{1}{|K_i|}\sum_{k\in K_i}v_{ik},\qquad
+- p^{\mathrm{cov}}_{ik}=\frac{u_i}{\sum_j u_j}
+-                      \frac{v_{ik}}{\sum_{\ell\in K_i}v_{i\ell}}.
+-\end{equation}
+-The dimensions form one joint bin rather than separately averaged marginal
+-distributions. The coverage term contributes $0.2p^{\mathrm{cov}}_{ik}$.
+-
+-A historical gap retains its generating model and round age. Our development
+-controls compare uniform mass, coverage alone, their 0.8/0.2 mixture, and refreshed
+-supervised-error priority. The latter replaces gap priority by the mean squared
+-residual between predicted and measured regret across legal actions, recomputed
+-after each fit. It uses the same encounter/phase normalization and fallback as
+-historical replay. This is a cheap fitting signal; physical gaps continue to
+-require actual executions of their generating models.
+-
+-\section{Experiments}
+-All completed experiments below use development data: six fixed traversal
+-contexts, independently acquired teaching encounters, and separate motion-option
+-and perception studies. The six fixed contexts test empty, short, sustained,
+-early-commitment, two-beam and complementary passages. Physical schedule tables,
+-new closed-loop policy executions and recorded-input readouts are reported
+-separately. The common acquisition learner is the phase-specific ridge model
+-with penalty 10; the tracker and seven-schedule bank remain fixed. Larger
+-acquisition checkpoints and reserved evaluation are described at the end of
+-this section. Appendix~\ref{app:data} documents the reusable recordings.
+-
+-\subsection{Does execution change the constructed teaching constraints?}
+-We extend the shared geometric pool to 3,840 candidates: 256 draws per stratum,
+-five strata and three seeds. Native forward kinematics reproduces recorded body
+-positions within 2 micrometres, supporting a controlled reference-versus-executed
+-envelope comparison. Table~\ref{tab:construction_geometry} shows that only
+-169 of 645 reference-selected positive/negative pairs retain the same geometric
+-contrast under measured execution. The chosen positive retains robust clearance
+-in 182 cases; the chosen negative retains nominal intersection in 624. Thus the
+-main discrepancy is whether the proposed passing response retains its clearance.
+-Nevertheless, 207 reference-selected scenes have some executed contrast, possibly
+-using a different pair. Complete physical teacher branches remain necessary to
+-measure useful-task yield and downstream passage.
+-
+-\begin{table}[t]
+-\centering\small
+-\begin{tabular}{rrrr}
+-\toprule
+-Seed & Executed contrasts & Reference contrasts & Selected pairs retained \\
+-\midrule
+-93201 & 77 & 206 & 59/206 \\
+-93202 & 89 & 241 & 67/241 \\
+-93203 & 65 & 198 & 43/198 \\
+-\bottomrule
++At reference ticks $15,50,70$ (0.30, 1.00, 1.40 s), a causal 114-dimensional
++floor/ceiling-history and robot-state input supports a choice of a legal schedule
++or WAIT. After commitment, the schedule specifies return. A WAIT target must
++include a complete future continuation rather than crediting an unfinished
++prefix. All construction arms share the complete-continuation teacher and the
++phase ridge learner with $\lambda=10$. The five-arm comparison consequently
++does not isolate the teacher's contribution.
++
++The 299-sample reference permits 298 recorded control rows at 50 Hz and 1,192
++physics substeps at 200 Hz. Contact evidence is retained at the physics rate.
++The registered criterion requires initial upstream approach, ordered crossing
++by all recorded body origins beyond the downstream face plus 0.1 m, and at least 0.30 s of upright stabilization.
++Upright means root height at least 0.5 m and negative projected-gravity $z$
++at least 0.5. Crossing is an origin-based criterion, not a certificate for every
++native collision shape. Beam contact uses the maximum normal-force norm across
++recorded bodies and time; the limit is 1.0 N. Multiple beams and other disallowed
++environment contacts are audited explicitly. Permitted foot--floor support and
++self-contact are recorded separately.
++
++A task pass additionally requires the registered recovery and acceptable
++contact and stability through the captured horizon. Insufficient stabilization
++before that horizon is a task failure. A verified early physical failure is
++retained even if later teaching targets are unavailable. Missing or unverifiable
++measurements remain unknown. An operating-system exit code alone does not
++classify physical success or technical failure. Successful passage time ends at
++crossing plus stabilization; it is distinct from whole-episode duration and
++recovery completion. No measured actuator work or energy claim is available.
++
++\section{Construction and the Completed Development Comparison}
++Executed contrasts use achieved empty-space body envelopes to rank candidate
++constraints with both a positive robustness gate and a negative interference
++gate. The positive test samples 81 geometric offsets. The negative test uses
++the declared nominal interference margin. These tests are proposal heuristics:
++obstacles may change tracking, contact, and the subsequent trajectory. Each
++selected encounter receives the same student execution and seven complete
++teacher branches. Outcomes, including all-fail response tables, remain in the
++acquisition record.
++
++The Gen~2 comparison evaluates five construction/training arms on six shared
++development contexts at three acquisition seeds. The physics seed is common.
++Screened Uniform retains predicted feasibility; Target-only is the weaker
++unscreened placement comparator in this study. The other arms use reference
++contrast, executed contrast, and executed contrast with historical replay.
++These arms must not be conflated with the strict, broad, and mixture arms of
++the subsequent pilot.
++
++\begin{table}[t]\centering\small
++\footnotesize
++\begin{tabular}{lccc}\toprule
++Learned arm at M8 & Seed 1 & Seed 2 & Seed 3\\\midrule
++Screened Uniform & 5/6 & 5/6 & 5/6\\
++Target-only & 4/6 & 4/6 & 5/6\\
++Reference contrast & 6/6 & 5/6 & 4/6\\
++Executed contrast & 5/6 & 5/6 & 5/6\\
++Executed contrast + replay & 5/6 & 5/6 & 5/6\\\midrule
++Strong script & \multicolumn{3}{c}{6/6}\\
++Neutral & \multicolumn{3}{c}{2/6}\\
++Short, early; late & \multicolumn{3}{c}{3/6; 3/6}\\
++Sustained, early; late & \multicolumn{3}{c}{4/6; 4/6}\\
++Prior derivative, early; late & \multicolumn{3}{c}{5/6; 5/6}\\
++Union of seven fixed schedules & \multicolumn{3}{c}{6/6}\\\bottomrule
+ \end{tabular}
+-\caption{Common-pool geometric construction comparison. Retention requires the
+-reference-selected positive to clear all 81 offsets and its selected negative
+-to intersect nominally under executed envelopes, using the same 1 cm margins.
+-These are geometric pair counts, not physical passage rates.}
+-\label{tab:construction_geometry}
++\caption{Completed six-context development panel: 138 executions, including
++90 learned-policy, six script, and 42 forced-schedule assignments. Seed columns
++index acquisition seeds 93201--93203; all executions use seed 8732. Contexts are
++shared, so the cells are not independent experimental replicates.}
++\label{tab:development}
+ \end{table}
+ 
+-\paragraph{Does construction acquire tasks that require adaptation?}
+-At one acquired encounter per corpus, all twelve original corpora complete their
+-pre-update student and seven teacher executions. Across three seeds,
+-feasibility-screened uniform acquires three tasks on which every schedule passes.
+-Target-only, executed contrast and observation curriculum each acquire three
+-tasks requiring adaptation: the neutral branch fails while a supported
+-adaptation passes. The pre-update student passes all three uniform tasks and
+-fails all three tasks of each other constructor. These are constructor-specific
+-acquisition difficulties, not held-out policy comparisons. All 96 encounter
+-episodes have known outcomes, excluding bootstrap. Target-only matches executed
+-contrast at this first budget, so the result establishes adaptation-requiring
+-teaching examples without yet isolating a contrast-targeting benefit.
+-
+-At the completed M2 checkpoint, executed contrast and observation replay each
+-retain six adaptation-required tasks out of six acquired across three corpora;
+-target-only retains three of six and screened uniform zero of six. Every acquired
+-task is bank-solvable. Each arm consumes 57,216 measured encounter steps, plus
+-25,032 steps for its three independent bootstraps: 82,248 steps per arm and
+-27,416 per corpus. All 192 encounter outcomes are known. The difference now
+-supports increased physical adaptation-required task yield relative to target-only
+-at this budget. It still does not establish useful perceptive selection: a fixed
+-late sustained schedule passes every M2 acquired task across all four arms.
+-
+-The completed M4 audit retains all 468 acquisition episodes, including
+-84 bootstrap teachers, 336 encounter teachers and 48 pre-update students:
+-557,856 measured physics steps, or 139,464 per arm. Executed contrast and replay
+-each acquire 12/12 adaptation-required tasks, compared with 4/12 for target-only
+-and 2/12 for screened uniform (Table~\ref{tab:m1yield}). The contrast versus
+-target-only differences are 3/4, 3/4 and 2/4 tasks in the three corpora. All
+-assigned tasks remain bank-solvable; the complete prefixes retain 117 failed
+-teacher branches and ten failed students, with no unknown branch outcomes.
+-The reference arm is acquiring its own physical prefix, and common-set M8
+-policy evaluation remains pending.
+-
+-\paragraph{Do acquired tasks require different responses?}
+-Every individual M4 corpus still admits one fixed schedule covering all four
+-acquired tasks (Fig.~\ref{fig:acquisition_responses}). Pooled within each arm,
+-one fixed schedule also covers all twelve tasks: either prior for uniform,
+-executed contrast and replay, and late sustained for target-only. Across all
+-four constructors, the bank covers 34/34 distinct geometry/seed conditions,
+-whereas the best fixed schedule covers 32/34; one prior and one sustained
+-schedule together cover the full pool. Thus complementary responses exist
+-across the acquired data, but no individual training corpus yet requires
+-choosing between them. Appendix~\ref{app:acquired_witness} illustrates a
+-same-seed pair with disjoint passing sets and different recorded upper-hit
+-features at 0.30 s. This is physical capability and recorded observation evidence,
+-not a demonstration of robust perceptual selection. The audit adds no physics
+-or training.
+-
+-\begin{table}[t]
+-\centering\small
+-\begin{tabular}{lrrr}
+-\toprule
+-Constructor & M1 & M2 & M4 \\
+-\midrule
+-Feasibility-screened uniform & 0/3 & 0/6 & 2/12 \\
+-Target-only & 3/3 & 3/6 & 4/12 \\
+-Executed contrast & 3/3 & 6/6 & 12/12 \\
+-Executed contrast with replay & 3/3 & 6/6 & 12/12 \\
+-\midrule
+-Measured physics steps per arm & 53,640 & 82,248 & 139,464 \\
+-\bottomrule
+-\end{tabular}
+-\caption{Adaptation-required acquired tasks across three corpus seeds per arm.
+-Neutral must fail and at least one adaptation pass; all assigned tasks are
+-bank-solvable. Costs include each corpus's bootstrap, all teacher branches and
+-pre-update student executions. Checkpoints share nested acquisition prefixes;
+-their costs are not additive. Executed-contrast and replay arms share candidate
+-identities and order, with no measured teacher-outcome disagreements. These
+-task yields are distinct from common-set policy performance.}
+-\label{tab:m1yield}
+-\end{table}
+-
+-\begin{figure}[t]
+-\centering
+-\includegraphics[width=\linewidth]{../evidence/research-progress-20260909/M1_M2_M4/acquisition_responses.pdf}
+-\caption{Completed M1/M2/M4 training-task measurements against actual acquisition
+-steps per corpus, including bootstrap. Thin lines show individual corpora and
+-bold lines their means; there are three corpora per arm. Increased
+-adaptation-required yield (left) coexists with a fixed schedule covering every
+-task within each corpus (right). Constructor-specific tasks are not a common
+-policy evaluation set.}
+-\label{fig:acquisition_responses}
+-\end{figure}
+-
+-\paragraph{Cross-corpus decision readout.}
+-We test the acquired M1 models on recorded teacher branches from the other
+-acquisition seeds, using identical validation sets across training arms and
+-removing duplicate geometry/seed pairs. Eight unique short-stratum scenes yield
+-5, 6 and 5 validation contexts for training seeds 93201--93203. Uniform-trained
+-models select passing branches in 2/5, 5/6 and 4/5 contexts; target-only gives
+-4/5, 5/6 and 4/5; executed contrast and observation replay both give 5/5, 5/6 and
+-4/5. The contrast-trained models always choose a prior schedule and match the
+-fixed prior's counts. A fixed late sustained schedule covers all eight unique
+-scenes. Thus this recorded-data comparison shows a one-seed construction effect,
+-but neither a replay gain nor improved selection over the best fixed response
+-within these tables. Folds reuse validation scenes; these are not new physical
+-policy evaluations.
+-
+-At M2, the cross-corpus pool contains 17 unique scenes: eight from the first
+-acquisition round and nine from the second. The corresponding validation sets
+-contain 11, 12 and 11 contexts. Uniform, executed contrast and observation replay
+-all select passing branches in 11/11, 11/12 and 10/11 contexts; target-only gives
+-10/11, 11/12 and 10/11. The three tied arms choose a constant prior schedule
+-within each corpus. A fixed late sustained schedule passes all 17 tasks.
+-Thus the increased adaptation-required yield at M2 has not produced better
+-selection than uniform or a strong fixed response. Because the validation pool
+-grows between checkpoints, these readouts are not a fixed-test learning curve.
+-
+-At M4, 34 distinct geometry/seed conditions give other-seed validation folds of
+-22, 23 and 23 contexts. Uniform, executed contrast and replay again tie, now at
+-21/22, 21/23 and 22/23 passing branch selections; target-only gives 16/22, 21/23
+-and 16/23. The three tied arms still choose a constant prior within each corpus
+-and match the fixed prior's passage counts. The folds reuse conditions and the
+-pool grows across checkpoints. These saved-policy, recorded-branch readouts add
+-no physical policy executions and provide no evidence of better selection than
+-uniform or the fixed prior at M4.
+-
+-\subsection{Additional executable capability}
+-Table~\ref{tab:capability} reports all seven schedules on five original contexts
+-and one separately constructed complementary passage at seed 8731: 42 physical
+-simulation episodes, 12,516 aligned control/sensor rows and 50,064 substeps.
+-The prior-derived schedules pass the early beam, while all authored short and
+-sustained schedules fail. On the complementary passage, both sustained schedules
+-pass in 4.20 s with zero beam force, while both prior schedules fail torso contact
+-with maxima of 514.955 and 400.533 N. All 42 measurements are complete; 28 pass
+-and 14 fail. The finite option union covers six contexts, while the best constant
+-covers five. This is a constructed development capability distinction.
+-
+-\begin{table}[t]
+-\centering\small
+-\begin{tabular}{lrrrrrr}
+-\toprule
+-Schedule / entry phase & Empty & Short & Long & Early & Two beams & Complement \\
+-\midrule
+-Neutral & 5.36 & fail & fail & fail & 4.14 & fail \\
+-Short, 0.30 / 1.40 & 5.86 & 4.04 & fail & fail & 4.20 & fail \\
+-Sustained, 0.30 / 1.40 & 5.92 & 4.06 & 4.64 & fail & 4.52 & 4.20 \\
+-Prior derivative, 0.30 & 5.36 & 3.62 & 4.48 & 2.74 & 4.12 & fail \\
+-Prior derivative, 1.00 & 5.38 & 3.62 & 4.50 & 2.72 & 4.12 & fail \\
+-\bottomrule
+-\end{tabular}
+-\caption{Successful passage times (seconds) for all 42 nominal forced-schedule
+-development episodes, seed 8731. Paired authored entries are separately executed
+-schedules with identical listed outcomes. ``Fail'' is a measured task failure.
+-Finish planes differ across scenes; compare times within columns.}
+-\label{tab:capability}
+-\end{table}
+-
+-The complementary beam was selected by a registered executed-geometry search:
+-0.60 m long, 1.25 m underside, with sustained outer clearance at least 13.201 mm
+-over the finite offsets. Both prior nominal inner witnesses interfere. All 95
+-selected primitive queries agree with independent uncapped full-capsule checks.
+-Only nominal placement has physical evidence. The course column is deliberately
+-retained: neutral passes it, so that course demonstrates two-beam instrumentation
+-and continuation but does not require adaptation or prove multiple transitions.
+-
+-The 18 neutral phase tables are complete, with 17 consequential training targets.
+-In the complementary scene, WAIT at 0.30 s and 1.00 s is backed by the actually
+-passing sustained schedule at 1.40 s. Ray-only reconstruction reproduces all
+-114 features. Useful sensor features differ from the original contexts, but no
+-single map cell jointly observes floor and ceiling inside the student's corridor
+-at these decision phases. Thus the finite example is observable in its recorded
+-summary without demonstrating complete vertical free-space perception.
+-
+-\paragraph{Repeatable option extraction.}
+-We additionally compare four fresh prior samples with four authored variants,
+-sharing the neutral carrier and applying the same joint-limit projection and
+-neutral transition splice to every candidate. The authored variants use four
+-fixed crouch-duration windows; the prior samples use fixed route, endpoint and
+-low-pelvis conditioning with independent generation seeds. Both procedures
+-request 0.085 m lowering through their respective operators. Each candidate
+-receives two qualification executions, entering at 0.30 or 1.00 s and returning
+-at 5.30 s. All executions load the same nine-reference bank and use one common
+-physics seed. Both procedures qualify all four candidates and all eight assigned
+-schedules under the unchanged physical criteria; the shared neutral also passes.
+-This 17-episode test establishes repeatable extraction of executable alternatives,
+-with no replacement samples or execution-dependent repair. It does not establish
+-an advantage over authored extension, whose qualification yield is identical.
+-Incremental coverage on independently fixed tasks remains a separate test.
+-
+-\subsection{Measured data extension and strong baselines}
+-Adding the complementary teaching encounter lets the learned policy solve a
+-sixth development context that its five-context predecessor fails. A script
+-reselected on the same six-context data also passes all six; the original script
+-and strong constant each pass five (Table~\ref{tab:policies}). Both updated
+-policies choose WAIT at 0.30 and 1.00 s, then sustained adaptation at 1.40 s
+-for the complementary passage, completing it in 4.54 s at seed 8732. This is an
+-actual closed-loop result; the 4.20 s forced-teacher time at seed 8731 is a
+-separate execution and is not substituted for the policy cost.
+-
+-The comparison combines 20 original assignments on five contexts with 16
+-registered additions: the original four policies on the complement, and the
+-updated learner and script on all six contexts. Only the learner's teaching set
+-changes; its phase-specific architecture and penalty 10 remain fixed. The script
+-repeats the same 72-setting search on the enlarged development set. All 36
+-policy--context outcomes are known. Thirty-five have complete measurements; the
+-complementary walking episode records an independently verified 385.218 N beam
+-contact before a clip-wrap abort after 756 physics steps. That known failure
+-remains in the denominator, with no later supervision or full-horizon imputation.
+-The combined record contains 42,476 measured physics steps. Archived-source replay
+-and a separate scorer compatibility audit preserve the original results.
+-
+-\begin{table}[t]
+-\centering\small
+-\setlength{\tabcolsep}{4pt}
+-\begin{tabular}{lrrrrrrr}
+-\toprule
+-Policy, seed 8732 & Empty & Short & Long & Early & Two beams & Complement & Pass \\
+-\midrule
+-Learned, six contexts & 5.38 & 4.10 & 4.68 & 2.72 & 4.12 & 4.54 & 6/6 \\
+-Script, six contexts & 5.40 & 4.10 & 4.68 & 2.72 & 4.12 & 4.54 & 6/6 \\
+-Learned, five contexts & 5.38 & 3.60 & 4.18 & 2.72 & 4.12 & fail & 5/6 \\
+-Script, five contexts & 5.40 & 3.60 & 4.18 & 2.72 & 4.12 & fail & 5/6 \\
+-Constant prior, 0.30 s & 5.38 & 3.60 & 4.18 & 2.72 & 4.12 & fail & 5/6 \\
+-Always walk & 5.40 & fail & fail & fail & 4.16 & fail & 2/6 \\
+-\bottomrule
+-\end{tabular}
+-\caption{All 36 actual closed-loop development assignments. Entries are successful
+-passage times in seconds or measured task failures, including one known partial
+-walking failure. Compare times within columns; all six layouts were previously
+-inspected. The updated learner and script trade an added passage for slower
+-choices on two earlier contexts.}
+-\label{tab:policies}
+-\end{table}
+-
+-The added passage carries a measurable cost tradeoff. Both updated policies
+-choose sustained adaptation on the short and long passages, costing 0.50 s more
+-in each than their respective predecessors: a mean increase of 0.20 s over the
+-five mutually successful contexts. The updated learner and script have identical
+-obstacle times and differ by one 0.02 s tick in the empty scene. Thus the learner
+-uses the newly exposed complementary alternative but retains an avoidable cost
+-regression and matches the strong script's passage count. This comparison isolates
+-neither replay nor construction. All layouts, including the complementary search
+-and script selection, were used for development; a changed physics seed does
+-not make them held out.
+-
+-\subsection{Can the learner retain capability without the cost regression?}
+-\paragraph{Information-consistent continuation test.}
+-We first isolate a limitation that no learner can overcome without timely
+-information. Mask all 28 corridor-summary features before a declared reveal
+-decision, retaining recorded proprioception and legal actions. The remaining
+-features are exactly equal across the six contexts at all three phases.
+-With scene information available from 0.30 s or 1.00 s, an exact finite
+-observation-group policy can pass all six contexts. Revealing it only at 1.40 s,
+-or never, reduces the optimum to five, although the scene-wise schedule bank
+-still covers six. At a 1.00 s reveal, the shared initial action is WAIT. At a
+-1.40 s reveal, the early context has lost its last prior commitment opportunity;
+-no earlier common commitment also passes the complementary context. This
+-recorded-table information ablation tests the teacher's shared-action constraint;
+-it does not simulate sensor latency or a new closed-loop rollout.
+-
+-To separate the information value of WAIT from repertoire size, a matched
+-control chooses once at 0.30 s among all seven complete schedules, including
+-late-entry schedules. It executes neutral until the chosen entry. Within each
+-initial information group, the control selects the schedule maximizing measured
+-passage count, then minimizing summed successful passage time. Sequential
+-selection can additionally condition later choices on newly delivered information.
+-With corridor features revealed at 1.00 s, their finite passage limits are 5/6
+-and 6/6, respectively. With information present initially both reach 6/6; with
+-reveal at 1.40 s or never both reach 5/6. These exact recorded-table limits retain
+-the same action repertoire and all six assigned contexts. They identify when
+-later information can help; they do not measure a learned or newly executed
+-policy, and nominal singleton groups yield no demonstrated WAIT advantage.
+-
+-Training the same ridge learner with group-consistent rather than scene-wise
+-targets yields identical nominal coefficients. Both teachers produce 6/6
+-passing branch proxies with information by 1.00 s and 5/6 with later or absent
+-information. In the latter conditions, group-consistent targets select the
+-earlier prior, reducing mean recorded time by 0.004 s over the same five successes,
+-but not recovering the complementary passage. Thus this development comparison
+-establishes trainable information-consistent targets, not a passage advantage.
+-
+-The alternative depth-two feasibility/time trees reduced fitted regret but
+-passed only 4/6 actual development contexts, versus ridge's 6/6, and were
+-0.12 s slower on their four mutually successful contexts. We therefore retain
+-the common ridge learner. Appendix~\ref{app:learner_debug} records the fixed-data
+-control, native failures and observed input sensitivity.
+-
+-\paragraph{Physical sensitivity of commitment and cost.}
+-A separate four-condition check executes the six-context policy on the short
+-passage with nominal sensing, 30\% channel dropout, 3 cm Gaussian range-noise
+-standard deviation, and 100 ms packet latency. Each condition passes with zero
+-measured beam force and legal recovery. Nominal sensing, dropout and range noise
+-retain the 1.40 s sustained commitment and 4.10 s passage; latency instead
+-selects the prior at 1.00 s and passes in 3.60 s. These one-context development
+-results expose a timing-sensitive cost decision, not a rationale for delaying
+-observations. Appendix~\ref{app:sensors} defines the interventions and their
+-recorded-input comparison.
+-
+-The information-group teacher finds six distinct exact student vectors at every
+-phase, so it encounters no shared information groups in these six contexts.
+-Controlled collision tests confirm that it rejects WAIT when indistinguishable
+-future histories require incompatible actions, and retains WAIT when a later
+-observation distinguishes them. The exact-data calculation does not establish
+-tolerance to sensor noise. On the same whole-context folds, uniform, coverage,
+-uniform/coverage and refreshed-error replay all retain four passing proxies out
+-of six after three refits. More varied acquired encounters are needed to test
+-the value of these learning mechanisms.
+-
+-\subsection{Acquisition breadth and reserved evaluation}
+-The acquisition study compares feasibility-screened uniform, target-only,
+-executed contrast, and the same executed scenes with observation-aware replay.
+-Each arm has three independently acquired corpora. An empty bootstrap uses
+-seven physical branches; every subsequent encounter adds one pre-update student
+-and seven teachers. Analytic and observation arms share candidate identities and
+-ordering within each seed, isolating replay from construction. Common-support
+-quotas keep task-stratum counts matched, and known physical failures remain
+-training data. Bootstrap recordings remain within their original corpus.
+-
+-\begin{table}[t]
+-\centering\small
+-\begin{tabular}{lrrr}
+-\toprule
+-Checkpoint & Completed encounters after bootstrap & Assigned episodes & Maximum steps \\
+-\midrule
+-M2 & 2 & 23 & 27,416 \\
+-M4 & 4 & 39 & 46,488 \\
+-M8 & 8 & 71 & 84,632 \\
+-M16 & 16 & 135 & 160,920 \\
+-M32 & 32 & 263 & 313,496 \\
+-\bottomrule
+-\end{tabular}
+-\caption{Learning-curve checkpoints per arm/corpus. Actual measured steps
+-provide the learning-curve horizontal axis; assigned maxima are disclosed
+-separately. Checkpoints share an acquisition trajectory rather than requiring
+-independent reacquisition.}
+-\label{tab:budgets}
+-\end{table}
+-
+-To test whether effects persist beyond individual teaching examples, the
+-expanded study adds a reference-envelope contrast arm and the M8/M16/M32
+-checkpoints in Table~\ref{tab:budgets}. The completed original four-arm M0--M4
+-trajectories are retained; the reference arm acquires its own complete prefix. At M32, each
+-of the 15 corpora is assigned seven short, seven sustained, seven early-constraint,
+-six short--short and five short--sustained encounters. Acquisition is ongoing.
+-The first broader closed-loop checkpoint will compare all 15 M8 policies with
+-the strong script and all seven fixed schedules on the same six development
+-contexts and physics seed: 138 assigned episodes. These measurements will
+-separate selection failures from repertoire limitations on matched conditions.
+-The fixed development continuation adds 90 policy episodes at M16 and 90 at
+-M32, sharing the original 48 script/fixed captures: 318 unique evaluation
+-episodes across the three checkpoints. Both later evaluations require completed
+-M32 acquisition, so their outcomes cannot affect its stopping or scene queues.
+-
+-The reserved benchmark contains 18 world-fixed layouts: 12 single constraints
+-and six two-beam compositions. Each layout has two execution seeds and eight
+-stress offsets. Layouts were fixed before option tuning, without clearance
+-or outcome filtering. The proposed nominal comparison includes all 45 learned
+-checkpoints and the script plus seven fixed schedules on 36 conditions each:
+-1,908 assigned episodes. Its implementation and assignment preview are complete;
+-model freezing, evidence-based protocol adoption and execution remain pending.
+-The eight original stress offsets remain reserved and disabled in this nominal
+-comparison. Final policies and strong baselines will be frozen after development
+-evaluation and before reserved execution. For each matched
+-scene, seed and perturbation $q$, we report bank capability
+-$C(q)=\max_s Y_s(q)$ separately from policy passage $P_\pi(q)=Y_\pi(q)$.
+-All assigned tasks remain in the denominator, including tasks with no measured
+-passing schedule. Unknown outcomes remain explicit; time differences use
+-mutually successful matched episodes and report their counts. Baselines are
+-shared comparisons, not additional independently trained corpora. The three
+-training seeds provide corpus-level variation; they do not multiply the number
+-of independent layouts. Reserved results are not yet available.
+-
+-The earlier low-budget design and its paired analysis are retained in
+-Appendix~\ref{app:protocol}, alongside acquisition implementation details.
+-
+-\section{Limitations and Conclusion}
+-Motion2Scene connects useful motion alternatives to training scenes through
+-executed geometry, complete physical continuations and causal sensor evidence.
+-The measured six-context bank contains complementary successful responses.
+-Adding the complementary teaching data raises the learner from five to six
+-successful development contexts, matching the retuned script while adding
+-0.50 s on each of two earlier passages. The common-pool construction experiment
+-also finds substantial reference-to-execution geometric disagreement. The
+-completed M4 acquisition shows higher adaptation-required task yield for
+-executed contrast, while each corpus remains solvable by a fixed schedule and
+-its recorded branch-selection readout ties uniform. The central remaining test
+-is whether execution-conditioned construction and
+-causally usable supervision improve held-out traversal at matched acquisition
+-cost; replay's additional contribution is tested separately.
+-
+-The current interface follows one finite route with at most one adaptation and
+-recovery. It cannot stop, steer, select a route or chain repeated adaptations.
+-Ideal ray normals, summarized rather than fully observed free space, reused
+-source ancestry, nominal physical tests and a short fixed horizon limit the
+-claims. Unknown torque prevents mechanical-work or battery-energy comparisons.
+-
+-\clearpage
+-\appendix
+-\input{traversal_method_v2_supplement.tex}
+-\begin{thebibliography}{99}
++Executed contrast and Screened Uniform pass the same five contexts at every
++acquisition seed. Their paired passage difference is zero, with zero wins,
++zero losses, and eighteen ties across matched seed--context cells. Passage-time
++differences on mutually successful cells are also zero. This is no observed
++incremental benefit on this finite development panel; it is neither population
++equivalence nor evidence of non-inferiority. There is no registered
++non-inferiority margin or suitable uncertainty bound established here.
++
++The development panel was used during method development. In particular, its
++late complementary context was generated using a clearance predicate and
++ranking related to the constructor. It cannot provide independent confirmation
++of that constructor. We report the entire panel rather than a favorable subset.
++The strong script passes all six contexts, and no learned policy exceeds the
++measured capability of the seven-schedule bank.
++
++\section{Mechanism Diagnostics and Counterexamples}
++Thirteen of fifteen learned policies select a single schedule across the six
++contexts. The two non-constant policies arise from corpora requiring more than
++one schedule for coverage. This correspondence was noticed after inspecting
++outcomes; shared seeds and contexts also invalidate treating the fifteen
++corpora as independent observations for a simple association test. It is a
++post-hoc association, not proof that complementarity causes contextual learning.
++
++The reverse cases constrain the explanation. The third Target-only policy uses
++three schedules but still scores 5/6, selecting a failing short response on the
++late complementary context. The first reference-contrast policy reaches 6/6;
++its final acquired encounter was rejected by the executed positive robustness
++bar. Thus neither non-constancy nor passing the executed geometric gates is a
++necessary-and-sufficient description of useful decision data.
++
++Across 92 already executed encounters, the deployed negative screen identifies
++two of seven measured positives for the property that covering schedules fail
++while another schedule passes. Both selected cases are positive. The resulting
++2/2 precision is retrospective and selection-conditioned, not an estimate of
++established population precision. Relaxing the negative margin from $-10$ mm to
++zero recovers only one additional measured positive. Some missed encounters
++have predicted positive clearance for responses that physically fail; another
++is excluded by the positive gate. Negative-threshold relaxation therefore does
++not resolve every observed omission.
++
++Historical replay is a measured null on this panel. It changes fitted weights
++and biases while preserving every chosen schedule and outcome in the eighteen
++matched executions. Constancy here does not imply that the ridge model is
++structurally incapable of conditioning on observations. Complete-continuation
++teaching was common to the comparison and cannot receive causal credit from it.
++The positive-support explanation is consistent with the observed advantage
++over the weaker placement comparator and the tie with Screened Uniform. It
++remains one explanation among coupled changes in acquired data.
++
++\section{Registered Support-Broadening Pilot: Incomplete}
++The pilot preserves the original three proposal arms:
++\begin{itemize}
++\item A, strict: both unchanged executed-contrast gates and ranking.
++\item B, broad: valid task-domain candidates in draw order, with neither
++geometric gate applied.
++\item C, mixture: the committed strict/broad/strict/broad alternation.
++\end{itemize}
++The strict reservoir admission rate is approximately 6.4\%. B does not preserve
++the positive screen. C preserves broad proposal support, not universal geometric
++certification. All arms share, within each acquisition seed, the byte-identical
++four-encounter prefix and M4 checkpoint, frozen tracker, seven schedules, three
++phases, causal inputs, teacher, learner, and physics settings. The assignment
++ledger declares 288 new acquisition episodes over nine corpora, with four new
++encounters and eight executions per encounter. These totals are assignment
++budgets, not measured execution cost.
++
++Ten validation contexts were drawn by beam family and underside band using
++task geometry. The generation manifest reports zero clearance queries and zero
++physics steps and excludes physical outcomes from generation. Contexts are
++retained regardless of solvability and kept outside training and proposal
++selection. Eighteen reserved layouts remain outside this pilot. A contemporary
++hash verifies artifact integrity but cannot prove when registration occurred.
++
++The registered validation panel has 200 assignments: nine pilot policies,
++three reused M8 executed-contrast policies, the strong script, and seven fixed
++schedules on all ten contexts. It omits a contemporaneous Screened Uniform
++policy. The six-context 5/6 score cannot fill that missing comparison. A baseline
++utility test would require a separately registered and budgeted amendment;
++no episodes are silently added here.
++
++At the September 11 audit boundary, acquisition has 288 scored assignment
++receipts. Validation has 171 scored receipts, an interrupted assignment with
++no terminal attempt receipt or trajectory/contact streams, and 28 unrun
++assignments. The frozen runner refuses automatic retry of the interrupted
++launch. Execution is therefore blocked. We withhold pilot utility results
++until complete reconciliation; the partial panel is not a substitute for the
++registered comparison. No new physics was launched during this audit.
++
++The registered contrasts are B versus A and C versus A for broadening, and C
++versus B for guided-half value. Improvement over A cannot isolate removal of the
++negative gate because B also removes the positive gate. A C--B tie would not
++establish equivalence. Exact permutation inference would require an explicit
++exchangeability scheme respecting shared contexts, matched seeds, and corpora.
++No such scheme or multiplicity rule has been established for this incomplete
++panel, so inferential $p$-values are NA. Ten sampled contexts and three acquisition
++seeds cannot be reinterpreted as 200 independent replications. New audit
++comparisons are labeled exploratory after access to partial outcomes.
++
++\section{Scope, Adoption Gates, and Conclusion}
++The completed development evidence establishes a finite null for incremental
++passage over Screened Uniform. It leaves the broader population effect
++inconclusive. The pilot cannot yet support either broadening or guided-half
++utility, and its omitted baseline prevents a validation claim beyond
++feasibility-screened placement. More diverse schedules alone would not change
++these conclusions. A dataset utility claim additionally needs separate reuse,
++licensing, and reproduction evidence.
++
++Phase~3 remains closed. Before any reserved outcomes are opened, implementation
++and terminal-censoring policies must be locked and all adoption gates satisfied.
++Source-ancestry-held-out transfer must precede generalization claims. Realistic
++sensing, noise and dropout, timing, and a proposed $70^\circ$ field of view require
++a separate sensor specification and registration. The latter is not a measured
++deployed configuration. Delays of 100, 260, and 500 ms require matched sensing
++conditions; small historical panels do not define universal delay limits.
++Sequential decisions need matched aggregation and fresh labels across arms,
++qualification of every skill and transition, and whole-chain success. The
++existing crouch bank does not establish crawling, recovery chains, or steering.
++
++All physical evidence here is simulation. A MuJoCo visualization of a recorded
++trajectory is not a second dynamics experiment. Refusal in the recorded interface
++continues walking, and the 1 N contact threshold is a simulation convention.
++Neither supports hardware safety or protective stopping. Motion-conditioned
++construction is useful as a proposal mechanism; its downstream value must be
++measured against a strong screened comparator rather than inferred from
++geometric contrast or training-label diversity.
++
++\section*{Acknowledgments}
++OpenAI Codex (GPT-6) assisted with the September 11 evidence audit and generated
++revision text throughout this manuscript, including its abstract, interpretation,
++and limitations. It also generated the local reconciliation code. Submission
++requires author verification of the evidence, citations, and final text.
++
++\begin{thebibliography}{9}
+ \bibitem{lfh} X. Xiao, B. Liu, G. Warnell, and P. Stone,
+ ``Toward agile maneuvers in highly constrained spaces: Learning from hallucination,''
+ \emph{IEEE Robotics and Automation Letters}, vol. 6, no. 2, pp. 1503--1510, 2021.
+-\url{https://www.cs.utexas.edu/~xiao/Research/LfH/LfH.html}
+ \bibitem{lflh} Z. Wang et al., ``From agile ground to aerial navigation:
+ Learning from learned hallucination,'' in \emph{IROS}, pp. 148--153, 2021.
+-\url{https://www.cs.utexas.edu/~xiao/papers/lflh.pdf}
+-\bibitem{lfhcp} S. A. Ghani, K. Lee, and X. Xiao, ``Learning from hallucinating
+-critical points for navigation in dynamic environments,'' 2025.
+-\url{https://people.cs.gmu.edu/~xiao/papers/lfh_cp.pdf}
+-\bibitem{paired} M. Dennis et al., ``Emergent complexity and zero-shot transfer
+-via unsupervised environment design,'' 2020.
+-\url{https://arxiv.org/abs/2012.02096}
+-\bibitem{accel} J. Parker-Holder et al., ``Evolving curricula with regret-based
+-environment design,'' in \emph{ICML}, PMLR 162, pp. 17473--17498, 2022.
+-\url{https://proceedings.mlr.press/v162/parker-holder22a.html}
+-\bibitem{plr} M. Jiang, E. Grefenstette, and T. Rockt\"aschel,
+-``Prioritized level replay,'' in \emph{ICML}, PMLR 139, pp. 4940--4950, 2021.
+-\url{https://proceedings.mlr.press/v139/jiang21b.html}
+-\bibitem{a2d} A. Warrington, J. W. Lavington, A. Scibior, M. Schmidt, and F. Wood,
+-``Robust asymmetric learning in POMDPs,'' in \emph{ICML}, PMLR 139,
+-pp. 11013--11023, 2021.
+-\url{https://proceedings.mlr.press/v139/warrington21a.html}
+-\bibitem{sitt} N. Messikommer, J. Xing, E. Aljalbout, and D. Scaramuzza,
+-``Student-informed teacher training,'' in \emph{ICLR}, 2025.
+-\url{https://arxiv.org/abs/2412.09149}
+-\bibitem{gpo} Y. Li, G. Xie, and Z. Lu,
+-``Guided policy optimization under partial observability,'' in \emph{ICLR}, 2026.
+-\href{https://proceedings.iclr.cc/paper_files/paper/2026/hash/398753ddd2e10ce39d0c620e85fab922-Abstract-Conference.html}{Official proceedings.}
+-\bibitem{kimodo} NVIDIA Spatial Intelligence Lab, ``Kimodo: Scaling controllable
+-human motion generation,'' project page, accessed September 2026.
+-\url{https://research.nvidia.com/labs/sil/projects/kimodo/}
++\bibitem{dyna} S. A. Ghani, Z. Wang, P. Stone, and X. Xiao,
++``Dyna-LfLH: Learning agile navigation in dynamic environments from learned
++hallucination,'' arXiv:2403.17231, 2024.
+ \bibitem{sonic} Z. Luo et al., ``SONIC: Supersizing motion tracking for natural
+-humanoid whole-body control,'' arXiv:2511.07820v3, 2026.
+-\url{https://arxiv.org/html/2511.07820v3}
+-\bibitem{dagger} S. Ross, G. Gordon, and D. Bagnell, ``A reduction of imitation
+-learning and structured prediction to no-regret online learning,'' in
+-\emph{AISTATS}, PMLR 15, pp. 627--635, 2011.
+-\url{https://proceedings.mlr.press/v15/ross11a.html}
+-\bibitem{php} Z. Wu et al., ``Perceptive humanoid parkour: Chaining dynamic human
+-skills via motion matching,'' arXiv:2602.15827v1, 2026.
+-\url{https://arxiv.org/html/2602.15827v1}
+-\bibitem{humanoidpf} H. Xue et al., ``Collision-free humanoid traversal in
+-cluttered indoor scenes,'' arXiv:2601.16035v2, 2026.
+-\url{https://arxiv.org/abs/2601.16035v2}
++humanoid whole-body control,'' arXiv:2511.07820, 2025.
+ \end{thebibliography}
+ \end{document}

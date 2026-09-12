@@ -1,0 +1,43 @@
+{
+  "schema_version": "motion2scene_runtime_diagnostic_v1",
+  "diagnostic": "M2S-E0-Q3-isaac-runtime-no-camera",
+  "registered_at": "2026-09-04T13:19:42-04:00",
+  "question": "Can the new Isaac Lab environment create and step a minimal camera-free simulation while the shared training process remains resident?",
+  "prediction": {
+    "expected": "pass",
+    "success_requires": [
+      "exit status 0",
+      "ISAACLAB_RUNTIME_SMOKE_SUCCESS steps=10 marker"
+    ],
+    "interpretation": {
+      "pass": "The V4 crash is isolated to the renderer/camera startup path strongly enough to justify a separately registered trajectory-only SONIC probe.",
+      "fail": "The Isaac runtime or driver environment is unhealthy independently of SONIC rendering; repair it before another scientific batch."
+    }
+  },
+  "resource_policy": {
+    "free_gpu_mib_required": 6000,
+    "timeout_seconds": 180,
+    "gpu_hour_ceiling": 0.05,
+    "serial_execution": true
+  },
+  "implementation": {
+    "source_repository": "/home/linjiw/groot-wbc-sonic-sim-trackb",
+    "source_commit": "1f4a09cc280f865e6e843d7e831b546ea0dd869c",
+    "python": "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python",
+    "script": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/smoke_isaaclab_runtime.py",
+      "sha256": "sha256:2ec484a8bdf7c8f6d0736cae892ae35fbafcb61b7c084f51c7dc5adb6d52b234"
+    }
+  },
+  "prior_failure": {
+    "v4_run_record_sha256": "sha256:f64a6f0accfff44e538eeacf8fa9407f18a5524af0851a0e93e87db9cb2c9b44",
+    "v4_rollout_log_sha256": "sha256:fe44f33b1fe1e48b48018fb904d3c5856510233c669dd87e3d41b1caad262837",
+    "signature": "SIGSEGV in librtx.scenedb.plugin.so during Hydra/RTX stage initialization"
+  },
+  "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v1-pilot/runtime_diagnostics/isaac_no_camera_v1.log",
+  "stop_conditions": [
+    "do not run if free GPU memory is below 6000 MiB",
+    "terminate after 180 seconds",
+    "do not retry this diagnostic if it fails"
+  ]
+}

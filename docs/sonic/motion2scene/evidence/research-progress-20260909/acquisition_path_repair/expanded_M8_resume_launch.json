@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python",
+    "scripts/research/motion2scene_resume_expanded_acquisition.py",
+    "--repair",
+    "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v7/repair.json",
+    "--plan",
+    "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json",
+    "--adoption",
+    "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json",
+    "--until-budget",
+    "8",
+    "--watch"
+  ]
+}

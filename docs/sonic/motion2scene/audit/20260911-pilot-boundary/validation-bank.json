@@ -1,0 +1,92 @@
+[
+  {
+    "observed_branches": 6,
+    "passing_schedules": [
+      "fixed_neutral",
+      "fixed_sustained_e070_r255",
+      "fixed_prior_splice_e050_r265",
+      "fixed_short_e070_r265",
+      "fixed_short_e015_r265",
+      "fixed_sustained_e015_r255"
+    ],
+    "scene_id": "support_validation_early_constraint_high_00",
+    "script_outcome": "pass"
+  },
+  {
+    "observed_branches": 7,
+    "passing_schedules": [],
+    "scene_id": "support_validation_early_constraint_low_00",
+    "script_outcome": "failure"
+  },
+  {
+    "observed_branches": 7,
+    "passing_schedules": [
+      "fixed_prior_splice_e050_r265",
+      "fixed_prior_splice_e015_r265",
+      "fixed_neutral",
+      "fixed_sustained_e015_r255",
+      "fixed_short_e015_r265",
+      "fixed_sustained_e070_r255",
+      "fixed_short_e070_r265"
+    ],
+    "scene_id": "support_validation_short_high_00",
+    "script_outcome": "pass"
+  },
+  {
+    "observed_branches": 5,
+    "passing_schedules": [],
+    "scene_id": "support_validation_short_low_00",
+    "script_outcome": "failure"
+  },
+  {
+    "observed_branches": 6,
+    "passing_schedules": [
+      "fixed_short_e015_r265",
+      "fixed_sustained_e070_r255",
+      "fixed_prior_splice_e015_r265",
+      "fixed_neutral",
+      "fixed_short_e070_r265",
+      "fixed_sustained_e015_r255"
+    ],
+    "scene_id": "support_validation_short_then_short_high_00",
+    "script_outcome": "pass"
+  },
+  {
+    "observed_branches": 7,
+    "passing_schedules": [],
+    "scene_id": "support_validation_short_then_short_low_00",
+    "script_outcome": "failure"
+  },
+  {
+    "observed_branches": 5,
+    "passing_schedules": [],
+    "scene_id": "support_validation_short_then_sustained_high_00",
+    "script_outcome": "failure"
+  },
+  {
+    "observed_branches": 5,
+    "passing_schedules": [],
+    "scene_id": "support_validation_short_then_sustained_low_00",
+    "script_outcome": "failure"
+  },
+  {
+    "observed_branches": 4,
+    "passing_schedules": [
+      "fixed_neutral",
+      "fixed_short_e015_r265",
+      "fixed_sustained_e015_r255",
+      "fixed_short_e070_r265"
+    ],
+    "scene_id": "support_validation_sustained_high_00",
+    "script_outcome": "pass"
+  },
+  {
+    "observed_branches": 6,
+    "passing_schedules": [
+      "fixed_sustained_e015_r255",
+      "fixed_sustained_e070_r255"
+    ],
+    "scene_id": "support_validation_sustained_low_00",
+    "script_outcome": "pass"
+  }
+]

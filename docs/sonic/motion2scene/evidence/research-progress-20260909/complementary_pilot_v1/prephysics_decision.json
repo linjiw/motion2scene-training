@@ -1,0 +1,87 @@
+{
+  "decision": "do not launch v1 physics: none of the three declared paired continuations is complete",
+  "declaration": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-acquisition-pilot-20260910-v1/declaration.json",
+    "sha256": "sha256:4cb26d098d5f98b5f6e774631542066355f72c28bd2d8c2de6551c78868f174b"
+  },
+  "existing_queues_modified": false,
+  "independent_array_eligibility_check": [
+    {
+      "considered": 256,
+      "fixed_interference_before_exclusion": 107,
+      "ordinary_after_exclusion": 0,
+      "ordinary_contrast_before_exclusion": 7,
+      "robust_alternative_before_exclusion": 127,
+      "seed": 93201,
+      "stratum": "early_constraint",
+      "targeted_after_exclusion": 0,
+      "targeted_contrast_before_exclusion": 0
+    },
+    {
+      "considered": 256,
+      "fixed_interference_before_exclusion": 187,
+      "ordinary_after_exclusion": 0,
+      "ordinary_contrast_before_exclusion": 5,
+      "robust_alternative_before_exclusion": 48,
+      "seed": 93201,
+      "stratum": "short_then_sustained",
+      "targeted_after_exclusion": 0,
+      "targeted_contrast_before_exclusion": 0
+    },
+    {
+      "considered": 256,
+      "fixed_interference_before_exclusion": 123,
+      "ordinary_after_exclusion": 2,
+      "ordinary_contrast_before_exclusion": 9,
+      "robust_alternative_before_exclusion": 105,
+      "seed": 93202,
+      "stratum": "early_constraint",
+      "targeted_after_exclusion": 0,
+      "targeted_contrast_before_exclusion": 0
+    },
+    {
+      "considered": 256,
+      "fixed_interference_before_exclusion": 184,
+      "ordinary_after_exclusion": 0,
+      "ordinary_contrast_before_exclusion": 5,
+      "robust_alternative_before_exclusion": 48,
+      "seed": 93202,
+      "stratum": "short_then_sustained",
+      "targeted_after_exclusion": 0,
+      "targeted_contrast_before_exclusion": 0
+    },
+    {
+      "considered": 256,
+      "fixed_interference_before_exclusion": 130,
+      "ordinary_after_exclusion": 1,
+      "ordinary_contrast_before_exclusion": 9,
+      "robust_alternative_before_exclusion": 104,
+      "seed": 93203,
+      "stratum": "early_constraint",
+      "targeted_after_exclusion": 0,
+      "targeted_contrast_before_exclusion": 0
+    },
+    {
+      "considered": 256,
+      "fixed_interference_before_exclusion": 187,
+      "ordinary_after_exclusion": 0,
+      "ordinary_contrast_before_exclusion": 5,
+      "robust_alternative_before_exclusion": 44,
+      "seed": 93203,
+      "stratum": "short_then_sustained",
+      "targeted_after_exclusion": 0,
+      "targeted_contrast_before_exclusion": 0
+    }
+  ],
+  "interpretation": "bounded geometric candidate shortfall; neither a measured physical failure rate nor a test of policy benefit",
+  "new_physical_executions": 0,
+  "new_physics_steps": 0,
+  "next_dependency": "complete original M8 development comparison; any revised pilot requires a separate bounded declaration",
+  "proposal_budget_expanded": false,
+  "schema": "motion2scene_complementary_pilot_prephysics_decision_v1",
+  "selection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-acquisition-pilot-20260910-v1/selection.json",
+    "sha256": "sha256:4e0a5254224a4c96a2806caa1732714aad96d2f7904a9c18cc1295f19ba35373"
+  },
+  "utc": "2026-09-10T02:12:25.166658+00:00"
+}

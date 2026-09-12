@@ -1,0 +1,82 @@
+{
+  "all_legal_teacher_targets_available": true,
+  "all_prior_93_assessment_hashes_unchanged": true,
+  "all_teacher_captures_complete": true,
+  "checkpoint": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/complete_004.json",
+    "sha256": "sha256:8c02b24f9a90de010b0d7639dfeaa6691a6bd2358c162d688c248e5c7a8bb366"
+  },
+  "complete_prefix_assigned_captures": 39,
+  "complete_prefix_steps": 46488,
+  "completed_reference_M4_corpora": 1,
+  "interpretation": "Assigned reference-construction M4 encounter is bank-unsolvable. Retain it in all denominators and cost; no complementary passing-response claim or common-set policy inference.",
+  "matched_prefix_comparisons": 14,
+  "model": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/models/model_004/result.json",
+    "sha256": "sha256:26c458045591384292b4c1efa3c8ba65eaa78168132ac7a46c2a0b033bc92a12"
+  },
+  "model_preserves_exact_M3_prefix": true,
+  "new_M4_capture_assessments": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round004_student_learned_neutral/assessment.json",
+      "sha256": "sha256:b6b96b671faa83f9449d6cc514e8d9a7913a6d9c9e7bcb4a6bd42191e0ec4674"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round004_teacher_forced_neutral/assessment.json",
+      "sha256": "sha256:dd1e2b9e1553a3c0c2ec0ba1d61cc2c806534e6068bb418ffbdaebebb16c2f5c"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round004_teacher_forced_prior_splice_e015_r265/assessment.json",
+      "sha256": "sha256:c8cffb049c28ed4642affa42054e2bbcec342da1cccd70cc25c22b8a7acc4a83"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round004_teacher_forced_prior_splice_e050_r265/assessment.json",
+      "sha256": "sha256:3f044367285b950829fbfde177f990b5eab351fd6958d057d068c7d0cae7fa08"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round004_teacher_forced_short_e015_r265/assessment.json",
+      "sha256": "sha256:9ebbe74e4c43ea76e4107a099bacd35d5f700db99aa5846b848e3c5dc76a7a7e"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round004_teacher_forced_short_e070_r265/assessment.json",
+      "sha256": "sha256:51d332b4e11143618a5263ab7f2b37e962771485b254554618748bbec2b384d8"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round004_teacher_forced_sustained_e015_r255/assessment.json",
+      "sha256": "sha256:e130635e7773c82658b3db93522a1203b2793dd85d4cb50048ff2dde37012fbb"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round004_teacher_forced_sustained_e070_r255/assessment.json",
+      "sha256": "sha256:b622dbdb2efdf1b837bdcd3cca67b718f2cb5709e68d6ee992a1b4acf47e39d0"
+    }
+  ],
+  "new_completed_executions": 8,
+  "new_failures": 8,
+  "new_measured_physics_steps": 9536,
+  "new_passes": 0,
+  "new_physics_from_verification": 0,
+  "new_unknown": 0,
+  "original_plan_and_bound_driver_sources_unchanged": true,
+  "policy": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/models/model_004/policy.npz",
+    "sha256": "sha256:8757b4c6f5d0a18965060f27ab7ec877e43eb8da051f6bd469158fb9da0a4c89"
+  },
+  "preupdate_policy_is_exact_M3": true,
+  "preupdate_student": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_004/student/result.json",
+    "sha256": "sha256:d601842e923f29f5a78bea43a2ff6fb85aca9fd81657a699f5294cf9dbf22284"
+  },
+  "repair": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v7/repair.json",
+    "sha256": "sha256:a2b9d4a97cbd67b99f6bba3e9158e62cb2ac7332c3ad99a7246538987fc2fe02"
+  },
+  "required_reference_M4_corpora": 3,
+  "student_steps": 1192,
+  "teacher": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_004/teachers/result.json",
+    "sha256": "sha256:55db852dde872c6c888ac03978a9ecb396bd931a40bc97ec79b20643fa89e2d9"
+  },
+  "teacher_failures": 7,
+  "teacher_steps": 8344,
+  "verified_utc": "2026-09-10T03:22:07.428729+00:00"
+}

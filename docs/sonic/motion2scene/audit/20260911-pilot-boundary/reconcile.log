@@ -1,0 +1,15 @@
+{
+  "rows": 488,
+  "bindings": 70173,
+  "problems": 761,
+  "states": {
+    "scored": 459,
+    "interrupted_missing_receipt": 1,
+    "unrun": 28
+  },
+  "outcomes": {
+    "pass": 231,
+    "failure": 228,
+    "None": 29
+  }
+}

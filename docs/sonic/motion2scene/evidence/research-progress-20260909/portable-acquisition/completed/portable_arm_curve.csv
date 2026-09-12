@@ -1,0 +1,9 @@
+arm,checkpoint,acquisition_episodes,adaptation_required_lower,adaptation_required_upper,assigned_tasks,bank_solvable_lower,bank_solvable_upper,recorded_physics_steps,unknown_branch_outcomes
+uniform,1,45,0,0,3,3,3,53640,0
+uniform,2,69,0,0,6,6,6,82248,0
+target_only,1,45,3,3,3,3,3,53640,0
+target_only,2,69,3,3,6,6,6,82248,0
+analytic_contrast,1,45,3,3,3,3,3,53640,0
+analytic_contrast,2,69,6,6,6,6,6,82248,0
+observation_curriculum,1,45,3,3,3,3,3,53640,0
+observation_curriculum,2,69,6,6,6,6,6,82248,0

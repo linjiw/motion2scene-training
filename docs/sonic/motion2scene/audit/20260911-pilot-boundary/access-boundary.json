@@ -1,0 +1,41 @@
+{
+  "utc": "2026-09-11T04:39:38.625152+00:00",
+  "outcomes_already_accessible": {
+    "acquisition_result_receipts": 288,
+    "validation_result_receipts": 171,
+    "validation_partial_launch": "episode_171",
+    "validation_unrun": [
+      "episode_172",
+      "episode_173",
+      "episode_174",
+      "episode_175",
+      "episode_176",
+      "episode_177",
+      "episode_178",
+      "episode_179",
+      "episode_180",
+      "episode_181",
+      "episode_182",
+      "episode_183",
+      "episode_184",
+      "episode_185",
+      "episode_186",
+      "episode_187",
+      "episode_188",
+      "episode_189",
+      "episode_190",
+      "episode_191",
+      "episode_192",
+      "episode_193",
+      "episode_194",
+      "episode_195",
+      "episode_196",
+      "episode_197",
+      "episode_198",
+      "episode_199"
+    ]
+  },
+  "analysis_status": "New audit summaries and intervals are exploratory; no retrospective preregistration. Original registration bytes preserved.",
+  "physics_launched_by_this_audit": 0,
+  "execution_block": "episode_171 launch exists, attempt.json and raw trajectory/contact streams absent; frozen execute_cell refuses automatic retry; no bypass of sequential runner."
+}

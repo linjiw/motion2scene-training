@@ -1,0 +1,91 @@
+{
+  "additional_encounters_per_arm_corpus": 2,
+  "candidate_budget_per_seed": 512,
+  "candidate_pool": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-candidate-pools-20260909-v1/result.json",
+    "sha256": "sha256:7849ee1e59f91c582eb3230819f55d7571caed357d7c5d5545b5678457bad3b5"
+  },
+  "candidate_source_disclosure": "reused precomputed geometry; new policy/teacher executions required; no claim of new geometric search",
+  "changed_component": "acquisition selection only; separately versioned development pilot",
+  "control": "ordinary executed contrast from the identical M2 prefix",
+  "decision_rule": "retain for larger development only if at least two of three corpus pairs improve actual passage without a passage decrease in the third; for equal passage in all pairs require lower mean mutually-successful passage time in at least two and no increase in the third. Otherwise discard as a performance component or investigate one separately declared bottleneck. Geometric contrast or training coverage alone is insufficient. Report all effects; no significance promise.",
+  "declared_utc": "2026-09-10T02:10:11.993750+00:00",
+  "development_study": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/study.json",
+    "sha256": "sha256:ee75906a10e2d585f5b9c7172cd578d56068392ee88bed5a9b13e42f63b771b2"
+  },
+  "draw_order": "first 256 original draws within each declared stratum; exclusions consume budget",
+  "earlier_M2_audit": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M2-20260909-v1/result.json",
+    "sha256": "sha256:1434dc5a5abf468d1dfe185887ce5985ae8850be651ce253b6d9033fdcce3fca"
+  },
+  "exclusion": "all original/expanded assigned geometries through M32 and all six development geometries",
+  "execution_gate": "complete original 138-assignment M8 panel and development decision; no pilot physics before gate",
+  "execution_order": "each pre-update student, then all seven teachers in frozen draw order, then fit",
+  "expanded_plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json",
+    "sha256": "sha256:bf551021c82fd42d0e6b002a2941a71b1358d72a469903105a2230bdfae3a4ed"
+  },
+  "fallback": "no targeted proposal: retain ordinary selection, record inactive; never refill after physics",
+  "final_policy_evaluation": {
+    "assigned_episodes": 36,
+    "comparators": "reuse the 48 original fixed/script captures on these exact conditions",
+    "matching": "same six scene/seed/sensor/stress assignments as M8, seed 8732",
+    "maximum_physics_steps": 42912,
+    "policies": 6,
+    "scenes": 6
+  },
+  "fixed_response_rule": "complete solvable M1/M2 intersection, then mean real passage time, then registry order",
+  "fixed_seed_pairs": [
+    93201,
+    93202,
+    93203
+  ],
+  "geometry_rule": "positive clearance >=0.01m over all 81 offsets; distinct negative nominal <=-0.01m",
+  "hypothesis": "removing a common fixed response can make acquisition teach useful choices",
+  "implementation": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_prepare_complementary_pilot.py",
+      "sha256": "sha256:1a95c755a40f132129110118481b9a47cda80d76c1b6657654dcb5d25449a87a"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/hallucination/motion2scene_complementary_acquisition.py",
+      "sha256": "sha256:8a5337b5093afb588da71228aa9cce799a6e8c41af525b8bca6996a1c3e1f684"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/hallucination/motion2scene_acquisition_pool.py",
+      "sha256": "sha256:153f2eabce01a5e4559d1bbb78f7662c74386a9459ec292b6f53052d93e60f31"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_cross_corpus_readout.py",
+      "sha256": "sha256:068599c8b27b24a89503bac7218a662a150ec2dd4dbccc1bfa9fb194e9938811"
+    }
+  ],
+  "intervention": "ordinary third encounter; fourth encounter targets the earlier common response",
+  "learner": "unchanged phase-specific ridge l2=10; uniform per phase; measured-tie initialization",
+  "maximum_budget_rule": "stop at M4 even for null/negative effects; no sixth full M32 arm or reserved tuning",
+  "maximum_new_acquisition_episodes": 96,
+  "maximum_new_acquisition_physics_steps": 114432,
+  "maximum_new_cpu_fits": 12,
+  "maximum_new_preupdate_student_executions": 12,
+  "maximum_new_teacher_branches": 84,
+  "mechanism_outcome": "passing-set intersection on complete bank-solvable tasks; all-failing/unknown reported separately",
+  "missing_outcome_rule": "retain failure and unknown, include every assigned task and charged attempt; no unregistered retry",
+  "new_physical_executions": 0,
+  "paired_strata": [
+    "early_constraint",
+    "short_then_sustained"
+  ],
+  "primary_outcome": "paired actual closed-loop passage, all assigned tasks in denominator",
+  "proposals_per_stratum": 256,
+  "ranking": "same maximum-minimum geometric slack and registry/draw tie order as original constructor",
+  "registry": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/registry.json",
+    "sha256": "sha256:a33af401fe9e6949baaddf63a67a5e37e8f62f87758e1ca373f926f9a3214c3c"
+  },
+  "repeated_data_rule": "three paired corpora and six reused development layouts; episodes are not independent layouts",
+  "schema": "motion2scene_complementary_pilot_declaration_v1",
+  "secondary_outcome": "real passage-time differences on mutually successful conditions, with counts",
+  "teacher": "original scene-wise complete-continuation teacher; seven full schedules",
+  "unchanged": "frozen tracker, seven schedules, 114D causal sensing, legal actions, recovery/contact scoring"
+}

@@ -1,0 +1,2262 @@
+{
+  "arms": {
+    "analytic_contrast": {
+      "actual_recorded_steps": 53640,
+      "distinct_geometries": 3,
+      "independent_corpora": 3,
+      "interpretation": "assigned corpus/task pairs retained; repeated geometries are not independent layouts",
+      "pooled_responses": {
+        "adaptation_required_lower": 3,
+        "assigned_tasks": 3,
+        "bank_solvable_lower": 3,
+        "bank_solvable_upper": 3,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 3,
+        "best_fixed_passages_upper": 3,
+        "best_fixed_schedule_ids": [
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 3,
+            "passes": 0,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 1,
+            "passes": 2,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 1,
+            "passes": 2,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "sustained_e015_r255"
+          ],
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "short_e015_r265",
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "short_e070_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 2
+          },
+          {
+            "schedules": [
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      }
+    },
+    "observation_curriculum": {
+      "actual_recorded_steps": 53640,
+      "distinct_geometries": 3,
+      "independent_corpora": 3,
+      "interpretation": "assigned corpus/task pairs retained; repeated geometries are not independent layouts",
+      "pooled_responses": {
+        "adaptation_required_lower": 3,
+        "assigned_tasks": 3,
+        "bank_solvable_lower": 3,
+        "bank_solvable_upper": 3,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 3,
+        "best_fixed_passages_upper": 3,
+        "best_fixed_schedule_ids": [
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 3,
+            "passes": 0,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 1,
+            "passes": 2,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 1,
+            "passes": 2,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "sustained_e015_r255"
+          ],
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "short_e015_r265",
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "short_e070_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 2
+          },
+          {
+            "schedules": [
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      }
+    },
+    "target_only": {
+      "actual_recorded_steps": 53640,
+      "distinct_geometries": 3,
+      "independent_corpora": 3,
+      "interpretation": "assigned corpus/task pairs retained; repeated geometries are not independent layouts",
+      "pooled_responses": {
+        "adaptation_required_lower": 3,
+        "assigned_tasks": 3,
+        "bank_solvable_lower": 3,
+        "bank_solvable_upper": 3,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 3,
+        "best_fixed_passages_upper": 3,
+        "best_fixed_schedule_ids": [
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 3,
+            "passes": 0,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 1,
+            "passes": 2,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 1,
+            "passes": 2,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 1,
+            "passes": 2,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 1,
+            "passes": 2,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 1,
+            "passes": 2,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "short_e015_r265",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "short_e070_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          },
+          {
+            "schedules": [
+              "short_e015_r265",
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "short_e070_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          },
+          {
+            "schedules": [
+              "sustained_e015_r255",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      }
+    },
+    "uniform": {
+      "actual_recorded_steps": 53640,
+      "distinct_geometries": 3,
+      "independent_corpora": 3,
+      "interpretation": "assigned corpus/task pairs retained; repeated geometries are not independent layouts",
+      "pooled_responses": {
+        "adaptation_required_lower": 0,
+        "assigned_tasks": 3,
+        "bank_solvable_lower": 3,
+        "bank_solvable_upper": 3,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 3,
+        "best_fixed_passages_upper": 3,
+        "best_fixed_schedule_ids": [
+          "neutral",
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 3,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "neutral"
+          ],
+          [
+            "short_e015_r265"
+          ],
+          [
+            "sustained_e015_r255"
+          ],
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ],
+          [
+            "short_e070_r265"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "neutral",
+              "short_e015_r265",
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "short_e070_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 3
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      }
+    }
+  },
+  "budget": 1,
+  "corpora": [
+    {
+      "arm": "uniform",
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_001/result.json",
+        "sha256": "sha256:580a7e0856a61d3ec3519f07e33d581825d0e9661f0b28f28beeb49e6586979c"
+      },
+      "physical_cost": {
+        "assigned_episodes": 15,
+        "bootstrap_teacher_steps": 8344,
+        "encounter_teacher_steps": 8344,
+        "preupdate_student_steps": 1192,
+        "scope": "completed acquisition captures including own bootstrap; unresolved reservations and historical development excluded",
+        "total_recorded_steps": 17880
+      },
+      "responses": {
+        "adaptation_required_lower": 0,
+        "assigned_tasks": 1,
+        "bank_solvable_lower": 1,
+        "bank_solvable_upper": 1,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 1,
+        "best_fixed_passages_upper": 1,
+        "best_fixed_schedule_ids": [
+          "neutral",
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "neutral"
+          ],
+          [
+            "short_e015_r265"
+          ],
+          [
+            "sustained_e015_r255"
+          ],
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ],
+          [
+            "short_e070_r265"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "neutral",
+              "short_e015_r265",
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "short_e070_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      },
+      "run_id": "seed93201_uniform",
+      "seed": 93201,
+      "source_results": [
+        {
+          "student": null,
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/bootstrap/teachers/result.json",
+            "sha256": "sha256:ccedb36ed9d3bde69df42ecfd4190694fa5931d29ff8edfe83744e34ce4a6779"
+          }
+        },
+        {
+          "student": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/round_001/student/result.json",
+            "sha256": "sha256:36a94da44654b7e2ce77320844bbca0533595c3b7096bee6270b1e8cf9ac1b8f"
+          },
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/round_001/teachers/result.json",
+            "sha256": "sha256:71b636af98614e518cce0d7e58d8796e67f23dc8699940b2af6b4b2e2134914c"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "arm": "uniform",
+          "candidate_id": "primary_candidate_93201_0000",
+          "geometry_key": "sha256:d1d96346aa3a4a34ebf46c2bfad2be3ba1ba0b7426a7d4d2405a7e6bb939cb22",
+          "outcomes": {
+            "neutral": "pass",
+            "prior_splice_e015_r265": "pass",
+            "prior_splice_e050_r265": "pass",
+            "short_e015_r265": "pass",
+            "short_e070_r265": "pass",
+            "sustained_e015_r255": "pass",
+            "sustained_e070_r255": "pass"
+          },
+          "round": 1,
+          "run_id": "seed93201_uniform",
+          "seed": 93201,
+          "stratum": "short",
+          "student_outcome": "pass",
+          "student_steps": 1192,
+          "teacher_steps": 8344
+        }
+      ]
+    },
+    {
+      "arm": "target_only",
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_001/result.json",
+        "sha256": "sha256:e6a236964f12400989ad17b98c31ceb5f018ac8dc8bc95273ae02588f648e260"
+      },
+      "physical_cost": {
+        "assigned_episodes": 15,
+        "bootstrap_teacher_steps": 8344,
+        "encounter_teacher_steps": 8344,
+        "preupdate_student_steps": 1192,
+        "scope": "completed acquisition captures including own bootstrap; unresolved reservations and historical development excluded",
+        "total_recorded_steps": 17880
+      },
+      "responses": {
+        "adaptation_required_lower": 1,
+        "assigned_tasks": 1,
+        "bank_solvable_lower": 1,
+        "bank_solvable_upper": 1,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 1,
+        "best_fixed_passages_upper": 1,
+        "best_fixed_schedule_ids": [
+          "sustained_e015_r255",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "sustained_e015_r255"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "sustained_e015_r255",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      },
+      "run_id": "seed93201_target_only",
+      "seed": 93201,
+      "source_results": [
+        {
+          "student": null,
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/bootstrap/teachers/result.json",
+            "sha256": "sha256:55536ce939682d62c7e2a2a495931f687407e9020a364dea39e7bf0bf278427e"
+          }
+        },
+        {
+          "student": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/round_001/student/result.json",
+            "sha256": "sha256:15cc1b13b87f5d38e08704e3dba3cc43ac6e76789ad9a97efb0987e86688bfaa"
+          },
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/round_001/teachers/result.json",
+            "sha256": "sha256:e5dfc617578ac294655fb922bad3e458c3674c9b9ddd12c7460edd2489c707f4"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "arm": "target_only",
+          "candidate_id": "primary_candidate_93201_0155",
+          "geometry_key": "sha256:272eb4397a0ccd11868e1cb993d745c2498afc0a65fae74789d888a5561d5dd1",
+          "outcomes": {
+            "neutral": "failure",
+            "prior_splice_e015_r265": "failure",
+            "prior_splice_e050_r265": "failure",
+            "short_e015_r265": "failure",
+            "short_e070_r265": "failure",
+            "sustained_e015_r255": "pass",
+            "sustained_e070_r255": "pass"
+          },
+          "round": 1,
+          "run_id": "seed93201_target_only",
+          "seed": 93201,
+          "stratum": "short",
+          "student_outcome": "failure",
+          "student_steps": 1192,
+          "teacher_steps": 8344
+        }
+      ]
+    },
+    {
+      "arm": "analytic_contrast",
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_001/result.json",
+        "sha256": "sha256:d91f29390c37ee4b438bacfb4a052d0294eca85a1f9d72b3be73b5e9e644fdde"
+      },
+      "physical_cost": {
+        "assigned_episodes": 15,
+        "bootstrap_teacher_steps": 8344,
+        "encounter_teacher_steps": 8344,
+        "preupdate_student_steps": 1192,
+        "scope": "completed acquisition captures including own bootstrap; unresolved reservations and historical development excluded",
+        "total_recorded_steps": 17880
+      },
+      "responses": {
+        "adaptation_required_lower": 1,
+        "assigned_tasks": 1,
+        "bank_solvable_lower": 1,
+        "bank_solvable_upper": 1,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 1,
+        "best_fixed_passages_upper": 1,
+        "best_fixed_schedule_ids": [
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "sustained_e015_r255"
+          ],
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      },
+      "run_id": "seed93201_analytic_contrast",
+      "seed": 93201,
+      "source_results": [
+        {
+          "student": null,
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/bootstrap/teachers/result.json",
+            "sha256": "sha256:e0307e0e3f6c98a3b6985e408e4f62328b774740142f87dca55a3b071531d540"
+          }
+        },
+        {
+          "student": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/round_001/student/result.json",
+            "sha256": "sha256:68e42a9d3c40cc19e1a10ef705d59b18296d6a445c09b9bfcff15a58ff083e39"
+          },
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/round_001/teachers/result.json",
+            "sha256": "sha256:3119e1da9a05a4839c6b2b82d498e0a0b3ffc58666d75dbf6887d62902f433a5"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "arm": "analytic_contrast",
+          "candidate_id": "primary_candidate_93201_0010",
+          "geometry_key": "sha256:993f44b4919fa1d55547d8e6dd3832b2f7827e537b1b83656c99aa1f354a9e3b",
+          "outcomes": {
+            "neutral": "failure",
+            "prior_splice_e015_r265": "pass",
+            "prior_splice_e050_r265": "pass",
+            "short_e015_r265": "failure",
+            "short_e070_r265": "failure",
+            "sustained_e015_r255": "pass",
+            "sustained_e070_r255": "pass"
+          },
+          "round": 1,
+          "run_id": "seed93201_analytic_contrast",
+          "seed": 93201,
+          "stratum": "short",
+          "student_outcome": "failure",
+          "student_steps": 1192,
+          "teacher_steps": 8344
+        }
+      ]
+    },
+    {
+      "arm": "observation_curriculum",
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_001/result.json",
+        "sha256": "sha256:75750a905c5bde385d2bf035d49029b65d5f421cbf704d282423dce9bf195ef6"
+      },
+      "physical_cost": {
+        "assigned_episodes": 15,
+        "bootstrap_teacher_steps": 8344,
+        "encounter_teacher_steps": 8344,
+        "preupdate_student_steps": 1192,
+        "scope": "completed acquisition captures including own bootstrap; unresolved reservations and historical development excluded",
+        "total_recorded_steps": 17880
+      },
+      "responses": {
+        "adaptation_required_lower": 1,
+        "assigned_tasks": 1,
+        "bank_solvable_lower": 1,
+        "bank_solvable_upper": 1,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 1,
+        "best_fixed_passages_upper": 1,
+        "best_fixed_schedule_ids": [
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "sustained_e015_r255"
+          ],
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      },
+      "run_id": "seed93201_observation_curriculum",
+      "seed": 93201,
+      "source_results": [
+        {
+          "student": null,
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/bootstrap/teachers/result.json",
+            "sha256": "sha256:e42ffffaadd5c04bfe5b76edb26171b0a410dad328699c471aa6496838bb0010"
+          }
+        },
+        {
+          "student": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/round_001/student/result.json",
+            "sha256": "sha256:6fb0dc6b0fdf690bf2e5de05d73bc7a91832b651fbf63d88471dcb2044b4b71d"
+          },
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/round_001/teachers/result.json",
+            "sha256": "sha256:11250e1f6e1e88c4537e89d9a64c93e76cefa065c793f339c15cf2d20a4ede57"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "arm": "observation_curriculum",
+          "candidate_id": "primary_candidate_93201_0010",
+          "geometry_key": "sha256:993f44b4919fa1d55547d8e6dd3832b2f7827e537b1b83656c99aa1f354a9e3b",
+          "outcomes": {
+            "neutral": "failure",
+            "prior_splice_e015_r265": "pass",
+            "prior_splice_e050_r265": "pass",
+            "short_e015_r265": "failure",
+            "short_e070_r265": "failure",
+            "sustained_e015_r255": "pass",
+            "sustained_e070_r255": "pass"
+          },
+          "round": 1,
+          "run_id": "seed93201_observation_curriculum",
+          "seed": 93201,
+          "stratum": "short",
+          "student_outcome": "failure",
+          "student_steps": 1192,
+          "teacher_steps": 8344
+        }
+      ]
+    },
+    {
+      "arm": "uniform",
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_001/result.json",
+        "sha256": "sha256:3d2dc6648fabfb8eb6f6761b0013e01e945015d17397a90633a10a1c92c2faa3"
+      },
+      "physical_cost": {
+        "assigned_episodes": 15,
+        "bootstrap_teacher_steps": 8344,
+        "encounter_teacher_steps": 8344,
+        "preupdate_student_steps": 1192,
+        "scope": "completed acquisition captures including own bootstrap; unresolved reservations and historical development excluded",
+        "total_recorded_steps": 17880
+      },
+      "responses": {
+        "adaptation_required_lower": 0,
+        "assigned_tasks": 1,
+        "bank_solvable_lower": 1,
+        "bank_solvable_upper": 1,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 1,
+        "best_fixed_passages_upper": 1,
+        "best_fixed_schedule_ids": [
+          "neutral",
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "neutral"
+          ],
+          [
+            "short_e015_r265"
+          ],
+          [
+            "sustained_e015_r255"
+          ],
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ],
+          [
+            "short_e070_r265"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "neutral",
+              "short_e015_r265",
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "short_e070_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      },
+      "run_id": "seed93202_uniform",
+      "seed": 93202,
+      "source_results": [
+        {
+          "student": null,
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/bootstrap/teachers/result.json",
+            "sha256": "sha256:494425664b3c683dd396fe5053a8086968f749a3cd8349c7a61047f440b5d379"
+          }
+        },
+        {
+          "student": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/round_001/student/result.json",
+            "sha256": "sha256:1a537fe57cb1386e70318d125406fafee94d58dd9313422235b252b0a7edcf9d"
+          },
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/round_001/teachers/result.json",
+            "sha256": "sha256:51d0c797950b4dd57c1fcc7c43f7973c847e591820d30e984ceec88ab7e64ca1"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "arm": "uniform",
+          "candidate_id": "primary_candidate_93202_0000",
+          "geometry_key": "sha256:9ecf23dc65adaefeee6cd28c91bbef751af8307ae1db361cd0c67327e18d1a91",
+          "outcomes": {
+            "neutral": "pass",
+            "prior_splice_e015_r265": "pass",
+            "prior_splice_e050_r265": "pass",
+            "short_e015_r265": "pass",
+            "short_e070_r265": "pass",
+            "sustained_e015_r255": "pass",
+            "sustained_e070_r255": "pass"
+          },
+          "round": 1,
+          "run_id": "seed93202_uniform",
+          "seed": 93202,
+          "stratum": "short",
+          "student_outcome": "pass",
+          "student_steps": 1192,
+          "teacher_steps": 8344
+        }
+      ]
+    },
+    {
+      "arm": "target_only",
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_001/result.json",
+        "sha256": "sha256:6c99615b08d6d7d422e19ec5f9d8103eef39b3dd0cd539b7bfc9e13692f60ffa"
+      },
+      "physical_cost": {
+        "assigned_episodes": 15,
+        "bootstrap_teacher_steps": 8344,
+        "encounter_teacher_steps": 8344,
+        "preupdate_student_steps": 1192,
+        "scope": "completed acquisition captures including own bootstrap; unresolved reservations and historical development excluded",
+        "total_recorded_steps": 17880
+      },
+      "responses": {
+        "adaptation_required_lower": 1,
+        "assigned_tasks": 1,
+        "bank_solvable_lower": 1,
+        "bank_solvable_upper": 1,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 1,
+        "best_fixed_passages_upper": 1,
+        "best_fixed_schedule_ids": [
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "short_e015_r265"
+          ],
+          [
+            "sustained_e015_r255"
+          ],
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ],
+          [
+            "short_e070_r265"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "short_e015_r265",
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "short_e070_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      },
+      "run_id": "seed93202_target_only",
+      "seed": 93202,
+      "source_results": [
+        {
+          "student": null,
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/bootstrap/teachers/result.json",
+            "sha256": "sha256:4b9d19f9c9334da6ef80a8ff9fe98a4a1e451364c031f27f0e1ff3dabd4a241b"
+          }
+        },
+        {
+          "student": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/round_001/student/result.json",
+            "sha256": "sha256:9eb05339f79a8bb4d48cc108fcdac96e211765b484122c3b3dd6c1fe86cdfb73"
+          },
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/round_001/teachers/result.json",
+            "sha256": "sha256:600bb869a7540b4b6305a550c2eb4ddcacc51836c064520bf297b9d4f1b470e5"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "arm": "target_only",
+          "candidate_id": "primary_candidate_93202_0070",
+          "geometry_key": "sha256:69813264bea1bfc753f191fb957370edf914f21d6289778bac1a1641a555f486",
+          "outcomes": {
+            "neutral": "failure",
+            "prior_splice_e015_r265": "pass",
+            "prior_splice_e050_r265": "pass",
+            "short_e015_r265": "pass",
+            "short_e070_r265": "pass",
+            "sustained_e015_r255": "pass",
+            "sustained_e070_r255": "pass"
+          },
+          "round": 1,
+          "run_id": "seed93202_target_only",
+          "seed": 93202,
+          "stratum": "short",
+          "student_outcome": "failure",
+          "student_steps": 1192,
+          "teacher_steps": 8344
+        }
+      ]
+    },
+    {
+      "arm": "analytic_contrast",
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_001/result.json",
+        "sha256": "sha256:aa6c57f04c3da1c9836a85f8136629f98d807915a3be08055cf95dad291229e2"
+      },
+      "physical_cost": {
+        "assigned_episodes": 15,
+        "bootstrap_teacher_steps": 8344,
+        "encounter_teacher_steps": 8344,
+        "preupdate_student_steps": 1192,
+        "scope": "completed acquisition captures including own bootstrap; unresolved reservations and historical development excluded",
+        "total_recorded_steps": 17880
+      },
+      "responses": {
+        "adaptation_required_lower": 1,
+        "assigned_tasks": 1,
+        "bank_solvable_lower": 1,
+        "bank_solvable_upper": 1,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 1,
+        "best_fixed_passages_upper": 1,
+        "best_fixed_schedule_ids": [
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "short_e015_r265"
+          ],
+          [
+            "sustained_e015_r255"
+          ],
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ],
+          [
+            "short_e070_r265"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "short_e015_r265",
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "short_e070_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      },
+      "run_id": "seed93202_analytic_contrast",
+      "seed": 93202,
+      "source_results": [
+        {
+          "student": null,
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/bootstrap/teachers/result.json",
+            "sha256": "sha256:0c6080536dbff4c9e2cbde86ffc246ff85c2badd40eb89f194856f5fc6e4dd73"
+          }
+        },
+        {
+          "student": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_001/student/result.json",
+            "sha256": "sha256:1c383afbaaa1fe2fbb124bf0dee2621c95affeab9245c06082596bbe343d4601"
+          },
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/round_001/teachers/result.json",
+            "sha256": "sha256:54b97f7dc7f08955994a6bac0395a4a64b3dfc2a628920385b0c60715659b258"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "arm": "analytic_contrast",
+          "candidate_id": "primary_candidate_93202_0070",
+          "geometry_key": "sha256:69813264bea1bfc753f191fb957370edf914f21d6289778bac1a1641a555f486",
+          "outcomes": {
+            "neutral": "failure",
+            "prior_splice_e015_r265": "pass",
+            "prior_splice_e050_r265": "pass",
+            "short_e015_r265": "pass",
+            "short_e070_r265": "pass",
+            "sustained_e015_r255": "pass",
+            "sustained_e070_r255": "pass"
+          },
+          "round": 1,
+          "run_id": "seed93202_analytic_contrast",
+          "seed": 93202,
+          "stratum": "short",
+          "student_outcome": "failure",
+          "student_steps": 1192,
+          "teacher_steps": 8344
+        }
+      ]
+    },
+    {
+      "arm": "observation_curriculum",
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_001/result.json",
+        "sha256": "sha256:17d59169b063d50fef0f63e6f49e1487680966cd2fbdaa3b011a6fad3478e061"
+      },
+      "physical_cost": {
+        "assigned_episodes": 15,
+        "bootstrap_teacher_steps": 8344,
+        "encounter_teacher_steps": 8344,
+        "preupdate_student_steps": 1192,
+        "scope": "completed acquisition captures including own bootstrap; unresolved reservations and historical development excluded",
+        "total_recorded_steps": 17880
+      },
+      "responses": {
+        "adaptation_required_lower": 1,
+        "assigned_tasks": 1,
+        "bank_solvable_lower": 1,
+        "bank_solvable_upper": 1,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 1,
+        "best_fixed_passages_upper": 1,
+        "best_fixed_schedule_ids": [
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "short_e015_r265"
+          ],
+          [
+            "sustained_e015_r255"
+          ],
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ],
+          [
+            "short_e070_r265"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "short_e015_r265",
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "short_e070_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      },
+      "run_id": "seed93202_observation_curriculum",
+      "seed": 93202,
+      "source_results": [
+        {
+          "student": null,
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/bootstrap/teachers/result.json",
+            "sha256": "sha256:5c518951420a8edc0dbeb1ac358b0039ef7c224429979e3266a94c1920a25b5c"
+          }
+        },
+        {
+          "student": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/round_001/student/result.json",
+            "sha256": "sha256:4de29cdb48ce2073f5d79ad70a2ae141df820767b0491aea7e876b82e5db708b"
+          },
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/round_001/teachers/result.json",
+            "sha256": "sha256:04b8e59cf90d61c2d48e8779af706c4ef23005a54f92d92594bd99260391e27d"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "arm": "observation_curriculum",
+          "candidate_id": "primary_candidate_93202_0070",
+          "geometry_key": "sha256:69813264bea1bfc753f191fb957370edf914f21d6289778bac1a1641a555f486",
+          "outcomes": {
+            "neutral": "failure",
+            "prior_splice_e015_r265": "pass",
+            "prior_splice_e050_r265": "pass",
+            "short_e015_r265": "pass",
+            "short_e070_r265": "pass",
+            "sustained_e015_r255": "pass",
+            "sustained_e070_r255": "pass"
+          },
+          "round": 1,
+          "run_id": "seed93202_observation_curriculum",
+          "seed": 93202,
+          "stratum": "short",
+          "student_outcome": "failure",
+          "student_steps": 1192,
+          "teacher_steps": 8344
+        }
+      ]
+    },
+    {
+      "arm": "uniform",
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_001/result.json",
+        "sha256": "sha256:929ad1c6a17eefca8b0a33402eb309f083d420d54f15a72ffe92ad55a7568878"
+      },
+      "physical_cost": {
+        "assigned_episodes": 15,
+        "bootstrap_teacher_steps": 8344,
+        "encounter_teacher_steps": 8344,
+        "preupdate_student_steps": 1192,
+        "scope": "completed acquisition captures including own bootstrap; unresolved reservations and historical development excluded",
+        "total_recorded_steps": 17880
+      },
+      "responses": {
+        "adaptation_required_lower": 0,
+        "assigned_tasks": 1,
+        "bank_solvable_lower": 1,
+        "bank_solvable_upper": 1,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 1,
+        "best_fixed_passages_upper": 1,
+        "best_fixed_schedule_ids": [
+          "neutral",
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "neutral"
+          ],
+          [
+            "short_e015_r265"
+          ],
+          [
+            "sustained_e015_r255"
+          ],
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ],
+          [
+            "short_e070_r265"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "neutral",
+              "short_e015_r265",
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "short_e070_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      },
+      "run_id": "seed93203_uniform",
+      "seed": 93203,
+      "source_results": [
+        {
+          "student": null,
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/bootstrap/teachers/result.json",
+            "sha256": "sha256:f254a50a025c2d59b434e8b0c16ba2fc4d1b000d9e10c460d87594b1dfab2d3f"
+          }
+        },
+        {
+          "student": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/round_001/student/result.json",
+            "sha256": "sha256:63595352ae94110831afe1d3f47429a963e8f84daa840c6f86f1a9ff3b958f5c"
+          },
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/round_001/teachers/result.json",
+            "sha256": "sha256:fdcd589c888d749a1d7a6632b61942e3a2296058ea0dde3501a29ffd4d5f654e"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "arm": "uniform",
+          "candidate_id": "primary_candidate_93203_0000",
+          "geometry_key": "sha256:2c2fa69e5c339f18c0a026639c67a562f9941b720f3ddba2d78b1c5b9b49453a",
+          "outcomes": {
+            "neutral": "pass",
+            "prior_splice_e015_r265": "pass",
+            "prior_splice_e050_r265": "pass",
+            "short_e015_r265": "pass",
+            "short_e070_r265": "pass",
+            "sustained_e015_r255": "pass",
+            "sustained_e070_r255": "pass"
+          },
+          "round": 1,
+          "run_id": "seed93203_uniform",
+          "seed": 93203,
+          "stratum": "short",
+          "student_outcome": "pass",
+          "student_steps": 1192,
+          "teacher_steps": 8344
+        }
+      ]
+    },
+    {
+      "arm": "target_only",
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_001/result.json",
+        "sha256": "sha256:9d9ec5111b884a6651385629998d208ad7e5d1eeb2b63c14bcf7522ac8095415"
+      },
+      "physical_cost": {
+        "assigned_episodes": 15,
+        "bootstrap_teacher_steps": 8344,
+        "encounter_teacher_steps": 8344,
+        "preupdate_student_steps": 1192,
+        "scope": "completed acquisition captures including own bootstrap; unresolved reservations and historical development excluded",
+        "total_recorded_steps": 17880
+      },
+      "responses": {
+        "adaptation_required_lower": 1,
+        "assigned_tasks": 1,
+        "bank_solvable_lower": 1,
+        "bank_solvable_upper": 1,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 1,
+        "best_fixed_passages_upper": 1,
+        "best_fixed_schedule_ids": [
+          "short_e015_r265",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "short_e015_r265"
+          ],
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ],
+          [
+            "short_e070_r265"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "short_e015_r265",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "short_e070_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      },
+      "run_id": "seed93203_target_only",
+      "seed": 93203,
+      "source_results": [
+        {
+          "student": null,
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/bootstrap/teachers/result.json",
+            "sha256": "sha256:5abdd553ccb27f40cd0c4c02f24834a5e3455f575248cdbc016c0e3196a9a876"
+          }
+        },
+        {
+          "student": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/round_001/student/result.json",
+            "sha256": "sha256:886bd351dfb929faf71cb381636e9ec87565faf9a60693c9eee3ab9c780440af"
+          },
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/round_001/teachers/result.json",
+            "sha256": "sha256:f7c6d5d7c3f44801c09305c806166b62c50d62963d992c4896ebcbe0de45a2b0"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "arm": "target_only",
+          "candidate_id": "primary_candidate_93203_0035",
+          "geometry_key": "sha256:67f6bda9a6df99e015096fb6c79b079864ec09a82ff1458386c5a91dd20d52af",
+          "outcomes": {
+            "neutral": "failure",
+            "prior_splice_e015_r265": "pass",
+            "prior_splice_e050_r265": "pass",
+            "short_e015_r265": "pass",
+            "short_e070_r265": "pass",
+            "sustained_e015_r255": "failure",
+            "sustained_e070_r255": "pass"
+          },
+          "round": 1,
+          "run_id": "seed93203_target_only",
+          "seed": 93203,
+          "stratum": "short",
+          "student_outcome": "failure",
+          "student_steps": 1192,
+          "teacher_steps": 8344
+        }
+      ]
+    },
+    {
+      "arm": "analytic_contrast",
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_001/result.json",
+        "sha256": "sha256:28db7bebaafc0ce3d16d6248db8b726f7cdd33819f82714d0f286a57029a18c1"
+      },
+      "physical_cost": {
+        "assigned_episodes": 15,
+        "bootstrap_teacher_steps": 8344,
+        "encounter_teacher_steps": 8344,
+        "preupdate_student_steps": 1192,
+        "scope": "completed acquisition captures including own bootstrap; unresolved reservations and historical development excluded",
+        "total_recorded_steps": 17880
+      },
+      "responses": {
+        "adaptation_required_lower": 1,
+        "assigned_tasks": 1,
+        "bank_solvable_lower": 1,
+        "bank_solvable_upper": 1,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 1,
+        "best_fixed_passages_upper": 1,
+        "best_fixed_schedule_ids": [
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "short_e015_r265"
+          ],
+          [
+            "sustained_e015_r255"
+          ],
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ],
+          [
+            "short_e070_r265"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "short_e015_r265",
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "short_e070_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      },
+      "run_id": "seed93203_analytic_contrast",
+      "seed": 93203,
+      "source_results": [
+        {
+          "student": null,
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-recovery-v4/seed93203_analytic_contrast/bootstrap/teachers/result.json",
+            "sha256": "sha256:8ed39339b68575f26cbb9b5726631a7690a1c2a7b0ffc3bdfdc3abdb9f2f283f"
+          }
+        },
+        {
+          "student": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/round_001/student/result.json",
+            "sha256": "sha256:19c6e5effcd84e453d8f6b7504529ae5a0b74bb4c9976cdaaba3de1c789e4a06"
+          },
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/round_001/teachers/result.json",
+            "sha256": "sha256:398a609f0981b9258c2cd42081913e05c632252c08b4256e35b92a598bb131fc"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "arm": "analytic_contrast",
+          "candidate_id": "primary_candidate_93203_0135",
+          "geometry_key": "sha256:ca10be04b3f4a06e34dc6728626d45555bceeb79e23d75e0cc2bc938c0407120",
+          "outcomes": {
+            "neutral": "failure",
+            "prior_splice_e015_r265": "pass",
+            "prior_splice_e050_r265": "pass",
+            "short_e015_r265": "pass",
+            "short_e070_r265": "pass",
+            "sustained_e015_r255": "pass",
+            "sustained_e070_r255": "pass"
+          },
+          "round": 1,
+          "run_id": "seed93203_analytic_contrast",
+          "seed": 93203,
+          "stratum": "short",
+          "student_outcome": "failure",
+          "student_steps": 1192,
+          "teacher_steps": 8344
+        }
+      ]
+    },
+    {
+      "arm": "observation_curriculum",
+      "checkpoint": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_001/result.json",
+        "sha256": "sha256:aed13def2bcec66bf11ba8fafeea2e2730d951dcfcad4a313811dfc317d95db7"
+      },
+      "physical_cost": {
+        "assigned_episodes": 15,
+        "bootstrap_teacher_steps": 8344,
+        "encounter_teacher_steps": 8344,
+        "preupdate_student_steps": 1192,
+        "scope": "completed acquisition captures including own bootstrap; unresolved reservations and historical development excluded",
+        "total_recorded_steps": 17880
+      },
+      "responses": {
+        "adaptation_required_lower": 1,
+        "assigned_tasks": 1,
+        "bank_solvable_lower": 1,
+        "bank_solvable_upper": 1,
+        "bank_unsolvable": 0,
+        "best_fixed_passages_lower": 1,
+        "best_fixed_passages_upper": 1,
+        "best_fixed_schedule_ids": [
+          "short_e015_r265",
+          "sustained_e015_r255",
+          "prior_splice_e015_r265",
+          "prior_splice_e050_r265",
+          "short_e070_r265",
+          "sustained_e070_r255"
+        ],
+        "capability_minus_best_fixed_lower": 0,
+        "capability_minus_best_fixed_upper": 0,
+        "complete": true,
+        "fixed_schedules": {
+          "neutral": {
+            "failures": 1,
+            "passes": 0,
+            "unknown": 0
+          },
+          "prior_splice_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "prior_splice_e050_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e015_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "short_e070_r265": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e015_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          },
+          "sustained_e070_r255": {
+            "failures": 0,
+            "passes": 1,
+            "unknown": 0
+          }
+        },
+        "interpretation": "finite measured training-bank coverage, not sensor realizability or executed policy performance",
+        "minimum_cover_size": 1,
+        "minimum_schedule_covers": [
+          [
+            "short_e015_r265"
+          ],
+          [
+            "sustained_e015_r255"
+          ],
+          [
+            "prior_splice_e015_r265"
+          ],
+          [
+            "prior_splice_e050_r265"
+          ],
+          [
+            "short_e070_r265"
+          ],
+          [
+            "sustained_e070_r255"
+          ]
+        ],
+        "one_fixed_covers_every_solvable_task": true,
+        "passing_set_patterns": [
+          {
+            "schedules": [
+              "short_e015_r265",
+              "sustained_e015_r255",
+              "prior_splice_e015_r265",
+              "prior_splice_e050_r265",
+              "short_e070_r265",
+              "sustained_e070_r255"
+            ],
+            "tasks": 1
+          }
+        ],
+        "unknown_branch_outcomes": 0
+      },
+      "run_id": "seed93203_observation_curriculum",
+      "seed": 93203,
+      "source_results": [
+        {
+          "student": null,
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/bootstrap/teachers/result.json",
+            "sha256": "sha256:174b1ae8a9818c06f79650b7f59bbc43591845e3fec013b69a04673f0b244b98"
+          }
+        },
+        {
+          "student": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/round_001/student/result.json",
+            "sha256": "sha256:055582dab2de12ca1823badb75496f190eed06d7716fdfa16f5b6b785628a9c6"
+          },
+          "teacher": {
+            "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/round_001/teachers/result.json",
+            "sha256": "sha256:6edd42c71be79b84faf3017259c26f1d0625149017bb377edfc36dff30f91f18"
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "arm": "observation_curriculum",
+          "candidate_id": "primary_candidate_93203_0135",
+          "geometry_key": "sha256:ca10be04b3f4a06e34dc6728626d45555bceeb79e23d75e0cc2bc938c0407120",
+          "outcomes": {
+            "neutral": "failure",
+            "prior_splice_e015_r265": "pass",
+            "prior_splice_e050_r265": "pass",
+            "short_e015_r265": "pass",
+            "short_e070_r265": "pass",
+            "sustained_e015_r255": "pass",
+            "sustained_e070_r255": "pass"
+          },
+          "round": 1,
+          "run_id": "seed93203_observation_curriculum",
+          "seed": 93203,
+          "stratum": "short",
+          "student_outcome": "failure",
+          "student_steps": 1192,
+          "teacher_steps": 8344
+        }
+      ]
+    }
+  ],
+  "decision_rule": "inspect at M8; only a new separately budgeted development intervention may change proposal complementarity; frozen queues unchanged",
+  "evidence": "completed controller receipts with independent prefix/teacher re-audit; no newly executed policies",
+  "geometric_cost_rule": "shared pool preparation, separate from recorded physics; no per-arm runtime inferred from shared caching",
+  "geometric_cost_sources": {
+    "candidate_pool_result": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-candidate-pools-v1/result.json",
+      "sha256": "sha256:628ff0cfc454fa535706ecedce45a9e13dafa9c7c6718f4cddd141941213b397"
+    },
+    "proposal_accounting": {
+      "acquisition_selection": "First queue row in each matched common-support stratum; no outcome filtering/refill",
+      "actual_sensor_queries": 0,
+      "actual_shared_candidates": 480,
+      "actual_shared_clearance_queries": 114848,
+      "actual_shared_clearance_search_seconds": 55.04462523799157,
+      "semantics": "Count the full frozen searches, including every rejected/nonselected proposal, once; standalone arm-equivalent query counts are logical costs, not extra actual work",
+      "target_only": "Positive reference assignment was drawn independently before any clearance query; target ranking does not consume negative outcomes"
+    }
+  },
+  "implementation": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_response_diversity.py",
+    "sha256": "sha256:4d11c1cf234e4f579def74979715433a57f3cdc4dfbbb00961072750b8f91fe8"
+  },
+  "new_physics_steps": 0,
+  "paired_contrast_replay": [
+    {
+      "same_candidate_order": true,
+      "seed": 93201,
+      "teacher_outcome_disagreements": []
+    },
+    {
+      "same_candidate_order": true,
+      "seed": 93202,
+      "teacher_outcome_disagreements": []
+    },
+    {
+      "same_candidate_order": true,
+      "seed": 93203,
+      "teacher_outcome_disagreements": []
+    }
+  ],
+  "plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-tie-proposed-v5/plan.json",
+    "sha256": "sha256:aacce6a9a2c2b3fc5bf6b674b5ede46d6fee61ac7ad205553554c4210d3d4508"
+  },
+  "schema": "motion2scene_response_diversity_v1"
+}

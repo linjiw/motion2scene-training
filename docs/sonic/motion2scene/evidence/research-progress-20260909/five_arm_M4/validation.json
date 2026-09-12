@@ -1,0 +1,26 @@
+{
+  "analysis_has_not_started": true,
+  "assigned_corpora": 15,
+  "changed_assignment_rejected": true,
+  "checked_references": 175,
+  "complete_boundaries": 9,
+  "implementation": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-five-arm-M4-audit-watch-20260910-v1/watch.py",
+    "sha256": "sha256:b93ad554af33fc5542bdf96f9a1c3ab77ea2a12019027b14a3d82ff6ce829c83"
+  },
+  "missing": [
+    "seed93202_reference_contrast",
+    "seed93203_analytic_contrast",
+    "seed93203_observation_curriculum",
+    "seed93203_target_only",
+    "seed93203_uniform",
+    "seed93203_reference_contrast"
+  ],
+  "new_model_fits": 0,
+  "new_physics_steps": 0,
+  "registration": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-five-arm-M4-audit-watch-20260910-v1/registration.json",
+    "sha256": "sha256:b60a5f774fe2ebd4571c5f108fad41ec403ac6fa18682b74b0a0e517ecb22891"
+  },
+  "validated_utc": "2026-09-10T03:25:59.110510+00:00"
+}

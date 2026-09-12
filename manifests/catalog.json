@@ -1,0 +1,50 @@
+{
+  "schema": "motion2scene_portable_bundles_v1",
+  "bundles": [
+    {
+      "name": "repaired-motions",
+      "archive": "bundles/repaired-motions.tar.gz",
+      "sha256": "6644371949eb27e6688f03f61a45bb7e84c84d75a5a073af9f90147130c29521",
+      "bytes": 72126563,
+      "files": 959,
+      "description": "89 screened train clips, 20 development clips, all 100 candidates, repair frames and ledger",
+      "manifest": "manifests/repaired-motions.json"
+    },
+    {
+      "name": "research-datasets-scenes",
+      "archive": "bundles/research-datasets-scenes.tar.gz",
+      "sha256": "e2cc750c22872d5f51b0933147636083a0816122dcc676de15326a6ff36c1f4b",
+      "bytes": 1025813741,
+      "files": 6782,
+      "description": "Motion2Scene data, scene/obstacle tasks, BFM labels, evaluations and historical manifests; excludes duplicate model checkpoints, archives and logs",
+      "manifest": "manifests/research-datasets-scenes.json"
+    },
+    {
+      "name": "robot-assets",
+      "archive": "bundles/robot-assets.tar.gz",
+      "sha256": "122ba35fa2504ee1b4cff01ad05c91f43e9ce5ac9c6f9df2ddd7de4098ee19fd",
+      "bytes": 431851024,
+      "files": 814,
+      "description": "SONIC robot models and local assets; original asset notices apply",
+      "manifest": "manifests/robot-assets.json"
+    },
+    {
+      "name": "checkpoints",
+      "archive": "bundles/checkpoints.tar.gz",
+      "sha256": "32b11a74c56782b077b73cbaf5e11b5f4e636cb40dd8dcb7e99a4cbcb747bf3b",
+      "bytes": 794456368,
+      "files": 3,
+      "description": "Released initialization, previous completed teacher, and best measured BFM student; current live teacher excluded",
+      "manifest": "manifests/checkpoints.json"
+    },
+    {
+      "name": "learned-scene-models",
+      "archive": "bundles/learned-scene-models.tar.gz",
+      "sha256": "62e2e793cc6657aee6c80814beeef323d9b5b93fd65bb86038ab4ae457dc2ac7",
+      "bytes": 19467408,
+      "files": 41,
+      "description": "Learned scene/event/shape generators, probabilities and tensor labels; experimental qualification status preserved",
+      "manifest": "manifests/learned-scene-models.json"
+    }
+  ]
+}

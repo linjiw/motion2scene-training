@@ -1,0 +1,71 @@
+{
+  "accounting": "Shared search cost measured once; no invented per-arm allocation. Mixture eligible_counts=0 is an implementation placeholder, not zero proposal support.",
+  "actual_shared_clearance_queries": 999424,
+  "fresh_proposals": 3840,
+  "per_seed": [
+    {
+      "all_arm_queue_selection_seconds": 0.010013559000071837,
+      "eligible_counts": {
+        "support_broad": 1280,
+        "support_mixture": 0,
+        "support_strict": 82
+      },
+      "excluded_before_geometry": 0,
+      "proposed_candidates": 1280,
+      "screened_candidates": 1280,
+      "seed": 93201,
+      "shared_clearance_search_seconds": 161.2262585740009,
+      "support": {
+        "broad_eligible": 1280,
+        "outside_both_screens": 17,
+        "outside_negative_screen": 464,
+        "outside_positive_screen": 751,
+        "reservoir": 1280,
+        "strict_eligible": 82
+      }
+    },
+    {
+      "all_arm_queue_selection_seconds": 0.009960821998902247,
+      "eligible_counts": {
+        "support_broad": 1280,
+        "support_mixture": 0,
+        "support_strict": 83
+      },
+      "excluded_before_geometry": 0,
+      "proposed_candidates": 1280,
+      "screened_candidates": 1280,
+      "seed": 93202,
+      "shared_clearance_search_seconds": 154.47631394500058,
+      "support": {
+        "broad_eligible": 1280,
+        "outside_both_screens": 24,
+        "outside_negative_screen": 450,
+        "outside_positive_screen": 771,
+        "reservoir": 1280,
+        "strict_eligible": 83
+      }
+    },
+    {
+      "all_arm_queue_selection_seconds": 0.010378221999417292,
+      "eligible_counts": {
+        "support_broad": 1280,
+        "support_mixture": 0,
+        "support_strict": 81
+      },
+      "excluded_before_geometry": 0,
+      "proposed_candidates": 1280,
+      "screened_candidates": 1280,
+      "seed": 93203,
+      "shared_clearance_search_seconds": 144.19372685399867,
+      "support": {
+        "broad_eligible": 1280,
+        "outside_both_screens": 23,
+        "outside_negative_screen": 425,
+        "outside_positive_screen": 797,
+        "reservoir": 1280,
+        "strict_eligible": 81
+      }
+    }
+  ],
+  "physics_steps": 0
+}

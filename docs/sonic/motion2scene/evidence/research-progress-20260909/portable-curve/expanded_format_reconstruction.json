@@ -1,0 +1,933 @@
+{
+  "scope": "CPU format validation of the registered expanded fitter on recorded M2 data; not M8 acquisition, not an online trajectory and not a policy performance experiment",
+  "native_fits": 3,
+  "portable_fits": 3,
+  "models": [
+    {
+      "checkpoint": 0,
+      "teacher_rows": 3,
+      "sample_weights": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "fit": {
+        "phase_fits": [
+          {
+            "method": "per-option ridge regression of measured physical regret",
+            "l2": 10.0,
+            "recorded_decisions": 1,
+            "complete_consequential_decisions": 1,
+            "excluded_decision_indices": [],
+            "option_fits": [
+              {
+                "option_index": 0,
+                "target_count": 1,
+                "recorded_decision_indices": [
+                  0
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              },
+              {
+                "option_index": 1,
+                "target_count": 1,
+                "recorded_decision_indices": [
+                  0
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              },
+              {
+                "option_index": 2,
+                "target_count": 1,
+                "recorded_decision_indices": [
+                  0
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              },
+              {
+                "option_index": 3,
+                "target_count": 1,
+                "recorded_decision_indices": [
+                  0
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              }
+            ],
+            "fitted_decisions": [
+              {
+                "recorded_decision_index": 0,
+                "action": 0,
+                "measured_regret": 0.0,
+                "predicted_regret": [
+                  0.0,
+                  0.0847457627118644,
+                  1.0,
+                  0.0
+                ],
+                "legal_mask": [
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            ],
+            "scope": "offline learner development on finite recorded teacher values; no new physics",
+            "measured_tie_initialization": false,
+            "phase_tick": 15,
+            "global_row_indices": [
+              0
+            ],
+            "global_option_indices": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "selected_global_actions": [
+              0
+            ],
+            "measured_selected_regret": [
+              0.0
+            ]
+          },
+          {
+            "method": "exact zero-regret ridge solution from measured complete ties",
+            "l2": 10.0,
+            "recorded_decisions": 1,
+            "complete_consequential_decisions": 0,
+            "excluded_decision_indices": [],
+            "option_fits": [
+              {
+                "option_index": 0,
+                "target_count": 1,
+                "recorded_decision_indices": [
+                  0
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              },
+              {
+                "option_index": 1,
+                "target_count": 1,
+                "recorded_decision_indices": [
+                  0
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              }
+            ],
+            "fitted_decisions": [
+              {
+                "recorded_decision_index": 0,
+                "action": 0,
+                "measured_regret": 0.0,
+                "predicted_regret": [
+                  0.0,
+                  0.0
+                ],
+                "legal_mask": [
+                  true,
+                  true
+                ]
+              }
+            ],
+            "scope": "exact observed indifference; no scene-independent feasibility guarantee",
+            "measured_tie_initialization": true,
+            "phase_tick": 50,
+            "global_row_indices": [
+              1
+            ],
+            "global_option_indices": [
+              0,
+              4
+            ],
+            "selected_global_actions": [
+              0
+            ],
+            "measured_selected_regret": [
+              0.0
+            ]
+          },
+          {
+            "method": "per-option ridge regression of measured physical regret",
+            "l2": 10.0,
+            "recorded_decisions": 1,
+            "complete_consequential_decisions": 1,
+            "excluded_decision_indices": [],
+            "option_fits": [
+              {
+                "option_index": 0,
+                "target_count": 1,
+                "recorded_decision_indices": [
+                  0
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              },
+              {
+                "option_index": 1,
+                "target_count": 1,
+                "recorded_decision_indices": [
+                  0
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              },
+              {
+                "option_index": 2,
+                "target_count": 1,
+                "recorded_decision_indices": [
+                  0
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              }
+            ],
+            "fitted_decisions": [
+              {
+                "recorded_decision_index": 0,
+                "action": 0,
+                "measured_regret": 0.0,
+                "predicted_regret": [
+                  0.0,
+                  0.0847457627118644,
+                  1.0
+                ],
+                "legal_mask": [
+                  true,
+                  true,
+                  true
+                ]
+              }
+            ],
+            "scope": "offline learner development on finite recorded teacher values; no new physics",
+            "measured_tie_initialization": false,
+            "phase_tick": 70,
+            "global_row_indices": [
+              2
+            ],
+            "global_option_indices": [
+              0,
+              5,
+              6
+            ],
+            "selected_global_actions": [
+              0
+            ],
+            "measured_selected_regret": [
+              0.0
+            ]
+          }
+        ],
+        "excluded_decision_indices": [],
+        "recorded_decisions": 3,
+        "supervised_decisions": 3,
+        "complete_consequential_decisions": 2,
+        "measured_tie_initialization_decisions": 1,
+        "initialized_phase_ticks": [
+          50
+        ],
+        "allow_measured_tie_initialization": true,
+        "scope": "offline fit to complete finite physical schedules; no new physics or generalization evidence"
+      },
+      "comparison": {
+        "maximum_array_differences": {
+          "mean": 0.0,
+          "std": 0.0,
+          "weights": 0.0,
+          "bias": 0.0,
+          "l2": 0.0
+        },
+        "recorded_teacher_packet_choices_checked": 9,
+        "maximum_legal_value_difference": 0.0
+      }
+    },
+    {
+      "checkpoint": 1,
+      "teacher_rows": 6,
+      "sample_weights": [
+        0.06666666666666667,
+        0.06666666666666667,
+        0.06666666666666667,
+        0.26666666666666666,
+        0.26666666666666666,
+        0.26666666666666666
+      ],
+      "fit": {
+        "phase_fits": [
+          {
+            "method": "per-option ridge regression of measured physical regret",
+            "l2": 10.0,
+            "recorded_decisions": 2,
+            "complete_consequential_decisions": 2,
+            "excluded_decision_indices": [],
+            "option_fits": [
+              {
+                "option_index": 0,
+                "target_count": 2,
+                "recorded_decision_indices": [
+                  0,
+                  1
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              },
+              {
+                "option_index": 1,
+                "target_count": 2,
+                "recorded_decision_indices": [
+                  0,
+                  1
+                ],
+                "weighted_mean_squared_error": 0.10459492797980438,
+                "regularized_objective": 0.11840145848560722
+              },
+              {
+                "option_index": 2,
+                "target_count": 2,
+                "recorded_decision_indices": [
+                  0,
+                  1
+                ],
+                "weighted_mean_squared_error": 0.10478464472410591,
+                "regularized_objective": 0.11861621784017917
+              },
+              {
+                "option_index": 3,
+                "target_count": 2,
+                "recorded_decision_indices": [
+                  0,
+                  1
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              }
+            ],
+            "fitted_decisions": [
+              {
+                "recorded_decision_index": 0,
+                "action": 0,
+                "measured_regret": 0.0,
+                "predicted_regret": [
+                  0.0,
+                  0.7315685451795333,
+                  0.3525908720936786,
+                  0.0
+                ],
+                "legal_mask": [
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              },
+              {
+                "recorded_decision_index": 1,
+                "action": 0,
+                "measured_regret": 0.0,
+                "predicted_regret": [
+                  0.0,
+                  0.8382943043830828,
+                  0.2457683658926642,
+                  0.0
+                ],
+                "legal_mask": [
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            ],
+            "scope": "offline learner development on finite recorded teacher values; no new physics",
+            "measured_tie_initialization": false,
+            "phase_tick": 15,
+            "global_row_indices": [
+              0,
+              3
+            ],
+            "global_option_indices": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "selected_global_actions": [
+              0,
+              0
+            ],
+            "measured_selected_regret": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "method": "per-option ridge regression of measured physical regret",
+            "l2": 10.0,
+            "recorded_decisions": 1,
+            "complete_consequential_decisions": 1,
+            "excluded_decision_indices": [],
+            "option_fits": [
+              {
+                "option_index": 0,
+                "target_count": 1,
+                "recorded_decision_indices": [
+                  0
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              },
+              {
+                "option_index": 1,
+                "target_count": 1,
+                "recorded_decision_indices": [
+                  0
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              }
+            ],
+            "fitted_decisions": [
+              {
+                "recorded_decision_index": 0,
+                "action": 1,
+                "measured_regret": 0.0,
+                "predicted_regret": [
+                  0.08391608391608384,
+                  0.0
+                ],
+                "legal_mask": [
+                  true,
+                  true
+                ]
+              }
+            ],
+            "scope": "offline learner development on finite recorded teacher values; no new physics",
+            "measured_tie_initialization": false,
+            "phase_tick": 50,
+            "global_row_indices": [
+              4
+            ],
+            "global_option_indices": [
+              0,
+              4
+            ],
+            "selected_global_actions": [
+              4
+            ],
+            "measured_selected_regret": [
+              0.0
+            ]
+          },
+          {
+            "method": "per-option ridge regression of measured physical regret",
+            "l2": 10.0,
+            "recorded_decisions": 2,
+            "complete_consequential_decisions": 2,
+            "excluded_decision_indices": [],
+            "option_fits": [
+              {
+                "option_index": 0,
+                "target_count": 2,
+                "recorded_decision_indices": [
+                  0,
+                  1
+                ],
+                "weighted_mean_squared_error": 0.1126075402008918,
+                "regularized_objective": 0.13422818791946306
+              },
+              {
+                "option_index": 1,
+                "target_count": 2,
+                "recorded_decision_indices": [
+                  0,
+                  1
+                ],
+                "weighted_mean_squared_error": 0.0943302462584891,
+                "regularized_objective": 0.11244165354011904
+              },
+              {
+                "option_index": 2,
+                "target_count": 2,
+                "recorded_decision_indices": [
+                  0,
+                  1
+                ],
+                "weighted_mean_squared_error": 0.11260754020089184,
+                "regularized_objective": 0.13422818791946312
+              }
+            ],
+            "fitted_decisions": [
+              {
+                "recorded_decision_index": 0,
+                "action": 2,
+                "measured_regret": 1.0,
+                "predicted_regret": [
+                  0.6711409395973154,
+                  0.6990103514958479,
+                  0.32885906040268464
+                ],
+                "legal_mask": [
+                  true,
+                  true,
+                  true
+                ]
+              },
+              {
+                "recorded_decision_index": 1,
+                "action": 2,
+                "measured_regret": 0.0,
+                "predicted_regret": [
+                  0.8322147651006713,
+                  0.8464338528040041,
+                  0.16778523489932884
+                ],
+                "legal_mask": [
+                  true,
+                  true,
+                  true
+                ]
+              }
+            ],
+            "scope": "offline learner development on finite recorded teacher values; no new physics",
+            "measured_tie_initialization": false,
+            "phase_tick": 70,
+            "global_row_indices": [
+              2,
+              5
+            ],
+            "global_option_indices": [
+              0,
+              5,
+              6
+            ],
+            "selected_global_actions": [
+              6,
+              6
+            ],
+            "measured_selected_regret": [
+              1.0,
+              0.0
+            ]
+          }
+        ],
+        "excluded_decision_indices": [
+          1
+        ],
+        "recorded_decisions": 6,
+        "supervised_decisions": 5,
+        "complete_consequential_decisions": 5,
+        "measured_tie_initialization_decisions": 0,
+        "initialized_phase_ticks": [],
+        "allow_measured_tie_initialization": true,
+        "scope": "offline fit to complete finite physical schedules; no new physics or generalization evidence"
+      },
+      "comparison": {
+        "maximum_array_differences": {
+          "mean": 0.0,
+          "std": 0.0,
+          "weights": 8.777083671441751e-18,
+          "bias": 0.0,
+          "l2": 0.0
+        },
+        "recorded_teacher_packet_choices_checked": 9,
+        "maximum_legal_value_difference": 0.0
+      }
+    },
+    {
+      "checkpoint": 2,
+      "teacher_rows": 9,
+      "sample_weights": [
+        0.044444444444444446,
+        0.044444444444444446,
+        0.044444444444444446,
+        0.24444444444444444,
+        0.24444444444444444,
+        0.24444444444444444,
+        0.044444444444444446,
+        0.044444444444444446,
+        0.044444444444444446
+      ],
+      "fit": {
+        "phase_fits": [
+          {
+            "method": "per-option ridge regression of measured physical regret",
+            "l2": 10.0,
+            "recorded_decisions": 3,
+            "complete_consequential_decisions": 3,
+            "excluded_decision_indices": [],
+            "option_fits": [
+              {
+                "option_index": 0,
+                "target_count": 3,
+                "recorded_decision_indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              },
+              {
+                "option_index": 1,
+                "target_count": 3,
+                "recorded_decision_indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "weighted_mean_squared_error": 0.0787566422001033,
+                "regularized_objective": 0.08731317522222116
+              },
+              {
+                "option_index": 2,
+                "target_count": 3,
+                "recorded_decision_indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "weighted_mean_squared_error": 0.07854873554097933,
+                "regularized_objective": 0.08707373489040758
+              },
+              {
+                "option_index": 3,
+                "target_count": 3,
+                "recorded_decision_indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              }
+            ],
+            "fitted_decisions": [
+              {
+                "recorded_decision_index": 0,
+                "action": 0,
+                "measured_regret": 0.0,
+                "predicted_regret": [
+                  0.0,
+                  0.8002287263383988,
+                  0.2855967139117803,
+                  0.0
+                ],
+                "legal_mask": [
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              },
+              {
+                "recorded_decision_index": 1,
+                "action": 0,
+                "measured_regret": 0.0,
+                "predicted_regret": [
+                  0.0,
+                  0.8896530584907092,
+                  0.196331243632951,
+                  0.0
+                ],
+                "legal_mask": [
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              },
+              {
+                "recorded_decision_index": 2,
+                "action": 0,
+                "measured_regret": 0.0,
+                "predicted_regret": [
+                  0.0,
+                  0.8914252146745657,
+                  0.194604756130299,
+                  0.0
+                ],
+                "legal_mask": [
+                  true,
+                  true,
+                  true,
+                  true
+                ]
+              }
+            ],
+            "scope": "offline learner development on finite recorded teacher values; no new physics",
+            "measured_tie_initialization": false,
+            "phase_tick": 15,
+            "global_row_indices": [
+              0,
+              3,
+              6
+            ],
+            "global_option_indices": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "selected_global_actions": [
+              0,
+              0,
+              0
+            ],
+            "measured_selected_regret": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "method": "per-option ridge regression of measured physical regret",
+            "l2": 10.0,
+            "recorded_decisions": 2,
+            "complete_consequential_decisions": 2,
+            "excluded_decision_indices": [],
+            "option_fits": [
+              {
+                "option_index": 0,
+                "target_count": 2,
+                "recorded_decision_indices": [
+                  0,
+                  1
+                ],
+                "weighted_mean_squared_error": 2.4931345340114926e-05,
+                "regularized_objective": 2.6246026953043437e-05
+              },
+              {
+                "option_index": 1,
+                "target_count": 2,
+                "recorded_decision_indices": [
+                  0,
+                  1
+                ],
+                "weighted_mean_squared_error": 0.0,
+                "regularized_objective": 0.0
+              }
+            ],
+            "fitted_decisions": [
+              {
+                "recorded_decision_index": 0,
+                "action": 1,
+                "measured_regret": 0.0,
+                "predicted_regret": [
+                  0.08604516162251472,
+                  0.0
+                ],
+                "legal_mask": [
+                  true,
+                  true
+                ]
+              },
+              {
+                "recorded_decision_index": 1,
+                "action": 1,
+                "measured_regret": 0.0,
+                "predicted_regret": [
+                  0.08677492109947885,
+                  0.0
+                ],
+                "legal_mask": [
+                  true,
+                  true
+                ]
+              }
+            ],
+            "scope": "offline learner development on finite recorded teacher values; no new physics",
+            "measured_tie_initialization": false,
+            "phase_tick": 50,
+            "global_row_indices": [
+              4,
+              7
+            ],
+            "global_option_indices": [
+              0,
+              4
+            ],
+            "selected_global_actions": [
+              4,
+              4
+            ],
+            "measured_selected_regret": [
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "method": "per-option ridge regression of measured physical regret",
+            "l2": 10.0,
+            "recorded_decisions": 3,
+            "complete_consequential_decisions": 3,
+            "excluded_decision_indices": [],
+            "option_fits": [
+              {
+                "option_index": 0,
+                "target_count": 3,
+                "recorded_decision_indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "weighted_mean_squared_error": 0.08925102980427568,
+                "regularized_objective": 0.10150349359389646
+              },
+              {
+                "option_index": 1,
+                "target_count": 3,
+                "recorded_decision_indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "weighted_mean_squared_error": 0.07476472361656648,
+                "regularized_objective": 0.08502849391548466
+              },
+              {
+                "option_index": 2,
+                "target_count": 3,
+                "recorded_decision_indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "weighted_mean_squared_error": 0.0892510298042757,
+                "regularized_objective": 0.10150349359389649
+              }
+            ],
+            "fitted_decisions": [
+              {
+                "recorded_decision_index": 0,
+                "action": 2,
+                "measured_regret": 1.0,
+                "predicted_regret": [
+                  0.7612762019542234,
+                  0.781507032297086,
+                  0.23872379804577665
+                ],
+                "legal_mask": [
+                  true,
+                  true,
+                  true
+                ]
+              },
+              {
+                "recorded_decision_index": 1,
+                "action": 2,
+                "measured_regret": 0.0,
+                "predicted_regret": [
+                  0.8785159331667994,
+                  0.8888111930679182,
+                  0.12148406683320061
+                ],
+                "legal_mask": [
+                  true,
+                  true,
+                  true
+                ]
+              },
+              {
+                "recorded_decision_index": 2,
+                "action": 2,
+                "measured_regret": 0.0,
+                "predicted_regret": [
+                  0.9068861656283798,
+                  0.9147771685412291,
+                  0.09311383437162023
+                ],
+                "legal_mask": [
+                  true,
+                  true,
+                  true
+                ]
+              }
+            ],
+            "scope": "offline learner development on finite recorded teacher values; no new physics",
+            "measured_tie_initialization": false,
+            "phase_tick": 70,
+            "global_row_indices": [
+              2,
+              5,
+              8
+            ],
+            "global_option_indices": [
+              0,
+              5,
+              6
+            ],
+            "selected_global_actions": [
+              6,
+              6,
+              6
+            ],
+            "measured_selected_regret": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "excluded_decision_indices": [
+          1
+        ],
+        "recorded_decisions": 9,
+        "supervised_decisions": 8,
+        "complete_consequential_decisions": 8,
+        "measured_tie_initialization_decisions": 0,
+        "initialized_phase_ticks": [],
+        "allow_measured_tie_initialization": true,
+        "scope": "offline fit to complete finite physical schedules; no new physics or generalization evidence"
+      },
+      "comparison": {
+        "maximum_array_differences": {
+          "mean": 0.0,
+          "std": 0.0,
+          "weights": 3.122502256758253e-17,
+          "bias": 0.0,
+          "l2": 0.0
+        },
+        "recorded_teacher_packet_choices_checked": 9,
+        "maximum_legal_value_difference": 1.1102230246251565e-16
+      }
+    }
+  ],
+  "inspection": {
+    "schema": "motion2scene_portable_schedule_baseline_inspection_v1",
+    "dataset_manifest_sha256": "sha256:8ea9f48cecd0f20aeb79de093772a2af54af3f5a1ed3fd663e11d9b640788987",
+    "files_verified": 1243,
+    "episodes": 23,
+    "sensor_rows": 6854,
+    "teacher_groups": 3,
+    "teacher_decisions": 9,
+    "declared_physics_steps": 27416,
+    "option_ids": [
+      "neutral",
+      "short_e015_r265",
+      "sustained_e015_r255",
+      "prior_splice_e015_r265",
+      "prior_splice_e050_r265",
+      "short_e070_r265",
+      "sustained_e070_r255"
+    ],
+    "phase_ticks": [
+      15,
+      50,
+      70
+    ],
+    "feature_dimension": 114,
+    "all_inventory_hashes_valid": true,
+    "wait_continuations_recomputed": true,
+    "no_external_source_assets_opened": true,
+    "motion_assets_independently_qualified": false,
+    "physical_label_scope": "Archived physical assessments; hashes and recorded continuations checked. Native contact audit remains the separate exporter audit.",
+    "new_physics_steps": 0
+  },
+  "new_physics_steps": 0
+}

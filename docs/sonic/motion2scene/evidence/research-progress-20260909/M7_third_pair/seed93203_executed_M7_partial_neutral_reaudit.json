@@ -1,0 +1,155 @@
+{
+  "assessment": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_analytic_contrast/controller/attempts/round007_teacher_forced_neutral/assessment.json",
+    "sha256": "sha256:9fbf8c2a080b775fb82f8ec22a8531db51cff22050dc7b0dc607fc643bfe0786"
+  },
+  "attempt": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_analytic_contrast/round_007/teachers/rollouts/forced_neutral/attempt.json",
+    "sha256": "sha256:c36f2cdc211c3823809e1a453352a5c4cb06ce3f441e0bb410d0910c5c98714b"
+  },
+  "budget": 7,
+  "collector_source": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_collect_timed_schedules.py",
+    "sha256": "sha256:aff903769ae19189d2ebbaea0c579d508d9f2cd2c3240864f2c6245bbdd3b195"
+  },
+  "contact_audit": {
+    "complete_synchronized_streams": true,
+    "external_contacts": [
+      {
+        "allowed_foot_floor_support": false,
+        "body": "torso_link",
+        "counterpart": "/World/ground/terrain/CounterfactualBeam",
+        "maximum_force_n": 701.912109375
+      },
+      {
+        "allowed_foot_floor_support": true,
+        "body": "left_ankle_roll_link",
+        "counterpart": "/World/ground/terrain/Structure/Floor",
+        "maximum_force_n": 808.6767578125
+      },
+      {
+        "allowed_foot_floor_support": true,
+        "body": "right_ankle_roll_link",
+        "counterpart": "/World/ground/terrain/Structure/Floor",
+        "maximum_force_n": 502.2004089355469
+      }
+    ],
+    "maximum_pair_sum_net_residual_n": 0.0,
+    "maximum_undesired_environment_force_n": 701.912109375,
+    "no_undesired_measured_contact": false,
+    "normal_force_threshold_n": 1.0,
+    "normal_forces_only": true,
+    "physics_steps_with_undesired_environment_contact": 101,
+    "recorded_physics_steps": 756,
+    "schema": "motion2scene_environment_contact_audit_v1",
+    "scope": "Every robot body against exact robot/floor/four-wall/beam paths; self-contact is retained separately, not classified as an environment collision.",
+    "self_contacts": [
+      {
+        "body_pair": [
+          "left_hip_roll_link",
+          "left_wrist_yaw_link"
+        ],
+        "maximum_equal_opposite_residual_n": 0.0,
+        "maximum_force_n": 54.5612678527832,
+        "physics_steps_above_threshold": 207,
+        "present_in_declared_neutral_pairs": true
+      },
+      {
+        "body_pair": [
+          "right_hip_roll_link",
+          "right_wrist_yaw_link"
+        ],
+        "maximum_equal_opposite_residual_n": 0.0,
+        "maximum_force_n": 62.991737365722656,
+        "physics_steps_above_threshold": 222,
+        "present_in_declared_neutral_pairs": true
+      }
+    ],
+    "unexpected_self_contact_pairs": []
+  },
+  "interpretation": "Independent recomputation from hash-checked raw partial capture, sensor and synchronized contact streams reproduces the original known task failure and actual measured cost. Later uncaptured fall, passage and recovery outcomes remain unknown. This does not retry the episode, re-audit unrelated captures or validate the complete native inventory.",
+  "manifest": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_analytic_contrast/round_007/teachers/manifest.json",
+    "sha256": "sha256:dc9d5fb8a55df243b523c022c0ea0b8ce7ed71f6e31dae41d33c187c532ce948"
+  },
+  "measured_physics_steps": 756,
+  "new_fits": 0,
+  "new_physical_executions": 0,
+  "outcome": {
+    "assigned_slots": 1,
+    "classification": "verified_task_failure",
+    "complete_measurement_admitted": false,
+    "complete_pass": false,
+    "exit_status": 1,
+    "measurement_diagnostics": [],
+    "measurement_status": "partial",
+    "phase_availability": [
+      {
+        "packet_index": 14,
+        "reason": null,
+        "sensor_preaction_available": true,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 15
+      },
+      {
+        "packet_index": 49,
+        "reason": null,
+        "sensor_preaction_available": true,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 50
+      },
+      {
+        "packet_index": 69,
+        "reason": null,
+        "sensor_preaction_available": true,
+        "teacher_scope": "requires separately complete matched future schedule outcomes",
+        "teacher_target_available": false,
+        "tick": 70
+      }
+    ],
+    "physical_events": [
+      {
+        "kind": "verified_environment_contact",
+        "maximum_force_n": 701.912109375
+      }
+    ],
+    "physical_rows_recorded": 189,
+    "physics_steps_recorded": 756,
+    "schema": "motion2scene_timed_attempt_outcome_v1",
+    "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+    "sensor_packets_recorded": 188,
+    "task_outcome": "failure"
+  },
+  "raw_artifacts": {
+    "aborted_raw_recording": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_analytic_contrast/round_007/teachers/rollouts/forced_neutral/trajectories/aborted_raw_recording.pkl",
+      "sha256": "sha256:110dfa15fd22d28c466911818a7aea13a7c7a9a8183cd4b98a6f129e770369a5"
+    },
+    "all_body_contacts": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_analytic_contrast/round_007/teachers/rollouts/forced_neutral/trajectories/aborted_all_body_contacts.npz",
+      "sha256": "sha256:d2f5162eec09d96b1280004afa6ba06c3c19912ae0f625026b5e0c53c8f888a4"
+    },
+    "environment_mapping": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_analytic_contrast/round_007/teachers/rollouts/forced_neutral/trajectories/aborted_environment_contact_mapping.json",
+      "sha256": "sha256:9b671321fdbfa35b996f1f19efc169274e808cc70c704fefbe81ce2a21db6c2b"
+    },
+    "environment_pairs": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_analytic_contrast/round_007/teachers/rollouts/forced_neutral/trajectories/aborted_environment_pair_contacts.npz",
+      "sha256": "sha256:ec66426c93bc6731026de2adfd346949a1d95ac4363474ed9f84f258aa51c4d9"
+    },
+    "sensor": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93203_analytic_contrast/round_007/teachers/rollouts/forced_neutral/trajectories/aborted_interface.json",
+      "sha256": "sha256:5ae1919236adb97d5f33562032c68a4729afe03830a6e95a0fecf344854238a3"
+    }
+  },
+  "recomputed_row_equals_original": true,
+  "run_id": "seed93203_analytic_contrast",
+  "schema": "motion2scene_bounded_partial_failure_reaudit_v1",
+  "script": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/audit_seed93203_M7_partial_neutral.py",
+    "sha256": "sha256:fc5600c95f73f0191a04dbbeef13e06a5515767da1838fbc43861a0a02cf09c6"
+  },
+  "utc": "2026-09-10T10:51:28.065760+00:00"
+}

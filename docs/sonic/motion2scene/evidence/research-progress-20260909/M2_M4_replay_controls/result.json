@@ -1,0 +1,947 @@
+{
+  "checkpoints": [
+    2,
+    4
+  ],
+  "implementation": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_summarize_checkpoint_controls.py",
+    "sha256": "sha256:7bc44af163baad0db7557a1f095c158c3898bb7f8068b014b8fbabb98edc0d8c"
+  },
+  "models_rechecked": 42,
+  "new_model_fits": 0,
+  "new_physics_steps": 0,
+  "recorded_context_choices_rechecked": 252,
+  "rows": [
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": false,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "uniform",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93201,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": false,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "coverage_only",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93201,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "uniform_coverage",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93201,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_gated",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93201,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_ungated",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93201,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "current_error",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93201,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_current_error",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93201,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": false,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "uniform",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93202,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": false,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "coverage_only",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93202,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "uniform_coverage",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93202,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_gated",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93202,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_ungated",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93202,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "current_error",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93202,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_current_error",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93202,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": false,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "uniform",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93203,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": false,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "coverage_only",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93203,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "uniform_coverage",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93203,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_gated",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93203,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_ungated",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93203,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "current_error",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93203,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 2,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_current_error",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93203,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": false,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "uniform",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93201,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "coverage_only",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93201,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "uniform_coverage",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93201,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_gated",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93201,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_ungated",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93201,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "current_error",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93201,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_current_error",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93201,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": false,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "uniform",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93202,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "coverage_only",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93202,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "uniform_coverage",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93202,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_gated",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93202,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_ungated",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93202,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "current_error",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93202,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_current_error",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93202,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265",
+        "prior_splice_e015_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": false,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "uniform",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93203,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": false,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "coverage_only",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93203,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "uniform_coverage",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93203,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_gated",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93203,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_ungated",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93203,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "current_error",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93203,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    },
+    {
+      "checkpoint": 4,
+      "contexts": 6,
+      "final_weights_differ_from_uniform": true,
+      "mean_recorded_time_difference_vs_uniform_s": 0.0,
+      "method": "historical_current_error",
+      "mutually_successful_recorded_contexts": 5,
+      "passing_branch_difference_vs_uniform": 0,
+      "passing_recorded_branches": 5,
+      "seed": 93203,
+      "selected_schedule_changes_vs_uniform": 0,
+      "selected_schedules": [
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265",
+        "prior_splice_e050_r265"
+      ]
+    }
+  ],
+  "schema": "motion2scene_verified_checkpoint_control_readouts_v1",
+  "scope": "Saved-policy decisions and weight recipes rechecked using archived physical/residual signals; not a new trajectory audit, fitting run, physical gap, or closed-loop policy evaluation; six reused development contexts and three training corpora per checkpoint; no independent-episode inference",
+  "sources": [
+    {
+      "checkpoint": 2,
+      "eligible_nonempty_phase_cue_rows": 6,
+      "historical_gated_ungated_weights_identical": true,
+      "nonempty_phase_cue_rows": 6,
+      "positive_historical_phase_gaps": 3,
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-checkpoint-replay-learning-curves-20260909-v1/seed93201_observation_curriculum_M2/result.json",
+        "sha256": "sha256:99b5733a7db59bb2bce27e4a9aeb7cf28e2941bfa3be0cd87c2ba5ac85a9809a"
+      },
+      "seed": 93201,
+      "supervised_phase_rows": 9
+    },
+    {
+      "checkpoint": 2,
+      "eligible_nonempty_phase_cue_rows": 6,
+      "historical_gated_ungated_weights_identical": true,
+      "nonempty_phase_cue_rows": 6,
+      "positive_historical_phase_gaps": 3,
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-checkpoint-replay-learning-curves-20260909-v1/seed93202_observation_curriculum_M2/result.json",
+        "sha256": "sha256:eb3ea009ae2dcec90a4fc3c85685a48270f8f4011278f762003a56eccc65006d"
+      },
+      "seed": 93202,
+      "supervised_phase_rows": 9
+    },
+    {
+      "checkpoint": 2,
+      "eligible_nonempty_phase_cue_rows": 6,
+      "historical_gated_ungated_weights_identical": true,
+      "nonempty_phase_cue_rows": 6,
+      "positive_historical_phase_gaps": 3,
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-checkpoint-replay-learning-curves-20260909-v1/seed93203_observation_curriculum_M2/result.json",
+        "sha256": "sha256:afe00140353ecf8da06742889795c55893e780e79d2f86cd4738c514b7972409"
+      },
+      "seed": 93203,
+      "supervised_phase_rows": 9
+    },
+    {
+      "checkpoint": 4,
+      "eligible_nonempty_phase_cue_rows": 12,
+      "historical_gated_ungated_weights_identical": true,
+      "nonempty_phase_cue_rows": 12,
+      "positive_historical_phase_gaps": 3,
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-checkpoint-replay-learning-curves-20260909-v1/seed93201_observation_curriculum_M4/result.json",
+        "sha256": "sha256:f521e1f39bdd761e7cbbc247afe8d9ff82fb25a3e0734675b22f6b904c1659b8"
+      },
+      "seed": 93201,
+      "supervised_phase_rows": 13
+    },
+    {
+      "checkpoint": 4,
+      "eligible_nonempty_phase_cue_rows": 12,
+      "historical_gated_ungated_weights_identical": true,
+      "nonempty_phase_cue_rows": 12,
+      "positive_historical_phase_gaps": 3,
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-checkpoint-replay-learning-curves-20260909-v1/seed93202_observation_curriculum_M4/result.json",
+        "sha256": "sha256:9738627d8089d8521384fa639e7e116d9674110f06d36338910d2ebdd769ed3c"
+      },
+      "seed": 93202,
+      "supervised_phase_rows": 14
+    },
+    {
+      "checkpoint": 4,
+      "eligible_nonempty_phase_cue_rows": 12,
+      "historical_gated_ungated_weights_identical": true,
+      "nonempty_phase_cue_rows": 12,
+      "positive_historical_phase_gaps": 3,
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-checkpoint-replay-learning-curves-20260909-v1/seed93203_observation_curriculum_M4/result.json",
+        "sha256": "sha256:666268b8aed16cd3d21eeecfb461f4ce226fb4ce2494c4993ea5610dc5bfba96"
+      },
+      "seed": 93203,
+      "supervised_phase_rows": 14
+    }
+  ],
+  "study": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-checkpoint-replay-learning-curves-20260909-v1/experiment.json",
+    "sha256": "sha256:763e59d15d607f923ea11ce5b7fd03e161baec06cdbd43d92c81fb9f9addb5bb"
+  },
+  "validation_teachers": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-six-context-development-policy-v1/teachers.json",
+    "sha256": "sha256:0ff4946625386add500821114d8817ef2330b290a56bd0e9443b7c657b779409"
+  },
+  "weight_recipes_rechecked": 126
+}

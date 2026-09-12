@@ -1,0 +1,714 @@
+"""Bend one nominal motion locally, instead of pairing two independently generated ones.
+
+Every family so far pairs two separately generated clips: a walk and a crouch that were never
+the same motion. A reviewer can reasonably ask whether the shelf separated the *behaviours* or
+merely two different journeys that happened to be labelled differently, and the honest answer
+is that the construction cannot tell them apart.
+
+This operator removes the question. It starts from a nominal motion that has already been
+tracked and accepted, and changes only the degrees of freedom needed to clear one obstacle,
+over only the stretch of route where that obstacle is. Everything else is held:
+
+* root XY and yaw, so both motions walk the same line
+* duration and frame count, so gait phase stays aligned
+* start and goal
+* waist pitch, so the lowering is knee-driven rather than a fold
+* stance-foot height, so contacts survive
+
+The adapted motion is therefore the nominal motion plus a local deviation, and the two differ
+by exactly the adaptation under test.
+
+**Local, not whole-route.** A clip crouched from frame zero cannot demonstrate a decision made
+from what the robot sees, because the obstacle is not visible when the crouch begins -- such a
+pair can only support map-conditioned selection. Centring the adaptation on the obstacle
+station in route-progress coordinates makes the onset late enough to be a response.
+
+**Clearance is measured on collision-capsule surfaces**, never on a joint position or the root
+height. The G1's own half-width runs from 0.273 m with arms tucked to 0.664 m at peak arm
+swing, so a joint-centre proxy is wrong in both directions depending on the pose.
+"""
+
+from __future__ import annotations
+
+from dataclasses import dataclass
+from pathlib import Path
+
+import numpy as np
+
+from .motion_prefilter import load_joint_limits
+from .self_intersection import DEFAULT_G1_MJCF
+
+#: Leg joints the crouch drives, through the squat coupling.
+CROUCH_JOINTS = ("hip_pitch", "knee", "ankle_pitch")
+
+#: Kept for reference, and deliberately NOT enforced. The suggestive reading of the rejected
+#: tucks -- that they press the wrist into the hip, since two motions shared the self-contact
+#: triple ``left_hip_roll_link``, ``left_wrist_yaw_link``, ``pelvis`` -- did not survive
+#: measurement. See docs/tuck_trackability_is_not_predictable.md.
+UNENFORCED_WRIST_HIP_CLEARANCE_M = 0.04
+
+#: Fraction of waist_pitch's range the adapted clip may end at. The waist is the most
+#: efficient lever on the silhouette -- 109 mm per radian against the squat's 64 at the same
+#: excursion, because the capsule that sets the peak is torso_link and there is no neck joint
+#: to pitch instead -- and it was excluded from earlier versions for a reason that does not
+#: survive inspection: the *generated* crouches rode its limit, holding +0.521 rad against a
+#: +0.520 bound on every frame. Riding a limit is the problem, not using the joint. The bound
+#: here is therefore on the resulting *value*, not on the change: a clip already at +0.294 rad
+#: gets only the headroom that remains.
+#:
+#: Off by default, for two reasons. The guidance this operator was built to asks for a crouch that
+#: is knee-driven and holds torso pitch near nominal, penalising waist use heavily; and the crouch
+#: that the matched overhead 2x2 verified moves the waist by exactly 0.000 rad. Enabling this by
+#: default meant the operator in the repository no longer reproduced the clip physics had checked,
+#: which is the more expensive of the two problems. Measured contribution when enabled: 12.9 mm of
+#: a 31.7 mm drop, 41%. Pass ``waist_use_fraction`` explicitly to spend it.
+WAIST_USE_FRACTION = 0.0
+#: The value used when a caller opts in without naming one.
+WAIST_USE_FRACTION_WHEN_ENABLED = 0.85
+
+#: Fraction of each joint's half-range the adapted motion may occupy. Leaving headroom is not
+#: cosmetic -- a reference that rides a limit is what the saturation screen rejects, and a
+#: reference that sits exactly at one is what clamping produces.
+DEFAULT_RANGE_KEEP = 0.94
+
+#: Half-width of the adaptation window, in route progress. 0.18 means the robot is fully
+#: adapted across about a third of its route, with ramps either side.
+DEFAULT_WINDOW = 0.18
+
+#: Fraction of the window spent ramping in and out. Abrupt onsets are not trackable.
+DEFAULT_RAMP = 0.45
+
+#: Largest change any single joint may be given, in radians. Without a cap the bisection will do
+#: anything to reach its geometric target: on one motion the arm tuck applied 1.300 rad -- 74
+#: degrees of whole-arm rotation -- to hit a 100 mm width reduction, destabilised the robot and
+#: put it into a wall at 114 N. The motion that worked used 0.282 rad. A geometric objective with
+#: no bound on the means is not an operator, it is a search, and it will find something unusable.
+#:
+#: This bound is per operator, because one number derived from the tuck's failure was applied to
+#: both and silently forbade a crouch that works. The crouch verified by the matched overhead 2x2
+#: moves its knees 0.994 rad, and a strength sweep put the crouch's trackability boundary between
+#: 1.05 and 1.31 rad; a 0.40 cap would have prevented that family from existing. The two operators
+#: move different masses against different support, so they do not share a limit.
+MAX_TUCK_EXCURSION_RAD = 0.40
+#: Set below every crouch excursion SONIC has been observed to hold, with margin.
+#:
+#: Measured across three nominals, drift magnitude rises monotonically with knee excursion and the
+#: boundary sits between 0.994 and 1.000 rad -- a 6 mrad gap:
+#:
+#:     0.929 rad  accepted  0.015 m/s drift
+#:     0.936 rad  accepted  0.025 m/s
+#:     0.994 rad  accepted  0.100 m/s
+#:     1.000 rad  REJECTED  0.225 m/s, pure reference drift with zero contact
+#:
+#: The previous value of 1.00 was therefore the worst possible choice: the one clip that failed
+#: failed *at* the cap, because the cap is what it was pushed to when its target drop was out of
+#: reach. Capping lower makes such a clip under-deliver its target -- reported honestly through
+#: ``excursion_capped`` -- rather than come back untrackable, which is the right failure mode for an
+#: operator whose output costs a rollout to grade.
+MAX_CROUCH_EXCURSION_RAD = 0.98
+#: Retained as the tuck's value so existing callers keep the bound they were written against.
+MAX_JOINT_EXCURSION_RAD = MAX_TUCK_EXCURSION_RAD
+
+
+#: Fraction of a commanded adaptation that reaches the surface an obstacle binds against, measured
+#: per operator and band on the position-aligned scorer. These are *not* the joint-space survival
+#: ratios: an edit can survive in the joints and still arrive short at the binding surface, because
+#: the operators act distally while several obstacles bind proximally. Chest is the shared upper-arm
+#: capsule, waist the wrist, overhead the torso.
+#:
+#: That realisation falls short of prediction was already known -- ``MIN_WINDOW_M`` records
+#: "23-82% of the predicted one". What is new is that the shortfall is reproducible per band, so it
+#: can be divided out instead of absorbed as a gate margin.
+DELIVERY_RATIO = {
+    ("local_crouch", "overhead"): 0.455,   # 43% and 48% on two nominals
+    ("local_arm_tuck", "chest"): 0.70,
+    ("local_arm_tuck", "waist"): 0.30,
+}
+
+#: Multiplier on the corrected target. The ratios come from few families and vary by band, so a
+#: correction that only just reaches the obstacle would land on the wrong side of its own error bar
+#: half the time. Overshooting costs a slightly larger edit; undershooting costs four rollouts.
+DELIVERY_SAFETY = 1.2
+
+#: Used where an operator and band have no measured ratio yet. Deliberately the worst measured
+#: value rather than the mean: an unmeasured combination should be assumed to deliver as poorly as
+#: the worst one that has been measured, not typically.
+DELIVERY_RATIO_UNMEASURED = 0.30
+
+
+def delivery_corrected_target(needed_m: float, operator: str, band: str) -> tuple[float, float]:
+    """Scale a required clearance up by what the operator actually delivers.
+
+    The minimum-edit rule asks for the smallest adaptation that clears the obstacle *as predicted*.
+    Since prediction over-states what arrives at the binding surface, the minimum computed against
+    it is short by the same factor, and reliably so: the wall families of the 2026-08-19 batch each
+    asked for roughly a third to a half of what they needed and struck the obstacle they were built
+    to clear. Dividing by the measured ratio is what the rule was always meant to mean.
+
+    Returns the corrected target and the ratio used, so a caller can record which one applied.
+    """
+    ratio = DELIVERY_RATIO.get((operator, band), DELIVERY_RATIO_UNMEASURED)
+    return needed_m / ratio * DELIVERY_SAFETY, ratio
+
+
+@dataclass(frozen=True)
+class LocalCrouchReport:
+    """What the operator achieved, and what it left alone."""
+
+    frames: int
+    station_fraction: float
+    #: Metres the silhouette came down by **at its least**, inside the fully-active window.
+    #: The minimum rather than the maximum, because a shelf must clear the robot on every
+    #: frame it passes under; the peak drop would place a shelf the robot clears at one
+    #: instant and hits at the rest.
+    silhouette_drop_m: float
+    nominal_silhouette_m: float
+    adapted_silhouette_m: float
+    #: Largest change in waist pitch, in radians. Should be ~0: the crouch is knee-driven.
+    waist_change_rad: float
+    #: Largest movement of the lower foot's sole, in metres. Should be ~0: contacts are held.
+    foot_height_shift_m: float
+    #: Fraction of the clip where the adaptation is active at all.
+    active_fraction: float
+    root_path_preserved: bool
+    scale_applied: float
+    #: Largest change given to any joint, in radians.
+    max_joint_change_rad: float = 0.0
+    #: True when the excursion cap stopped the search short of the target. The clip achieves
+    #: less than was asked for, which is preferable to reaching the target through a motion the
+    #: robot cannot hold on to its route.
+    excursion_capped: bool = False
+
+
+def active_frames(
+    nominal_qpos: np.ndarray,
+    adapted_qpos: np.ndarray,
+    *,
+    threshold: float = 0.5,
+    trim: float = 0.2,
+) -> np.ndarray:
+    """Frames where a local adaptation is fully active, as a boolean mask.
+
+    Any window measured over a *fixed* slice of route progress takes its maximum from the ramp
+    edges, where the adaptation has barely begun and the adapted clip still looks like the nominal.
+    That reported a 14 mm window for a 180 mm adaptation once, and a 2.4 mm window for a 95 mm one
+    later, in a different script -- the same mistake twice because the fix lived in a script instead
+    of here.
+
+    The mask is found from the clips themselves: frames whose joint departure exceeds ``threshold``
+    of its peak, with ``trim`` of them dropped from each end so the ramp is excluded.
+    """
+    nominal = np.asarray(nominal_qpos, dtype=np.float64)
+    adapted = np.asarray(adapted_qpos, dtype=np.float64)
+    count = min(len(nominal), len(adapted))
+    departure = np.abs(adapted[:count, 7:] - nominal[:count, 7:]).max(axis=1)
+    if not departure.any():
+        raise ValueError("the two clips are identical, so no adaptation is active anywhere")
+    active = np.flatnonzero(departure > threshold * departure.max())
+    margin = int(len(active) * trim)
+    kept = active[margin : len(active) - margin] if margin else active
+    mask = np.zeros(count, dtype=bool)
+    mask[kept] = True
+    return mask
+
+
+def route_progress(root_xy: np.ndarray) -> np.ndarray:
+    """Cumulative path length, normalised to [0, 1].
+
+    Progress along the route rather than frame index: two motions of the same duration can
+    reach the obstacle at different frames, and an obstacle sits at a place, not a time.
+    """
+    steps = np.linalg.norm(np.diff(root_xy, axis=0), axis=1)
+    cumulative = np.concatenate([[0.0], np.cumsum(steps)])
+    total = cumulative[-1]
+    return cumulative / total if total > 1e-9 else np.linspace(0.0, 1.0, len(root_xy))
+
+
+def adaptation_profile(
+    progress: np.ndarray,
+    station: float,
+    *,
+    window: float = DEFAULT_WINDOW,
+    ramp: float = DEFAULT_RAMP,
+) -> np.ndarray:
+    """A smooth 0 -> 1 -> 0 profile centred on ``station`` in route progress."""
+    distance = np.abs(progress - station)
+    inner = window * (1.0 - ramp)
+    alpha = np.clip((window - distance) / max(window - inner, 1e-9), 0.0, 1.0)
+    # Smoothstep, so onset and recovery have no velocity discontinuity for a tracker to fight.
+    return alpha * alpha * (3.0 - 2.0 * alpha)
+
+
+def _silhouette(qpos: np.ndarray, mjcf_path) -> np.ndarray:
+    """Per-frame top of the collision geometry, in world z."""
+    from .reference_payload import payload_from_reference
+    from .swept_volume import G1_COLLISION_CAPSULES, body_capsules_world
+
+    payload = payload_from_reference(qpos, mjcf_path=mjcf_path)
+    starts, ends, radii, _ = body_capsules_world(
+        np.asarray(payload["body_pos_w"], dtype=np.float64),
+        np.asarray(payload["body_quat_w"], dtype=np.float64),
+        list(payload["body_names"]),
+        capsules=G1_COLLISION_CAPSULES,
+    )
+    return (np.maximum(starts[:, :, 2], ends[:, :, 2]) + radii[None, :]).max(axis=1)
+
+
+def _sole_height(qpos: np.ndarray, mjcf_path) -> np.ndarray:
+    """Per-frame lowest point of either foot's collision geometry."""
+    from .reference_payload import payload_from_reference
+    from .swept_volume import G1_COLLISION_CAPSULES, body_capsules_world
+
+    payload = payload_from_reference(qpos, mjcf_path=mjcf_path)
+    starts, ends, radii, owners = body_capsules_world(
+        np.asarray(payload["body_pos_w"], dtype=np.float64),
+        np.asarray(payload["body_quat_w"], dtype=np.float64),
+        list(payload["body_names"]),
+        capsules=G1_COLLISION_CAPSULES,
+    )
+    columns = [i for i, owner in enumerate(owners) if "ankle" in owner]
+    lows = np.minimum(starts[:, columns, 2], ends[:, columns, 2]) - radii[None, columns]
+    return lows.min(axis=1)
+
+
+def local_crouch(
+    nominal_qpos: np.ndarray,
+    station_fraction: float,
+    *,
+    target_drop_m: float = 0.15,
+    window: float = DEFAULT_WINDOW,
+    ramp: float = DEFAULT_RAMP,
+    range_keep: float = DEFAULT_RANGE_KEEP,
+    max_excursion: float = MAX_CROUCH_EXCURSION_RAD,
+    waist_use_fraction: float = WAIST_USE_FRACTION,
+    mjcf_path: str | Path = DEFAULT_G1_MJCF,
+    max_scale: float = 3.0,
+) -> tuple[np.ndarray, LocalCrouchReport]:
+    """Crouch a nominal motion locally, around one station, by about ``target_drop_m``.
+
+    Returns the adapted clip and a report. The scale needed to reach the target drop is found
+    by bisection on the measured capsule silhouette rather than assumed from joint angles,
+    because the relationship between leg flexion and how low the *body* actually gets depends
+    on the pose and is not worth modelling.
+    """
+    qpos = np.asarray(nominal_qpos, dtype=np.float64)
+    if qpos.ndim != 2 or qpos.shape[1] < 8:
+        raise ValueError(f"expected (T, 7+J) reference qpos, got {qpos.shape}")
+    if not 0.0 <= station_fraction <= 1.0:
+        raise ValueError(f"station_fraction must be in [0, 1]; got {station_fraction}")
+    if target_drop_m <= 0.0:
+        raise ValueError(f"target_drop_m must be positive; got {target_drop_m}")
+
+    names, limits = load_joint_limits(mjcf_path)
+    count = min(qpos.shape[1] - 7, limits.shape[0])
+    legs = [i for i, name in enumerate(names[:count]) if any(key in name for key in CROUCH_JOINTS)]
+    if not legs:
+        raise ValueError("no crouch joints found in the model")
+
+    alpha = adaptation_profile(
+        route_progress(qpos[:, :2]), station_fraction, window=window, ramp=ramp
+    )
+    nominal_soles = _sole_height(qpos, mjcf_path)
+    nominal_silhouette = _silhouette(qpos, mjcf_path)
+    lower, upper = limits[:count, 0], limits[:count, 1]
+    centre = 0.5 * (lower + upper)
+    half = 0.5 * (upper - lower) * range_keep
+
+    # A squat is a *coupled* motion, and that has to be built in rather than discovered.
+    # Moving any single leg joint alone raises the body rather than lowering it -- measured on
+    # a real walk, every one of the six gave a negative drop -- because flexing one joint
+    # tilts the body or lifts a foot and the root compensation then puts it back. Only the
+    # hip/knee/ankle triple moving together shortens the leg while keeping the torso upright
+    # and the sole flat, which is the standard relationship below.
+    #
+    # Scaling the existing angles instead of adding to them was the earlier mistake: it ties
+    # the depth to gait phase, so the drop oscillated between 0.033 m and 0.157 m inside a
+    # window where the profile was fully active, and the obstacle sat at an extended moment.
+    waist_index = names.index("waist_pitch_joint") if "waist_pitch_joint" in names else None
+    waist_headroom = 0.0
+    if waist_index is not None and waist_index < count and waist_use_fraction > 0.0:
+        ceiling_value = waist_use_fraction * upper[waist_index]
+        waist_headroom = max(0.0, ceiling_value - float(qpos[:, 7 + waist_index].max()))
+
+    coupling = {"hip_pitch": -1.0, "knee": +2.0, "ankle_pitch": -1.0}
+    leg_gain = np.zeros(len(legs))
+    for position, joint in enumerate(legs):
+        for key, gain in coupling.items():
+            if key in names[joint]:
+                leg_gain[position] = gain
+                break
+
+    def build(scale: float) -> np.ndarray:
+        out = qpos.copy()
+        # One parameter, the squat angle, modulated by the local profile.
+        out[:, 7 + np.asarray(legs)] = (
+            qpos[:, 7 + np.asarray(legs)] + alpha[:, None] * scale * leg_gain[None, :]
+        )
+        # Spend the waist's remaining headroom first, since it buys more silhouette per
+        # radian than the legs do, and it costs the legs nothing.
+        if waist_index is not None and waist_headroom > 0.0:
+            out[:, 7 + waist_index] = qpos[:, 7 + waist_index] + alpha * min(
+                waist_headroom, scale * 2.0
+            )
+        out[:, 7 : 7 + count] = np.clip(out[:, 7 : 7 + count], centre - half, centre + half)
+        # The root follows the legs, per frame, so the feet stay where the nominal put them.
+        out[:, 2] += nominal_soles - _sole_height(out, mjcf_path)
+        return out
+
+    # Bisect on the *smallest* drop inside the fully-active window, not the largest anywhere.
+    # A shelf has to clear the robot on every frame it passes under, so the binding number is
+    # the minimum. The same squat angle still yields different silhouette drops across the
+    # gait -- 0.102 to 0.200 m at one setting -- and targeting the peak would place a shelf the
+    # robot clears at its lowest instant and hits at every other.
+    core = alpha > 0.9
+    if not core.any():
+        core = alpha >= alpha.max() - 1e-9
+
+    # Bound the search by joint excursion as well as by the geometric target. Unbounded, the
+    # bisection asked the knee to move 1.629 rad -- 93 degrees beyond its gait -- to reach a
+    # 150 mm drop, and the resulting clip lost 0.71 m of forward progress in execution. The
+    # knee carries the largest coupling gain, so it sets the ceiling.
+    ceiling = max_excursion / max(float(np.abs(leg_gain).max()), 1e-9)
+    low, high = 0.0, min(max_scale, ceiling)
+    for _ in range(12):
+        middle = 0.5 * (low + high)
+        drop = float((nominal_silhouette - _silhouette(build(middle), mjcf_path))[core].min())
+        if drop < target_drop_m:
+            low = middle
+        else:
+            high = middle
+    scale = 0.5 * (low + high)
+    adapted = build(scale)
+    adapted_silhouette = _silhouette(adapted, mjcf_path)
+    waist_index = names.index("waist_pitch_joint") if "waist_pitch_joint" in names else None
+    waist_change = (
+        float(np.abs(adapted[:, 7 + waist_index] - qpos[:, 7 + waist_index]).max())
+        if waist_index is not None and waist_index < count
+        else 0.0
+    )
+
+    return adapted, LocalCrouchReport(
+        frames=len(qpos),
+        station_fraction=station_fraction,
+        silhouette_drop_m=float((nominal_silhouette - adapted_silhouette)[core].min()),
+        nominal_silhouette_m=float(nominal_silhouette.min()),
+        adapted_silhouette_m=float(adapted_silhouette.min()),
+        waist_change_rad=waist_change,
+        foot_height_shift_m=float(np.abs(_sole_height(adapted, mjcf_path) - nominal_soles).max()),
+        active_fraction=float((alpha > 0.01).mean()),
+        root_path_preserved=bool(
+            np.array_equal(adapted[:, :2], qpos[:, :2])
+            and np.array_equal(adapted[:, 3:7], qpos[:, 3:7])
+        ),
+        scale_applied=float(scale),
+        max_joint_change_rad=float(np.abs(adapted[:, 7:] - qpos[:, 7:]).max()),
+        excursion_capped=bool(np.abs(adapted[:, 7:] - qpos[:, 7:]).max() >= max_excursion * 0.999),
+    )
+
+
+#: Joints the arm tuck may use. Upper body only: the legs, the root and the gait are not
+#: touched at all, which is why this operator is easier than the crouch and why its output is
+#: far more likely to remain trackable -- nothing about the support or contact schedule moves.
+TUCK_JOINTS = ("shoulder", "elbow", "wrist")
+
+
+@dataclass(frozen=True)
+class LocalTuckReport:
+    """What the arm tuck achieved, and what it left alone."""
+
+    frames: int
+    station_fraction: float
+    #: Metres the collision-capsule half-width came in by, at its narrowest.
+    half_width_reduction_m: float
+    #: Widest the robot gets **inside the adaptation window**, before and after. These, not
+    #: the whole-clip maxima, are what a gap placed at the station would test: the operator is
+    #: local, so the clip's overall widest frame is usually outside the window and barely
+    #: moves. Reporting the whole-clip figure made a working tuck look like it did nothing.
+    nominal_half_width_at_station_m: float
+    adapted_half_width_at_station_m: float
+    #: Whole-clip maxima, kept so a caller can see the tuck did not widen the robot elsewhere.
+    nominal_half_width_m: float
+    adapted_half_width_m: float
+    #: Largest change to any leg joint, in radians. Should be exactly 0.
+    leg_change_rad: float
+    active_fraction: float
+    root_path_preserved: bool
+    scale_applied: float
+    #: Largest change given to any joint, in radians.
+    max_joint_change_rad: float = 0.0
+    #: True when the excursion cap stopped the search before the target was reached. The clip
+    #: is still usable; it simply achieves less than was asked for, and that is preferable to
+    #: reaching the target through a motion the robot cannot hold.
+    excursion_capped: bool = False
+
+
+def _half_width(qpos: np.ndarray, mjcf_path) -> np.ndarray:
+    """Per-frame half-width across the direction of travel, on capsule surfaces.
+
+    Across the heading rather than the world y axis, and on the capsule rather than a link
+    origin: the G1's measured half-width runs 0.273 m with arms tucked to 0.664 m at peak arm
+    swing, so both choices change the answer by more than any tuck would.
+    """
+    from .reference_payload import payload_from_reference
+    from .swept_volume import G1_COLLISION_CAPSULES, body_capsules_world
+
+    payload = payload_from_reference(qpos, mjcf_path=mjcf_path)
+    root = np.asarray(payload["root_pos_w"], dtype=np.float64)
+    quat = np.asarray(payload["root_quat_w"], dtype=np.float64)
+    w, x, y, z = (quat[:, i] for i in range(4))
+    yaw = np.arctan2(2 * (w * z + x * y), 1 - 2 * (y * y + z * z))
+    lateral = np.stack([-np.sin(yaw), np.cos(yaw)], axis=1)
+
+    starts, ends, radii, _ = body_capsules_world(
+        np.asarray(payload["body_pos_w"], dtype=np.float64),
+        np.asarray(payload["body_quat_w"], dtype=np.float64),
+        list(payload["body_names"]),
+        capsules=G1_COLLISION_CAPSULES,
+    )
+    centres = 0.5 * (starts + ends)
+    offsets = centres[:, :, :2] - root[:, None, :2]
+    return (np.abs(np.einsum("tcd,td->tc", offsets, lateral)) + radii[None, :]).max(axis=1)
+
+
+def _signed_half_widths(qpos: np.ndarray, mjcf_path) -> tuple[np.ndarray, np.ndarray]:
+    """Per-frame extent to the robot's left and right of its heading, separately.
+
+    The symmetric figure takes a maximum over both sides and discards which side produced it.
+    Arms swing out of phase, so at any station one side is wide while the other is not, and the
+    symmetric number reports the wide one for both -- which dilutes a genuinely one-sided
+    reduction to nothing. A one-sided obstacle is the right shape for an arm tuck, so the tuck
+    needs the sides kept apart.
+
+    Returns ``(left, right)``, both positive.
+    """
+    from .reference_payload import payload_from_reference
+    from .swept_volume import G1_COLLISION_CAPSULES, body_capsules_world
+
+    payload = payload_from_reference(qpos, mjcf_path=mjcf_path)
+    root = np.asarray(payload["root_pos_w"], dtype=np.float64)
+    quat = np.asarray(payload["root_quat_w"], dtype=np.float64)
+    w, x, y, z = (quat[:, i] for i in range(4))
+    yaw = np.arctan2(2 * (w * z + x * y), 1 - 2 * (y * y + z * z))
+    lateral = np.stack([-np.sin(yaw), np.cos(yaw)], axis=1)
+
+    starts, ends, radii, _ = body_capsules_world(
+        np.asarray(payload["body_pos_w"], dtype=np.float64),
+        np.asarray(payload["body_quat_w"], dtype=np.float64),
+        list(payload["body_names"]),
+        capsules=G1_COLLISION_CAPSULES,
+    )
+    centres = 0.5 * (starts + ends)
+    offsets = centres[:, :, :2] - root[:, None, :2]
+    signed = np.einsum("tcd,td->tc", offsets, lateral)
+    left = (signed + radii[None, :]).max(axis=1)
+    right = (-signed + radii[None, :]).max(axis=1)
+    return np.maximum(left, 0.0), np.maximum(right, 0.0)
+
+
+def local_arm_tuck(
+    nominal_qpos: np.ndarray,
+    station_fraction: float,
+    *,
+    target_reduction_m: float = 0.08,
+    window: float = DEFAULT_WINDOW,
+    ramp: float = DEFAULT_RAMP,
+    range_keep: float = DEFAULT_RANGE_KEEP,
+    max_excursion: float = MAX_TUCK_EXCURSION_RAD,
+    side: str = "both",
+    mjcf_path: str | Path = DEFAULT_G1_MJCF,
+) -> tuple[np.ndarray, LocalTuckReport]:
+    """Draw the arms in toward the torso locally, narrowing the silhouette.
+
+    ``side`` selects which arm moves: ``"both"``, ``"left"`` or ``"right"``. A lateral obstacle is
+    usually one-sided -- a rack, a cabinet edge, a wall protrusion -- so tucking only the arm
+    facing it is the smaller edit: fewer joints leave their reference, the other arm keeps its
+    natural swing, and the measurement matches, since a one-sided obstacle is cleared by the
+    signed half-width on its own side rather than by the symmetric maximum over both.
+
+    The lateral counterpart to :func:`local_crouch`, and a deliberately easier operator: the
+    root, the legs and the contact schedule are untouched, so the only thing a tracker has to
+    follow differently is the arms.
+
+    Asking a generator for this produced motions 64 mm *wider* than a plain walk, which is why
+    it is constructed here instead. Narrowing is done by scaling the arm joints toward the
+    posture they hold at their narrowest, rather than toward zero, since zero is a T-pose in
+    some conventions and would widen the robot.
+    """
+    qpos = np.asarray(nominal_qpos, dtype=np.float64)
+    if qpos.ndim != 2 or qpos.shape[1] < 8:
+        raise ValueError(f"expected (T, 7+J) reference qpos, got {qpos.shape}")
+    if not 0.0 <= station_fraction <= 1.0:
+        raise ValueError(f"station_fraction must be in [0, 1]; got {station_fraction}")
+    if target_reduction_m <= 0.0:
+        raise ValueError(f"target_reduction_m must be positive; got {target_reduction_m}")
+
+    names, limits = load_joint_limits(mjcf_path)
+    count = min(qpos.shape[1] - 7, limits.shape[0])
+    if side not in ("both", "left", "right"):
+        raise ValueError(f"side must be 'both', 'left' or 'right'; got {side!r}")
+    arms = [
+        i
+        for i, name in enumerate(names[:count])
+        if any(key in name for key in TUCK_JOINTS)
+        and (side == "both" or name.startswith(f"{side}_"))
+    ]
+    legs = [i for i, name in enumerate(names[:count]) if any(key in name for key in CROUCH_JOINTS)]
+    if not arms:
+        raise ValueError(f"no arm joints found for side={side!r}")
+
+    alpha = adaptation_profile(
+        route_progress(qpos[:, :2]), station_fraction, window=window, ramp=ramp
+    )
+
+    # A one-sided tuck must be judged on its own side. Scored symmetrically, a reduction on the
+    # left is hidden whenever the right arm happens to be the wider one at that station, which is
+    # half the gait cycle.
+    def width_of(clip: np.ndarray) -> np.ndarray:
+        if side == "both":
+            return _half_width(clip, mjcf_path)
+        left, right = _signed_half_widths(clip, mjcf_path)
+        return left if side == "left" else right
+
+    nominal_width = width_of(qpos)
+    lower, upper = limits[:count, 0], limits[:count, 1]
+    centre = 0.5 * (lower + upper)
+    half = 0.5 * (upper - lower) * range_keep
+
+    # Which way each arm joint has to move to narrow the robot is not knowable from the
+    # joint's name, and guessing it wrongly is how the first version of this operator made
+    # two clips *wider* than the walk they came from. It blended toward the arm pose at the
+    # clip's own narrowest frame, which is narrow only in combination with that frame's torso
+    # orientation; transplanted elsewhere in the gait it is not.
+    #
+    # So the direction is measured. Each arm joint is nudged both ways and the sign that
+    # reduces the mean half-width over the active window is kept.
+    active = alpha > 0.05
+    if not active.any():
+        active = np.ones(len(qpos), dtype=bool)
+    baseline = float(nominal_width[active].mean())
+    probe_step = 0.15
+    direction = np.zeros(len(arms))
+
+    # Mirrored joints are probed together. Half-width is a maximum over capsules, and in a
+    # symmetric arm pose both wrists attain it at once -- moving one alone cannot lower a
+    # maximum that two capsules share, so a per-joint probe sees a flat objective and gives
+    # up. Real clips swing out of phase and hide this; a symmetric one exposes it.
+    groups: dict[str, list[int]] = {}
+    for position, joint in enumerate(arms):
+        stem = names[joint].removeprefix("left_").removeprefix("right_")
+        groups.setdefault(stem, []).append(position)
+
+    for members in groups.values():
+        best_delta, best_signs = 0.0, [0.0] * len(members)
+        # A mirrored pair narrows when the two sides move oppositely; a midline joint when it
+        # moves either way. Both hypotheses are tried and the better kept.
+        candidates = [[1.0] * len(members), [-1.0] * len(members)]
+        if len(members) == 2:
+            candidates += [[1.0, -1.0], [-1.0, 1.0]]
+        for signs in candidates:
+            trial = qpos.copy()
+            for sign, position in zip(signs, members):
+                joint = arms[position]
+                trial[:, 7 + joint] = np.clip(
+                    trial[:, 7 + joint] + sign * probe_step, lower[joint], upper[joint]
+                )
+            reduction = baseline - float(width_of(trial)[active].mean())
+            if reduction > best_delta:
+                best_delta, best_signs = reduction, list(signs)
+        for sign, position in zip(best_signs, members):
+            direction[position] = sign
+
+    def build(scale: float) -> np.ndarray:
+        out = qpos.copy()
+        step = alpha[:, None] * scale * direction[None, :]
+        out[:, 7 + np.asarray(arms)] = qpos[:, 7 + np.asarray(arms)] + step
+        out[:, 7 : 7 + count] = np.clip(out[:, 7 : 7 + count], centre - half, centre + half)
+        return out
+
+    # Bound the search by how far any joint may move, not only by the geometric target.
+    ceiling = max_excursion / max(float(np.abs(direction).max()), 1e-9)
+    low, high = 0.0, min(1.5, ceiling)
+    for _ in range(10):
+        middle = 0.5 * (low + high)
+        reduction = float((nominal_width - width_of(build(middle))).max())
+        if reduction < target_reduction_m:
+            low = middle
+        else:
+            high = middle
+    scale = 0.5 * (low + high)
+    adapted = build(scale)
+    adapted_width = width_of(adapted)
+
+    return adapted, LocalTuckReport(
+        frames=len(qpos),
+        station_fraction=station_fraction,
+        half_width_reduction_m=float((nominal_width - adapted_width).max()),
+        nominal_half_width_at_station_m=float(nominal_width[active].max()),
+        adapted_half_width_at_station_m=float(adapted_width[active].max()),
+        nominal_half_width_m=float(nominal_width.max()),
+        adapted_half_width_m=float(adapted_width.max()),
+        leg_change_rad=(
+            float(np.abs(adapted[:, 7 + np.asarray(legs)] - qpos[:, 7 + np.asarray(legs)]).max())
+            if legs
+            else 0.0
+        ),
+        active_fraction=float((alpha > 0.01).mean()),
+        root_path_preserved=bool(
+            np.array_equal(adapted[:, :3], qpos[:, :3])
+            and np.array_equal(adapted[:, 3:7], qpos[:, 3:7])
+        ),
+        scale_applied=float(scale),
+        max_joint_change_rad=float(np.abs(adapted[:, 7:] - qpos[:, 7:]).max()),
+        excursion_capped=bool(np.abs(adapted[:, 7:] - qpos[:, 7:]).max() >= max_excursion * 0.999),
+    )
+
+
+def wrist_hip_clearance(
+    qpos: np.ndarray,
+    *,
+    mjcf_path: str | Path = DEFAULT_G1_MJCF,
+    frame_stride: int = 3,
+) -> float:
+    """Smallest gap between either wrist and the hip on its own side, over a clip.
+
+    Measured on MuJoCo's collision geoms, because the swept-volume capsules are conservative
+    outer approximations that overlap permanently and cannot resolve millimetres.
+
+    **This does not predict whether SONIC can track a tuck, and no operator bounds it.** The gap
+    is already negative on every nominal -- the arms rest against the hips, so the absolute value
+    saturates -- and its change from nominal to tuck anti-correlates with the verdict at both
+    extremes: the worst deterioration (-94.7 mm) was accepted and the mildest (-12.5 mm) rejected.
+    A bound on this quantity was added and reverted; it cost roughly eightfold tuck strength to
+    enforce a non-cause. Retained as a diagnostic only.
+    """
+    from .self_intersection import _load_model
+
+    mujoco, model = _load_model(mjcf_path)
+    data = mujoco.MjData(model)
+
+    def geoms_of(fragment: str) -> list[int]:
+        out = []
+        for geom in range(model.ngeom):
+            name = mujoco.mj_id2name(model, mujoco.mjtObj.mjOBJ_BODY, model.geom_bodyid[geom]) or ""
+            if fragment in name:
+                out.append(geom)
+        return out
+
+    pairs = []
+    for side in ("left", "right"):
+        for wrist in geoms_of(f"{side}_wrist"):
+            for hip in geoms_of(f"{side}_hip"):
+                pairs.append((wrist, hip))
+    if not pairs:
+        return float("inf")
+
+    scratch = np.zeros(6)
+    best = float("inf")
+    for index in range(0, len(qpos), frame_stride):
+        data.qpos[:] = qpos[index]
+        mujoco.mj_forward(model, data)
+        for first, second in pairs:
+            best = min(
+                best, float(mujoco.mj_geomDistance(model, data, first, second, 0.5, scratch))
+            )
+    return best

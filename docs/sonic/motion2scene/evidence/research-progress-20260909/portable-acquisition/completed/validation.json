@@ -1,0 +1,288 @@
+{
+  "archive": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-20260909-v1-hardlinks.tar.gz",
+    "sha256": "sha256:fc4e6b590613eecf0953fc2b168fe1ebcc8c8740cffd7da971a271eb768e5137",
+    "size_bytes": 728923512
+  },
+  "archive_member_inventory": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/archive_members.json",
+    "sha256": "sha256:bb79e3d62729509aa5935b53e4f586c7fb68ad547b87da6a399789dca43e609e",
+    "size_bytes": 4780195
+  },
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 .venv_research/bin/python -I /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/guard_readonly.py /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-20260909-v1/tools/portable_baseline/scripts/research/motion2scene_acquisition_dataset_baseline.py --release /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-20260909-v1 --out /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/full_reconstruction",
+    "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_research/bin/python /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/package_release.py --release /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-20260909-v1 --reconstruction /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/full_reconstruction/result.json --archive /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-20260909-v1-hardlinks.tar.gz",
+    "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_research/bin/python /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/verify_extraction.py",
+    "OPENBLAS_NUM_THREADS=1 .venv_research/bin/python -I /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/guard_relocated.py /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/relocated/m2s-acquisition-M2-portable-20260909-v1/tools/portable_baseline/scripts/research/motion2scene_acquisition_dataset_baseline.py --release /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/relocated/m2s-acquisition-M2-portable-20260909-v1 --out /home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/relocated_reconstruction"
+  ],
+  "created_utc": "2026-09-09T21:46:42.420240+00:00",
+  "evidence": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/extraction_result.json",
+      "sha256": "sha256:8bc048f2a1e6eaec38df157aedab8e4b6614580820f7ad7f9ceafff89f53786a",
+      "size_bytes": 636
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/full_reconstruction.json",
+      "sha256": "sha256:6fe05d49ce788f225970614a9f8f9dd70337e6dd990d37a37584847a403b98ca",
+      "size_bytes": 331337
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/guard_readonly.py",
+      "sha256": "sha256:db7572fce50e4d147a2723b1992998b4b5a355555f334a11c80132cfcd7ac55c",
+      "size_bytes": 1853
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/guard_relocated.py",
+      "sha256": "sha256:a50267a7fd058409cf9545a3b6e0f63c0a702efbd74c4f2e0e89c31438ccee86",
+      "size_bytes": 2160
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/historical_startup.json",
+      "sha256": "sha256:d4a60af4a56fb4afa80a8848ddfedb1240e1bf501229b904f550b6a879ba60ee",
+      "size_bytes": 7222
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/package_release.py",
+      "sha256": "sha256:17c73486c56657813300e62a159660e2e5027c94ea4204da43e498b8a7c41fcd",
+      "size_bytes": 10585
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/package_result.json",
+      "sha256": "sha256:490ccc771e932cdac19a7aa55617d64345f493f4bc7dc1daf2b7aa0bd14ea612",
+      "size_bytes": 1876
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/portable_arm_curve.csv",
+      "sha256": "sha256:e973ffc178dd82748ad1d569ab457dc77a90ba35299a3b9edb6957f405fa22e6",
+      "size_bytes": 505
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/portable_corpus_curve.csv",
+      "sha256": "sha256:bd49a5917808c160576e58e0c20a7ec9994fe9e6761e1d3274797a31dd292909",
+      "size_bytes": 1746
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/reconstruction_summary.json",
+      "sha256": "sha256:80112b69fdfbade74ed1bf85b20a2df38a232966c0c49707f0f94c0e85a66670",
+      "size_bytes": 788
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/release.json",
+      "sha256": "sha256:5264da65d97e0c4ecb50412a28fe429bbb9b34a11782ac83ee90980e6ec9961d",
+      "size_bytes": 67961
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/relocated_reconstruction.json",
+      "sha256": "sha256:6fe05d49ce788f225970614a9f8f9dd70337e6dd990d37a37584847a403b98ca",
+      "size_bytes": 331337
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/source_snapshots/motion2scene_acquisition_dataset_baseline.py",
+      "sha256": "sha256:645a5244a052f3169bc35b8bbbba14ae4bf97ae760220506d9c679ec035974d4",
+      "size_bytes": 13624
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/source_snapshots/motion2scene_export_acquisition_dataset.py",
+      "sha256": "sha256:b4289400ae3ed2efe096b0954e51058825734c34db4e72564adbc0bce50ea361",
+      "size_bytes": 9436
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/source_snapshots/test_motion2scene_acquisition_dataset_baseline.py",
+      "sha256": "sha256:fe9a0f783971a99ea51f65624dbfde9660f54925e7d4b2b59f79502158725320",
+      "size_bytes": 6286
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/portable-acquisition/completed/verify_extraction.py",
+      "sha256": "sha256:fb224b2d8101613517557ca5f5c219955cd0b22cad8297665635313b5c4c6db7",
+      "size_bytes": 1875
+    }
+  ],
+  "full_reconstruction_executed": true,
+  "generated_bytecode_files_in_release_or_relocated_copy": 0,
+  "guard_scope": "Python-level trusted-reader check, not OS sandbox; blocks original paths, simulator imports and release writes",
+  "identical_numerical_reconstruction_across_locations": true,
+  "interpretation": "portable reconstruction, no newly executed policy performance; M8 and reserved results incomplete",
+  "new_physics_steps": 0,
+  "original_reconstruction": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/full_reconstruction/result.json",
+    "sha256": "sha256:6fe05d49ce788f225970614a9f8f9dd70337e6dd990d37a37584847a403b98ca",
+    "size_bytes": 331337
+  },
+  "physical_checkpoint_receipts": {
+    "M2": [
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_002/result.json",
+        "sha256": "sha256:e0aec7e65523f34798888619e009301402e17a6c4333441036fc645f82b9ec65",
+        "size_bytes": 10056
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_002/result.json",
+        "sha256": "sha256:f5bbb5737254974ec5defae61f707389e27b76d649389180d773ca378294e5fd",
+        "size_bytes": 31755
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_002/result.json",
+        "sha256": "sha256:5c8f2a90d3e1dc27562bfb2dc862ebe1e517b544416d7109223fde6d3eb1246d",
+        "size_bytes": 9721
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_002/result.json",
+        "sha256": "sha256:75f9917ba735ad84ffea7d416fa783e9cb09016ec81318c76540c40d9f76e75e",
+        "size_bytes": 9554
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_002/result.json",
+        "sha256": "sha256:49f4bd294d29efc8c3539db5f4026be740689c77f55fcaf51661ca5e38513320",
+        "size_bytes": 10191
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_002/result.json",
+        "sha256": "sha256:05e8995c00f1152dcf753ad080f598640ffd115b0247c79e619747cb004aea82",
+        "size_bytes": 31894
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_002/result.json",
+        "sha256": "sha256:207bb5fef5daf21c7c24fec4a27a757ba69bb4059262f2a65c14173624a4dc29",
+        "size_bytes": 10206
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_002/result.json",
+        "sha256": "sha256:206df5d0916c00e77d0e11d17fd27b7dbcd528349170fcc1c21e1d035f7a0d8f",
+        "size_bytes": 10182
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_002/result.json",
+        "sha256": "sha256:430e22998c1aa6c88211014e69b284b960d8066833b7d118d859393ac1869dae",
+        "size_bytes": 10106
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_002/result.json",
+        "sha256": "sha256:cfde92feba37a44a3cbce14b80fc0016ce06ca07360d958ad63120f6717e6b35",
+        "size_bytes": 31805
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_002/result.json",
+        "sha256": "sha256:087fba193134c39c40ae0c4fdadd71727bfb02a0d04c43fbf9726d5d9f6850dc",
+        "size_bytes": 10316
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_002/result.json",
+        "sha256": "sha256:7d6d7a76fa352b9522c24b94f1339d0a586c803769fc3be22061d3fcf5806463",
+        "size_bytes": 10163
+      }
+    ],
+    "M3": [
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_analytic_contrast/models/model_003/result.json",
+        "sha256": "sha256:6092572b0e371ab495285dcdf7e025f1ed4f1867374abca26cbbe63ef42b0790",
+        "size_bytes": 10959
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_observation_curriculum/models/model_003/result.json",
+        "sha256": "sha256:8595736ca8baaa0727e94fd5e72549d5f53f739ae50271a1054bccfd943cf5d7",
+        "size_bytes": 40390
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_target_only/models/model_003/result.json",
+        "sha256": "sha256:5ab44b4f3d68f615dcb73a4cff13fe82ad54a3fa10c04cec86486cbee38f5236",
+        "size_bytes": 11439
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93201_uniform/models/model_003/result.json",
+        "sha256": "sha256:b225add457f2287c4a365ed3fad077d374985d89c0e34996b2b175ff0bfe8bae",
+        "size_bytes": 10711
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_analytic_contrast/models/model_003/result.json",
+        "sha256": "sha256:7fa0eb4383210906dc7f31b96e74ff4f7af9439c8f97e5cbce4eced3500f66ba",
+        "size_bytes": 11574
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_observation_curriculum/models/model_003/result.json",
+        "sha256": "sha256:e26aee2ad27d3c2b476c7133f77fbe55b3003e1b40fa9d4873154e3c3aefead1",
+        "size_bytes": 41028
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_target_only/models/model_003/result.json",
+        "sha256": "sha256:8a3bd5e14fee4e432ffc057ef47b6ecc6311599b6b1a256ae09f66eb325be358",
+        "size_bytes": 11408
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93202_uniform/models/model_003/result.json",
+        "sha256": "sha256:6ef520d1a4e368de638771eda249bc7bb66fcd7f2c361040a04e10d1a91717b2",
+        "size_bytes": 11619
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_analytic_contrast/models/model_003/result.json",
+        "sha256": "sha256:39b010058121dd16239aa98d8f7ac6523b6eecdfc7059cabf9a10f06885379c8",
+        "size_bytes": 11502
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_observation_curriculum/models/model_003/result.json",
+        "sha256": "sha256:97a0d64c36c326dc8d5619907992151abdd0e7be099e088631414e1232920e9d",
+        "size_bytes": 40967
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_target_only/models/model_003/result.json",
+        "sha256": "sha256:c6aa1e38e1892f4bccd93e1808fe87bccac7fecabdb6fe8d94d457783724fef7",
+        "size_bytes": 11832
+      },
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_003/result.json",
+        "sha256": "sha256:4b5489e5e7e7ef861030b6f3e316cea6c6be21383233988a5051b104bb80c738",
+        "size_bytes": 11643
+      }
+    ],
+    "M4": [
+      {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-execution-tie-v5/seed93203_uniform/models/model_004/result.json",
+        "sha256": "sha256:746b26b7c2a45a77661ea19dcff81d572f54cffb369f3148883c0c3f3bef110e",
+        "size_bytes": 13122
+      }
+    ]
+  },
+  "process_snapshot": " 161884  108128    07:48:32 .venv_isaaclab/bin/python /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-dispatch-tie-proposed-v5/dispatch.py --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json\n1955047 1955036    02:52:11 /home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python scripts/research/motion2scene_expanded_acquisition.py --plan /home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json --until-budget 8 --watch\n2157276  161884       05:38 /home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python scripts/research/motion2scene_run_primary_acquisition.py run --plan /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-tie-proposed-v5/plan.json --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json --run-id seed93202_analytic_contrast --stop-after-round 4",
+  "release": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-20260909-v1/release.json",
+    "sha256": "sha256:5264da65d97e0c4ecb50412a28fe429bbb9b34a11782ac83ee90980e6ec9961d",
+    "size_bytes": 67961
+  },
+  "release_complete": true,
+  "relocated_reconstruction": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-acquisition-M2-portable-validation-20260909-v1/relocated_reconstruction/result.json",
+    "sha256": "sha256:6fe05d49ce788f225970614a9f8f9dd70337e6dd990d37a37584847a403b98ca",
+    "size_bytes": 331337
+  },
+  "relocated_reconstruction_executed": true,
+  "schema": "motion2scene_portable_acquisition_completed_validation_v1",
+  "sources": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_export_acquisition_dataset.py",
+      "sha256": "sha256:b4289400ae3ed2efe096b0954e51058825734c34db4e72564adbc0bce50ea361",
+      "size_bytes": 9436
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_acquisition_dataset_baseline.py",
+      "sha256": "sha256:645a5244a052f3169bc35b8bbbba14ae4bf97ae760220506d9c679ec035974d4",
+      "size_bytes": 13624
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/decoupled_wbc/tests/test_motion2scene_acquisition_dataset_baseline.py",
+      "sha256": "sha256:fe9a0f783971a99ea51f65624dbfde9660f54925e7d4b2b59f79502158725320",
+      "size_bytes": 6286
+    }
+  ],
+  "tests": {
+    "command": "OPENBLAS_NUM_THREADS=1 .venv_isaaclab/bin/python -m pytest -q decoupled_wbc/tests/test_motion2scene_acquisition_dataset_baseline.py decoupled_wbc/tests/test_motion2scene_schedule_dataset_baseline.py decoupled_wbc/tests/test_motion2scene_timed_schedule_dataset.py",
+    "passed": 22,
+    "result_source": "executed earlier in this continued interaction; no redundant rerun",
+    "seconds": 1.5
+  },
+  "validation_compute": {
+    "full_export_reconstruction_fits": 36,
+    "new_physics_steps": 0,
+    "preliminary_reconstruction_fits": 12,
+    "relocated_archive_reconstruction_fits": 36
+  }
+}

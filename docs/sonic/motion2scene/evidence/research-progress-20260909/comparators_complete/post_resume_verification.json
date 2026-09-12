@@ -1,0 +1,96 @@
+{
+  "comparator_runtime_artifacts_unchanged": true,
+  "completed_comparators": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/comparators_complete.json",
+    "sha256": "sha256:dfbda82b79da60129d4ed4dc832e03cf13bb2de66900c8e98474999791841ae8"
+  },
+  "completed_new_acquisition_branches": [
+    {
+      "assessment": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round003_teacher_forced_neutral/assessment.json",
+        "sha256": "sha256:2564c4609dbd3facc80610a53d56f0056b29e0f2096112155b8da4405ffb6e6e"
+      },
+      "attempt": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_003/teachers/rollouts/forced_neutral/attempt.json",
+        "sha256": "sha256:a9fabe3ae3d1b04a9da1cca64e508705b77e1791b2e913d5ccb75379f81c98a5"
+      },
+      "outcome": "failure",
+      "physics_steps": 1192
+    },
+    {
+      "assessment": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round003_teacher_forced_prior_splice_e015_r265/assessment.json",
+        "sha256": "sha256:8ee3d7a023515ea360552496b9cab69924b5c4405487f97b677b27af602b917c"
+      },
+      "attempt": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_003/teachers/rollouts/forced_prior_splice_e015_r265/attempt.json",
+        "sha256": "sha256:4db5558ae4a0549039389bf74718456b1deacd72ff6b3e915c9548770010bf2b"
+      },
+      "outcome": "pass",
+      "physics_steps": 1192
+    },
+    {
+      "assessment": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round003_teacher_forced_prior_splice_e050_r265/assessment.json",
+        "sha256": "sha256:f63e5f5814ef7bd2e5e43502736206728d4fe77c9fa3088c4574031c9c0d7d1b"
+      },
+      "attempt": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_003/teachers/rollouts/forced_prior_splice_e050_r265/attempt.json",
+        "sha256": "sha256:b65c163d73d78a33600099429fa3ec24e4b8bca003e7fa1f1d12207b38bb74ed"
+      },
+      "outcome": "pass",
+      "physics_steps": 1192
+    },
+    {
+      "assessment": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round003_teacher_forced_short_e015_r265/assessment.json",
+        "sha256": "sha256:5db10398afed6a7a3dfe97f1daece90e29d1ef8e4e3cc0c53e698c343de5ac41"
+      },
+      "attempt": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_003/teachers/rollouts/forced_short_e015_r265/attempt.json",
+        "sha256": "sha256:7941c04ad321fb2909469793cbcf09f42c16004aeedd1f6e7daf42e33d87940d"
+      },
+      "outcome": "failure",
+      "physics_steps": 1192
+    },
+    {
+      "assessment": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/controller/attempts/round003_teacher_forced_short_e070_r265/assessment.json",
+        "sha256": "sha256:8e694d104443bd83fb4303672ca901b7fcdbc20bee89336b639e2a85010f45b0"
+      },
+      "attempt": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_003/teachers/rollouts/forced_short_e070_r265/attempt.json",
+        "sha256": "sha256:c68bc205a617eb989b98cdcf769b688b77c5555c46ed06dbf8b6b54d22be1d95"
+      },
+      "outcome": "failure",
+      "physics_steps": 1192
+    }
+  ],
+  "distinct_comparator_runtime_artifacts_checked": 110,
+  "live_processes": {
+    "2387363": {
+      "command": ".venv_isaaclab/bin/python /home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v6/run.py ",
+      "start_ticks": "7170266",
+      "state": "S"
+    },
+    "2387430": {
+      "command": "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python scripts/research/motion2scene_expanded_acquisition.py --plan /home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json --until-budget 8 --watch ",
+      "start_ticks": "7170307",
+      "state": "S"
+    }
+  },
+  "new_acquisition_outcomes": {
+    "failure": 3,
+    "pass": 2
+  },
+  "new_acquisition_physics_steps": 5960,
+  "offline_selector_in_comparator_runtime_closure": false,
+  "original_attempt_hashes_unchanged": true,
+  "original_closed_attempts_checked": 70,
+  "original_plan_and_adoption_unchanged": true,
+  "recovery": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v6/recovery.json",
+    "sha256": "sha256:f2dec467f7d292a77975ad509bf86c6006084092af4e5af4c4301da7e79072b3"
+  },
+  "utc": "2026-09-10T02:39:47.233412+00:00"
+}

@@ -1,0 +1,90 @@
+{
+  "adapter": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_resume_recorded_student.py",
+    "sha256": "sha256:4a28981fb8f23a1ca0a5fe1d4b436d2107b4210e4ec4d8ead76bb3a7aa3ce598"
+  },
+  "adoption": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json",
+    "sha256": "sha256:f5e69567fc3984b0a6afb0cc896e63d9281a5fba39d629710c1c5780e1ed9860"
+  },
+  "attempt": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_005/student/rollouts/learned_neutral/attempt.json",
+    "sha256": "sha256:4d4ecd25dacb05af1cea88daecabc3f62ac60e4fe81b2368227a0b33e3a15ee5"
+  },
+  "continuation_rule": "Only this fully accounted UNKNOWN pre-update student may bypass the controller outcome-admission pause. Reference-arm fitting uses uniform complete teacher targets; no student reward, fit weight, outcome, policy, candidate order, native source, or budget is changed.",
+  "coordinator_terminal_observation": {
+    "acquisition_exit_status": null,
+    "acquisition_pid": 2412056,
+    "pid": 2411988,
+    "termination_cause": null,
+    "tool_exit_code": 143,
+    "tool_session": 50750
+  },
+  "created_utc": "2026-09-10T04:37:39.963989+00:00",
+  "manifest": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_005/student/manifest.json",
+    "sha256": "sha256:b97779d667ef3ac7fecc9e5763ab32878e25e550016637397a73b6551b03b775"
+  },
+  "maximum_steps": 1192,
+  "measured_steps": 1192,
+  "new_physics_steps_from_reconciliation": 0,
+  "no_active_native_processes_verified": true,
+  "path_repair": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v7/repair.json",
+    "sha256": "sha256:a2b9d4a97cbd67b99f6bba3e9158e62cb2ac7332c3ad99a7246538987fc2fe02"
+  },
+  "plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json",
+    "sha256": "sha256:bf551021c82fd42d0e6b002a2941a71b1358d72a469903105a2230bdfae3a4ed"
+  },
+  "preupdate": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_005/preupdate.json",
+    "sha256": "sha256:302e842f167a8811e489213b361b7204c63993bdb26abd805c0bb540873ccc69"
+  },
+  "process_exit_status": null,
+  "raw_artifacts": {
+    "all_body_contacts": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_005/student/rollouts/learned_neutral/trajectories/all_body_contacts.npz",
+      "sha256": "sha256:8121e611fad16d6a6a3e11bf76b34d442085e59eed6f143d7ea35054a74ad162"
+    },
+    "environment_mapping": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_005/student/rollouts/learned_neutral/trajectories/environment_contact_mapping.json",
+      "sha256": "sha256:c5d4daaf33da1d2726c61b7e31d34b120b4f20482016a5562ef09b507d6d1d84"
+    },
+    "environment_pairs": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_005/student/rollouts/learned_neutral/trajectories/environment_pair_contacts.npz",
+      "sha256": "sha256:b6ae9c27dab71d63dfacf2016425a28f07bd9a90f232a3dbbfc35327ca9c56d8"
+    },
+    "sensor": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_005/student/rollouts/learned_neutral/trajectories/reactive_interface.json",
+      "sha256": "sha256:9f879ce9b0c1e0eda188e83540f7f3f5775644546c97cad0983d8f90edda94b2"
+    },
+    "trajectory": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_005/student/rollouts/learned_neutral/trajectories/000000.trajectory.pkl",
+      "sha256": "sha256:012d5b989ef31740c932ad0932662d4da7040fe775b2344957e9ae361832762a"
+    }
+  },
+  "retries": 0,
+  "round_index": 5,
+  "run_id": "seed93201_reference_contrast",
+  "schema": "motion2scene_recorded_student_continuation_v1",
+  "sources": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_collect_timed_schedules.py",
+      "sha256": "sha256:aff903769ae19189d2ebbaea0c579d508d9f2cd2c3240864f2c6245bbdd3b195"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_run_primary_acquisition.py",
+      "sha256": "sha256:caa76921c54d9a3caab43ef5267de9afb19cba8aa685c578b77b4fe56a5df629"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_resume_expanded_acquisition.py",
+      "sha256": "sha256:d5f85cea8bb566e9e23e172ee9b51e8743d8206353b5f7be3dd2052333fea36d"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_expanded_acquisition.py",
+      "sha256": "sha256:28a3d91beb810f410c897bae448772484658c2f921e6da4b511d508ab528220c"
+    }
+  ],
+  "task_outcome": "unknown"
+}

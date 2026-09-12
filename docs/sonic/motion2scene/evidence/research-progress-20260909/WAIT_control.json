@@ -1,0 +1,308 @@
+{
+  "complete_schedule_choices_in_both_controls": 7,
+  "conditions": [
+    {
+      "information_group_sizes_by_phase": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "initial_choice": {
+        "assigned_contexts": 6,
+        "groups": [
+          {
+            "encounter_indices": [
+              1
+            ],
+            "information_key": "0c24548351b60a586fc04c2fea8e9e58105bb68dbec8443151a6f5554372621b",
+            "maximum_passages": 1,
+            "optimal_schedule_indices": [
+              3,
+              4
+            ],
+            "selected_schedule_index": 3,
+            "successful_time_sum_s": 3.62
+          },
+          {
+            "encounter_indices": [
+              2
+            ],
+            "information_key": "571b94a99f3a8a28b99c1c7d71d5afa96adbe4b17459658535299ee28589be62",
+            "maximum_passages": 1,
+            "optimal_schedule_indices": [
+              3
+            ],
+            "selected_schedule_index": 3,
+            "successful_time_sum_s": 4.48
+          },
+          {
+            "encounter_indices": [
+              5
+            ],
+            "information_key": "7cb0afa6d959c82f50092e3700c74703479f4653676aa6a169564c15625d7870",
+            "maximum_passages": 1,
+            "optimal_schedule_indices": [
+              2,
+              6
+            ],
+            "selected_schedule_index": 2,
+            "successful_time_sum_s": 4.2
+          },
+          {
+            "encounter_indices": [
+              3
+            ],
+            "information_key": "927c0b452f0a9cdf0c166ee1e6a4737c245f6b12ed60eac15100c4c6d704e9ae",
+            "maximum_passages": 1,
+            "optimal_schedule_indices": [
+              4
+            ],
+            "selected_schedule_index": 4,
+            "successful_time_sum_s": 2.72
+          },
+          {
+            "encounter_indices": [
+              4
+            ],
+            "information_key": "e53e1b6ec1eb1d76dd9c6df626a4b9b1b7b598ef8d452d0585a5d73186747b72",
+            "maximum_passages": 1,
+            "optimal_schedule_indices": [
+              3,
+              4
+            ],
+            "selected_schedule_index": 3,
+            "successful_time_sum_s": 4.12
+          },
+          {
+            "encounter_indices": [
+              0
+            ],
+            "information_key": "eec83c6f73408052ae4161ab891e3539d0baaa3ada601f6a28de7178ed82fb15",
+            "maximum_passages": 1,
+            "optimal_schedule_indices": [
+              0,
+              3
+            ],
+            "selected_schedule_index": 0,
+            "successful_time_sum_s": 5.36
+          }
+        ],
+        "information_groups": 6,
+        "maximum_passages": 6
+      },
+      "reveal_tick": 15,
+      "sequential_minus_initial_passages": 0,
+      "sequential_wait_maximum_passages": 6
+    },
+    {
+      "information_group_sizes_by_phase": [
+        [
+          6
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "initial_choice": {
+        "assigned_contexts": 6,
+        "groups": [
+          {
+            "encounter_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "information_key": "e4984036a5297a8e5ea6185338859623b9adcdb5d9c5951987ab141f7a801c34",
+            "maximum_passages": 5,
+            "optimal_schedule_indices": [
+              3
+            ],
+            "selected_schedule_index": 3,
+            "successful_time_sum_s": 20.320000000000004
+          }
+        ],
+        "information_groups": 1,
+        "maximum_passages": 5
+      },
+      "reveal_tick": 50,
+      "sequential_minus_initial_passages": 1,
+      "sequential_wait_maximum_passages": 6
+    },
+    {
+      "information_group_sizes_by_phase": [
+        [
+          6
+        ],
+        [
+          6
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "initial_choice": {
+        "assigned_contexts": 6,
+        "groups": [
+          {
+            "encounter_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "information_key": "e4984036a5297a8e5ea6185338859623b9adcdb5d9c5951987ab141f7a801c34",
+            "maximum_passages": 5,
+            "optimal_schedule_indices": [
+              3
+            ],
+            "selected_schedule_index": 3,
+            "successful_time_sum_s": 20.320000000000004
+          }
+        ],
+        "information_groups": 1,
+        "maximum_passages": 5
+      },
+      "reveal_tick": 70,
+      "sequential_minus_initial_passages": 0,
+      "sequential_wait_maximum_passages": 5
+    },
+    {
+      "information_group_sizes_by_phase": [
+        [
+          6
+        ],
+        [
+          6
+        ],
+        [
+          6
+        ]
+      ],
+      "initial_choice": {
+        "assigned_contexts": 6,
+        "groups": [
+          {
+            "encounter_indices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "information_key": "e4984036a5297a8e5ea6185338859623b9adcdb5d9c5951987ab141f7a801c34",
+            "maximum_passages": 5,
+            "optimal_schedule_indices": [
+              3
+            ],
+            "selected_schedule_index": 3,
+            "successful_time_sum_s": 20.320000000000004
+          }
+        ],
+        "information_groups": 1,
+        "maximum_passages": 5
+      },
+      "reveal_tick": null,
+      "sequential_minus_initial_passages": 0,
+      "sequential_wait_maximum_passages": 5
+    }
+  ],
+  "evidence": "finite recorded-table information limits; no executed or learned policy comparison",
+  "implementations": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_wait_information_control.py",
+      "sha256": "sha256:b4f6763289240e4c957435bf30a5c73798a3b033d8fb24ebce0350d00739f29f"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_information_ablation.py",
+      "sha256": "sha256:1212e168a3dc6dd93b53ba30c69490533f70dd0743f13ea4906b998d188531c3"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_observation_teacher.py",
+      "sha256": "sha256:78d398f769c4463156c5b15e9e1d3ab8e899449f7aec66959558ebb75d986f19"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_decision_study.py",
+      "sha256": "sha256:526a457580c72f743fd2a8636957ccac3c7d21f95a1897b252cf673ad997d259"
+    }
+  ],
+  "individual_bank_capability": 6,
+  "interpretation": "one-time choice includes all late-entry schedules and executes neutral until entry; WAIT can exploit later information, never stopping; nominal singleton groups do not prove robustness",
+  "intervention": "existing 28-corridor-coordinate reveal mask, exact available-vector equality",
+  "new_fits": 0,
+  "new_physics_steps": 0,
+  "registry": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/registry.json",
+    "sha256": "sha256:a33af401fe9e6949baaddf63a67a5e37e8f62f87758e1ca373f926f9a3214c3c"
+  },
+  "scene_ids": [
+    "long_neutral_empty",
+    "timed_development_0187",
+    "timed_development_0247",
+    "early_prior_development_0284",
+    "early_prior_two_beam_development_v1",
+    "complementary_late_development_0100"
+  ],
+  "schedule_ids": [
+    "neutral",
+    "short_e015_r265",
+    "sustained_e015_r255",
+    "prior_splice_e015_r265",
+    "prior_splice_e050_r265",
+    "short_e070_r265",
+    "sustained_e070_r255"
+  ],
+  "schema": "motion2scene_wait_information_control_v1",
+  "source_result": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-six-context-development-policy-v1/result.json",
+    "sha256": "sha256:d236040817c405f14025fdf686b79682aa703e0a4e62eaa509f61fcc970b0a61"
+  },
+  "source_teachers": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-six-context-development-policy-v1/teachers.json",
+    "sha256": "sha256:0ff4946625386add500821114d8817ef2330b290a56bd0e9443b7c657b779409"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "adapter": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_resume_expanded_acquisition.py",
+    "sha256": "sha256:d5f85cea8bb566e9e23e172ee9b51e8743d8206353b5f7be3dd2052333fea36d"
+  },
+  "adoption": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json",
+    "sha256": "sha256:f5e69567fc3984b0a6afb0cc896e63d9281a5fba39d629710c1c5780e1ed9860"
+  },
+  "declared_utc": "2026-09-10T03:07:26.364841+00:00",
+  "failure_exit": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v6/expanded_M8_resume_exit.json",
+    "sha256": "sha256:9ae720b2ebcf462f03d0ba349088f3b930668e7bf6952c7ed58682e5d6c37053"
+  },
+  "failure_log": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v6/expanded_M8_resume.log",
+    "sha256": "sha256:f6d074c459ecd0579a0820dafbb7a8053dd6b5552e3b15d58371cd86457e85fb"
+  },
+  "measurement_source_rule": "Existing fit registrations retain the exact original driver; this declaration and successor sequence additionally bind the effective bookkeeping adapter. Do not attribute old outcomes to a new policy.",
+  "new_physics_from_repair": 0,
+  "original_artifact_reader": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_timing_diagnostic.py",
+    "sha256": "sha256:b0843f51d6ed8e1217fbd2dc589362ed686a6c9ea6c192e38182ac454b4a3f7a"
+  },
+  "original_driver": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_expanded_acquisition.py",
+    "sha256": "sha256:28a3d91beb810f410c897bae448772484658c2f921e6da4b511d508ab528220c"
+  },
+  "plan": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json",
+    "sha256": "sha256:bf551021c82fd42d0e6b002a2941a71b1358d72a469903105a2230bdfae3a4ed"
+  },
+  "reason": "Original acquire_expanded passes a JSON inherited_model string to the Path-only artifact reader at the first inherited M4 boundary.",
+  "repair": "normalize_inherited_model_string_to_Path_v1",
+  "schema": "motion2scene_declared_bookkeeping_repair_v1",
+  "scope": "Normalize str arguments only in the imported expanded driver artifact function; all original on-disk sources, plan identities, native commands, collector, scorer, teacher, ridge learner, candidate order, budget and historical records are preserved."
+}

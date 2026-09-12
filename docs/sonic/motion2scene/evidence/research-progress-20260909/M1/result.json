@@ -1,0 +1,40 @@
+{
+  "acquisition": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M1-20260909-v1/result.json",
+      "sha256": "sha256:2e76f63e2532ba03378dddb1eed17e1d66519fff3aea9fd54f8142a1c70f1cc9"
+    }
+  ],
+  "implementation": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_render_acquisition_evidence.py",
+    "sha256": "sha256:cc394af53f647f030f93b8f567773eb9d3f00e45ba0461cc9a4b68fc3388059c"
+  },
+  "interpretation": "Acquisition lines are corpus means with three individual trajectories, no confidence intervals. Constructor-specific training tasks are not a common evaluation set. WAIT bars are exact finite branch-table optima, not newly executed policies.",
+  "new_physics_steps": 0,
+  "outputs": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M1/acquisition_by_corpus.csv",
+      "sha256": "sha256:4ff1d192dc377e3d4b17c69ed2911f78eec6c1344f614f671f5abbccb623160a"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M1/acquisition_responses.pdf",
+      "sha256": "sha256:dd97aa72b41c5cd27386f81d9a7b4f3f9c11e8447e428690e78e3a7db72858b8"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M1/acquisition_responses.png",
+      "sha256": "sha256:ba917a72682b5703a31c42a2f66471b74e1a6cb16fb187220d4f58cddbc527fd"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M1/wait_same_repertoire.pdf",
+      "sha256": "sha256:30f6f33dcf0c9d807eb08bf73fdf6033b1b07d69c26e2b88939301bda2dc969f"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M1/wait_same_repertoire.png",
+      "sha256": "sha256:6ecd49cca8e6e8ed9ab801cbcc507e02fde787aeda84bbf00e8115cb1394240b"
+    }
+  ],
+  "wait": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-wait-information-control-20260909-v1/result.json",
+    "sha256": "sha256:5df3bd3ebff657b33acab8246c598cb055a589a559a4fe71468791180a622f4d"
+  }
+}

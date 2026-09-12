@@ -1,0 +1,190 @@
+{
+  "utc": "2026-09-11T09:07:31Z",
+  "config": {
+    "seeds": [
+      101,
+      102
+    ],
+    "architectures": [
+      "unconditional",
+      "mlp",
+      "conv",
+      "transformer"
+    ],
+    "updates": 120,
+    "learning_rate": 0.002,
+    "training_frames": 16,
+    "axial_samples": 5,
+    "draws_per_target": 8,
+    "threads": 2,
+    "wall_cap_seconds": 600,
+    "beam_x_bounds": [
+      1.0,
+      4.5
+    ],
+    "beam_underside_bounds": [
+      0.7,
+      1.65
+    ],
+    "beam_half_extents": [
+      0.15,
+      1.0,
+      0.1
+    ],
+    "margin_m": 0.01,
+    "distance_temperature_m": 0.002,
+    "choice_temperature_m": 0.025,
+    "clearance_weight": 100.0,
+    "kl_weight": 0.001,
+    "log_sigma_bounds": [
+      -5.0,
+      1.0
+    ]
+  },
+  "names": [
+    "neutral",
+    "short_e015_r265",
+    "sustained_e015_r255",
+    "prior_splice_e015_r265",
+    "prior_splice_e050_r265",
+    "short_e070_r265",
+    "sustained_e070_r255"
+  ],
+  "source": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/manifest.json",
+    "sha256": "sha256:5b772a41de33a912043cc740deceda3dfd4b81c8cad24baf1a9376785005eb14"
+  },
+  "inputs": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/environment_result.json",
+      "sha256": "ad8dfaea406544c6883c387498474e9b6236fc9fb1bab50fc107d12bb8605474",
+      "bytes": 11216
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/manifest.json",
+      "sha256": "5b772a41de33a912043cc740deceda3dfd4b81c8cad24baf1a9376785005eb14",
+      "bytes": 155156
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-native-beam-audit-v1/geometry.json",
+      "sha256": "07d7b540cfa19ff526279436ce628055ee974f5b61fe592d61e327f5078ea529",
+      "bytes": 46459
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/rollouts/neutral/trajectories/environment_qualification_evidence.json",
+      "sha256": "247cd6791db8d120e3f41ec052d4b9c2ce80665b5961816e7263acb1e677bda6",
+      "bytes": 23527
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-qualification-v1/rollouts/neutral/trajectories/000000.trajectory.pkl",
+      "sha256": "438a96d65fc274ea0881a0e72f7f18a2334762e68fad07df18b5394839727fdd",
+      "bytes": 673036
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/rollouts/short_e015_r265/trajectories/environment_qualification_evidence.json",
+      "sha256": "85f2ba4d948db8d7a8b9e4738be24a0c680fb6cb4e2cb82f8a65eaa4aeb59907",
+      "bytes": 26305
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-qualification-v1/rollouts/short_e015_r265/trajectories/000000.trajectory.pkl",
+      "sha256": "d1a4a71e4e5b09017c747b78361d142c9e38ed42a888c5bc3ae7b31c62deb716",
+      "bytes": 673036
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/rollouts/sustained_e015_r255/trajectories/environment_qualification_evidence.json",
+      "sha256": "db1402d83a7291c22398e3f648492e26172c614588151c8a94761f9c8cdc775a",
+      "bytes": 27271
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-qualification-v1/rollouts/sustained_e015_r255/trajectories/000000.trajectory.pkl",
+      "sha256": "fbbeff38091c8836f10370acb8c74c232d112287e83c03deadd34fc18db73358",
+      "bytes": 673036
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/rollouts/prior_splice_e015_r265/trajectories/environment_qualification_evidence.json",
+      "sha256": "ea1c8853b7d4b3e072e28cac5fb244f1071becea30c4849e45094b9c7ded6c1c",
+      "bytes": 28141
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-qualification-v1/rollouts/prior_splice_e015_r265/trajectories/000000.trajectory.pkl",
+      "sha256": "ddbc57cdc533d5c110fe8d5c5e76422645996b9efa2d8325504c29d0fa8d5e4e",
+      "bytes": 673036
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/rollouts/prior_splice_e050_r265/trajectories/environment_qualification_evidence.json",
+      "sha256": "ee2b102d3eb1bf955927ce92cc457497b1ee25a5123caf08c16a0c98571551d5",
+      "bytes": 27636
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-qualification-v1/rollouts/prior_splice_e050_r265/trajectories/000000.trajectory.pkl",
+      "sha256": "a865238295704e9e0860dcc143ad1abd8e2f8e1114a4d91db4251dc622da2c7f",
+      "bytes": 673036
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/rollouts/short_e070_r265/trajectories/environment_qualification_evidence.json",
+      "sha256": "3d04012e2a255ed11718e974437f3022f870d7e01f08916d88826d40a1d7365e",
+      "bytes": 25865
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-qualification-v1/rollouts/short_e070_r265/trajectories/000000.trajectory.pkl",
+      "sha256": "d1a4a71e4e5b09017c747b78361d142c9e38ed42a888c5bc3ae7b31c62deb716",
+      "bytes": 673036
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-analysis-v2/rollouts/sustained_e070_r255/trajectories/environment_qualification_evidence.json",
+      "sha256": "c3080273738cd42e9e04e1ae50d27c8aecef26840cfe2467f629253f93969c08",
+      "bytes": 26606
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-prior-splice-seven-schedule-qualification-v1/rollouts/sustained_e070_r255/trajectories/000000.trajectory.pkl",
+      "sha256": "8a232add176b43a2d7c2f121a9767700ccbcf2c5de750bc04755c1db0187248a",
+      "bytes": 673036
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/lflh_next/benchmark.py",
+      "sha256": "6557ecc7f6832fc50929b6fbb0ca08116798f67be40f6df3321bf0530059425c",
+      "bytes": 13453
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/lflh_next/geometry.py",
+      "sha256": "513a2388acf8bc73ab1143c8c2bb81fff46a0eadca371f3fe17e9fc1a45f32c8",
+      "bytes": 2206
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/swept_volume.py",
+      "sha256": "7b283d5fe991567629e559bc2121b7649eb2ec27e84b8b3c6a5741e8f1246a68",
+      "bytes": 15368
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/hallucination/motion2scene_reset_capture.py",
+      "sha256": "fd2d48a6c74afd7621b39af7496cf246ce0baa172ddad993ccd878531c0e8098",
+      "bytes": 1308
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/trajectory_segments.py",
+      "sha256": "7adf547065ab3e30eef648d5a8acf6209841cac7a07bb1ee86f58fea37e2e50d",
+      "bytes": 6491
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/trajectory_validation.py",
+      "sha256": "d2528201481d46b4c46d04f033fc9298d63ae01576c95e8ed4d05b9141c55f12",
+      "bytes": 10860
+    },
+    {
+      "path": "docs/motion2scene/research/lflh-next-20260911/benchmark/bank.pt",
+      "sha256": "ea8356572af5643659da282b5f6c3213e5084b316746efbe879a041350336eb9",
+      "bytes": 7917880
+    }
+  ],
+  "outcome_access": "Earlier development and partial pilot results already accessible; new offline design is exploratory.",
+  "scope": "Seven motions from one existing qualified bank. Fit and score on the same bank, fresh latent draws only. No source-ancestry holdout or population inference.",
+  "labels": "Desired motion index; no new physical outcome labels; decoder is geometric clearance ranking, not an optimal dynamics planner.",
+  "forbidden": [
+    "pilot acquisition/evaluation contexts",
+    "reserved layouts",
+    "new physics",
+    "GPU use",
+    "checkpoint selection by scoring results"
+  ],
+  "ceiling": "8 fits x 120 updates; 600 s training/evaluation wall cap. Do not extend if unfavorable."
+}

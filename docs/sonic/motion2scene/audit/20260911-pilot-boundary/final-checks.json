@@ -1,0 +1,12 @@
+{
+  "utc": "2026-09-11T04:53:25.731815+00:00",
+  "unique_assignment_rows": 488,
+  "scored_contact_captures_verified_200hz": 459,
+  "development_outcomes_matched_to_raw_scorer": 138,
+  "focused_tests_passed": 67,
+  "pdf_pages": 4,
+  "physics_launched_by_audit": 0,
+  "execution_status": "BLOCKED",
+  "phase3": "CLOSED",
+  "new_inference": "exploratory; p=NA; no confidence interval or exchangeability scheme"
+}

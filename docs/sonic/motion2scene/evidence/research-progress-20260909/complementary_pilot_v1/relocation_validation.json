@@ -1,0 +1,22 @@
+{
+  "current_preparation": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_prepare_complementary_pilot.py",
+    "sha256": "sha256:eaf70d24f10b12f29f6106774b77aa8deeeec275a50e0b4c2f82e38c8d589e6a"
+  },
+  "native_preflight_restored": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v6/restored_native_preflight.json",
+    "sha256": "sha256:a5a67b64e99eed22cadef77f77d64e038948365ba8be1e4cc72d2de52c1cd2d4"
+  },
+  "new_physical_executions": 0,
+  "original_declaration": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-acquisition-pilot-20260910-v1/declaration.json",
+    "sha256": "sha256:4cb26d098d5f98b5f6e774631542066355f72c28bd2d8c2de6551c78868f174b"
+  },
+  "preparation_functions_ast_identical": true,
+  "selected_candidates_changed": false,
+  "selector_byte_identical": true,
+  "source_relocation": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-acquisition-pilot-20260910-v1/offline_source_relocation.json",
+    "sha256": "sha256:7b22d1c0046896f7b04305abd727d0979ae5f067a688a88d8d900ba3a2475cdb"
+  }
+}

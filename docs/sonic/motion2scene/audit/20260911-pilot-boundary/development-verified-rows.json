@@ -1,0 +1,968 @@
+[
+  {
+    "assignment_id": "episode_000",
+    "outcome": "pass",
+    "policy_id": "seed93202_uniform",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_001",
+    "outcome": "failure",
+    "policy_id": "seed93201_target_only",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_002",
+    "outcome": "pass",
+    "policy_id": "seed93202_observation_curriculum",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_003",
+    "outcome": "pass",
+    "policy_id": "seed93203_uniform",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_004",
+    "outcome": "pass",
+    "policy_id": "seed93202_target_only",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_005",
+    "outcome": "pass",
+    "policy_id": "fixed_short_e015_r265",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "short_e015_r265"
+  },
+  {
+    "assignment_id": "episode_006",
+    "outcome": "pass",
+    "policy_id": "seed93203_observation_curriculum",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_007",
+    "outcome": "pass",
+    "policy_id": "fixed_sustained_e070_r255",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_008",
+    "outcome": "failure",
+    "policy_id": "seed93203_uniform",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_009",
+    "outcome": "failure",
+    "policy_id": "seed93203_target_only",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "short_e070_r265"
+  },
+  {
+    "assignment_id": "episode_010",
+    "outcome": "failure",
+    "policy_id": "seed93202_uniform",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_011",
+    "outcome": "pass",
+    "policy_id": "fixed_prior_splice_e015_r265",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_012",
+    "outcome": "pass",
+    "policy_id": "seed93203_target_only",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_013",
+    "outcome": "pass",
+    "policy_id": "seed93202_uniform",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_014",
+    "outcome": "pass",
+    "policy_id": "seed93203_uniform",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_015",
+    "outcome": "pass",
+    "policy_id": "seed93201_observation_curriculum",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_016",
+    "outcome": "pass",
+    "policy_id": "seed93203_target_only",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "short_e070_r265"
+  },
+  {
+    "assignment_id": "episode_017",
+    "outcome": "pass",
+    "policy_id": "seed93202_observation_curriculum",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_018",
+    "outcome": "failure",
+    "policy_id": "seed93201_analytic_contrast",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_019",
+    "outcome": "pass",
+    "policy_id": "fixed_sustained_e070_r255",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_020",
+    "outcome": "failure",
+    "policy_id": "fixed_short_e070_r265",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "short_e070_r265"
+  },
+  {
+    "assignment_id": "episode_021",
+    "outcome": "pass",
+    "policy_id": "fixed_neutral",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "neutral"
+  },
+  {
+    "assignment_id": "episode_022",
+    "outcome": "pass",
+    "policy_id": "fixed_sustained_e015_r255",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "sustained_e015_r255"
+  },
+  {
+    "assignment_id": "episode_023",
+    "outcome": "pass",
+    "policy_id": "seed93201_observation_curriculum",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_024",
+    "outcome": "pass",
+    "policy_id": "seed93202_analytic_contrast",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_025",
+    "outcome": "failure",
+    "policy_id": "fixed_short_e015_r265",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "short_e015_r265"
+  },
+  {
+    "assignment_id": "episode_026",
+    "outcome": "failure",
+    "policy_id": "seed93201_target_only",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_027",
+    "outcome": "pass",
+    "policy_id": "seed93203_reference_contrast",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_028",
+    "outcome": "pass",
+    "policy_id": "fixed_short_e015_r265",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "short_e015_r265"
+  },
+  {
+    "assignment_id": "episode_029",
+    "outcome": "pass",
+    "policy_id": "seed93202_target_only",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_030",
+    "outcome": "pass",
+    "policy_id": "seed93201_reference_contrast",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_031",
+    "outcome": "failure",
+    "policy_id": "seed93201_uniform",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_032",
+    "outcome": "failure",
+    "policy_id": "seed93202_analytic_contrast",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_033",
+    "outcome": "pass",
+    "policy_id": "seed93203_uniform",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_034",
+    "outcome": "pass",
+    "policy_id": "seed93202_target_only",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_035",
+    "outcome": "pass",
+    "policy_id": "fixed_sustained_e015_r255",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "sustained_e015_r255"
+  },
+  {
+    "assignment_id": "episode_036",
+    "outcome": "failure",
+    "policy_id": "fixed_sustained_e015_r255",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "sustained_e015_r255"
+  },
+  {
+    "assignment_id": "episode_037",
+    "outcome": "pass",
+    "policy_id": "fixed_prior_splice_e015_r265",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_038",
+    "outcome": "pass",
+    "policy_id": "seed93201_target_only",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_039",
+    "outcome": "pass",
+    "policy_id": "seed93203_analytic_contrast",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_040",
+    "outcome": "pass",
+    "policy_id": "seed93201_target_only",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_041",
+    "outcome": "failure",
+    "policy_id": "fixed_neutral",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "neutral"
+  },
+  {
+    "assignment_id": "episode_042",
+    "outcome": "pass",
+    "policy_id": "seed93203_uniform",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_043",
+    "outcome": "pass",
+    "policy_id": "seed93202_observation_curriculum",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_044",
+    "outcome": "pass",
+    "policy_id": "seed93202_reference_contrast",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_045",
+    "outcome": "failure",
+    "policy_id": "fixed_short_e070_r265",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "short_e070_r265"
+  },
+  {
+    "assignment_id": "episode_046",
+    "outcome": "pass",
+    "policy_id": "seed93203_reference_contrast",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_047",
+    "outcome": "pass",
+    "policy_id": "seed93201_analytic_contrast",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_048",
+    "outcome": "pass",
+    "policy_id": "seed93201_reference_contrast",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_049",
+    "outcome": "pass",
+    "policy_id": "seed93201_analytic_contrast",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_050",
+    "outcome": "failure",
+    "policy_id": "seed93203_observation_curriculum",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_051",
+    "outcome": "failure",
+    "policy_id": "seed93203_reference_contrast",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_052",
+    "outcome": "pass",
+    "policy_id": "fixed_sustained_e015_r255",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "sustained_e015_r255"
+  },
+  {
+    "assignment_id": "episode_053",
+    "outcome": "pass",
+    "policy_id": "fixed_prior_splice_e015_r265",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_054",
+    "outcome": "pass",
+    "policy_id": "fixed_prior_splice_e015_r265",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_055",
+    "outcome": "failure",
+    "policy_id": "fixed_neutral",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": null
+  },
+  {
+    "assignment_id": "episode_056",
+    "outcome": "pass",
+    "policy_id": "script",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_057",
+    "outcome": "pass",
+    "policy_id": "seed93202_uniform",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_058",
+    "outcome": "pass",
+    "policy_id": "seed93201_reference_contrast",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_059",
+    "outcome": "failure",
+    "policy_id": "fixed_short_e070_r265",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "short_e070_r265"
+  },
+  {
+    "assignment_id": "episode_060",
+    "outcome": "failure",
+    "policy_id": "seed93202_observation_curriculum",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_061",
+    "outcome": "pass",
+    "policy_id": "seed93203_target_only",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_062",
+    "outcome": "pass",
+    "policy_id": "seed93201_target_only",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_063",
+    "outcome": "failure",
+    "policy_id": "fixed_neutral",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "neutral"
+  },
+  {
+    "assignment_id": "episode_064",
+    "outcome": "pass",
+    "policy_id": "seed93201_analytic_contrast",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_065",
+    "outcome": "failure",
+    "policy_id": "fixed_neutral",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "neutral"
+  },
+  {
+    "assignment_id": "episode_066",
+    "outcome": "pass",
+    "policy_id": "seed93202_analytic_contrast",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_067",
+    "outcome": "failure",
+    "policy_id": "fixed_sustained_e015_r255",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "sustained_e015_r255"
+  },
+  {
+    "assignment_id": "episode_068",
+    "outcome": "failure",
+    "policy_id": "seed93202_reference_contrast",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_069",
+    "outcome": "pass",
+    "policy_id": "fixed_prior_splice_e050_r265",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_070",
+    "outcome": "failure",
+    "policy_id": "fixed_prior_splice_e050_r265",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_071",
+    "outcome": "pass",
+    "policy_id": "fixed_sustained_e015_r255",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "sustained_e015_r255"
+  },
+  {
+    "assignment_id": "episode_072",
+    "outcome": "pass",
+    "policy_id": "seed93201_observation_curriculum",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_073",
+    "outcome": "pass",
+    "policy_id": "seed93203_analytic_contrast",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_074",
+    "outcome": "pass",
+    "policy_id": "seed93203_reference_contrast",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_075",
+    "outcome": "pass",
+    "policy_id": "script",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "neutral"
+  },
+  {
+    "assignment_id": "episode_076",
+    "outcome": "pass",
+    "policy_id": "seed93203_target_only",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "short_e070_r265"
+  },
+  {
+    "assignment_id": "episode_077",
+    "outcome": "failure",
+    "policy_id": "seed93201_observation_curriculum",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_078",
+    "outcome": "pass",
+    "policy_id": "seed93203_observation_curriculum",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_079",
+    "outcome": "pass",
+    "policy_id": "fixed_short_e070_r265",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "short_e070_r265"
+  },
+  {
+    "assignment_id": "episode_080",
+    "outcome": "pass",
+    "policy_id": "seed93201_uniform",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_081",
+    "outcome": "pass",
+    "policy_id": "seed93203_analytic_contrast",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_082",
+    "outcome": "failure",
+    "policy_id": "seed93203_analytic_contrast",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_083",
+    "outcome": "pass",
+    "policy_id": "seed93203_observation_curriculum",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_084",
+    "outcome": "pass",
+    "policy_id": "seed93202_target_only",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_085",
+    "outcome": "failure",
+    "policy_id": "fixed_short_e015_r265",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "short_e015_r265"
+  },
+  {
+    "assignment_id": "episode_086",
+    "outcome": "pass",
+    "policy_id": "fixed_neutral",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "neutral"
+  },
+  {
+    "assignment_id": "episode_087",
+    "outcome": "pass",
+    "policy_id": "script",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_088",
+    "outcome": "pass",
+    "policy_id": "seed93201_reference_contrast",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_089",
+    "outcome": "pass",
+    "policy_id": "seed93202_reference_contrast",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_090",
+    "outcome": "pass",
+    "policy_id": "seed93202_uniform",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_091",
+    "outcome": "pass",
+    "policy_id": "seed93202_uniform",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_092",
+    "outcome": "pass",
+    "policy_id": "fixed_sustained_e070_r255",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_093",
+    "outcome": "failure",
+    "policy_id": "seed93203_reference_contrast",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_094",
+    "outcome": "pass",
+    "policy_id": "seed93201_uniform",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_095",
+    "outcome": "failure",
+    "policy_id": "fixed_short_e015_r265",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "short_e015_r265"
+  },
+  {
+    "assignment_id": "episode_096",
+    "outcome": "pass",
+    "policy_id": "seed93201_analytic_contrast",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_097",
+    "outcome": "pass",
+    "policy_id": "seed93203_observation_curriculum",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_098",
+    "outcome": "failure",
+    "policy_id": "seed93202_target_only",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_099",
+    "outcome": "pass",
+    "policy_id": "seed93201_reference_contrast",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_100",
+    "outcome": "pass",
+    "policy_id": "seed93202_reference_contrast",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_101",
+    "outcome": "pass",
+    "policy_id": "fixed_prior_splice_e050_r265",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_102",
+    "outcome": "pass",
+    "policy_id": "seed93202_analytic_contrast",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_103",
+    "outcome": "pass",
+    "policy_id": "fixed_short_e070_r265",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "short_e070_r265"
+  },
+  {
+    "assignment_id": "episode_104",
+    "outcome": "pass",
+    "policy_id": "fixed_prior_splice_e050_r265",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_105",
+    "outcome": "pass",
+    "policy_id": "seed93201_analytic_contrast",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_106",
+    "outcome": "pass",
+    "policy_id": "seed93202_analytic_contrast",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_107",
+    "outcome": "pass",
+    "policy_id": "seed93202_observation_curriculum",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_108",
+    "outcome": "pass",
+    "policy_id": "fixed_prior_splice_e015_r265",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_109",
+    "outcome": "pass",
+    "policy_id": "seed93203_reference_contrast",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_110",
+    "outcome": "failure",
+    "policy_id": "fixed_sustained_e070_r255",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_111",
+    "outcome": "failure",
+    "policy_id": "fixed_sustained_e070_r255",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_112",
+    "outcome": "pass",
+    "policy_id": "seed93203_analytic_contrast",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_113",
+    "outcome": "pass",
+    "policy_id": "seed93202_analytic_contrast",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_114",
+    "outcome": "pass",
+    "policy_id": "seed93201_observation_curriculum",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_115",
+    "outcome": "failure",
+    "policy_id": "fixed_prior_splice_e015_r265",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_116",
+    "outcome": "failure",
+    "policy_id": "seed93202_target_only",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_117",
+    "outcome": "pass",
+    "policy_id": "seed93201_uniform",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_118",
+    "outcome": "pass",
+    "policy_id": "seed93202_reference_contrast",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_119",
+    "outcome": "pass",
+    "policy_id": "fixed_prior_splice_e050_r265",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_120",
+    "outcome": "pass",
+    "policy_id": "seed93203_uniform",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_121",
+    "outcome": "pass",
+    "policy_id": "seed93201_uniform",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_122",
+    "outcome": "pass",
+    "policy_id": "script",
+    "scene_id": "complementary_late_development_0100",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_123",
+    "outcome": "pass",
+    "policy_id": "fixed_prior_splice_e050_r265",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_124",
+    "outcome": "pass",
+    "policy_id": "seed93202_observation_curriculum",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_125",
+    "outcome": "pass",
+    "policy_id": "fixed_short_e070_r265",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "short_e070_r265"
+  },
+  {
+    "assignment_id": "episode_126",
+    "outcome": "pass",
+    "policy_id": "seed93203_analytic_contrast",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_127",
+    "outcome": "pass",
+    "policy_id": "seed93201_uniform",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_128",
+    "outcome": "pass",
+    "policy_id": "seed93203_target_only",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_129",
+    "outcome": "pass",
+    "policy_id": "fixed_short_e015_r265",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "short_e015_r265"
+  },
+  {
+    "assignment_id": "episode_130",
+    "outcome": "pass",
+    "policy_id": "fixed_sustained_e070_r255",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_131",
+    "outcome": "pass",
+    "policy_id": "seed93201_reference_contrast",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_132",
+    "outcome": "pass",
+    "policy_id": "script",
+    "scene_id": "timed_development_0247",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_133",
+    "outcome": "pass",
+    "policy_id": "seed93203_observation_curriculum",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_134",
+    "outcome": "pass",
+    "policy_id": "seed93202_reference_contrast",
+    "scene_id": "long_neutral_empty",
+    "selected_schedule": "prior_splice_e015_r265"
+  },
+  {
+    "assignment_id": "episode_135",
+    "outcome": "pass",
+    "policy_id": "script",
+    "scene_id": "early_prior_development_0284",
+    "selected_schedule": "prior_splice_e050_r265"
+  },
+  {
+    "assignment_id": "episode_136",
+    "outcome": "pass",
+    "policy_id": "seed93201_target_only",
+    "scene_id": "early_prior_two_beam_development_v1",
+    "selected_schedule": "sustained_e070_r255"
+  },
+  {
+    "assignment_id": "episode_137",
+    "outcome": "pass",
+    "policy_id": "seed93201_observation_curriculum",
+    "scene_id": "timed_development_0187",
+    "selected_schedule": "prior_splice_e050_r265"
+  }
+]

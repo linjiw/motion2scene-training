@@ -1,0 +1,309 @@
+{
+  "acquisition_summary": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/all_M8_bound_response_tables.json",
+    "sha256": "sha256:1b3e8351619e0d2d521d16613eba41ba264cd7572f702c0d5507848e9c0ebe36"
+  },
+  "all_15_prepared_models_match_completed_M8": true,
+  "all_48_comparator_result_hashes_unchanged": true,
+  "assigned_learned_episodes": 90,
+  "completed_comparators": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/comparators_complete.json",
+    "sha256": "sha256:dfbda82b79da60129d4ed4dc832e03cf13bb2de66900c8e98474999791841ae8"
+  },
+  "completed_learned_assignments": 3,
+  "completed_stage_exits": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/expanded_M8_resume_exit.json",
+      "sha256": "sha256:6679a78f354aceecf3ac121dcbb27974ddf2ab9bbe21a0190e1df8a705adabc8"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/development_prepare_exit.json",
+      "sha256": "sha256:620f517e641090e71b6c6380763f93fef5a435fc62eb46dc2ec65011beeec214"
+    }
+  ],
+  "interpretation": "Actual native closed-loop development executions of the frozen M8 models on their original assigned scenes and execution seed8732. Results, manifests, generating models, sensor and attempt receipts are hash-bound; the original assignment checker passes. Uses original collector scoring, not teacher-table action lookup or a new raw-record audit. The panel is incomplete; no arm comparison, held-out claim or uncertainty estimate is inferred from this progress snapshot. The48 frozen comparator results are unchanged and reused. Passage time is crossing plus stabilization, not full adaptation/recovery completion. The original coordinator continues the90 learned assignments before the predeclared M16/M32 acquisition continuation. No policy, baseline, selection rule, queue, native runtime, scoring or reserved assignment changed.",
+  "live_processes": [
+    {
+      "argv": [
+        "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python",
+        "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/run.py"
+      ],
+      "pid": 2474326,
+      "receipt": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/launch.json",
+        "sha256": "sha256:2fc35eb34137eeac6ade17be6505bf63f486d7d839de6afb20e79e1e2fb223c8"
+      },
+      "start_ticks": "7930904",
+      "state": "S"
+    },
+    {
+      "argv": [
+        "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python",
+        "scripts/research/motion2scene_development_checkpoint_panel.py",
+        "run",
+        "--panel",
+        "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1"
+      ],
+      "pid": 2863023,
+      "receipt": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/development_M8_process.json",
+        "sha256": "sha256:06a534294cff0de6d1e4c166ea63618b707fc8107495318907403b7c73d97819"
+      },
+      "start_ticks": "11446959",
+      "state": "S"
+    }
+  ],
+  "new_native_physics_steps": 3576,
+  "outcomes": {
+    "failure": 1,
+    "pass": 2
+  },
+  "pending_launched_assignments": [
+    {
+      "assignment_id": "episode_003",
+      "launch": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_003/launch.json",
+        "sha256": "sha256:482144d1a4a74683327916ca9a0ebf24c3eafe7987dd6de45a1bf9d11d464f62"
+      }
+    }
+  ],
+  "prepared": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/prepared.json",
+    "sha256": "sha256:3f63b64fc28e9934f9e7cbe8f1a2f255bbc2ae96a5558901cbe2c8951d52a151"
+  },
+  "reserved_executions": 0,
+  "rows": [
+    {
+      "assignment_id": "episode_000",
+      "attempt": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_000/rollouts/learned_neutral/attempt.json",
+        "sha256": "sha256:e9c4b089c3f944def6d42d4f7761f6498210a7b52675331d8c2f5c398a545db2"
+      },
+      "launch": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_000/launch.json",
+        "sha256": "sha256:6695e9ce2553d13cbd0bd30ef9f6ef24df5a402484929ba2a8040492ba13bedf"
+      },
+      "manifest": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_000/manifest.json",
+        "sha256": "sha256:2bffce8bbdfddfb8b743d5d9553a5ed415b3bc7d3a446c042108ae8d5fff0093"
+      },
+      "model": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_uniform/models/model_008/policy.npz",
+        "sha256": "sha256:30aad9ecb23b3f7569b0a9a502709e7196ebffbb44c2daa719f3d1d21f88969b"
+      },
+      "outcome": {
+        "assigned_slots": 1,
+        "classification": "complete_pass",
+        "complete_measurement_admitted": true,
+        "complete_pass": true,
+        "exit_status": 0,
+        "measurement_diagnostics": [],
+        "measurement_status": "complete",
+        "phase_availability": [
+          {
+            "packet_index": 14,
+            "reason": null,
+            "sensor_preaction_available": true,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 15
+          },
+          {
+            "packet_index": null,
+            "reason": "not_a_neutral_preaction_state",
+            "sensor_preaction_available": false,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 50
+          },
+          {
+            "packet_index": null,
+            "reason": "not_a_neutral_preaction_state",
+            "sensor_preaction_available": false,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 70
+          }
+        ],
+        "physical_events": [],
+        "physical_rows_recorded": 298,
+        "physics_steps_recorded": 1192,
+        "schema": "motion2scene_timed_attempt_outcome_v1",
+        "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+        "sensor_packets_recorded": 298,
+        "task_outcome": "pass"
+      },
+      "passage_time_s": 2.72,
+      "physics_seed": 8732,
+      "physics_steps": 1192,
+      "policy_id": "seed93202_uniform",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_000/result.json",
+        "sha256": "sha256:2f64ba040e400c3c1f1dc690ce09dec1b30b61a3f11df9dc016671886f3eee9f"
+      },
+      "scene_id": "early_prior_development_0284",
+      "selected_schedule": "prior_splice_e015_r265",
+      "sensor": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_000/rollouts/learned_neutral/trajectories/reactive_interface.json",
+        "sha256": "sha256:32185277be25df3dddd1eb5d041b994ba4f3b062b33b233a70182ad342fe0437"
+      }
+    },
+    {
+      "assignment_id": "episode_001",
+      "attempt": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_001/rollouts/learned_neutral/attempt.json",
+        "sha256": "sha256:54f2b1f634a58a9b41f972aeb98a37f341c83e83b7e3a22503bc79cdad5a6d0e"
+      },
+      "launch": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_001/launch.json",
+        "sha256": "sha256:22e1b832cf522ec3458902282544f2a91616abeb43e371a4d8104aa773bee0e4"
+      },
+      "manifest": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_001/manifest.json",
+        "sha256": "sha256:6e4c150a69402ac58c172689faec3a9cd6ac6604cad3166f9c7541f431527188"
+      },
+      "model": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_target_only/models/model_008/policy.npz",
+        "sha256": "sha256:2bb811ee5ac6138d12bfdbb1efe45cb6ea38d19a81c8030eb13276855e4e981b"
+      },
+      "outcome": {
+        "assigned_slots": 1,
+        "classification": "verified_task_failure",
+        "complete_measurement_admitted": true,
+        "complete_pass": false,
+        "exit_status": 0,
+        "measurement_diagnostics": [],
+        "measurement_status": "complete",
+        "phase_availability": [
+          {
+            "packet_index": 14,
+            "reason": null,
+            "sensor_preaction_available": true,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 15
+          },
+          {
+            "packet_index": 49,
+            "reason": null,
+            "sensor_preaction_available": true,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 50
+          },
+          {
+            "packet_index": 69,
+            "reason": null,
+            "sensor_preaction_available": true,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 70
+          }
+        ],
+        "physical_events": [
+          {
+            "final_physical_phase_s": 5.94,
+            "kind": "finite_captured_reference_horizon_before_completion"
+          }
+        ],
+        "physical_rows_recorded": 298,
+        "physics_steps_recorded": 1192,
+        "schema": "motion2scene_timed_attempt_outcome_v1",
+        "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+        "sensor_packets_recorded": 298,
+        "task_outcome": "failure"
+      },
+      "passage_time_s": null,
+      "physics_seed": 8732,
+      "physics_steps": 1192,
+      "policy_id": "seed93201_target_only",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_001/result.json",
+        "sha256": "sha256:4a829a6cd2f10a0b4a75bfefdde68befa694559198470093fc20a0f2b3079423"
+      },
+      "scene_id": "long_neutral_empty",
+      "selected_schedule": "sustained_e070_r255",
+      "sensor": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_001/rollouts/learned_neutral/trajectories/reactive_interface.json",
+        "sha256": "sha256:315c25a109f1c1c1381be97689cfa6571bf1eca3d3b495fddec2ec5b6cb67938"
+      }
+    },
+    {
+      "assignment_id": "episode_002",
+      "attempt": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_002/rollouts/learned_neutral/attempt.json",
+        "sha256": "sha256:6fd84352e21412ae3407319d5cb29444f8bcba95e6ff80675b0937bcdcb83ce6"
+      },
+      "launch": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_002/launch.json",
+        "sha256": "sha256:246dc3d588922ab524bc807049c8f1519d4dad268add128665e9a68956d6420c"
+      },
+      "manifest": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_002/manifest.json",
+        "sha256": "sha256:f6f65803e3d9aba1b2867520ee9a69e936ffc676e2c5a6a537953b4d379aa834"
+      },
+      "model": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_observation_curriculum/models/model_008/policy.npz",
+        "sha256": "sha256:5771de8f51787064ea97221ff735c578b92a73576d619b2b82c5294d1375a12f"
+      },
+      "outcome": {
+        "assigned_slots": 1,
+        "classification": "complete_pass",
+        "complete_measurement_admitted": true,
+        "complete_pass": true,
+        "exit_status": 0,
+        "measurement_diagnostics": [],
+        "measurement_status": "complete",
+        "phase_availability": [
+          {
+            "packet_index": 14,
+            "reason": null,
+            "sensor_preaction_available": true,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 15
+          },
+          {
+            "packet_index": null,
+            "reason": "not_a_neutral_preaction_state",
+            "sensor_preaction_available": false,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 50
+          },
+          {
+            "packet_index": null,
+            "reason": "not_a_neutral_preaction_state",
+            "sensor_preaction_available": false,
+            "teacher_scope": "requires separately complete matched future schedule outcomes",
+            "teacher_target_available": false,
+            "tick": 70
+          }
+        ],
+        "physical_events": [],
+        "physical_rows_recorded": 298,
+        "physics_steps_recorded": 1192,
+        "schema": "motion2scene_timed_attempt_outcome_v1",
+        "scope": "one assigned finite traversal; unavailable later supervision is never invented",
+        "sensor_packets_recorded": 298,
+        "task_outcome": "pass"
+      },
+      "passage_time_s": 5.38,
+      "physics_seed": 8732,
+      "physics_steps": 1192,
+      "policy_id": "seed93202_observation_curriculum",
+      "result": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_002/result.json",
+        "sha256": "sha256:eaf0b45b24c61acb50accaa83cfa49c37472f57e1bab207871b1def027a7979a"
+      },
+      "scene_id": "long_neutral_empty",
+      "selected_schedule": "prior_splice_e015_r265",
+      "sensor": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/episodes/episode_002/rollouts/learned_neutral/trajectories/reactive_interface.json",
+        "sha256": "sha256:da9ccbc70fbbfe4ebfeafb389cbb9b38642876f87bc25f00b0e240976e8db54e"
+      }
+    }
+  ],
+  "schema": "motion2scene_native_M8_development_progress_v1",
+  "utc": "2026-09-10T14:28:50.614841+00:00"
+}

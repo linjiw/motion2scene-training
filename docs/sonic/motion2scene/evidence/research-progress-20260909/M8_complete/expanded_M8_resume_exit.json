@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python",
+    "scripts/research/motion2scene_resume_recorded_student.py",
+    "--plan",
+    "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json",
+    "--adoption",
+    "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json",
+    "--repair",
+    "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v7/repair.json",
+    "--reconciliation",
+    "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/reconciliation.json",
+    "--until-budget",
+    "8"
+  ],
+  "exit_status": 0,
+  "wall_seconds": 34901.16913159899
+}

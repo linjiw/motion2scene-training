@@ -1,0 +1,23 @@
+[
+  {
+    "rollout": "absent_source41002_d085_forced_walk_t030",
+    "phase_s": 0.3,
+    "floor_cells": 51,
+    "ceiling_cells": 0,
+    "dual_surface_cells": 0
+  },
+  {
+    "rollout": "contrast_source41002_d085_forced_walk_t030",
+    "phase_s": 0.3,
+    "floor_cells": 51,
+    "ceiling_cells": 1,
+    "dual_surface_cells": 0
+  },
+  {
+    "rollout": "contrast_source41002_d085_forced_adapt_t030",
+    "phase_s": 1.0,
+    "floor_cells": 66,
+    "ceiling_cells": 7,
+    "dual_surface_cells": 7
+  }
+]

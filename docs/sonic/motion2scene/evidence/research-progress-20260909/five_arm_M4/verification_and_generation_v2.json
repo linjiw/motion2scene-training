@@ -1,0 +1,103 @@
+{
+  "actual_steps": 696536,
+  "audit": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-five-arm-M4-response-diversity-20260910-v1/result.json",
+    "sha256": "sha256:2a25c83e64a0bd34e3d4615a85aac90f52bf9acc4b1cfc0c08a4f09bb97c646e"
+  },
+  "boundaries": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-five-arm-M4-audit-watch-20260910-v1/M4_boundaries_complete.json",
+    "sha256": "sha256:f2f1a5c43d86137a753db26900143b72c1ec567ec16e53677c3800d3dbafddf1"
+  },
+  "captures": 585,
+  "completion": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-five-arm-M4-audit-watch-20260910-v1/complete.json",
+    "sha256": "sha256:bf568af2be4d85f3e2a45230c13504ce2919486669641b710951039f9f221b3d"
+  },
+  "figure_generation": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-five-arm-M1-M4-evidence-20260910-v1/result.json",
+    "sha256": "sha256:e0b449a85dbe90c3200959372c491e1bc3a7578b14aa6d7a7a24a270eb468844"
+  },
+  "figure_visually_inspected": true,
+  "geometric_pool_sources": {
+    "expanded": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-candidate-pools-20260909-v1/result.json",
+      "sha256": "sha256:7849ee1e59f91c582eb3230819f55d7571caed357d7c5d5545b5678457bad3b5"
+    },
+    "original": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-candidate-pools-v1/result.json",
+      "sha256": "sha256:628ff0cfc454fa535706ecedce45a9e13dafa9c7c6718f4cddd141941213b397"
+    },
+    "reference_active": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-reference-candidate-pools-20260909-v2/result.json",
+      "sha256": "sha256:96daf24f7a9bbe8a4c8e00d025e2d37197ce21cc55acafddb5d8f4c360cff57d"
+    },
+    "reference_retained": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-reference-candidate-pools-20260909-v1/result.json",
+      "sha256": "sha256:181475c50fa9e5eb6878517fef743dd63fa3b30fb60071dca787897a3ff91e45"
+    }
+  },
+  "implementation": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_render_five_arm_m4.py",
+    "sha256": "sha256:09e5466691cf2f19eab64d8d312e7f153db6a44ae9495535f011cce010dd4c6a"
+  },
+  "new_fits": 0,
+  "new_physics_steps": 0,
+  "original_arm_summaries_equal": 4,
+  "original_corpus_reports_equal": 12,
+  "outputs": [
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/five_arm_M4/acquisition_by_corpus.csv",
+      "sha256": "sha256:e727093789a9b5242bca7f3b9a066c30d2822b4a7d7c93ea48a22063e5d1d8de"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/five_arm_M4/acquisition_yield.tex",
+      "sha256": "sha256:092d58d8196a911083eabda9e16ef28bae44731b58588fd1a4f080fcb30b2e2f"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/five_arm_M4/acquisition_responses.pdf",
+      "sha256": "sha256:6f821ce94ecd6a9170d50ce4495688f5aa5bdcf0f75352af539d495c06494acc"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/five_arm_M4/acquisition_responses.png",
+      "sha256": "sha256:6562c62b394f2b503c98147e48c5bb610c24eba95535a91dd49febcefa66e0d3"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/five_arm_M4/M4_by_corpus.csv",
+      "sha256": "sha256:344754c9c897401ca10eb948a621955eb2fefbcc4e9e57e8629586222c51c3a5"
+    },
+    {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/FIVE_ARM_M4_ACQUISITION.md",
+      "sha256": "sha256:67244940fde03d19b7b630e195e372e29581e0e955d1da396f9a2ce43558ba54"
+    }
+  ],
+  "previous": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M4-20260909-v1/result.json",
+    "sha256": "sha256:e0340577761b4a26ac74204bcabbb8e9344740aa756b09157fe44abbc3bbad50"
+  },
+  "recorded_search_components": [
+    {
+      "candidates": 480,
+      "component": "Original shared pool",
+      "queries": 114848,
+      "seconds": 55.04462523799157
+    },
+    {
+      "candidates": 3840,
+      "component": "Expanded shared pool",
+      "queries": 967424,
+      "seconds": 457.37146194300294
+    },
+    {
+      "candidates": 3840,
+      "component": "Reference v1, no acquisition queue",
+      "queries": 1157424,
+      "seconds": 544.2597790660002
+    },
+    {
+      "candidates": 3840,
+      "component": "Reference v2, active queue",
+      "queries": 1157424,
+      "seconds": 542.6999589929983
+    }
+  ]
+}

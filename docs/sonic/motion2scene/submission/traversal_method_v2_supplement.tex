@@ -1,0 +1,484 @@
+\section{Acquired Response Witness}
+\label{app:acquired_witness}
+The interim pool retains every audited M2 acquired encounter and adds all three
+assigned round-three executed-contrast encounters. Repeated geometry/seed pairs
+are merged only after their complete outcome vectors agree. This yields 20
+conditions and one pair with disjoint passing sets. Both scenes use execution
+seed 93201: candidate 0155 was acquired by target-only at round one; candidate
+0017 was acquired by executed contrast at round three. The pair was identified
+after inspecting outcomes and is an illustration, not a selected test set.
+The existing scene-wise teacher and 114-dimensional observation interface are
+unchanged. Exact recorded perception vectors differ at all three neutral-prefix
+decision phases; no observation tolerance or new memory rule is introduced.
+For example, the first-phase upper-hit band is 1.5--2.5 m in scene A and
+0.75--1.5 m in scene B. These observations do not establish robust information
+separation under unmeasured noise or perturbations.
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\linewidth]{../evidence/research-progress-20260909/acquired-witness/acquired_response_witness.pdf}
+\caption{A complementary pair from the acquired development pool. Left: two
+recorded feature families at the first decision; the exported data retain all
+114 features. Middle/right: recorded IsaacLab poses for two illustrative complete
+schedules, rendered using MuJoCo forward kinematics without dynamics integration.
+Each row uses the same control index, chosen at the failed displayed schedule's
+maximum measured beam force. Rendered meshes differ from native collision bodies;
+the full-trial pass/fail labels and maximum contact forces come from the archived
+physical measurements. The complete seven-schedule outcomes are shown below.
+Contact failures here satisfy the unchanged environment-contact scoring rule.
+This post-hoc witness neither compares balanced acquisition arms nor measures
+a newly executed perceptive policy.}
+\label{fig:acquired_response_witness}
+\end{figure}
+
+\section{Teacher Initialization and Decision-Learning Details}
+\label{app:initialization}
+If a phase has no consequential row, initialization requires a complete matched
+table with at least two legal actions, all required continuations admitted, and
+all legal actions passing with exactly equal finite nonnegative passage times.
+Zero ridge coefficients and intercepts then solve the measured zero-regret
+targets. Normalization uses those rows with standard-deviation floor 0.05; only
+supported legal columns are trained. The deterministic lowest-index argmax can
+choose WAIT. Once consequential data exist, they alone determine the fit.
+Missing or all-failed tables do not initialize a head. This common rule was added
+after the first empty bootstrap exposed an exact cost tie at 1.00 s; the
+previously selected ridge penalty 10 was retained. Appendix~\ref{app:protocol}
+records the corresponding acquisition versions.
+
+The September 9 decision-learning comparison uses all 42 existing development
+branches and leaves all phases of one context together in each fold. It compares
+the unchanged ridge with separate depth-two feasibility and time trees, both
+with deterministic seed zero. Feasibility uses measured failures as well as
+passes; time uses passes only. The loss and model family change jointly, so this
+comparison does not isolate nonlinearity. Exact feature keys canonicalize signed
+zero and otherwise preserve every stored float64 value. No measurement tolerance
+is imposed. All six keys differ at all three phases. Information partitions must
+refine over phases; full-state prefix hashes and scene identifiers are excluded
+from the observation-equivalence rule.
+
+The replay comparison fits the same ridge on the same training portion of each
+fold. Each arm starts from a uniform fit and receives three refits. Current-error
+priority is recomputed exclusively on that fold's training rows. Coverage uses
+the joint-bin definition in the main text. Held-out decisions never enter
+normalization, priorities or fitting. All four arms have four passing branch
+proxies out of six. Their mean consequential phase regrets are 0.18952 for
+uniform, coverage-only and uniform/coverage, and 0.19570 for current error.
+These controls balance encounters before phases, whereas the original ridge
+comparison weights available contexts equally within each phase; the two
+uniform conventions therefore need not have identical phase regret.
+
+Neither CPU experiment adds physical execution. The existing teacher and model
+artifacts remain unchanged. Full per-fold choices, costs and replay weights are
+stored with the scripts \texttt{motion2scene\_decision\_study.py} and
+\texttt{motion2scene\_replay\_comparison.py}; the project development-learning
+report links the exact result files.
+
+The completed M2 acquisition controls extend this comparison to three acquired
+corpora. Uniform, coverage-only, the actual 0.8-uniform/0.2-coverage fallback,
+historical gated gaps, historical ungated gaps, refreshed supervised error and
+historical-plus-error weights each select passing recorded branches on five of
+the same six development contexts in every corpus. Every corpus retains three
+positive historical phase gaps from its first acquisition student. All six
+nonempty phase cue records per corpus satisfy the current visibility rule, and
+gated and ungated replay weights are identical. Thus replay priority is active,
+but this checkpoint does not exercise a visibility exclusion or establish a
+passage gain. The historical gaps remain attached to their pre-update generating
+models. The refreshed residuals measure supervised fitting error. The 21 final
+control models require 66 complete policy fits: one common initial fit and
+three refits for each of seven controls, per corpus. These are CPU fitting
+operations, with no new physical evaluation.
+
+The same seven controls are now complete at M4 for all three original corpora.
+All again select passing recorded branches in 5/6 contexts. Within each corpus,
+every control selects the same complete prior schedule on all six contexts:
+entry at 1.00 s for seeds 93201 and 93203, and 0.30 s for seed 93202. Relative to
+uniform, selected-schedule changes and passing-branch differences are zero;
+recorded time differences are also zero on the five mutually successful contexts
+per comparison. Each corpus retains three positive historical phase gaps, and
+all twelve nonempty phase cues satisfy the current visibility rule. Gated and
+ungated weights remain identical despite differences between replay and uniform
+weights. Re-evaluation of the 42 saved M2/M4 controls reproduces all 252 recorded
+context choices and 126 weight recipes without new fitting or physics. The
+checkpoints share nested training prefixes and the same six development
+contexts, so these are repeated readouts rather than independent policy trials.
+This extends the recorded-input replay null result; its separate closed-loop
+benefit remains unestablished.
+
+\subsection{Secondary learner comparison}
+\label{app:learner_debug}
+The regression already appears on recorded teaching inputs: the six-context
+ridge selects sustained schedules on the short and long passages, with branch
+times 4.06 and 4.64 s. We compare it with depth-two decision trees predicting
+feasibility and successful passage time separately. Each legal action has a
+feasibility classifier; its time regressor uses successful observations only.
+Among actions with estimated passage probability at least 0.5, choose the
+fastest; if none qualifies, choose maximum estimated feasibility. Depth and
+threshold are fixed before this comparison, with no parameter search.
+
+Both models select passing recorded branches in all six training contexts. The
+tree reduces mean regret over the 17 consequential phase tables from 0.01916 to
+0.00713 and recovers the 4.48 s prior schedule on the long passage, but selects a
+slower 4.20 s schedule on the two-beam context. Leaving each entire context out
+gives both learners four passing branch proxies out of six; both miss the early
+and complementary contexts when those teaching examples are withheld.
+Thus the alternative improves some fitted decisions without establishing a
+generalization advantage. These are finite recorded-branch readouts, with no new
+closed-loop executions in the fitting comparison.
+
+We then execute the same fixed tree on all six contexts at the policy-comparison
+seed 8732. Its exported decisions reproduce the original tree exactly, and its
+first neutral inputs match the ridge recordings in every context. The tree passes
+four contexts, losing the long and complementary passages to measured contact;
+ridge passes all six. Tree passage times are 5.90, 4.06, 2.72 and 4.12 s on the
+empty, short, early and two-beam contexts, respectively. Over these four mutually
+successful contexts it is 0.12 s slower on average. All six measurements are
+complete. On the complementary context, a small change in the distant corridor's
+unknown fraction crosses a feasibility-tree threshold and causes immediate short
+commitment instead of WAIT. Thus lower fitted regret does not resolve the
+closed-loop cost/capability tradeoff. We retain ridge as the common acquisition
+learner and expand the teaching corpus rather than selecting this alternative.
+
+\section{Sensor Sensitivity Implementation and Development Check}
+\label{app:sensors}
+At each capture, dropout removes fan channels independently without adding
+free-space evidence for missing measurements. Gaussian noise perturbs detected
+surface ranges; a distance outside the sensor interval becomes a missing return.
+Surviving normals and robot pose remain ideal. Fixed latency delays the corrupted
+packet before its world-space rays update the observation history. Capture and
+delivery times remain separate; the student receives neither clean rays nor
+future packets. Random draws are indexed by corruption seed, frame and fixed
+fan-channel position, independently of which channels hit a surface.
+
+On recorded neutral prefixes from all six teaching contexts, zero perturbation
+reconstructs all 18 decision vectors exactly. At corruption seed 95001, each of
+10\%/30\% dropout, 1/3 cm range noise and 40/100 ms delay changes the short-context
+branch proxy from sustained to prior, while preserving six passing proxies.
+The separate native four-condition check uses the existing short scene, the
+six-context policy, physics seed 8732 and corruption seed 95001. It records four
+complete episodes, 4,768 physics steps, and 1,192 exactly reconstructed student
+feature vectors. All conditions pass with zero measured beam force. Nominal,
+30\% dropout and 3 cm noise retain sustained and take 4.10 s; 100 ms latency
+selects prior and takes 3.60 s. Thus the dropout/noise proxy change from the
+seed-8731 teaching capture does not reproduce in this seed-8732 execution.
+This controlled development check exercises the perception interventions;
+multi-layout, multi-seed sensitivity of the selected final policy remains part
+of the broader evaluation.
+
+\section{Historical Development and Design Decisions}
+\label{app:history}
+The original diagnostic manuscript, \texttt{paper.tex}, and every earlier
+working draft remain unchanged or archived. Their results explain the present
+interventions but do not supply an untouched evaluation of them.
+
+\paragraph{The original command ceiling.}
+The earlier 36-condition walk/d040 bank contains 14 both-pass, ten crouch-only,
+12 both-fail and no walk-only conditions. Its maximum passage under those two
+fixed commands is $24/36=66.7\%$, already attained by always-d040 and the analytic
+selector. A learned selector misses two otherwise solvable conditions.
+This separates missed decisions from missing capability: replacing a selector
+cannot solve a condition for which every unchanged command fails. The bank was
+extensively inspected during development and remains a regression benchmark.
+
+\paragraph{Execution and observation interventions.}
+Four-second development experiments qualified additional authored crouch
+references and legal entry times. A newly constructed beam defeated walk and d040
+while d055, d070 and d085 passed. The old low beam still defeated every tested
+option. These references are \texttt{local\_crouch} edits of a generated neutral
+source, not independently learned skills. Their old fixed return windows do not
+qualify the present six-second durations.
+
+Identical earlier 214-dimensional inputs sometimes have conflicting walking
+labels. A larger deterministic classifier cannot distinguish identical inputs.
+All members of the observed ambiguous classes remained passable with the
+conservative adaptation; the ambiguity concerned unnecessary adaptation rather
+than unavoidable passage failure. The later floor/ceiling history preserves
+information that a single surface-height value discards, but does not guarantee
+unique task labels, semantic obstacle identity or timely underside observations.
+
+A six-second 106D duration experiment executes three options on three scenes:
+empty permits all, a short beam permits short/sustained, and a long passage permits
+sustained only. Its separate 15-policy evaluation at seed 8732 has learned and
+scripted policies both passing three of three with identical times 5.40/4.10/4.68 s;
+both select sustained on the short beam although constant short passes in 4.06 s.
+Constant sustained fails the empty finite-horizon hold without contact or fall.
+These outcomes establish a duration distinction and an integration limitation;
+changes from 106D/0.5 s memory to 114D/2 s memory are not a controlled sensor
+ablation. Earlier four-second phase-head data updates yield a one-control-tick
+cost change on one development condition, while a shared-head update regresses
+aggregate cost. Neither is a primary curriculum result.
+
+\paragraph{Learned proposals remain a negative development result.}
+An earlier learned conditional proposal uses paired executed summaries and a
+15-frame approach history. In its final geometric pilot it accepts 41 of 192
+proposals against 123 of 192 for analytic resampling and zero for uniform sampling.
+This pilot neither demonstrates neural acquisition advantage nor measures the
+new curriculum's held-out traversal. The present primary method uses an analytic
+constructor. A future conditional proposal could approximate its useful regions;
+a future adversary could edit geometry while retaining a physically verified
+solution. Neither extension is executed in the primary fixed candidate queues.
+
+\paragraph{Prior sample and authored derivative.}
+The installed Kimodo constrained experiment generates one six-second sample
+using the existing checkpoint. It violates native joint limits and proposed join
+checks; the raw sample is retained as rejected. An explicitly registered operator
+projects 11 violating joint samples and splices the qualified neutral prefix and
+tail with smooth transitions, without reinference or hidden clipping. Native
+kinematic flags, including foot-ground geometry and loader interpolation at the
+splice boundary, remain recorded. The derived reference is admitted only after
+complete physical schedule qualification. Its successful early-beam response
+cannot be attributed to unmodified neural generation alone. A separate CPU SONIC
+planner sample establishes only installed inference and conversion; it is not a
+physically qualified member of the current option bank.
+
+\paragraph{Contact and scorer revisions.}
+The original strict net-contact predicate rejected the six-second motions because
+of inherited hip--wrist contacts, including in neutral walking. A separately
+registered counterpart experiment measures self-contact and environmental contact
+independently; new physical captures qualify under the stated external-contact
+criterion. Old strict failures remain failures under their original predicate.
+No criterion revision is presented as an unchanged safety contract.
+
+The single-beam scorer initially omitted the declared initial-upstream condition
+already checked by courses. The explicit repair requires every initial body origin
+to lie upstream of the beam entry plane. With complete measurement/source
+admission, its violation is named \texttt{invalid\_initial\_approach}, a task
+failure distinct from collision or fall; missing evidence remains unknown.
+The applied repair passes 70 focused tests. Independent replay of 45 prior
+recordings changes no passage, time or classifier outcome; their minimum initial
+upstream margin is 0.842 m. Subsequent common learner/runtime freezes bind the
+new scorer, while original execution snapshots remain preserved.
+
+\section{Portable Dataset and Reproducibility Details}
+\label{app:data}
+The data separate deployable input arrays from privileged supervision and
+provenance. Each episode contains pickle-free state trajectories, raw
+measurement-only rays, named features and per-packet alignment masks;
+preaction/commitment/return records; all-body 200 Hz environment and beam contact
+streams with counterpart ordering; and separate pass/failure/unknown costs.
+Recorded switches determine the executed option, rather than the configured
+preferred option. Complete WAIT targets map to continuation episode IDs.
+
+The 42-episode 114D snapshot supports reconstruction of 18 phase tables and
+fitting with bundled data and NumPy alone. At penalty 10, it reproduces all 18
+teacher-table decisions and 84 archived neutral policy actions; the largest
+coefficient difference is $4.4\times10^{-17}$. Standalone validation also passes
+with private motion assets, production sources and simulator imports blocked.
+A separate portable panel contains all 36 actual policy-comparison episodes,
+including the known partial failure: 10,619 physical rows, 10,618 aligned 114D
+packets and 42,476 physics steps. Its two source-version bundles retain original
+and corrected scorer provenance. These policy recordings contain no synthetic
+teacher targets and complement the forced-branch teaching release.
+
+The completed original four-arm M2 acquisition release retains twelve separate
+corpora, 252 teacher branches and 24 actual pre-update student executions:
+276 episodes, 328,992 measured physics steps and 82,248 aligned sensor rows.
+All 52 teacher and nine student failures remain included. Its NumPy reader
+reconstructs 108 complete phase tables and all 36 frozen M0/M1/M2 ridge fits;
+all 324 recorded teacher-packet action checks agree, with maximum coefficient
+difference $5.6\times10^{-17}$. These checks reuse recorded packets and do not
+measure newly executed policy passage. The reader also reproduces the M1/M2
+physical task-yield and acquisition-cost tables from the portable episode
+manifests. Replay reconstruction uses the original audited historical weights,
+not a new physical-gap measurement. Both the original export and a relocated
+archive extraction pass with original experiment reads and simulator imports
+blocked by a Python-level validation guard. The original startup assessment,
+zero measured startup steps, separate 1,192-step conservative reservation and
+failed bootstrap fit remain preserved; the seven reused physical bootstrap
+captures stay in their original corpus and are counted once.
+
+Later five-arm export/reconstruction utilities preserve inherited fit prefixes
+and the expanded fitter's distinct historical-replay sidecar format. Their
+NumPy reader reproduces the complete M2 release and three native expanded-format
+fits on recorded M2 data, with 27/27 matching recorded action checks for the
+latter. These are CPU artifact checks, not M8 acquisitions or new policy
+executions. Later-checkpoint exports remain gated on their completed physical
+prefixes; unsupported partial records are rejected explicitly rather than
+discarded from an assigned corpus.
+
+The primary reuse target is the 114D seven-schedule data, with separate physical
+labels, exact neutral history and complete future continuations. The
+six-context development package preserves all 42 episodes, including 14 physical failures,
+12,516 aligned packets, 50,064 physics steps and 18 phase tables. Seventeen tables
+provide consequential successful targets. Original criterion/source identities
+travel with each episode; later upstream-scorer compatibility receipts are
+separate evidence, not substituted execution code. Independent release audits
+and standalone fitting receipts are linked in the project documentation.
+
+The source collections and derived package are recorded under these artifact IDs:
+\begin{itemize}
+\item \texttt{m2s-timed-schedule-five-context-teachers-v1};
+\item \texttt{m2s-complementary-schedule-teachers-v1};
+\item \texttt{m2s-timed-schedule-six-context-dataset-v1}.
+\end{itemize}
+The actual five-context policy validation and independent replay are:
+\begin{itemize}
+\item \texttt{m2s-seven-schedule-policy-comparison-v1};
+\item \texttt{m2s-seven-schedule-policy-comparison-audit-v1}.
+\end{itemize}
+The manuscript's evidence receipt pins these paths and hashes. These are portable
+workspace releases, not a claim that a public hosting or redistribution license
+has been finalized. Upstream asset terms are retained, and pretrained motion or
+controller weights are excluded.
+
+Each episode records its source and option ancestry, registered and actual command,
+physical seed, native geometry and contact counterpart mapping, original capture
+identity and hash, and exact postdecision switches separately from student inputs.
+Original capture path plus hash identifies an acquisition: byte-identical
+independently executed trajectories are distinct episodes. Conversely, symlinked
+analysis views of one capture never create additional executions. Unknown startup
+physics counts remain unknown; a finite unmeasured reservation is not converted
+into a measured count.
+
+Earlier schemas remain separately versioned. The corrected legacy 214D package
+contains 72 encounter groups and 144 branches, including the original regression
+and nominal acquisition pairs; it is development data. Four-second 100D and
+110D option packages, the 106D duration recordings, and the current 114D schedules
+are not concatenated as one homogeneous learner input. Aligned releases retain
+all raw packets plus eligibility masks. In the affected 199-row recordings, the
+last sensor packet follows a command reset and cannot be aligned to the last
+valid physical row; it remains present but masked. Complete modern bounded six-second
+captures avoid that wrap and retain 298 exact aligned packets; partial failures
+retain their actual shorter physical and sensor sequences. Old archives are
+immutable and their errata identify corrected releases.
+
+The dataset supports reproducible finite-schedule value learning, feasibility
+prediction, causal sensing studies and downstream option selection in overhead
+traversal. It contains no steering or route-choice demonstrations. Calling it a
+general indoor navigation dataset would exceed its action and scene coverage.
+
+Acquisition ledger V8 adds the original seven primary empty-bootstrap captures
+once to V7's development inventory. Its fixed snapshot contains 232 recorded
+study attempts: 231 complete episodes with 233,624 physics steps and one known
+partial failure with 756 steps, totaling 234,380 study steps. The separate
+retained instrumentation failure adds 796 steps, giving 235,176 persisted steps
+in the declared scope. Four separately inferred unpersisted steps and unknown
+startup counts remain separate. The earlier pre-simulator attempt retains its
+1,192-step reservation and zero recorded physics, outside these capture totals.
+The seven added captures contribute 8,344 steps; archived-code reuse, fitting and
+exporting add none. Historical 144-branch data and primary captures acquired
+after this fixed snapshot are excluded. This is bookkeeping across research
+stages, not a matched-budget constructor comparison. The current 36-row policy
+panel reuses its original 20 assignments and does not count them a second time.
+
+\section{Primary Protocol, Provenance and Remaining Evidence}
+\label{app:protocol}
+The earlier low-budget evaluation proposal pairs 24 M2/M4 models and three
+shared baselines with 18 nominal layouts and seeds 94301/94302: 972 episodes and
+at most 1,158,624 evaluation physics steps. Baselines are walking, one
+development-selected constant and one development-selected multi-option sensor
+script. Missing acquired models cannot be replaced with development models.
+The additional seven-schedule capability panel and eight stress offsets per
+layout are not included in that 972-episode count. The expanded five-arm study
+now precedes final evaluation selection; the earlier design remains preserved
+as a proposal, not a completed benchmark result.
+
+The low-budget analysis specifies 20,000 paired crossed corpus/layout bootstrap
+draws, keeping each layout's two execution seeds together. Baselines are shared
+once, not replicated as independent corpus trials. Per-corpus means and variation
+accompany descriptive intervals; there are only three corpus replicates.
+Unknown outcomes withhold intervals. Time comparisons use mutually successful
+matched episodes and state their counts. Neither a different physics seed nor
+a separate model fit makes an inspected development layout held out.
+
+The immutable acquisition plan V3 preselects a common supported set of four
+strata for each of three proposal/physics seeds 93201--93203. Uniform,
+target-only and analytic queues come from the same newly drawn candidate pools;
+coverage shortages and omitted strata remain explicit. The observation arm
+shares the analytic queue exactly. The comparison therefore concerns construction
+conditional on common stratum support; it does not estimate unconstrained
+coverage over every requested scene family.
+
+The controller starts from seven independently acquired bootstrap schedules
+within each corpus, then records one pre-update student and seven teachers per
+round. The adopted continuation retains the original analytic seed-93203
+bootstrap in that same corpus only, with no second acquisition charge or
+cross-corpus reuse. Models M0--M4 use only the
+allowed preceding/current teacher collections. The observation arm performs four
+additional CPU-only unweighted audit fits before its weighted fits; these add
+compute but no branches. Historical replay binds every student's generating
+model, its prior training collections, exact matched histories and age. The
+pre-adoption replay amendment explicitly corrects earlier ``uniform fallback''
+prose to the implemented 0.8-uniform/0.2-coverage mixture when no positive gap
+exists. The positive-gap mixture remains 0.2/0.2/0.6. Fixed source files and scene
+queues are unchanged by that disclosed amendment.
+
+Every new physical launch requires exact runtime, native asset, environment,
+model and scene preflight. A nonblocking shared lock and immutable launch intents
+preserve serial acquisition. Known physical failures remain assigned outcomes;
+unresolved intents or unknown measurements pause without automatic retry and
+reserve the remaining finite horizon. Dispatch ordering interleaves all 12
+corpora at each acquisition boundary. The reviewed dispatcher V2 required a
+separate source/adoption-binding and parent-lock repair. Its versioned V3 repair
+passes 11 independent mocked dispatch tests; this is software evidence and creates
+no execution authority. The original consequential-only fitter stopped at its
+first primary bootstrap because the 1.00 s legal actions had exactly equal
+successful costs. Both the failed fit and its teacher table are retained.
+
+The separately adopted common learner amendment enables measured-tie
+initialization only at a phase lacking consequential support, under the complete
+all-success conditions in the main method. The first bootstrap and CPU validation
+of that same table informed this change; no primary contrast encounter, primary
+student rollout or reserved outcome informed it. The comparison is therefore
+prospective under a disclosed method amendment, not a fresh confirmatory test of
+an untouched learner. All-failed, missing or unmatched tables supply no targets;
+fitting stops only if a phase has neither consequential support nor qualifying
+tied support. The applied implementation passes 179 focused tests
+(106 impacted checks and 73 tie/provenance checks). Source freeze V4 and native
+asset/environment freeze V6 bind the adopted code and installed assets; these
+checks provide implementation evidence, not robot performance.
+
+The V4 proposed reserved evaluation adds M2 to the original M4 comparison without
+new acquisition. Its original proposal hash is
+\texttt{966d45ed93066a73a945a55f33c769459fe4c1736a455d4eec4ba581d40de2fd};
+geometry remains the original fixed-world six-second V3 panel. A separate
+reporting clarification declares paired crossed corpus/layout resampling as the
+primary descriptive interval, retaining layout-only resampling as sensitivity.
+This explicitly amends the original layout-only uncertainty prose before
+primary acquisition or reserved outcomes.
+
+All 34 paired comparisons are fixed: observation minus analytic, analytic minus
+uniform, and analytic minus target-only at each checkpoint; every arm/checkpoint
+minus each of three shared baselines; and M4 minus M2 within each arm. One RNG
+produces corpus-index draws before layout-index draws and reuses their weights
+throughout. Both evaluation seeds stay in each layout block. Time resampling uses
+the weighted matched-success numerator/denominator. If any draw has no jointly
+successful support, that time interval is withheld instead of discarding the
+draw. Unknown assigned outcomes withhold both completion and time intervals.
+No multiple-comparison significance claim is made.
+
+Reserved execution requires a separate adoption record with evidence for all
+nine gates: complete schedule qualification; exact 114D runtime smoke; two-beam
+full-horizon execution; tested terminal/failure scoring; integrated protocol
+validator; actually validated strong multi-option script; every model/threshold
+frozen; complete source/assets/environment freeze; and no prior reserved outcome
+inspection. The model gate includes all 24 exact M2/M4 slots from 12 independently
+acquired corpora and all three baseline definitions. The complete audit of the
+16-episode six-context development extension is complete, including one known
+partial walking failure. Adoption V3 binds that validation, the final script
+selection, refreshed common/native freezes, dispatcher V5, the replay amendment
+and measured-tie initialization. All 12 configuration checks pass. The earlier
+scene-resolution failure happened before Python/Isaac and retains zero recorded
+physics plus its original unknown assessment and 1,192-step reservation. The
+subsequent original empty bootstrap contains five passes and two sustained-option
+finite-horizon hold failures. Its original M0 fit failed without changing those
+physical outcomes.
+
+A dedicated Python-isolated worker imports the original archived collector,
+executes its exact nonphysical resolver checks and independently recomputes all
+seven original rows without writing their artifacts. The original-interpreter
+receipt verifies 8,344 recorded steps. The new controller binds this audit and
+reuses those captures only in their original corpus; later refits do not create
+new acquisitions. At 04:34:26 UTC on 9 September 2026, dispatcher boundary zero
+completed the first primary M0 from these data, with consequential targets at
+0.30/1.40 s and one measured-tie initializer at 1.00 s. The model SHA-256 begins
+\texttt{925a4e2e890c2a07}; the full hash is pinned in the project status receipt.
+This is an actual controller-produced primary model, distinct from the earlier
+external CPU validation model. No M2/M4 traversal or independent curriculum
+comparison is reported at this first-model status cutoff.
+
+The current reserved V6 proposal and reporting V3 update exact source/model
+provenance while retaining the 972 V4 assignment identities, order and clarified
+statistics. They remain unadopted and unexecuted. Known measured physical failures
+can complete an assigned slot even when later supervision is unavailable. No
+unknown outcome is filled from a geometric screen, teacher proxy, package fit or
+an unverified partial execution.

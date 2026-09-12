@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/lflh_next/critical.py", line 383, in <module>
+    (prepare if args.mode == "prepare" else fit)(args.out)
+  File "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/lflh_next/critical.py", line 302, in fit
+    energy, _ = model(x, xy, empty, mask0)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/lflh_next/critical.py", line 117, in forward
+    result = self.spatial(image)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/lib/python3.11/site-packages/torch/nn/modules/container.py", line 240, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 554, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 549, in _conv_forward
+    return F.conv2d(
+           ^^^^^^^^^
+RuntimeError: Input type (double) and bias type (float) should be the same

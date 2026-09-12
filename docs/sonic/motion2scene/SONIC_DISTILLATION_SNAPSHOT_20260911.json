@@ -1,0 +1,158 @@
+{
+  "snapshot_utc": "2026-09-12T03:27:16.614594+00:00",
+  "authoritative_checkout": "/home/linjiw/groot-wbc-sonic-sim-trackb",
+  "branch": "research/cg-wbc-v0-golden-path",
+  "launch_commit": "05b15a0970af13701a61ae7bfea615bd5f3578e4",
+  "snapshot_scope": "Observation before handoff commit; this is not a final execution receipt or earlier preregistration.",
+  "run_root": "/home/linjiw/research-data/m2s-sonic-teacher-8000-20260911",
+  "tracking_configuration": {
+    "iterations": 8000,
+    "num_envs": 512,
+    "seed": 91145,
+    "num_steps_per_env": 24,
+    "physics_dt": 0.005,
+    "decimation": 4,
+    "maximum_rollout_env_transitions": 98304000,
+    "maximum_rollout_env_physics_steps": 393216000,
+    "initialization_cost": "Measured separately when observable; ceiling is not execution cost",
+    "wall_time_cap_seconds": 172800,
+    "cuda_min_free_bytes": 8589934592,
+    "camera_enabled": false,
+    "obstacles_enabled": false,
+    "initialization": "Strict actor/critic and optimizer/scheduler history from completed 200-iteration fit; fresh simulator state",
+    "motion_sampling": "all 100 resident, uniform native sampler; no source clipping",
+    "checkpoint_interval": 500
+  },
+  "wandb": {
+    "entity": "16726",
+    "project": "hindsight-sonic-tracking",
+    "id": "8117132f",
+    "group": "dataset-v1-teacher-8000",
+    "name": "hindsight-v1-teacher-100motions-512envs-8000iter-s91145"
+  },
+  "processes": [
+    {
+      "pid_at_snapshot": 351092,
+      "exists": true,
+      "cwd": "/home/linjiw/groot-wbc-sonic-sim-trackb",
+      "executable": "/home/linjiw/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/bin/python3.11",
+      "command_sha256": "46c23000e9cb8fbbc3953540c8c8f844a0bcc759efad34c1fc90014779d004cf"
+    },
+    {
+      "pid_at_snapshot": 351209,
+      "exists": true,
+      "cwd": "/home/linjiw/groot-wbc-sonic-sim-trackb",
+      "executable": "/home/linjiw/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/bin/python3.11",
+      "command_sha256": "4e8e675442e53062bd886c4478402b636808d3667070332a8876a0dc09b3b6e7"
+    },
+    {
+      "pid_at_snapshot": 352570,
+      "exists": true,
+      "cwd": "/home/linjiw/groot-wbc-sonic-sim-trackb",
+      "executable": "/home/linjiw/.local/share/uv/python/cpython-3.11.16-linux-x86_64-gnu/bin/python3.11",
+      "command_sha256": "e1408f8c7f32fd643b73d405c2fb430f04525a8e15668920812c1660f8ec6d06"
+    },
+    {
+      "pid_at_snapshot": 319906,
+      "exists": true,
+      "cwd": "/home/linjiw/groot-wbc-sonic-sim-trackb",
+      "executable": "/usr/bin/python3.10",
+      "command_sha256": "795862e791713c09ede6a580bdad44fa286935c7acca0ec9a1f40e9de074a3f5"
+    }
+  ],
+  "progress_prefix_bytes": 4432577,
+  "progress_prefix_sha256": "94b58823f468fa48383eb87c9c0e0e4461a72d90fddd4f313a0a7eb8dd1f95ad",
+  "latest_progress": {
+    "state": "training",
+    "iteration": 1398,
+    "observed_env_step_calls": 33552,
+    "observed_env_transitions": 17178624,
+    "observed_physics_step_events": 134208,
+    "observed_env_physics_steps": 68714496,
+    "initialization_physics_steps": null,
+    "wall_seconds": 4047.3493164870015,
+    "cuda_peak_allocated_bytes": 1659131904,
+    "cuda_peak_reserved_bytes": 1761607680,
+    "cuda_free_total_bytes": [
+      7357530112,
+      16575954944
+    ]
+  },
+  "training_motions_seen": 100,
+  "expected_receipts_present": {
+    "attempt-1/exit.json": false,
+    "tracking-run-1/training-receipt.json": false,
+    "FINAL-RECEIPT.json": false,
+    "FINAL-MANIFEST.json": false
+  },
+  "input_manifest_verified_files": 129,
+  "input_manifest_failures": [],
+  "artifact_manifests": [
+    {
+      "path": "/home/linjiw/research-data/m2s-hindsight-dataset-v1-20260911/manifest.json",
+      "sha256": "ada122f5ec048f57cd0069ec3ebba5a82b3f150e82a1b6e6aa1f3e9d8dd7a9c3"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-sonic-teacher-student-v1-20260911/manifest.json",
+      "sha256": "a8acdcac82bf166c3ab95c3dc6ff617056c71d94025b54e5e27ec57b4272acbf"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-sonic-teacher-8000-20260911/INPUT-MANIFEST.json",
+      "sha256": "836e18eed0958598c64c88e56ae75de73f9ececf7657fa9acd459b56ae6d3634"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-scene-distillation-design-20260911/MANIFEST.json",
+      "sha256": "a1adf0222823159506b511a4d993e42f7cf1fd358a88d6ed43997dab3a8066af"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-navigation-foundation-v2-20260911/MANIFEST.json",
+      "sha256": "5ef5c96b6804766c5b82a76a49d24d4b9e8614f35d540e8094855204f6e3099f"
+    }
+  ],
+  "immutable_run_files": [
+    {
+      "path": "/home/linjiw/research-data/m2s-sonic-teacher-8000-20260911/plan.json",
+      "bytes": 4102,
+      "sha256": "8bc16724f71fbfc9ffb7da389841bcf223de88d7d22414d3461052b9e2c0f466"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-sonic-teacher-8000-20260911/command.json",
+      "bytes": 3101,
+      "sha256": "677ac4f5d1d3019ca8b7eedf2f47b011299458b8bf9c80fa2b5e652e7b254f49"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-sonic-teacher-8000-20260911/composed-config.yaml",
+      "bytes": 29724,
+      "sha256": "0e838bd98145ddcdc07e16778e2e990a141f1ddc472c0e5f62992e7ef6c1e7b5"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-sonic-teacher-8000-20260911/motion-ledger.json",
+      "bytes": 104560,
+      "sha256": "7927c09f93aad3363521e7fba5e3851bb9ee32673d4e399edca23be1e9eb251e"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-sonic-teacher-8000-20260911/launched-source.tar.gz",
+      "bytes": 1246425,
+      "sha256": "3537c2e96a94e851b82e85c9a56ae070da8d568b625968780bf915ea7c2f89ff"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-sonic-teacher-8000-20260911/tracking-run-1/model_step_000500.pt",
+      "bytes": 448604646,
+      "sha256": "e5d22eaaf74323402797684b15c69438a0b5324df1e7062eeccafb885e4c3c7e"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-sonic-teacher-8000-20260911/tracking-run-1/model_step_001000.pt",
+      "bytes": 448604646,
+      "sha256": "afae987c7382af5a3e1d9ca8fe5011fa1fd6e60f04c59296fc74350a9c4d8609"
+    }
+  ],
+  "dataset_http_check": {
+    "url": "http://127.0.0.1:8766/dataset/index.html",
+    "status": 200,
+    "bytes_read": 5188
+  },
+  "tracked_physics_success": null,
+  "scene_navigation_success": null,
+  "student_dataset_training_updates": 0,
+  "new_physics_steps_for_handoff": 0
+}

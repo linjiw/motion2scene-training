@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python",
+    "scripts/research/motion2scene_development_ready.py",
+    "run",
+    "--comparators-only",
+    "--panel",
+    "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1"
+  ],
+  "exit_status": 0,
+  "wall_seconds": 2965.088339730006
+}

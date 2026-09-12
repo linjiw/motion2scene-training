@@ -1,0 +1,1023 @@
+{
+  "authorization": {
+    "authority": "docs/hallucination/GOVERNANCE.md",
+    "claim5_isolation_verified": true,
+    "note": "Fresh Motion2Scene lineage authorized by the user; no historical protected claim inputs are modified.",
+    "status": "self_approved"
+  },
+  "cells": [
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s0",
+      "body_mode": "walk",
+      "cell_id": "m2s_e1q3_duck_seed_41001__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41001",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41001/neutral.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:19c55cb6cfdbfd08fb53a05863d6aad10c534fb3d916a48bd06d78655254b49b",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41001/neutral.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:e00a873582798f0bbe03d3b364710a278b28feb9ee7ea8406c148d1d3f59b0a2"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41001__neutral",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s0",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41001__d040",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41001__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41001",
+      "ladder_level": 1,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41001/d040.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:8d1d481f88e6c38bc51d9858cb5f96baa8a833436850653d764356fc41b58b8c",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41001/d040.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:95b592024dd18915c5490cbdcca3c5293e1c82d697865ca03b18093328e580a3"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41001__d040",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a shallow crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s0",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41001__d055",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41001__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41001",
+      "ladder_level": 2,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41001/d055.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:233bc101aef3c3365f49baac357adbc9936aad0d59132e7315a66db3d6650b87",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41001/d055.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:0bf08477bd854fa97c1373ed91f9348f7ef5bf84b392b527915c65818d33b977"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41001__d055",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a medium crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s1",
+      "body_mode": "walk",
+      "cell_id": "m2s_e1q3_duck_seed_41002__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41002",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41002/neutral.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:e4cde7665dd193ecbc8666147a432f4040d4145687518229caedbd8333f03b87",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41002/neutral.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:defd0226ce0d1be3e51b54f89f50f6672dce6c661540a1862550ff056f5c022a"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41002__neutral",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s1",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41002__d040",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41002__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41002",
+      "ladder_level": 1,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41002/d040.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:3281d0e1f88b2ab7c74e27dd313dce275b9670e1bff90aeb416c145e28a5ca6c",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41002/d040.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:e2a0408098723ddc056a31b086d8898d67d13fe6b324db8a4769b670ab520204"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41002__d040",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a shallow crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s1",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41002__d055",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41002__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41002",
+      "ladder_level": 2,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41002/d055.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:b7759057e4b230746e45981f88ad464223ff5e97d90ab66ce9b530197abce4ec",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41002/d055.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:79321392f1ca7ffa7328fe00f8ab4ef9463f5d88310ed9ab9560f54aca1ab363"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41002__d055",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a medium crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s2",
+      "body_mode": "walk",
+      "cell_id": "m2s_e1q3_duck_seed_41003__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41003",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41003/neutral.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:dcc97a9bc5bc70e6e8243af741dce072a06784d1666acc3de70d13a472f58bf8",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41003/neutral.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:b2bbd07e9d0029494f10e2a65e90e5c58acb08bf3a5b6c2a33c63793ae97997e"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41003__neutral",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s2",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41003__d040",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41003__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41003",
+      "ladder_level": 1,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41003/d040.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:fc0bbae62ee127b7fb2d91dfff8147c3494ab6eb292b03243dd66f50fa794248",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41003/d040.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:91e887f1821890ebc03982ed6d91e2e482253dde8f1cb0dc9d8245ed8abf283f"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41003__d040",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a shallow crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s2",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41003__d055",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41003__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41003",
+      "ladder_level": 2,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41003/d055.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:a6469582d395c4815234466a5dcbe59213ec93d2b5f850de9d9b4ad02cbe7d0e",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41003/d055.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:56d829afd223c9a50773ba342ebca1c1300890f3f2ed98731f30155e753ccbf0"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41003__d055",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a medium crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s3",
+      "body_mode": "walk",
+      "cell_id": "m2s_e1q3_duck_seed_41004__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41004",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41004/neutral.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:d2352d38f749ab1611e6ae5c5b78a5d7e7767fbed2486211aa3967db0b0ecca3",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41004/neutral.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:f2c2053e6fe6636386988651e5fdd182342f7df6399230b13b4c888d952a56ec"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41004__neutral",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s3",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41004__d040",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41004__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41004",
+      "ladder_level": 1,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41004/d040.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:f0ff12b9d0f3772774e57cd4e9e4d76cdd7fcb4efc628dfad287da13d940fe50",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41004/d040.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:a49b900f8fe7603193dc72c70166880cd4894710bbbab3020ac69f8131b428c7"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41004__d040",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a shallow crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s3",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41004__d055",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41004__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41004",
+      "ladder_level": 2,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41004/d055.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:ba878b65255128ee4b0df0f7860e2ffa79c61d6a0fb367f32b1f78ab00bef359",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41004/d055.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:84280db2958b3a93dba6dff65a091ca4c3b418dad2e1f427fc2e0a08e3a5a4fe"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41004__d055",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a medium crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s4",
+      "body_mode": "walk",
+      "cell_id": "m2s_e1q3_duck_seed_41005__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41005",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41005/neutral.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:42a62ab5f5abde5dd92ef32eb56c4c829ab24d4eeeef93226e4af392e8a4890f",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41005/neutral.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:772d0420cfe53801732e765426ddf76cf4697a704fe6d9c2794637e5daac16aa"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41005__neutral",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s4",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41005__d040",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41005__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41005",
+      "ladder_level": 1,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41005/d040.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:8846bcd454a20ad6fb3dd10a397ce13f6c591e4aca191a7cce88f093f3ae1d3e",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41005/d040.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:c423c2665cd462f0516b7039d1b444b58fd51966f6fee7a9c648c553d94200b0"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41005__d040",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a shallow crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s4",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41005__d055",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41005__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41005",
+      "ladder_level": 2,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41005/d055.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:b55c14de39facc8a4634264994a899da68df4dd0daa460ec0f6bce0441b4fdf8",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41005/d055.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:7eea270e4bedbd8556c8a23b387edd333c8caedf62591b3de78b2a211d1819c2"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41005__d055",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a medium crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s5",
+      "body_mode": "walk",
+      "cell_id": "m2s_e1q3_duck_seed_41006__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41006",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41006/neutral.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:18649f5139ebe878551f3392a3c13879c2ff5823b18a58033dead0f759369d87",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41006/neutral.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:62e471a39d4138248b1c25a7883cc1025bcd91b9d92d8b93f9344ead694a6452"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41006__neutral",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s5",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41006__d040",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41006__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41006",
+      "ladder_level": 1,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41006/d040.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:503fedb9d98805efd185bb4e593eda208e3e433c50a5edc9fa1381de602f23fc",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41006/d040.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:1d7800d02024f8198b135642b60794a128e9db56360e12af00bd4387d8ec0708"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41006__d040",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a shallow crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s5",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41006__d055",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41006__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41006",
+      "ladder_level": 2,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41006/d055.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:d0ebcb11e0ff4e37bcc4194bc72ccf1fe13b6aab3d176ffa8c42b07754b13bb5",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41006/d055.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:ebccf0018203d3bad3d7fbe6a5ad0ea6ffa0ca342b8208021bac664ff8a1c33a"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41006__d055",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a medium crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s6",
+      "body_mode": "walk",
+      "cell_id": "m2s_e1q3_duck_seed_41007__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41007",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41007/neutral.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:1d901861c2689caa657160a804b7c5f5cbe44d9646a0945765c6a607adaf5f62",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41007/neutral.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:786ea4992545847505a8531e279f6cea215cb057ee3c6e310417e0434ee38dc1"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41007__neutral",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s6",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41007__d040",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41007__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41007",
+      "ladder_level": 1,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41007/d040.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:6ac085ad2c680b07d2b3573e7c543579ca627360c0453c89a8c4da5aa54cabb8",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41007/d040.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:809db599d275ff1bd56a33230541b3a2aba547a5c7bca3850caafafd24e35d9a"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41007__d040",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a shallow crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s6",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41007__d055",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41007__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41007",
+      "ladder_level": 2,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41007/d055.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:4025113064f51fdd575a6bf380caddacd511b21c04400d174480d64911a0ad7f",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41007/d055.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:9a536bbfd02988f908cd670103c8c997d2c8d6132f82ed11218be41ba26f6a02"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41007__d055",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a medium crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s7",
+      "body_mode": "walk",
+      "cell_id": "m2s_e1q3_duck_seed_41008__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41008",
+      "ladder_level": 0,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41008/neutral.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:9b66d7ed339fdf2daaa343bdd74b2b410fb97edc5507da71bb45cd15e9969847",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41008/neutral.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:cd96215526e6ab49f9f0b1f8befbde3e9f2d7801d4500d28ad5a6f00981a104e"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41008__neutral",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight at a steady pace",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s7",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41008__d040",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41008__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41008",
+      "ladder_level": 1,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41008/d040.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:24e27b7855b321f8c600263c9e3d94412812a1b425fa3f424e8e7e99944ea01d",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41008/d040.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:5db2d0014776c0fb8aa59a978de713aeb4562e86277a997d19f7ca42269391ad"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41008__d040",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a shallow crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    },
+    {
+      "base_carrier_id": "000_a_person_walks_at_a_steady_pace_in_a_straight_li_s7",
+      "body_mode": "controlled_crouch",
+      "cell_id": "m2s_e1q3_duck_seed_41008__d055",
+      "depends_on_acceptance_of": "m2s_e1q3_duck_seed_41008__neutral",
+      "expectation": {
+        "status": "registered_measurement_without_cellwise_directional_prediction"
+      },
+      "hydra_overrides": [
+        "++seed=7600"
+      ],
+      "ladder_group_id": "duck_seed_41008",
+      "ladder_level": 2,
+      "motion": {
+        "conversion_provenance": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41008/d055.pkl.manifest.json",
+        "conversion_provenance_sha256": "sha256:46ad0197332164aa7b992e1d0b0dba0369150e120cc3124db3762352f534a5c5",
+        "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/duck_seed_41008/d055.pkl",
+        "scene_start_xyz": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sha256": "sha256:f463afe2a0dbecb834ee86e873701ad7ece0540831d8c42fe734a9c3fbabf26d"
+      },
+      "output": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/q3_v1/rollouts/m2s_e1q3_duck_seed_41008__d055",
+      "runtime_seed": 7600,
+      "scene": {
+        "path": "gear_sonic/data/assets/scenes/g1_counterfactual/screen_empty.usda",
+        "scene_id": "screen_empty",
+        "sha256": "sha256:195b7837cfe79e164f3b642767851fffefa338f42d0f6a6f6dd7020cf7ee476f"
+      },
+      "scene_start_xyz_expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "task_prompt": "A humanoid walks straight and makes a medium crouch near mid-route",
+      "turn": "straight",
+      "verdict_policy": "reference_trackability"
+    }
+  ],
+  "eligibility": {
+    "reference_gate": {
+      "path": "/home/linjiw/research-data/groot-wbc/cg-wbc-v2-shared-seed-confirmatory/e1_controlled_duck_ladders_v1/candidates.json",
+      "sha256": "sha256:7a0cd98d4f2a1711dc453f2ff414d96fae643b8b17e46bb5944f886632c45b1a"
+    },
+    "rule": "all eight Q0/Q1-valid straight neutral carriers; neutral/d040/d055 are S3 and strictly ordered within every selected prefix"
+  },
+  "execution_policy": {
+    "cost_ceiling": {
+      "daily_envelope_gpu_hours": 8.0,
+      "gpu_hours_contended": 2.5,
+      "rollouts": 24,
+      "seconds_per_rollout_contended": 375
+    },
+    "not_authorized": false,
+    "runtime": {
+      "free_gpu_mib_required": 7500,
+      "hang_timeout_seconds": 1800,
+      "render_ego": false,
+      "serial_execution": true,
+      "success_requires": [
+        "SONIC_EVAL_SUCCESS marker",
+        "success_manifest.json",
+        "exactly one trajectory pickle",
+        "recorded fps=50"
+      ]
+    },
+    "timing_override": "Candidates, three levels, one common physics seed, serial trajectory-only capture, 7500 MiB launch floor, dependencies and predictions were frozen before any cell launch."
+  },
+  "experiment": "M2S-E1-controlled-duck-q3-v1",
+  "implementation": {
+    "checkpoint": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/sonic_release/last.pt",
+      "sha256": "sha256:e6bdab3f64a39336b3d41877d4f497d05f58af275f288ec0e6746c283ded8909"
+    },
+    "manifest_driver": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/hallucination/run_approved_manifest.py",
+      "sha256": "sha256:ab67817b3ee00730a360c9c5e23dee8c59fafef9163e1c562be5b5c3e5e74383"
+    },
+    "python": "/home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python",
+    "rollout_driver": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/run_kimodo_sonic_rollout.sh",
+      "sha256": "sha256:0a48eed8d00336ec17a29be761ab6ebfbe0c9f444da71e1cd72fb9159c6d1eb2"
+    },
+    "source_commit": "cfda4299e9ac8240975e921525014f2c3b23769e",
+    "source_repository": "/home/linjiw/groot-wbc-sonic-sim-trackb"
+  },
+  "purpose": "Single-seed obstacle-absent Q3 for neutral, 40 mm, and 55 mm levels across eight same-carrier controlled duck groups.",
+  "registered_predictions": {
+    "path": "/home/linjiw/motion2scene/experiments/registrations/E1_CONTROLLED_DUCK_Q3_V1_PREDICTIONS.md",
+    "sha256": "sha256:0706faca2472198198e60456deacf290ebd64c18d5ccb069daa72e003fa8a352"
+  },
+  "schema_version": "motion2scene_physics_manifest_v1",
+  "stop_conditions": [
+    "refuse launch if any pinned artifact hash differs",
+    "yield without spending if free GPU memory is below 7500 MiB",
+    "execute serially and stop on the first infrastructure failure",
+    "retain scientific rejections without retry",
+    "do not promote tracker survival to S4 without achieved-state analysis",
+    "do not promote any result beyond Q3 single-seed evidence"
+  ]
+}

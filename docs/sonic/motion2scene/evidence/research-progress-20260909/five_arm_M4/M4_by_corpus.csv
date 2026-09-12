@@ -1,0 +1,16 @@
+arm,seed,assigned,bank_solvable,adaptation_required,best_fixed,physics_steps
+uniform,93201,4,4,1,4,46488
+uniform,93202,4,4,0,4,46488
+uniform,93203,4,4,1,4,46488
+target_only,93201,4,4,1,4,46488
+target_only,93202,4,4,1,4,46488
+target_only,93203,4,4,2,4,46488
+reference_contrast,93201,4,3,3,3,46488
+reference_contrast,93202,4,2,2,2,46096
+reference_contrast,93203,4,1,1,1,46096
+analytic_contrast,93201,4,4,4,4,46488
+analytic_contrast,93202,4,4,4,4,46488
+analytic_contrast,93203,4,4,4,4,46488
+observation_curriculum,93201,4,4,4,4,46488
+observation_curriculum,93202,4,4,4,4,46488
+observation_curriculum,93203,4,4,4,4,46488

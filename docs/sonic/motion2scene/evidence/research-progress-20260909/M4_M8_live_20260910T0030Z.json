@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-09-10T00:30:37.206108+00:00",
+  "scope": "Live handoff and committed reference-bootstrap receipts; M4 raw audit and M8 acquisition are incomplete",
+  "reference_bootstrap_models": [
+    {
+      "run_id": "seed93201_reference_contrast",
+      "model": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/models/model_000/result.json",
+        "sha256": "sha256:ea67157800f663bcfd318f17e0dc25012c06b893c4ee3dbf582943468a81a02b"
+      },
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/models/model_000/policy.npz",
+        "sha256": "sha256:565f8751efb8814795f6528438afe5ef542b8e0bd08f36fb9201b79921e95cc2"
+      },
+      "teacher": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/bootstrap/teachers/result.json",
+        "sha256": "sha256:6dc6be5d5e8e0479287fafd80bc4a5111bc9b289f25f7ebc68cce8097b0ac592"
+      },
+      "recorded_bootstrap_steps": 8344,
+      "teacher_outcomes": [
+        "pass",
+        "pass",
+        "failure",
+        "pass",
+        "pass",
+        "pass",
+        "failure"
+      ]
+    },
+    {
+      "run_id": "seed93202_reference_contrast",
+      "model": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/models/model_000/result.json",
+        "sha256": "sha256:2f0e922157ada6e13b86ab2196d9236fbef312475e1b946a82a81aead711de46"
+      },
+      "policy": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/models/model_000/policy.npz",
+        "sha256": "sha256:bd3484cc3e5c9c0b88d57bdbc8895efb7102904cd8ee4b270b1fcc31e1e10ea0"
+      },
+      "teacher": {
+        "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93202_reference_contrast/bootstrap/teachers/result.json",
+        "sha256": "sha256:120439751b27892434fa89b4e76879fc844b574ec201065fc36b25fabf131a0c"
+      },
+      "recorded_bootstrap_steps": 8344,
+      "teacher_outcomes": [
+        "pass",
+        "pass",
+        "failure",
+        "pass",
+        "pass",
+        "pass",
+        "failure"
+      ]
+    }
+  ],
+  "original_M4_model_receipts": 12,
+  "M4_audit_started": true,
+  "M4_audit_complete": false,
+  "M4_audit_failed": false,
+  "live_processes": "    PID    PPID     ELAPSED     TIME STAT COMMAND\n 228024  108128    09:45:55 00:07:56 Ssl  .venv_isaaclab/bin/python scripts/research/motion2scene_watch_checkpoint_controls.py --plan /home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json --validation /home/linjiw/research-data/groot-wbc/m2s-six-context-development-policy-v1 --out /home/linjiw/research-data/groot-wbc/m2s-checkpoint-replay-learning-curves-20260909-v1\n 513765  108128    07:03:19 00:30:01 Rsl  .venv_isaaclab/bin/python scripts/research/motion2scene_watch_primary_readouts.py --plan /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-tie-proposed-v5/plan.json --out /home/linjiw/research-data/groot-wbc/m2s-primary-checkpoint-readouts-20260909-v1\n1955047 1955036    05:36:06 00:01:47 S    /home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python scripts/research/motion2scene_expanded_acquisition.py --plan /home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json --adoption /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json --until-budget 8 --watch\n2174226  989222    02:25:51 00:00:00 Ss   .venv_research/bin/python /home/linjiw/research-data/groot-wbc/m2s-response-diversity-M4-watch-20260909-v1/watch.py\n2259482 2174226       18:21 00:18:04 Rl   /home/linjiw/groot-wbc-sonic-sim-trackb/.venv_isaaclab/bin/python scripts/research/motion2scene_response_diversity.py --plan /home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-tie-proposed-v5/plan.json --budget 4 --out /home/linjiw/research-data/groot-wbc/m2s-response-diversity-M4-20260909-v1\n",
+  "replay_readout": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-M2-M4-replay-control-readouts-20260910-v2/result.json",
+    "sha256": "sha256:11176e2ae60579b8e0d0cd9aa276f9628ea733250a591187c6150d20e85bb53c"
+  },
+  "manuscript": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/submission/traversal_method_v2.pdf",
+    "sha256": "sha256:f38677203c6aed73b923bbe146cdfc17b0ca07df889099d8c0476e21ed0e31ac"
+  },
+  "completed_M8_corpora": 0,
+  "verification_new_physics_steps": 0
+}

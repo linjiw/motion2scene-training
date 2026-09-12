@@ -1,0 +1,368 @@
+{
+  "schema": "motion2scene_proposed_implementation_amendment_v2",
+  "status": "PROPOSED_ONLY_NOT_ADOPTED_NOT_AN_IMPLEMENTATION_LOCK",
+  "created_date": "2026-09-08",
+  "parent_geometry_lock": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/TRAVERSAL_EVALUATION_LOCK_V2.json",
+    "sha256": "7898862a0a02ab7d65a5e21f245c15a77b82a74c86245e88a611ad48ffd58dfc"
+  },
+  "evaluation_use": {
+    "geometry_unchanged": true,
+    "evaluation_runs_authorized_by_this_file": false,
+    "new_evaluation_outcomes_used_to_prepare_this_proposal": false,
+    "development_outcomes_inspected": true,
+    "disclosure": "Current qualification, sensor, course smoke, and 18 policy-comparison development episodes informed this proposal. No reserved-layout rollout or teacher query was performed by this drafting task."
+  },
+  "recommended_phase_one": {
+    "role": "partial source 41002 single-passage panel; not the original complete 72-episode benchmark",
+    "source_id": 41002,
+    "selection_rule": "all original single_layouts with original source_id==41002; no resampling, reassignment, geometry or outcome filter",
+    "single_layout_ids": [
+      "locked_v2_single_01",
+      "locked_v2_single_04",
+      "locked_v2_single_07",
+      "locked_v2_single_10",
+      "locked_v2_single_13",
+      "locked_v2_single_16",
+      "locked_v2_single_19",
+      "locked_v2_single_22"
+    ],
+    "physics_seeds": [
+      93101,
+      93102
+    ],
+    "nominal_episodes_per_policy": 16,
+    "stress_episodes_per_policy": 128,
+    "stress_offsets_reference": "parent evaluation.perturbation_set excluding nominal",
+    "original_layouts_not_run": 28,
+    "original_nominal_episodes_not_run": 56,
+    "not_run_reasons": {
+      "other_source_layouts": "no corresponding source-specific K5 qualification/registry",
+      "source41002_courses": "old repeated-transition gate remains unmet; separate course-role amendment not adopted"
+    }
+  },
+  "courses": {
+    "source41002_original_course_ids": [
+      "locked_v2_course_01",
+      "locked_v2_course_04",
+      "locked_v2_course_07",
+      "locked_v2_course_10"
+    ],
+    "status": "deferred",
+    "if_separately_adopted_role": "exploratory one-authored-adaptation two-constraint panel,8 nominal episodes,not repeated-adaptation benchmark",
+    "smoke_evidence": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-course-two-beam-smoke-v4/result.json",
+      "sha256": "4d3c971e5d857d3b0338a3a2c046ced0597d8fcf11143535bd9f0e0ae3d3facd"
+    },
+    "smoke_limit": "one fresh development composition only; no reserved course was tested",
+    "original_gate_changed_if_one_adaptation_panel_adopted": true
+  },
+  "required_substantive_amendments": [
+    {
+      "field": "evaluation.main_panel",
+      "old": "all 36 layouts on 3 sources x 2 seeds",
+      "proposed": "source 41002 original 8 single layouts x 2 seeds only, 16 episodes; report 56 original episodes not_run",
+      "reason": "source-specific five-option qualification is available only for41002"
+    },
+    {
+      "field": "scoring.single_timeout_s and scoring.course_timeout_s",
+      "old": [
+        8.0,
+        12.0
+      ],
+      "proposed_reference_horizon_s": 3.96,
+      "proposed_last_recorded_physical_time_s": 3.94,
+      "reason": "199 loaded reference samples and max_steps 199 yield 198 aligned rows; no padding, looping or protective stop is qualified",
+      "failure_rule": "physically attempted incomplete passage at finite horizon is failure; unlaunched infrastructure/unsupported interface is not_run or invalid, never a passage label"
+    },
+    {
+      "field": "common_implementation.course_continuation",
+      "old": "supported repeated transitions required",
+      "proposed": "retain old gate; optional separate one-adaptation exploratory amendment only",
+      "reason": "neutral->one adaptation->neutral is qualified; second entry after return and arbitrary hold are not"
+    }
+  ],
+  "candidate_common_runtime": {
+    "controller": {
+      "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/sonic_release/last.pt",
+      "sha256": "sha256:e6bdab3f64a39336b3d41877d4f497d05f58af275f288ec0e6746c283ded8909"
+    },
+    "registry": {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-online-option-registry-v1/registry.json",
+      "sha256": "3377070c1039defc1f4963de9236a596298f0a930c02f847eba31f7260793550"
+    },
+    "source_id": 41002,
+    "option_ancestry": "authored local_crouch edits of a Kimodo neutral reference, frozen SONIC tracking; not separate prior-generated low-height skills",
+    "option_ids": [
+      "neutral",
+      "d040",
+      "d055",
+      "d070",
+      "d085"
+    ],
+    "legal_entry_reference_phase_s": {
+      "d040": [
+        0.2,
+        0.3,
+        0.4
+      ],
+      "d055": [
+        0.3
+      ],
+      "d070": [
+        0.3
+      ],
+      "d085": [
+        0.2,
+        0.3,
+        0.4
+      ]
+    },
+    "return_reference_phase_window_s": [
+      3.3,
+      3.5
+    ],
+    "return_request_reference_phase_s": 3.3,
+    "transition_guard": {
+      "max_joint_reference_jump_rad": 0.05,
+      "max_root_reference_jump_m": 0.01,
+      "max_adaptation_entries_per_episode": 1,
+      "adaptation_to_adaptation_allowed": false,
+      "state_and_reference_clock_reset_allowed": false
+    },
+    "sensor": {
+      "rate_hz": 50,
+      "body_offset_m": [
+        0.2,
+        0.0,
+        0.4
+      ],
+      "range_m": 4.0,
+      "elevations_deg": [
+        -75,
+        -45,
+        -20,
+        -10,
+        -5,
+        0,
+        2.5,
+        5,
+        7.5,
+        10,
+        15,
+        30,
+        60
+      ],
+      "azimuths_deg": [
+        -30,
+        -15,
+        0,
+        15,
+        30
+      ],
+      "rays": 65,
+      "normal_source": "ideal PhysX nearest-hit collision normals",
+      "observation_delay_s": 0.0,
+      "noise": "none",
+      "environment_identity_filter": "none; exclude robot self-collisions only"
+    },
+    "history": {
+      "lower_m": [
+        -1.0,
+        -1.5,
+        -1.5
+      ],
+      "upper_m": [
+        4.0,
+        1.5,
+        1.5
+      ],
+      "resolution_m": 0.2,
+      "max_age_s": 0.5,
+      "max_frames": 26,
+      "surface_normal_z_min": 0.8
+    },
+    "feature_schema": "motion2scene_history_multioption_v1",
+    "feature_names": [
+      "corridor_0_0.75_floor_fraction",
+      "corridor_0_0.75_ceiling_fraction",
+      "corridor_0_0.75_minimum_ceiling_m",
+      "corridor_0_0.75_maximum_floor_m",
+      "corridor_0_0.75_upper_hit",
+      "corridor_0_0.75_lower_free_fraction",
+      "corridor_0_0.75_unknown_fraction",
+      "corridor_0.75_1.5_floor_fraction",
+      "corridor_0.75_1.5_ceiling_fraction",
+      "corridor_0.75_1.5_minimum_ceiling_m",
+      "corridor_0.75_1.5_maximum_floor_m",
+      "corridor_0.75_1.5_upper_hit",
+      "corridor_0.75_1.5_lower_free_fraction",
+      "corridor_0.75_1.5_unknown_fraction",
+      "corridor_1.5_2.5_floor_fraction",
+      "corridor_1.5_2.5_ceiling_fraction",
+      "corridor_1.5_2.5_minimum_ceiling_m",
+      "corridor_1.5_2.5_maximum_floor_m",
+      "corridor_1.5_2.5_upper_hit",
+      "corridor_1.5_2.5_lower_free_fraction",
+      "corridor_1.5_2.5_unknown_fraction",
+      "corridor_2.5_4_floor_fraction",
+      "corridor_2.5_4_ceiling_fraction",
+      "corridor_2.5_4_minimum_ceiling_m",
+      "corridor_2.5_4_maximum_floor_m",
+      "corridor_2.5_4_upper_hit",
+      "corridor_2.5_4_lower_free_fraction",
+      "corridor_2.5_4_unknown_fraction",
+      "projected_gravity_b_0",
+      "projected_gravity_b_1",
+      "projected_gravity_b_2",
+      "root_lin_vel_w_0",
+      "root_lin_vel_w_1",
+      "root_lin_vel_w_2",
+      "root_ang_vel_w_0",
+      "root_ang_vel_w_1",
+      "root_ang_vel_w_2",
+      "dof_pos_0",
+      "dof_pos_1",
+      "dof_pos_2",
+      "dof_pos_3",
+      "dof_pos_4",
+      "dof_pos_5",
+      "dof_pos_6",
+      "dof_pos_7",
+      "dof_pos_8",
+      "dof_pos_9",
+      "dof_pos_10",
+      "dof_pos_11",
+      "dof_pos_12",
+      "dof_pos_13",
+      "dof_pos_14",
+      "dof_pos_15",
+      "dof_pos_16",
+      "dof_pos_17",
+      "dof_pos_18",
+      "dof_pos_19",
+      "dof_pos_20",
+      "dof_pos_21",
+      "dof_pos_22",
+      "dof_pos_23",
+      "dof_pos_24",
+      "dof_pos_25",
+      "dof_pos_26",
+      "dof_pos_27",
+      "dof_pos_28",
+      "dof_vel_0",
+      "dof_vel_1",
+      "dof_vel_2",
+      "dof_vel_3",
+      "dof_vel_4",
+      "dof_vel_5",
+      "dof_vel_6",
+      "dof_vel_7",
+      "dof_vel_8",
+      "dof_vel_9",
+      "dof_vel_10",
+      "dof_vel_11",
+      "dof_vel_12",
+      "dof_vel_13",
+      "dof_vel_14",
+      "dof_vel_15",
+      "dof_vel_16",
+      "dof_vel_17",
+      "dof_vel_18",
+      "dof_vel_19",
+      "dof_vel_20",
+      "dof_vel_21",
+      "dof_vel_22",
+      "dof_vel_23",
+      "dof_vel_24",
+      "dof_vel_25",
+      "dof_vel_26",
+      "dof_vel_27",
+      "dof_vel_28",
+      "phase_s",
+      "active_skill",
+      "observation_age_s",
+      "walk_legal",
+      "adapt_legal",
+      "active_option_0",
+      "active_option_1",
+      "active_option_2",
+      "active_option_3",
+      "active_option_4",
+      "option_0_legal",
+      "option_1_legal",
+      "option_2_legal",
+      "option_3_legal",
+      "option_4_legal"
+    ],
+    "feature_dimension": 110,
+    "physics_dt_s": 0.005,
+    "control_dt_s": 0.02,
+    "loaded_reference_frames": 199,
+    "driver_max_steps": 199,
+    "expected_captured_rows": 198,
+    "clocks": {
+      "sensor_phase_s": [
+        0.02,
+        3.96
+      ],
+      "physical_motion_time_s": [
+        0.0,
+        3.94
+      ],
+      "per_row_sensor_phase_minus_physical_time_s": 0.02,
+      "require_all_recorded_sensor_packets_eligible": true
+    },
+    "scoring_invariants": {
+      "body_origin_downstream_margin_m": 0.1,
+      "upright_hold_s": 0.3,
+      "maximum_allowed_beam_force_n": 1.0,
+      "minimum_root_height_m": 0.5,
+      "minimum_minus_projected_gravity_z": 0.5,
+      "full_episode_no_fall_no_reset_required": true,
+      "actual_legal_return_required_if_entered": true,
+      "mechanical_work": "unavailable,never zero; no estimated implicit effort used as applied torque"
+    },
+    "learner_status": "final common fitter/training protocol remains pending; current development ridge value learner is candidate, not adopted evaluation lock",
+    "current_value_fitter_candidate": {
+      "l2": 1e-06,
+      "objective": "per-option weighted ridge of measured finite-schedule physical regret; negative predicted regret used as logits",
+      "intercept_penalized": false,
+      "std_floor": 0.05,
+      "normalization": "complete consequential training rows only",
+      "global_success_optimality_claim": false
+    },
+    "teacher": "complete registered finite schedules from exact recorded matched prefixes; WAIT is finite best admitted future continuation; actual student visits required for aggregation targets",
+    "observation_timing_status": "last tested entry is not a physical deadline; transition delay/margin/timing admission calibration remains pending; no observation curriculum claim from early detection alone"
+  },
+  "comparisons": {
+    "inherit_acquisition_budgets": [
+      50000,
+      150000,
+      450000
+    ],
+    "inherit_acquisition_seeds": [
+      93201,
+      93202,
+      93203
+    ],
+    "inherit_uniform_coverage_gap_weights": [
+      0.2,
+      0.2,
+      0.6
+    ],
+    "common_sensor_option_fitter_for_all_arms": true,
+    "arms_reference": "parent comparison_matrix",
+    "baseline_preference_rule": "freeze scripted preference and constant-adaptation references using development only; retain alwayswalk and both d070/d085 constant baselines as separate rows if both used",
+    "no_fallback_baseline_tuning_on_locked_geometry": true
+  },
+  "implementation_work_required_before_adoption": [
+    "Implement a hash-linked evaluation runner that only instantiates original assigned geometries, with all native length/width/thickness/pose checks, no feasibility filtering, and exclusion of geometry/IDs from student inputs.",
+    "Apply no-fall/no-reset/actual-entry-and-return checks through the full captured episode in addition to passage/contact scoring; current raw score_passage pass alone is insufficient.",
+    "Freeze one common learner and all training/normalization/replay/teacher settings after development aggregation concludes, with identical setting across construction arms.",
+    "Qualify final collector/controller code closure with source-specific empty development runs at the intended runtime settings; freeze hashes before any reserved execution.",
+    "Define empirical sensor-timing admission and cost accounting before attributing any gain to the observation-aware curriculum.",
+    "Register explicit amended panel denominators, finite-horizon scoring, infrastructure-attempt rules, and whether the optional one-adaptation course panel is adopted; do not overwrite the parent JSON."
+  ],
+  "adoption_gate": "separate immutable runtime/protocol registration needed; this candidate file alone neither authorizes evaluation execution nor claims all remaining conditions are met"
+}

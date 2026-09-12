@@ -1,0 +1,16 @@
+{
+  "acquisition": {
+    "horizon_events": 14,
+    "note": "Event flags overlap physical failures; do not add them as disjoint counts. No physical failure is excluded as censored.",
+    "outcome_unknown": 0,
+    "partial_captures_with_verified_failure": 32,
+    "unresolved_technical_interruptions": 0
+  },
+  "evaluation": {
+    "horizon_events": 43,
+    "note": "Event flags overlap physical failures; do not add them as disjoint counts. No physical failure is excluded as censored.",
+    "outcome_unknown": 0,
+    "partial_captures_with_verified_failure": 31,
+    "unresolved_technical_interruptions": 1
+  }
+}

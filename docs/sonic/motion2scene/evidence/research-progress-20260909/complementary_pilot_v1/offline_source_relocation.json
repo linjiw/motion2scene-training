@@ -1,0 +1,16 @@
+{
+  "new_physics_steps": 0,
+  "original": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/hallucination/motion2scene_complementary_acquisition.py",
+    "sha256": "sha256:8a5337b5093afb588da71228aa9cce799a6e8c41af525b8bca6996a1c3e1f684"
+  },
+  "reason": "offline selector removed from frozen editable runtime package; byte-identical algorithm, no runtime identity or check amendment",
+  "relocated": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_complementary_acquisition.py",
+    "sha256": "sha256:8a5337b5093afb588da71228aa9cce799a6e8c41af525b8bca6996a1c3e1f684"
+  },
+  "source_snapshots": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-complementary-acquisition-pilot-20260910-v1/source_snapshots.json",
+    "sha256": "sha256:01a37ea1bf99e9a87a2c0d86d9843cde90c8a845aca155314b9ac15cff0c2330"
+  }
+}

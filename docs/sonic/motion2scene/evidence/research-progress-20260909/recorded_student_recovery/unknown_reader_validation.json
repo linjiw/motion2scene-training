@@ -1,0 +1,27 @@
+{
+  "adapter": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_response_diversity_recorded_student.py",
+    "sha256": "sha256:f99b96340fd46ce87604a01817938acd736dab89080131f062220c33dbb56e7f"
+  },
+  "full_M8_audit_executed": false,
+  "model_fits": 0,
+  "new_physics_steps": 0,
+  "original_reader": {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/motion2scene_response_diversity.py",
+    "sha256": "sha256:4d11c1cf234e4f579def74979715433a57f3cdc4dfbbb00961072750b8f91fe8"
+  },
+  "original_rejection": "checkpoint has an unresolved physical outcome",
+  "reconciliation": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-and-capability-stages-20260910-v8/reconciliation.json",
+    "sha256": "sha256:ed25098d07157ea5d83750ba5ce62a3ca41b18794c7bfe4ca2fae889378c2733"
+  },
+  "result_rows_unchanged": true,
+  "retained_steps": 1192,
+  "retained_task_outcome": "unknown",
+  "scope": "Bounded actual-record reader check; M8 models remain unavailable. No prior audit or native source changed.",
+  "student_collection": {
+    "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-20260909-v1/seed93201_reference_contrast/round_005/student/result.json",
+    "sha256": "sha256:02ffb225ab0464b524a756e50a263d347ccb07c10b4e0e92fd07511f7afdf05e"
+  },
+  "utc": "2026-09-10T04:50:44.753821+00:00"
+}

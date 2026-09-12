@@ -1,0 +1,59 @@
+# @package _global_
+# HYGIENE MATRIX — arm C: repaired bank, release sampler.
+#
+# FACTOR THAT DIFFERS FROM hygiene_a_raw: the bank. The clip COUNT is the same
+# as arm A — every clip survives; the unsupportable ones have had their root
+# trajectory projected back onto the contacts they claim. Sampler, num_envs,
+# iterations, seed handling and callbacks are inherited unchanged from arm A.
+#
+# CONTRAST IDENTIFIED: A vs C = does fixing the reference beat leaving it alone,
+# at matched clip count and matched compute? And B vs C = at matched compute, is
+# it better to delete an unsupportable clip or to repair it? Because C holds the
+# clip count fixed, it is the arm that separates "the bad clips were removed"
+# from "the survivors got more exposure" in arm B.
+
+defaults:
+  - /exp/manager/universal_token/all_modes/hygiene_a_raw
+  - _self_
+
+exp_var: c_repaired
+
+manager_env:
+  commands:
+    motion:
+      motion_lib_cfg:
+        # PLACEHOLDER PATH — this bank does not exist yet.
+        # Produced by scripts/research/hygiene_repair_bank.py, which applies
+        # gear_sonic/research/hygiene/repair.py (contact projection of the root)
+        # to every clip in the raw bank and writes the result here. Clips the
+        # repair budget cannot fix are written through unchanged, so the key set
+        # is identical to the raw bank's.
+        motion_file: data/motion_lib_hygiene/repaired/robot_filtered
+
+        # THE SMPL BANK IS NOT OVERRIDDEN, AND THAT IS THE CHECKED ANSWER, NOT
+        # AN OVERSIGHT. All five arms read the same data/bones_seed_smpl,
+        # inherited from arm A.
+        #   * The repair writes exactly one column, root_trans_offset[:, 2]
+        #     (gear_sonic/research/hygiene/repair.py, module docstring), and
+        #     leaves smpl_joints untouched. The SMPL joints are consumed
+        #     root-relative — quat_apply(quat_inv(root_quat), joints) with no
+        #     translation subtracted — so a vertical root shift does not
+        #     desynchronise them. The operator verifies the frame per clip
+        #     (smpl_joints_are_root_relative) and refuses with reason
+        #     smpl_joints_absolute_frame rather than shifting blind.
+        #   * scripts/research/hygiene_repair_bank.py emits ONE directory, the
+        #     robot bank. There is no repaired SMPL bank to point at, and a
+        #     missing smpl_motion_file directory does not fail loudly: every key
+        #     resolves to None (motion_lib_base.py:283-292), which would delete
+        #     SMPL conditioning from this arm alone — a far worse confound than
+        #     the offset it was meant to fix.
+        # STATED LIMIT: if a future repair operator ever moves the SMPL stream's
+        # own translation, this key has to move with it, and this comment is
+        # wrong from that commit onward.
+
+hygiene_matrix:
+  arm: C_repaired
+  factor: bank_repaired
+  bank: repaired
+  bank_is_placeholder: true
+  sampler: release_default

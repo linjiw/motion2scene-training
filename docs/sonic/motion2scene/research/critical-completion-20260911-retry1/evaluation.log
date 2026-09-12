@@ -1,0 +1,252 @@
+[
+  {
+    "method": "unconditional",
+    "seed": 301,
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.4874652091945921,
+    "clear_mass": 0.4946598611672276,
+    "penetration_witness_mass": 0.38733815488272477,
+    "abstentions": 0
+  },
+  {
+    "method": "unconditional",
+    "seed": 301,
+    "condition": "input_rotated",
+    "targets": 7,
+    "critical_mass": 0.4874652091945921,
+    "clear_mass": 0.4946598611672276,
+    "penetration_witness_mass": 0.38733815488272477,
+    "abstentions": 0
+  },
+  {
+    "method": "cover",
+    "seed": 301,
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.4706736313445227,
+    "clear_mass": 0.5056897430248293,
+    "penetration_witness_mass": 0.3352572542748281,
+    "abstentions": 0
+  },
+  {
+    "method": "cover",
+    "seed": 301,
+    "condition": "input_rotated",
+    "targets": 7,
+    "critical_mass": 0.43162548329148975,
+    "clear_mass": 0.4575364853787635,
+    "penetration_witness_mass": 0.37328391974525793,
+    "abstentions": 0
+  },
+  {
+    "method": "masked",
+    "seed": 301,
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.4704727402755192,
+    "clear_mass": 0.5452321695962122,
+    "penetration_witness_mass": 0.29828725941479206,
+    "abstentions": 0
+  },
+  {
+    "method": "masked",
+    "seed": 301,
+    "condition": "input_rotated",
+    "targets": 7,
+    "critical_mass": 0.41187336056360174,
+    "clear_mass": 0.4963949117809534,
+    "penetration_witness_mass": 0.3446196908397334,
+    "abstentions": 0
+  },
+  {
+    "method": "contrast",
+    "seed": 301,
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.4529133843524115,
+    "clear_mass": 0.6221014048371997,
+    "penetration_witness_mass": 0.2262972534767285,
+    "abstentions": 0
+  },
+  {
+    "method": "contrast",
+    "seed": 301,
+    "condition": "input_rotated",
+    "targets": 7,
+    "critical_mass": 0.3895879691200597,
+    "clear_mass": 0.5542310110426375,
+    "penetration_witness_mass": 0.312371563432479,
+    "abstentions": 0
+  },
+  {
+    "method": "combined",
+    "seed": 301,
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.3833697736263275,
+    "clear_mass": 0.4812065362930298,
+    "penetration_witness_mass": 0.2372330938066755,
+    "abstentions": 0
+  },
+  {
+    "method": "combined",
+    "seed": 301,
+    "condition": "input_rotated",
+    "targets": 7,
+    "critical_mass": 0.3445275853986719,
+    "clear_mass": 0.4391490555634456,
+    "penetration_witness_mass": 0.34765091511820045,
+    "abstentions": 0
+  },
+  {
+    "method": "unconditional",
+    "seed": 302,
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.40138877289635794,
+    "clear_mass": 0.44183037483266424,
+    "penetration_witness_mass": 0.38503589800425936,
+    "abstentions": 0
+  },
+  {
+    "method": "unconditional",
+    "seed": 302,
+    "condition": "input_rotated",
+    "targets": 7,
+    "critical_mass": 0.40138877289635794,
+    "clear_mass": 0.44183037483266424,
+    "penetration_witness_mass": 0.38503589800425936,
+    "abstentions": 0
+  },
+  {
+    "method": "cover",
+    "seed": 302,
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.45300343206950594,
+    "clear_mass": 0.4956506498024932,
+    "penetration_witness_mass": 0.34051054902374744,
+    "abstentions": 0
+  },
+  {
+    "method": "cover",
+    "seed": 302,
+    "condition": "input_rotated",
+    "targets": 7,
+    "critical_mass": 0.40340996480413843,
+    "clear_mass": 0.4372771148170744,
+    "penetration_witness_mass": 0.39015104255772065,
+    "abstentions": 0
+  },
+  {
+    "method": "masked",
+    "seed": 302,
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.44820218213966917,
+    "clear_mass": 0.49350848607718945,
+    "penetration_witness_mass": 0.33656733616122175,
+    "abstentions": 0
+  },
+  {
+    "method": "masked",
+    "seed": 302,
+    "condition": "input_rotated",
+    "targets": 7,
+    "critical_mass": 0.3938539443271501,
+    "clear_mass": 0.4336205747510706,
+    "penetration_witness_mass": 0.39611271156796385,
+    "abstentions": 0
+  },
+  {
+    "method": "contrast",
+    "seed": 302,
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.4584041642291205,
+    "clear_mass": 0.6038046266351428,
+    "penetration_witness_mass": 0.22003917901643685,
+    "abstentions": 0
+  },
+  {
+    "method": "contrast",
+    "seed": 302,
+    "condition": "input_rotated",
+    "targets": 7,
+    "critical_mass": 0.3936584241958201,
+    "clear_mass": 0.5328565841939833,
+    "penetration_witness_mass": 0.2991080454417637,
+    "abstentions": 0
+  },
+  {
+    "method": "combined",
+    "seed": 302,
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.46870800852775574,
+    "clear_mass": 0.6416668040411813,
+    "penetration_witness_mass": 0.21671515649982862,
+    "abstentions": 0
+  },
+  {
+    "method": "combined",
+    "seed": 302,
+    "condition": "input_rotated",
+    "targets": 7,
+    "critical_mass": 0.4016899571288377,
+    "clear_mass": 0.5731069464236498,
+    "penetration_witness_mass": 0.2904930306332452,
+    "abstentions": 0
+  },
+  {
+    "method": "uniform_grid",
+    "seed": "NA",
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.01599702445257987,
+    "clear_mass": 0.38355658309800283,
+    "penetration_witness_mass": 0.5922618763787406,
+    "abstentions": 0
+  },
+  {
+    "method": "geometry_screened_uniform",
+    "seed": "NA",
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.039602131582796574,
+    "clear_mass": 0.9999999744551522,
+    "penetration_witness_mass": 0.0,
+    "abstentions": 0
+  },
+  {
+    "method": "critical_oracle",
+    "seed": "NA",
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.8571428741727557,
+    "clear_mass": 0.8571428741727557,
+    "penetration_witness_mass": 0.0,
+    "abstentions": 1
+  },
+  {
+    "method": "old_gaussian_cnn",
+    "seed": 101,
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.0,
+    "clear_mass": 1.0000000170298986,
+    "penetration_witness_mass": 0.0,
+    "abstentions": 0
+  },
+  {
+    "method": "old_gaussian_cnn",
+    "seed": 102,
+    "condition": "conditioned",
+    "targets": 7,
+    "critical_mass": 0.0,
+    "clear_mass": 1.0,
+    "penetration_witness_mass": 0.0,
+    "abstentions": 0
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "frames": [
+    {
+      "source": "/home/linjiw/research-data/groot-wbc/m2s-prior-capability-visual-v1/contact_frame.png",
+      "export": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/traversal-v2/early_prior_contact.png",
+      "sha256": "sha256:c18d7d0d9adb77b1f9af20587861fa241dbffbc397754b7e56dbf3b8b5f0dfe9"
+    },
+    {
+      "source": "/home/linjiw/research-data/groot-wbc/m2s-complementary-capability-visual-v1/prior_peak_contact_frame.png",
+      "export": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/traversal-v2/complementary_prior_contact.png",
+      "sha256": "sha256:9f7ba6eaf4506b612b025be86835bff2b28b55b9072d9746d8d1c9cd9566ae4b"
+    }
+  ],
+  "scope": "Unmodified frames from measured-state replay videos; no new physics."
+}

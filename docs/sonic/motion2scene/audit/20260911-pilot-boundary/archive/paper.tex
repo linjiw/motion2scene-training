@@ -1,0 +1,628 @@
+\documentclass[letterpaper,10pt,conference]{ieeeconf}
+\IEEEoverridecommandlockouts
+\overrideIEEEmargins
+\usepackage{amsmath,amssymb,graphicx,booktabs,url}
+\title{Motion2Scene: Constructing Training Scenes from Executed Humanoid Motion Contrasts}
+\author{Anonymous submission}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\begin{abstract}
+Scenes compatible with a motion need not teach a robot when to change its behavior.
+We investigate training-scene construction for a humanoid selector choosing between
+walking and a fixed crouching command under a frozen controller. Motion2Scene uses
+executed command alternatives to propose overhead constraints and paired closed-loop
+simulation to label both command outcomes. We compare uniform, target-only, analytic
+contrast, and learned contrast construction. Under a nominal-placement contract,
+each arm supplies fifteen labeled encounter groups; analytic and learned contrast
+construction each acquire nine useful contrasts, while the other arms acquire none.
+Their selectors pass 24/36 and 22/36 evaluation conditions, versus 14/36 for either
+non-contrast construction. A post-hoc matched-command audit shows that always
+requesting the adaptation also passes 24/36. Analytic construction matches this
+passage while reducing unnecessary requests from 14/14 to 8/14 both-pass cases;
+learned construction makes 6/14 unnecessary requests but misses two useful
+adaptations. A retained perturbation-contract failure exposes scarce geometric
+eligibility. Full-observation collisions with conflicting labels explain an
+irreducible fitting-loss component in the learned corpus. The results support
+executed-contrast targeting at this label budget on a finite, partly observed
+development bank, without establishing learned-generator superiority, equivalence,
+or source-held-out transfer.
+\end{abstract}
+
+\section{Introduction}
+A humanoid that can walk and crouch must still decide when crouching is useful.
+Collecting motions that demonstrate these capabilities does not directly provide
+training data for that decision. An overhead beam may permit both commands,
+defeat both, or permit only one. Moreover, a beam that clears a crouching reference
+may contact the robot while its controller enters the crouch. A scene constructor
+must therefore reason about the command the robot executes from its current
+history, not only the intended pose.
+
+We ask: \emph{Which constructed scenes teach a frozen humanoid controller's
+selector when to adapt?} Our controlled task has one beam family and one decision:
+commit to walking or request an existing crouching reference, d040, at 0.30\,s.
+The low-level SONIC controller and its command interface remain fixed. Recorded
+empty-scene executions provide geometric forecasts; paired obstacle-present
+executions determine the labels. A common learner predicts the two physical
+outcomes from ideal rays and robot state. Figure~\ref{fig:execution} illustrates
+the distinction between the reference and executed command.
+
+This design separates four questions that are easily conflated: whether a
+geometric contrast exists, whether it survives execution, whether the selector
+can distinguish its observations, and whether the resulting corpus improves
+decisions. We vary construction while fixing the downstream learner. The
+analytic constructor is a strong comparator within the framework. The learned
+proposal is an ablation whose value is measured, rather than an assumed source
+of superiority.
+
+Our contributions are (i) a command-bound scene-construction and paired-labeling
+protocol retaining all four physical outcomes; (ii) a finite-bank comparison
+showing the utility and limits of contrast-targeted training at fifteen groups
+per arm, including simple policies; and (iii) diagnostics of perturbation
+eligibility and complete-input label aliasing. The perturbation study and the
+nominal study remain distinct. The nominal revision followed inspection of
+earlier evaluation outcomes; its inference is explicitly conditional on this
+development bank. Neither completed simulations nor small descriptive
+$p$-values imply deployment robustness or a new-motion-source result.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.96\textwidth]{figures/executed-contrast.pdf}
+\caption{Why condition construction on execution? One nominal analytic training
+encounter on carrier C1, label seed 8722. Left: commanded reference-bank root
+height (dashed) and executed height (solid), with the fixed 0.30\,s decision
+marked. Right: recorded per-body peak beam force through each command's scoring
+horizon. Walking contacts the beam; d040 passes. Root height illustrates tracking
+differences and is not itself a clearance certificate. The method uses complete
+achieved body trajectories for geometry and paired physical outcomes for labels.}
+\label{fig:execution}
+\end{figure*}
+
+\section{Related Work}
+Learning from Hallucination (LfH) constructs constrained environments from motion
+collected in open space~\cite{lfh}. Learning from Learned Hallucination (LfLH)
+learns obstacle distributions with an encoder and a planning-based decoder,
+then trains reactive planners on rendered observations~\cite{lflh}.
+LfH-CP factorizes dynamic-scene generation into critical-point identification
+and obstacle trajectories passing through those points, and measures downstream
+navigation performance~\cite{lfhcp}. Thus, neither generating environments from
+motion nor evaluating their learning utility is new by itself. Our distinction
+is the combination of \emph{paired executed humanoid command alternatives},
+physical verification under a frozen controller, and a controlled study of
+which resulting labels support a fixed adaptation decision. We do not assert
+that the paired-label representation is necessary; construction also changes
+positive-class coverage and other corpus properties.
+
+HumanoidPF learns whole-body traversal using a humanoid--obstacle potential-field
+representation and hybrid scene generation~\cite{humanoidpf}. Perceptive Humanoid
+Parkour composes motion-matched skills and trains a perceptive policy for
+long-horizon traversal~\cite{php}. These systems address broader capability and
+deployment questions. Our idealized sensing and two-command task instead isolate
+training-data construction; their system-level performance is not a baseline
+for our finite bank. SONIC supplies the inherited tracking capability~\cite{sonic}.
+We neither retrain it nor attribute its locomotion skill to Motion2Scene.
+
+Evaluation uncertainty depends on the number and structure of experimental
+units~\cite{agarwal}. Matched comparisons do not remove dependence among pairs
+sharing a carrier or layout~\cite{eliasziw}. We retain the registered
+condition-level analysis, report carrier and layout structure, and distinguish
+a failure to detect a difference from equivalence~\cite{lakens}.
+
+\section{Command-Bound Construction and Learning}
+\subsection{Task, commands, and physical outcomes}
+Let $S(q)$ be a static beam scene, $x_t$ the measured robot state, $h_t$ its
+approach history, and $a\in\{0,1\}$ a supported command. The outcome is
+$Y_a=Y(S(q),x_t,h_t,a;\xi)$, conditional on controller and physics seed $\xi$.
+Command $a=0$ commits to walking. Command $a=1$ requests d040 at 0.30\,s and
+returns to walking through the existing 3.3--3.5\,s legality window. This is one
+scene-dependent decision. Subsequent return checks use phase and reference
+continuity, not a new policy decision. Requests can be denied by the shared
+interface and are reported separately from successful adaptations.
+
+The frozen endpoint is contact-qualified passage in the first episode. All
+recorded body origins must pass at least 0.10\,m beyond the beam's downstream
+face and remain across that boundary and upright for 0.30\,s. Upright means
+root height at least 0.50\,m and the vertical component of the projected
+upward direction at least 0.50. No per-body beam force may exceed 1\,N before
+the qualifying interval finishes. At 50\,Hz, the stability window includes
+sixteen samples. Direct 200\,Hz forces are aggregated by the maximum-norm
+substep for each body, with synchronization checked against the recorder.
+
+The execution driver requests one 200-control-step reference pass; the records
+contain 199 samples over 3.96\,s when no reset occurs. The first reset truncates
+the scored episode. Without a qualifying interval, force is evaluated through
+that episode's end. Later recovery cannot rescue an earlier failure. Falls,
+resets, denied requests, entry/return, and the separate reference-tracking
+verdict remain reported diagnostics. The endpoint concerns recorded body
+origins and contact samples; it is not native-collider clearance or a
+continuous-time collision guarantee.
+
+An \emph{encounter group} contains one scene/carrier/label-seed assignment,
+its decision-time observation, and both command outcomes. Its label is
+$(Y_0,Y_1)$. Both-pass groups teach walking preference; $(0,1)$ groups provide
+useful adaptations; $(1,0)$ groups warn against adapting; and both-fail groups
+describe command-bank inadequacy. Missing commands are unknown, not negative
+labels. Measurement admission requires matched recorded pre-decision state,
+actions, motion tokens, reference history, and complete decision inputs.
+
+\subsection{Geometry is a proposal criterion}
+The beam is 0.10\,m deep, 1.20\,m wide, and 0.10\,m thick. Its parameters are
+source-route station $s\in[0.10,0.90]$ and underside height
+$z\in[1.10,1.45]$\,m. Empty-scene walk and d040 executions supply sampled
+achieved body geometry, including the command transition. The reference route
+places the beam in world coordinates. Let $c_a(q)$ be the minimum signed
+capsule--beam clearance along the recorded command, with positive values
+indicating separation. The nominal geometric contrast set is
+\begin{equation}
+\mathcal C=\{q:c_1(q)\geq m,\ c_0(q)\leq -m\},\qquad m=0.010\;\mathrm m.
+\end{equation}
+These sampled capsule forecasts are distinct from $Y_a$. Contacts alter
+execution, and a geometric margin is not a physical outcome.
+
+The original acceptance contract requires these inequalities at every member
+of a fixed 113-offset set in world $x,y,z$, and yaw. Its extrema are
+$\pm20$\,mm horizontally, $\pm10$\,mm vertically, and $\pm0.02$\,rad.
+It is a \emph{worst-case finite-set} test, not a probabilistic or continuous
+uncertainty certificate. The nominal contract evaluates acceptance only at
+zero offset. Both retain the original 17-offset search objective; the 17- and
+113-offset outcomes are recorded as diagnostics in the nominal study.
+
+For intuition only, suppose a fixed horizontal pose admits one closed interval
+of useful heights $[L,U]$. Requiring \emph{every} vertical perturbation in
+$[-\epsilon,\epsilon]$ to remain useful gives
+\begin{equation}
+[L+\epsilon,U-\epsilon],\qquad
+w=\max(0,U-L-2\epsilon).
+\end{equation}
+The interval is empty when the lower endpoint exceeds the upper; equality
+leaves a singleton of zero length. This conditional one-dimensional erosion
+does not establish interval connectivity, endpoint geometry, or robustness
+for our full pose-space test. In particular, our measured 20--27\,mm best
+\emph{joint margins} are not interval widths.
+
+\subsection{Four frozen construction arms}
+All arms receive the same carrier references and use the same scene domain.
+Uniform draws sixteen outputs per carrier without a future-contrast filter.
+Analytic construction uses achieved-motion envelopes, a global 136-candidate
+search initialized over twenty stations, and distinct-output ranking.
+Motion2Scene uses a frozen conditional eight-component proposal model and
+bounded pattern search. Its temporal encoder consumes a 64-frame normalized
+target-reference sequence and predicts mixture weights and correlated
+two-dimensional latent Gaussians. Sigmoid transforms map samples to eight
+station intervals and the common height domain. The inherited model is used
+with the exact d040-bound input and is not refitted on the evaluation bank.
+
+Each learned output receives seventeen candidate queries: the initial point
+and four coordinate directions at four decreasing scales. Search stays within
+the original $\pm0.05$ station and $\pm0.03$\,m height box. Target-only uses
+the separately frozen no-contrast checkpoint and target-only search and
+acceptance; it cannot regain a walking-interference objective through ranking.
+This arm is a construction ablation, not a same-corpus single-label control.
+
+All arms reject nonfinite/out-of-domain outputs, within-arm duplicates, reserved
+layout neighborhoods, and inadequate pre-decision clearance. The contrast arms
+add both margin constraints; target-only adds target clearance. Visibility is
+measured but never gates eligibility or selection. Every output and rejected
+assignment is retained. Selection precedes physical labeling; no positive-only
+refill follows the outcomes.
+
+\subsection{One fixed selector}
+The selector receives 214 values: 144 upper/conditional-lower ray features and
+70 phase, active-skill, observation-age, gravity, root-velocity, and joint-state
+values. Hit distance and hit height are geometric observations; object paths,
+source IDs, and true beam parameters are excluded from the feature function.
+Robot state can nevertheless encode carrier identity indirectly. Ideal rays
+do not constitute a realistic perception-transfer test.
+
+Two logistic heads predict command feasibility. For $G$ complete groups,
+\begin{equation}
+\mathcal L=\frac{1}{2G}\sum_{g=1}^{G}\sum_{a=0}^{1}
+\operatorname{BCE}(p_{ga},Y_{ga})+
+0.01\frac{\|W\|_F^2}{428}.
+\end{equation}
+Input scales are one except the 29 joint velocities, scaled by five. Parameters
+start at zero and receive 2,000 full-batch Adam updates at 0.01. Reported BCE
+excludes the weight penalty. There are no class weights or test-selected
+checkpoints. The linear function is compiled into the existing execution
+container and checked for matching probabilities and actions.
+
+At threshold 0.5 the selector prefers walking if its walk head is positive;
+otherwise it requests d040 if that head is positive. If neither is positive,
+it records a refusal and \emph{continues walking}. Refusal is a classification
+output, not a protective stop. Successful adaptation means a requested,
+executed d040 command that achieves the passage endpoint; the number of
+requests alone does not measure successful adaptation.
+
+\section{Protocols, Provenance, and Metrics}
+Three previously inspected development carriers, denoted C1--C3 (source IDs
+41001--41003), share the command qualification procedure. Seed 8721 supplies
+empty-scene proposal geometry; seed 8722 supplies paired labels. The fixed
+evaluation bank crosses stations $\{.35,.45,.55,.65\}$ with underside heights
+$\{1.18,1.27,1.36\}$\,m. A \emph{condition} is a carrier, layout, and physics
+seed. It is not an independent motion source.
+
+\begin{table*}[t]
+\centering\small
+\caption{Protocol and deviation summary. Both studies retain proposal seed 8841,
+label seed 8722, controller, commands, learner, and scorer.}
+\begin{tabular}{p{0.16\textwidth}p{0.36\textwidth}p{0.38\textwidth}}
+\toprule
+Item & Perturbation study & Nominal study\\
+\midrule
+Acceptance & 113 fixed offsets; contrast margin 10\,mm & Zero-offset acceptance; same margin; perturbations diagnostic\\
+Selection & First six outputs per carrier/arm assigned before audit & First three eligible outputs per carrier/arm selected from sixteen\\
+Groups per arm & 18 requested generated + 6 shared backgrounds = 24 & 9 selected generated + the same 6 backgrounds = 15\\
+Realized groups & Uniform 24; analytic 7; target-only 22; learned 6 & 15 in every arm; no refill or exclusion after labels\\
+Evaluation & 12 layouts $\times$ 2 seeds $\times$ 3 carriers = 72 conditions; six policies & Seed 8511 only: 36 conditions; four new policies; two fixed comparators reused\\
+Backgrounds & 108 separate executions: three types, two seeds, three carriers, six policies & Original background labels reused for fitting; parent-model control results reported separately\\
+Inference & Unequal acquired data at equal requested slots & Equal group count; outcome-informed revision on overlapping development data\\
+\bottomrule
+\end{tabular}
+\label{tab:protocol}
+\end{table*}
+
+Table~\ref{tab:protocol} resolves the 24-versus-15 and 72-versus-36 denominators.
+The six shared groups are C1 absent/raised, C2 absent/blocked, and C3
+raised/blocked, all at station .60. Each type occurs twice. Shared pairs are
+acquired once, even though they enter every arm's fitting set. The nominal
+record retains obsolete metadata fields naming six generated slots per
+carrier and 72 requested groups; its operative three-eligible quota, code,
+and executed assignments agree on 36 generated groups and 72 new commands.
+These metadata discrepancies do not justify changing the historical files.
+
+The nominal protocol was recorded after a 366-execution parent snapshot was
+available: 61 parent conditions, including 31 of the 36 nominal conditions,
+had already been evaluated. The earlier learner revision also used inspected
+layout outcomes. Nominal proposals and labels were frozen before their own
+execution, but this is not an untouched confirmatory test. The panels reuse
+all twelve layouts, three carriers, one evaluation seed, six background labels,
+the generator checkpoints, and the controller. Nineteen selected nominal
+generated scenes also match previously labeled parent scenes at the same
+label seed (nine uniform, nine target-only, one analytic). They were executed
+again under the nominal protocol. The two panels are not independent replications.
+
+The registered primary estimand is mean passage within each carrier, averaged
+over the three carriers; balanced denominators make it numerically equal to
+the pooled fraction. We target \emph{finite-bank performance}, conditional on
+the selected training corpora. New-layout population performance and new-source
+generalization would require different sampling and holdout designs.
+
+Registered comparisons pair conditions and report every cell of the $2\times2$
+table. Exact two-sided binomial tests condition on discordances. Their
+independence assumption is not established across reused layouts or carriers;
+we retain them as descriptive calculations, not population uncertainty.
+Physics repeats stay with their carrier/layout. Deterministic fitting removes
+optimizer randomness, not training-corpus variability.
+
+\section{Results and Diagnostics}
+\subsection{Acquisition at fifteen groups per arm}
+\begin{table*}[t]
+\centering\small
+\caption{Nominal acquisition and fitted-label composition. Each arm proposes
+48 outputs (16 per carrier), selects nine generated groups, and reuses six
+background groups. Eligibility is geometric; outcome columns are physical
+paired labels over all fifteen groups. Every group has two labels.}
+\input{tables/acquisition.tex}
+\label{tab:acquisition}
+\end{table*}
+All 72 nominal label commands and 144 nominal policy executions pass measurement
+admission. The four primary fits replay with exactly matching weights, biases,
+scales, and BCE. Table~\ref{tab:acquisition} separates output count, geometric
+eligibility, selected groups, and useful physical contrast. Analytic and learned
+construction each provide nine useful contrasts. Uniform and target-only
+provide none. Thus, nine useful contrasts out of nine selected generated
+groups does not mean nine proposals or equal acquisition computation.
+
+All six nominal predictions hold: each contrast arm supplies at least one
+eligible group on each carrier (three selected each); an arm other than analytic
+acquires useful contrasts (learned, nine); uniform yields at most one (zero);
+target-only is predominantly both-pass (9/9 generated, 13/15 including
+backgrounds); precisely the arms with useful labels request d040 at evaluation;
+and most nominally eligible outputs fail the 113-offset contrast diagnostic
+(167/168). The last count includes untargeted arms; among selected contrast-arm
+outputs it is 17/18. No visibility filtering is applied.
+
+\subsection{Passage and the always-adapt alternative}
+\begin{table*}[t]
+\centering\small
+\caption{The same 36 nominal conditions. Requests on both-pass cases are
+unnecessary for passage. Both-fail requests and refusals do not avoid failure.
+The scripted and privileged geometric comparators reuse their registered
+seed-8511 executions. $^{*}$Post-hoc command lookup with eight missing conditions
+completed by sixteen separately registered matched executions. The outcome
+oracle uses physical labels in hindsight; privileged geometry uses a forecast.}
+\input{tables/comparators.tex}
+\label{tab:comparators}
+\end{table*}
+Analytic and learned construction pass 24/36 (66.7\%) and 22/36 (61.1\%)
+conditions, versus 14/36 (38.9\%) for either non-contrast construction
+(Table~\ref{tab:comparators}). Their improvements are 27.8 and 22.2 percentage
+points on this bank. Both directions hold on all three carriers. In C1--C3
+order, counts are 4/12, 5/12, 5/12 for uniform and target-only; 8/12 on every
+carrier for analytic; and 7/12, 7/12, 8/12 for learned construction.
+Figure~\ref{fig:paired} preserves layout-level outcomes.
+
+\begin{table}[t]
+\centering\footnotesize
+\caption{Registered nominal paired comparisons. All four cells are shown.
+The condition-level $p$-values assume independent discordances; they are
+descriptive because conditions share carriers and layouts. An.: analytic;
+Un.: uniform; Tgt.: target-only; M2S: Motion2Scene.}
+\setlength{\tabcolsep}{3pt}
+\input{tables/paired.tex}
+\label{tab:paired}
+\end{table}
+No reverse discordances occur against uniform or target-only. Analytic exceeds
+learned construction by two conditions (5.6 percentage points), both in the
+analytic direction. No statistically significant difference was detected by
+the registered test ($p=0.5$); equivalence was not established. A post-hoc
+carrier sign calculation has only three positive clusters against uniform
+and gives $p=0.25$ if those carriers were independent. We do not use condition
+counts to construct narrow new-source confidence intervals.
+
+The strongest simple comparison changes the interpretation. Scripted rays
+also pass 24/36, and privileged geometry passes 20/36. Eight nominal conditions
+lacked d040 outcomes in the combined records. A separate post-hoc protocol
+executed both constant commands on those conditions, retaining the original
+settings. All eight repeated walks reproduce passage and recorded pre-decision
+history exactly. Across original and audit executions, all 304 available
+same-command comparisons match both passage and the recorded state/action/token
+trajectory fields. The full 214 inputs, beam, seed, banks, non-policy
+configuration, and scoring contract also match across methods. These checks
+support command lookup for this one-decision deterministic runtime; they are
+not a hidden-state snapshot or an evaluation method for sequential policies.
+
+The completed command table contains fourteen both-pass, ten d040-only,
+twelve both-fail, and zero walk-only conditions. Always-d040 therefore passes
+24/36, reaching the two-command outcome oracle. Analytic matches this passage
+with 24 rather than 36 requests, avoiding six unnecessary adaptations on the
+fourteen both-pass cases. Learned construction avoids eight unnecessary
+adaptations, but requests d040 on only eight of ten rescue cases and passes
+22/36. Its extra selectivity does not imply a superior tradeoff. The scripted
+rule makes exactly the same requests and obtains the same outcomes as the
+nominal analytic selector on all 36 conditions.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.97\textwidth]{figures/paired-outcomes.pdf}
+\caption{Where do decisions matter? All nominal carrier/layout conditions,
+with the two commands' outcomes completed by the post-hoc matched audit.
+Within each carrier, layouts enumerate four increasing stations, each with
+three increasing heights. Color reports actual command and passage; a
+refusal executes walk and is included in that command's category. The
+learned selector's two missed rescues remain visible, as do unnecessary
+adaptations and conditions neither command solves.}
+\label{fig:paired}
+\end{figure*}
+
+Neither contrast selector refuses on the nominal traversal bank. They request
+d040 on 6/12 and 8/12 both-fail conditions, respectively. In the parent
+background suites, all six policies make zero requests over the 72 absent/raised
+executions. All four parent learners and privileged geometry refuse 6/6
+blocked cases, whereas scripted rays refuse 0/6; all blocked executions fail.
+These are parent-model controls, not evaluations of the new nominal fits.
+Successful refusal or safe stopping is not demonstrated. The recorded
+nominal analytic and learned selectors each make eighteen successful d040
+passages despite making 24 and 22 requests, respectively. Resets occur in
+5/36 and 4/36 of their traversal runs; their nominal return counts are 21/24
+and 19/22 requests. Passage and complete tracking remain different endpoints.
+
+\subsection{Retaining the failed perturbation contract}
+\begin{table}[t]
+\centering\small
+\caption{The original perturbation study, kept separate. Its equal-24
+complete-group goal fails in three arms. These are equal requested slots
+with unequal acquired data, not the nominal fifteen-group comparison.}
+\input{tables/robust.tex}
+\label{tab:robust}
+\end{table}
+The original study completes 82 labeling and 540 evaluation executions:
+432 traversal runs over 72 conditions with six policies, plus 108 separate
+background controls. Only one generated group, analytic on C1, provides a
+useful contrast. The learned arm receives only six shared backgrounds
+(Table~\ref{tab:robust}). Its result cannot establish the utility of learned
+generated scenes because none entered its corpus.
+
+The prediction that each contrast arm supplies a useful group on every
+carrier fails. Uniform's at-most-one prediction holds (0/18 requested), as
+does target-only's at-least-twelve both-pass prediction (16/18). All 23
+executed generated target-clear predictions achieve passage, satisfying the
+zero-false-clear prediction in this selected set; eight receive separate
+tracker rejections. The prediction of at least three net improvements for
+each contrast arm fails jointly: analytic adds eleven passages, learned adds
+zero. All failed predictions remain part of the interpretation.
+
+For the registered paired comparisons, analytic versus uniform has
+(both-pass, analytic-only, uniform-only, both-fail) = (28,11,0,33).
+Learned versus analytic has (28,0,11,33); learned versus uniform and
+target-only each have (28,0,0,44). The eleven-discordance calculation gives
+$p=0.0009765625$; zero-discordance comparisons contain no directional
+information. Physics repeats remain grouped. Scripted rays pass 46/72,
+privileged geometry 39/72. These parent results support the importance of
+acquired contrasts, but are not a replication of the nominal comparison.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/acceptance-envelope.pdf}
+\caption{How much eligibility survives the uncertainty requirement? The
+existing post-hoc grid diagnostic evaluates 11,421 station/height centers
+per carrier. Horizontal half-width is shown; vertical half-width is half
+that value and yaw scales to 0.02\,rad. Nominal witnesses 200/168/337 fall
+to 2/0/32 at the inherited envelope. These are finite geometric witnesses,
+not executed successes or continuous feasibility volumes.}
+\label{fig:envelope}
+\end{figure}
+The stored envelope diagnostic holds recorded execution geometry fixed
+(Fig.~\ref{fig:envelope}). Its specified 81-station by 141-height grid has
+11,421 centers; the protocol's parenthetical 7,181 total is an arithmetic
+error. Nominal contrast support shrinks sharply under the finite offset
+test. The observed decrease does not prove continuous infeasibility.
+Because the set contains zero offset, excluding nominal failures from
+further checks is valid; zero inclusion alone does not prove monotonicity
+between differently scaled, non-nested finite sets. The nominal study
+addresses a narrower placement-known task and demonstrates no robustness
+at the rejected tolerance.
+
+\subsection{Complete-input aliasing and fitting loss}
+Among all nominally critical outputs, analytic has decision-time proposal
+ray hits in 44/47 scenes, versus 24/34 for learned construction. These
+denominators count geometrically critical outputs before common exclusions;
+they are not label counts. All nine selected analytic contrasts have ray
+hits, compared with five of nine selected learned contrasts. No group is
+removed in this post-hoc analysis.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/full-input-aliasing.pdf}
+\caption{Can the complete selector observation distinguish its labels?
+Left: two exact full-input equivalence classes in the learned corpus
+combine both-pass backgrounds with d040-only contrasts. All 214 values
+are identical within each class. Right: fitted mean BCE and the
+unrestricted deterministic predictor's empirical BCE infimum from these
+collisions. Identical rays alone would not establish this bound. Both
+classes share successful d040, so label ambiguity is not an unavoidable
+passage error. All original groups are retained.}
+\label{fig:alias}
+\end{figure*}
+The fitting audit checks all 214 features, identical loss reduction,
+normalization, regularization, multiplicity, and class balance. Both contrast
+arms contain four positive walk labels and thirteen positive d040 labels
+over fifteen groups. Analytic BCE is 0.000541579 and learned BCE is 0.139004365,
+a ratio of approximately 257. Their separate weight penalties are
+0.001360424 and 0.001004991. Exactly reproducing the fixed 2,000-step fits
+rules out an accounting mismatch; it does not by itself prove convergence.
+
+In the learned corpus, one complete-input equivalence class contains two
+both-pass backgrounds and one d040-only contrast on C1. Another contains
+one both-pass background and three d040-only contrasts on C3. Their maximum
+absolute full-feature differences are zero. An arbitrary deterministic
+predictor must assign a common probability to each identical input. If a
+class has $n$ members with positive fraction $r$ in a head, its minimum
+summed BCE is $nH(r)$, where $H$ is binary entropy. Summing over classes
+and heads, and dividing by thirty labels, gives an empirical infimum of
+0.138629 for this corpus. The measured learned BCE is only 0.000375 higher.
+Analytic has no conflicting exact-input class and zero observed head
+classification errors; learned has two, matching its minimum possible
+head-error count. The post-hoc six-, four-, and two-decimal comparisons
+remain precision diagnostics, not substitutes for exact collisions.
+
+This is direct evidence for an observation limitation in fitting walk
+feasibility, beyond an aggregate correlation with ray visibility. It does
+not isolate invisibility as the cause of downstream performance or of
+every generator difference. In particular, d040 succeeds for every member
+of both conflicting classes: always adapting can resolve their passage
+without resolving whether adaptation is necessary. Shared both-pass and
+both-fail examples remain useful training information.
+
+\subsection{Dependence on the acquired corpus}
+The twenty-four registered parent leave-four-assignment-out refits are
+retained, including missing and zero-member folds. Removing the single
+analytic contrast produces a model exactly equal to the background-only
+learned-arm model. On ninety recorded parent condition inputs, that refit's
+requests fall from 29 to zero; the other folds produce 29, 29, 31, 29,
+and 29 requests. This recorded-input comparison is a post-hoc diagnostic,
+not new physical evaluation of refit policies.
+
+We additionally refit the unchanged nominal learner after removing a
+carrier's entire training set, including its backgrounds, and after
+removing each contrast group separately. These thirty post-hoc CPU fits
+use matched command lookup and never replace the primary selectors.
+Leaving out C1/C2/C3 yields 8/12, 6/12, 8/12 passages on the removed
+carrier for analytic, and 8/12, 7/12, 7/12 for learned construction.
+Uniform and target-only retain 4/12, 5/12, 5/12. Removing one contrast
+gives analytic 21--24/36 and learned 22/36 on the full bank. These are
+training-set sensitivity measurements, not independent training datasets
+or confidence intervals. The generator still includes development-source
+information; selector-only removal establishes no generator-level
+source-held-out transfer.
+
+\subsection{Resource accounting}
+\begin{table}[t]
+\centering\small
+\caption{Measured rollout-process time, including startup and contention.
+The first four rows sum to 6.577196\,h (the historical ``6.6 GPU-hour''
+boundary). This is not GPU utilization time or total method training cost.}
+\input{tables/cost.tex}
+\label{tab:cost}
+\end{table}
+Table~\ref{tab:cost} counts every executed label and evaluation in the two
+studies, with shared labels and reused comparators charged once. The
+sixteen new audit executions add 0.137223\,h separately. The shared
+empty-transition bank costs another 0.105115\,h outside that historical
+boundary. Controller training, motion/generator pretraining, earlier
+experiments, CPU search, and idle scheduling time are excluded. Original
+selector-fit CPU wall time was not recorded, so no complete end-to-end
+efficiency claim is made.
+
+Nominal construction preparation takes 38.820 CPU wall seconds. Per-arm
+recorded construction/search/audit loops take 3.491, 9.420, 8.955, and
+15.984\,s for uniform, analytic, target-only, and learned construction.
+Their search-clearance query counts are 0, 13,872, 13,872, and 27,744,
+respectively, where one query evaluates a candidate, offset, and command.
+Common verification and overhead remain additional to that query counter.
+Equal-label comparison is therefore not equal-compute comparison. Historical
+fresh-source search timing concerns a different reference-only apparatus
+and is not evidence of nominal selector efficiency or transfer.
+
+\section{Limitations and Conclusion}
+This study uses one controller, one beam family, ideal simulator rays, one
+adaptation decision, and three inspected development carriers. Its fixed
+bank was partly observed before nominal registration. Generalization to
+new layouts drawn from a population, new motion ancestry, realistic
+perception, or hardware remains untested. Finite geometry checks and
+contact-qualified passage provide neither robust deployment guarantees
+nor a protective refusal behavior. Corpus-removal refits expose some
+training-data dependence but do not estimate acquisition variability.
+
+At fifteen groups per arm, executed-contrast targeting supplies the
+adaptation examples absent from uniform and target-only corpora and
+improves measured finite-bank passage. Always-d040 and scripted rays
+show the limit of that result: learned scene construction does not
+establish superior traversal capability. Analytic reaches the available
+command ceiling while avoiding some unnecessary adaptations; learned
+construction trades two missed rescues for fewer unnecessary requests.
+Preserving the failed perturbation contract and auditing complete-input
+aliasing make the framework's restrictions explicit. The contribution
+is a measured account of constructing and verifying decision-relevant
+training data, not equivalence, learned-generator superiority, or a
+claim that paired labels are necessary.
+
+\section*{Acknowledgments}
+For the present revision, OpenAI Codex assisted in drafting and revising Sections I--VI, implementing
+the submission audit and diagnostic scripts, and producing plotting code
+for Figures 1--4 and recorded-state video rendering. The figures plot
+recorded or computed scientific data; robot imagery replays measured
+states and is not generated by an image model.
+
+\begin{thebibliography}{99}
+\bibitem{lfh} X. Xiao, B. Liu, G. Warnell, and P. Stone,
+``Toward agile maneuvers in highly constrained spaces: Learning from hallucination,''
+\emph{IEEE Robotics and Automation Letters}, vol. 6, no. 2, pp. 1503--1510, 2021.
+\bibitem{lflh} Z. Wang, X. Xiao, A. J. Nettekoven, K. Umasankar, A. Singh,
+S. Bommakanti, U. Topcu, and P. Stone,
+``From agile ground to aerial navigation: Learning from learned hallucination,''
+in \emph{IEEE/RSJ International Conference on Intelligent Robots and Systems}, 2021.
+\bibitem{lfhcp} S. A. Ghani, K. Lee, and X. Xiao,
+``Learning from hallucinating critical points for navigation in dynamic environments,''
+arXiv:2509.26513, 2025.
+\bibitem{humanoidpf} H. Xue et al.,
+``Collision-free humanoid traversal in cluttered indoor scenes,''
+arXiv:2601.16035, 2026.
+\bibitem{php} Z. Wu et al., ``Perceptive humanoid parkour: Chaining dynamic human
+skills via motion matching,'' in \emph{Robotics: Science and Systems}, 2026.
+\bibitem{sonic} Z. Luo et al., ``SONIC: Supersizing motion tracking for natural
+humanoid whole-body control,'' \emph{Science Robotics}, vol. 11, no. 117,
+eaed4592, 2026.
+\bibitem{agarwal} R. Agarwal, M. Schwarzer, P. S. Castro, A. C. Courville, and
+M. G. Bellemare, ``Deep reinforcement learning at the edge of the statistical
+precipice,'' in \emph{Advances in Neural Information Processing Systems}, 2021.
+\bibitem{eliasziw} M. Eliasziw and A. Donner, ``Application of the McNemar test to
+non-independent matched pair data,'' \emph{Statistics in Medicine}, vol. 10,
+no. 12, pp. 1981--1991, 1991.
+\bibitem{lakens} D. Lakens, ``Equivalence tests: A practical primer for $t$ tests,
+correlations, and meta-analyses,'' \emph{Social Psychological and Personality
+Science}, vol. 8, no. 4, pp. 355--362, 2017.
+\end{thebibliography}
+\end{document}

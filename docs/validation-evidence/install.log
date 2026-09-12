@@ -1,0 +1,20 @@
+Obtaining file:///home/linjiw/motion2scene-training
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: motion2scene-training-kit
+  Building editable for motion2scene-training-kit (pyproject.toml): started
+  Building editable for motion2scene-training-kit (pyproject.toml): finished with status 'done'
+  Created wheel for motion2scene-training-kit: filename=motion2scene_training_kit-0.1.0-0.editable-py3-none-any.whl size=5683 sha256=55f069a4ac04f7d8cebf66cf9445d88a6e68dec6cadbf2a96ff47cbc1d963cdd
+  Stored in directory: /tmp/pip-ephem-wheel-cache-mm1eyo5a/wheels/75/74/73/5e065b8ccbd298861c4bae944e756f56c5e954f0d607561c82
+Successfully built motion2scene-training-kit
+Installing collected packages: motion2scene-training-kit
+Successfully installed motion2scene-training-kit-0.1.0
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: python3.11 -m pip install --upgrade pip

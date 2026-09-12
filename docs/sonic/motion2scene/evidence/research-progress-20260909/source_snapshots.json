@@ -1,0 +1,27 @@
+{
+  "M1_responses": {
+    "source_path": "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M1-20260909-v1/result.json",
+    "snapshot": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M1_responses.json",
+    "sha256": "sha256:2e76f63e2532ba03378dddb1eed17e1d66519fff3aea9fd54f8142a1c70f1cc9"
+  },
+  "M2_yield": {
+    "source_path": "/home/linjiw/research-data/groot-wbc/m2s-primary-checkpoint-readouts-20260909-v1/M2/task_yield/result.json",
+    "snapshot": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M2_yield.json",
+    "sha256": "sha256:1487b45c403ece79361528950ab69aff3e4540ccb92a7213ed9dbd69f647eb98"
+  },
+  "WAIT_control": {
+    "source_path": "/home/linjiw/research-data/groot-wbc/m2s-wait-information-control-20260909-v1/result.json",
+    "snapshot": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/WAIT_control.json",
+    "sha256": "sha256:5df3bd3ebff657b33acab8246c598cb055a589a559a4fe71468791180a622f4d"
+  },
+  "M2_responses": {
+    "source_path": "/home/linjiw/research-data/groot-wbc/m2s-response-diversity-M2-20260909-v1/result.json",
+    "snapshot": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M2_responses.json",
+    "sha256": "sha256:1434dc5a5abf468d1dfe185887ce5985ae8850be651ce253b6d9033fdcce3fca"
+  },
+  "M2_cross_corpus": {
+    "source_path": "/home/linjiw/research-data/groot-wbc/m2s-primary-checkpoint-readouts-20260909-v1/M2/cross_corpus/result.json",
+    "snapshot": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/evidence/research-progress-20260909/M2_cross_corpus.json",
+    "sha256": "sha256:9f5bfe7a9e19cfa5d199d19db51cacaf9e285c66ba3f863f7e7acc073ef7f03b"
+  }
+}

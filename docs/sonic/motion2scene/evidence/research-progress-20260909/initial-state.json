@@ -1,0 +1,30 @@
+{
+  "utc": "2026-09-09T18:50:14.392377+00:00",
+  "completed_model_result_files": {
+    "M0": 12,
+    "M1": 12,
+    "M2": 11,
+    "M4": 0
+  },
+  "expected_primary_corpora": 12,
+  "sources": [
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-plan-tie-proposed-v5/plan.json",
+      "sha256": "sha256:aacce6a9a2c2b3fc5bf6b674b5ede46d6fee61ac7ad205553554c4210d3d4508"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-primary-acquisition-adoption-v3/adoption.json",
+      "sha256": "sha256:f5e69567fc3984b0a6afb0cc896e63d9281a5fba39d629710c1c5780e1ed9860"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-expanded-acquisition-plan-20260909-v1/plan.json",
+      "sha256": "sha256:bf551021c82fd42d0e6b002a2941a71b1358d72a469903105a2230bdfae3a4ed"
+    },
+    {
+      "path": "/home/linjiw/research-data/groot-wbc/m2s-M8-native-development-panel-20260909-v1/study.json",
+      "sha256": "sha256:ee75906a10e2d585f5b9c7172cd578d56068392ee88bed5a9b13e42f63b771b2"
+    }
+  ],
+  "evidence_type": "receipt existence and content hashes; separate physical reaudit is in response-diversity results",
+  "new_physics_launched_by_this_turn": 0
+}
