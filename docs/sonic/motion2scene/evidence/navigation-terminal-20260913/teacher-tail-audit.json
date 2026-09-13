@@ -1,0 +1,90 @@
+[
+  {
+    "task": "teacher-00265-stop-clear",
+    "rows": 500,
+    "first_success_tick": 374,
+    "tail_rows": 126,
+    "final_hold_ticks": 176,
+    "tail_all_terminal": true,
+    "exact_original_prefix": true,
+    "final_speed_mps": 0.06371524184942245,
+    "final_distance_m": 0.13084142200309168
+  },
+  {
+    "task": "teacher-00265-stop-corridor",
+    "rows": 500,
+    "first_success_tick": 376,
+    "tail_rows": 124,
+    "final_hold_ticks": 174,
+    "tail_all_terminal": true,
+    "exact_original_prefix": true,
+    "final_speed_mps": 0.062259040772914886,
+    "final_distance_m": 0.14362650408731667
+  },
+  {
+    "task": "teacher-00413-stop-clear",
+    "rows": 600,
+    "first_success_tick": 391,
+    "tail_rows": 209,
+    "final_hold_ticks": 154,
+    "tail_all_terminal": false,
+    "exact_original_prefix": true,
+    "final_speed_mps": 0.0045766811817884445,
+    "final_distance_m": 0.10409859557225092
+  },
+  {
+    "task": "teacher-00413-stop-corridor",
+    "rows": 600,
+    "first_success_tick": 391,
+    "tail_rows": 209,
+    "final_hold_ticks": 154,
+    "tail_all_terminal": false,
+    "exact_original_prefix": true,
+    "final_speed_mps": 0.006413796450942755,
+    "final_distance_m": 0.1205980557169542
+  },
+  {
+    "task": "teacher-00908-stop-clear",
+    "rows": 350,
+    "first_success_tick": 220,
+    "tail_rows": 130,
+    "final_hold_ticks": 180,
+    "tail_all_terminal": true,
+    "exact_original_prefix": true,
+    "final_speed_mps": 0.01537870243191719,
+    "final_distance_m": 0.06510679064643161
+  },
+  {
+    "task": "teacher-00908-stop-corridor",
+    "rows": 350,
+    "first_success_tick": 221,
+    "tail_rows": 129,
+    "final_hold_ticks": 179,
+    "tail_all_terminal": true,
+    "exact_original_prefix": true,
+    "final_speed_mps": 0.01482266653329134,
+    "final_distance_m": 0.06737981520280768
+  },
+  {
+    "task": "teacher-00976-stop-clear",
+    "rows": 500,
+    "first_success_tick": 383,
+    "tail_rows": 117,
+    "final_hold_ticks": 167,
+    "tail_all_terminal": true,
+    "exact_original_prefix": true,
+    "final_speed_mps": 0.08228845149278641,
+    "final_distance_m": 0.11767324675717321
+  },
+  {
+    "task": "teacher-00976-stop-corridor",
+    "rows": 500,
+    "first_success_tick": 383,
+    "tail_rows": 117,
+    "final_hold_ticks": 167,
+    "tail_all_terminal": true,
+    "exact_original_prefix": true,
+    "final_speed_mps": 0.08354859054088593,
+    "final_distance_m": 0.120568757672265
+  }
+]

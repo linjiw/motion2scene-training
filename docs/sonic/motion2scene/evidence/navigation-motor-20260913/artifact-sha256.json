@@ -1,0 +1,21 @@
+{
+  "local_source_packet": "/home/linjiw/research-data/m2s-nav-motor-bridge-20260913",
+  "csv_newlines": "LF-normalized; numeric contents unchanged",
+  "files": {
+    "selected.json": "7a8bd27bb72fc7fde1b08e2a538172b02e6e264ecba93296b7293e5d2747ac8a",
+    "navigation-example-command.json": "247d41e9b519d727d7089deccffa6364eb4eee91610dbdfafb70a76ba1bf92d4",
+    "stopping-diagnostic.csv": "be61b3ecdd9f2a3d02590bed358a297e944ff91b1989f3a9212199d55a8c9694",
+    "validation.json": "3382e6ef974d587f6a3727ef204808f374734efac3f8ca92c22d69d43b0ac94f",
+    "matched-results.csv": "e7580b944f6c985c4506623c353cd75c750753044402ddaec065ea9649076212",
+    "matched-control-plan.json": "50a48e6ff09f81074571a38af82016678861dbca78e690c29f134c6e07c18510",
+    "fit-receipt.json": "df4c516e5a16fe3ace1a65163b9798180e3bce44420d2b8d404c674c5ebf494d",
+    "fit-config.json": "2b7d7a6ebe50516b4de17fd7af5aea78f9772737485c80e112d99410168952a2",
+    "navigation-example-config.json": "98824a4af05d8c47599fcd65204031dbce25fd98ee1e327b01a384230a4d16a2",
+    "full-example-command.json": "4142e252959b9b51578de0442f78b15f13ee351720bd27dd71189a62bfb744e2",
+    "task-results.csv": "f71a9f60a7d10b27dce298f5902c9aaab9dbb1ca38ac0a9d45739dea995d3b8e",
+    "stopping-diagnostic.png": "9dcd70755f5e8bd50596693f9bccdcec4c7fb559c9285e182ad9551fd867a59a",
+    "results.json": "9c20a2d0ab822a3375edcc94d0e3881bbe47e97ee9591034f481ca6cad7e6573",
+    "matched-control-results.json": "0a41ca426f9dd7fc4c14ee9e7ca0d6f917a4742a210e1e2467721687fff5ed66",
+    "plan.json": "4819cb5767ba621a76fcfd6dbbacfb5e83964c0cfcd2b21911237bc534b200b6"
+  }
+}

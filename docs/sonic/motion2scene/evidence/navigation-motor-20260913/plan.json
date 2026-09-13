@@ -1,0 +1,13 @@
+{
+  "state": "registered",
+  "offline_main_updates": 6000,
+  "smoke_updates": 32,
+  "max_native_tasks": 8,
+  "max_steps_per_task": 800,
+  "max_total_native_steps": 6400,
+  "max_stage_wall_seconds": 600,
+  "training_seed": 91370,
+  "evaluation_seed": 91260,
+  "scope": "training-task positive control only",
+  "online_dagger": false
+}

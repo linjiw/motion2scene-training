@@ -1,0 +1,35 @@
+{
+  "tests_passed": 99,
+  "test_command": ".venv_isaaclab/bin/python -m pytest -q decoupled_wbc/tests/test_navigation_motor.py decoupled_wbc/tests/test_motor_recovery.py decoupled_wbc/tests/test_scene_distillation.py decoupled_wbc/tests/test_foundation_navigation.py decoupled_wbc/tests/test_bfm_coverage_navigation.py decoupled_wbc/tests/test_transformer_foundation.py decoupled_wbc/tests/test_action_flow_distillation.py decoupled_wbc/tests/test_bfm_pipeline.py decoupled_wbc/tests/test_bfm_curriculum.py decoupled_wbc/tests/test_bfm_command_quality.py decoupled_wbc/tests/test_hindsight_qualification.py",
+  "ruff": "check passed for nine changed Python files",
+  "black": "--check passed for nine changed Python files",
+  "source_sha256": {
+    "gear_sonic/research/scene_distillation/navigation_motor.py": "4aaa87756817962fb2aebbb4eab6fdd874a1036fd4f9962d04dcb91c9fa1f17b",
+    "gear_sonic/research/scene_distillation/navigation_motor_runtime.py": "52104e401fe154e763d36ff45d17e27c7ab15a5724f7f8f9ed792ff90fd8ccfe",
+    "gear_sonic/research/scene_distillation/navigation_data.py": "e22574afd6274aa623ed3e7f2ea5dc61ef0b22e9387c4a395f99ebe808012321",
+    "gear_sonic/research/scene_distillation/navigation_localization.py": "185730259e8477d768e6fdbda58b0d119bbfd4e218007cb79fc72d7dbd21aacf",
+    "gear_sonic/research/scene_distillation/navigation_takeover.py": "e1305ebdf5f2349bdbf9cf308022246b56370b5bcb6a17c3e94ea8dd689a5c25",
+    "gear_sonic/research/scene_distillation/navigation_queries.py": "46c9ff9c057a95d60cd6968d0810d93ddfd5c44ebbbd69f3ff50813be0a3941a",
+    "gear_sonic/research/scene_distillation/direct_scene_runtime.py": "cc156e1e22918fe0f15991c5700d5d61559e8014ace480ae3ab82792a0625aa3",
+    "gear_sonic/research/scene_distillation/stopping_teacher.py": "0473d6923bf7b31b956f0c36653f8721d30d02f96157c0a6660ae0b834e09aae",
+    "decoupled_wbc/tests/test_navigation_motor.py": "2e60d17959aabf9823964b7fc83d43e9ac4bf123df5e1b4fcd967cb273e8b8ce"
+  },
+  "native_runs": 34,
+  "native_control_steps": 15925,
+  "training_updates": 12000,
+  "training_seeds": [
+    91370
+  ],
+  "main_evaluation_seeds": [
+    91260
+  ],
+  "selected_task_repeat_seeds": [
+    91261,
+    91262
+  ],
+  "entire_motor_frozen": true,
+  "old_motor_checkpoint_unchanged": true,
+  "old_navigation_checkpoint_unchanged": true,
+  "training_running": false,
+  "baseline_replaced": false
+}

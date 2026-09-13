@@ -1,0 +1,16 @@
+{
+  "local_source_packet": "/home/linjiw/research-data/m2s-bfm-motor-recovery-20260913",
+  "csv_newlines": "LF-normalized; numeric contents unchanged",
+  "files": {
+    "audit-resolution.json": "ebf38e18089813f34b8563ce569fefc3ab595f5067077ab6efb2d6b0d1d47d0d",
+    "motor-recovery-plot.csv": "1adfce3c52a87d1c682ef93775734836d99355a388103b9865086138b3336850",
+    "selected-checkpoint-audit.json": "cdbd2eedd3c79cfdcbc438330c46cfe2ad14faf091ab41e466d3aa3f0f76d4a3",
+    "scale-complete.json": "d0ae1b749cb00d0e7872852234bc3af517e3a19a13c8dc7d590cfa262d79a054",
+    "motor-recovery.png": "99ce4cf7a2d1fb8faf49c451c19ebe83b7ac876488930ed6a9cfd9ee0ddd5f38",
+    "invalid-layout-experiments.json": "c5fd75e164ec549642b5ab627c718f5045fbacc928ae5065c991a55487cf17e6",
+    "stopping-results.csv": "41dd50ee72681abd9fad86196cdd01ebf1738181abd79ba93d633f516f59678d",
+    "paired-motion-audit.json": "44ec6fd36034a28fbfba0bf01abe8f224da6dc828c4942b76ce17dd02e14bd08",
+    "effective-selected-config.json": "cc4e2208b21690e81b574be67e0630186971f1eedef3ef269c3e8325cad521f2",
+    "tracking-results.csv": "a60054bf813fe3218b6a501bd014b97a43458523a3471da8f8b067000d860808"
+  }
+}

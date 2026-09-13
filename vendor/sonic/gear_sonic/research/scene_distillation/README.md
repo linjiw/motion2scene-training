@@ -1,5 +1,9 @@
 # Scene-conditioned SONIC distillation: BFM-inspired engineering proposal
 
+**Navigation follow-up:** [contribution and design report](../../../docs/motion2scene/MOTOR_TO_NAVIGATION_CONTRIBUTION_20260913.md), [goal/map pilot and matched task control](../../../docs/motion2scene/NAVIGATION_MOTOR_PILOT_20260913.md). `navigation_motor` implements a separate goal/map command-completion student through the fixed anticipatory motor; `navigation_data` admits task-success evidence explicitly. The complete-map actor accepts measured history and task/scene context without reference commands. This early pilot does not establish reliable navigation.
+
+**September 13 motor recovery:** [completed experiments and navigation handoff](../../../docs/motion2scene/BFM_MOTOR_RECOVERY_RESULTS_20260913.md) select a preserved-encoder/decoder full-command student at 88/89 train and 10/20 development, with repeat-seed evaluations and eight successful teacher stopping/corridor collections. This is a 114D full-command specialist; goal-only navigation is the next extension. See the [implementation protocol](../../../docs/motion2scene/BFM_MOTOR_RECOVERY_20260913.md) for the new motor, online DAgger and stopping collector entry points.
+
 **September 12:** See [the implemented training pipeline](TRAINING_PIPELINE.md) for masked foundation fitting, same-state DAgger, scene-navigation training and bounded action-residual PPO. The [execution receipt](../../../docs/motion2scene/BFM_DISTILLATION_IMPLEMENTATION_20260912.md) distinguishes native physical checks from synthetic integration tests. The descriptions of unimplemented stages below refer to the earlier September 11 snapshot.
 
 **Design revision:** the user's request to preserve the BFM-style motion foundation is implemented in [FOUNDATION_NAVIGATION.md](FOUNDATION_NAVIGATION.md). The preferred downstream candidate now learns commands for a frozen scene-independent prior and motor decoder. The direct scene-conditioned variational architecture below remains an earlier prototype and comparison; it is not a trained foundation. The original packet is preserved unchanged.
@@ -125,3 +129,7 @@ Use paired, task-level effects and preserve dependence among motions, source gro
 The accompanying packet contains the original paper PDF and hash, a 1,331-file dataset integrity audit, all 240 assignment rows with missing physical outcomes preserved, CPU interface/gradient receipts, tests, source snapshots and a SHA-256 manifest. Eight synthetic rows matched the inspected checkpoint's decoder with maximum absolute error 0.0. Synthetic gradient checks do not measure student training performance.
 
 Implemented: known-map observation conversion; deterministic recurrent baseline; public-prior/privileged-posterior candidate; frozen-decoder imitation and KL loss; causal, query-provenance and censoring guards. Not established: teacher scene qualification, physical dataset usefulness, navigation success, or architecture superiority. The next permitted engineering work is the measured-state collector and qualified scene-expert interface. Student physics must wait for a concrete bounded protocol and the relevant teacher/task gates.
+
+## Flow and direct context research
+
+[Action-flow and direct-context experiments](FLOW_CONTEXT_EXPERIMENTS.md) provides the new fitting, same-state collection, task-scoring and bounded residual entry points. These remain experimental; consult the recorded native results before selecting a model.

@@ -1,0 +1,8 @@
+{
+  "reason": "Goal/map pilot 0/8; same-task full-command student control isolates remaining motor stopping limitations",
+  "max_tasks": 8,
+  "max_steps_per_task": 800,
+  "optimizer_updates": 0,
+  "teacher_intervention": false,
+  "seed": 91260
+}

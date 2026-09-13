@@ -239,7 +239,7 @@ class DaggerFoundationCollectionCallback(FoundationCollectionCallback):
     def _pre_evaluate_policy(self, reset_env=True):
         super()._pre_evaluate_policy(reset_env)
         from gear_sonic.research.hindsight_training.student import FrozenSonicDecoder
-        from gear_sonic.research.scene_distillation.commands import PROFILES, MaskedMotionFoundation
+        from gear_sonic.research.scene_distillation.commands import PROFILES, build_foundation
 
         path = self.lock["student_checkpoint"]
         if sha(path) != self.lock["student_sha256"]:
@@ -247,7 +247,7 @@ class DaggerFoundationCollectionCallback(FoundationCollectionCallback):
         saved = torch.load(path, map_location=self.env.device, weights_only=False)
         if saved["teacher_sha256"] != self.lock["teacher_sha256"] or saved["stage"] != "foundation":
             raise ValueError("Student driver has a different teacher")
-        self.driver = MaskedMotionFoundation().to(self.env.device).eval()
+        self.driver = build_foundation(saved["config"]).to(self.env.device).eval()
         self.driver.load_state_dict(saved["model"], strict=True)
         self.driver_decoder = (
             FrozenSonicDecoder(self.model.policy.state_dict()).to(self.env.device).eval()

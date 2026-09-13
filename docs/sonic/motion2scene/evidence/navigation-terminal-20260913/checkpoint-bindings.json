@@ -1,0 +1,36 @@
+{
+  "structured": {
+    "path": "/home/linjiw/research-data/m2s-nav-terminal-control-20260913/structured-fit/training/step-006000.pt",
+    "sha256": "9e27402c23831651af5cb24e4072de8d0554514ca6dc3664ce8b96025a287ed0",
+    "fit_receipt": {
+      "state": "complete",
+      "updates": 6000,
+      "wall_seconds": 25.326691887996276,
+      "rows": 3900,
+      "episodes": 8,
+      "motions": 4,
+      "ancestry_groups": 1,
+      "frozen_motor_tensor_identity": true,
+      "full_command_action_identity": true,
+      "physical_success": null,
+      "evaluation_scope": "in-sample positive control only"
+    }
+  },
+  "localized": {
+    "path": "/home/linjiw/research-data/m2s-nav-terminal-control-20260913/localized-fit/training/step-006000.pt",
+    "sha256": "fc045306d095207ead5a81ef51d504433929d4ffa4f655490643e20280d953f6",
+    "fit_receipt": {
+      "state": "complete",
+      "updates": 6000,
+      "wall_seconds": 27.789381631999277,
+      "rows": 3900,
+      "episodes": 8,
+      "motions": 4,
+      "ancestry_groups": 1,
+      "frozen_motor_tensor_identity": true,
+      "full_command_action_identity": true,
+      "physical_success": null,
+      "evaluation_scope": "in-sample positive control only"
+    }
+  }
+}

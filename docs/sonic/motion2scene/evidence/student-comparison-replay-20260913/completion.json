@@ -1,0 +1,56 @@
+{
+  "state": "complete",
+  "video": "/home/linjiw/research-data/m2s-student-comparison-videos-20260913/videos-final/student-comparison.mp4",
+  "duration_seconds": 32.6,
+  "resolution": [
+    1920,
+    864
+  ],
+  "fps": 25,
+  "full_successes": 3,
+  "navigation_successes": 0,
+  "matched_tasks": [
+    "00908-stop-corridor",
+    "00413-stop-clear",
+    "00265-stop-corridor"
+  ],
+  "trace_parity": {
+    "nav-00413-stop-clear": {
+      "root_xyz": true,
+      "speed": true,
+      "undesired_force": true
+    },
+    "nav-00265-stop-corridor": {
+      "root_xyz": true,
+      "speed": true,
+      "undesired_force": true
+    },
+    "full-00413-stop-clear": {
+      "root_xyz": true,
+      "speed": true,
+      "undesired_force": true
+    },
+    "full-00265-stop-corridor": {
+      "root_xyz": true,
+      "speed": true,
+      "undesired_force": true
+    },
+    "full-00908-stop-corridor": {
+      "root_xyz": true,
+      "speed": true,
+      "undesired_force": true
+    },
+    "nav-00908-stop-corridor": {
+      "root_xyz": true,
+      "speed": true,
+      "undesired_force": true
+    }
+  },
+  "provenance": "Isaac simulated student states replayed as MuJoCo meshes; original scenes and measured link transforms",
+  "failed_camera_attempt": "Isaac RTX startup segfault before rollout; original log and source preserved",
+  "validation": "All six pose/scorer lengths match; pose roots match scored roots; body names mapped; MP4 decoded without errors; Ruff/Black pass",
+  "source_sha256": {
+    "gear_sonic/research/scene_distillation/render_navigation_comparison.py": "5c2a67ec2df17360d81e05e1a2c48e8a7c669051434f9b8dc0674f45288a5ac9",
+    "gear_sonic/research/scene_distillation/render_navigation_replay.py": "ea85c664f6ac46dca4d3b8933bcde1ae0f017e7c24182c3413cf155cbb12d897"
+  }
+}

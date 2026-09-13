@@ -1,0 +1,13 @@
+stage,split,motions,completed,mean_progress
+historical-bfm,train,89,5,0.31306679216161204
+broad-cvae-eval-full,train,89,6,0.3698393496988195
+online-2400-eval-full,train,89,14,0.43415522776292953
+current-frame-v2-eval-full,train,89,21,0.5528770419821311
+anticipatory-v2-eval-full,train,89,77,0.9069153199369988
+scale-3200-eval-full,train,89,88,0.9894620702089219
+historical-bfm,development,20,0,0.10350954374298453
+broad-cvae-eval-full,development,20,0,0.10181791018694639
+online-2400-eval-full,development,20,0,0.1161613769363612
+current-frame-v2-eval-full,development,20,0,0.17937317132018507
+anticipatory-v2-eval-full,development,20,8,0.6468880672939121
+scale-3200-eval-full,development,20,10,0.6735766240395605

@@ -1,0 +1,2182 @@
+[
+  {
+    "motion_id": "00015",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00044",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00050",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00051",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00102",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00116",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00118",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00119",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00120",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00124",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00134",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00163",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": false,
+      "progress": 0.1318051517009735
+    },
+    "final-best-91262": {
+      "complete": false,
+      "progress": 0.0916905477643013
+    }
+  },
+  {
+    "motion_id": "00185",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00204",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00205",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00246",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00256",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00258",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00265",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00266",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00271",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00287",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00331",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00335",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": false,
+      "progress": 0.15831662714481354
+    },
+    "final-best-91262": {
+      "complete": false,
+      "progress": 0.10220441222190857
+    }
+  },
+  {
+    "motion_id": "00350",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00352",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00363",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00381",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00382",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00384",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00391",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00395",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00399",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00413",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00417",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00421",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00428",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00431",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00446",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00455",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00463",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00470",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00490",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00494",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00499",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00521",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": false,
+      "progress": 0.1265822798013687
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": false,
+      "progress": 0.1835443079471588
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00522",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00526",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00578",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00584",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00588",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00604",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00649",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00675",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00677",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00679",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00693",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00707",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00711",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00713",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00720",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00731",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00733",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00753",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00754",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00770",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00781",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00783",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00785",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00796",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00801",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00805",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00811",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00820",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00831",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00850",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00860",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00865",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00891",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00893",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00904",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00908",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00916",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00922",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00950",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": false,
+      "progress": 0.06212424859404564
+    },
+    "final-best-91261": {
+      "complete": false,
+      "progress": 0.06212424859404564
+    },
+    "final-best-91262": {
+      "complete": false,
+      "progress": 0.06012023985385895
+    }
+  },
+  {
+    "motion_id": "00953",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00974",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00976",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00990",
+    "split": "train",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00047",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00117",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": false,
+      "progress": 0.6090225577354431
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00149",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": false,
+      "progress": 0.9025787711143494
+    }
+  },
+  {
+    "motion_id": "00150",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00187",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": false,
+      "progress": 0.09090909361839294
+    },
+    "final-best-91261": {
+      "complete": false,
+      "progress": 0.09090909361839294
+    },
+    "final-best-91262": {
+      "complete": false,
+      "progress": 0.10695187002420425
+    }
+  },
+  {
+    "motion_id": "00207",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": false,
+      "progress": 0.39464882016181946
+    },
+    "scale-3200-eval-full": {
+      "complete": false,
+      "progress": 0.37792640924453735
+    },
+    "final-best-91261": {
+      "complete": false,
+      "progress": 0.3812709152698517
+    },
+    "final-best-91262": {
+      "complete": false,
+      "progress": 0.3812709152698517
+    }
+  },
+  {
+    "motion_id": "00311",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": false,
+      "progress": 0.7594339847564697
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00333",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": false,
+      "progress": 0.017175571992993355
+    },
+    "final-best-91261": {
+      "complete": false,
+      "progress": 0.1278626024723053
+    },
+    "final-best-91262": {
+      "complete": false,
+      "progress": 0.015267175622284412
+    }
+  },
+  {
+    "motion_id": "00379",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": false,
+      "progress": 0.5351170301437378
+    },
+    "scale-3200-eval-full": {
+      "complete": false,
+      "progress": 0.2909699082374573
+    },
+    "final-best-91261": {
+      "complete": false,
+      "progress": 0.5050167441368103
+    },
+    "final-best-91262": {
+      "complete": false,
+      "progress": 0.5117056965827942
+    }
+  },
+  {
+    "motion_id": "00547",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00611",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": false,
+      "progress": 0.3177257478237152
+    },
+    "final-best-91261": {
+      "complete": false,
+      "progress": 0.5117056965827942
+    },
+    "final-best-91262": {
+      "complete": false,
+      "progress": 0.3010033369064331
+    }
+  },
+  {
+    "motion_id": "00623",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": false,
+      "progress": 0.6673346757888794
+    },
+    "final-best-91261": {
+      "complete": false,
+      "progress": 0.6673346757888794
+    },
+    "final-best-91262": {
+      "complete": false,
+      "progress": 0.671342670917511
+    }
+  },
+  {
+    "motion_id": "00714",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00744",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00802",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00835",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  },
+  {
+    "motion_id": "00921",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": false,
+      "progress": 0.36090224981307983
+    },
+    "scale-3200-eval-full": {
+      "complete": false,
+      "progress": 0.3358395993709564
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": false,
+      "progress": 0.35087719559669495
+    }
+  },
+  {
+    "motion_id": "00949",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": false,
+      "progress": 0.017191976308822632
+    },
+    "scale-3200-eval-full": {
+      "complete": false,
+      "progress": 0.46418339014053345
+    },
+    "final-best-91261": {
+      "complete": false,
+      "progress": 0.4613180458545685
+    },
+    "final-best-91262": {
+      "complete": false,
+      "progress": 0.46418339014053345
+    }
+  },
+  {
+    "motion_id": "00980",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": false,
+      "progress": 0.2160356342792511
+    },
+    "scale-3200-eval-full": {
+      "complete": false,
+      "progress": 0.2071269452571869
+    },
+    "final-best-91261": {
+      "complete": false,
+      "progress": 0.08240534365177155
+    },
+    "final-best-91262": {
+      "complete": false,
+      "progress": 0.10022271424531937
+    }
+  },
+  {
+    "motion_id": "00981",
+    "split": "development",
+    "teacher-horizon-10": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "scale-3200-eval-full": {
+      "complete": false,
+      "progress": 0.7023411393165588
+    },
+    "final-best-91261": {
+      "complete": true,
+      "progress": 1.0
+    },
+    "final-best-91262": {
+      "complete": true,
+      "progress": 1.0
+    }
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "diagnostic_only": true,
+    "intervention": {
+      "decision_tick": 462,
+      "time_s": 9.24,
+      "root_xyz": [
+        1.4313724040985107,
+        0.7238860726356506,
+        0.7741822004318237
+      ],
+      "goal_distance_m": 0.15018387681387727,
+      "speed_mps": 0.10300987958908081,
+      "command_source": "nominal-clock reference reconstructed at actual measured state",
+      "reference_phase_switch": false
+    },
+    "post_switch_score": {
+      "navigation_success": true,
+      "goal_ever_reached": true,
+      "terminal_hold": true,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 50,
+      "final_goal_distance_m": 0.17429050934833426,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 63,
+      "reference_tracking_required": false
+    },
+    "unassisted_navigation_success": false,
+    "stage": "extended-00265-stop-corridor",
+    "exact_original_deadline_prefix": true,
+    "official_score_unchanged": true
+  },
+  {
+    "diagnostic_only": true,
+    "intervention": {
+      "decision_tick": 243,
+      "time_s": 4.86,
+      "root_xyz": [
+        -0.30998149514198303,
+        -1.1002005338668823,
+        0.7791883945465088
+      ],
+      "goal_distance_m": 0.18469544725117054,
+      "speed_mps": 0.11457506567239761,
+      "command_source": "nominal-clock reference reconstructed at actual measured state",
+      "reference_phase_switch": false
+    },
+    "post_switch_score": {
+      "navigation_success": false,
+      "goal_ever_reached": true,
+      "terminal_hold": false,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 48,
+      "final_goal_distance_m": 0.452228872613564,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 207,
+      "reference_tracking_required": false
+    },
+    "unassisted_navigation_success": false,
+    "stage": "extended-00908-stop-corridor",
+    "exact_original_deadline_prefix": true,
+    "official_score_unchanged": true
+  }
+]

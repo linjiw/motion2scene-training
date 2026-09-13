@@ -8,7 +8,7 @@ import sys
 import torch
 
 from gear_sonic.research.hindsight_training.runtime import sha
-from gear_sonic.research.scene_distillation.commands import MaskedMotionFoundation
+from gear_sonic.research.scene_distillation.commands import build_foundation
 from gear_sonic.research.scene_distillation.navigation import FrozenFoundationNavigator
 from gear_sonic.research.scene_distillation.online import (
     NativeNavigationRuntime,
@@ -30,7 +30,7 @@ def build_navigator(config, device):
     saved = torch.load(config["foundation_checkpoint"], map_location=device, weights_only=False)
     if saved["stage"] != "foundation" or saved["teacher_sha256"] != config["teacher_sha256"]:
         raise ValueError("Foundation provenance mismatch")
-    foundation = MaskedMotionFoundation().to(device)
+    foundation = build_foundation(saved["config"]).to(device)
     foundation.load_state_dict(saved["model"], strict=True)
     decoder = make_decoder(config["teacher_checkpoint"], device)
     model = FrozenFoundationNavigator(

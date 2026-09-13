@@ -1,0 +1,38 @@
+{
+  "archived": {
+    "motor_action_mse": 0.00405477792215653,
+    "teacher_action_mse": 0.0029244687732977743,
+    "command_mse_heading": 3.8578707115867964e-05,
+    "command_mse_velocity": 0.0006503380964008662,
+    "command_mse_height": 5.21346844414858e-06,
+    "command_mse_yaw_rate": 0.003818336394496071,
+    "command_mse_keypoints": 0.00025437854624424985,
+    "command_mse_joint_position": 0.0006527032239887959,
+    "command_mse_joint_velocity": 0.010193116057377596,
+    "command_mse_orientation": 0.0004886044335002318
+  },
+  "structured": {
+    "motor_action_mse": 0.00029582063506285736,
+    "teacher_action_mse": 0.002485950739385608,
+    "command_mse_heading": 2.1667438774714426e-06,
+    "command_mse_velocity": 3.0123665078113285e-05,
+    "command_mse_height": 2.4157365593952983e-07,
+    "command_mse_yaw_rate": 7.207110488730577e-05,
+    "command_mse_keypoints": 7.846299384441526e-06,
+    "command_mse_joint_position": 8.158652110768555e-05,
+    "command_mse_joint_velocity": 0.0038898090934619688,
+    "command_mse_orientation": 7.477624061254737e-05
+  },
+  "localized": {
+    "motor_action_mse": 0.00029947151731437026,
+    "teacher_action_mse": 0.002515259931007257,
+    "command_mse_heading": 2.0330739442168777e-06,
+    "command_mse_velocity": 3.219720309388299e-05,
+    "command_mse_height": 2.4775928832008126e-07,
+    "command_mse_yaw_rate": 6.28539472549724e-05,
+    "command_mse_keypoints": 7.948658425541512e-06,
+    "command_mse_joint_position": 8.284779764392461e-05,
+    "command_mse_joint_velocity": 0.004001980693652653,
+    "command_mse_orientation": 7.474683963198168e-05
+  }
+}

@@ -2,7 +2,7 @@
 
 A separate, self-contained research checkout for SONIC teacher training, BFM student distillation, Motion2Scene scene/obstacle generation, and dataset visualization. It contains a working-tree snapshot of both research codebases, actual datasets and selected checkpoints in Git LFS, plus portable commands that create new local configurations.
 
-**Research status:** the previous completed teacher remains stronger than the repaired teacher at the packaged interim-evaluation snapshot. The best recorded BFM student has 1/100 full-command tracking completions and 0/100 sparse-command tracking completions. The scene-qualified probes admitted zero navigation demonstrations. Scene generation, navigation distillation and bounded residual RL code are included as experimental workflows; this is not a validated autonomous navigation product. See [the design and evidence guide](docs/WORKFLOWS.md).
+**Research status:** the repaired teacher supplies strong strict-label coverage, and the recovered full-command motor student now reaches 88/89 training completions with same-state online distillation and 10/20 development completions across three evaluation seeds. On the bounded four-motion stopping panel, that frozen motor completes 8/8 tasks. Goal/map navigation remains unresolved: the original adapter completes 0/8, while a localized variant completes 1/8 once and fails its two selected-task repeats. The supported recovery framework is implemented, but its registered physical results are pending. See the [full distillation research report](docs/DISTILLATION_RESEARCH.md) and [design and evidence guide](docs/WORKFLOWS.md).
 
 Read the [readiness audit](docs/READINESS_AUDIT.md) before setting up native training.
 
@@ -10,7 +10,7 @@ Read the [readiness audit](docs/READINESS_AUDIT.md) before setting up native tra
 
 The intended loop is **executable motion → critical scene proposals → physical qualification → teacher labels → masked student → scene/goal control**. A scene that merely clears a reference is not yet a useful navigation demonstration. The package preserves each qualification boundary and the negative results that motivate the next experiments.
 
-Read the [detailed research guide](docs/RESEARCH_GUIDE.md), [paper draft (PDF)](paper/main.pdf), and [paper evidence map](paper/README.md). The draft describes the measured exploratory results; autonomous scene-navigation and residual-learning gains remain proposed work.
+Read the [distillation research report](docs/DISTILLATION_RESEARCH.md), [detailed research guide](docs/RESEARCH_GUIDE.md), [paper draft (PDF)](paper/main.pdf), and [paper evidence map](paper/README.md). The report separates measured motor recovery from the proposed extensible navigation-context framework. Autonomous scene-navigation and residual-learning gains remain proposed work.
 
 ## Install and unpack
 
@@ -103,6 +103,7 @@ See [dataset coverage](docs/DATASETS.md), [workflow map](docs/WORKFLOWS.md), and
 |---|---|
 | [Setup](docs/SETUP.md) | Environments, data extraction, readiness and troubleshooting |
 | [Readiness audit](docs/READINESS_AUDIT.md) | Executed checks and remaining native integration gaps |
+| [Distillation research](docs/DISTILLATION_RESEARCH.md) | Current evidence, related work, extensible student framework and navigation-context roadmap |
 | [Research guide](docs/RESEARCH_GUIDE.md) | Problem, interfaces, methods, experiments and next milestones |
 | [Research runbook](docs/RESEARCH_RUNBOOK.md) | Concrete workflow and continuation boundaries |
 | [Dataset inventory](docs/DATASETS.md) | Bundle contents, provenance and asset terms |
