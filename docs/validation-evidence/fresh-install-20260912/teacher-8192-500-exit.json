@@ -1,0 +1,7 @@
+{
+  "state": "complete",
+  "exit_code": 0,
+  "wall_seconds": 11856.92052223999,
+  "wall_cap_reached": false,
+  "training_receipt": "/home/robotixx/motion2scene-training/workspace/teacher-8192-500/tracking-run-1/training-receipt.json"
+}

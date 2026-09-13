@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/robotixx/motion2scene-training/workspace/teacher-8192-500/inputs/sonic_release.pt",
+  "sha256": "e6bdab3f64a39336b3d41877d4f497d05f58af275f288ec0e6746c283ded8909",
+  "policy_strict": true,
+  "critic_strict": true,
+  "optimizer_state_entries": 0,
+  "resume": false
+}

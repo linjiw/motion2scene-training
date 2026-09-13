@@ -53,7 +53,8 @@ A second host (Ubuntu 22.04, glibc 2.35, one RTX 5090 on driver 590.48.01, uv-ma
 | Package tests plus vendored BFM and scene-distillation tests in `.venv_native` | 60 passed |
 | `generator-smoke --updates 20`, `student-smoke --updates 240`, `scene-tasks` | Completed; student action MSE 0.875 → 0.175 (uniform) and 0.179 (curriculum); 200 tasks |
 | `teacher-prepare`, 128 environments, 500 and 32,000 iterations | Completed; 89 train / 20 development clips loaded, 958 source files verified |
-| `teacher-train` 500-iteration smoke, EULA recorded in the environment, launched through `scripts/m2s_native.sh` | Running at the time of writing: Isaac Sim launched headless, CUDA preflight passed, release actor/critic loaded strictly with an empty optimizer, 89 resident motions at 128 environments, PPO iterations logging; completion is recorded in a follow-up |
+| `teacher-train`, 128 environments, 500 iterations, EULA recorded in the environment, launched through `scripts/m2s_native.sh` | Isaac Sim launched headless; release actor/critic loaded strictly with an empty optimizer; 89 resident motions. Stopped deliberately at iteration 106 to free the GPU (`exit.json` state `incomplete`, exit -9) |
+| `teacher-train`, 8192 environments, 500 iterations (same 98.3M rollout transitions as 32,000 × 128) | **Complete**: exit 0, training receipt `complete`, `model_step_000500.pt` written, no OOM or PhysX allocation errors. Trainer GPU memory peaked at 16.9 GiB (median 13.5 GiB); the whole device peaked at 26.3 of 31.8 GiB including other jobs; host RAM peaked at 33 GiB. 23.6 s per iteration, about 8,300 transitions/s, 3.3 h wall time |
 
 Problems found and fixed during this installation:
 
@@ -65,4 +66,4 @@ Problems found and fixed during this installation:
 
 `scripts/m2s_native.sh` and the setup guide now cover the last two.
 
-Measured teacher throughput on the shared GPU was about 20 s per iteration at 128 environments, compared with about 3.2 s on the source machine (12,572 iterations in 11.0 h, [step-12,500 report](teacher-status/step12500/REPORT.md)). At that rate a 32,000-iteration packet would reach the 48 h wall cap long before completing, so size long runs from measured throughput on the actual device.
+Measured teacher throughput on the shared GPU was about 20 s per iteration at 128 environments (about 150 transitions/s), compared with about 3.2 s on the source machine (12,572 iterations in 11.0 h, [step-12,500 report](teacher-status/step12500/REPORT.md)). At that rate a 32,000-iteration, 128-environment packet would reach the 48 h wall cap long before completing. The 8192-environment run delivered the same rollout budget in 3.3 h, so on this card larger env counts are the practical way to spend a fixed transition budget. Its larger rollouts per PPO update change the optimization and have not been evaluated against the 128-environment design; its training-rollout reward rose from 7.9 to 13.2, which is not a tracking evaluation. Memory and throughput evidence is in `teacher-8192-500-memory-throughput.json`.

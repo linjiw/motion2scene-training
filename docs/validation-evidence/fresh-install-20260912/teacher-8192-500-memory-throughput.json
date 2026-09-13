@@ -1,0 +1,22 @@
+{
+  "note": "8192-environment, 500-iteration repaired-data teacher run on a shared RTX 5090 (32 GB); nvidia-smi sampled every 2 s",
+  "num_envs": 8192,
+  "iterations": 500,
+  "seconds_per_iteration": 23.631054744426766,
+  "transitions_per_second": 8319.899476614295,
+  "gpu_memory_samples": 5717,
+  "trainer_gpu_mib_peak": 17348,
+  "trainer_gpu_mib_median": 13782,
+  "trainer_gpu_mib_peak_before_first_progress_record": 15836,
+  "device_gpu_used_mib_peak_all_processes": 26961,
+  "device_gpu_total_mib": 32607,
+  "torch_peak_allocated_bytes": 8621352448,
+  "torch_peak_reserved_bytes": 10718543872,
+  "host_used_gib_max": 33,
+  "host_available_gib_min": 57,
+  "oom_or_physx_allocation_errors_in_training_log": 0,
+  "training_rollout_reward_mean_first10": 7.896036482799798,
+  "training_rollout_reward_mean_last10": 13.239853604073636,
+  "reward_scope": "objective/rewards from training rollouts; not a tracking evaluation",
+  "model_step_000500_sha256": "26ca1ed70c2287c1acb6243820649db4b8513a5d9b8b16abc115f890d87b6bff"
+}
