@@ -14,11 +14,17 @@
       "path": "vendor/sonic/gear_sonic/research/hindsight_training/prepare_repaired.py",
       "snapshot_sha256": "cf562617d72549aa38c49ab32bd13e8d9b7b3f63974e41be0f99d0f52f21729f",
       "current_sha256": "0f21826708c8c858de829991a48962cc604b65931286723cd8cff1a0b63c4a93"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/hindsight_training/pose_capture.py",
+      "snapshot_sha256": null,
+      "current_sha256": "c8102b274bdaa6ca57cff81074fcf99f061c7ef617fcfd1d17c6586bcb16e784"
     }
   ],
   "reasons": [
     "Pin SMPLSim to observed training revision",
     "Resolve native wrapper test source relative to the vendored test, independent of cwd",
-    "Allow power-of-two teacher env counts 128..8192 (synced source allows 128..4096); keeps the synced --num-mini-batches option"
+    "Allow power-of-two teacher env counts 128..8192 (synced source allows 128..4096); keeps the synced --num-mini-batches option",
+    "Add read-only PoseCaptureQualificationCallback (new file) so teacher evaluations record poses for scripts/teacher_review mesh videos"
   ]
 }
