@@ -11,7 +11,7 @@ import torch
 from gear_sonic.research.hindsight_training.runtime import load_release_checkpoint, sha, write_new
 from gear_sonic.research.hindsight_training.student import FrozenSonicDecoder
 from gear_sonic.research.scene_distillation.commands import (
-    MaskedMotionFoundation,
+    build_foundation,
     sample_command_mask,
 )
 from gear_sonic.research.scene_distillation.curriculum import (
@@ -133,6 +133,7 @@ def load_episodes(
             n = int(mask.sum())
         if n < 2:
             raise ValueError("Episode too short")
+        arrays["_exploratory_source"] = torch.full((n,), exploratory, dtype=torch.bool)
         episodes.append(arrays)
     if not episodes:
         raise ValueError(
@@ -146,7 +147,15 @@ def make_decoder(checkpoint, device):
 
 
 def train_foundation_step(
-    model, decoder, batch, beta, prior_weight, decoder_atol=2e-4, *, command_weights=None
+    model,
+    decoder,
+    batch,
+    beta,
+    prior_weight,
+    decoder_atol=2e-4,
+    *,
+    command_weights=None,
+    full_token_weight=0.0,
 ):
     mask = (
         sample_command_mask(batch["control_mask"])
@@ -174,12 +183,18 @@ def train_foundation_step(
     prior_mse = (
         (decoder(public["tokens"], batch["proprio"]) - batch["teacher_actions"]).square().mean()
     )
-    result["loss"] = result["loss"] + prior_weight * prior_mse
+    if not np.isfinite(full_token_weight) or full_token_weight < 0:
+        raise ValueError("Full-command token weight must be finite and nonnegative")
+    full = (mask == batch["control_mask"]).all(-1)
+    token_error = (public["tokens"] - batch["teacher_tokens"]).square().mean(-1)
+    token_mse = (token_error * full).sum() / full.sum().clamp_min(1)
+    result["loss"] = result["loss"] + prior_weight * prior_mse + full_token_weight * token_mse
     return {
         "loss": result["loss"],
         "reconstruction": result["reconstruction"],
         "kl": result["kl"],
         "prior_action_mse": prior_mse,
+        "full_command_token_mse": token_mse,
     }
 
 
@@ -272,6 +287,15 @@ def main(args):
     if sampling not in ("episode_uniform", "reference_quarters"):
         raise ValueError("Unknown foundation sampling strategy")
     sampler = PhaseBalancedSampler(episodes) if sampling == "reference_quarters" else None
+    source_groups = None
+    if config.get("balance_teacher_and_queries", False):
+        if sampler is not None:
+            raise ValueError("Source balancing currently requires episode_uniform sampling")
+        source_groups = [
+            [i for i, e in enumerate(episodes) if bool(e["_exploratory_source"][0]) == flag]
+            for flag in (False, True)
+        ]
+        source_groups = [group for group in source_groups if group]
     args.output.mkdir(parents=True, exist_ok=False)
     if sampler is not None:
         write_new(args.output / "phase-coverage.json", {"episode_quarter_rows": sampler.coverage()})
@@ -285,7 +309,7 @@ def main(args):
     device = torch.device(config.get("device", "cpu"))
     decoder = make_decoder(config["teacher_checkpoint"], device)
     if stage == "foundation":
-        model = MaskedMotionFoundation().to(device)
+        model = build_foundation(config).to(device)
     else:
         foundation_checkpoint = Path(config["foundation_checkpoint"])
         if sha(foundation_checkpoint) != config["foundation_sha256"]:
@@ -293,7 +317,7 @@ def main(args):
         saved = torch.load(foundation_checkpoint, map_location=device, weights_only=False)
         if saved["teacher_sha256"] != teacher_sha or saved["stage"] != "foundation":
             raise ValueError("Foundation/decoder provenance mismatch")
-        foundation = MaskedMotionFoundation().to(device)
+        foundation = build_foundation(saved["config"]).to(device)
         foundation.load_state_dict(saved["model"], strict=True)
         model = FrozenFoundationNavigator(
             foundation,
@@ -325,7 +349,14 @@ def main(args):
             raise ValueError("Resume stage/teacher mismatch")
         if saved["config"]["learning_rate"] != config["learning_rate"]:
             raise ValueError("Optimizer continuation requires the recorded learning rate")
-        for key in ("command_curriculum", "foundation_sampling", "dataset_manifest_sha256"):
+        for key in (
+            "command_curriculum",
+            "foundation_sampling",
+            "dataset_manifest_sha256",
+            "foundation_architecture",
+            "transformer",
+            "full_token_weight",
+        ):
             if saved["config"].get(key) != config.get(key):
                 raise ValueError(f"Optimizer continuation changed {key}")
         model.load_state_dict(saved["model"], strict=True)
@@ -350,7 +381,11 @@ def main(args):
                     # Balance episodes, not their unequal numbers of frames.
                     samples = []
                     for _ in range(config["batch_size"]):
-                        if sampler is None:
+                        if source_groups is not None:
+                            group = source_groups[int(rng.integers(len(source_groups)))]
+                            e = episodes[group[int(rng.integers(len(group)))]]
+                            i = int(rng.integers(len(e["proprio"])))
+                        elif sampler is None:
                             e = episodes[int(rng.integers(len(episodes)))]
                             i = int(rng.integers(len(e["proprio"])))
                         else:
@@ -374,6 +409,7 @@ def main(args):
                         config["beta"],
                         config["prior_action_weight"],
                         config.get("decoder_atol", 2e-4),
+                        full_token_weight=config.get("full_token_weight", 0.0),
                         command_weights=(
                             curriculum_weights(curriculum, start_step + next_step - 1)
                             if curriculum is not None

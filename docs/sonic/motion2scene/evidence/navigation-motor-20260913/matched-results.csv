@@ -1,0 +1,17 @@
+profile,stage,navigation_success,goal_ever_reached,max_hold_ticks,collision_free,fell,control_steps
+nav_goal_map_v1,nav-00265-stop-clear,False,False,0,True,False,500
+nav_goal_map_v1,nav-00265-stop-corridor,False,True,38,True,False,500
+nav_goal_map_v1,nav-00413-stop-clear,False,False,0,True,False,600
+nav_goal_map_v1,nav-00413-stop-corridor,False,False,0,True,False,600
+nav_goal_map_v1,nav-00908-stop-clear,False,True,0,True,False,350
+nav_goal_map_v1,nav-00908-stop-corridor,False,True,42,True,False,350
+nav_goal_map_v1,nav-00976-stop-clear,False,True,0,True,False,500
+nav_goal_map_v1,nav-00976-stop-corridor,False,True,0,True,False,500
+motion_full_current_v2,full-00265-stop-clear,True,True,50,True,False,389
+motion_full_current_v2,full-00265-stop-corridor,True,True,50,True,False,387
+motion_full_current_v2,full-00413-stop-clear,True,True,50,True,False,550
+motion_full_current_v2,full-00413-stop-corridor,True,True,50,True,False,507
+motion_full_current_v2,full-00908-stop-clear,True,True,50,True,False,236
+motion_full_current_v2,full-00908-stop-corridor,True,True,50,True,False,237
+motion_full_current_v2,full-00976-stop-clear,True,True,50,True,False,385
+motion_full_current_v2,full-00976-stop-corridor,True,True,50,True,False,385

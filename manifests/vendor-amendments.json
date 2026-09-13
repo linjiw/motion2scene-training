@@ -12,13 +12,13 @@
     },
     {
       "path": "vendor/sonic/gear_sonic/research/hindsight_training/prepare_repaired.py",
-      "snapshot_sha256": "49c18d444fcd87725cc9dd575ef775007b9073bae7e72f536f024d99e32e6442",
-      "current_sha256": "37313cffd54befa702fa55edae21ea72d8cda2e0366daf5f3d9cca474997682d"
+      "snapshot_sha256": "cf562617d72549aa38c49ab32bd13e8d9b7b3f63974e41be0f99d0f52f21729f",
+      "current_sha256": "0f21826708c8c858de829991a48962cc604b65931286723cd8cff1a0b63c4a93"
     }
   ],
   "reasons": [
     "Pin SMPLSim to observed training revision",
     "Resolve native wrapper test source relative to the vendored test, independent of cwd",
-    "Allow power-of-two teacher env counts 128..8192 (was 128/256 only) for larger-GPU experiments; describe the budget accordingly"
+    "Allow power-of-two teacher env counts 128..8192 (synced source allows 128..4096); keeps the synced --num-mini-batches option"
   ]
 }

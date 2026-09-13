@@ -1,0 +1,15 @@
+{
+  "scope": "eight original in-sample tasks; fixed scorer and deadlines",
+  "teacher_collections": 8,
+  "collect_to_deadline": true,
+  "offline_conditions": [
+    "structured_motor",
+    "localized_structured_motor"
+  ],
+  "updates_per_condition": 6000,
+  "batch_size": 256,
+  "training_seed": 91370,
+  "evaluation_seed": 91260,
+  "nav_dagger": false,
+  "takeover_diagnostics": 4
+}

@@ -1,0 +1,172 @@
+[
+  {
+    "stage": "extended-00265-stop-corridor",
+    "steps": 525,
+    "success": true
+  },
+  {
+    "stage": "extended-00908-stop-corridor",
+    "steps": 450,
+    "success": false
+  },
+  {
+    "stage": "localized-00265-stop-clear",
+    "steps": 500,
+    "success": false
+  },
+  {
+    "stage": "localized-00265-stop-corridor",
+    "steps": 500,
+    "success": false
+  },
+  {
+    "stage": "localized-00413-stop-clear",
+    "steps": 600,
+    "success": false
+  },
+  {
+    "stage": "localized-00413-stop-corridor",
+    "steps": 600,
+    "success": false
+  },
+  {
+    "stage": "localized-00908-stop-clear",
+    "steps": 350,
+    "success": false
+  },
+  {
+    "stage": "localized-00908-stop-corridor",
+    "steps": 350,
+    "success": false
+  },
+  {
+    "stage": "localized-00976-stop-clear",
+    "steps": 332,
+    "success": true
+  },
+  {
+    "stage": "localized-00976-stop-corridor",
+    "steps": 500,
+    "success": false
+  },
+  {
+    "stage": "queries-00265-stop-corridor",
+    "steps": 500,
+    "success": false
+  },
+  {
+    "stage": "queries-00908-stop-corridor",
+    "steps": 350,
+    "success": false
+  },
+  {
+    "stage": "repeat-00976-stop-clear-91261",
+    "steps": 500,
+    "success": false
+  },
+  {
+    "stage": "repeat-00976-stop-clear-91262",
+    "steps": 500,
+    "success": false
+  },
+  {
+    "stage": "structured-00265-stop-clear",
+    "steps": 500,
+    "success": false
+  },
+  {
+    "stage": "structured-00265-stop-corridor",
+    "steps": 488,
+    "success": false
+  },
+  {
+    "stage": "structured-00413-stop-clear",
+    "steps": 600,
+    "success": false
+  },
+  {
+    "stage": "structured-00413-stop-corridor",
+    "steps": 600,
+    "success": false
+  },
+  {
+    "stage": "structured-00908-stop-clear",
+    "steps": 350,
+    "success": false
+  },
+  {
+    "stage": "structured-00908-stop-corridor",
+    "steps": 350,
+    "success": false
+  },
+  {
+    "stage": "structured-00976-stop-clear",
+    "steps": 500,
+    "success": false
+  },
+  {
+    "stage": "structured-00976-stop-corridor",
+    "steps": 500,
+    "success": false
+  },
+  {
+    "stage": "takeover-00265-stop-corridor-400",
+    "steps": 500,
+    "success": false
+  },
+  {
+    "stage": "takeover-00265-stop-corridor-462",
+    "steps": 500,
+    "success": false
+  },
+  {
+    "stage": "takeover-00908-stop-corridor-180",
+    "steps": 230,
+    "success": true
+  },
+  {
+    "stage": "takeover-00908-stop-corridor-243",
+    "steps": 350,
+    "success": false
+  },
+  {
+    "stage": "teacher-00265-stop-clear",
+    "steps": 500,
+    "success": true
+  },
+  {
+    "stage": "teacher-00265-stop-corridor",
+    "steps": 500,
+    "success": true
+  },
+  {
+    "stage": "teacher-00413-stop-clear",
+    "steps": 600,
+    "success": true
+  },
+  {
+    "stage": "teacher-00413-stop-corridor",
+    "steps": 600,
+    "success": true
+  },
+  {
+    "stage": "teacher-00908-stop-clear",
+    "steps": 350,
+    "success": true
+  },
+  {
+    "stage": "teacher-00908-stop-corridor",
+    "steps": 350,
+    "success": true
+  },
+  {
+    "stage": "teacher-00976-stop-clear",
+    "steps": 500,
+    "success": true
+  },
+  {
+    "stage": "teacher-00976-stop-corridor",
+    "steps": 500,
+    "success": true
+  }
+]

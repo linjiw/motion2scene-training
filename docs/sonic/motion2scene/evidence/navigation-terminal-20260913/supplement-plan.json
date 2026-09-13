@@ -1,0 +1,9 @@
+{
+  "adaptive_diagnostic": true,
+  "reason": "nominal takeover late failures may be deadline-censored; teacher-state fit fails to predict closed-loop behavior",
+  "query_rollouts": 2,
+  "extended_takeovers": 2,
+  "extra_diagnostic_ticks": 100,
+  "official_task_deadlines_unchanged": true,
+  "dagger_training": false
+}

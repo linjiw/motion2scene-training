@@ -1,0 +1,50 @@
+[
+  {
+    "schema": "navigation_candidate_queries_v1",
+    "task_positive_eligible": false,
+    "supported_rows": 0,
+    "rows": 500,
+    "actor_profile": "nav_goal_map_v1",
+    "student_sha256": "7215baaf11bbdd0b5b7dc90ce5abfc3a40b4dd212a695c500bfbd7b7d18a2d50",
+    "teacher_sha256": "afd649cfbbfd28833550e11a0f8c3b7a5f6a05ee8b4021dd0dac97a6f94733ce",
+    "task_path": "/home/linjiw/research-data/m2s-bfm-motor-recovery-20260913/stopping-tasks-v2/00265/corridor.json",
+    "task_sha256": "f1e12c93171101493c731be5731fbdfd011401fc5063c41dacae6c0033b9e727",
+    "shard": {
+      "path": "/home/linjiw/research-data/m2s-nav-terminal-control-20260913/queries-00265-stop-corridor/task/navigation-queries.npz",
+      "sha256": "9316f92cbe7ec5477530523748fd7ebfa8bc4666739522f894ebbe4b48a510da"
+    },
+    "score": {
+      "path": "/home/linjiw/research-data/m2s-nav-terminal-control-20260913/queries-00265-stop-corridor/task/task-result.json",
+      "sha256": "e39adf9a8e518a2b16a88da21ae7e21084bd195b3f138689951f1e115a479c30"
+    },
+    "target_source": "same-state frozen motor under nominal reference clock",
+    "admission": "Candidate-only; successful compatible takeover evidence is required separately",
+    "exact_unassisted_trace_parity": true,
+    "candidate_action_mse": 0.08951173722743988,
+    "motion_task": "00265-stop-corridor"
+  },
+  {
+    "schema": "navigation_candidate_queries_v1",
+    "task_positive_eligible": false,
+    "supported_rows": 0,
+    "rows": 350,
+    "actor_profile": "nav_goal_map_v1",
+    "student_sha256": "7215baaf11bbdd0b5b7dc90ce5abfc3a40b4dd212a695c500bfbd7b7d18a2d50",
+    "teacher_sha256": "afd649cfbbfd28833550e11a0f8c3b7a5f6a05ee8b4021dd0dac97a6f94733ce",
+    "task_path": "/home/linjiw/research-data/m2s-bfm-motor-recovery-20260913/stopping-tasks-v2/00908/corridor.json",
+    "task_sha256": "ec31f8bf419973b0f5a18422a2771a94d1880a4385062535fbc26085c77cb48f",
+    "shard": {
+      "path": "/home/linjiw/research-data/m2s-nav-terminal-control-20260913/queries-00908-stop-corridor/task/navigation-queries.npz",
+      "sha256": "56d6b9dccad642cba74f77d80e06d923251c74a2b80ee210ab1eb3cef18ee7d0"
+    },
+    "score": {
+      "path": "/home/linjiw/research-data/m2s-nav-terminal-control-20260913/queries-00908-stop-corridor/task/task-result.json",
+      "sha256": "77c22b8ee129f71243054f0e0273f94822aa2dc6d433a976180a31b92c78aedb"
+    },
+    "target_source": "same-state frozen motor under nominal reference clock",
+    "admission": "Candidate-only; successful compatible takeover evidence is required separately",
+    "exact_unassisted_trace_parity": true,
+    "candidate_action_mse": 0.0647556334733963,
+    "motion_task": "00908-stop-corridor"
+  }
+]

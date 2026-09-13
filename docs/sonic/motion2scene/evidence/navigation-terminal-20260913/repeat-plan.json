@@ -1,0 +1,10 @@
+{
+  "adaptive_diagnostic": true,
+  "selection": "single successful training task from the new eight-task panel",
+  "task": "00976-stop-clear",
+  "evaluation_seeds": [
+    91261,
+    91262
+  ],
+  "not_a_repeated_eight_task_panel": true
+}

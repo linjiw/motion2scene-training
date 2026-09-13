@@ -1,0 +1,16 @@
+{
+  "reason": "The native 640D packing is ten 58D blocks of concatenated q-all then v-all plus orientation per block, not chronological q/velocity frames. Initial extension misread future q as current velocity; do not use these comparisons.",
+  "invalid_stages": [
+    "teacher-horizon-1",
+    "teacher-horizon-2",
+    "broad-current-frame",
+    "broad-current-frame-smoke",
+    "broad-current-frame-eval-full",
+    "anticipatory-zero-eval-full",
+    "anticipatory",
+    "anticipatory-smoke",
+    "anticipatory-eval-full"
+  ],
+  "unaffected": "Legacy 79D BFM controls, teacher-horizon-10 identity control, and online broad-cvae selection",
+  "resolution": "reference_layout.py plus reference_layout_version native_q_then_v_v1; corrected stages pending"
+}

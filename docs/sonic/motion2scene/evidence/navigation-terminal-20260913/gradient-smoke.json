@@ -1,0 +1,21 @@
+{
+  "real_encoder_fsq_decoder_input_gradient_l1": 0.40377676486968994,
+  "motor_parameter_gradients_absent": true,
+  "decoder_parameter_gradients_absent": true,
+  "causal_rows": 3900,
+  "losses": {
+    "loss": 0.028538646176457405,
+    "action_mse": 0.004861965775489807,
+    "teacher_action_mse": 0.007968520745635033,
+    "motor_teacher_action_mse": 0.0032892017625272274,
+    "normalized_command_mse": 0.23676680028438568,
+    "command_heading": 0.05369032919406891,
+    "command_velocity": 0.1765696257352829,
+    "command_height": 5.5197328038048e-05,
+    "command_yaw_rate": 0.17844177782535553,
+    "command_keypoints": 0.014265875332057476,
+    "command_joint_position": 0.24873259663581848,
+    "command_joint_velocity": 0.9513943791389465,
+    "command_orientation": 0.2709846794605255
+  }
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "task": "nav-00265-stop-clear",
+    "max_hold": 0,
+    "final_run": 0,
+    "goal_ticks": 0,
+    "goal_slow_ticks": 0,
+    "hold_resets": []
+  },
+  {
+    "task": "nav-00265-stop-corridor",
+    "max_hold": 38,
+    "final_run": 38,
+    "goal_ticks": 84,
+    "goal_slow_ticks": 38,
+    "hold_resets": []
+  },
+  {
+    "task": "nav-00413-stop-clear",
+    "max_hold": 0,
+    "final_run": 0,
+    "goal_ticks": 0,
+    "goal_slow_ticks": 0,
+    "hold_resets": []
+  },
+  {
+    "task": "nav-00413-stop-corridor",
+    "max_hold": 0,
+    "final_run": 0,
+    "goal_ticks": 0,
+    "goal_slow_ticks": 0,
+    "hold_resets": []
+  },
+  {
+    "task": "nav-00908-stop-clear",
+    "max_hold": 0,
+    "final_run": 0,
+    "goal_ticks": 56,
+    "goal_slow_ticks": 0,
+    "hold_resets": []
+  },
+  {
+    "task": "nav-00908-stop-corridor",
+    "max_hold": 42,
+    "final_run": 0,
+    "goal_ticks": 157,
+    "goal_slow_ticks": 69,
+    "hold_resets": [
+      {
+        "previous_hold_ticks": 5,
+        "reset_tick": 163,
+        "time_s": 3.2600000000000002,
+        "position_violation": false,
+        "speed_violation": true,
+        "distance_m": 0.12902689853862123,
+        "speed_mps": 0.10503291338682175
+      },
+      {
+        "previous_hold_ticks": 8,
+        "reset_tick": 179,
+        "time_s": 3.58,
+        "position_violation": false,
+        "speed_violation": true,
+        "distance_m": 0.14176819788631137,
+        "speed_mps": 0.10551903396844864
+      },
+      {
+        "previous_hold_ticks": 12,
+        "reset_tick": 199,
+        "time_s": 3.98,
+        "position_violation": false,
+        "speed_violation": true,
+        "distance_m": 0.15423583492888807,
+        "speed_mps": 0.10403677821159363
+      },
+      {
+        "previous_hold_ticks": 42,
+        "reset_tick": 243,
+        "time_s": 4.86,
+        "position_violation": false,
+        "speed_violation": true,
+        "distance_m": 0.18469544725117054,
+        "speed_mps": 0.11457506567239761
+      },
+      {
+        "previous_hold_ticks": 2,
+        "reset_tick": 257,
+        "time_s": 5.14,
+        "position_violation": false,
+        "speed_violation": true,
+        "distance_m": 0.18600247312847182,
+        "speed_mps": 0.1084788367152214
+      }
+    ]
+  },
+  {
+    "task": "nav-00976-stop-clear",
+    "max_hold": 0,
+    "final_run": 0,
+    "goal_ticks": 45,
+    "goal_slow_ticks": 0,
+    "hold_resets": []
+  },
+  {
+    "task": "nav-00976-stop-corridor",
+    "max_hold": 0,
+    "final_run": 0,
+    "goal_ticks": 42,
+    "goal_slow_ticks": 0,
+    "hold_resets": []
+  }
+]

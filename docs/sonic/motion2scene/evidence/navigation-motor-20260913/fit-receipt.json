@@ -1,0 +1,13 @@
+{
+  "state": "complete",
+  "updates": 6000,
+  "wall_seconds": 19.56173250300344,
+  "rows": 2739,
+  "episodes": 8,
+  "motions": 4,
+  "ancestry_groups": 1,
+  "frozen_motor_tensor_identity": true,
+  "full_command_action_identity": true,
+  "physical_success": null,
+  "evaluation_scope": "in-sample positive control only"
+}

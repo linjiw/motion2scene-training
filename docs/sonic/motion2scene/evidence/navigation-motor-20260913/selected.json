@@ -1,0 +1,5 @@
+{
+  "checkpoint": "/home/linjiw/research-data/m2s-nav-motor-bridge-20260913/fit/training/step-006000.pt",
+  "sha256": "7215baaf11bbdd0b5b7dc90ce5abfc3a40b4dd212a695c500bfbd7b7d18a2d50",
+  "rule": "single predeclared 6000-update model; no task-based checkpoint selection"
+}

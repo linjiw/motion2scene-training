@@ -1,0 +1,28 @@
+{
+  "motor_architecture": "anticipatory",
+  "trainable_component": "MLP desired-reference forecaster, 1044->512->512->576",
+  "fixed_components": [
+    "teacher reference encoder",
+    "FSQ quantizer",
+    "SONIC action decoder"
+  ],
+  "public_input": "measured history930 + full current commands114; arrival bit unavailable",
+  "actor_future_reference": false,
+  "command_masking": "full only",
+  "offline_support": "122587 rows over 822 training episodes; explicit broader-prefix and query support",
+  "offline_updates": 6000,
+  "selected_online_updates": 3200,
+  "selected_online_transitions": 819200,
+  "online_total_updates": 6400,
+  "online_total_transitions": 1638400,
+  "online_envs": 512,
+  "recovery_qualification": "local tracking only",
+  "inference_task": "reference tracking; goal-only navigation unsupported",
+  "inherited_inactive_fields": [
+    "foundation_architecture",
+    "transformer",
+    "command_curriculum",
+    "allow_teacher_prefixes"
+  ],
+  "optimizer_resume": "fresh optimizer per online stage; not exact simulator/RNG resume"
+}

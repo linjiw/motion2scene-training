@@ -1,0 +1,12 @@
+{
+  "teacher_checkpoint": "/home/linjiw/research-data/m2s-bfm-repaired-navigation-prep-20260912/teacher/checkpoint.pt",
+  "teacher_sha256": "afd649cfbbfd28833550e11a0f8c3b7a5f6a05ee8b4021dd0dac97a6f94733ce",
+  "task_path": "/home/linjiw/research-data/m2s-bfm-motor-recovery-20260913/stopping-tasks-v2/00908/clear.json",
+  "output": "/home/linjiw/research-data/m2s-nav-motor-bridge-20260913/nav-00908-stop-clear/task",
+  "max_steps": 800,
+  "teacher_mode": false,
+  "command_profile": "context",
+  "student_checkpoint": "/home/linjiw/research-data/m2s-nav-motor-bridge-20260913/fit/training/step-006000.pt",
+  "student_sha256": "7215baaf11bbdd0b5b7dc90ce5abfc3a40b4dd212a695c500bfbd7b7d18a2d50",
+  "actor_profile": "nav_goal_map_v1"
+}

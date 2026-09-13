@@ -65,3 +65,15 @@ def sample_command_mask(available, *, generator=None):
         len(PROFILES), (len(available),), device=available.device, generator=generator
     )
     return profiles[chosen] & available
+
+
+def build_foundation(config):
+    """Reconstruct the architecture recorded with a checkpoint; legacy defaults to MLP."""
+    architecture = config.get("foundation_architecture", "mlp")
+    if architecture == "mlp":
+        return MaskedMotionFoundation()
+    if architecture == "transformer":
+        from gear_sonic.research.scene_distillation.transformer import TransformerMotionFoundation
+
+        return TransformerMotionFoundation(**config.get("transformer", {}))
+    raise ValueError(f"Unknown foundation architecture: {architecture}")

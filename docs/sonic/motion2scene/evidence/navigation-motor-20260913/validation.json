@@ -1,0 +1,5 @@
+{
+  "tests": "........................................................................ [ 75%]\n.......................                                                  [100%]\n95 passed in 2.64s\n",
+  "ruff": "All checks passed!\n",
+  "black": "All done! \u2728 \ud83c\udf70 \u2728\n53 files would be left unchanged.\n"
+}

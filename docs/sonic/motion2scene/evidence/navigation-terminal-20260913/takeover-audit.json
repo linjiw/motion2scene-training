@@ -1,0 +1,130 @@
+[
+  {
+    "diagnostic_only": true,
+    "intervention": {
+      "decision_tick": 400,
+      "time_s": 8.0,
+      "root_xyz": [
+        1.009389877319336,
+        0.576053261756897,
+        0.7763403058052063
+      ],
+      "goal_distance_m": 0.35241177040195504,
+      "speed_mps": 0.4333178400993347,
+      "command_source": "nominal-clock reference reconstructed at actual measured state",
+      "reference_phase_switch": false
+    },
+    "post_switch_score": {
+      "navigation_success": false,
+      "goal_ever_reached": true,
+      "terminal_hold": false,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 23,
+      "final_goal_distance_m": 0.2460313760246656,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 100,
+      "reference_tracking_required": false
+    },
+    "unassisted_navigation_success": false,
+    "stage": "takeover-00265-stop-corridor-400",
+    "exact_navigation_prefix": true,
+    "remaining_ticks_at_switch": 100
+  },
+  {
+    "diagnostic_only": true,
+    "intervention": {
+      "decision_tick": 462,
+      "time_s": 9.24,
+      "root_xyz": [
+        1.4313724040985107,
+        0.7238860726356506,
+        0.7741822004318237
+      ],
+      "goal_distance_m": 0.15018387681387727,
+      "speed_mps": 0.10300987958908081,
+      "command_source": "nominal-clock reference reconstructed at actual measured state",
+      "reference_phase_switch": false
+    },
+    "post_switch_score": {
+      "navigation_success": false,
+      "goal_ever_reached": true,
+      "terminal_hold": false,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 25,
+      "final_goal_distance_m": 0.17222440420338653,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 38,
+      "reference_tracking_required": false
+    },
+    "unassisted_navigation_success": false,
+    "stage": "takeover-00265-stop-corridor-462",
+    "exact_navigation_prefix": true,
+    "remaining_ticks_at_switch": 38
+  },
+  {
+    "diagnostic_only": true,
+    "intervention": {
+      "decision_tick": 180,
+      "time_s": 3.6,
+      "root_xyz": [
+        -0.2701634168624878,
+        -1.084216594696045,
+        0.7742445468902588
+      ],
+      "goal_distance_m": 0.14306627267563557,
+      "speed_mps": 0.11580625921487808,
+      "command_source": "nominal-clock reference reconstructed at actual measured state",
+      "reference_phase_switch": false
+    },
+    "post_switch_score": {
+      "navigation_success": true,
+      "goal_ever_reached": true,
+      "terminal_hold": true,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 50,
+      "final_goal_distance_m": 0.1537833958892707,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 50,
+      "reference_tracking_required": false
+    },
+    "unassisted_navigation_success": false,
+    "stage": "takeover-00908-stop-corridor-180",
+    "exact_navigation_prefix": true,
+    "remaining_ticks_at_switch": 170
+  },
+  {
+    "diagnostic_only": true,
+    "intervention": {
+      "decision_tick": 243,
+      "time_s": 4.86,
+      "root_xyz": [
+        -0.30998149514198303,
+        -1.1002005338668823,
+        0.7791883945465088
+      ],
+      "goal_distance_m": 0.18469544725117054,
+      "speed_mps": 0.11457506567239761,
+      "command_source": "nominal-clock reference reconstructed at actual measured state",
+      "reference_phase_switch": false
+    },
+    "post_switch_score": {
+      "navigation_success": false,
+      "goal_ever_reached": true,
+      "terminal_hold": false,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 48,
+      "final_goal_distance_m": 0.2802008086608698,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 107,
+      "reference_tracking_required": false
+    },
+    "unassisted_navigation_success": false,
+    "stage": "takeover-00908-stop-corridor-243",
+    "exact_navigation_prefix": true,
+    "remaining_ticks_at_switch": 107
+  }
+]

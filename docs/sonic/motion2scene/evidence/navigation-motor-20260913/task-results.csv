@@ -1,0 +1,9 @@
+stage,navigation_success,goal_ever_reached,max_hold_ticks,collision_free,fell,final_goal_distance_m,control_steps,stop_reason
+nav-00265-stop-clear,False,False,0,True,False,0.8136840222701825,500,deadline
+nav-00265-stop-corridor,False,True,38,True,False,0.1699560940965929,500,deadline
+nav-00413-stop-clear,False,False,0,True,False,0.3743378582864421,600,deadline
+nav-00413-stop-corridor,False,False,0,True,False,0.733586893890193,600,deadline
+nav-00908-stop-clear,False,True,0,True,False,0.3452046770310818,350,deadline
+nav-00908-stop-corridor,False,True,42,True,False,0.5966954704911085,350,deadline
+nav-00976-stop-clear,False,True,0,True,False,1.3153442954550538,500,deadline
+nav-00976-stop-corridor,False,True,0,True,False,1.0985973450855415,500,deadline

@@ -1,0 +1,9 @@
+{
+  "state": "resolved",
+  "original_rejections_preserved": true,
+  "corrected_native_horizon_checks_passed": true,
+  "current_observation_noise_preserved": true,
+  "invalid_extended_checkpoints_rejected_by_layout_version": true,
+  "corrected_stopping_exports_passed": 8,
+  "selected_checkpoint_excludes_invalid_layout_stages": true
+}

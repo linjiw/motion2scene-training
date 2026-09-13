@@ -6,7 +6,7 @@ from gear_sonic.research.hindsight_training.qualify import TrackingQualification
 from gear_sonic.research.hindsight_training.runtime import sha
 from gear_sonic.research.hindsight_training.student import FrozenSonicDecoder
 from gear_sonic.research.scene_distillation.collect import native_commands
-from gear_sonic.research.scene_distillation.commands import PROFILES, MaskedMotionFoundation
+from gear_sonic.research.scene_distillation.commands import PROFILES, build_foundation
 
 
 class FoundationEvaluationCallback(TrackingQualificationCallback):
@@ -28,7 +28,7 @@ class FoundationEvaluationCallback(TrackingQualificationCallback):
             raise ValueError("Student/teacher boundary mismatch")
         if sha(saved["config"]["teacher_checkpoint"]) != self.teacher_sha256:
             raise ValueError("Selected teacher file changed")
-        foundation = MaskedMotionFoundation().to(device).eval()
+        foundation = build_foundation(saved["config"]).to(device).eval()
         foundation.load_state_dict(saved["model"], strict=True)
         decoder = FrozenSonicDecoder(self.model.policy.state_dict()).to(device).eval()
         self.foundation = foundation

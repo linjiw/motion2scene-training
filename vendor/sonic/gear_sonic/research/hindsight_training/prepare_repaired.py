@@ -16,9 +16,11 @@ from gear_sonic.utils.config_utils import register_rl_resolvers
 ENV_COUNTS = (128, 256, 512, 1024, 2048, 4096, 8192)
 
 
-def main(dataset, parent, output, num_envs=128, iterations=32000):
+def main(dataset, parent, output, num_envs=128, iterations=32000, num_mini_batches=8):
     if num_envs not in ENV_COUNTS or iterations <= 0:
         raise ValueError(f"Use a bounded teacher experiment with num_envs in {ENV_COUNTS}")
+    if num_mini_batches <= 0 or num_envs % num_mini_batches:
+        raise ValueError("Minibatches must be positive and divide the environment count")
     manifest = json.loads((dataset / "manifest.json").read_text())
     for row in manifest["files"]:
         if sha(dataset / row["path"]) != row["sha256"]:
@@ -98,12 +100,10 @@ def main(dataset, parent, output, num_envs=128, iterations=32000):
         motion_sampling="All 89 screened repaired clips resident, uniform native sampling",
         checkpoint_interval=500,
         num_ppo_epochs=5,
-        num_mini_batches=8,
+        num_mini_batches=num_mini_batches,
         budget_interpretation=(
-            "More PPO iterations with smaller rollouts; "
+            "Explicit iteration and environment-transition caps; "
             "five optimization epochs per rollout retained"
-            if num_envs <= 256
-            else "Larger rollouts per PPO iteration; five optimization epochs per rollout retained"
         ),
     )
     write_new(output / "plan.json", plan)
@@ -137,7 +137,7 @@ def main(dataset, parent, output, num_envs=128, iterations=32000):
     ]
     overrides += [
         "algo.config.num_learning_epochs=5",
-        "algo.config.num_mini_batches=8",
+        f"algo.config.num_mini_batches={num_mini_batches}",
         "++callbacks.model_save.save_last_frequency=100",
     ]
     register_rl_resolvers()
@@ -146,7 +146,7 @@ def main(dataset, parent, output, num_envs=128, iterations=32000):
     ):
         config = compose(config_name="base", overrides=overrides)
     assert config.num_envs == num_envs and config.algo.config.num_learning_iterations == iterations
-    assert config.algo.config.num_mini_batches == 8 and not config.use_wandb
+    assert config.algo.config.num_mini_batches == num_mini_batches and not config.use_wandb
     OmegaConf.save(config, output / "composed-config.yaml")
     write_new(
         output / "command.json", dict(cwd=command["cwd"], argv=command["argv"][:2] + overrides)
@@ -172,6 +172,7 @@ if __name__ == "__main__":
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--num-envs", type=int, default=128)
     parser.add_argument("--iterations", type=int, default=32000)
+    parser.add_argument("--num-mini-batches", type=int, default=8)
     args = parser.parse_args()
     main(
         args.dataset.resolve(),
@@ -179,4 +180,5 @@ if __name__ == "__main__":
         args.output.resolve(),
         args.num_envs,
         args.iterations,
+        args.num_mini_batches,
     )

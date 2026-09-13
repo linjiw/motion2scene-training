@@ -3081,12 +3081,16 @@
       "sha256": "44f477b0ba60e4d5db305d0ca5cc5a6e23b1c912b231c4b3751fb0a6bf289ad8"
     },
     {
+      "path": "vendor/sonic/decoupled_wbc/tests/test_action_flow_distillation.py",
+      "sha256": "dca281699ba624cdc75528ade82ac9d5578b0674cf7dc79e74bd2b9ed0dd177e"
+    },
+    {
       "path": "vendor/sonic/decoupled_wbc/tests/test_bfm_command_quality.py",
       "sha256": "6ee37ab2ac86e6483e1fb7ceb446c0b56892b880efbe1771bf7b7a49187af62c"
     },
     {
       "path": "vendor/sonic/decoupled_wbc/tests/test_bfm_coverage_navigation.py",
-      "sha256": "457d263aa0ec1b197bc65aafded581367f5d930522f2081ee613c270b554122a"
+      "sha256": "c599b7a8096943e5530b174a40d367006c93bb9b6aeb215b91459e2c15468a33"
     },
     {
       "path": "vendor/sonic/decoupled_wbc/tests/test_bfm_curriculum.py",
@@ -3677,8 +3681,24 @@
       "sha256": "4fb30db80ad935e686841d723c63e0ac25630683896d0a5a7400a808267992d2"
     },
     {
+      "path": "vendor/sonic/decoupled_wbc/tests/test_motor_recovery.py",
+      "sha256": "10915539f3f29834adc8679913e0e28a14f912ebd2c8606578af8067fe83fe2c"
+    },
+    {
+      "path": "vendor/sonic/decoupled_wbc/tests/test_navigation_motor.py",
+      "sha256": "2e60d17959aabf9823964b7fc83d43e9ac4bf123df5e1b4fcd967cb273e8b8ce"
+    },
+    {
+      "path": "vendor/sonic/decoupled_wbc/tests/test_navigation_recovery.py",
+      "sha256": "e71b797a34caeb4fb426373492f1555de1cae8f315b30a42e7a2e61e23b498de"
+    },
+    {
       "path": "vendor/sonic/decoupled_wbc/tests/test_scene_distillation.py",
       "sha256": "f9500dcef790bee95c66a4af0ea0e8e802013caba52b0570d36b8d0a2efc5ed3"
+    },
+    {
+      "path": "vendor/sonic/decoupled_wbc/tests/test_transformer_foundation.py",
+      "sha256": "bfd8667f8f18b17cbf4f2e4e9e13c882b3996d3a77e37e8a5522b48d7a0b2b6a"
     },
     {
       "path": "vendor/sonic/decoupled_wbc/version.py",
@@ -3817,16 +3837,16 @@
       "sha256": "96ca6d3c593c268f009d211709dad79bc2b096c7383833ce846b14b7584ec5e1"
     },
     {
+      "path": "vendor/sonic/gear_sonic/config/base.yaml",
+      "sha256": "32da23dc059653aac95fabce7641bbec9a91eeed00ff8950a116124caa15323c"
+    },
+    {
       "path": "vendor/sonic/gear_sonic/config/base/hydra.yaml",
       "sha256": "5edd12020b36efaea773d2fa9669d981b308b7ccda7508bdc04e3cbc63424c92"
     },
     {
       "path": "vendor/sonic/gear_sonic/config/base/structure.yaml",
       "sha256": "dd3c6fc67865cb2927249ee4a9a2196ca7acc6b6b0abfaa4f2b8f50190dd34e7"
-    },
-    {
-      "path": "vendor/sonic/gear_sonic/config/base.yaml",
-      "sha256": "32da23dc059653aac95fabce7641bbec9a91eeed00ff8950a116124caa15323c"
     },
     {
       "path": "vendor/sonic/gear_sonic/config/base_eval.yaml",
@@ -4338,7 +4358,7 @@
     },
     {
       "path": "vendor/sonic/gear_sonic/pyproject.toml",
-      "sha256": "23f65c58f203953a84dd94b144c37e7d0db1fd8ce89999b004df75c17890cfe0"
+      "sha256": "c1291ba4dbcdf84eca945da84f97b1c50006cb28280753846acb7d79e7402dea"
     },
     {
       "path": "vendor/sonic/gear_sonic/research/__init__.py",
@@ -4386,7 +4406,7 @@
     },
     {
       "path": "vendor/sonic/gear_sonic/research/hindsight_training/prepare_repaired.py",
-      "sha256": "49c18d444fcd87725cc9dd575ef775007b9073bae7e72f536f024d99e32e6442"
+      "sha256": "cf562617d72549aa38c49ab32bd13e8d9b7b3f63974e41be0f99d0f52f21729f"
     },
     {
       "path": "vendor/sonic/gear_sonic/research/hindsight_training/qualify.py",
@@ -4593,12 +4613,16 @@
       "sha256": "2d1ea25fba3833bad2d18cd996183de9c7edd02c73743fe75c2ca666db638957"
     },
     {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/FLOW_CONTEXT_EXPERIMENTS.md",
+      "sha256": "10f49141beebba68c32ede6e99ddd0d58c84860a07518fbc2513cd8d313fbf85"
+    },
+    {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/FOUNDATION_NAVIGATION.md",
       "sha256": "fe2ac7af308828a46bfdb1884e770477d54e3e69acbc82564171242146b9f220"
     },
     {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/README.md",
-      "sha256": "982805991bc2d1484544f49ff6ff62ef3547635574de24a3725eb46dc04147f7"
+      "sha256": "c9938f50222aa342a9d1e6733eb0ce78dbbaa19db36d56ef72dfb98e6ab9d132"
     },
     {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/TRAINING_PIPELINE.md",
@@ -4609,12 +4633,24 @@
       "sha256": "279fddb34a20e45f02139cc465262c9d98443ffd20caaa60418f280d8a50057f"
     },
     {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/action_flow.py",
+      "sha256": "1ac80dbc07eb99d72d96aba7cd182317d66bed307d539ace2bd8dab988dedc0e"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/action_native.py",
+      "sha256": "1c22c6872e067c1fb762ad5bf6f28fcc01e92dac018959efafc4dc6c18da94a9"
+    },
+    {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/aggregate.py",
       "sha256": "3bb4f739d5e61612e8900aa3e0e3f8852f1261d2c99037c6b1da79030eba9307"
     },
     {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/anticipatory_motor.py",
+      "sha256": "09b423ef3313912e1f8da47c1ae0c6f55997c4990ece0eea26a4e933d83eed92"
+    },
+    {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/collect.py",
-      "sha256": "61fc8dbe8c06af2bbedf27242b8d89e67e05124a4f324b21ac80eae162ed6853"
+      "sha256": "b4e61c2001029241646136dda1a4037e423874cf1477e640ae487f7fefd75693"
     },
     {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/command_quality.py",
@@ -4622,7 +4658,11 @@
     },
     {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/commands.py",
-      "sha256": "1082b4c30bf210f7074883f10d1399bb2df10ef3dabcb7707408c062630f486e"
+      "sha256": "f5ba7f98258933e7b9e67aa4356f9102c686a642c41a09bf6f9998f77c922746"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/context_token.py",
+      "sha256": "a3b185a465d3bbe05d639e191d0c92078c3eacc8a81699f0e8b36fe7d09ae717"
     },
     {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/contracts.py",
@@ -4641,8 +4681,16 @@
       "sha256": "d991674457df2c0c3d3c933c2e8f34844b6ca0c3dde13dcff8411309320b0e3c"
     },
     {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/direct_context.py",
+      "sha256": "56719ba9e3c4fb4e181df7e8610724f3a440509c2b9f31d79bf935a0a078922e"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/direct_scene_runtime.py",
+      "sha256": "a99552fb33fdee73657d2eb25caa0dd1581f3b465f531ff34de80175e1f2c333"
+    },
+    {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/evaluate.py",
-      "sha256": "1ce40042965091edd2e47f1f8889baa9d55ca16bc52e32c84bb5fb38a41f03c1"
+      "sha256": "1dce52d3e5f1f6a8c3b464a73c1daa95fa07ce5dc7c7c58134b5a442eda6e230"
     },
     {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/evaluate_commands.py",
@@ -4661,12 +4709,52 @@
       "sha256": "a70585bf8ff60a4904ba4778e681b0b69cd3e67c93eca60dc696ab2bdf6ab523"
     },
     {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/motor_runtime.py",
+      "sha256": "34e91779c259606646775c83e1ce8a4f8ae2e71a9a306d73af2e8ffe576f51a6"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/motor_training.py",
+      "sha256": "c518209a66cfccf10cdaad4bded92a3813440a046c5c4dbe38e3846ace969ad4"
+    },
+    {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/navigation.py",
       "sha256": "19ff03ae3024f3bfaf559e0bd56614cfc4e5bd11adf736096ef26d8a3e3aa327"
     },
     {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/navigation_data.py",
+      "sha256": "e22574afd6274aa623ed3e7f2ea5dc61ef0b22e9387c4a395f99ebe808012321"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/navigation_localization.py",
+      "sha256": "185730259e8477d768e6fdbda58b0d119bbfd4e218007cb79fc72d7dbd21aacf"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/navigation_motor.py",
+      "sha256": "80d4785334b7e1ee7ec186f4811bdc5396c69ced89c741d7f2970d89919a26a9"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/navigation_motor_runtime.py",
+      "sha256": "52104e401fe154e763d36ff45d17e27c7ab15a5724f7f8f9ed792ff90fd8ccfe"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/navigation_queries.py",
+      "sha256": "46c9ff9c057a95d60cd6968d0810d93ddfd5c44ebbbd69f3ff50813be0a3941a"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/navigation_recovery.py",
+      "sha256": "4a873e21f3503f95268ffdaccb9087968a1b56db8a257814756de7e0965c224a"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/navigation_recovery_data.py",
+      "sha256": "6d627e9da90f3b690ddaa5d6cce7301aa840ba5bc7153f630a9d6bfab607c312"
+    },
+    {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/navigation_runtime.py",
-      "sha256": "a9f6167cb9033d0d1c7825dc4e66cb0777df574354c1df9ce6a984058131e99f"
+      "sha256": "664d5a0c085cf4c87921c55b22bdca52e01e305d2dd4e04e6d0b0068b5816de0"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/navigation_takeover.py",
+      "sha256": "e1305ebdf5f2349bdbf9cf308022246b56370b5bcb6a17c3e94ea8dd689a5c25"
     },
     {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/observations.py",
@@ -4677,6 +4765,10 @@
       "sha256": "cb508f6113b185b6e533f4a9565dc8332f6a52b32989805b754c1c6bee498326"
     },
     {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/online_motor.py",
+      "sha256": "12a2bf0eb5b30dac164b3ff74151505b897f14f7ff2df9422901003be4e91d26"
+    },
+    {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/policy.py",
       "sha256": "519cf135fbfbad5d598b96d830dbb1d1d3945629e05166102eae4675c0333d40"
     },
@@ -4685,8 +4777,28 @@
       "sha256": "bc97b5092970b9ead6e1639462e6e9aad5e60e12a1eea2880b35fe05cd088b7b"
     },
     {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/prepare_context_windows.py",
+      "sha256": "b80c6ab240ce8a7ab5b95657401b216bef49cbc7f6d41e3d5099d4425fd6a6ab"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/prepare_repaired_tasks.py",
+      "sha256": "3ed2824f9078225be013ec432476cc670761308f6238afa54dc0f8706dcf10c4"
+    },
+    {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/prepare_scene_probe.py",
       "sha256": "9ff2a9bcd990448d7ef58ed46a882dd84cee686200cd38b8ddcd0968ba9d8ca4"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/reference_layout.py",
+      "sha256": "384d5adb1764f7abf477611147803c1d7c47e2436142560d504930d3f8a46cf5"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/render_navigation_comparison.py",
+      "sha256": "5c2a67ec2df17360d81e05e1a2c48e8a7c669051434f9b8dc0674f45288a5ac9"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/render_navigation_replay.py",
+      "sha256": "ea85c664f6ac46dca4d3b8933bcde1ae0f017e7c24182c3413cf155cbb12d897"
     },
     {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/render_student_comparison.py",
@@ -4709,12 +4821,28 @@
       "sha256": "451f56e987098f3fc85b3bb0493bc320b3a48940c434f0c0ed647400d8e01bf7"
     },
     {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/stopping_teacher.py",
+      "sha256": "0473d6923bf7b31b956f0c36653f8721d30d02f96157c0a6660ae0b834e09aae"
+    },
+    {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/tasks.py",
       "sha256": "443cbc84ed3c87f48098f3ea28dbc994b173d9feb26232c09541799a1224c384"
     },
     {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/token_residual.py",
+      "sha256": "8ee351cae61d07d341bf5e6244927d78cdb918bae53f5abe4f5fd396b5db389f"
+    },
+    {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/train.py",
-      "sha256": "9f6c17f21b80266a085a73d804b439c4b5083bc5735a1c40d097525ab98f6ca1"
+      "sha256": "f38f1413aec5ce668478e1f8b7ffc32ffc309a8515ad3e51a5bd64990cb33542"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/train_action_flow.py",
+      "sha256": "d4e251ebfc8a3dbc8959ce128f1bfd61ae7e69c8e70ff51bd77bbfc29bd01e2a"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/transformer.py",
+      "sha256": "129f22230af95e1a3793be5ab2f6751f29ed4f1d056139ec7a7050b4d92e4bdb"
     },
     {
       "path": "vendor/sonic/gear_sonic/research/scene_distillation/validate.py",
@@ -7420,6 +7548,5 @@
       "path": "vendor/sonic/scripts/research/visualize_synthetic_g1_episode.py",
       "sha256": "0388130971b96f6b46fcd100e733fd64734b5dde3673358dc082ef5d7d2cda52"
     }
-  ],
-  "note": "Copied working tree; no simulator installations or teleop binary SDKs"
+  ]
 }

@@ -1,0 +1,9 @@
+stage,success,hold_ticks,undesired_force_n,steps,rows,source_motion
+stop-v2-00265-stop-clear,True,50,0.0,374,374,00265
+stop-v2-00265-stop-corridor,True,50,0.0,376,376,00265
+stop-v2-00413-stop-clear,True,50,0.0,391,391,00413
+stop-v2-00413-stop-corridor,True,50,0.0,391,391,00413
+stop-v2-00908-stop-clear,True,50,0.0,220,220,00908
+stop-v2-00908-stop-corridor,True,50,0.0,221,221,00908
+stop-v2-00976-stop-clear,True,50,0.0,383,383,00976
+stop-v2-00976-stop-corridor,True,50,0.0,383,383,00976
