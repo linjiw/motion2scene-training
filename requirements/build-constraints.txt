@@ -1,0 +1,3 @@
+# Build-time constraints for source distributions; used by scripts/setup_native.sh.
+# flatdict==4.0.1 (required by isaaclab 0.54.2) imports pkg_resources in setup.py.
+setuptools<81
