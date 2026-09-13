@@ -79,7 +79,12 @@ def main(argv=None):
     doctor.add_argument("--profile", choices=["base", "view", "student", "teacher"])
     teacher = sub.add_parser("teacher-prepare")
     teacher.add_argument("--output", type=Path, required=True)
-    teacher.add_argument("--num-envs", type=int, choices=[128, 256], default=128)
+    teacher.add_argument(
+        "--num-envs",
+        type=int,
+        choices=[128, 256, 512, 1024, 2048, 4096, 8192],
+        default=128,
+    )
     teacher.add_argument("--iterations", type=int, default=32000)
     launch = sub.add_parser("teacher-train")
     launch.add_argument("packet", type=Path)

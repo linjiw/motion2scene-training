@@ -13,10 +13,12 @@ from omegaconf import OmegaConf
 from gear_sonic.research.hindsight_training.runtime import sha, write_new
 from gear_sonic.utils.config_utils import register_rl_resolvers
 
+ENV_COUNTS = (128, 256, 512, 1024, 2048, 4096, 8192)
+
 
 def main(dataset, parent, output, num_envs=128, iterations=32000):
-    if num_envs not in (128, 256) or iterations <= 0:
-        raise ValueError("Use a bounded 128- or 256-environment teacher experiment")
+    if num_envs not in ENV_COUNTS or iterations <= 0:
+        raise ValueError(f"Use a bounded teacher experiment with num_envs in {ENV_COUNTS}")
     manifest = json.loads((dataset / "manifest.json").read_text())
     for row in manifest["files"]:
         if sha(dataset / row["path"]) != row["sha256"]:
@@ -100,6 +102,8 @@ def main(dataset, parent, output, num_envs=128, iterations=32000):
         budget_interpretation=(
             "More PPO iterations with smaller rollouts; "
             "five optimization epochs per rollout retained"
+            if num_envs <= 256
+            else "Larger rollouts per PPO iteration; five optimization epochs per rollout retained"
         ),
     )
     write_new(output / "plan.json", plan)

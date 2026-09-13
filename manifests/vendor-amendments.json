@@ -9,10 +9,16 @@
       "path": "vendor/sonic/decoupled_wbc/tests/test_bfm_coverage_navigation.py",
       "snapshot_sha256": "457d263aa0ec1b197bc65aafded581367f5d930522f2081ee613c270b554122a",
       "current_sha256": "c599b7a8096943e5530b174a40d367006c93bb9b6aeb215b91459e2c15468a33"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/hindsight_training/prepare_repaired.py",
+      "snapshot_sha256": "49c18d444fcd87725cc9dd575ef775007b9073bae7e72f536f024d99e32e6442",
+      "current_sha256": "37313cffd54befa702fa55edae21ea72d8cda2e0366daf5f3d9cca474997682d"
     }
   ],
   "reasons": [
     "Pin SMPLSim to observed training revision",
-    "Resolve native wrapper test source relative to the vendored test, independent of cwd"
+    "Resolve native wrapper test source relative to the vendored test, independent of cwd",
+    "Allow power-of-two teacher env counts 128..8192 (was 128/256 only) for larger-GPU experiments; describe the budget accordingly"
   ]
 }
