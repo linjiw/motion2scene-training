@@ -1,0 +1,58 @@
+{
+  "repaired_3400": {
+    "complete": 2,
+    "motions": 20,
+    "mean_progress": 0.2973558288998902,
+    "completed_ids": [
+      "hindsight_00547",
+      "hindsight_00802"
+    ]
+  },
+  "repaired_4700": {
+    "complete": 4,
+    "motions": 20,
+    "mean_progress": 0.3580022620037198,
+    "completed_ids": [
+      "hindsight_00547",
+      "hindsight_00744",
+      "hindsight_00835",
+      "hindsight_00981"
+    ]
+  },
+  "repaired_6200": {
+    "complete": 3,
+    "motions": 20,
+    "mean_progress": 0.33721258426085116,
+    "completed_ids": [
+      "hindsight_00117",
+      "hindsight_00547",
+      "hindsight_00981"
+    ]
+  },
+  "repaired_12500": {
+    "complete": 1,
+    "motions": 20,
+    "mean_progress": 0.28506216052919625,
+    "completed_ids": [
+      "hindsight_00835"
+    ]
+  },
+  "previous_final": {
+    "complete": 11,
+    "motions": 20,
+    "mean_progress": 0.714801391121,
+    "completed_ids": [
+      "hindsight_00047",
+      "hindsight_00117",
+      "hindsight_00150",
+      "hindsight_00187",
+      "hindsight_00311",
+      "hindsight_00547",
+      "hindsight_00714",
+      "hindsight_00744",
+      "hindsight_00802",
+      "hindsight_00835",
+      "hindsight_00981"
+    ]
+  }
+}

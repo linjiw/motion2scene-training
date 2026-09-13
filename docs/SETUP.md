@@ -13,10 +13,10 @@ Run commands from the repository root. Native commands use the Python interprete
 
 ## 2. Get a working copy and data
 
-The complete repository is hosted privately at `github.com/linjiw/motion2scene-training`. Authorized GitHub users can clone it with (configure a GitHub SSH key first, or use `gh auth login` and `gh repo clone linjiw/motion2scene-training`):
+The complete repository is public at `github.com/linjiw/motion2scene-training`. Clone over HTTPS without repository membership:
 
 ```bash
-git clone git@github.com:linjiw/motion2scene-training.git motion2scene-work
+git clone https://github.com/linjiw/motion2scene-training.git motion2scene-work
 cd motion2scene-work
 git lfs pull
 python3.11 -m venv .venv
@@ -26,7 +26,7 @@ python3.11 -m venv .venv
 .venv/bin/python -m pytest -q tests
 ```
 
-For another machine, use a remote containing both Git history and LFS objects, or transfer the working checkout with its actual bundles. A Git source ZIP or `git bundle` alone does not include LFS data. The private repository requires GitHub access; ask the owner to grant collaborator access if authentication succeeds but cloning is denied.
+For another machine, use a remote containing both Git history and LFS objects, or transfer the working checkout with its actual bundles. A Git source ZIP or `git bundle` alone does not include LFS data. The public HTTPS clone does not require collaborator access; Git LFS must still be installed and able to download the data objects.
 
 Use the same `--workspace` for every invocation. It is a global option and appears **before** the subcommand. Rerunning `unpack` validates existing files and fills missing files. Changed files are rejected rather than overwritten. To deliberately restore changed research input, keep a copy and extract into a new workspace. Extracting robot assets binds the vendored asset link to that workspace; do not switch it while a run from this checkout is active.
 

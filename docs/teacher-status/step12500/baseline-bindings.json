@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "path": "/home/linjiw/research-data/m2s-repaired-teacher-interim-comparison-20260912/current/metrics/metrics_eval.json",
+      "sha256": "52b74b84857eedb464c46cba68e9419d5ad99dd9a2a89ec4519a133454e829df"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-repaired-teacher-step4700-comparison-20260912/current/metrics/metrics_eval.json",
+      "sha256": "c578184ae36c0c929b881e8e121dbd9fe412ff8fc5a99a86bc20611485f98c5a"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-repaired-teacher-step6200-comparison-20260912/current/metrics/metrics_eval.json",
+      "sha256": "ebe59a3d5452cb64f769e8040c8e0d2791798ff2c21a20dc1ed9292ed9601202"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-repaired-teacher-step12500-comparison-20260912/current/metrics/metrics_eval.json",
+      "sha256": "a874a98d6a4647e6023224cbcd3af5a012c2c065e87d5ff04dd6c47146c87828"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-repaired-teacher-interim-comparison-20260912/previous/metrics/metrics_eval.json",
+      "sha256": "2d24fcb957ae2fc9dc3cc3e258f003c14ad6bbeee6832cdb9b8a527b46158cd6"
+    }
+  ],
+  "same_config_verified": true,
+  "seed": 91231
+}

@@ -14,10 +14,10 @@ Read the [detailed research guide](docs/RESEARCH_GUIDE.md), [paper draft (PDF)](
 
 ## Install and unpack
 
-Use Python 3.11.8+ and Git LFS. Clone this repository including LFS objects (GitHub authentication is needed for a private repository), then:
+Use Python 3.11.8+ and Git LFS. The repository is public. Clone it with its Git LFS objects, then:
 
 ```bash
-git clone git@github.com:linjiw/motion2scene-training.git
+git clone https://github.com/linjiw/motion2scene-training.git
 cd motion2scene-training
 git lfs install
 git lfs pull
@@ -95,7 +95,7 @@ The built-in `view` command plots root trajectory and height from a reference NP
 
 For new experiments and continuation limits, read [the research runbook](docs/RESEARCH_RUNBOOK.md).
 
-See [dataset coverage](docs/DATASETS.md), [workflow map](docs/WORKFLOWS.md), and [validation](docs/VALIDATION.md). This repository preserves original license notices; dataset/model assets do not acquire a new blanket license merely by being bundled. Repository destination: `github.com/linjiw/motion2scene-training`. Access to private content requires repository permission; asset-specific terms remain in effect.
+See [dataset coverage](docs/DATASETS.md), [workflow map](docs/WORKFLOWS.md), and [validation](docs/VALIDATION.md). This repository preserves original license notices; dataset/model assets do not acquire a new blanket license merely by being bundled. Repository destination: `github.com/linjiw/motion2scene-training`. Public access does not replace asset-specific license terms.
 
 ## Documentation index
 

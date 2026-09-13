@@ -1,0 +1,7 @@
+{
+  "source": "/home/linjiw/research-data/m2s-sonic-repaired-teacher-128env-20260912/tracking-run-1/model_step_012500.pt",
+  "checkpoint_sha256": "d739673fd2c1bd4e5365f52a7b6229dd3d993341c6bed02cb573e32db1da1259",
+  "started": 1789258900.4115233,
+  "exit_code": 0,
+  "wall_seconds": 42.478702545166016
+}

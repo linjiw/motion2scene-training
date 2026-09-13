@@ -1,0 +1,16 @@
+{
+  "6200": {
+    "objective/rewards": 3.006454936735891,
+    "objective/length": 74.7402,
+    "Env/Metrics/motion/error_body_pos": 0.06884196933358908,
+    "policy/approxkl_avg": 0.05681398298591375,
+    "loss/value_avg": 0.1474741492420435
+  },
+  "12500": {
+    "objective/rewards": 3.0121103989731752,
+    "objective/length": 73.3757,
+    "Env/Metrics/motion/error_body_pos": 0.06662265475839377,
+    "policy/approxkl_avg": 0.05214696109294891,
+    "loss/value_avg": 0.13667882300913334
+  }
+}
