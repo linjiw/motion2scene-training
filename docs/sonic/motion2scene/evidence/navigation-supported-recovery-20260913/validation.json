@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "command": [
+        ".venv_isaaclab/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "decoupled_wbc/tests/test_navigation_recovery.py",
+        "decoupled_wbc/tests/test_navigation_motor.py",
+        "decoupled_wbc/tests/test_motor_recovery.py",
+        "decoupled_wbc/tests/test_scene_distillation.py",
+        "decoupled_wbc/tests/test_foundation_navigation.py",
+        "decoupled_wbc/tests/test_bfm_coverage_navigation.py",
+        "decoupled_wbc/tests/test_transformer_foundation.py",
+        "decoupled_wbc/tests/test_action_flow_distillation.py",
+        "decoupled_wbc/tests/test_bfm_pipeline.py",
+        "decoupled_wbc/tests/test_bfm_curriculum.py",
+        "decoupled_wbc/tests/test_bfm_command_quality.py",
+        "decoupled_wbc/tests/test_hindsight_qualification.py"
+      ],
+      "exit_code": 0,
+      "result": "106 passed in 2.91s"
+    },
+    {
+      "command": [
+        ".venv_research/bin/ruff",
+        "check",
+        "gear_sonic/research/scene_distillation/navigation_recovery.py",
+        "gear_sonic/research/scene_distillation/navigation_recovery_data.py",
+        "gear_sonic/research/scene_distillation/navigation_motor.py",
+        "gear_sonic/research/scene_distillation/navigation_motor_runtime.py",
+        "gear_sonic/research/scene_distillation/direct_scene_runtime.py",
+        "decoupled_wbc/tests/test_navigation_recovery.py"
+      ],
+      "exit_code": 0,
+      "result": "All checks passed"
+    },
+    {
+      "command": [
+        ".venv_research/bin/black",
+        "--check",
+        "gear_sonic/research/scene_distillation/navigation_recovery.py",
+        "gear_sonic/research/scene_distillation/navigation_recovery_data.py",
+        "gear_sonic/research/scene_distillation/navigation_motor.py",
+        "gear_sonic/research/scene_distillation/navigation_motor_runtime.py",
+        "gear_sonic/research/scene_distillation/direct_scene_runtime.py",
+        "decoupled_wbc/tests/test_navigation_recovery.py"
+      ],
+      "exit_code": 0,
+      "result": "6 files would be left unchanged"
+    }
+  ]
+}

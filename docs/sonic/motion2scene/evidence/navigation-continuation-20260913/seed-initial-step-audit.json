@@ -1,0 +1,18 @@
+[
+  {
+    "task": "00976-stop-clear",
+    "first_post_root_delta_m": 0.00041163008427247405
+  },
+  {
+    "task": "00265-stop-clear",
+    "first_post_root_delta_m": 0.0007008677930571139
+  },
+  {
+    "task": "00908-stop-corridor",
+    "first_post_root_delta_m": 0.0006633977754972875
+  },
+  {
+    "task": "00908-stop-clear",
+    "first_post_root_delta_m": 0.000633066869340837
+  }
+]

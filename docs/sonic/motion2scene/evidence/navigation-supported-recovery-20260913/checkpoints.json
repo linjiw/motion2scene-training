@@ -1,0 +1,18 @@
+{
+  "motor-data-fit": {
+    "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-data-fit/training/step-006000.pt",
+    "sha256": "fb0237726200a2a19354513aa06f9d4086ff3b1035b55e6d7b84c967b2e07194"
+  },
+  "replay-control-fit": {
+    "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/replay-control-fit/training/step-003000.pt",
+    "sha256": "b1c8d681fa60c7f6c3ca47f20344e1311f13085fc0c25516084c244b31f49b51"
+  },
+  "dagger-fit": {
+    "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/dagger-fit/training/step-003000.pt",
+    "sha256": "f33d3b91e26cf920ea6438ea1835260f3499d49a36387bbc9f876420f99f29f5"
+  },
+  "smoke-fit": {
+    "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/smoke-fit/training/step-000016.pt",
+    "sha256": "e17a2bc040b79212b214695ee6deadd1674b0de12a2b7f47cf3a6cc5ee9b1013"
+  }
+}

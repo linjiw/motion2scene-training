@@ -5,6 +5,11 @@ import torch
 
 from gear_sonic.research.hindsight_training.runtime import sha
 from gear_sonic.research.scene_distillation.direct_context import score_navigation_task
+from gear_sonic.research.scene_distillation.navigation_continuation import (
+    continuation_commands,
+    continuation_outcomes,
+    validate_continuation,
+)
 from gear_sonic.research.scene_distillation.navigation_data import read_bound
 from gear_sonic.research.scene_distillation.navigation_localization import episode_localization
 from gear_sonic.research.scene_distillation.navigation_recovery import suffix_support
@@ -12,6 +17,13 @@ from gear_sonic.research.scene_distillation.tasks import validate_task
 
 
 def load_motor_recoveries(config):
+    fresh_behavior = config.get("fresh_recovery_behavior_sha256")
+    if fresh_behavior is not None and (
+        not isinstance(fresh_behavior, str)
+        or len(fresh_behavior) != 64
+        or any(c not in "0123456789abcdef" for c in fresh_behavior)
+    ):
+        raise ValueError("Invalid fresh recovery behavior hash")
     manifest = read_bound(config["dataset_manifest"], config["dataset_manifest_sha256"])
     if manifest.get("schema") != "motor_navigation_recovery_manifest_v1":
         raise ValueError("Expected executed motor recovery manifest")
@@ -75,6 +87,10 @@ def load_motor_recoveries(config):
                 raise ValueError("Recovery whole-task score differs from physics")
             mask, suffix = suffix_support(task, trace, switch, actual_fall)
             previous_post_positions = trace["root_xyz"][:-1].copy()
+            if "continuation_outcomes" in receipt and receipt[
+                "continuation_outcomes"
+            ] != continuation_outcomes(task, trace, min(switch, len(mask))):
+                raise ValueError("Continuation support labels disagree with execution")
         if suffix != receipt["suffix_score"] or bool(mask.any()) != receipt["supported"]:
             raise ValueError("Recovery success disagrees with physical suffix")
         with np.load(receipt["shard"]["path"], allow_pickle=False) as stored:
@@ -129,6 +145,36 @@ def load_motor_recoveries(config):
         reconstructed = torch.from_numpy(episode_localization(arrays, task["goal_xyz"]))
         if not torch.equal(reconstructed, arrays["localization"]):
             raise ValueError("Recovery localization differs from causal pose history")
+        provider = receipt.get("continuation")
+        if provider is not None:
+            validate_continuation(provider)
+            for key, shape in {
+                "nominal_controls": (n, 114),
+                "reference_anchor_xyz": (n, 3),
+            }.items():
+                if (
+                    key not in arrays
+                    or arrays[key].shape != shape
+                    or not torch.isfinite(arrays[key]).all()
+                ):
+                    raise ValueError("Missing continuation reconstruction evidence")
+            for tick in range(n):
+                nominal = arrays["nominal_controls"][tick].numpy()
+                expected = (
+                    nominal
+                    if tick < switch
+                    else continuation_commands(
+                        nominal,
+                        arrays["measured_root_xyz"][tick].numpy(),
+                        arrays["measured_root_wxyz"][tick].numpy(),
+                        arrays["reference_anchor_xyz"][tick].numpy(),
+                        task["goal_xyz"],
+                        reconstructed[tick].numpy(),
+                        provider,
+                    )
+                )
+                if not np.array_equal(expected, arrays["controls"][tick].numpy()):
+                    raise ValueError("Stored command differs from declared continuation")
         if mask.any():
             arrays["decision_index"] = torch.arange(n)
             episodes.append(
@@ -136,7 +182,15 @@ def load_motor_recoveries(config):
                     arrays=arrays,
                     motion_id=task["motion_id"],
                     ancestry=source["group"],
-                    role="recovery" if switch > 0 else "replay",
+                    role=(
+                        "recovery"
+                        if switch > 0
+                        and (
+                            fresh_behavior is None
+                            or receipt["behavior_checkpoint"]["sha256"] == fresh_behavior
+                        )
+                        else "replay"
+                    ),
                     task_path=receipt["task"]["path"],
                     shard_sha256=receipt["shard"]["sha256"],
                 )

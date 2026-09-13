@@ -1,0 +1,50 @@
+[
+  {
+    "task": "00265-stop-clear",
+    "supported": true,
+    "rows": 389,
+    "exact_archived_motor_trace": true
+  },
+  {
+    "task": "00265-stop-corridor",
+    "supported": true,
+    "rows": 387,
+    "exact_archived_motor_trace": true
+  },
+  {
+    "task": "00413-stop-clear",
+    "supported": true,
+    "rows": 550,
+    "exact_archived_motor_trace": true
+  },
+  {
+    "task": "00413-stop-corridor",
+    "supported": true,
+    "rows": 507,
+    "exact_archived_motor_trace": true
+  },
+  {
+    "task": "00908-stop-clear",
+    "supported": true,
+    "rows": 236,
+    "exact_archived_motor_trace": true
+  },
+  {
+    "task": "00908-stop-corridor",
+    "supported": true,
+    "rows": 237,
+    "exact_archived_motor_trace": true
+  },
+  {
+    "task": "00976-stop-clear",
+    "supported": true,
+    "rows": 385,
+    "exact_archived_motor_trace": true
+  },
+  {
+    "task": "00976-stop-corridor",
+    "supported": true,
+    "rows": 385,
+    "exact_archived_motor_trace": true
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "rule": "Five lowest tail-speed motions outside navigation four-clip set, displacement >0.3m and tail height >0.7m; selection before execution. Same motor-training corpus, new navigation motions. No motor success filtering.",
+  "audit": {
+    "path": "/home/linjiw/research-data/m2s-bfm-motor-recovery-20260913/stop-candidate-audit.json",
+    "sha256": "8f2bce821de8b6ea79892097d48dbe48bb6fe7e187bba6edc002d16583381767"
+  },
+  "selected": [
+    {
+      "id": "00399",
+      "displacement": 0.6061707735061646,
+      "tail_speed": 0.027585409581661224,
+      "tail_height": 0.7915494441986084,
+      "fps": 30,
+      "frames": 300
+    },
+    {
+      "id": "00770",
+      "displacement": 1.6346336603164673,
+      "tail_speed": 0.11589859426021576,
+      "tail_height": 0.7905054092407227,
+      "fps": 30,
+      "frames": 195
+    },
+    {
+      "id": "00677",
+      "displacement": 1.124765157699585,
+      "tail_speed": 0.12400083243846893,
+      "tail_height": 0.7894266843795776,
+      "fps": 30,
+      "frames": 150
+    },
+    {
+      "id": "00120",
+      "displacement": 6.927309989929199,
+      "tail_speed": 0.13575588166713715,
+      "tail_height": 0.7901710271835327,
+      "fps": 30,
+      "frames": 285
+    },
+    {
+      "id": "00707",
+      "displacement": 1.3084808588027954,
+      "tail_speed": 0.14108695089817047,
+      "tail_height": 0.7862745523452759,
+      "fps": 30,
+      "frames": 120
+    }
+  ]
+}

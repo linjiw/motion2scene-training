@@ -1,0 +1,29 @@
+{
+  "state": "complete",
+  "main_seed": 91260,
+  "confirmation_seed": 91262,
+  "main_successes": {
+    "parent": 4,
+    "replay": 3,
+    "recovery": 4
+  },
+  "confirmation_successes": {
+    "parent": 1,
+    "recovery": 2
+  },
+  "confirmation_contact_failures": {
+    "parent": 1,
+    "recovery": 1
+  },
+  "confirmation_falls": {
+    "parent": 0,
+    "recovery": 0
+  },
+  "selected_checkpoint": "/home/linjiw/research-data/m2s-nav-continuation-20260913/recovery-fit/training/step-003000.pt",
+  "selected_sha256": "d378947413cdd167e71e3271440e9a18fbfd5a609836aa0be7d98cefe3a6e9cd",
+  "reliable_navigation_established": false,
+  "interpretation": "one additional matched confirmation completion; main total unchanged versus parent; one gain and one regression on main tasks; sampling and single-training-history limitations remain",
+  "completed_native_attempts": 56,
+  "control_steps": 24061,
+  "tests_passed": 115
+}

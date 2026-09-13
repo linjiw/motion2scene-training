@@ -1,0 +1,204 @@
+[
+  {
+    "stage": "motor-data-00908-stop-clear",
+    "success": true,
+    "max_hold": 50,
+    "final_hold": 50,
+    "reset": null,
+    "final_distance_m": 0.13957333160241595
+  },
+  {
+    "stage": "motor-data-00908-stop-corridor",
+    "success": true,
+    "max_hold": 50,
+    "final_hold": 50,
+    "reset": null,
+    "final_distance_m": 0.0796036908168977
+  },
+  {
+    "stage": "motor-data-00413-stop-clear",
+    "success": false,
+    "max_hold": 0,
+    "final_hold": 0,
+    "reset": null,
+    "final_distance_m": 0.4747532299770279
+  },
+  {
+    "stage": "motor-data-00413-stop-corridor",
+    "success": false,
+    "max_hold": 0,
+    "final_hold": 0,
+    "reset": null,
+    "final_distance_m": 0.7782026869702892
+  },
+  {
+    "stage": "motor-data-00976-stop-clear",
+    "success": false,
+    "max_hold": 0,
+    "final_hold": 0,
+    "reset": null,
+    "final_distance_m": 0.44455036851262547
+  },
+  {
+    "stage": "motor-data-00976-stop-corridor",
+    "success": false,
+    "max_hold": 0,
+    "final_hold": 0,
+    "reset": null,
+    "final_distance_m": 0.7276285539362931
+  },
+  {
+    "stage": "motor-data-00265-stop-clear",
+    "success": false,
+    "max_hold": 0,
+    "final_hold": 0,
+    "reset": null,
+    "final_distance_m": 0.7609384501137881
+  },
+  {
+    "stage": "motor-data-00265-stop-corridor",
+    "success": false,
+    "max_hold": 0,
+    "final_hold": 0,
+    "reset": null,
+    "final_distance_m": 0.901900736042776
+  },
+  {
+    "stage": "replay-control-00908-stop-clear",
+    "success": true,
+    "max_hold": 50,
+    "final_hold": 50,
+    "reset": null,
+    "final_distance_m": 0.15866207618188644
+  },
+  {
+    "stage": "replay-control-00908-stop-corridor",
+    "success": false,
+    "max_hold": 7,
+    "final_hold": 0,
+    "reset": {
+      "tick": 197,
+      "distance_m": 0.09599919344466795,
+      "speed_mps": 0.10128432512283325,
+      "hold_ticks": 7
+    },
+    "final_distance_m": 0.4813177197011377
+  },
+  {
+    "stage": "replay-control-00413-stop-clear",
+    "success": false,
+    "max_hold": 0,
+    "final_hold": 0,
+    "reset": null,
+    "final_distance_m": 0.7934870601887111
+  },
+  {
+    "stage": "replay-control-00413-stop-corridor",
+    "success": false,
+    "max_hold": 0,
+    "final_hold": 0,
+    "reset": null,
+    "final_distance_m": 0.8081704612289413
+  },
+  {
+    "stage": "replay-control-00976-stop-clear",
+    "success": true,
+    "max_hold": 50,
+    "final_hold": 50,
+    "reset": null,
+    "final_distance_m": 0.08190164318924137
+  },
+  {
+    "stage": "replay-control-00976-stop-corridor",
+    "success": true,
+    "max_hold": 50,
+    "final_hold": 50,
+    "reset": null,
+    "final_distance_m": 0.2287191491443109
+  },
+  {
+    "stage": "replay-control-00265-stop-clear",
+    "success": false,
+    "max_hold": 0,
+    "final_hold": 0,
+    "reset": null,
+    "final_distance_m": 1.1556751771639977
+  },
+  {
+    "stage": "replay-control-00265-stop-corridor",
+    "success": false,
+    "max_hold": 12,
+    "final_hold": 0,
+    "reset": {
+      "tick": 457,
+      "distance_m": 0.25013036573076014,
+      "speed_mps": 0.03673325106501579,
+      "hold_ticks": 12
+    },
+    "final_distance_m": 0.3690147714646422
+  },
+  {
+    "stage": "dagger-00908-stop-clear",
+    "success": false,
+    "max_hold": 35,
+    "final_hold": 35,
+    "reset": null,
+    "final_distance_m": 0.060025223932219894
+  },
+  {
+    "stage": "dagger-00908-stop-corridor",
+    "success": true,
+    "max_hold": 50,
+    "final_hold": 50,
+    "reset": null,
+    "final_distance_m": 0.10340943360328435
+  },
+  {
+    "stage": "dagger-00413-stop-clear",
+    "success": true,
+    "max_hold": 50,
+    "final_hold": 50,
+    "reset": null,
+    "final_distance_m": 0.23018335651380228
+  },
+  {
+    "stage": "dagger-00413-stop-corridor",
+    "success": false,
+    "max_hold": 0,
+    "final_hold": 0,
+    "reset": null,
+    "final_distance_m": 0.40978872069912387
+  },
+  {
+    "stage": "dagger-00976-stop-clear",
+    "success": true,
+    "max_hold": 50,
+    "final_hold": 50,
+    "reset": null,
+    "final_distance_m": 0.08431875288438037
+  },
+  {
+    "stage": "dagger-00976-stop-corridor",
+    "success": true,
+    "max_hold": 50,
+    "final_hold": 50,
+    "reset": null,
+    "final_distance_m": 0.054484807225940166
+  },
+  {
+    "stage": "dagger-00265-stop-clear",
+    "success": false,
+    "max_hold": 0,
+    "final_hold": 0,
+    "reset": null,
+    "final_distance_m": 0.46394311605161115
+  },
+  {
+    "stage": "dagger-00265-stop-corridor",
+    "success": false,
+    "max_hold": 0,
+    "final_hold": 0,
+    "reset": null,
+    "final_distance_m": 0.39740463500467504
+  }
+]

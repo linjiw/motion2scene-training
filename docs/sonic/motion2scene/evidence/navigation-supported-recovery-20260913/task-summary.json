@@ -1,0 +1,23 @@
+{
+  "motor-data": {
+    "successes": 2,
+    "goal_entries": 6,
+    "contacts": 0,
+    "falls": 0,
+    "max_hold": 50
+  },
+  "replay-control": {
+    "successes": 3,
+    "goal_entries": 6,
+    "contacts": 0,
+    "falls": 0,
+    "max_hold": 50
+  },
+  "dagger": {
+    "successes": 4,
+    "goal_entries": 5,
+    "contacts": 0,
+    "falls": 0,
+    "max_hold": 50
+  }
+}

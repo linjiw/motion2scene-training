@@ -1,0 +1,8 @@
+[
+  {
+    "stage": "probe-91260-00908-stop-clear-goal_velocity",
+    "failure": "CUDA out of memory during teacher checkpoint deserialization before task execution",
+    "action": "preserve failed stage and rerun unchanged configuration in a fresh retry directory; one simulation at a time",
+    "completed_control_steps": 0
+  }
+]

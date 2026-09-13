@@ -1,0 +1,26 @@
+{
+  "replay": {
+    "rows": 4326,
+    "episodes": 14,
+    "fresh_recovery_episodes": 0,
+    "replayed_previously_qualified_recovery_episodes": 6,
+    "expected_motion_sample_probability": {
+      "00908": 0.25,
+      "00265": 0.25,
+      "00976": 0.25,
+      "00413": 0.25
+    }
+  },
+  "recovery": {
+    "rows": 4620,
+    "episodes": 17,
+    "fresh_recovery_episodes": 3,
+    "replayed_previously_qualified_recovery_episodes": 6,
+    "expected_motion_sample_probability": {
+      "00908": 0.625,
+      "00265": 0.125,
+      "00976": 0.125,
+      "00413": 0.125
+    }
+  }
+}

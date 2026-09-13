@@ -1,0 +1,10 @@
+{
+  "replay-fit": {
+    "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/replay-fit/training/step-003000.pt",
+    "sha256": "c479a3bb5e1274358d528f700ea20061dc6e4cdd4d33aec687e05a037877b673"
+  },
+  "recovery-fit": {
+    "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/recovery-fit/training/step-003000.pt",
+    "sha256": "d378947413cdd167e71e3271440e9a18fbfd5a609836aa0be7d98cefe3a6e9cd"
+  }
+}

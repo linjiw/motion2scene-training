@@ -1,0 +1,12 @@
+{
+  "teacher_checkpoint": "/home/linjiw/research-data/m2s-bfm-repaired-navigation-prep-20260912/teacher/checkpoint.pt",
+  "teacher_sha256": "afd649cfbbfd28833550e11a0f8c3b7a5f6a05ee8b4021dd0dac97a6f94733ce",
+  "task_path": "/home/linjiw/research-data/m2s-bfm-motor-recovery-20260913/stopping-tasks-v2/00976/corridor.json",
+  "output": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-data-00976-stop-corridor/task",
+  "max_steps": 800,
+  "teacher_mode": false,
+  "command_profile": "context",
+  "student_checkpoint": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-data-fit/training/step-006000.pt",
+  "student_sha256": "fb0237726200a2a19354513aa06f9d4086ff3b1035b55e6d7b84c967b2e07194",
+  "actor_profile": "nav_goal_map_localization_v2"
+}

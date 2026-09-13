@@ -1,0 +1,614 @@
+[
+  {
+    "stage": "probe-91261-00976-stop-clear-nominal",
+    "case": {
+      "task": "00976-stop-clear",
+      "seed": 91261,
+      "switch": 191
+    },
+    "provider": {
+      "kind": "nominal",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    },
+    "wall_seconds": 63.65360922498803,
+    "supported": false,
+    "supported_rows": 0,
+    "outcomes": {
+      "local_stabilized": false,
+      "original_deadline_success": false,
+      "timely_suffix_supported": false,
+      "observed_suffix_ticks": 309,
+      "original_remaining_ticks": 309,
+      "diagnostic_extension_ticks": 0,
+      "local_score": {
+        "navigation_success": false,
+        "goal_ever_reached": false,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 0,
+        "final_goal_distance_m": 0.8735957452746618,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 309,
+        "reference_tracking_required": false
+      },
+      "timely_suffix_score": {
+        "navigation_success": false,
+        "goal_ever_reached": false,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 0,
+        "final_goal_distance_m": 0.8735957452746618,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 309,
+        "reference_tracking_required": false
+      }
+    }
+  },
+  {
+    "stage": "probe-91261-00976-stop-clear-goal_velocity",
+    "case": {
+      "task": "00976-stop-clear",
+      "seed": 91261,
+      "switch": 191
+    },
+    "provider": {
+      "kind": "goal_velocity",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    },
+    "wall_seconds": 63.75839642100618,
+    "supported": false,
+    "supported_rows": 0,
+    "outcomes": {
+      "local_stabilized": false,
+      "original_deadline_success": false,
+      "timely_suffix_supported": false,
+      "observed_suffix_ticks": 309,
+      "original_remaining_ticks": 309,
+      "diagnostic_extension_ticks": 0,
+      "local_score": {
+        "navigation_success": false,
+        "goal_ever_reached": false,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 0,
+        "final_goal_distance_m": 0.8735957452746618,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 309,
+        "reference_tracking_required": false
+      },
+      "timely_suffix_score": {
+        "navigation_success": false,
+        "goal_ever_reached": false,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 0,
+        "final_goal_distance_m": 0.8735957452746618,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 309,
+        "reference_tracking_required": false
+      }
+    }
+  },
+  {
+    "stage": "probe-91261-00976-stop-clear-goal_velocity_keypoints",
+    "case": {
+      "task": "00976-stop-clear",
+      "seed": 91261,
+      "switch": 191
+    },
+    "provider": {
+      "kind": "goal_velocity_keypoints",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    },
+    "wall_seconds": 64.46070696100651,
+    "supported": false,
+    "supported_rows": 0,
+    "outcomes": {
+      "local_stabilized": false,
+      "original_deadline_success": false,
+      "timely_suffix_supported": false,
+      "observed_suffix_ticks": 309,
+      "original_remaining_ticks": 309,
+      "diagnostic_extension_ticks": 0,
+      "local_score": {
+        "navigation_success": false,
+        "goal_ever_reached": false,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 0,
+        "final_goal_distance_m": 0.8735957452746618,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 309,
+        "reference_tracking_required": false
+      },
+      "timely_suffix_score": {
+        "navigation_success": false,
+        "goal_ever_reached": false,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 0,
+        "final_goal_distance_m": 0.8735957452746618,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 309,
+        "reference_tracking_required": false
+      }
+    }
+  },
+  {
+    "stage": "probe-91261-00265-stop-clear-nominal",
+    "case": {
+      "task": "00265-stop-clear",
+      "seed": 91261,
+      "switch": 187
+    },
+    "provider": {
+      "kind": "nominal",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    },
+    "wall_seconds": 63.45321149600204,
+    "supported": false,
+    "supported_rows": 0,
+    "outcomes": {
+      "local_stabilized": false,
+      "original_deadline_success": false,
+      "timely_suffix_supported": false,
+      "observed_suffix_ticks": 313,
+      "original_remaining_ticks": 313,
+      "diagnostic_extension_ticks": 0,
+      "local_score": {
+        "navigation_success": false,
+        "goal_ever_reached": false,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 0,
+        "final_goal_distance_m": 0.5573973408954465,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 313,
+        "reference_tracking_required": false
+      },
+      "timely_suffix_score": {
+        "navigation_success": false,
+        "goal_ever_reached": false,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 0,
+        "final_goal_distance_m": 0.5573973408954465,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 313,
+        "reference_tracking_required": false
+      }
+    }
+  },
+  {
+    "stage": "probe-91261-00265-stop-clear-goal_velocity",
+    "case": {
+      "task": "00265-stop-clear",
+      "seed": 91261,
+      "switch": 187
+    },
+    "provider": {
+      "kind": "goal_velocity",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    },
+    "wall_seconds": 63.55156311299652,
+    "supported": false,
+    "supported_rows": 0,
+    "outcomes": {
+      "local_stabilized": false,
+      "original_deadline_success": false,
+      "timely_suffix_supported": false,
+      "observed_suffix_ticks": 313,
+      "original_remaining_ticks": 313,
+      "diagnostic_extension_ticks": 0,
+      "local_score": {
+        "navigation_success": false,
+        "goal_ever_reached": false,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 0,
+        "final_goal_distance_m": 0.5530223288902365,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 313,
+        "reference_tracking_required": false
+      },
+      "timely_suffix_score": {
+        "navigation_success": false,
+        "goal_ever_reached": false,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 0,
+        "final_goal_distance_m": 0.5530223288902365,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 313,
+        "reference_tracking_required": false
+      }
+    }
+  },
+  {
+    "stage": "probe-91261-00265-stop-clear-goal_velocity_keypoints",
+    "case": {
+      "task": "00265-stop-clear",
+      "seed": 91261,
+      "switch": 187
+    },
+    "provider": {
+      "kind": "goal_velocity_keypoints",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    },
+    "wall_seconds": 64.20699395300471,
+    "supported": false,
+    "supported_rows": 0,
+    "outcomes": {
+      "local_stabilized": false,
+      "original_deadline_success": false,
+      "timely_suffix_supported": false,
+      "observed_suffix_ticks": 313,
+      "original_remaining_ticks": 313,
+      "diagnostic_extension_ticks": 0,
+      "local_score": {
+        "navigation_success": false,
+        "goal_ever_reached": false,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 0,
+        "final_goal_distance_m": 0.5530223288902365,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 313,
+        "reference_tracking_required": false
+      },
+      "timely_suffix_score": {
+        "navigation_success": false,
+        "goal_ever_reached": false,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 0,
+        "final_goal_distance_m": 0.5530223288902365,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 313,
+        "reference_tracking_required": false
+      }
+    }
+  },
+  {
+    "stage": "probe-91261-00908-stop-corridor-nominal",
+    "case": {
+      "task": "00908-stop-corridor",
+      "seed": 91261,
+      "switch": 230
+    },
+    "provider": {
+      "kind": "nominal",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    },
+    "wall_seconds": 49.18742668800405,
+    "supported": false,
+    "supported_rows": 0,
+    "outcomes": {
+      "local_stabilized": false,
+      "original_deadline_success": false,
+      "timely_suffix_supported": false,
+      "observed_suffix_ticks": 120,
+      "original_remaining_ticks": 120,
+      "diagnostic_extension_ticks": 0,
+      "local_score": {
+        "navigation_success": false,
+        "goal_ever_reached": true,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 37,
+        "final_goal_distance_m": 0.22099374576070463,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 120,
+        "reference_tracking_required": false
+      },
+      "timely_suffix_score": {
+        "navigation_success": false,
+        "goal_ever_reached": true,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 37,
+        "final_goal_distance_m": 0.22099374576070463,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 120,
+        "reference_tracking_required": false
+      }
+    }
+  },
+  {
+    "stage": "probe-91261-00908-stop-corridor-goal_velocity",
+    "case": {
+      "task": "00908-stop-corridor",
+      "seed": 91261,
+      "switch": 230
+    },
+    "provider": {
+      "kind": "goal_velocity",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    },
+    "wall_seconds": 48.53451959400263,
+    "supported": false,
+    "supported_rows": 0,
+    "outcomes": {
+      "local_stabilized": false,
+      "original_deadline_success": false,
+      "timely_suffix_supported": false,
+      "observed_suffix_ticks": 120,
+      "original_remaining_ticks": 120,
+      "diagnostic_extension_ticks": 0,
+      "local_score": {
+        "navigation_success": false,
+        "goal_ever_reached": true,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 39,
+        "final_goal_distance_m": 0.20632489686115926,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 120,
+        "reference_tracking_required": false
+      },
+      "timely_suffix_score": {
+        "navigation_success": false,
+        "goal_ever_reached": true,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 39,
+        "final_goal_distance_m": 0.20632489686115926,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 120,
+        "reference_tracking_required": false
+      }
+    }
+  },
+  {
+    "stage": "probe-91261-00908-stop-corridor-goal_velocity_keypoints",
+    "case": {
+      "task": "00908-stop-corridor",
+      "seed": 91261,
+      "switch": 230
+    },
+    "provider": {
+      "kind": "goal_velocity_keypoints",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    },
+    "wall_seconds": 58.34576206099882,
+    "supported": false,
+    "supported_rows": 0,
+    "outcomes": {
+      "local_stabilized": false,
+      "original_deadline_success": false,
+      "timely_suffix_supported": false,
+      "observed_suffix_ticks": 120,
+      "original_remaining_ticks": 120,
+      "diagnostic_extension_ticks": 0,
+      "local_score": {
+        "navigation_success": false,
+        "goal_ever_reached": true,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 40,
+        "final_goal_distance_m": 0.1974971642414397,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 120,
+        "reference_tracking_required": false
+      },
+      "timely_suffix_score": {
+        "navigation_success": false,
+        "goal_ever_reached": true,
+        "terminal_hold": false,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 40,
+        "final_goal_distance_m": 0.1974971642414397,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 120,
+        "reference_tracking_required": false
+      }
+    }
+  },
+  {
+    "stage": "probe-91260-00908-stop-clear-nominal",
+    "case": {
+      "task": "00908-stop-clear",
+      "seed": 91260,
+      "switch": 280
+    },
+    "provider": {
+      "kind": "nominal",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    },
+    "wall_seconds": 57.44811997801298,
+    "supported": true,
+    "supported_rows": 64,
+    "outcomes": {
+      "local_stabilized": true,
+      "original_deadline_success": true,
+      "timely_suffix_supported": true,
+      "observed_suffix_ticks": 64,
+      "original_remaining_ticks": 70,
+      "diagnostic_extension_ticks": 0,
+      "local_score": {
+        "navigation_success": true,
+        "goal_ever_reached": true,
+        "terminal_hold": true,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 50,
+        "final_goal_distance_m": 0.08462906388644936,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 64,
+        "reference_tracking_required": false
+      },
+      "timely_suffix_score": {
+        "navigation_success": true,
+        "goal_ever_reached": true,
+        "terminal_hold": true,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 50,
+        "final_goal_distance_m": 0.08462906388644936,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 64,
+        "reference_tracking_required": false
+      }
+    }
+  },
+  {
+    "stage": "probe-91260-00908-stop-clear-goal_velocity-retry1",
+    "case": {
+      "task": "00908-stop-clear",
+      "seed": 91260,
+      "switch": 280
+    },
+    "provider": {
+      "kind": "goal_velocity",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    },
+    "wall_seconds": 50.62399607199768,
+    "supported": true,
+    "supported_rows": 64,
+    "outcomes": {
+      "local_stabilized": true,
+      "original_deadline_success": true,
+      "timely_suffix_supported": true,
+      "observed_suffix_ticks": 64,
+      "original_remaining_ticks": 70,
+      "diagnostic_extension_ticks": 0,
+      "local_score": {
+        "navigation_success": true,
+        "goal_ever_reached": true,
+        "terminal_hold": true,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 50,
+        "final_goal_distance_m": 0.08094311851786516,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 64,
+        "reference_tracking_required": false
+      },
+      "timely_suffix_score": {
+        "navigation_success": true,
+        "goal_ever_reached": true,
+        "terminal_hold": true,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 50,
+        "final_goal_distance_m": 0.08094311851786516,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 64,
+        "reference_tracking_required": false
+      }
+    }
+  },
+  {
+    "stage": "probe-91260-00908-stop-clear-goal_velocity_keypoints",
+    "case": {
+      "task": "00908-stop-clear",
+      "seed": 91260,
+      "switch": 280
+    },
+    "provider": {
+      "kind": "goal_velocity_keypoints",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    },
+    "wall_seconds": 47.679812561007566,
+    "supported": true,
+    "supported_rows": 64,
+    "outcomes": {
+      "local_stabilized": true,
+      "original_deadline_success": true,
+      "timely_suffix_supported": true,
+      "observed_suffix_ticks": 64,
+      "original_remaining_ticks": 70,
+      "diagnostic_extension_ticks": 0,
+      "local_score": {
+        "navigation_success": true,
+        "goal_ever_reached": true,
+        "terminal_hold": true,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 50,
+        "final_goal_distance_m": 0.08094311851786516,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 64,
+        "reference_tracking_required": false
+      },
+      "timely_suffix_score": {
+        "navigation_success": true,
+        "goal_ever_reached": true,
+        "terminal_hold": true,
+        "collision_free": true,
+        "fell": false,
+        "max_hold_ticks": 50,
+        "final_goal_distance_m": 0.08094311851786516,
+        "max_undesired_force_n": 0.0,
+        "control_steps": 64,
+        "reference_tracking_required": false
+      }
+    }
+  }
+]

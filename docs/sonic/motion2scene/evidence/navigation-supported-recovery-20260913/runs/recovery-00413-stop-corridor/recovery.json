@@ -1,0 +1,42 @@
+{
+  "schema": "executed_motor_navigation_recovery_v1",
+  "supported": true,
+  "source": "navigation_prefix_motor_recovery",
+  "takeover_tick": 195,
+  "rows": 502,
+  "supported_rows": 307,
+  "learner_query_rows": 1,
+  "motor_sha256": "1e1ed0efaf386245afc59fda3f0e7fd1ee13ba23b3ad3c4cfd6fe0892c8b94cf",
+  "teacher_sha256": "afd649cfbbfd28833550e11a0f8c3b7a5f6a05ee8b4021dd0dac97a6f94733ce",
+  "behavior_checkpoint": {
+    "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-data-fit/training/step-006000.pt",
+    "sha256": "fb0237726200a2a19354513aa06f9d4086ff3b1035b55e6d7b84c967b2e07194"
+  },
+  "task": {
+    "path": "/home/linjiw/research-data/m2s-bfm-motor-recovery-20260913/stopping-tasks-v2/00413/corridor.json",
+    "sha256": "04f6ea46faae7eb60989d68960b2503d03ffac8c36dea35d3df2ea5d77c94870"
+  },
+  "score": {
+    "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00413-stop-corridor/task/task-result.json",
+    "sha256": "23edecc41c87062cbbbd1635cdedf917103c9391c395916ad291a8c3ccfcf477"
+  },
+  "shard": {
+    "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00413-stop-corridor/task/motor-recovery.npz",
+    "sha256": "1f20995b5fb9d9077907a37d60e3dd1ded78e20a20c415906929d8b6450aaf7a"
+  },
+  "suffix_score": {
+    "navigation_success": true,
+    "goal_ever_reached": true,
+    "terminal_hold": true,
+    "collision_free": true,
+    "fell": false,
+    "max_hold_ticks": 50,
+    "final_goal_distance_m": 0.17555493103853062,
+    "max_undesired_force_n": 0.0,
+    "control_steps": 307,
+    "reference_tracking_required": false
+  },
+  "intervention": true,
+  "reference_phase_switch": false,
+  "not_an_unassisted_navigation_result": true
+}

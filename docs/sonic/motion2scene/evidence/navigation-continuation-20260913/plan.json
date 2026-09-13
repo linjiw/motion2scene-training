@@ -1,0 +1,63 @@
+{
+  "purpose": "Test executed goal-regulating command continuations at current adapter failure states",
+  "behavior_checkpoint": {
+    "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/dagger-fit/training/step-003000.pt",
+    "sha256": "f33d3b91e26cf920ea6438ea1835260f3499d49a36387bbc9f876420f99f29f5"
+  },
+  "cases": [
+    {
+      "task": "00976-stop-clear",
+      "seed": 91261,
+      "switch": 191
+    },
+    {
+      "task": "00265-stop-clear",
+      "seed": 91261,
+      "switch": 187
+    },
+    {
+      "task": "00908-stop-corridor",
+      "seed": 91261,
+      "switch": 230
+    },
+    {
+      "task": "00908-stop-clear",
+      "seed": 91260,
+      "switch": 280
+    }
+  ],
+  "providers": [
+    {
+      "kind": "nominal",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    },
+    {
+      "kind": "goal_velocity",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    },
+    {
+      "kind": "goal_velocity_keypoints",
+      "position_gain": 0.8,
+      "velocity_gain": 0.5,
+      "max_speed_mps": 0.35,
+      "max_shift_m": 0.2,
+      "activation_radius_m": 0.6
+    }
+  ],
+  "max_probes": 12,
+  "selection": "greatest timely supported case count, ties favor nominal then velocity then velocity_keypoints",
+  "followup": "eight early takeovers on seed 91261 using selected provider; retain failed attempts",
+  "training": "two equal 3000-update forks from the same current adapter: existing replay versus 50% newly qualified recovery plus existing replay; same training seed 91470, architecture, objective and normalization",
+  "evaluation": "all eight original train tasks at seed 91260 for both forks, then selected fork on all eight seed 91262; ties favor replay. No intermediate checkpoint selection.",
+  "held_out_evaluation_seed": 91262,
+  "observation_contract": "no time-to-deadline input; nominal reference remains privileged training only",
+  "local_support": "report stabilization separately from original-deadline success; no late rows enter timely training view"
+}

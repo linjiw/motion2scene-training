@@ -1,0 +1,25 @@
+{
+  "cases": [
+    {
+      "task": "00976-stop-clear",
+      "seed": 91261,
+      "switch": 191
+    },
+    {
+      "task": "00265-stop-clear",
+      "seed": 91261,
+      "switch": 187
+    },
+    {
+      "task": "00908-stop-corridor",
+      "seed": 91261,
+      "switch": 230
+    },
+    {
+      "task": "00908-stop-clear",
+      "seed": 91260,
+      "switch": 280
+    }
+  ],
+  "scope": "same navigation prefix then original teacher, diagnostic only; does not affect provider or checkpoint selection"
+}

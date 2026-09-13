@@ -1,0 +1,229 @@
+{
+  "schema": "motor_navigation_recovery_manifest_v1",
+  "parents": [
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00265-stop-clear/task/recovery.json",
+      "sha256": "ed74bffcaafda897548664f59b788b5b0c011eb52d0eef0386100dfdbb7f82dd",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00265-stop-clear/task/trace.npz",
+        "sha256": "eec420c164d96aea4009a98f7742fbf4861e667650c1eb04556e4a2bc50363fc"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00265-stop-corridor/task/recovery.json",
+      "sha256": "450071a1cd982b121dd69909d74714227a46324a07a4356113b90d91b703f814",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00265-stop-corridor/task/trace.npz",
+        "sha256": "d18c55acf4bc9705ea85d6725be90121614349f13b7203fe76fb90ec8f69e717"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00413-stop-clear/task/recovery.json",
+      "sha256": "29d632e6608405a69b3048336d484df3d3a5b40def92a9c9c6ef099d7c4414ef",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00413-stop-clear/task/trace.npz",
+        "sha256": "871972cffdb718c8c5053d63d4470bd1438bfb70b77cbd9fa9f2f3b4a7647811"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00413-stop-corridor/task/recovery.json",
+      "sha256": "8c032f25d9171603302223633f040bb13bbe62628196d917aac33733989caf4d",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00413-stop-corridor/task/trace.npz",
+        "sha256": "6ee2d646f65934a8872215fa65e97fcc428538d13925acc43cc1db301d135374"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00908-stop-clear/task/recovery.json",
+      "sha256": "f64f7f2419006a794a664f25ebddc409aa76d911c7b7609656395c1a29556348",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00908-stop-clear/task/trace.npz",
+        "sha256": "455982eb16ab3eb34b535848aa6483682b04485604c95119ad66cb573de3203f"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00908-stop-corridor/task/recovery.json",
+      "sha256": "4e744c13e69d482207d4efe2c6e51a5c8ada6894972b30cdd9b335c5557acf1e",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00908-stop-corridor/task/trace.npz",
+        "sha256": "0b5e74ca621f56b981890efedb674be447a5da074703bba9406b4aaada1ba263"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00976-stop-clear/task/recovery.json",
+      "sha256": "9a3392d4cc05f051f76caeed59157933c8e16ad597adc3a4096a853ed4df90cc",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00976-stop-clear/task/trace.npz",
+        "sha256": "0dc9c5845ecc0068cd20213682954ac07e5694818c0da0bf76e3964791281276"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00976-stop-corridor/task/recovery.json",
+      "sha256": "2b319ab181de01b0912ecdf9c9e1f7dc27de7f45a637e51eb7d5b1a9d002878e",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00976-stop-corridor/task/trace.npz",
+        "sha256": "53f61aeeaf4a99237f0588c315529b4a905bec553e1c752ab76d52ca6b1d3b49"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00908-stop-clear/task/recovery.json",
+      "sha256": "7e6a2d6f6310757150a17a2d0f25e681b31fd7f2af1948132adfc487cdf5f5c9",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00908-stop-clear/task/trace.npz",
+        "sha256": "27c0a69ab95a77e10de6172e315ac82e1ed2f80d8cc77bef0cc4047c2ddab926"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00908-stop-corridor/task/recovery.json",
+      "sha256": "45ff335fe64696d426b876d2f8c60e3fcc6e70af37b0c4675699a4893ce8b7d2",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00908-stop-corridor/task/trace.npz",
+        "sha256": "4f5330166b5f0a10f0ff4fe99eab395e5d03195d38ce4f6c24ed13727050adcd"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00413-stop-clear/task/recovery.json",
+      "sha256": "2f383b1e157d79722c817fc251aa7d65a5e201fff4674a1b9dd202ce34d99fa8",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00413-stop-clear/task/trace.npz",
+        "sha256": "423d0c1c7e71b165ba60aa71bec8a28bf79174c6fc95a927fb6b33cb25ff8790"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00413-stop-corridor/task/recovery.json",
+      "sha256": "5f4541d22f771dad9d0d249a9ba2ed3993f167d7d5dab2291ac8d78c0cd81ca6",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00413-stop-corridor/task/trace.npz",
+        "sha256": "5d7f6f7f95e489d7d77a1838dee060a84be844cbab44da619a1095573e327def"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00976-stop-clear/task/recovery.json",
+      "sha256": "a935da7a911be4653752c3ab68da0a679a8493939d5f0635b79fc1305d352ee4",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00976-stop-clear/task/trace.npz",
+        "sha256": "607dfe52bcab3655e6c9c71deec53adab714d0311067a78a10c38ce275aa3b5c"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00976-stop-corridor/task/recovery.json",
+      "sha256": "96d847f81765b2053e42e5acfa37aeb4d325d0b15449e4a30665f16553e4799d",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00976-stop-corridor/task/trace.npz",
+        "sha256": "fcb7d1854b78b9fe01dac6fdeacb93507a17a1aa2477b721a15c5f8c9bdae8cd"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00265-stop-clear/task/recovery.json",
+      "sha256": "a351e501fc5dbeb00c9c3c9da9388fda2f8e6b7652b27de23cea9c8ec3e28a39",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00265-stop-clear/task/trace.npz",
+        "sha256": "fadd830b719cd2a9fec0e81a416bf89eabeb5ad4b28f287c2f35e4c9232aa9de"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00265-stop-corridor/task/recovery.json",
+      "sha256": "fb0ea410295d150d312ba09e9aad0767c5a41cfe473862fd1990a818708b453d",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/recovery-00265-stop-corridor/task/trace.npz",
+        "sha256": "169315c90a8fb2f68ac0ee4bc67dd07581d8a6377dfd0fe2f5e4732e4c12f6d1"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/probe-91261-00976-stop-clear-nominal/task/recovery.json",
+      "sha256": "a2140fbfeacd02299ed4907ee31f298e2af61f115537db3609541c6ce345f10e",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/probe-91261-00976-stop-clear-nominal/task/trace.npz",
+        "sha256": "e353f00806eaddcf1a8cc4da37cd314c9d8477a32f6bf99634cd6daa92b37cfc"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/probe-91261-00265-stop-clear-nominal/task/recovery.json",
+      "sha256": "3352a370882c08a71478cc230cae0998da66dabe9fcb2c9113f324e7fd6f0ce1",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/probe-91261-00265-stop-clear-nominal/task/trace.npz",
+        "sha256": "8482b7a5309e9052266d95975bccc1ee03f0d4dbb92a24d48429f2d0c431be7a"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/probe-91261-00908-stop-corridor-nominal/task/recovery.json",
+      "sha256": "52dae5bba152fefd9109e6b4f9e5e8d8f67d7524b2d835ef031340e5737934b7",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/probe-91261-00908-stop-corridor-nominal/task/trace.npz",
+        "sha256": "a9f0cb99df41673eb07d811bf8ee617335b533c11d5d86a2b0fbf9932de5de4e"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/probe-91260-00908-stop-clear-nominal/task/recovery.json",
+      "sha256": "3b0440c86a41c490a7bcbbc5861442417187aa01b67a114ac05926c0fba17e11",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/probe-91260-00908-stop-clear-nominal/task/trace.npz",
+        "sha256": "28a883125e4cd7e3351d75916bcb0175af0d571c0ba84741fef8d99b7c66cd2d"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00908-stop-clear/task/recovery.json",
+      "sha256": "0c0b69bccee3347e2790381f034364aea94d82a0363534ec45ab49cef73561b1",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00908-stop-clear/task/trace.npz",
+        "sha256": "a98aa6b9459fc942a23922ac9207454380ca1ca2ec0365843dcdca320692bc4e"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00908-stop-corridor/task/recovery.json",
+      "sha256": "45052faae5527a9672154783e9740d4ee09eb9cfdeb73f0ffa4b4f9216c3fdd8",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00908-stop-corridor/task/trace.npz",
+        "sha256": "a51e376679680a7ca014ee3da68cda115b52b6532c2c34f2e7b9571796451449"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00413-stop-clear/task/recovery.json",
+      "sha256": "c36a791a3d99d13d0285831f91cb680bd84bfa69873a88bb3a726f36048524f5",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00413-stop-clear/task/trace.npz",
+        "sha256": "f5ffcec8db0e9dd49ec139e9d3209f8bf6cbb1e06c1032426a0082dee21c7f2a"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00413-stop-corridor/task/recovery.json",
+      "sha256": "32af3dafbeab94766ea755973b57f66b1882f48f0cfa1f84e3eadeb2d919b5d3",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00413-stop-corridor/task/trace.npz",
+        "sha256": "77eb37af1f93f9d0ee4828722470df58f2de0391d3f5e2eecd79402643b774a4"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00976-stop-clear/task/recovery.json",
+      "sha256": "09032ec4763a1193a8be8854efb1a14fee6303d85dfd6f18a8131bc51edb83af",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00976-stop-clear/task/trace.npz",
+        "sha256": "e353f00806eaddcf1a8cc4da37cd314c9d8477a32f6bf99634cd6daa92b37cfc"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00976-stop-corridor/task/recovery.json",
+      "sha256": "aa102ff3855206e0bbdff4f349a8f69b3ed6f3ff020963690634ea8f944ae7d7",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00976-stop-corridor/task/trace.npz",
+        "sha256": "d4e3bd0b471ef8b5e0184eb62f72228ec7e7ed9e8f8a200342afa0ab35c0c0b9"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00265-stop-clear/task/recovery.json",
+      "sha256": "3e4e361fc5b872de097fb126399676e9da842027f919f5b5ffe912d403d75575",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00265-stop-clear/task/trace.npz",
+        "sha256": "8482b7a5309e9052266d95975bccc1ee03f0d4dbb92a24d48429f2d0c431be7a"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00265-stop-corridor/task/recovery.json",
+      "sha256": "093ee9cc23bc7e788ea0d4f7555eca6436a61cba66a718912e18a158b862b770",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00265-stop-corridor/task/trace.npz",
+        "sha256": "0973725b2fdfaf2d86cf16594b782fc7e8ce9b2a0d65de5890e9f6884924e48f"
+      }
+    }
+  ]
+}

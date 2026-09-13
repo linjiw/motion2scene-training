@@ -1,0 +1,23 @@
+{
+  "teacher_checkpoint": "/home/linjiw/research-data/m2s-bfm-repaired-navigation-prep-20260912/teacher/checkpoint.pt",
+  "teacher_sha256": "afd649cfbbfd28833550e11a0f8c3b7a5f6a05ee8b4021dd0dac97a6f94733ce",
+  "task_path": "/home/linjiw/research-data/m2s-bfm-motor-recovery-20260913/stopping-tasks-v2/00976/clear.json",
+  "output": "/home/linjiw/research-data/m2s-nav-continuation-20260913/probe-91261-00976-stop-clear-goal_velocity_keypoints/task",
+  "max_steps": 800,
+  "teacher_mode": false,
+  "command_profile": "context",
+  "student_checkpoint": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/dagger-fit/training/step-003000.pt",
+  "student_sha256": "f33d3b91e26cf920ea6438ea1835260f3499d49a36387bbc9f876420f99f29f5",
+  "actor_profile": "nav_goal_map_localization_v2",
+  "takeover_tick": 191,
+  "motor_checkpoint": "/home/linjiw/research-data/m2s-bfm-motor-recovery-20260913/scale/training/step-003200.pt",
+  "motor_sha256": "1e1ed0efaf386245afc59fda3f0e7fd1ee13ba23b3ad3c4cfd6fe0892c8b94cf",
+  "continuation": {
+    "kind": "goal_velocity_keypoints",
+    "position_gain": 0.8,
+    "velocity_gain": 0.5,
+    "max_speed_mps": 0.35,
+    "max_shift_m": 0.2,
+    "activation_radius_m": 0.6
+  }
+}

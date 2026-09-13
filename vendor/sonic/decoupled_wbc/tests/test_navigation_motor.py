@@ -13,8 +13,28 @@ from gear_sonic.research.scene_distillation.navigation_data import load_successf
 from gear_sonic.research.scene_distillation.navigation_motor import (
     NavigationInput,
     NavigationMotorStudent,
+    replay_motion_probabilities,
 )
 from gear_sonic.research.scene_distillation.reference_layout import pack_reference
+
+
+def test_replay_motion_exposure_control():
+    motions = ["00413", "00908", "00976", "00265"]
+    assert replay_motion_probabilities(motions, None) is None
+    probabilities = replay_motion_probabilities(
+        motions, {"00908": 5, "00413": 1, "00976": 1, "00265": 1}
+    )
+    np.testing.assert_array_equal(probabilities, [0.125, 0.625, 0.125, 0.125])
+    # Equal exposure to a 50% one-motion recovery / 50% uniform replay mixture.
+    np.testing.assert_array_equal(probabilities, 0.5 * np.array([0, 1, 0, 0]) + 0.5 / 4)
+
+
+@pytest.mark.parametrize(
+    "weights", [{"a": 1}, {"a": 1, "b": 0}, {"a": 1, "b": float("nan")}, {"a": -1, "b": 2}]
+)
+def test_replay_motion_exposure_rejects_unsupported_weights(weights):
+    with pytest.raises(ValueError, match="Replay weights"):
+        replay_motion_probabilities(["a", "b"], weights)
 
 
 class Motor(nn.Module):

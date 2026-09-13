@@ -1,0 +1,6 @@
+{
+  "purpose": "loader validation only, not the selected-provider training view",
+  "admitted_episodes": 11,
+  "admitted_rows": 3268,
+  "candidate_supported_episodes": 3
+}

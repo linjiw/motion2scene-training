@@ -1,0 +1,19 @@
+{
+  "scope": "eight original training tasks, unchanged deadlines; fixed motor",
+  "motor_demonstrations": 8,
+  "offline_updates": 6000,
+  "dagger_rounds": 1,
+  "recovery_attempts": 8,
+  "recovery_switch_rule": "half the original teacher first-success tick, floor",
+  "dagger_updates": 3000,
+  "replay_control_updates": 3000,
+  "batch_size": 256,
+  "training_seed": 91370,
+  "evaluation_seed": 91260,
+  "qualification": "full executed post-switch hold and contact-free whole attempt",
+  "admitted_rows": "executed successful motor suffix only; prefix targets excluded",
+  "sources": [
+    "exact_motor_demonstrations",
+    "fresh_navigation_prefix_recoveries"
+  ]
+}

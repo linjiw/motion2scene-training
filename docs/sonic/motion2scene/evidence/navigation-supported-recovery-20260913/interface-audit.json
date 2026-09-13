@@ -1,0 +1,68 @@
+{
+  "config_binding": {
+    "path": "/home/linjiw/research-data/m2s-bfm-repaired-navigation-prep-20260912/teacher/config.yaml",
+    "sha256": "d426da14e6f3c7ac9cfe2000330b460da7b192aa580323eb2b415227599d1c01"
+  },
+  "actor_history_terms": [
+    "gravity_dir",
+    "base_ang_vel",
+    "joint_pos",
+    "joint_vel",
+    "actions"
+  ],
+  "g1_encoder_inputs": [
+    "command_multi_future_nonflat",
+    "motion_anchor_ori_b_mf_nonflat"
+  ],
+  "actor_has_direct_global_position": false,
+  "actor_has_direct_linear_velocity": false,
+  "scope": "static input-sensitivity diagnostic only; modified commands were not executed or admitted as expert labels",
+  "counterfactual": "Horizontal rigid translation of the robot leaves original teacher actor observations and reference joint/orientation inputs unchanged; the added motor forecaster can still respond through relative keypoints.",
+  "motor_sensitivity": [
+    {
+      "task": "00908-stop-corridor",
+      "decision_tick": 110,
+      "action_change_rms": {
+        "keypoint_translation_axis0_-0.2m": 0.009831053204834461,
+        "keypoint_translation_axis0_+0.2m": 0.0077898865565657616,
+        "keypoint_translation_axis1_-0.2m": 0.013072952628135681,
+        "keypoint_translation_axis1_+0.2m": 0.0,
+        "desired_velocity_axis0_-0.2mps": 0.023127693682909012,
+        "desired_velocity_axis0_+0.2mps": 0.014127847738564014,
+        "desired_velocity_axis1_-0.2mps": 0.013445689342916012,
+        "desired_velocity_axis1_+0.2mps": 0.010189051739871502
+      },
+      "motor_teacher_action_rms": 0.07743791401554606
+    },
+    {
+      "task": "00976-stop-clear",
+      "decision_tick": 191,
+      "action_change_rms": {
+        "keypoint_translation_axis0_-0.2m": 0.01625959947705269,
+        "keypoint_translation_axis0_+0.2m": 0.037848155945539474,
+        "keypoint_translation_axis1_-0.2m": 0.03017352893948555,
+        "keypoint_translation_axis1_+0.2m": 0.04277057945728302,
+        "desired_velocity_axis0_-0.2mps": 0.054018281400203705,
+        "desired_velocity_axis0_+0.2mps": 0.038191501051187515,
+        "desired_velocity_axis1_-0.2mps": 0.05498534068465233,
+        "desired_velocity_axis1_+0.2mps": 0.055646151304244995
+      },
+      "motor_teacher_action_rms": 0.28011159178166845
+    },
+    {
+      "task": "00265-stop-clear",
+      "decision_tick": 187,
+      "action_change_rms": {
+        "keypoint_translation_axis0_-0.2m": 0.012821695767343044,
+        "keypoint_translation_axis0_+0.2m": 0.0,
+        "keypoint_translation_axis1_-0.2m": 0.012821695767343044,
+        "keypoint_translation_axis1_+0.2m": 0.0,
+        "desired_velocity_axis0_-0.2mps": 0.02469661831855774,
+        "desired_velocity_axis0_+0.2mps": 0.018818162381649017,
+        "desired_velocity_axis1_-0.2mps": 0.019247885793447495,
+        "desired_velocity_axis1_+0.2mps": 0.04367982596158981
+      },
+      "motor_teacher_action_rms": 0.11715196627078166
+    }
+  ]
+}

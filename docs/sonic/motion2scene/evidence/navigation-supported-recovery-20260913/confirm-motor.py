@@ -1,0 +1,10 @@
+import json,os,subprocess,time
+from pathlib import Path
+from gear_sonic.research.hindsight_training.runtime import sha
+p=Path(__file__).resolve().parent;repo=Path.cwd();tasks=['00908-stop-corridor','00413-stop-clear','00976-stop-clear','00265-stop-clear'];plan=dict(adaptive_diagnostic=True,selection='one failed confirmation case per motion family',tasks=tasks,seed=91261,checkpoint_loading='same navigation checkpoint and model construction as matched navigation; frozen full-command bypass',scope='four selected failures, not an eight-task oracle panel');(p/'motor-confirmation-plan.json').write_text(json.dumps(plan,indent=2));rows=[]
+for task in tasks:
+ source='confirm-'+task;name='motor-confirm-'+task;out=p/name;out.mkdir();c=json.loads((p/(source+'-config.json')).read_text());c.update(output=str(out/'task'),actor_profile='motion_full_current_v2');cp=p/(name+'-config.json');cp.write_text(json.dumps(c,indent=2));cmd=json.loads((p/source/'command.json').read_text());rep={'++eval_output_dir':str(out/'unused'),'++eval_base_dir':str(out/'hydra'),'++callbacks.im_eval.stage_config':str(cp),'++callbacks.im_eval._target_':'gear_sonic.research.scene_distillation.navigation_motor_runtime.NavigationFullCommandControlCallback'};cmd=[a.split('=',1)[0]+'='+rep[a.split('=',1)[0]] if a.split('=',1)[0] in rep else a for a in cmd];(out/'command.json').write_text(json.dumps(cmd,indent=2));(out/'source-sha256.json').write_text(json.dumps({str(f):sha(f) for f in (repo/'gear_sonic/research/scene_distillation').glob('*.py')},indent=2));t=time.monotonic()
+ with (out/'process.log').open('w') as f:r=subprocess.run(cmd,env=dict(os.environ,PYTHONPATH=str(repo),OMP_NUM_THREADS='2',MKL_NUM_THREADS='2'),stdout=f,stderr=subprocess.STDOUT,timeout=300)
+ if r.returncode:raise RuntimeError(name)
+ score=json.loads((out/'task/task-result.json').read_text());rows.append(dict(stage=name,**score));print(name,score['navigation_success'],score['max_hold_ticks'],round(time.monotonic()-t,1),flush=True)
+(p/'motor-confirmation-results.json').write_text(json.dumps(rows,indent=2));print('COMPLETE',flush=True)

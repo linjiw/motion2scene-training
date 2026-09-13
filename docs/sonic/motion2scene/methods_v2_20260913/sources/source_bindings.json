@@ -1,0 +1,98 @@
+[
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/BFM_MOTOR_RECOVERY_RESULTS_20260913.md",
+    "sha256": "d759015e747fa41128f69f1d715a1760eeea16753ac446e8855001a5cd384581"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/INVERSE_LEARNING_V1.md",
+    "sha256": "7e7bdf54bb195b422193b74f62527d60032e8445354cdb2bd73cce6f11644c1c"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/NAVIGATION_SUPPORTED_RECOVERY_20260913.md",
+    "sha256": "7a4ebf60d4b19a9995ffea5c5d25273355f74fe2d896593fe8ab6031797356a2"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/NAVIGATION_TERMINAL_CONTROL_20260913.md",
+    "sha256": "9938ac8165dfbdf272fec894c33872cd26bf4c32eac49b2abfebaf44a2b7b2c8"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/methods_v2_20260913/assets/pose_provenance.json",
+    "sha256": "a1d50d2e7347a27a01f9aee286489c77c1e41123f1f4851e8b592b0eb076793a"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/methods_v2_20260913/fig0_research_overview.png",
+    "sha256": "ff0220ece6d4728efbdbe27171aab7fce7715aafd1121176926271df2619c85f"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/methods_v2_20260913/fig1_hindsight_generator.png",
+    "sha256": "8e581cdfa2d2368613451493e892471a3cb61357e7a0a647c14a1acd6cf8ad4e"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/methods_v2_20260913/fig2_teacher_full_command.png",
+    "sha256": "60d64bf3e97888d6286f3aa7215495c12b70bff06b0a5a26e63a1cf2bc39864e"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/methods_v2_20260913/fig3_navigation_context.png",
+    "sha256": "49f9511bafc3528634a2185db49a9459a391080a3a5a790fc94b504683361c8d"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/methods_v2_20260913/figA_inverse_beam.png",
+    "sha256": "583292070b606a7f9c2d815619331a509cb05500e4ec1fc314475c0cfe69b936"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/methods_v2_20260913/sources/REPORT.md",
+    "sha256": "b91a8d913fea7c1332e7e97c8c7a1cdc0ebb4735f013fc88a589b03ebf4b2199"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/methods_v2_20260913/sources/build-receipt.json",
+    "sha256": "8c2d5f0d20c9c120a4f9b9ad5653a73437cc3f68acf3d0b1e5db41c1cfc088f2"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/methods_v2_20260913/sources/input_manifest.json",
+    "sha256": "7e0ec3cf9a7a5bfceb02575e8e2e7842f5b6998df404676d206ae56abbae1e0c"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/docs/motion2scene/methods_v2_20260913/sources/model-lock.json",
+    "sha256": "1b3c7e2844dd16ce1c7e37982ee8f9552a8347c01047a17747921e737b3230c0"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/dataset_generation/hallucination/motion2scene_inverse.py",
+    "sha256": "67bf4b20a8bdc7bf5c89a52a2d97067307cf48479d0cd73a213eba06e4f16aef"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/research/scene_distillation/anticipatory_motor.py",
+    "sha256": "09b423ef3313912e1f8da47c1ae0c6f55997c4990ece0eea26a4e933d83eed92"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/research/scene_distillation/navigation_motor.py",
+    "sha256": "80d4785334b7e1ee7ec186f4811bdc5396c69ced89c741d7f2970d89919a26a9"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/research/scene_distillation/reference_layout.py",
+    "sha256": "384d5adb1764f7abf477611147803c1d7c47e2436142560d504930d3f8a46cf5"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/gear_sonic/research/scene_distillation/transformer.py",
+    "sha256": "129f22230af95e1a3793be5ab2f6751f29ed4f1d056139ec7a7050b4d92e4bdb"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/lflh_next/constrained.py",
+    "sha256": "a409383b11184e23392f49d3d4413b88a9dc6785417387899529b22113ba446c"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/lflh_next/dataset/build.py",
+    "sha256": "7045e738c3452d29ff5c513e5cdec8c252bbc92b398eb381e71932b07df59c69"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/lflh_next/navigation/hindsight_study.py",
+    "sha256": "5f3ff5314b8e1676d0bb9e292f3e0a8c6aec4b3552fb580ebf7772bbc096fd04"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/lflh_next/navigation/motion_events.py",
+    "sha256": "b89995c25ddf4277b230092e08264fc76175d561069e641fd265ce709808971d"
+  },
+  {
+    "path": "/home/linjiw/groot-wbc-sonic-sim-trackb/scripts/research/lflh_next/navigation/sampling.js",
+    "sha256": "fb5bb894848e315bc71680137b3d1d59eb11ea8a1bb12c6fb86ee54f07e0f7c9"
+  }
+]
