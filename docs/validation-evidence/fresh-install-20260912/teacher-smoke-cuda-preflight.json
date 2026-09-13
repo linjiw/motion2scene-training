@@ -1,0 +1,11 @@
+{
+  "nvml_exit": 0,
+  "cuda_available": true,
+  "minimum_free_bytes": 2147483648,
+  "cuda_execution_passed": true,
+  "device": "NVIDIA GeForce RTX 5090",
+  "free_bytes": 11904483328,
+  "total_bytes": 33662500864,
+  "launch_allowed": true,
+  "wall_seconds": 0.30493542400654405
+}

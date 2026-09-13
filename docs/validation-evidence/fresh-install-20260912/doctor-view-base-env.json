@@ -1,0 +1,10 @@
+{
+  "profile": "view",
+  "python": "3.11.14 (main, Oct 28 2025, 12:11:26) [Clang 20.1.4 ]",
+  "repository": "/home/robotixx/motion2scene-training",
+  "workspace": "/home/robotixx/motion2scene-training/workspace",
+  "issues": [],
+  "scope": "Dependency discovery and input presence; not a simulator launch or full hash audit",
+  "ready": true
+}
+exit=0

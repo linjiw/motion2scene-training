@@ -1,0 +1,60 @@
+Using CPython 3.11.14
+Creating virtual environment at: .venv_native
+Activate with: source .venv_native/bin/activate
+Using Python 3.11.14 environment at: .venv_native
+Resolved 140 packages in 1.24s
+Installed 140 packages in 276ms
+Using Python 3.11.14 environment at: .venv_native
+Resolved 97 packages in 772ms
+Prepared 39 packages in 5.12s
+Uninstalled 1 package in 0.29ms
+Installed 51 packages in 122ms
+Using Python 3.11.14 environment at: .venv_native
+Resolved 1 package in 244ms
+Prepared 1 package in 90ms
+Installed 1 package in 0.28ms
+Using Python 3.11.14 environment at: .venv_native
+Resolved 23 packages in 344ms
+Prepared 12 packages in 262ms
+Uninstalled 1 package in 0.37ms
+Installed 20 packages in 38ms
+Using Python 3.11.14 environment at: .venv_native
+Resolved 49 packages in 372ms
+Prepared 9 packages in 347ms
+Installed 16 packages in 3ms
+Using Python 3.11.14 environment at: .venv_native
+Resolved 39 packages in 249ms
+Prepared 1 package in 90ms
+Installed 1 package in 0.31ms
+Using Python 3.11.14 environment at: .venv_native
+   Updating https://github.com/ZhengyiLuo/smplx.git (master)
+    Updated https://github.com/ZhengyiLuo/smplx.git (a5b8e4ac14f79f3f33fd2cf2a16e6f507146b813)
+Resolved 187 packages in 1.90s
+Prepared 41 packages in 15.32s
+Uninstalled 3 packages in 5ms
+Installed 71 packages in 94ms
+Using Python 3.11.14 environment at: .venv_native
+Resolved 29 packages in 616ms
+Prepared 15 packages in 58.11s
+Uninstalled 15 packages in 60ms
+Installed 15 packages in 67ms
+Using Python 3.11.14 environment at: .venv_native
+Resolved 1 package in 1ms
+Prepared 1 package in 287ms
+Installed 1 package in 1ms
+Final CUDA build and kernel probe passed
+Using Python 3.11.14 environment at: .venv_native
+Checked 296 packages in 1ms
+Found 4 incompatibilities
+The package `isaacsim-kernel` requires `numpy==1.26.0`, but `1.26.4` is installed
+The package `isaacsim-kernel` requires `click==8.1.7`, but `8.5.0` is installed
+The package `isaacsim-kernel` requires `psutil==5.9.8`, but `7.2.2` is installed
+The package `fastapi` requires `starlette>=0.40.0,<0.46.0`, but `0.49.1` is installed
+Setup completed; inspect dependency-check.txt. See docs/SETUP.md for known metadata conflicts.
+Run m2s doctor --profile teacher --cuda using this environment after unpacking data.
+A successful install/probe does not certify a full Isaac training launch.
+
+real	1m28.445s
+user	0m25.386s
+sys	0m9.756s
+EXIT=0

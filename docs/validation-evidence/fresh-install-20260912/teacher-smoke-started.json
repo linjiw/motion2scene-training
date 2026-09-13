@@ -1,0 +1,6 @@
+{
+  "state": "training",
+  "resident_motion_count": 89,
+  "num_envs": 128,
+  "starting_iteration": 0
+}

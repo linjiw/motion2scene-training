@@ -1,0 +1,21 @@
+{
+  "state": "passed",
+  "splits": [
+    {
+      "split": "train",
+      "loaded": 89,
+      "finite_elements_checked": 366057,
+      "loaded_duration_seconds": 608.4400024414062,
+      "target_fps": 50
+    },
+    {
+      "split": "development",
+      "loaded": 20,
+      "finite_elements_checked": 69840,
+      "loaded_duration_seconds": 140.6999969482422,
+      "target_fps": 50
+    }
+  ],
+  "physics_steps": 0,
+  "optimizer_updates": 0
+}

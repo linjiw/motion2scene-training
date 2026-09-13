@@ -1,0 +1,7 @@
+Using Python 3.11.14 environment at: .venv_native
+Checked 296 packages in 1ms
+Found 4 incompatibilities
+The package `isaacsim-kernel` requires `numpy==1.26.0`, but `1.26.4` is installed
+The package `isaacsim-kernel` requires `click==8.1.7`, but `8.5.0` is installed
+The package `isaacsim-kernel` requires `psutil==5.9.8`, but `7.2.2` is installed
+The package `fastapi` requires `starlette>=0.40.0,<0.46.0`, but `0.49.1` is installed

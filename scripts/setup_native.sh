@@ -9,7 +9,7 @@ if [[ -e "$ENV_DIR" ]]; then
   exit 1
 fi
 command -v uv >/dev/null || { echo 'Install uv first (python -m pip install uv).' >&2; exit 1; }
-# Legacy sdists (e.g. Isaac Lab's flatdict==4.0.1) import pkg_resources, removed in setuptools 81.
+# Legacy sdists (e.g. Isaac Lab's flatdict==4.0.1) import pkg_resources, removed in setuptools 82.
 export UV_BUILD_CONSTRAINT="$KIT_ROOT/requirements/build-constraints.txt"
 if [[ ! -d "$LAB_DIR" ]]; then
   git clone --depth 1 --branch v2.3.2 https://github.com/isaac-sim/IsaacLab.git "$LAB_DIR"

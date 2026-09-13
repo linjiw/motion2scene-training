@@ -1,0 +1,7 @@
+$ env -u PYTHONPATH .venv/bin/python -m pytest -q tests
+.....                                                                    [100%]
+5 passed in 0.01s
+
+$ env -u PYTHONPATH PYTHONPATH=vendor/sonic .venv_native/bin/python -m pytest -q tests vendor/sonic/decoupled_wbc/tests/test_bfm_*.py vendor/sonic/decoupled_wbc/tests/test_scene_distillation.py
+............................................................             [100%]
+60 passed in 2.40s

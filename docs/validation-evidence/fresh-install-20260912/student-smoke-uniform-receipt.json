@@ -1,0 +1,12 @@
+{
+  "state": "complete",
+  "updates": 240,
+  "starting_step": 0,
+  "final_step": 240,
+  "stage": "foundation",
+  "wall_seconds": 6.0990428739460185,
+  "physics_steps": 0,
+  "eligible_episodes": 2,
+  "teacher_sha256": "48b3a1c04cdbbcd9ffe8ad10b2591aff781c253c03c61ccb8683348d862c54ed",
+  "physical_student_performance": null
+}

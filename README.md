@@ -41,20 +41,23 @@ The tested native stack uses Linux, Python 3.11, Isaac Sim 5.1.0, Isaac Lab v2.3
 
 ```bash
 bash scripts/setup_native.sh "$PWD/.venv_native" "$PWD/external/IsaacLab"
-.venv_native/bin/pip install -e .
-.venv_native/bin/m2s doctor --profile teacher --cuda
+scripts/m2s_native.sh doctor --profile teacher --cuda
 ```
 
-**Native GPU readiness remains conditional:** the observed working environment has four declared dependency conflicts, and the fresh installer has not been executed end-to-end. Details and the exact evidence are in [SETUP.md](docs/SETUP.md).
+The installer already installs this package into `.venv_native`; `uv` environments have no `pip`. `scripts/m2s_native.sh` runs `.venv_native/bin/m2s` with `PYTHONPATH` unset and a user-owned `TMPDIR`/Isaac Lab USD cache, which shared or ROS-sourced hosts need (see [SETUP.md](docs/SETUP.md)). Isaac Sim will not launch until you accept the NVIDIA Omniverse EULA yourself.
+
+**Native GPU readiness remains conditional:** the installer has completed end to end in a new environment on one second host (Ubuntu 22.04, shared RTX 5090), but that environment still reports the four declared dependency conflicts, and the validation covers one host and GPU. See the [readiness audit](docs/READINESS_AUDIT.md#fresh-installation-2026-09-12) and [SETUP.md](docs/SETUP.md). Size long runs from throughput measured on your own device.
 
 The bootstrap downloads the simulator rather than bundling its installation. Read its EULA instructions; this package does not accept agreements on behalf of another user. The full upstream SMPL corpus (31 GB on the source machine), Kimodo model weights, and licensed simulator binaries are not included. The 120-motion research corpus and repaired native teacher clips are included, so those full upstream corpora are not needed for the packaged teacher/BFM paths. The independent Motion2Scene package can also be installed with `pip install -e vendor/motion2scene`.
 
 ## Prepare and train a repaired teacher
 
 ```bash
-.venv_native/bin/m2s teacher-prepare --output "$PWD/workspace/new-teacher" --num-envs 128 --iterations 32000
-.venv_native/bin/m2s teacher-train "$PWD/workspace/new-teacher"
+scripts/m2s_native.sh teacher-prepare --output "$PWD/workspace/new-teacher" --num-envs 128 --iterations 32000
+tmux new -s new-teacher "scripts/m2s_native.sh teacher-train $PWD/workspace/new-teacher"
 ```
+
+`teacher-train` blocks until training ends (wall cap 48 h), so run it in `tmux` or similar. A packet has one attempt: any launch failure uses it up, so prepare a new output name to retry. Run a 500-iteration packet first to measure throughput, and see [SETUP.md](docs/SETUP.md) for disk budget and how to stop a run.
 
 Preparation verifies repaired manifests, uses all 89 screened training clips and all 20 development clips for loader validation, creates local configuration paths, and runs the real CPU motion loader. Training initializes from the released SONIC checkpoint with a fresh optimizer. The launch is bounded, writes checkpoints/receipts and refuses to reuse an existing attempt. The CLI starts the training monitor only; evaluation is a separate declared experiment. No final repaired checkpoint is bundled while its source training remains live.
 
@@ -63,9 +66,9 @@ Preparation verifies repaired manifests, uses all 89 screened training clips and
 Use the native Python environment for the SONIC decoder/TRL dependencies, even though this smoke trains on CPU:
 
 ```bash
-.venv_native/bin/m2s student-smoke --output "$PWD/workspace/student-smoke" --updates 240
-.venv_native/bin/m2s generator-smoke --output "$PWD/workspace/generator-smoke" --updates 20
-.venv_native/bin/m2s scene-tasks --output "$PWD/workspace/navigation-tasks"
+scripts/m2s_native.sh student-smoke --output "$PWD/workspace/student-smoke" --updates 240
+scripts/m2s_native.sh generator-smoke --output "$PWD/workspace/generator-smoke" --updates 20
+scripts/m2s_native.sh scene-tasks --output "$PWD/workspace/navigation-tasks"
 ```
 
 `generator-smoke` trains the preserved conditioned obstacle scorer against the bundled 100-training-motion geometry labels for a bounded number of CPU updates; it does not run physics.

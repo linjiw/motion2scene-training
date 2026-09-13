@@ -1,0 +1,9 @@
+repaired-motions verified
+research-datasets-scenes verified
+robot-assets verified
+checkpoints verified
+learned-scene-models verified
+
+real	0m33.570s
+user	0m31.194s
+sys	0m2.309s

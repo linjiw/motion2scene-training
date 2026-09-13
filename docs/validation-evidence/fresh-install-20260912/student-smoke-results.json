@@ -1,0 +1,73 @@
+{
+  "initial": {
+    "full": {
+      "macro_action_mse": 0.8753491044044495,
+      "per_clip_mse": [
+        0.6429406404495239,
+        1.107757568359375
+      ]
+    },
+    "root": {
+      "macro_action_mse": 0.8748967051506042,
+      "per_clip_mse": [
+        0.641688346862793,
+        1.1081050634384155
+      ]
+    },
+    "navigation": {
+      "macro_action_mse": 0.8750485181808472,
+      "per_clip_mse": [
+        0.6420719623565674,
+        1.108025074005127
+      ]
+    }
+  },
+  "physics_steps": 0,
+  "claim": "Offline engineering ablation, not navigation qualification",
+  "uniform": {
+    "full": {
+      "macro_action_mse": 0.1751198759302497,
+      "per_clip_mse": [
+        0.01280084066092968,
+        0.3374389111995697
+      ]
+    },
+    "root": {
+      "macro_action_mse": 0.17511318624019623,
+      "per_clip_mse": [
+        0.012726575136184692,
+        0.33749979734420776
+      ]
+    },
+    "navigation": {
+      "macro_action_mse": 0.1750854435376823,
+      "per_clip_mse": [
+        0.012696332298219204,
+        0.3374745547771454
+      ]
+    }
+  },
+  "curriculum": {
+    "full": {
+      "macro_action_mse": 0.1793219125829637,
+      "per_clip_mse": [
+        0.012960727326571941,
+        0.34568309783935547
+      ]
+    },
+    "root": {
+      "macro_action_mse": 0.1791560766287148,
+      "per_clip_mse": [
+        0.013107501901686192,
+        0.3452046513557434
+      ]
+    },
+    "navigation": {
+      "macro_action_mse": 0.17914790660142899,
+      "per_clip_mse": [
+        0.013124659657478333,
+        0.34517115354537964
+      ]
+    }
+  }
+}

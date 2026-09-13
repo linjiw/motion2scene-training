@@ -12,5 +12,4 @@ export TMPDIR="${M2S_TMPDIR:-$HOME/.cache/m2s/tmp}"
 # Keep robot URDF-to-USD conversions separate from other Isaac Lab checkouts.
 export ISAACLAB_USD_CACHE_DIR="${ISAACLAB_USD_CACHE_DIR:-$HOME/.cache/m2s/isaaclab-usd}"
 mkdir -p "$TMPDIR" "$ISAACLAB_USD_CACHE_DIR"
-cd "$KIT_ROOT"
 exec "$NATIVE_ENV/bin/m2s" "$@"
