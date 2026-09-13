@@ -1,0 +1,35 @@
+[
+  {
+    "stage": "teacher-91260-00908-stop-clear",
+    "max_suffix_hold": 49,
+    "final_suffix_hold": 49,
+    "last_reset": {
+      "tick": 298,
+      "ended_run": 5,
+      "distance_m": 0.043062594595081626,
+      "speed_mps": 0.10058578103780746
+    },
+    "stopped_at_deadline": true
+  },
+  {
+    "stage": "teacher-91261-00265-stop-clear",
+    "max_suffix_hold": 0,
+    "final_suffix_hold": 0,
+    "last_reset": null,
+    "stopped_at_deadline": true
+  },
+  {
+    "stage": "teacher-91261-00908-stop-corridor",
+    "max_suffix_hold": 50,
+    "final_suffix_hold": 50,
+    "last_reset": null,
+    "stopped_at_deadline": false
+  },
+  {
+    "stage": "teacher-91261-00976-stop-clear",
+    "max_suffix_hold": 0,
+    "final_suffix_hold": 0,
+    "last_reset": null,
+    "stopped_at_deadline": true
+  }
+]

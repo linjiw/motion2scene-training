@@ -1,0 +1,56 @@
+[
+  {
+    "key": "geometry-801",
+    "variant": "geometry",
+    "seed": 801,
+    "updates": 200,
+    "parameters": 21185,
+    "wall_seconds": 0.5416589050000766,
+    "sha256": "d8f150a05fa4360c61aa5c5c6b164cdcf638d2f8065a7f3aa166473554a1a570"
+  },
+  {
+    "key": "geometry-802",
+    "variant": "geometry",
+    "seed": 802,
+    "updates": 200,
+    "parameters": 21185,
+    "wall_seconds": 0.52289230000315,
+    "sha256": "99c8a5cbd64582c1b8591fc3030abac4c94412fe340fc371a3fc7324725a34a9"
+  },
+  {
+    "key": "hindsight-801",
+    "variant": "hindsight",
+    "seed": 801,
+    "updates": 200,
+    "parameters": 21185,
+    "wall_seconds": 0.5246150700040744,
+    "sha256": "a3c4a88435ee11806265643f35a4f65fc1176935a5faa670faa1d8ddea5cad50"
+  },
+  {
+    "key": "hindsight-802",
+    "variant": "hindsight",
+    "seed": 802,
+    "updates": 200,
+    "parameters": 21185,
+    "wall_seconds": 0.519504149997374,
+    "sha256": "c89229d750b3428a6ee8284cab108bea150a7db5a44435ad8be2f514ce0fa54a"
+  },
+  {
+    "key": "hindsight_no_motion-801",
+    "variant": "hindsight_no_motion",
+    "seed": 801,
+    "updates": 200,
+    "parameters": 21185,
+    "wall_seconds": 0.5446301169940853,
+    "sha256": "3e210db67fbabeea6646a9d08d5fd0d0b1f7fdcc3aed536e006fcade9b59584f"
+  },
+  {
+    "key": "hindsight_no_motion-802",
+    "variant": "hindsight_no_motion",
+    "seed": 802,
+    "updates": 200,
+    "parameters": 21185,
+    "wall_seconds": 0.53899103099684,
+    "sha256": "c19212663326e1d45a89cb8fcf73a60e850f3d49c9d6f9508a847f30cd280ef7"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "registered_before_followup_collection_and_fitting": true,
+  "seed": 91262,
+  "condition": "unchanged parent navigation checkpoint on all eight original tasks",
+  "purpose": "matched baseline for interpreting selected-fork confirmation; does not change fork selection"
+}

@@ -1,0 +1,21 @@
+{
+  "pdf_pages": 20,
+  "atlas_pages": 5,
+  "words": 6866,
+  "main_document_local_links": "all resolve",
+  "math_expressions": 37,
+  "broken_images": 0,
+  "html_horizontal_overflow": false,
+  "figures": [
+    "overview",
+    "categorical hindsight proposer",
+    "teacher/full-command motor",
+    "navigation/recovery",
+    "continuous inverse appendix"
+  ],
+  "validation_scope": "Documentation rendering and source checks; no model training, physics, or ongoing jobs started or changed.",
+  "black": "passed",
+  "ruff_E_F_I": "passed",
+  "figure_caption_groups_kept_together": true,
+  "extracted_sections_local_links": "all resolve"
+}

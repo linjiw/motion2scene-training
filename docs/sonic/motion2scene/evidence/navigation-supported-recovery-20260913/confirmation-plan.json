@@ -1,0 +1,9 @@
+{
+  "adaptive_confirmation": true,
+  "registered_before_recovery_fit": true,
+  "selection": "highest main-seed stable successes; ties prefer motor-data then replay-control then dagger",
+  "evaluation_seed": 91261,
+  "tasks": "all eight original tasks",
+  "scope": "selected-checkpoint evaluation-seed repeat; same training tasks, not held-out layouts or training seeds",
+  "max_native_attempts": 8
+}

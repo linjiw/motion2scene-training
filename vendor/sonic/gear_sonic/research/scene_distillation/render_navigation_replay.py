@@ -162,9 +162,15 @@ def render_pair(packet, output, key, robot_xml):
     start, goal = np.array(task["start_xyz"]), np.array(task["goal_xyz"])
     direction = goal - start
     direction[2] = 0
-    camera.lookat[:] = (start + goal) / 2
+    # Endpoint-only framing can hide a legitimate out-and-back motion or drift.
+    # Fit one fixed camera to both measured root paths, including the request.
+    points = np.concatenate(
+        [r["poses"]["root_xyz"][:, :2] for r in records] + [[start[:2], goal[:2]]]
+    )
+    lower, upper = points.min(0), points.max(0)
+    camera.lookat[:2] = (lower + upper) / 2
     camera.lookat[2] = 0.65
-    camera.distance = max(4.3, np.linalg.norm(direction) * 1.35 + 1.4)
+    camera.distance = max(4.3, np.linalg.norm(upper - lower) * 1.35 + 1.4)
     camera.elevation = -35
     camera.azimuth = np.degrees(np.arctan2(direction[1], direction[0])) + 12
     fonts = {
@@ -173,7 +179,12 @@ def render_pair(packet, output, key, robot_xml):
     }
     color = ["#62b5ff", "#ffbe66"]
     titles = ["FULL-COMMAND STUDENT", "GOAL + SCENE STUDENT"]
-    inputs = ["Current motion targets + measured history", "Goal + obstacle map + measured history"]
+    inputs = [
+        "Current motion targets + measured history",
+        "Goal + map + history + causal localization",
+    ]
+    if records[1]["config"]["actor_profile"] == "nav_goal_map_v1":
+        inputs[1] = "Goal + obstacle map + measured history"
     nframes = int(np.ceil(max(r["n"] for r in records) / 2)) + 30
     path = output / (key + ".mp4")
     cached = [None, None]
@@ -205,12 +216,12 @@ def render_pair(packet, output, key, robot_xml):
                     (
                         "PASS: goal held"
                         if r["score"]["navigation_success"]
-                        else "NOT COMPLETED: deadline"
+                        else "NOT COMPLETED: " + r["score"]["stop_reason"]
                     )
                     if ended
                     else "Running"
                 )
-                draw.rectangle((x + 15, 107, x + 600, 144), fill="#162232")
+                draw.rectangle((x + 15, 107, x + 945, 144), fill="#162232")
                 draw.text(
                     (x + 25, 111),
                     f"{key}  |  t={min(tick,r['n'])*.02:.2f}s  |  {state}",
@@ -274,13 +285,20 @@ def main():
     parser.add_argument("--packet", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument(
+        "--keys",
+        nargs="+",
+        default=["00908-stop-corridor", "00413-stop-clear", "00265-stop-corridor"],
+    )
+    parser.add_argument(
         "--robot-xml",
         type=Path,
         default=Path(__file__).resolve().parents[3] / "gear_sonic_deploy/g1/g1_29dof_old.xml",
     )
     a = parser.parse_args()
     a.output.mkdir(parents=True, exist_ok=False)
-    keys = ["00908-stop-corridor", "00413-stop-clear", "00265-stop-corridor"]
+    keys = a.keys
+    if len(set(keys)) != len(keys) or any(Path(k).name != k for k in keys):
+        raise ValueError("Replay keys must be distinct directory basenames")
     results = [render_pair(a.packet, a.output, k, a.robot_xml) for k in keys]
     concat = a.output / "concat.txt"
     concat.write_text("".join("file '" + k + ".mp4'\n" for k in keys))

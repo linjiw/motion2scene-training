@@ -1,0 +1,13 @@
+{
+  "adaptive_diagnostic": true,
+  "selection": "one failed confirmation case per motion family",
+  "tasks": [
+    "00908-stop-corridor",
+    "00413-stop-clear",
+    "00976-stop-clear",
+    "00265-stop-clear"
+  ],
+  "seed": 91261,
+  "checkpoint_loading": "same navigation checkpoint and model construction as matched navigation; frozen full-command bypass",
+  "scope": "four selected failures, not an eight-task oracle panel"
+}

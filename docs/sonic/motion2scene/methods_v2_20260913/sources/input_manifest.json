@@ -1,0 +1,18 @@
+[
+  {
+    "path": "/home/linjiw/.codex/attachments/497dab06-f891-48b6-a6c3-06eca4e6437e/paper_draft.pdf",
+    "sha256": "8a676645dfd5829c8c80862e9c0fdd732a83b387d8d761b20aa9d5d216afee2b"
+  },
+  {
+    "path": "/home/linjiw/research-data/m2s-hindsight-events-100-20260911/REPORT.md",
+    "sha256": "b91a8d913fea7c1332e7e97c8c7a1cdc0ebb4735f013fc88a589b03ebf4b2199"
+  },
+  {
+    "path": "/home/linjiw/research-data/m2s-hindsight-events-100-20260911/model-lock.json",
+    "sha256": "1b3c7e2844dd16ce1c7e37982ee8f9552a8347c01047a17747921e737b3230c0"
+  },
+  {
+    "path": "/home/linjiw/research-data/m2s-hindsight-dataset-v1-20260911/build-receipt.json",
+    "sha256": "8c2d5f0d20c9c120a4f9b9ad5653a73437cc3f68acf3d0b1e5db41c1cfc088f2"
+  }
+]

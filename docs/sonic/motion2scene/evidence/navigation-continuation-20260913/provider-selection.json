@@ -1,0 +1,15 @@
+{
+  "counts": {
+    "nominal": 1,
+    "goal_velocity": 1,
+    "goal_velocity_keypoints": 1
+  },
+  "selected": {
+    "kind": "nominal",
+    "position_gain": 0.8,
+    "velocity_gain": 0.5,
+    "max_speed_mps": 0.35,
+    "max_shift_m": 0.2,
+    "activation_radius_m": 0.6
+  }
+}

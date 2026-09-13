@@ -1,0 +1,12 @@
+{
+  "motor_demonstration_attempts": 8,
+  "motor_demonstration_steps": 3076,
+  "recovery_attempts": 8,
+  "recovery_physical_steps": 3235,
+  "admitted_recovery_rows": 1250,
+  "verified_learner_entry_queries": 6,
+  "candidate_prefix_queries": 1367,
+  "attempted_switch_queries": 8,
+  "motor_target_forward_calls": 6311,
+  "original_teacher_diagnostic_forward_calls": 6311
+}

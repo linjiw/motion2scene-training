@@ -86,3 +86,63 @@ class NavigationTakeoverCallback(NavigationMotorCallback):
                 unassisted_navigation_success=False,
             ),
         )
+
+
+class OriginalTeacherContinuationCallback(NavigationMotorCallback):
+    """Diagnostic original-teacher takeover with matching navigation construction.
+
+    Emits no motor-recovery receipt or training shard. These actions cannot be
+    silently used as executed frozen-motor targets by the recovery loader.
+    """
+
+    def _begin_task(self, env, teacher, task):
+        super()._begin_task(env, teacher, task)
+        if not 0 < self.config["takeover_tick"] < task["deadline_ticks"]:
+            raise ValueError("Invalid original-teacher continuation entry")
+        self.teacher_tick = 0
+
+    def _student_action(self, student, env, teacher, observation, task, noise):
+        tick = self.teacher_tick
+        self.teacher_tick += 1
+        if tick < self.config["takeover_tick"]:
+            return super()._student_action(student, env, teacher, observation, task, noise)
+        return teacher.act_inference(obs_dict=observation, skip_episode_attnmask=True)
+
+    def _goal_stop(self, task, roots, speeds, forces, fell):
+        from gear_sonic.research.scene_distillation.navigation_recovery import suffix_support
+
+        if len(roots) <= self.config["takeover_tick"]:
+            return super()._goal_stop(task, roots, speeds, forces, fell)
+        mask, _ = suffix_support(
+            task,
+            dict(
+                root_xyz=np.asarray(roots),
+                speed=np.asarray(speeds),
+                undesired_force=np.asarray(forces),
+            ),
+            self.config["takeover_tick"],
+            fell,
+        )
+        return bool(mask.any())
+
+    def _complete_task(self, task, score, output):
+        from gear_sonic.research.scene_distillation.navigation_continuation import (
+            continuation_outcomes,
+        )
+
+        with np.load(output / "trace.npz") as trace:
+            result = continuation_outcomes(
+                task, trace, min(self.config["takeover_tick"], score["control_steps"])
+            )
+        write_new(
+            output / "teacher-continuation.json",
+            dict(
+                diagnostic_only=True,
+                takeover_tick=self.config["takeover_tick"],
+                unassisted_navigation_result=False,
+                training_admitted=False,
+                provider="original_reference_teacher",
+                reference_phase_switch=False,
+                outcomes=result,
+            ),
+        )

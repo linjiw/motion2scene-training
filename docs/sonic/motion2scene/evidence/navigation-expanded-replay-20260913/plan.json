@@ -1,0 +1,92 @@
+{
+  "seed": 91262,
+  "checkpoint": {
+    "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/recovery-fit/training/step-003000.pt",
+    "sha256": "d378947413cdd167e71e3271440e9a18fbfd5a609836aa0be7d98cefe3a6e9cd"
+  },
+  "template_command": {
+    "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/confirm-00908-stop-clear/command.json",
+    "sha256": "7da11904bec0ae1cf30f1b948fa0fc8afcc5a34b51623bdb7039543561a44f05"
+  },
+  "template_config": {
+    "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/confirm-00908-stop-clear-config.json",
+    "sha256": "80e31f51355e45ef59853bd033173c14be23780958a3fcd1458f1fee8844a44b"
+  },
+  "tasks": [
+    {
+      "path": "/home/linjiw/research-data/m2s-bfm-motor-recovery-20260913/stopping-tasks-v2/00908/clear.json",
+      "sha256": "9eab54c5ec526411b55a92e05c11ce11947c1bf4af7d937990b6c8779d152b45",
+      "panel_group": "known_regression"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-bfm-motor-recovery-20260913/stopping-tasks-v2/00413/corridor.json",
+      "sha256": "04f6ea46faae7eb60989d68960b2503d03ffac8c36dea35d3df2ea5d77c94870",
+      "panel_group": "known_regression"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-bfm-motor-recovery-20260913/stopping-tasks-v2/00265/corridor.json",
+      "sha256": "f1e12c93171101493c731be5731fbdfd011401fc5063c41dacae6c0033b9e727",
+      "panel_group": "known_regression"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-navigation-expanded-replay-20260913/tasks/00399/clear.json",
+      "sha256": "e66c2c5873f435c16cc89841d602393cdfae210384f8ebb005e81525f7a19000",
+      "panel_group": "new_navigation_motion"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-navigation-expanded-replay-20260913/tasks/00399/corridor.json",
+      "sha256": "ceeafcb0e5beaeb5289d82693c025def79bc9aa0e2aed1219e006729edc5c929",
+      "panel_group": "new_navigation_motion"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-navigation-expanded-replay-20260913/tasks/00770/clear.json",
+      "sha256": "45690dbcf2cae403ba953ff6cf616221272c96ef3b94641add58644bd770bdf7",
+      "panel_group": "new_navigation_motion"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-navigation-expanded-replay-20260913/tasks/00770/corridor.json",
+      "sha256": "c072ea959882f203b18623c370e9cd163c42ea18041d3225ab66070f3beeb3a0",
+      "panel_group": "new_navigation_motion"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-navigation-expanded-replay-20260913/tasks/00677/clear.json",
+      "sha256": "d03c0d9cd793ccecde3ee3e54b592c2373902721f0a26f07be2c3f1234d9a7e7",
+      "panel_group": "new_navigation_motion"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-navigation-expanded-replay-20260913/tasks/00677/corridor.json",
+      "sha256": "f577fc090899c43d224617ecf269e5de747bb18d8d88b5069fbf5c5f5a9a3ef1",
+      "panel_group": "new_navigation_motion"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-navigation-expanded-replay-20260913/tasks/00120/clear.json",
+      "sha256": "1e9a6ea181e6386ff770456a7c1a279db779d2c80781bc50041c0e77a51dad9a",
+      "panel_group": "new_navigation_motion"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-navigation-expanded-replay-20260913/tasks/00120/corridor.json",
+      "sha256": "dd27bad6dceef4bf983b39db4762908f4e56684d27930e54080d864d2ec75a56",
+      "panel_group": "new_navigation_motion"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-navigation-expanded-replay-20260913/tasks/00707/clear.json",
+      "sha256": "b1f066d6187a64cff6e433a6b2a00a4218a9b783f6437893fb1da34c2090349f",
+      "panel_group": "new_navigation_motion"
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-navigation-expanded-replay-20260913/tasks/00707/corridor.json",
+      "sha256": "e467aa50b2840ae1ea78219eb2b1afb0a702f7179e9cefa92ae564d58f268b89",
+      "panel_group": "new_navigation_motion"
+    }
+  ],
+  "arms": [
+    "full",
+    "nav"
+  ],
+  "selection": {
+    "path": "/home/linjiw/research-data/m2s-navigation-expanded-replay-20260913/selection.json",
+    "sha256": "bdb66f45982da559c3275c32532b07e115172b4c2e405a300db679a706346a7a"
+  },
+  "scoring": "Unchanged distance .25m, speed .1m/s, hold50ticks; original per-task deadline; prohibited contact >1N and pelvis height <.25m",
+  "scope": "3 known regression tasks + 10 unqualified new-motion tasks; all retained regardless of motor outcome; no training on this panel"
+}

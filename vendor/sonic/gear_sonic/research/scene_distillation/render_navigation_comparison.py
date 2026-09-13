@@ -5,6 +5,7 @@ import numpy as np
 from gear_sonic.research.hindsight_training.runtime import write_new
 from gear_sonic.research.scene_distillation.navigation_motor_runtime import (
     FullMotorTaskCallback,
+    NavigationFullCommandControlCallback,
     NavigationMotorCallback,
 )
 
@@ -70,3 +71,7 @@ class RecordFullMotorCallback(PoseRecordingMixin, FullMotorTaskCallback):
 
 class RecordNavigationMotorCallback(PoseRecordingMixin, NavigationMotorCallback):
     pass
+
+
+class RecordNavigationFullCommandCallback(PoseRecordingMixin, NavigationFullCommandControlCallback):
+    """Record the navigation checkpoint's inherited motor with oracle commands."""

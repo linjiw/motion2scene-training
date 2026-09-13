@@ -190,6 +190,22 @@ def navigation_loss(student, batch, command_weight=0.1, token_weight=0.1, object
     )
 
 
+def replay_motion_probabilities(motions, weights):
+    """Explicit replay-only weighting for a matched motion-exposure control.
+
+    Episodes remain uniform within motion and rows uniform within episode. An
+    omitted mapping preserves the original uniform sampler and its RNG path.
+    """
+    if weights is None:
+        return None
+    if not isinstance(weights, dict) or set(weights) != set(motions):
+        raise ValueError("Replay weights must cover exactly the admitted replay motions")
+    values = np.array([weights[m] for m in motions], dtype=float)
+    if not np.isfinite(values).all() or np.any(values <= 0) or not np.isfinite(values.sum()):
+        raise ValueError("Replay weights must be finite and strictly positive")
+    return values / values.sum()
+
+
 def fit(config, output):
     """Bounded task-positive fit; immutable motor retention replaces joint fine-tuning."""
     if not 1 <= config["updates"] <= 20000 or not 0 < config["wall_cap_seconds"] <= 1800:
@@ -262,6 +278,9 @@ def fit(config, output):
             episode["motion_id"], []
         ).append(i)
     role_groups = {role: list(motions.values()) for role, motions in by_role.items()}
+    replay_probabilities = replay_motion_probabilities(
+        by_role.get("replay", {}), config.get("replay_motion_weights")
+    )
     if recovery_fraction and "recovery" not in role_groups:
         raise ValueError("Recovery mixture has no qualified recovery episodes")
     frozen = {
@@ -274,6 +293,7 @@ def fit(config, output):
         data["controls"][:32],
         torch.ones_like(data["controls"][:32], dtype=torch.bool),
     )["actions"].detach()
+    sampled_episodes = np.zeros(len(episodes), dtype=np.int64)
     started, step = time.monotonic(), 0
     with (output / "metrics.jsonl").open("x") as log:
         for step in range(1, config["updates"] + 1):
@@ -290,7 +310,13 @@ def fit(config, output):
                 pool = role_groups.get(role)
                 if not pool:
                     raise ValueError("Empty requested replay role")
-                chosen.append(int(rng.choice(pool[int(rng.integers(len(pool)))])))
+                motion_index = (
+                    int(rng.choice(len(pool), p=replay_probabilities))
+                    if role == "replay" and replay_probabilities is not None
+                    else int(rng.integers(len(pool)))
+                )
+                chosen.append(int(rng.choice(pool[motion_index])))
+            np.add.at(sampled_episodes, chosen, 1)
             ix = offsets[chosen] + (rng.random(len(chosen)) * np.diff(offsets)[chosen]).astype(int)
             batch = {k: v[torch.as_tensor(ix, device=device)] for k, v in data.items()}
             if step == 1:
@@ -365,6 +391,11 @@ def fit(config, output):
             physical_success=None,
             evaluation_scope="in-sample positive control only",
             recovery_fraction=recovery_fraction,
+            replay_motion_weights=config.get("replay_motion_weights"),
+            sampled_rows_by_motion={
+                motion: int(sampled_episodes[indices].sum())
+                for motion, indices in by_motion.items()
+            },
             qualified_recovery_episodes=sum(e.get("role") == "recovery" for e in episodes),
             warm_start=bool(config.get("initial_navigation_checkpoint")),
         ),

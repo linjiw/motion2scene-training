@@ -1,0 +1,12 @@
+{
+  "all_collection_attempts": 20,
+  "collection_physics_steps": 8732,
+  "motor_target_forwards": 8732,
+  "original_teacher_collection_diagnostic_forwards": 8732,
+  "original_teacher_control_action_forwards": 754,
+  "all_completed_native_attempts": 56,
+  "all_native_control_steps": 24061,
+  "infrastructure_failed_launches": 1,
+  "failed_launch_task_steps": 0,
+  "qualification_note": "All probe variants and failed attempts count toward acquisition; only the selected-provider manifest enters the training comparison."
+}

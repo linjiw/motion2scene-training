@@ -1,0 +1,178 @@
+[
+  {
+    "task": "00265-stop-clear",
+    "exact_navigation_prefix": true,
+    "supported": true,
+    "supported_rows": 201,
+    "learner_queries": 1,
+    "switch_tick": 187,
+    "switch_goal_distance_m": 0.714608296047375,
+    "switch_causal_speed_mps": 0.09915057569742203,
+    "suffix_score": {
+      "navigation_success": true,
+      "goal_ever_reached": true,
+      "terminal_hold": true,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 50,
+      "final_goal_distance_m": 0.21882122656577951,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 201,
+      "reference_tracking_required": false
+    }
+  },
+  {
+    "task": "00265-stop-corridor",
+    "exact_navigation_prefix": true,
+    "supported": true,
+    "supported_rows": 186,
+    "learner_queries": 1,
+    "switch_tick": 188,
+    "switch_goal_distance_m": 0.6898173352981053,
+    "switch_causal_speed_mps": 0.10070639848709106,
+    "suffix_score": {
+      "navigation_success": true,
+      "goal_ever_reached": true,
+      "terminal_hold": true,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 50,
+      "final_goal_distance_m": 0.22925772755955234,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 186,
+      "reference_tracking_required": false
+    }
+  },
+  {
+    "task": "00413-stop-clear",
+    "exact_navigation_prefix": true,
+    "supported": true,
+    "supported_rows": 311,
+    "learner_queries": 1,
+    "switch_tick": 195,
+    "switch_goal_distance_m": 0.7798105585028011,
+    "switch_causal_speed_mps": 0.04543648287653923,
+    "suffix_score": {
+      "navigation_success": true,
+      "goal_ever_reached": true,
+      "terminal_hold": true,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 50,
+      "final_goal_distance_m": 0.12856008955776616,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 311,
+      "reference_tracking_required": false
+    }
+  },
+  {
+    "task": "00413-stop-corridor",
+    "exact_navigation_prefix": true,
+    "supported": true,
+    "supported_rows": 307,
+    "learner_queries": 1,
+    "switch_tick": 195,
+    "switch_goal_distance_m": 0.7659361207313241,
+    "switch_causal_speed_mps": 0.04594479873776436,
+    "suffix_score": {
+      "navigation_success": true,
+      "goal_ever_reached": true,
+      "terminal_hold": true,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 50,
+      "final_goal_distance_m": 0.17555493103853062,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 307,
+      "reference_tracking_required": false
+    }
+  },
+  {
+    "task": "00908-stop-clear",
+    "exact_navigation_prefix": true,
+    "supported": true,
+    "supported_rows": 121,
+    "learner_queries": 1,
+    "switch_tick": 110,
+    "switch_goal_distance_m": 0.3103508723023427,
+    "switch_causal_speed_mps": 0.45711052417755127,
+    "suffix_score": {
+      "navigation_success": true,
+      "goal_ever_reached": true,
+      "terminal_hold": true,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 50,
+      "final_goal_distance_m": 0.07255449544181816,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 121,
+      "reference_tracking_required": false
+    }
+  },
+  {
+    "task": "00908-stop-corridor",
+    "exact_navigation_prefix": true,
+    "supported": true,
+    "supported_rows": 124,
+    "learner_queries": 1,
+    "switch_tick": 110,
+    "switch_goal_distance_m": 0.29619688431101254,
+    "switch_causal_speed_mps": 0.4593876600265503,
+    "suffix_score": {
+      "navigation_success": true,
+      "goal_ever_reached": true,
+      "terminal_hold": true,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 50,
+      "final_goal_distance_m": 0.08674563685762209,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 124,
+      "reference_tracking_required": false
+    }
+  },
+  {
+    "task": "00976-stop-clear",
+    "exact_navigation_prefix": true,
+    "supported": false,
+    "supported_rows": 0,
+    "learner_queries": 0,
+    "switch_tick": 191,
+    "switch_goal_distance_m": 0.07077856331695019,
+    "switch_causal_speed_mps": 0.7861487865447998,
+    "suffix_score": {
+      "navigation_success": false,
+      "goal_ever_reached": true,
+      "terminal_hold": false,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 0,
+      "final_goal_distance_m": 0.41012377646449794,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 309,
+      "reference_tracking_required": false
+    }
+  },
+  {
+    "task": "00976-stop-corridor",
+    "exact_navigation_prefix": true,
+    "supported": false,
+    "supported_rows": 0,
+    "learner_queries": 0,
+    "switch_tick": 191,
+    "switch_goal_distance_m": 0.09384084009289141,
+    "switch_causal_speed_mps": 0.785696804523468,
+    "suffix_score": {
+      "navigation_success": false,
+      "goal_ever_reached": true,
+      "terminal_hold": false,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 0,
+      "final_goal_distance_m": 0.40652162637556355,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 309,
+      "reference_tracking_required": false
+    }
+  }
+]

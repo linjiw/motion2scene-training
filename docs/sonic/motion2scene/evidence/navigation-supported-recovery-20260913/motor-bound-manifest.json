@@ -1,0 +1,69 @@
+{
+  "schema": "motor_navigation_recovery_manifest_v1",
+  "parents": [
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00265-stop-clear/task/recovery.json",
+      "sha256": "ed74bffcaafda897548664f59b788b5b0c011eb52d0eef0386100dfdbb7f82dd",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00265-stop-clear/task/trace.npz",
+        "sha256": "eec420c164d96aea4009a98f7742fbf4861e667650c1eb04556e4a2bc50363fc"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00265-stop-corridor/task/recovery.json",
+      "sha256": "450071a1cd982b121dd69909d74714227a46324a07a4356113b90d91b703f814",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00265-stop-corridor/task/trace.npz",
+        "sha256": "d18c55acf4bc9705ea85d6725be90121614349f13b7203fe76fb90ec8f69e717"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00413-stop-clear/task/recovery.json",
+      "sha256": "29d632e6608405a69b3048336d484df3d3a5b40def92a9c9c6ef099d7c4414ef",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00413-stop-clear/task/trace.npz",
+        "sha256": "871972cffdb718c8c5053d63d4470bd1438bfb70b77cbd9fa9f2f3b4a7647811"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00413-stop-corridor/task/recovery.json",
+      "sha256": "8c032f25d9171603302223633f040bb13bbe62628196d917aac33733989caf4d",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00413-stop-corridor/task/trace.npz",
+        "sha256": "6ee2d646f65934a8872215fa65e97fcc428538d13925acc43cc1db301d135374"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00908-stop-clear/task/recovery.json",
+      "sha256": "f64f7f2419006a794a664f25ebddc409aa76d911c7b7609656395c1a29556348",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00908-stop-clear/task/trace.npz",
+        "sha256": "455982eb16ab3eb34b535848aa6483682b04485604c95119ad66cb573de3203f"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00908-stop-corridor/task/recovery.json",
+      "sha256": "4e744c13e69d482207d4efe2c6e51a5c8ada6894972b30cdd9b335c5557acf1e",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00908-stop-corridor/task/trace.npz",
+        "sha256": "0b5e74ca621f56b981890efedb674be447a5da074703bba9406b4aaada1ba263"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00976-stop-clear/task/recovery.json",
+      "sha256": "9a3392d4cc05f051f76caeed59157933c8e16ad597adc3a4096a853ed4df90cc",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00976-stop-clear/task/trace.npz",
+        "sha256": "0dc9c5845ecc0068cd20213682954ac07e5694818c0da0bf76e3964791281276"
+      }
+    },
+    {
+      "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00976-stop-corridor/task/recovery.json",
+      "sha256": "2b319ab181de01b0912ecdf9c9e1f7dc27de7f45a637e51eb7d5b1a9d002878e",
+      "trace": {
+        "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/motor-00976-stop-corridor/task/trace.npz",
+        "sha256": "53f61aeeaf4a99237f0588c315529b4a905bec553e1c752ab76d52ca6b1d3b49"
+      }
+    }
+  ]
+}

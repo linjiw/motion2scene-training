@@ -1,0 +1,82 @@
+{
+  "schema": "executed_motor_navigation_recovery_v1",
+  "supported": true,
+  "source": "navigation_prefix_motor_recovery",
+  "takeover_tick": 110,
+  "rows": 225,
+  "supported_rows": 115,
+  "learner_query_rows": 1,
+  "motor_sha256": "1e1ed0efaf386245afc59fda3f0e7fd1ee13ba23b3ad3c4cfd6fe0892c8b94cf",
+  "teacher_sha256": "afd649cfbbfd28833550e11a0f8c3b7a5f6a05ee8b4021dd0dac97a6f94733ce",
+  "behavior_checkpoint": {
+    "path": "/home/linjiw/research-data/m2s-nav-supported-recovery-20260913/dagger-fit/training/step-003000.pt",
+    "sha256": "f33d3b91e26cf920ea6438ea1835260f3499d49a36387bbc9f876420f99f29f5"
+  },
+  "task": {
+    "path": "/home/linjiw/research-data/m2s-bfm-motor-recovery-20260913/stopping-tasks-v2/00908/corridor.json",
+    "sha256": "ec31f8bf419973b0f5a18422a2771a94d1880a4385062535fbc26085c77cb48f"
+  },
+  "score": {
+    "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00908-stop-corridor/task/task-result.json",
+    "sha256": "4ffe5c7c2cd743cbad58d784b6b2cc5f96eb1311de1cddeb6fc776c3d8187a45"
+  },
+  "shard": {
+    "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/collect-00908-stop-corridor/task/motor-recovery.npz",
+    "sha256": "dddb407adaf6e6c89d691c2bb14a9c3f7c3d255795474dc9b5518c8f47543c62"
+  },
+  "suffix_score": {
+    "navigation_success": true,
+    "goal_ever_reached": true,
+    "terminal_hold": true,
+    "collision_free": true,
+    "fell": false,
+    "max_hold_ticks": 50,
+    "final_goal_distance_m": 0.11131394601022318,
+    "max_undesired_force_n": 0.0,
+    "control_steps": 115,
+    "reference_tracking_required": false
+  },
+  "intervention": true,
+  "reference_phase_switch": false,
+  "not_an_unassisted_navigation_result": true,
+  "continuation": {
+    "kind": "nominal",
+    "position_gain": 0.8,
+    "velocity_gain": 0.5,
+    "max_speed_mps": 0.35,
+    "max_shift_m": 0.2,
+    "activation_radius_m": 0.6
+  },
+  "continuation_outcomes": {
+    "local_stabilized": true,
+    "original_deadline_success": true,
+    "timely_suffix_supported": true,
+    "observed_suffix_ticks": 115,
+    "original_remaining_ticks": 240,
+    "diagnostic_extension_ticks": 0,
+    "local_score": {
+      "navigation_success": true,
+      "goal_ever_reached": true,
+      "terminal_hold": true,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 50,
+      "final_goal_distance_m": 0.11131394601022318,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 115,
+      "reference_tracking_required": false
+    },
+    "timely_suffix_score": {
+      "navigation_success": true,
+      "goal_ever_reached": true,
+      "terminal_hold": true,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 50,
+      "final_goal_distance_m": 0.11131394601022318,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 115,
+      "reference_tracking_required": false
+    }
+  }
+}

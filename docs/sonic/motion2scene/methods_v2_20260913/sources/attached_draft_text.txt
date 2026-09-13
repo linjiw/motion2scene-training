@@ -1,0 +1,827 @@
+PAGE 1
+From Motion–Scene Pairs to Goal-Conditioned Humanoid Control
+Preserved motor skills, terminal-control diagnostics, and execution-qualified supervision
+[Author names and affiliations needed]
+Working research draft • September 13, 2026
+Draft status. Sections 3–5 describe the reported implementation and completed terminal-control study. Section
+6 specifies a proposed continuation-qualified learning method; Section 7 specifies experiments not yet run. The
+motion–scene generator is treated as an upstream input because its implementation and comparative evidence are
+absent from the latest attachment. Missing information is marked explicitly. This is not a submission claiming
+solved navigation, hardware transfer, or a validated new learning algorithm.
+Abstract
+Generated whole-body motions paired with scene geometry can supply references for humanoid control, but
+successful reference execution does not ensure that an autonomous policy can select the same behavior from a goal
+and map. We study this interface using a navigation adapter that predicts a 114-dimensional current command for
+a frozen recovered SONIC-based motor specialist. The implemented system preserves the forecaster, reference
+encoder, finite scalar quantization, decoder, and normalization, while separating public observations from privileged
+command targets. We evaluate structured command supervision, same-state motor-action supervision, and an
+optional causal localization-velocity input on eight in-sample stopping and corridor tasks from four clips in one
+ancestry group. On the same 3,900 nominal teacher states, motor-action mean squared error decreases from 0.004055
+to 0.000296–0.000299, a 13.6–13.7-fold reduction. Nevertheless, the two new adapters complete zero and one
+of eight tasks; the selected successful task fails at both additional evaluation seeds. State-preserving takeovers
+distinguish timely recovery, stabilization that occurs only after a deadline, and persistent goal drift. These results
+show that the measured offline fitting gains do not establish reliable navigation and motivate, without validating,
+navigation-induced continuation-qualified supervision. We formulate that extension and a matched-budget study of
+generated-pair utility. Reliable held-out navigation, context-dependent route or posture selection, and data-acquisition
+advantages remain to be demonstrated.
+1. Introduction
+A humanoid can possess a useful motion skill that its autonomous controller cannot reliably invoke. In the setting
+studied here, a full-command motor specialist completes eight stopping and corridor tasks when supplied with
+detailed commands, whereas an adapter receiving a goal and known scene completes none in the original matched
+pilot. The discrepancy matters because the command stream contains decisions that navigation must make: how to
+approach, when to slow down, and how to regulate position after reaching a destination. Removing the reference
+changes the decision problem rather than merely compressing the input [1, 2].
+Motion-tracking foundations provide an attractive control substrate. SONIC exposes learned motor representations
+and demonstrates downstream use through a kinematic planner; BFM studies masked online distillation for flexible
+behavior specifications [3, 4]. Neither result establishes that arbitrary predicted commands preserve a specific
+downstream task. A frozen controller can retain its original behavior under valid commands while responding poorly
+to inconsistent commands produced by a learned adapter. Our study therefore separates preservation of the motor
+function from the adapter’s ability to select commands that lead to successful execution.
+1
+
+
+PAGE 2
+Motion–Scene Pairs to Goal-Conditioned Control
+Working draft 0.1
+Motion–scene pairing creates a second opportunity and a second ambiguity. A generated scene may be geometrically
+compatible with a reference without providing evidence that the robot executed it, stopped successfully, or recovered
+after drifting from it. Motion-conditioned environment construction has precedents in learning from hallucination,
+and recent humanoid systems pair motions with terrain and distill perceptive skills [5–7]. We investigate how
+these resources should be connected to a preserved motor interface without treating geometric compatibility or an
+available expert query as a successful navigation demonstration.
+The latest increment makes the unresolved question sharper. Structured command and motor-action supervision
+greatly improve fitting on recorded teacher states, yet the new policies remain unreliable in the same eight tasks. A
+causal velocity input produces one original-panel success, but that success does not repeat in two adaptively selected
+follow-up evaluations. Takeover diagnostics additionally show that the nominal continuation works from some
+student states and not others. These observations are evidence against promoting nominal-state fitting error as the
+principal navigation model-selection signal in this pilot; they do not identify a unique failure mechanism [1].
+The current contribution is an implemented motor-preserving navigation interface and an instrumented empirical
+study that separates offline fit, unassisted task success, local recovery, and deadline censoring. The proposed next
+contribution is execution-qualified supervision on navigation-induced states, followed by a controlled evaluation
+of generated motion–scene data. The central hypothesis is that useful downstream transfer depends on task-
+compatible coverage of approach, transition, braking, and recovery states, rather than nominal geometric pairing
+alone. That hypothesis remains open to comparison with simpler explanations, including observation insufficiency,
+command-interface limitations, and inadequate outcome feedback.
+From paired motions to a public navigation interface
+Solid: reported implementation Dashed: proposed extension Gray: fixed motor components
+TRAINING DATA / PRIVILEGED SIDE
+Motion–scene pairs
+Reference + geometry
+Lineage and compatibility
+Execute in the scene
+Teacher trajectories
+Task-success receipts
+Episode records
+Pre-action measurements
+Targets + executed actions
+Same-state motor target
+a* = M(h, c*)
+No target gradients
+Geometry-only pairs do not supply executed navigation actions.
+DEPLOYED ACTOR / IMPLEMENTED
+Public observations
+930D native robot history
+Goal + registered 3D map
+Causal velocity + validity
+Navigation adapter
+512-wide adapter
+Obstacle-set encoder
+114D predicted command
+Frozen motor M(h, c)
+Forecaster →reference encoder
+FSQ →decoder + normalization
+Native 29D motor action
+Physics
+transition
+next causal observation
+training loss only: action MSE + 0.1 structured command MSE
+NEXT LOOP: EXISTING CAPTURE + PROPOSED QUALIFICATION / FITTING
+Student-state capture
+Capture candidates
+850 rows; 0 supported now
+Bounded continuations
+Brake / correct / hold
+Execute takeover tests
+Separate outcomes
+Local stabilization
+Original-deadline success
+Supported aggregation
+Recent data + replay
+Then unassisted evaluation
+No reference clock, clip ID, future robot pose, or candidate expert command enters action inference.
+Figure 1: Motor-preserving navigation and the proposed teaching extension. The public actor predicts current commands and
+uses the unchanged motor specialist. Privileged same-state targets affect training only. Solid components denote reported
+implementation; dashed components denote the proposed qualification and fitting extension. Candidate capture exists, but
+its 850 recorded rows currently have no supported-query labels. The upstream generator’s internals are not specified by the
+attachment.
+2
+
+
+PAGE 3
+Motion–Scene Pairs to Goal-Conditioned Control
+Working draft 0.1
+2. Related work and the research distinction
+Motor foundations and task interfaces. SONIC supports motor reuse through learned representations and
+downstream planning [3]. BFM combines masked online distillation and a conditional variational model for flexible
+commands [4]. The present adapter does not claim a new universal motor foundation. It uses the recovered local
+specialist as a fixed function and studies the information and supervision needed to access its behavior from goal/map
+inputs.
+Motion-conditioned data and whole-body traversal. Learning from Learned Hallucination learns motion-
+conditioned obstacle configurations for ground and aerial navigation [5]. PHP composes atomic motions, trains
+tracking experts, and combines DAgger with reinforcement learning to obtain depth-conditioned humanoid skills
+[6]. Light-Loco-Parkour expands sparse seed motions into terrain-paired references and explicitly trains transitions
+between locomotion and whole-body skills [7]. These are close precedents, not evidence that the present pairing
+pipeline is novel. A differentiated contribution requires measuring the learning or acquisition value of this pipeline
+against a valid alternative.
+Navigation and locomotion teaching. GuideWalk uses a composite navigation/locomotion teacher and subsequent
+reinforcement learning with imitation [8]. Collision-Free Humanoid Traversal studies obstacle-dependent whole-
+body behavior with a humanoid potential-field representation and hybrid scene generation [9]. Consequently, neither
+a hierarchical teacher nor obstacle traversal alone is a sufficient novelty claim here. The intended distinction is
+the connection between generated motion–scene supervision, a fixed anticipatory motor interface, and empirically
+qualified corrections on student-induced states.
+Learner-state supervision and asymmetric information. DAgger addresses the distribution induced by a
+learned policy rather than only the demonstration distribution [10]. Asymmetric-learning work separately shows
+that a privileged expert can make choices a partially informed learner cannot reliably infer [11]. Our proposed
+extension does not replace these principles or inherit their guarantees. It addresses a local implementation issue: a
+nominal reference tracker may return an action at a student state without supplying a task-compatible continuation.
+Qualification and observation checks must therefore precede strong claims about expert supervision.
+3. Problem definition
+3.1 Task, observations, and the fixed motor system
+Let 𝑥𝑡denote simulator state and let ℎ𝑡∈R930 denote the motor specialist’s native observation history. Let 𝐶denote
+a complete registered static scene and 𝑔the requested destination and terminal requirements. We consider local
+whole-body traversal followed by stable stopping. Evaluation occurs under an original task-specific deadline 𝑇and
+a fixed prohibited-contact/fall contract. This study uses ideal localized poses; it does not establish camera-based
+navigation or robustness to pose noise and delay [1].
+The recovered motor specialist is the fixed mapping
+𝑎𝑡= 𝑀𝜓(ℎ𝑡, 𝑐𝑡),
+𝑐𝑡∈R114,
+𝑎𝑡∈R29.
+The 114-dimensional interface contains current desired-command fields; one arrival coordinate is unavailable in the
+reported training view. The 29 output coordinates retain their native action semantics and must not be relabeled as
+torques. The composite 𝑀𝜓includes the recovered forecaster, pretrained reference encoder, finite scalar quantization
+(FSQ), decoder, and normalization buffers. This notation deliberately abstracts the precise tensor wiring rather than
+inventing an unreported decomposition [1, 2].
+The implemented navigation policy is
+ˆ𝑐𝑡= 𝐺𝜃(𝑜𝑡),
+𝜋𝜃(𝑜𝑡) = 𝑀𝜓(ℎ𝑡, ˆ𝑐𝑡),
+3
+
+
+PAGE 4
+Motion–Scene Pairs to Goal-Conditioned Control
+Working draft 0.1
+where 𝑜𝑡contains the causal robot history, body-relative goal and registered scene representation, and optionally
+the causal localization feature defined below. Internal prediction of detailed commands is permitted; an external
+reference sequence, reference clock, motion identifier, future robot pose, and candidate expert command are not
+actor inputs. Recurrence beyond the supplied histories is a proposed comparator, not part of the reported 512-wide
+adapter.
+The task objective is to maximize 𝐽(𝜃) = E(𝑥0,𝑔,𝐶)∼P [𝑆𝑇(𝜏𝜋𝜃)] under a specified task distribution P. The completed
+pilot evaluates eight fixed training tasks, not an estimate over an independently sampled deployment distribution.
+3.2 Stable completion and finite deadlines
+To preserve the existing benchmark, define the measured terminal indicator
+𝑞𝑡= 1
+
+∥𝑝𝑡−𝑝𝑔∥2 ≤0.25 m ∧∥𝑣𝑡∥2 ≤0.10 m s−1
+.
+Both distances and speeds are three-dimensional pelvis quantities in this scorer. There is no separate posture test
+inside the hold counter. Let 𝐾𝑡= 𝑞𝑡(𝐾𝑡−1 + 1) with a reset at episode start. Let 𝐴𝑡indicate that no prohibited
+contact above 1 N or declared fall has occurred through decision 𝑡. Then
+𝑆𝑇(𝜏) = 1[∃𝑡≤𝑇: 𝐾𝑡≥50 ∧𝐴𝑡= 1].
+The control rate is 50 Hz; the fall guard is pelvis height below 0.25 m. These are the declared simulation-scoring
+thresholds, not universal safety limits. The original deadlines and scorer are retained in all official pilot comparisons
+[1].
+A full 50-tick hold cannot begin sufficiently late and still finish by the deadline. This is a property of the objective,
+not evidence that the controller cannot stabilize. We therefore separately record stabilization in explicitly extended
+diagnostic rollouts. Such a result must not overwrite 𝑆𝑇. When future posture-demanding tasks are introduced, a
+new scorer may use horizontal arrival plus an explicit terminal-posture requirement; it must not silently change the
+eight-task benchmark.
+3.3 Evidence types and the scientific question
+We distinguish a geometric pair (𝑟, 𝐶, 𝑔), an executed teacher episode, a candidate same-state query, and an executed
+continuation from a student state. Geometric compatibility does not imply successful dynamics. An executed
+nominal task does not prove recovery from arbitrary states. A numerical query does not prove that its continuation
+reaches the requested goal [1].
+Let 𝑑demo denote the distribution of recorded teacher observations and 𝑑𝜋𝜃the distribution induced by navigation-
+generated commands. The measured offline loss estimates fit under the former. Our central question is whether
+task-compatible supervision collected under the latter improves stable task completion, and whether generated
+motion–scene pairing makes that supervision more valuable or less costly to acquire. Distribution shift and expert
+incompatibility are separate hypotheses; neither follows solely from a difference between offline loss and task
+success.
+4. Reported method and implementation
+4.1 Motion–scene inputs and execution records
+The upstream pipeline supplies generated or selected references paired with scene geometry. The downstream data
+view verifies successful execution receipts, scene/continuation bindings, and ancestry. The latest increment repeats
+all eight successful teacher attempts through their original deadlines, extending the initial 2,739 rows to 3,900 with
+1,161 actually executed rows. Original root, speed, and contact prefixes match the archived traces exactly. No
+padded future frames are introduced [1].
+4
+
+
+PAGE 5
+Motion–Scene Pairs to Goal-Conditioned Control
+Working draft 0.1
+Six of the eight repeated executions remain continuously terminal after first completion. Both 00413 tails briefly
+lose the terminal condition and later regain a final 154-tick hold. Those rows are retained as executed behavior, not
+relabeled as uninterrupted standing. A successful attempt admits the episode to the positive-task view, but does not
+declare every state terminal or every candidate action a validated recovery.
+[Needed for the integrated paper: the generator’s conditioning variables, source-motion production and
+repair, scene-sampling distribution, articulated-clearance computation, generation costs, rejection reasons,
+and lineage/split construction.] The present attachment does not specify these procedures. They should become a
+substantive upstream methods subsection, not be replaced by a generic invented generator.
+4.2 Public navigation adapter and causal localization
+NavigationMotorStudent is a 512-wide command adapter with a masked permutation-invariant obstacle encoder.
+The legacy profile remains loadable. The optional nav_goal_map_localization_v2 appends three estimated
+body-velocity components and one validity bit [1].
+For pre-action measurements ( ˆ𝑝𝑊
+𝑡, ˆ𝑅𝑡, 𝑡𝑚) and a measurement five control intervals earlier, the feature is
+ˆ𝑣𝐵
+𝑡= ˆ𝑅T
+𝑡
+ˆ𝑝𝑊
+𝑡−ˆ𝑝𝑊
+𝑡−5
+𝑡𝑚−𝑡𝑚−5
+.
+The denominator is actual elapsed measurement time. The first five decisions are invalid and return zero velocity.
+Episode resets and goal changes reset the estimator. The computation does not difference rotating goal vectors and
+does not use simulator velocity. However, the pose stream is supplied from ideal simulator measurements with zero
+delay, so the observation remains an ideal-localization assumption, not a sensor robustness result. The backward
+window is causal and smooths recent acceleration [1].
+Collection records pre-action position, quaternion, and measurement time. Loading reconstructs velocity across the
+complete episode before target masks are applied and checks equality with the stored feature. This retains causal
+timing and gaps. The native 930-dimensional motor history is not reinterpreted as an arbitrary sequence of equally
+sized blocks.
+[Needed for reproduction: exact adapter depth/activations, complete public goal/map tensor schema, obstacle
+count/overflow behavior, frame and orientation conventions, parameter count, and runtime latency.] Width,
+feature additions, and preservation checks alone do not specify an executable architecture.
+4.3 Structured command and motor-action supervision
+Let 𝑐★
+𝑡be the candidate expert command constructed at the same measured history. The principal action target is
+𝑎★
+𝑡= sg[𝑀𝜓(ℎ𝑡, 𝑐★
+𝑡)],
+ˆ𝑎𝑡= 𝑀𝜓(ℎ𝑡, 𝐺𝜃(𝑜𝑡)),
+where sg stops target gradients. The original teacher action is retained as a quality diagnostic rather than silently
+requiring the adapter to compensate for discrepancies between the teacher and the frozen specialist [1].
+The command loss averages normalized coordinate errors within each of eight semantic groups and then averages
+the groups equally. With ˜𝑐denoting the implementation’s normalized command coordinates, the objective is
+Lcmd = 1
+8
+8
+∑︁
+𝑘=1
+1
+|𝐼𝑘|
+∑︁
+𝑗∈𝐼𝑘
+( ˜𝑐𝑗−˜𝑐★
+𝑗)2,
+Lact = 1
+29 ∥ˆ𝑎𝑡−𝑎★
+𝑡∥2
+2,
+Lstructured_motor = Lact + 0.1Lcmd.
+The command-normalization standard-deviation floor is 0.05; no extra teacher-token term is added. The groups and
+half-open coordinate ranges are shown below. The legacy objective is retained for reproducing the original pilot [1].
+5
+
+
+PAGE 6
+Motion–Scene Pairs to Goal-Conditioned Control
+Working draft 0.1
+Table 1: Reported current-command supervision groups. Coordinate ranges are half-open; the unavailable arrival coordinate is
+excluded.
+Semantic group
+Half-open range
+Coordinates
+Heading
+0:2
+2
+Velocity
+2:5
+3
+Height
+5:6
+1
+Yaw rate
+6:7
+1
+Keypoints
+8:50
+42
+Joint position
+50:79
+29
+Joint velocity
+79:108
+29
+Orientation
+108:114
+6
+Coordinate 7 is unavailable and excluded; the groups contain 113 supervised coordinates. The exact orientation
+and heading encodings must be taken from the implementation rather than inferred from their dimensionality. The
+action-loss scaling and training normalization receipt should be included in the eventual release.
+4.4 Preservation and query capture
+An action-only gradient smoke through the actual encoder, FSQ, and decoder produces a nonzero gradient at the
+navigation command head and no inherited-parameter gradients. Each fit checks exact equality of inherited tensors
+and an unchanged full-command anchor batch. These checks establish preservation of the bound motor function on
+the specified tensors and test inputs; they do not establish that the navigation adapter selects valid commands in
+closed loop [1].
+NavigationQueryCallback chooses the unassisted navigation action first, then reconstructs a candidate full
+command at that physical state and queries the frozen motor. The target is never passed to action inference. Two
+archived-policy attempts produce 850 candidate rows with root, speed, and contact parity to the original rollouts.
+Every supported-query mask is false, and the candidate schema is rejected by the successful-task loader. No
+navigation DAgger fit has been performed on these rows [1].
+5. Completed experiments and results
+5.1 Comparison contract
+The registered comparison trains two new adapters from scratch for 6,000 updates with batch size 256, AdamW
+learning rate 10−4, and training seed 91370. Both use the same 3,900 executed rows, frozen motor, exact map, eight
+tasks, original deadlines, and evaluation seed 91260. The final registered update is evaluated without task-based
+checkpoint selection [1].
+The two new conditions differ in the causal localization feature. This is an information-interface comparison within
+one small pilot. Comparisons to the archived adapter also change the objective and stopping-tail data, so they cannot
+separately identify the effect of either. Eight tasks from four clips in one ancestry group are in-sample observations,
+not eight independent motion sources or a held-out scene test.
+5.2 Does improved nominal-state fit yield reliable task completion?
+Table 2 reports the supplied measurements. All offline MSE values are computed on the same 3,900 nominal
+teacher states; the archived adapter was trained on only 2,739 rows. These MSEs are not a held-out navigation-state
+evaluation.
+6
+
+
+PAGE 7
+Motion–Scene Pairs to Goal-Conditioned Control
+Working draft 0.1
+Table 2: Reported original-panel outcomes. Structured uses the new motor objective; Localized adds causal velocity. Error is
+evaluated on common nominal teacher states, not held-out navigation states. Counts refer to the eight original training tasks.
+Condition
+Training rows
+Nominal-state
+action MSE
+Stable
+completion
+Goal entry
+Best hold
+Contact
+attempts
+Archived
+2,739
+0.004055
+0/8
+5/8
+42 ticks
+0/8
+Structured
+3,900
+0.000296
+0/8
+4/8
+5 ticks
+1/8
+Localized
+3,900
+0.000299
+1/8
+3/8
+50 ticks
+0/8
+The MSE ratios are 0.004055/0.000296 = 13.699 and 0.004055/0.000299 = 13.562. All eight physical command-
+group MSEs also improve according to the report. Yet the new policies do not exhibit reliable task completion. The
+localized policy succeeds on 00976 clear at tick 332 (6.64 s), with 0.131 m final 3D goal distance, but fails the two
+adaptively selected repeats of that same task at evaluation seeds 91261 and 91262, each with zero hold ticks. Those
+repeats are not complete eight-task panels and are not independent training runs [1].
+10
+3
+Motor-action MSE on the same 3,900 nominal teacher states (log scale)
+0
+1
+2
+Stable completions / 8 original tasks
+Archived: 0/8
+MSE 0.004055
+Structured: 0/8
+MSE 0.000296
+Localized: 1/8
+MSE 0.000299
+Better nominal-state fit did not establish reliable navigation
+One training seed; in-sample tasks. Selected successful task failed at both follow-up seeds.
+Figure 2: Measured nominal-state fit and original-panel task outcome. Each point is one reported adapter condition; the
+horizontal axis uses the same 3,900 teacher states and a logarithmic scale. No confidence intervals are inferred from the
+aggregate report. The localized condition’s one successful task fails at both selected follow-up seeds. Lower fitting error did
+not establish reliable navigation in this pilot.
+The localized policy additionally reaches a 44-tick hold in 00976 corridor. At tick 325, distance remains 0.228 m
+while speed rises to 0.10994 m/s, violating the terminal speed criterion. Its remaining six original-panel attempts
+never accumulate a hold tick. All attempts from both new conditions remain above the declared fall threshold;
+structured-only 00265 corridor terminates on prohibited contact at tick 488 [1].
+The evidence supports a narrow but useful finding: large improvements in fit to these recorded teacher states are an
+inadequate promotion signal for the navigation policy. It does not establish that localization is ineffective, that online
+aggregation alone will solve the problem, or that the command representation is the unique bottleneck. Neither
+new checkpoint is promoted over the archived navigation baseline, and no new full-command motor checkpoint is
+selected.
+7
+
+
+PAGE 8
+Motion–Scene Pairs to Goal-Conditioned Control
+Working draft 0.1
+5.3 What ends a near-successful hold?
+The archived 00908 corridor policy maintains 42 valid ticks before speed exceeds the threshold at measurement tick
+243. Its distance remains inside the goal. By contrast, the archived 00265 corridor policy’s 38-tick hold is still
+intact at the 500-tick deadline; it is a late-arrival failure, not a broken 38-tick hold. Other archived goal entries never
+satisfy position and speed jointly even for one tick [1].
+This distinction changes the intervention. The first case requires suppressing velocity and subsequent drift. The
+second requires earlier arrival or an earlier transition to braking under the unchanged deadline. Treating both as a
+generic failure to stand would conflate different task mechanisms.
+5.4 Can the nominal motor continuation recover student states?
+Four predeclared takeovers begin with the archived navigation policy and switch within the same physical episode.
+They preserve robot and observation/controller histories, reconstruct commands at actual measured states, retain the
+nominal reference clock without a phase jump, and preserve RNG state when the diagnostic motor is loaded. All
+pre-switch traces match the baseline [1].
+Table 3: Predeclared state-preserving takeover probes. These are privileged interventions, not unassisted student successes.
+Original deadlines remain fixed.
+Task
+Switch time
+Distance / speed
+Post-switch max hold
+Original-
+deadline success
+00908 corridor
+3.60 s
+0.143 m / 0.116 m/s
+50
+Yes
+00908 corridor
+4.86 s
+0.185 m / 0.115 m/s
+48
+No
+00265 corridor
+8.00 s
+0.352 m / 0.433 m/s
+23
+No
+00265 corridor
+9.24 s
+0.150 m / 0.103 m/s
+25
+No; only 38 ticks
+remain
+These are privileged diagnostic interventions, not navigation-policy successes. One early student state is recoverable
+within the task deadline with the tested continuation. The other probes do not establish such recovery. The final
+probe is deadline-censored: 38 remaining ticks cannot contain a new 50-tick post-switch hold.
+Two adaptive extensions add 100 ticks and remain outside the official benchmark. From the 00265 tick-462 state, the
+continuation achieves a 50-tick post-switch hold after 63 continuation steps, at global tick 525. The original 500-tick
+task still fails. From the late 00908 tick-243 state, the extended run still reaches at most 48 hold ticks and ends 0.452
+m from the goal. Waiting longer with that nominal continuation does not solve that tested state’s position regulation
+[1].
+5.5 What do the candidate queries establish?
+The two captured navigation attempts have candidate motor-action disagreement of 0.06476 and 0.08951. These
+values describe disagreement with unqualified nominal-clock advice. They are not validated expert regret and should
+not be presented as equivalent to the nominal-state action-MSE evaluation without checking the target, support, and
+reduction contracts. The useful implementation result is exact unassisted-rollout parity with separate candidate
+storage, not a completed online-learning result [1].
+6. Proposed method: execution-qualified navigation supervision
+Status: design proposal. This section specifies the next method to implement and test. The reported candidate
+capture and individual takeovers are prerequisites; a validated continuation bank, supported aggregation, and
+navigation DAgger training do not yet exist in the supplied evidence.
+8
+
+
+PAGE 9
+Motion–Scene Pairs to Goal-Conditioned Control
+Working draft 0.1
+Why 42 and 38 hold ticks mean different things
+Recorded event summaries; no unobserved state trajectory is drawn.
+00908 corridor: regulation failure
+00265 corridor: deadline censoring
+Archived navigation: 42 consecutive valid ticks
+At tick 243: distance 0.184695 m
+Speed 0.114575 m/s > 0.10 m/s
+Early takeover at 3.60 s: succeeds on time.
+Late takeover at 4.86 s: max hold 48 ticks.
+100 extra ticks still do not solve drift.
+Extended final distance: 0.452 m.
+Next target: goal-correcting recovery.
+Archived navigation: 38-tick hold still intact
+Original deadline: 500 control decisions
+A late arrival, not a broken 38-tick hold
+Late takeover at tick 462: only 38 ticks remain.
+Extended diagnostic: 50-tick hold after
+63 continuation steps, at global tick 525.
+Original-deadline task still fails.
+Next target: earlier braking and arrival.
+Local stabilization support and on-time task success require separate labels.
+Figure 3: Terminal-control diagnoses from reported events. The left case loses its terminal condition through excess speed and
+later drift. The right case is censored by the original deadline and stabilizes only in an extended diagnostic. These are event
+summaries, not reconstructed time-series traces. Interventions are not counted as student successes.
+6.1 Task-compatible continuation selection
+Let 𝜁𝑡contain the complete decision state needed to reproduce a query: robot and relevant physics state, motor
+history, actuator/delay state where applicable, task/scene identity, and teacher bookkeeping. A proposed continuation
+provider selects
+𝑟★
+𝑡= 𝐾(𝜁𝑡, 𝑔, 𝐶),
+𝑐★
+𝑡= 𝐵(𝜁𝑡, 𝑟★
+𝑡),
+where 𝐵reconstructs the motor command in the current measured frame. This differs from copying a command
+row or advancing a nominal clock merely to match a pose. A hierarchical training expert does not add reference
+information to the deployed navigation actor.
+The first bank should address two measured deficits: earlier braking for 00265-like approaches and position-
+correcting terminal recovery for late 00908-like states. Start with executed approach–brake–hold sequences and add
+goal-correcting continuations whose entry and exit transitions are physically validated. A stationary terminal pose is
+a candidate, not proof of braking or position regulation. Reference translation, time warping, or splicing must not
+move a planted contact or teleport the robot; any changed continuation requires new execution evidence.
+If the existing reference generator cannot produce a tested correction from the late state, train a narrow command-
+space task teacher with the motor fixed, or extend the reference generator. A new student architecture cannot supply
+missing expert capability by definition. This is a contingent design choice, not a result that task RL is necessary.
+6.2 Separate local stabilization from deadline-qualified task support
+For a tested entry state and continuation, store a receipt
+𝜌= (state_id, continuation_id, 𝐻, 𝑆local, 𝑆deadline, Δ𝑡stable, contacts, termination).
+𝑆local indicates measured stabilization within the declared diagnostic horizon; 𝑆deadline indicates success within the
+original task budget. A continuation may be locally successful yet late. The receipt belongs to its tested state, history,
+scene, continuation, and horizon. It is neither a safety certificate nor evidence for untested neighboring states.
+9
+
+
+PAGE 10
+Motion–Scene Pairs to Goal-Conditioned Control
+Working draft 0.1
+This yields target-specific admission rather than one eligibility flag. Locally successful late segments can teach
+a stabilization subproblem where their observations and task labels are compatible. They must not be counted
+as successful original-deadline episodes. Failed or unknown candidate advice remains available for analysis and
+sampling, but is not used as positive expert imitation by default. An unavailable expert is not a negative label for the
+student action.
+Deadlines also introduce an information boundary. If the expert changes its decision based on remaining time, a
+student cannot be expected to infer hidden urgency from identical public observations. The first implementation
+should keep the expert’s local regulation rule independent of hidden clip time and treat the deadline as an evaluator.
+A deliberately deadline-aware policy would require a separately declared public time-to-deadline input and a new
+matched observation comparison.
+6.3 Supported short-cycle aggregation
+Initialize from the declared offline adapter. In each bounded cycle, freeze a driver snapshot and collect unassisted
+navigation trajectories. Sample entry states by phase and observed failure, with coverage quotas that prevent selecting
+only easy standing states. Validate a finite set of candidate continuations by state-preserving takeover or verified
+simulator branching. Record candidate and executed actions separately.
+Add admitted query/recovery targets to a separate replay view and fit the existing objective with each term
+normalized by its admitted target count. A starting proposal is equal sampling of nominal task replay and supported
+recent/recovery targets, followed by an explicit mixture comparison; this ratio is a hypothesis, not a delivered
+curriculum. If the supported stratum is empty, do not silently substitute old rows and call the run navigation DAgger.
+Evaluate the new student without intervention after every predeclared budget. Log total simulator transitions, expert
+queries, branch executions, useful supported decisions, attempted tasks, optimizer updates, wall time, and replay
+exposure. Qualification has a cost; any efficiency claim must include failed candidates and validation rollouts.
+The effect should be tested against continued offline fitting, fresh nominal-clock querying, and validated-query
+aggregation using the same learner.
+The nominal-clock arm is an exploratory simulation comparison with
+explicit target uncertainty, not an assumed perfect DAgger expert. A data-volume-matched nominal replay control
+distinguishes useful state/target coverage from simply obtaining more rows.
+6.4 Contingent architecture and reward comparisons
+Two later interventions answer specific unresolved questions. A small recurrent navigation encoder can test whether
+causal context history beyond the backward velocity estimate is useful. Sequence training must preserve original
+indices, reset masks, burn-in, and the same previous-command convention used in inference. One-step expert
+histories cannot be silently substituted for the recurrent student’s own command history.
+A direct-reference predictor can test whether the current-command-plus-forecaster interface limits scene-dependent
+anticipation. Keep the public input, decoder where feasible, execution budget, and target evidence matched.
+Alternatively, task-reward refinement of the command adapter can test whether an outcome-level objective corrects
+residual failures despite good imitation. For stochastic command-space optimization, probability ratios must be
+computed on the actually sampled command variables, not assumed densities of decoded motor actions. PHP and
+GuideWalk motivate this comparison but do not establish its outcome for the present stopping task [6, 8].
+7. Planned downstream experiments
+Status: no results in this section have been measured. The next study should establish both a working capability
+and the contribution of generated pairing. Expanding the benchmark alone does not validate a data-generation
+method.
+10
+
+
+PAGE 11
+Motion–Scene Pairs to Goal-Conditioned Control
+Working draft 0.1
+7.1 Make the scene and goal change the required behavior
+Generate physically executed matched task families. A route-switch pair keeps initial state and goal fixed but changes
+geometry so that different passages must be taken. A posture-switch pair changes clearance and requires a matched
+whole-body response. A goal-switch pair holds the scene fixed and changes the requested destination, including
+goals away from obstacles. Irrelevant-scene variations should leave the valid response essentially unchanged.
+Each condition needs its own compatible executed continuation. Reusing the old action labels after blocking the old
+route creates contradictory supervision. Easy corridors are retained as motor and terminal-control tests, but do not
+demonstrate alternate-route or low-clearance reasoning. The current eight tasks do not require those choices [1].
+Proposed tests that make context necessary
+Conceptual, not to scale; every depicted response must be executed and validated before training.
+A. Only the lower passage is open
+start
+goal
+Same initial state and goal; matched expert continuation.
+B. Only the upper passage is open
+start
+goal
+Same initial state and goal; matched expert continuation.
+C. Upright passage
+goal
+A changed clearance needs a matching executed response.
+D. Low-clearance passage
+goal
+A changed clearance needs a matching executed response.
+Also test goal switches and irrelevant-geometry changes.
+Report success on both members; never copy labels onto incompatible geometry.
+Figure 4: Planned counterfactual task design. Top: the same start and goal with alternate passages blocked. Bottom: a
+schematic clearance change requiring a different posture. Dashed routes and humanoid sketches are conceptual, not measured
+robot trajectories or demonstrated successes. Add goal-switch and irrelevant-geometry controls.
+For matched tasks 𝐴𝑖, 𝐵𝑖, report
+PairedSuccess = 1
+𝑁
+𝑁
+∑︁
+𝑖=1
+1[𝑆𝑇(𝐴𝑖) = 1 ∧𝑆𝑇(𝐵𝑖) = 1].
+Also report each member’s success and actual route/posture outcomes. Merely changing the first action when scene
+tokens change is insufficient; valid behavior may diverge only near the relevant decision point.
+11
+
+
+PAGE 12
+Motion–Scene Pairs to Goal-Conditioned Control
+Working draft 0.1
+7.2 Is the generated data useful, and is it efficient to acquire?
+Fix the motor specialist, navigation learner, public inputs, and evaluation tasks. Compare the generated-pair pipeline
+with a valid seed/procedural scene source. Both must provide compatible labels. Measure learning value at matched
+executed-demonstration and expert-query budgets, and measure acquisition value at matched generation/simulation
+budgets. The latter includes rejected generation attempts, teacher failures, and continuation-validation cost.
+A small factorial study can separate data source and teaching schedule: seed/procedural versus generated pairing,
+each with offline imitation versus the chosen supported-aggregation recipe. This tests whether improvements are
+explained by the data source, learner-state supervision, or their interaction. It avoids attributing a combined change
+to the generator alone. A full matrix is warranted only after the bounded stopping pilot demonstrates a useful
+learning signal.
+Table 4: Proposed experiments and current status. No planned success values, uncertainty intervals, or data-efficiency gains
+are supplied.
+Study
+Main comparison
+Primary outcome
+Current status
+Continuation competence
+Nominal versus
+goal-correcting
+continuation at matched
+student states
+Local stabilization;
+original-deadline success
+Individual nominal probes
+only
+Navigation-state teaching
+Continued offline versus
+supported short-cycle
+aggregation
+Unassisted stable
+completion per
+query/transition budget
+Not run
+Context necessity
+Goal/history versus
+goal/history/map; valid
+paired tasks
+Paired success and correct
+route/posture
+Not run
+Generated-pair utility
+Valid seed/procedural
+versus generated data;
+same learner
+Held-out success versus
+data and interaction budget
+Not run
+Acquisition yield
+Same source alternatives
+under fixed acquisition
+budget
+Useful execution and
+recovery coverage per cost
+Not run
+7.3 Splits, comparators, and uncertainty
+Keep the eight current tasks as a regression suite. Freeze new layouts independently of demonstration trajectories
+before training or method selection. Preserve scene families, repaired-motion parents, crops, and source ancestry in
+split manifests. Generalization to new layouts with familiar motor skills is a valid claim and should be distinguished
+from generalization to new motion ancestry.
+Evaluate the full-command specialist on every proposed task as an oracle-command execution control. Report
+both total task coverage and navigation transfer conditional on oracle-supported tasks; do not silently remove
+oracle failures from the main denominator. This control has richer information and is not an information-matched
+autonomous baseline.
+Use independent training seeds for training variation and paired evaluation initial states where meaningful. Count
+motion ancestry groups, clips, layouts, tasks, episodes, and seeds separately. Choose the final sample size from pilot
+variability, desired precision, and the smallest practically meaningful success difference. A fixed count of seeds is
+not by itself sufficient for a generalization claim. Confidence estimates should preserve layout/source clustering and
+paired comparisons; the current aggregate report does not support constructing missing episode-level intervals.
+12
+
+
+PAGE 13
+Motion–Scene Pairs to Goal-Conditioned Control
+Working draft 0.1
+8. Discussion and limitations
+What the pilot establishes. The implemented interface preserves the bound motor path, and the supplied study
+distinguishes observation timing, target construction, offline fitting, task success, and takeover outcomes. It
+demonstrates that better nominal-state fit did not produce a reliable policy under the tested setting. That is a useful
+diagnostic result, not a proof that all offline distillation is inadequate.
+What remains unexplained. Navigation-induced state coverage is an important candidate explanation, but the
+qualified expert support needed to test it is not yet available. The 850 queries are deliberately unqualified. Missing
+temporal information, inconsistent command sequences, task-incompatible nominal references, and a mismatch
+between per-step error and terminal success remain competing explanations. The causal velocity comparison is too
+narrow and unstable to resolve them.
+What is not a downstream scene result. Current clear/corridor tasks do not require alternate routing or low-
+clearance posture changes. Four clips in one ancestry group cannot establish broad source diversity. A known map
+and zero-delay ideal poses cannot establish sensor-only control. The supplied evaluations run in simulation; there
+is no hardware navigation evidence in this packet. Retained normalization and weights do not imply safety under
+arbitrary predicted commands [1].
+What the integrated paper still needs. The upstream generation procedure and motor-recovery controls must
+be documented from their actual artifacts. The existing earlier report provides useful motor-completion counts,
+but these are not a substitute for the missing methods and per-motion evidence. The downstream contribution
+needs a task family that uses whole-body context, reliable unassisted execution, independent layouts, and a valid
+pairing/data-value comparison. None should be filled with anticipated numbers.
+9. Conclusion
+A strong full-command motor specialist is a necessary resource for the studied interface, but nominal command
+execution and navigation competence are different properties.
+In an eight-task in-sample study, structured
+motor supervision and causal localization reduce recorded teacher-state action error by approximately 13.6–13.7
+times without establishing reliable task completion. State-preserving takeovers separate local recoverability,
+deadline-limited stabilization, and persistent goal drift. The next methodological step is to qualify task-compatible
+continuations from navigation-induced states and test whether their supervision improves unassisted control. The
+intended broader contribution is a measured connection from generated motion–scene pairs to useful downstream
+whole-body navigation; that connection remains an explicit experimental objective rather than a completed claim.
+13
+
+
+PAGE 14
+Motion–Scene Pairs to Goal-Conditioned Control
+Working draft 0.1
+Appendix A. Upstream motor context and evidence boundaries
+An earlier user-supplied follow-up reports 77/89 training completions after preserving the pretrained reference
+encoder and predicting missing desired-reference context, followed by 88/89 after same-state DAgger. The selected
+model reports 85/89 and 86/89 on two further evaluation seeds, with 10/20 development completions at each of
+three evaluation seeds. A fresh teacher control reports 15/20 development on the original seed. These are evaluation
+repeats of a selected model, not independent training repetitions [2].
+The present attachment independently describes that selected motor as the fixed downstream backend and reports the
+preservation checks. It does not supply the underlying motor-recovery training code or per-motion result files. For
+an integrated submission, replace this context paragraph with an evidence-linked motor-method/results subsection,
+including information-matched controls, history and command semantics, training resources, and ancestry-aware
+splits. Do not combine the fresh teacher’s 15/20 with the historical 14/20 or released-model comparisons as though
+they were one execution.
+Appendix B. Reproduction record and missing artifacts
+The supplied report records 99 impacted tests passing and nine changed Python files passing Ruff and Black. Native
+evidence comprises eight teacher collections, sixteen new adapter task evaluations, four original-deadline takeovers,
+two candidate-query rollouts, two extended-deadline diagnostics, and two selected-task repeats. The study uses a 50
+Hz motor loop and 200 Hz pair-resolved contacts. These are source-reported validation results, not tests executed by
+the manuscript-drafting process [1].
+The external research packet and compact evidence directory named in the report were not included in the attachment.
+The manuscript therefore needs the exact per-task scores, termination traces, training receipts, checkpoint hashes,
+command-normalization buffers, optimizer details beyond those listed, robot/action configuration, and generation
+manifests before submission. The original plot referenced by the report was also not attached; the figures in this
+draft are newly generated from the reported aggregate values or explicitly labeled schematics.
+A simple accounting check gives 6000 × 256/3900 ≈393.85 average row exposures if the reported updates
+correspond to full row batches. This is an accounting ratio, not proof of overfitting and not an observed per-row
+sampling frequency. The actual sampler and masks are required to characterize exposure.
+Appendix C. Evidence-source convention
+The current terminal-control report is the primary experimental source. An earlier conversational report supplies
+upstream motor context. External papers support related-work statements and methodological precedents only; they
+do not validate this system. Proposed procedures and conceptual figures are authored designs, not new simulation
+results. The accompanying evidence ledger maps claims and numbers to the source report’s line ranges and records
+the supplied file’s SHA-256 hash.
+References
+[1]
+Navigation terminal control: Preserved motor, measured context and same-state targets. 2026. User-supplied
+research report, September 13. Preserved in sources/navigation_terminal_report_20260913.md. Numerical
+evidence is report-derived; raw experiment packets were not independently inspected.
+[2]
+Motor recovery and navigation implementation follow-up. 2026. Section 14 of the research report supplied
+earlier in the conversation, September 13. See sources/prior_context_summary.md; underlying motor-study
+artifacts are needed for submission.
+[3]
+Z. Luo, Y. Yuan, T. Wang, C. Li, et al. SONIC: Supersizing motion tracking for natural humanoid whole-body
+control. Science Robotics, 11, eaed4592, 2026. arXiv version 4, verified September 13, 2026. doi:
+10.1126/scirobotics.aed4592.
+14
+
+
+PAGE 15
+Motion–Scene Pairs to Goal-Conditioned Control
+Working draft 0.1
+[4]
+W. Zeng, S. Lu, K. Yin, et al. Behavior foundation model for humanoid robots. 2025. https://arxiv.org/abs/
+2509.13780.
+[5]
+Z. Wang, X. Xiao, A. J. Nettekoven, et al. From agile ground to aerial navigation: Learning from learned
+hallucination. 2021. https://arxiv.org/abs/2108.09793.
+[6]
+Z. Wu, X. Huang, L. Yang, et al. Perceptive humanoid parkour: Chaining dynamic human skills via motion
+matching. 2026. Version 2. https://arxiv.org/html/2602.15827v2.
+[7]
+H. Chen, Z. Li, H. Wang, et al. Light-loco-parkour: Versatile perceptive whole-body locomotion via
+multi-skill distillation. 2026. Version 1. https://arxiv.org/html/2608.02653v1.
+[8]
+H. Han, C. Chen, L. Gong, et al. GuideWalk: Learning unified autonomous navigation and locomotion for
+humanoid robots across versatile terrains. 2026. Version 1. https://arxiv.org/html/2606.10449v1.
+[9]
+H. Xue, S. Liang, Z. Zhang, et al. Collision-free humanoid traversal in cluttered indoor scenes. 2026.
+Version 2. https://arxiv.org/abs/2601.16035v2.
+[10]
+S. Ross, G. Gordon, and D. Bagnell. A reduction of imitation learning and structured prediction to no-regret
+online learning. Proceedings of the fourteenth international conference on artificial intelligence and statistics,
+15, 627–635, 2011. https://proceedings.mlr.press/v15/ross11a.html.
+[11]
+A. Warrington, J. W. Lavington, A. Scibior, M. Schmidt, and F. Wood. Robust asymmetric learning in
+POMDPs. Proceedings of the 38th international conference on machine learning, 139, 11013–11023, 2021.
+https://proceedings.mlr.press/v139/warrington21a.html.
+15

@@ -1,0 +1,30 @@
+[
+  {
+    "asset": "g1_walk.png",
+    "clip": "00413",
+    "reference_frame": 75,
+    "role": "reference-pose visualization, not an executed state",
+    "source": "/home/linjiw/research-data/m2s-hindsight-dataset-v1-20260911/motions/00413/reference.npz"
+  },
+  {
+    "asset": "g1_turn.png",
+    "clip": "00413",
+    "reference_frame": 179,
+    "role": "reference-pose visualization, not an executed state",
+    "source": "/home/linjiw/research-data/m2s-hindsight-dataset-v1-20260911/motions/00413/reference.npz"
+  },
+  {
+    "asset": "g1_crouch.png",
+    "clip": "00916",
+    "reference_frame": 94,
+    "role": "reference-pose visualization, not an executed state",
+    "source": "/home/linjiw/research-data/m2s-hindsight-dataset-v1-20260911/motions/00916/reference.npz"
+  },
+  {
+    "asset": "g1_stand.png",
+    "clip": "00413",
+    "reference_frame": 284,
+    "role": "reference-pose visualization, not an executed state",
+    "source": "/home/linjiw/research-data/m2s-hindsight-dataset-v1-20260911/motions/00413/reference.npz"
+  }
+]

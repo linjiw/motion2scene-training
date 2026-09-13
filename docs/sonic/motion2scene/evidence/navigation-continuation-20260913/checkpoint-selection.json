@@ -1,0 +1,8 @@
+{
+  "selected": "recovery",
+  "checkpoint": {
+    "path": "/home/linjiw/research-data/m2s-nav-continuation-20260913/recovery-fit/training/step-003000.pt",
+    "sha256": "d378947413cdd167e71e3271440e9a18fbfd5a609836aa0be7d98cefe3a6e9cd"
+  },
+  "seed": 91262
+}

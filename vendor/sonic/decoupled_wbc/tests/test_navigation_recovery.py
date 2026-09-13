@@ -162,3 +162,49 @@ def test_forged_recovery_admission_rejected(tmp_path, monkeypatch, attack):
     rewrite(tmp_path, config, arrays, receipt, manifest)
     with pytest.raises(ValueError):
         load_motor_recoveries(config)
+
+
+def test_completed_learner_prefix_stops_without_forcing_takeover():
+    from gear_sonic.research.scene_distillation.navigation_recovery import (
+        MotorRecoveryCollectionCallback,
+    )
+
+    callback = object.__new__(MotorRecoveryCollectionCallback)
+    callback.config = {"takeover_tick": 60}
+    task = dict(goal_xyz=[0, 0, 0.8], goal_tolerance_m=0.25, terminal_speed_mps=0.1, hold_ticks=50)
+    roots = np.tile([0, 0, 0.8], (50, 1))
+    assert callback._goal_stop(task, roots, np.zeros(50), np.zeros(50), False)
+
+
+@pytest.mark.parametrize("forged", [False, True])
+def test_declared_continuation_commands_reconstructed(tmp_path, monkeypatch, forged):
+    config, arrays, receipt, manifest = fixture(tmp_path, monkeypatch)
+    receipt["continuation"] = dict(
+        kind="goal_velocity",
+        position_gain=0.8,
+        velocity_gain=0.5,
+        max_speed_mps=0.35,
+        max_shift_m=0.2,
+        activation_radius_m=0.6,
+    )
+    arrays["nominal_controls"] = arrays["controls"].copy()
+    arrays["reference_anchor_xyz"] = arrays["measured_root_xyz"].copy()
+    if forged:
+        arrays["controls"][5, 2] = 0.1
+    rewrite(tmp_path, config, arrays, receipt, manifest)
+    if forged:
+        with pytest.raises(ValueError, match="declared continuation"):
+            load_motor_recoveries(config)
+    else:
+        assert len(load_motor_recoveries(config)) == 1
+
+
+def test_prior_qualified_recoveries_can_be_replayed_in_later_round(tmp_path, monkeypatch):
+    config, _, receipt, _ = fixture(tmp_path, monkeypatch)
+    config["fresh_recovery_behavior_sha256"] = "0" * 64
+    (old,) = load_motor_recoveries(config)
+    assert old["role"] == "replay"
+    assert old["arrays"]["query_mask"].sum() == 50
+    config["fresh_recovery_behavior_sha256"] = receipt["behavior_checkpoint"]["sha256"]
+    (fresh,) = load_motor_recoveries(config)
+    assert fresh["role"] == "recovery"

@@ -2,7 +2,7 @@
 
 A separate, self-contained research checkout for SONIC teacher training, BFM student distillation, Motion2Scene scene/obstacle generation, and dataset visualization. It contains a working-tree snapshot of both research codebases, actual datasets and selected checkpoints in Git LFS, plus portable commands that create new local configurations.
 
-**Research status:** the repaired teacher supplies strong strict-label coverage, and the recovered full-command motor student now reaches 88/89 training completions with same-state online distillation and 10/20 development completions across three evaluation seeds. On the bounded four-motion stopping panel, that frozen motor completes 8/8 tasks. Goal/map navigation remains unresolved: the original adapter completes 0/8, while a localized variant completes 1/8 once and fails its two selected-task repeats. The supported recovery framework is implemented, but its registered physical results are pending. See the [full distillation research report](docs/DISTILLATION_RESEARCH.md) and [design and evidence guide](docs/WORKFLOWS.md).
+**Research status:** the full-command motor reaches 88/89 training and 10/20 development completions. The latest navigation continuation fit completes 4/8 tasks on its first evaluation seed and 2/8 on confirmation, versus its parent's 4/8 and 1/8. Contact failures, seed sensitivity and a motion-sampling confound remain. Expanded motor/navigation evaluation is running. Read the [latest research update and log](docs/RESEARCH_UPDATE_20260913.md), [methods and architecture package](docs/sonic/motion2scene/methods_v2_20260913/README.md), and [full research report](docs/DISTILLATION_RESEARCH.md).
 
 Read the [readiness audit](docs/READINESS_AUDIT.md) before setting up native training.
 

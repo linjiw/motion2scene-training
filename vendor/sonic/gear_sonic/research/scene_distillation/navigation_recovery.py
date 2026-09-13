@@ -13,6 +13,11 @@ from gear_sonic.research.scene_distillation.motor_runtime import (
     load_motor,
     motor_commands,
 )
+from gear_sonic.research.scene_distillation.navigation_continuation import (
+    continuation_commands,
+    continuation_outcomes,
+    validate_continuation,
+)
 from gear_sonic.research.scene_distillation.navigation_localization import CausalLocalization
 from gear_sonic.research.scene_distillation.navigation_motor_runtime import NavigationMotorCallback
 
@@ -52,6 +57,9 @@ class MotorRecoveryCollectionCallback(NavigationMotorCallback):
         self.rows = []
         self.record_localization = CausalLocalization()
         self.teacher_input = None
+        if "continuation" in self.config:
+            validate_continuation(self.config["continuation"])
+        self.continuation_localization = CausalLocalization()
 
         def capture(module, inputs):
             self.teacher_input = inputs[0].detach().reshape(1, -1).clone()
@@ -87,6 +95,28 @@ class MotorRecoveryCollectionCallback(NavigationMotorCallback):
             True,
             current_orientation_observation(teacher.actor_module, observation),
         )
+        nominal = commands[0].cpu().numpy().copy()
+        position = (
+            (env.motion_command.robot_anchor_pos_w[0] - env.env.scene.env_origins[0]).cpu().numpy()
+        )
+        quaternion = env.motion_command.robot_anchor_quat_w[0].cpu().numpy()
+        reference_anchor = (
+            (env.motion_command.anchor_pos_w[0] - env.env.scene.env_origins[0]).cpu().numpy()
+        )
+        velocity = self.continuation_localization.update(
+            position, quaternion, tick * 0.02, task["goal_xyz"]
+        )
+        if "continuation" in self.config and tick >= self.config["takeover_tick"]:
+            corrected = continuation_commands(
+                nominal,
+                position,
+                quaternion,
+                reference_anchor,
+                task["goal_xyz"],
+                velocity,
+                self.config["continuation"],
+            )
+            commands = torch.as_tensor(corrected, device=commands.device)[None]
         target = motor.prior_step(proprio, commands, available)
         motor_action = decoder(target["tokens"], proprio)
         if tick < self.config["takeover_tick"]:
@@ -117,6 +147,8 @@ class MotorRecoveryCollectionCallback(NavigationMotorCallback):
         }
         row.update(task_context(task, position, quaternion))
         row.update(
+            nominal_controls=nominal,
+            reference_anchor_xyz=reference_anchor.copy(),
             measured_root_xyz=position.copy(),
             measured_root_wxyz=quaternion.copy(),
             observation_time_s=np.asarray(tick * 0.02, dtype=np.float64),
@@ -130,6 +162,9 @@ class MotorRecoveryCollectionCallback(NavigationMotorCallback):
         return action
 
     def _goal_stop(self, task, roots, speeds, forces, fell):
+        # A learner that finishes before the planned query needs no intervention.
+        if len(roots) <= self.config["takeover_tick"]:
+            return super()._goal_stop(task, roots, speeds, forces, fell)
         trace = dict(
             root_xyz=np.asarray(roots), speed=np.asarray(speeds), undesired_force=np.asarray(forces)
         )
@@ -142,6 +177,9 @@ class MotorRecoveryCollectionCallback(NavigationMotorCallback):
             raise ValueError("Recovery rows do not align with physics")
         with np.load(output / "trace.npz") as trace:
             mask, suffix = suffix_support(task, trace, self.config["takeover_tick"], score["fell"])
+            outcomes = continuation_outcomes(
+                task, trace, min(self.config["takeover_tick"], len(self.rows))
+            )
         arrays = {k: np.stack([r[k] for r in self.rows]) for k in self.rows[0]}
         arrays["query_mask"] = mask
         arrays["learner_query_mask"] = np.zeros(len(mask), dtype=bool)
@@ -171,8 +209,10 @@ class MotorRecoveryCollectionCallback(NavigationMotorCallback):
                 ),
                 shard=dict(path=str(path), sha256=sha(path)),
                 suffix_score=suffix,
-                intervention=switch > 0,
+                intervention=0 < switch < len(mask),
                 reference_phase_switch=False,
                 not_an_unassisted_navigation_result=True,
+                continuation=self.config.get("continuation"),
+                continuation_outcomes=outcomes,
             ),
         )

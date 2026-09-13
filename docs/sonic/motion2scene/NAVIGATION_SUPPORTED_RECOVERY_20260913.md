@@ -108,11 +108,138 @@ observed suffix, not a task-aware expert for every possible state. In particular
 late goal-position drift may require a new braking/goal-correcting continuation
 rather than labels from a clock that has already reached the standing tail.
 
+## Original-teacher information boundary
+
+The selected teacher's **saved checkpoint configuration**, rather than a newer
+repository experiment profile, lists gravity direction, angular velocity, joint
+position, joint velocity and previous actions in its 930D history. Its G1 encoder
+uses future joint position/velocity and relative anchor orientation. Root-position
+error and base linear velocity appear in the privileged critic, not directly in
+this actor path.
+
+Consequently, an ideal horizontal rigid translation of the robot, preserving
+joint state, orientation, angular velocity and action history, leaves the original
+teacher actor's inputs unchanged. This is a structural observation, not a claim
+that the teacher cannot stop or that all its training experiences are identical.
+It means a nominal reference-tracking teacher is not automatically an expert for
+correcting arbitrary global goal-position errors.
+
+The added 114D motor forecaster **does** receive relative keypoints and desired
+velocity; it is not subject to exactly the same input invariance. A CPU sensitivity
+probe on three recorded switch states found action RMS changes of 0–0.0428 for
+±0.2 m body-frame keypoint translations and 0.0102–0.0556 for ±0.2 m/s desired
+velocity changes. These are unexecuted input-sensitivity probes in model action
+units, not physical controllability or validated command-generation results.
+No perturbed commands enter the recovery training set. Some zero changes are
+consistent with the quantized interface; they do not establish a global dead zone.
+
+This distinction supports a bounded next route if supported recovery imitation
+stalls: construct and execute task-aware braking/goal-correcting continuations,
+or test command-space task feedback with imitation replay, while retaining the
+motor backend. Simply querying the original nominal teacher more often does not
+create missing goal-correction instructions.
+
 ## Results
 
-The complete registered panel and equal-update recovery comparison are reported
-here after native evaluation finishes. Preliminary task outcomes are not used to
-select among intermediate checkpoints.
+The motor-data fit completes **2/8** tasks on the initial seed; adding 3,000
+replay-only updates reaches **3/8**. The equal-update recovery branch reaches
+**4/8**. The registered full-panel confirmation falls to **1/8** on seed 91261.
+This candidate is not promoted as a reliable replacement for the archived model.
+
+| Task | Motor data, 6k updates | +3k replay | +3k recovery/replay |
+| --- | --- | --- | --- |
+| 00908 clear | Pass | Pass | Fail; final hold 35 ticks |
+| 00908 corridor | Pass | Fail | Pass |
+| 00413 clear | Fail | Fail | Pass |
+| 00413 corridor | Fail | Fail | Fail |
+| 00976 clear | Fail | Pass | Pass |
+| 00976 corridor | Fail | Pass | Pass |
+| 00265 clear | Fail | Fail | Fail |
+| 00265 corridor | Fail | Fail | Fail |
+
+All 24 main navigation evaluations remain contact-free and above the declared
+fall threshold. Recovery training gains two cases over replay-only and loses one,
+for one net additional completion. This small, single-training-seed result is not
+statistical evidence that recovery data reliably improves the whole task class.
+The two branches share the same initial checkpoint and inherited normalization.
+
+The failed 00908-clear recovery-trained attempt is inside the goal at the end
+(distance 0.060 m) and retains its longest 35-tick hold until the deadline. The
+last earlier speed reset is at tick 309 (0.10091 m/s), after a shorter 15-tick run;
+it must not be described as breaking the later 35-tick hold. This is now a timing
+or earlier-braking problem rather than a failure to locate that endpoint.
+Only final scheduled checkpoints are evaluated; intermediate checkpoints are
+not searched for a favorable task result.
+
+All eight learner-prefix attempts are retained. **Six qualify**, providing 1,250
+motor-executed recovery rows and six verified learner-state queries. The two
+00976 attempts fail to hold and contribute zero training rows. Their nominal
+motor continuations enter the goal but do not stabilize, so the successful
+nominal 8/8 control cannot be generalized to those arrival states.
+
+All eight prefixes match the corresponding unassisted motor-data student root,
+speed and prohibited-contact traces exactly. This checks that diagnostic target
+queries and the collection wrapper do not alter learner behavior before takeover.
+The combined admitted training view contains 3,076 demonstration rows plus 1,250
+recovery rows; unsuccessful attempts are retained in the bound aggregate for
+coverage/cost accounting.
+
+A confirmation plan was registered before the recovery fit: select the greatest
+main-seed stable-completion count, breaking ties in favor of motor-data, then
+replay-control, then recovery. Evaluate that checkpoint on **all eight** original
+tasks with seed 91261. This is a selected-checkpoint evaluation-seed check on
+training tasks, not an independently constructed layout benchmark or a repeat
+across training seeds.
+
+The confirmation succeeds only on 00908 clear, which failed on the main seed.
+All four main-seed successes fail on the confirmation seed. The eight confirmation
+attempts remain contact-free with no falls; six never enter the goal and 00908
+corridor reaches only ten hold ticks. Evaluation seed changes both initialization
+and observation randomness; this result does not isolate sensor noise as the cause.
+
+Four adaptively selected confirmation failures were then rerun with privileged
+full commands: one per motion family. `NavigationFullCommandControlCallback` loads
+the same navigation checkpoint and model construction as the matched navigation
+run, then bypasses the adapter. This avoids changing the model-construction RNG
+consumption when comparing initial conditions and observations.
+
+| Seed 91261 task | Navigation | Same-checkpoint full-command control |
+| --- | --- | --- |
+| 00908 corridor | Fail | Pass |
+| 00413 clear | Fail | Pass |
+| 00976 clear | Fail | Fail; maximum hold 31 ticks |
+| 00265 clear | Fail | Pass |
+
+These are four selected diagnostic controls, not an eight-task oracle panel.
+The three successful controls localize a command-inference problem in those
+executions. The failed 00976 control enters the goal but ends at 0.2514 m distance,
+just outside the unchanged 0.25 m tolerance. Together with both unsupported 00976
+takeovers, it shows that nominal motor execution also has a terminal robustness
+limit. No falls or prohibited contacts occur in these four controls.
+
+## Next priority and decision gates
+
+1. Broaden the **collection** distribution across declared initialization and
+   observation seeds, approach speeds and headings. Keep the recovered motor
+   frozen and admit only physically supported continuations. Compare against
+   equal-update replay with the same training seeds; reserve evaluation seeds
+   before collecting additional data. The present one-seed study cannot establish
+   a repeatable benefit from six supported entries.
+2. Diagnose 00976 braking separately using original-teacher and frozen-motor
+   controls from matched arrival states. Construct and execute earlier braking
+   or goal-correcting continuations if the nominal clock lacks local support.
+   Failed queries remain excluded. Do not shorten the 50-tick hold or extend
+   official deadlines to manufacture completions.
+3. Retain the eight tasks as an engineering regression panel. Require repeatable
+   unassisted completion before expanding to valid goal-switch, route-switch and
+   posture-switch pairs and independently constructed evaluation layouts. The
+   current clear/corridor variants do not establish necessary scene reasoning or
+   the learning value of motion-to-scene generation.
+
+These findings prioritize supported coverage and terminal control over increasing
+model size or unfreezing the motor. A direct-reference or command-space task-reward
+comparison remains conditional on persistent failure with adequate observations
+and demonstrated expert support; it is not implemented or claimed by this study.
 
 ## Reproduction and evidence
 
@@ -121,7 +248,14 @@ External experiment packet:
 `plan.json`, `collect-motor.py` and `run-study.py` record the bounded protocol;
 per-stage `command.json`, config, source hashes and logs reproduce each run.
 Motor/combined manifests retain unsuccessful recovery attempts as well as
-supported ones. All native simulations run headless at 50 Hz with 200 Hz
+supported ones. Collection costs are 3,076 motor-demonstration steps plus 3,235
+learner-prefix/recovery steps. The latter include 1,367 candidate prefix queries
+and eight attempted switch queries; only six switch entries have verified
+successful continuations. There are 6,311 motor target forwards and 6,311 original
+teacher diagnostic forwards across collection. These costs are not reduced to
+the count of admitted labels. Wall times are recorded, but a separate teacher
+training job began sharing the GPU during the study, so they are not a controlled
+throughput comparison. All native simulations run headless at 50 Hz with 200 Hz
 pair-resolved contacts.
 
 Training uses the existing entry point with the selected condition config and
@@ -135,3 +269,18 @@ an unused output directory:
 
 This packet extends the current training pipeline; it does not require changes
 to the selected motor checkpoint or a new simulator installation.
+
+The [compact evidence packet](evidence/navigation-supported-recovery-20260913/README.md)
+contains plans, training receipts, checkpoint hashes, all 52 native run scores and
+commands, manifests, costs and diagnostics. Those runs total 22,318 control steps
+across collection, unassisted evaluations and privileged controls; they must not be
+pooled into one navigation success rate. The four fits use 12,016 updates in total,
+including the 16-update smoke run; each final continuation inherits 6,000 updates
+and adds 3,000. Raw arrays and large checkpoints remain external.
+
+Validation: **106 tests passed** across the affected recovery, motor, navigation,
+scene-distillation, BFM, flow and qualification modules. Ruff and Black checks pass
+on the six affected implementation/test files. The recovery tests cover suffix-only
+qualification, forged admissions, executed-action validation and stopping an already
+successful learner before an unnecessary planned intervention. Exact commands are
+recorded in the evidence packet's `validation.json`.

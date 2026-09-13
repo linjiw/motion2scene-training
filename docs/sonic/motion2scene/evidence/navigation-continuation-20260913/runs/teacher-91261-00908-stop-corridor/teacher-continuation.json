@@ -1,0 +1,40 @@
+{
+  "diagnostic_only": true,
+  "takeover_tick": 230,
+  "unassisted_navigation_result": false,
+  "training_admitted": false,
+  "provider": "original_reference_teacher",
+  "reference_phase_switch": false,
+  "outcomes": {
+    "local_stabilized": true,
+    "original_deadline_success": true,
+    "timely_suffix_supported": true,
+    "observed_suffix_ticks": 62,
+    "original_remaining_ticks": 120,
+    "diagnostic_extension_ticks": 0,
+    "local_score": {
+      "navigation_success": true,
+      "goal_ever_reached": true,
+      "terminal_hold": true,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 50,
+      "final_goal_distance_m": 0.10941418412818757,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 62,
+      "reference_tracking_required": false
+    },
+    "timely_suffix_score": {
+      "navigation_success": true,
+      "goal_ever_reached": true,
+      "terminal_hold": true,
+      "collision_free": true,
+      "fell": false,
+      "max_hold_ticks": 50,
+      "final_goal_distance_m": 0.10941418412818757,
+      "max_undesired_force_n": 0.0,
+      "control_steps": 62,
+      "reference_tracking_required": false
+    }
+  }
+}

@@ -81,3 +81,29 @@ class FullMotorTaskCallback(DirectSceneTaskCallback):
         if teacher.running_mean_std is not None:
             proprio = teacher.running_mean_std(proprio)
         return decoder(model.prior_step(proprio, commands, available)["tokens"], proprio)
+
+
+class NavigationFullCommandControlCallback(DirectSceneTaskCallback):
+    """Use the same checkpoint construction/RNG as navigation, bypassing its adapter.
+
+    This diagnostic receives full commands. It is not goal-only task performance.
+    """
+
+    def _load_student(self, device):
+        if self.config.get("actor_profile") != "motion_full_current_v2":
+            raise ValueError("Matched motor control must disclose full-command inputs")
+        return load_navigation(
+            self.config["student_checkpoint"], self.config["teacher_sha256"], device
+        )
+
+    def _student_action(self, student, env, teacher, observation, task, noise):
+        commands, available = motor_commands(
+            env.motion_command,
+            env.env.scene.env_origins,
+            True,
+            current_orientation_observation(teacher.actor_module, observation),
+        )
+        proprio = observation["actor_obs"]
+        if teacher.running_mean_std is not None:
+            proprio = teacher.running_mean_std(proprio)
+        return student.full_step(proprio, commands, available)["actions"]
