@@ -1,0 +1,68 @@
+{
+  "stage1": {
+    "state": "complete",
+    "cycles": 250,
+    "updates": 16000,
+    "transitions": 16384000,
+    "teacher_actions": 9343046,
+    "burn_in_rows": 820179,
+    "boundaries": 81095,
+    "phase_rows": [
+      2066244,
+      3424694,
+      4795243,
+      6097819
+    ],
+    "recovery": {
+      "started": 366592,
+      "recovered": 20809,
+      "failed": 345082,
+      "censored": 701,
+      "horizon_ticks": 16,
+      "stable_ticks": 4,
+      "qualification": "local_tracking_takeover_only"
+    },
+    "wall_seconds": 2301.796135778073,
+    "optimizer_initialization": "fresh_for_online_stage",
+    "query_support": "finite_pre_step_states_under_native_termination_no_0.10m_prefix_censor",
+    "teacher_action_fraction": 0.5703,
+    "native": {
+      "exit_code": 0,
+      "wall_seconds": 2332,
+      "timed_out": false
+    }
+  },
+  "stage2": {
+    "state": "complete",
+    "cycles": 150,
+    "updates": 9600,
+    "transitions": 9830400,
+    "teacher_actions": 2564228,
+    "burn_in_rows": 499961,
+    "boundaries": 48643,
+    "phase_rows": [
+      1240639,
+      2059385,
+      2882043,
+      3648333
+    ],
+    "recovery": {
+      "started": 78814,
+      "recovered": 257,
+      "failed": 78313,
+      "censored": 244,
+      "horizon_ticks": 16,
+      "stable_ticks": 4,
+      "qualification": "local_tracking_takeover_only"
+    },
+    "wall_seconds": 1620.360733023961,
+    "optimizer_initialization": "fresh_for_online_stage",
+    "query_support": "finite_pre_step_states_under_native_termination_no_0.10m_prefix_censor",
+    "teacher_action_fraction": 0.2608,
+    "native": {
+      "exit_code": 0,
+      "wall_seconds": 1652,
+      "timed_out": false
+    }
+  }
+}

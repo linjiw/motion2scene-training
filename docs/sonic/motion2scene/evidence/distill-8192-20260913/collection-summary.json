@@ -1,0 +1,62 @@
+{
+  "collections": [
+    {
+      "seed": 91400,
+      "episodes": 89,
+      "rows": 30422,
+      "strict_supported_rows": 13215,
+      "whole_strict_eligible": 29,
+      "terminated": 2,
+      "wall_seconds": 201
+    },
+    {
+      "seed": 91401,
+      "episodes": 89,
+      "rows": 30422,
+      "strict_supported_rows": 14781,
+      "whole_strict_eligible": 35,
+      "terminated": 1,
+      "wall_seconds": 206
+    },
+    {
+      "seed": 91402,
+      "episodes": 89,
+      "rows": 30422,
+      "strict_supported_rows": 12979,
+      "whole_strict_eligible": 31,
+      "terminated": 3,
+      "wall_seconds": 201
+    },
+    {
+      "seed": 91403,
+      "episodes": 89,
+      "rows": 30422,
+      "strict_supported_rows": 12806,
+      "whole_strict_eligible": 30,
+      "terminated": 3,
+      "wall_seconds": 199
+    },
+    {
+      "seed": 91404,
+      "episodes": 89,
+      "rows": 30422,
+      "strict_supported_rows": 12175,
+      "whole_strict_eligible": 28,
+      "terminated": 4,
+      "wall_seconds": 201
+    },
+    {
+      "seed": 91405,
+      "episodes": 89,
+      "rows": 30422,
+      "strict_supported_rows": 11736,
+      "whole_strict_eligible": 24,
+      "terminated": 4,
+      "wall_seconds": 202
+    }
+  ],
+  "broad_manifest_sha256": "9107834955dcc7c3d169acc253746485e164cdb4152c3e678e5d9ff9edc4badf",
+  "broad_episodes": 534,
+  "broad_rows": 175981,
+  "strict_rows": 77692
+}

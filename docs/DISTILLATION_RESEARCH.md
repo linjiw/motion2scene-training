@@ -890,3 +890,7 @@ task traces, yielding 3,076 executed rows. This is a backend-matched positive co
 not evidence that the navigation adapter can recover. The equal-update replay versus
 qualified-recovery comparison remains pending native execution, so no recovery model
 has been promoted and no autonomous navigation gain is claimed.
+
+## 17. Reproduction with the local 8192-environment teacher
+
+The [8192-teacher distillation report](sonic/motion2scene/DISTILL_8192_TEACHER_20260913.md) repeats the anticipatory motor recipe with the locally trained 8192-environment × 500-iteration teacher. It uses 30,000 offline updates, 2048 online environments and 25,600 online updates across two stages. The selected student averages 86.0/89 train and 10.3/20 development over three evaluation seeds, versus 86.3 and 10.0 for the recorded student: equal within noise. The largest gain came from more offline updates (development 5 → 10 at seed 91260). Additional online updates and reduced teacher intervention plateaued. The student–teacher development gap (15.7 vs about 10) is unchanged.

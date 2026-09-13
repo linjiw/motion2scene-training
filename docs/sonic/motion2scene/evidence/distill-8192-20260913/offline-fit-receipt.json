@@ -1,0 +1,9 @@
+{
+  "state": "complete",
+  "updates": 30000,
+  "wall_seconds": 247.68481627095025,
+  "rows": 175981,
+  "episodes": 529,
+  "decoder_frozen": true,
+  "physical_success": null
+}

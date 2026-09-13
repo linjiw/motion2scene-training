@@ -1,0 +1,12 @@
+{
+  "teacher": {
+    "path": "workspace/teacher-8192-500/tracking-run-1/model_step_000500.pt",
+    "sha256": "26ca1ed70c2287c1acb6243820649db4b8513a5d9b8b16abc115f890d87b6bff"
+  },
+  "offline_30k": "96b7e1a00a5a4030fd8a55fabf5c46cd37cba7a3c95d1e3f2d176c0c637d7f14",
+  "stage1_step_003200": "053b1ee2891332210d6a5e9fc17f3f9793eb851515cb0b4fd3a2e1baa53e8811",
+  "stage1_step_014400_rule_selected": "ad2f4567849386526227e098de145b5091201a6a151a2263f8116a6c05d5c352",
+  "stage1_step_016000": "b0cd4676329d12819e401a0d13d290f57ca6a09111fc327bba9d4fad37872c36",
+  "stage2_step_009600": "8bf9c435acd495ca5439e97befd00d10b23d72a4d409af91dea335dbbc92bfe3",
+  "packet": "workspace/distill-8192 (checkpoints, shards, native logs; not in Git)"
+}
