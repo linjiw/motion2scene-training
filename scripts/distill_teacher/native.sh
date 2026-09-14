@@ -63,7 +63,7 @@ env -u PYTHONPATH \
   ISAACLAB_USD_CACHE_DIR="$HOME/.cache/m2s/isaaclab-usd" \
   PYTHONPATH="$KIT/vendor/sonic" \
   OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 \
-  timeout "${M2S_TIMEOUT:-9000}" "$PY" "${ARGS[@]}" > "$OUT/native.log" 2>&1 &
+  timeout -s KILL "${M2S_TIMEOUT:-9000}" "$PY" "${ARGS[@]}" > "$OUT/native.log" 2>&1 &
 CHILD=$!
 echo "$CHILD" > "$OUT/pid"
 wait "$CHILD"

@@ -1,0 +1,27 @@
+{
+  "motor": {
+    "path": "workspace/distill-8192/online/stage1-2048/training/step-003200.pt",
+    "sha256": "053b1ee2891332210d6a5e9fc17f3f9793eb851515cb0b4fd3a2e1baa53e8811"
+  },
+  "teacher": {
+    "path": "workspace/teacher-8192-500/tracking-run-1/model_step_000500.pt",
+    "sha256": "26ca1ed70c2287c1acb6243820649db4b8513a5d9b8b16abc115f890d87b6bff"
+  },
+  "nav-v0": {
+    "path": "workspace/nav-8192/fit/nav-v0/step-006000.pt",
+    "sha256": "0eb35223fdb0c2bbacd39240eeccdc1c21e23ee7c5885aaa462b1a0cfcc19d5e"
+  },
+  "nav-v1": {
+    "path": "workspace/nav-8192/fit/nav-v1/step-006000.pt",
+    "sha256": "b613bc1f9b6f1e547d7bc669442186cd4c05d20646ef8ad393665a9a28c70e7c"
+  },
+  "nav-v2-recovery": {
+    "path": "workspace/nav-8192/fit/nav-v2-recovery/step-003000.pt",
+    "sha256": "d4b3c0e288c4d59d724bb3a469de09f7e06b36330bcd9203ea382138edcefd60"
+  },
+  "nav-v2-replay": {
+    "path": "workspace/nav-8192/fit/nav-v2-replay/step-003000.pt",
+    "sha256": "77d0e5275171fae342dd4a416d0ac2e9021bb2e4717019b08a92fc824c81d1ce"
+  },
+  "packet": "workspace/nav-8192 (tasks, shards, traces, native logs; not in Git)"
+}

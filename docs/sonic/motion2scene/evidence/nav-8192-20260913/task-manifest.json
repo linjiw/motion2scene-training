@@ -1,0 +1,202 @@
+{
+  "schema": "bfm_navigation_task_catalog_v1",
+  "tasks": [
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00908/clear.json",
+      "sha256": "0f95d3e4f15a9d56706045fceb10ef85092c5ecf64424735845fabd2fdc0b5a1",
+      "task_id": "00908-stop-clear",
+      "motion_id": "00908",
+      "teacher_eligible": false,
+      "task_sha256": "0f95d3e4f15a9d56706045fceb10ef85092c5ecf64424735845fabd2fdc0b5a1"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00908/corridor.json",
+      "sha256": "c7fa3987224b34c127302b77fb68d789927adf33065bf8d6f861ca655a9f9345",
+      "task_id": "00908-stop-corridor",
+      "motion_id": "00908",
+      "teacher_eligible": false,
+      "task_sha256": "c7fa3987224b34c127302b77fb68d789927adf33065bf8d6f861ca655a9f9345"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00413/clear.json",
+      "sha256": "861aa0e864b2af0ddef5ae35782e76ca24351c55f9beb8cfe0c5561fde98d2d7",
+      "task_id": "00413-stop-clear",
+      "motion_id": "00413",
+      "teacher_eligible": false,
+      "task_sha256": "861aa0e864b2af0ddef5ae35782e76ca24351c55f9beb8cfe0c5561fde98d2d7"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00413/corridor.json",
+      "sha256": "ceb9451b14af2fd96b7473fb18d5ebb7cdde148088ac9c29e8f8f0846bac9402",
+      "task_id": "00413-stop-corridor",
+      "motion_id": "00413",
+      "teacher_eligible": false,
+      "task_sha256": "ceb9451b14af2fd96b7473fb18d5ebb7cdde148088ac9c29e8f8f0846bac9402"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00976/clear.json",
+      "sha256": "b42ce615e9ff83c1cd7947864b94f290034d07d18e9676567cb581267cdd9018",
+      "task_id": "00976-stop-clear",
+      "motion_id": "00976",
+      "teacher_eligible": false,
+      "task_sha256": "b42ce615e9ff83c1cd7947864b94f290034d07d18e9676567cb581267cdd9018"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00976/corridor.json",
+      "sha256": "d33eaa2cebd5b427b5869de71456c9714843732069bec5e06eb0b700fc005a7d",
+      "task_id": "00976-stop-corridor",
+      "motion_id": "00976",
+      "teacher_eligible": false,
+      "task_sha256": "d33eaa2cebd5b427b5869de71456c9714843732069bec5e06eb0b700fc005a7d"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00265/clear.json",
+      "sha256": "76f81b7eb37492d394304d1133a3d7c61f6766f397e3f2afa773229ec94c30c6",
+      "task_id": "00265-stop-clear",
+      "motion_id": "00265",
+      "teacher_eligible": false,
+      "task_sha256": "76f81b7eb37492d394304d1133a3d7c61f6766f397e3f2afa773229ec94c30c6"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00265/corridor.json",
+      "sha256": "7c815d2586f251aae1abf714f5e3b13918bb3e5d2b02b0bc1a8c7368d9571333",
+      "task_id": "00265-stop-corridor",
+      "motion_id": "00265",
+      "teacher_eligible": false,
+      "task_sha256": "7c815d2586f251aae1abf714f5e3b13918bb3e5d2b02b0bc1a8c7368d9571333"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00399/clear.json",
+      "sha256": "65c0efe40615cff8adabfddb49a5e36343871055a7c908baea83b16e1fa7f299",
+      "task_id": "00399-stop-clear",
+      "motion_id": "00399",
+      "teacher_eligible": false,
+      "task_sha256": "65c0efe40615cff8adabfddb49a5e36343871055a7c908baea83b16e1fa7f299"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00399/corridor.json",
+      "sha256": "15ef0ce463a97e61330181856fd24b29ed6fe95b6d47181883e858b6050cc29b",
+      "task_id": "00399-stop-corridor",
+      "motion_id": "00399",
+      "teacher_eligible": false,
+      "task_sha256": "15ef0ce463a97e61330181856fd24b29ed6fe95b6d47181883e858b6050cc29b"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00770/clear.json",
+      "sha256": "576caf4bddc4a279696e6dc002869c280cb3cc118a5a46c0f63b7e9720ba2e7d",
+      "task_id": "00770-stop-clear",
+      "motion_id": "00770",
+      "teacher_eligible": false,
+      "task_sha256": "576caf4bddc4a279696e6dc002869c280cb3cc118a5a46c0f63b7e9720ba2e7d"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00770/corridor.json",
+      "sha256": "c27c44fdec72d0ad355fc7a2bc08b6ecb1e2a59cb3ab0f3924e13a649d795c8a",
+      "task_id": "00770-stop-corridor",
+      "motion_id": "00770",
+      "teacher_eligible": false,
+      "task_sha256": "c27c44fdec72d0ad355fc7a2bc08b6ecb1e2a59cb3ab0f3924e13a649d795c8a"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00677/clear.json",
+      "sha256": "8f6da47ad8ec707ce2340c64eab3b5b2b9cdeacf3db154a57ec2b921abe9c7fd",
+      "task_id": "00677-stop-clear",
+      "motion_id": "00677",
+      "teacher_eligible": false,
+      "task_sha256": "8f6da47ad8ec707ce2340c64eab3b5b2b9cdeacf3db154a57ec2b921abe9c7fd"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00677/corridor.json",
+      "sha256": "1c7f19cc7216eaaf8d8528a63482ecf62e0be66bcf9155f0bbaf231ba19929b9",
+      "task_id": "00677-stop-corridor",
+      "motion_id": "00677",
+      "teacher_eligible": false,
+      "task_sha256": "1c7f19cc7216eaaf8d8528a63482ecf62e0be66bcf9155f0bbaf231ba19929b9"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00120/clear.json",
+      "sha256": "1b663b2481621bfd4c0bd3da9c227d7554796f346f6455077f3e521ec4395a0b",
+      "task_id": "00120-stop-clear",
+      "motion_id": "00120",
+      "teacher_eligible": false,
+      "task_sha256": "1b663b2481621bfd4c0bd3da9c227d7554796f346f6455077f3e521ec4395a0b"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00120/corridor.json",
+      "sha256": "7997a8ab717a9bcc128cd9c0e07bf1dc96597901d3ec112016e2779dcfd35b48",
+      "task_id": "00120-stop-corridor",
+      "motion_id": "00120",
+      "teacher_eligible": false,
+      "task_sha256": "7997a8ab717a9bcc128cd9c0e07bf1dc96597901d3ec112016e2779dcfd35b48"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00707/clear.json",
+      "sha256": "1601f3657b181bfdee23dc66efb6c8f2c0042187bc73cd34fe16955dc05cd662",
+      "task_id": "00707-stop-clear",
+      "motion_id": "00707",
+      "teacher_eligible": false,
+      "task_sha256": "1601f3657b181bfdee23dc66efb6c8f2c0042187bc73cd34fe16955dc05cd662"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00707/corridor.json",
+      "sha256": "8f051165f0b559ff6e4479c0402117e5f4a925e4937d55f6607e5dfe977e554f",
+      "task_id": "00707-stop-corridor",
+      "motion_id": "00707",
+      "teacher_eligible": false,
+      "task_sha256": "8f051165f0b559ff6e4479c0402117e5f4a925e4937d55f6607e5dfe977e554f"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00801/clear.json",
+      "sha256": "66db6ca1c49cd24afea850258a7cb607b8bf4c47fbb7ff8bc900449bebc9fca0",
+      "task_id": "00801-stop-clear",
+      "motion_id": "00801",
+      "teacher_eligible": false,
+      "task_sha256": "66db6ca1c49cd24afea850258a7cb607b8bf4c47fbb7ff8bc900449bebc9fca0"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00801/corridor.json",
+      "sha256": "4b0a92119b472d0368945386dfc95683cdc15a04d0ff1ef248c2e26443a1f730",
+      "task_id": "00801-stop-corridor",
+      "motion_id": "00801",
+      "teacher_eligible": false,
+      "task_sha256": "4b0a92119b472d0368945386dfc95683cdc15a04d0ff1ef248c2e26443a1f730"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00781/clear.json",
+      "sha256": "cf5b5df9f16318ff66b3bba1afca3bfb90f277789ad3cd4b192ca5b5918ca56a",
+      "task_id": "00781-stop-clear",
+      "motion_id": "00781",
+      "teacher_eligible": false,
+      "task_sha256": "cf5b5df9f16318ff66b3bba1afca3bfb90f277789ad3cd4b192ca5b5918ca56a"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00781/corridor.json",
+      "sha256": "f900377d4a10c4defb94d2c8ee1d0ee450c9bb04f1450046fa171764ce5cfbf5",
+      "task_id": "00781-stop-corridor",
+      "motion_id": "00781",
+      "teacher_eligible": false,
+      "task_sha256": "f900377d4a10c4defb94d2c8ee1d0ee450c9bb04f1450046fa171764ce5cfbf5"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00711/clear.json",
+      "sha256": "d22257aa08e2098f708260f8cbb7207c933d9801bcbe7b3a892d7a8084e4b7f1",
+      "task_id": "00711-stop-clear",
+      "motion_id": "00711",
+      "teacher_eligible": false,
+      "task_sha256": "d22257aa08e2098f708260f8cbb7207c933d9801bcbe7b3a892d7a8084e4b7f1"
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00711/corridor.json",
+      "sha256": "fc6214ee559faab90d3bfd2d220554daf619b2591b90ddb7a6ab7f267833aa11",
+      "task_id": "00711-stop-corridor",
+      "motion_id": "00711",
+      "teacher_eligible": false,
+      "task_sha256": "fc6214ee559faab90d3bfd2d220554daf619b2591b90ddb7a6ab7f267833aa11"
+    }
+  ],
+  "qualified_tasks": 0,
+  "training_motions": 12,
+  "development_opened": false,
+  "tail_seconds": 2.0,
+  "warning": "Synthetic stopping candidates, not successful demonstrations."
+}

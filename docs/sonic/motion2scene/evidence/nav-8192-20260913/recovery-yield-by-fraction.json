@@ -1,0 +1,22 @@
+{
+  "0.15": {
+    "attempts": 19,
+    "supported": 18,
+    "rows": 5574
+  },
+  "0.5": {
+    "attempts": 19,
+    "supported": 7,
+    "rows": 979
+  },
+  "0.3": {
+    "attempts": 19,
+    "supported": 15,
+    "rows": 3726
+  },
+  "0.75": {
+    "attempts": 19,
+    "supported": 3,
+    "rows": 205
+  }
+}
