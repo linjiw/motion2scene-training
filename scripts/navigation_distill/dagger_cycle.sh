@@ -12,7 +12,7 @@ K=${M2S_KIT:?set M2S_KIT}
 PY="env -u PYTHONPATH PYTHONPATH=$K/vendor/sonic TRL_EXPERIMENTAL_SILENCE=1 $K/.venv_native/bin/python"
 MOTOR=${NAV_MOTOR:?set NAV_MOTOR}
 ARM=${1:?arm}; C=${2:?cycle}; NAV=${3:?current nav ckpt}; FRACS=${4:?fractions}; shift 4
-D=dagger/$ARM; mkdir -p $D
+ROOT=$PWD; D=dagger/$ARM; mkdir -p $D
 SHA=$(sha256sum "$NAV" | cut -d' ' -f1)
 echo "=== cycle $C start $(date -u +%FT%TZ) nav=$NAV" >> $D/cycle.log
 python3 "$HERE"/plan_recovery.py --tasks tasks/manifest.json --reference collect/teacher-91260 --fractions $FRACS --out $D/c$C-plan.txt >> $D/cycle.log
@@ -23,8 +23,8 @@ $PY "$HERE"/aggregate_recovery.py --stages $STAGES --output $D/c$C-manifest.json
 $PY "$HERE"/nav_fit_config.py --motor $MOTOR --manifest $D/c$C-manifest.json --view motor_recovery --task-manifest tasks/manifest.json \
   --warm-start "$NAV" --recovery-fraction 0.5 --fresh-behavior $SHA --updates 3000 --seed $((91480 + C)) \
   --purpose "$ARM cycle $C: early-switch DAgger, fresh recoveries from $SHA" "$@" --out $D/c$C-fit-config.json >> $D/cycle.log 2>&1
-( cd $K/vendor/sonic && $PY -m gear_sonic.research.scene_distillation.navigation_motor --config $PWD/$D/c$C-fit-config.json --output $PWD/$D/c$C-fit > $PWD/$D/c$C-fit.log 2>&1 ) || { echo "FIT FAILED cycle $C" >> $D/cycle.log; exit 1; }
-NEXT=$PWD/$D/c$C-fit/step-003000.pt
+( cd $K/vendor/sonic && $PY -m gear_sonic.research.scene_distillation.navigation_motor --config $ROOT/$D/c$C-fit-config.json --output $ROOT/$D/c$C-fit > $ROOT/$D/c$C-fit.log 2>&1 ) || { echo "FIT FAILED cycle $C" >> $D/cycle.log; exit 1; }
+NEXT=$ROOT/$D/c$C-fit/step-003000.pt
 T=$(python3 -c "
 import json
 ok={f.split('/')[-3] for f in __import__('glob').glob('collect/teacher-91260/*/task/task-result.json') if json.load(open(f))['navigation_success']}
