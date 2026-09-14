@@ -17,6 +17,7 @@ CALLBACKS = dict(
     full="gear_sonic.research.scene_distillation.navigation_motor_runtime.FullMotorTaskCallback",
     nav="gear_sonic.research.scene_distillation.navigation_motor_runtime.NavigationMotorCallback",
     recovery="gear_sonic.research.scene_distillation.navigation_recovery.MotorRecoveryCollectionCallback",
+    reentry="gear_sonic.research.scene_distillation.navigation_reentry.ReentryProbeCallback",
 )
 
 
@@ -46,12 +47,16 @@ def main():
     )
     if a.mode == "teacher":
         c["collect_to_deadline"] = a.collect_to_deadline
-    if a.mode in ("full", "nav", "recovery"):
+    if a.mode in ("full", "nav", "recovery", "reentry"):
         c.update(student_checkpoint=str(a.student.resolve()), student_sha256=sha(a.student))
     if a.mode == "full":
         c["actor_profile"] = "motion_full_current_v2"
     if a.mode == "nav":
         c["actor_profile"] = a.actor_profile
+    if a.mode == "reentry":
+        motor = a.motor or a.student
+        c.update(actor_profile=a.actor_profile, takeover_tick=a.takeover_tick,
+                 motor_checkpoint=str(motor.resolve()), motor_sha256=sha(motor))
     if a.mode == "recovery":
         motor = a.motor or a.student
         c.update(

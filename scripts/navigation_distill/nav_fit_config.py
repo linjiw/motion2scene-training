@@ -23,6 +23,8 @@ def main():
     p.add_argument("--seed", type=int, default=91370)
     p.add_argument("--objective", default="structured_motor")
     p.add_argument("--no-localization", action="store_true")
+    p.add_argument("--approach-weight", type=float, help="braking-aware sampling weight for rows within --approach-radius of the goal")
+    p.add_argument("--approach-radius", type=float, default=1.0)
     p.add_argument("--purpose", default="")
     p.add_argument("--out", type=Path, required=True)
     a = p.parse_args()
@@ -45,6 +47,8 @@ def main():
                  recovery_fraction=a.recovery_fraction)
         if a.fresh_behavior:
             c["fresh_recovery_behavior_sha256"] = a.fresh_behavior
+    if a.approach_weight is not None:
+        c.update(approach_weight=a.approach_weight, approach_radius_m=a.approach_radius)
     if a.warm_start:
         c.update(initial_navigation_checkpoint=str(a.warm_start.resolve()),
                  initial_navigation_sha256=sha(a.warm_start))

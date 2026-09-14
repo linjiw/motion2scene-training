@@ -19,12 +19,36 @@
       "path": "vendor/sonic/gear_sonic/research/hindsight_training/pose_capture.py",
       "snapshot_sha256": null,
       "current_sha256": "c8102b274bdaa6ca57cff81074fcf99f061c7ef617fcfd1d17c6586bcb16e784"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/navigation_motor.py",
+      "snapshot_sha256": "a428127877194d5bf347ee1f78e8e0aae0b01691e45dc63178801d01ec91833f",
+      "current_sha256": "4814202e96766f7b048b1c280b8f623a2be7cb4a4e8bddc273901ce43248938d"
+    },
+    {
+      "path": "vendor/sonic/decoupled_wbc/tests/test_navigation_motor.py",
+      "snapshot_sha256": "f2ca874c31108a3bfb06d9fca04efb2e0c489e72e74a5cb32a74034c7a4ff665",
+      "current_sha256": "14b735a6549ead24dab982bd8750e069a2ad2c27989406a30745c1b60eaa602f"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/navigation_reentry.py",
+      "snapshot_sha256": null,
+      "current_sha256": "9006975676dc133a195c016a10b0902d48a5c44587e0925bea1ad69df7dd1289"
+    },
+    {
+      "path": "vendor/sonic/decoupled_wbc/tests/test_navigation_reentry.py",
+      "snapshot_sha256": null,
+      "current_sha256": "a772688cfa853ed041cec7b81d2ccf17e312879f33e0a7e6d635b9d151d156ea"
     }
   ],
   "reasons": [
     "Pin SMPLSim to observed training revision",
     "Resolve native wrapper test source relative to the vendored test, independent of cwd",
     "Allow power-of-two teacher env counts 128..8192 (synced source allows 128..4096); keeps the synced --num-mini-batches option",
-    "Add read-only PoseCaptureQualificationCallback (new file) so teacher evaluations record poses for scripts/teacher_review mesh videos"
+    "Add read-only PoseCaptureQualificationCallback (new file) so teacher evaluations record poses for scripts/teacher_review mesh videos",
+    "Optional braking-aware in-episode row sampling (approach_weight/approach_radius_m) for the navigation adapter fit; default path unchanged",
+    "Unit test for approach_row_weights/weighted_row_index",
+    "Add phase-rewind re-entry probe callback (new file, diagnostic only; emits no training shard)",
+    "Unit test for rewind_frame (new file)"
   ]
 }

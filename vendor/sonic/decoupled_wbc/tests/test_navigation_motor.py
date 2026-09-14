@@ -11,6 +11,8 @@ from torch import nn
 from gear_sonic.research.hindsight_training.runtime import sha
 from gear_sonic.research.scene_distillation.navigation_data import load_successful_tasks
 from gear_sonic.research.scene_distillation.navigation_motor import (
+    approach_row_weights,
+    weighted_row_index,
     NavigationInput,
     NavigationMotorStudent,
     replay_motion_probabilities,
@@ -321,3 +323,20 @@ def test_candidate_queries_cannot_self_qualify(tmp_path):
     assert receipt["supported_rows"] == 0
     with np.load(output / "navigation-queries.npz") as data:
         assert not data["supported_query_mask"].any()
+
+
+def test_approach_weighting_reads_public_goal_and_keeps_uniform_default():
+    context = np.zeros((4, 10), dtype=np.float32)
+    context[:, 3:6] = [[3, 0, 0], [0.9, 0, 0], [0, 0.5, 0], [0, 0, 2]]
+    np.testing.assert_array_equal(approach_row_weights(context, 1.0, 4.0), [1, 4, 4, 1])
+    np.testing.assert_array_equal(approach_row_weights(context, 1.0, 1.0), [1, 1, 1, 1])
+    cumulative = np.cumsum(approach_row_weights(context, 1.0, 4.0))
+    hits = [weighted_row_index(cumulative, u) for u in np.linspace(0, 0.999, 1000)]
+    counts = np.bincount(hits, minlength=4) / len(hits)
+    assert abs(counts[1] - 0.4) < 0.02 and abs(counts[2] - 0.4) < 0.02
+    assert abs(counts[0] - 0.1) < 0.02 and abs(counts[3] - 0.1) < 0.02
+    uniform = [weighted_row_index(np.cumsum(np.ones(4)), u) for u in np.linspace(0, 0.999, 1000)]
+    assert np.bincount(uniform, minlength=4).tolist() == [250] * 4
+    for radius, weight in [(0, 2), (1, 0.5), (float("nan"), 2), (1, float("inf"))]:
+        with pytest.raises(ValueError, match="Approach weighting"):
+            approach_row_weights(context, radius, weight)

@@ -206,6 +206,27 @@ def replay_motion_probabilities(motions, weights):
     return values / values.sum()
 
 
+def approach_row_weights(navigation_context, radius_m, weight):
+    """Braking-aware row sampling: rows whose goal lies within radius_m get `weight`.
+
+    Goal distance is read from the public body-frame goal in the navigation context,
+    never from reference phase. weight=1 reproduces uniform in-episode sampling; the
+    per-row uniform draw is kept, so the sampler consumes the same RNG stream.
+    """
+    if not (np.isfinite(radius_m) and radius_m > 0 and np.isfinite(weight) and weight >= 1):
+        raise ValueError("Approach weighting needs a positive radius and a weight >= 1")
+    context = np.asarray(navigation_context, dtype=np.float64)
+    if context.ndim != 2 or context.shape[1] != 10:
+        raise ValueError("Navigation context rows must be B,10")
+    distance = np.linalg.norm(context[:, 3:6], axis=1)
+    return np.where(distance <= radius_m, float(weight), 1.0)
+
+
+def weighted_row_index(cumulative, uniform):
+    """Map a uniform draw to a row under an episode's cumulative sampling weights."""
+    return int(min(np.searchsorted(cumulative, uniform * cumulative[-1], side="right"), len(cumulative) - 1))
+
+
 def fit(config, output):
     """Bounded task-positive fit; immutable motor retention replaces joint fine-tuning."""
     if not 1 <= config["updates"] <= 20000 or not 0 < config["wall_cap_seconds"] <= 1800:
@@ -294,6 +315,18 @@ def fit(config, output):
         torch.ones_like(data["controls"][:32], dtype=torch.bool),
     )["actions"].detach()
     sampled_episodes = np.zeros(len(episodes), dtype=np.int64)
+    approach = None
+    if config.get("approach_weight") is not None:
+        approach = [
+            np.cumsum(
+                approach_row_weights(
+                    e["navigation_context"].cpu().numpy(),
+                    config["approach_radius_m"],
+                    config["approach_weight"],
+                )
+            )
+            for e in rows
+        ]
     started, step = time.monotonic(), 0
     with (output / "metrics.jsonl").open("x") as log:
         for step in range(1, config["updates"] + 1):
@@ -317,7 +350,13 @@ def fit(config, output):
                 )
                 chosen.append(int(rng.choice(pool[motion_index])))
             np.add.at(sampled_episodes, chosen, 1)
-            ix = offsets[chosen] + (rng.random(len(chosen)) * np.diff(offsets)[chosen]).astype(int)
+            draws = rng.random(len(chosen))
+            if approach is None:
+                ix = offsets[chosen] + (draws * np.diff(offsets)[chosen]).astype(int)
+            else:
+                ix = offsets[chosen] + np.array(
+                    [weighted_row_index(approach[e], u) for e, u in zip(chosen, draws)]
+                )
             batch = {k: v[torch.as_tensor(ix, device=device)] for k, v in data.items()}
             if step == 1:
                 if "motor_actions" in batch:
@@ -398,6 +437,18 @@ def fit(config, output):
             },
             qualified_recovery_episodes=sum(e.get("role") == "recovery" for e in episodes),
             warm_start=bool(config.get("initial_navigation_checkpoint")),
+            approach_weight=config.get("approach_weight"),
+            approach_radius_m=config.get("approach_radius_m"),
+            approach_rows=(
+                None
+                if approach is None
+                else int(
+                    sum(
+                        int((np.diff(np.concatenate([[0.0], c])) > 1.0).sum())
+                        for c in approach
+                    )
+                )
+            ),
         ),
     )
 
