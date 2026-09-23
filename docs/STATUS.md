@@ -30,7 +30,7 @@ The futility rule fired. Work moves to the SONIC-planner baseline and goal-condi
 | Motor student | Train 87/87/84, dev 11/11/9: one model, three eval seeds [M] | Full commands only | `workspace/distill-8192/results.csv` |
 | Navigation adapter (known map) | In-sample 7/19 (seed 91260). **Held-out 0/57 for every arm [M]** | **Closed** (futility) | [confirm-v1 Stage 1](experiments/2026-09-sonic-nav/NAV8192_CONFIRM_V1_STAGE1_20260923.md) |
 | Masked / typed interface | Best results: 79-D line ≤14/89 train and 0/20 dev; 114-D transformer 21/89 train and 0/20 dev [M] | No working masked student | [roadmap §2](ROADMAP_20260923.md#2-where-each-layer-stands) |
-| SONIC kinematic planner (Phase 0.6/0.7, CPU part) | 28 ms/call on this host [M]. P0 direction/speed/stop controller: 200/200 goals within 0.10 m and stopped, **kinematic only** [M]. The waypoint mode sprints (peak 2.2 m/s median). Low postures: stealth-walk-2 head top 0.94 m with feet-only floor contact; crawl 0.61 m and elbow crawl 0.37 m both put hands, knees or forearms on the floor [C] | Not yet tracked in physics (Phase 0.7 GPU run is next) | [planner study](sonic/motion2scene/SONIC_PLANNER_KINEMATIC_20260923.md); `workspace/phase0/planner/` |
+| SONIC planner + release tracker (Phase 0.6/0.7) | Kinematic: the P0 controller ends within 0.10 m of the goal on 200/200 goals [M]. **Physical, open loop:** release completes 75/75 posture clips and 354/360 goal clips, but the P0 references end 0.85 m (median) from the goal, 0/120 within 0.25 m [M]. Executed STEALTH_WALK_2 head top is ≤1.064 m on feet only (duck band ~1.10–1.30 m); crawls reach 0.70 m with hands and knees down [C from M] | Closed-loop replanning required (Phase 1.2) | [0.7 report](experiments/2026-09-sonic-nav/PLANNER_TRACKING_0_7_20260923.md); [kinematic study](sonic/motion2scene/SONIC_PLANNER_KINEMATIC_20260923.md) |
 | Token action space (Phase 0.8) | ±1-bin noise changes release decoder actions by 0.095 RMS (gate <0.15). The `g1_kin` cycle residual flags 98% of ±2-bin incoherent tokens. Release and 8192 decoders differ by 0.32 RMS [M, offline] | Viable for Phase 3 | [token diagnostics](experiments/2026-09-sonic-nav/TOKEN_SPACE_DIAGNOSTICS_20260923.md) |
 | MID-360 geometry (Phase 0.9) | Sensor 1.217 m above the floor standing on both mounts [C]. The Isaac URDF and Unitree's own description mount it **inverted**: the inverted mount sees the floor from 0.87 m ahead but loses overheads early, so it needs 2–5 s of registered memory [C]. The upright mount is floor-blind to 7.4 m | Mount on the real robot unverified (user question) | [sensor geometry](experiments/2026-09-sonic-nav/evidence/sensor-geometry-20260923/summary.md) |
 | Legacy panel fixes (Phase 0.5) | The XY goal metric changes 0/497 legacy outcomes [M]. Spawn-clearance assertion added; 00399-corridor rebuilt as legacy-v1.1 (not yet run). 00413-corridor's goal also sits 0.313 m from a wall [C] | Done | [re-score summary](experiments/2026-09-sonic-nav/evidence/rescore-xy-20260923/rescore_summary.md) |
@@ -41,9 +41,8 @@ The futility rule fired. Work moves to the SONIC-planner baseline and goal-condi
 
 ## Next actions [P]
 
-1. **Phase 0.7 GPU:** track the 25 planner posture clips and 120 goal clips open-loop with release SONIC at 3 DR seeds.
-2. **Phase 1:** task schema v2 (reference-optional, XY goal), `PlannerBaselineCallback` (closed-loop planner → frozen release tracker) with its parity test, and the physical smoke test (idle; walk 3 m and stop; turn and walk; sidestep).
-3. Then the multi-instance evaluation harness and the decision-forcing benchmark v1 (roadmap Phases 1.4–1.6).
+1. **Phase 1:** task schema v2 (reference-optional, XY goal), `PlannerBaselineCallback` (closed-loop planner → frozen release tracker) with its parity test, and the physical smoke test (idle; walk 3 m and stop; turn and walk; sidestep).
+2. Then the multi-instance evaluation harness and the decision-forcing benchmark v1 (roadmap Phases 1.4–1.6).
 
 ## Decisions waiting on the user
 
