@@ -81,6 +81,8 @@ GOAL_DISTANCE_M = (1.0, 8.0)
 GOAL_HORIZON_S = 30.0
 REPLAN_SCALES = (1.0, 2.0)
 STOP_PHASES_S = (3.0, 3.1, 3.2, 3.3, 3.4)
+CONTROLLERS = ("P0", "P1", "P1c")
+CARROT_M = 1.0
 GATE_RADIUS_M = 0.10
 GATE_RATE = 0.95
 STEADY_WINDOW_S = 3.0
@@ -195,7 +197,7 @@ def goal_study(session, out):
     for scale in REPLAN_SCALES:
         calibration[str(scale)] = calibrate_stop_distances(session, scale)
         stop = {k: v["median_run_out_m"] for k, v in calibration[str(scale)]["bands"].items()}
-        for controller_name in ("P0", "P1"):
+        for controller_name in CONTROLLERS:
             key = f"{controller_name}_x{scale:g}"
             started = time.perf_counter()
             roots = []
@@ -203,8 +205,12 @@ def goal_study(session, out):
                 runtime = DeployPlannerRuntime(session, replan_interval_scale=scale)
                 if controller_name == "P0":
                     controller = DirectionSpeedStopController(goal, stop)
-                else:
+                elif controller_name == "P1":
                     controller = WaypointController(goal)
+                else:  # P1c, exploratory: carrot waypoint re-placed on the replan clock
+                    controller = WaypointController(
+                        goal, carrot_m=CARROT_M, update_period_s=1.0 * scale
+                    )
                 frames = run_controller(runtime, controller, GOAL_HORIZON_S)
                 row = goal_metrics(frames, goal)
                 row.update(
@@ -227,7 +233,7 @@ def goal_study(session, out):
                     row["stop_command_s"] = controller.stop_time_s
                 episodes.append(row)
                 roots.append(frames[:, :3].astype(np.float32))
-                if controller_name in ("P0", "P1") and scale == 1.0 and index < 40:
+                if scale == 1.0 and index < 40:
                     traces[(key, index)] = frames
             np.save(out / f"goal_roots_{key}.npy", np.stack(roots))
             print(f"[goals] {key}: {time.perf_counter() - started:.0f}s", flush=True)
@@ -263,6 +269,12 @@ def summarize_goals(episodes):
             "stops": int(sum(r["stops"] for r in rows)),
             "planner_calls_median": float(np.median([r["planner_calls"] for r in rows])),
             "hold_ticks_median": float(np.median([r["hold_ticks"] for r in rows])),
+            "peak_speed_median_m_s": float(np.median([r["peak_speed_0p5s_m_s"] for r in rows])),
+            "peak_speed_max_m_s": float(max(r["peak_speed_0p5s_m_s"] for r in rows)),
+            "time_above_1p5_m_s_median_s": float(
+                np.median([r["time_above_1p5_m_s_s"] for r in rows])
+            ),
+            "episodes_above_1p5_m_s": int(sum(r["time_above_1p5_m_s_s"] > 0 for r in rows)),
             "num_pred_frames_seen": sorted({v for r in rows for v in r["num_pred_frames"]}),
             "success_by_distance_band": {
                 band: int(sum(r["success_010"] for r in rows if lo <= r["goal_distance_m"] < hi))
@@ -409,9 +421,11 @@ def smoothed(values, seconds=0.3):
     return np.convolve(pad, np.ones(width) / width, mode="valid")
 
 
-def settle_time(signal, steady_slice, tolerance_floor=0.02, fraction=0.1):
-    series = smoothed(signal)
-    steady = series[steady_slice]
+def settle_time(signal, steady_slice, tolerance_floor=0.02, fraction=0.1, seconds=0.3):
+    # Drop the trailing half window, where edge padding of the smoothing distorts the series.
+    edge = max(1, int(round(seconds * CONTROL_FPS))) // 2
+    series = smoothed(signal, seconds)[: len(signal) - edge]
+    steady = series[steady_slice.start : len(series)]
     target = float(np.median(steady))
     # Gait oscillation that survives smoothing widens the band (half the steady p5-p95 range).
     oscillation = float(np.percentile(steady, 95) - np.percentile(steady, 5)) / 2
@@ -578,6 +592,11 @@ def posture_study(session, geometry, out):
     return table, clips
 
 
+def goal_clip_count(out):
+    manifest = out / "goal_clips" / "manifest.json"
+    return len(json.loads(manifest.read_text())["clips"]) if manifest.exists() else 0
+
+
 def export_goal_clips(out, goals, episodes, traces):
     clip_dir = out / "goal_clips"
     clip_dir.mkdir(parents=True, exist_ok=True)
@@ -639,13 +658,18 @@ GOAL_PROTOCOL = [
     "**P1** waypoint (extension E1): SLOW_WALK with `has_specific_target=1`, the goal in all four "
     "slots and final heading = start bearing. The command never changes, so only the planner's "
     "timer replans.",
+    f"**P1c** (exploratory, added after seeing P1 sprint; not part of the gate): the same waypoint "
+    f"command, but the target is placed {CARROT_M:g} m ahead toward the goal (on the goal once "
+    "closer), and re-placed on the replan clock (every 1.0 s at ×1, 2.0 s at ×2) with the final "
+    "heading along the current bearing.",
     "Replan interval ×1 = deploy (1.0 s in modes 1/2) and ×2 (2.0 s). P0's run-outs are "
     "calibrated per interval on straight walks (5 gait phases per band), not on the goal set.",
     f"Gate (roadmap §8, 0.6): P0 or P1 ends within {GATE_RADIUS_M:.2f} m of the goal in "
     f"≥{GATE_RATE:.0%} of goals.",
     "Metrics: final root-XY error; time to first come within 0.10 m; path-length ratio = root "
     "path / straight line (*smoothed* uses a 0.5 s moving average to remove gait sway, *raw* keeps "
-    "it); stops = net root speed over the last 0.5 s < 0.1 m/s.",
+    "it); stops = net root speed over the last 0.5 s < 0.1 m/s; peak speed = maximum root speed "
+    "over 0.5 s windows (walking is ≲1.2 m/s here; >1.5 m/s means running).",
 ]
 
 
@@ -675,6 +699,8 @@ def goal_report(result, notes):
         "Stops",
         "Calls (median)",
         "Hold ticks (median)",
+        "Peak 0.5 s speed median / max (m/s)",
+        "Episodes >1.5 m/s",
     ]
     rows = []
     for key, v in summary.items():
@@ -693,6 +719,8 @@ def goal_report(result, notes):
                 f"{v['stops']}/{v['episodes']}",
                 f"{v['planner_calls_median']:.0f}",
                 f"{v['hold_ticks_median']:.0f}",
+                f"{v['peak_speed_median_m_s']:.2f} / {v['peak_speed_max_m_s']:.2f}",
+                f"{v['episodes_above_1p5_m_s']}/{v['episodes']}",
             ]
         )
     lines += md_table(header, rows)
@@ -837,7 +865,7 @@ def posture_report(result, notes):
         f"- {len(result['clips'])} planner clips, 50 fps motion-lib pickles, in `clips/` "
         "(manifest `clips/manifest.json` lists each command schedule and sha256).",
         f"- {result['goal_clips']} goal-study references (B1-OL candidates: the first 40 goals of "
-        "P0_x1 and P1_x1, trimmed 3 s after settling) in `goal_clips/`.",
+        "P0_x1, P1_x1 and P1c_x1, trimmed 3 s after settling) in `goal_clips/`.",
         "",
         "## Caveats",
         "",
@@ -904,7 +932,7 @@ def main():
             },
             "table": table,
             "clips": clips,
-            "goal_clips": 0,
+            "goal_clips": goal_clip_count(out),
             "timing": session.timing_summary(),
         }
         write_json(out / "posture_table.json", result)
@@ -912,7 +940,11 @@ def main():
         session.call_seconds.clear()
         goals, calibration, episodes, traces = goal_study(session, out)
         summary = summarize_goals(episodes)
-        passing = [k for k, v in summary.items() if v["success_010_rate"] >= GATE_RATE]
+        passing = [
+            k
+            for k, v in summary.items()
+            if k.split("_")[0] in ("P0", "P1") and v["success_010_rate"] >= GATE_RATE
+        ]
         default_passing = [k for k in passing if k.endswith("x1")]
         if default_passing:
             statement = f"**PASS** at the deploy replan interval via {', '.join(default_passing)}."

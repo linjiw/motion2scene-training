@@ -385,6 +385,33 @@ def test_p1_waypoint_command_is_constant():
     assert first.target_headings[0] == pytest.approx(3 * math.pi / 4)
 
 
+def test_p1c_carrot_is_bounded_and_replaced_on_the_replan_clock():
+    controller = WaypointController((5.0, 0.0), carrot_m=1.0, update_period_s=1.0)
+    first = controller(KinematicState(0.0, np.zeros(2), 0.0, 0.0))
+    assert first.target_positions[-1][:2] == pytest.approx((1.0, 0.0))
+    same = controller(KinematicState(0.9, np.array([0.8, 0.0]), 0.0, 0.0))
+    assert same is first  # held until the next 1.0 s boundary
+    moved = controller(KinematicState(1.0, np.array([0.8, 0.6]), 0.0, 0.0))
+    np.testing.assert_allclose(
+        moved.target_positions[-1][:2],
+        [0.8 + 4.2 / math.hypot(4.2, 0.6), 0.6 - 0.6 / math.hypot(4.2, 0.6)],
+    )
+    near = controller(KinematicState(2.0, np.array([4.5, 0.0]), 0.0, 0.0))
+    assert near.target_positions[-1][:2] == pytest.approx((5.0, 0.0))
+    with pytest.raises(ValueError):
+        WaypointController((1.0, 0.0), carrot_m=0.0)
+
+
+def test_goal_metrics_peak_speed_windows():
+    frames = np.zeros((101, 36))
+    frames[:, 3] = 1
+    frames[:, 0] = np.r_[np.linspace(0, 1.0, 26), np.full(75, 1.0)]  # 1 m in 0.5 s, then still
+    metrics = goal_metrics(frames, (1.0, 0.0))
+    assert metrics["peak_speed_0p5s_m_s"] == pytest.approx(2.0)
+    # Windows starting at frames 0-6 cover more than 0.75 m of the ramp: 7 x 0.02 s.
+    assert metrics["time_above_1p5_m_s_s"] == pytest.approx(0.14)
+
+
 # -- geometry ------------------------------------------------------------------------------
 def write_binary_stl(path, triangles):
     with open(path, "wb") as stream:

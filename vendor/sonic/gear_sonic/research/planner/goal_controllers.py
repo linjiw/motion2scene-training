@@ -138,25 +138,55 @@ class DirectionSpeedStopController:
 
 @dataclass
 class WaypointController:
-    """P1: goal in every waypoint slot, final heading = start bearing, constant command."""
+    """P1: the goal in every waypoint slot, final heading = start bearing, constant command.
+
+    With ``carrot_m`` set (P1c, exploratory) the waypoint is instead placed ``carrot_m`` ahead
+    toward the goal (or on it once closer) and re-placed every ``update_period_s``, on the same
+    clock as the deploy's replan timer, with the final heading along the current bearing.
+    The goal-as-waypoint planner tries to reach the target within one ~1.4 s plan, so a
+    distant goal makes it sprint; the carrot bounds the implied speed.
+    """
 
     goal_xy: Sequence[float]
     mode: int = SLOW_WALK
     speed: float | None = None
+    carrot_m: float | None = None
+    update_period_s: float = 1.0
     name: str = "P1"
 
     def __post_init__(self):
         self.goal_xy = np.asarray(self.goal_xy, dtype=np.float64)
+        if self.carrot_m is not None and not self.carrot_m > 0:
+            raise ValueError("carrot length must be positive")
         self.reset()
 
     def reset(self):
         self.command = None
+        self.next_update_s = 0.0
 
     def __call__(self, state: KinematicState) -> PlannerCommand:
+        offset = self.goal_xy - state.xy
+        distance = float(np.linalg.norm(offset))
         if self.command is None:
-            offset = self.goal_xy - state.xy
-            heading = math.atan2(offset[1], offset[0])
-            self.command = waypoint_command(self.mode, self.goal_xy, heading, speed=self.speed)
+            self.heading = math.atan2(offset[1], offset[0])
+        if self.carrot_m is None:
+            if self.command is None:
+                self.command = waypoint_command(
+                    self.mode, self.goal_xy, self.heading, speed=self.speed
+                )
+            return self.command
+        if self.command is None or state.time_s + 1e-9 >= self.next_update_s:
+            if distance > 0.3:
+                self.heading = math.atan2(offset[1], offset[0])
+            target = (
+                self.goal_xy
+                if distance <= self.carrot_m
+                else state.xy + offset / distance * self.carrot_m
+            )
+            self.command = waypoint_command(self.mode, target, self.heading, speed=self.speed)
+            self.next_update_s = (math.floor(state.time_s / self.update_period_s + 1e-9) + 1) * (
+                self.update_period_s
+            )
         return self.command
 
 
@@ -198,6 +228,8 @@ def goal_metrics(
         smooth = xy
     smooth_length = float(np.sum(np.linalg.norm(np.diff(smooth, axis=0), axis=1)))
     n_end = max(1, int(round(end_window_s * CONTROL_FPS)))
+    window = min(n_end, len(xy) - 1)
+    window_speed = np.linalg.norm(xy[window:] - xy[:-window], axis=1) / (window / CONTROL_FPS)
     end_speed = float(np.linalg.norm(xy[-1] - xy[-1 - n_end]) / (n_end / CONTROL_FPS))
 
     def first(radius):
@@ -225,6 +257,8 @@ def goal_metrics(
         "end_speed_m_s": end_speed,
         "stops": bool(end_speed < stop_speed),
         "min_root_z_m": float(np.min(frames[:, 2])),
+        "peak_speed_0p5s_m_s": float(window_speed.max()),
+        "time_above_1p5_m_s_s": float(np.count_nonzero(window_speed > 1.5) / CONTROL_FPS),
     }
 
 
