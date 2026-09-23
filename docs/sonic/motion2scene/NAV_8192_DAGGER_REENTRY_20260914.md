@@ -62,4 +62,10 @@ This is the first arm on the local stack to exceed the 4/24 → 4/19 plateau. It
 
 ## Evidence
 
-[`evidence/nav-8192-dagger-reentry-20260914/`](evidence/nav-8192-dagger-reentry-20260914/): per-state probe outcomes (`reentry-probes.json`), cycle-1 recoveries, fit configs and receipts for both arms, per-task panel results, and the figure. Packet `workspace/nav-8192` (dagger/, collect/reentry-v1-91260/) holds shards, traces and logs. Code: `scripts/navigation_distill/{dagger_arm,dagger_cycle,run_reentry}.sh`, `navigation_motor.approach_row_weights`, `navigation_reentry.py`.
+[`evidence/nav-8192-dagger-reentry-20260914/`](evidence/nav-8192-dagger-reentry-20260914/) ([file index](evidence/nav-8192-dagger-reentry-20260914/README.md)) holds:
+- per-state probe outcomes (`reentry-probes.json`);
+- cycle-1 recoveries, fit configs and receipts for both arms;
+- per-task panel results and the figure;
+- cycle-2 evidence, added September 23: the switch plan and per-arm recovery receipts, training manifests, fit configs and receipts, panel `results.txt`, and per-task `task-result.json`, `process-result.json`, stage config and launch command for both c2 panels.
+
+Packet `workspace/nav-8192` (dagger/, collect/reentry-v1-91260/) holds shards, traces and logs. Code: `scripts/navigation_distill/{dagger_arm,dagger_cycle,run_reentry}.sh`, `navigation_motor.approach_row_weights`, `navigation_reentry.py`.

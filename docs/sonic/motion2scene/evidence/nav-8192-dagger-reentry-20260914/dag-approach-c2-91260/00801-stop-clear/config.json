@@ -1,0 +1,12 @@
+{
+  "teacher_checkpoint": "/home/robotixx/motion2scene-training/workspace/distill-8192/teacher/model_step_000500.pt",
+  "teacher_sha256": "26ca1ed70c2287c1acb6243820649db4b8513a5d9b8b16abc115f890d87b6bff",
+  "task_path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00801/clear.json",
+  "output": "/home/robotixx/motion2scene-training/workspace/nav-8192/eval/dag-approach-c2-91260/00801-stop-clear/task",
+  "max_steps": 625,
+  "teacher_mode": false,
+  "command_profile": "context",
+  "student_checkpoint": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-fit/step-003000.pt",
+  "student_sha256": "426f0fc526a70f0e56c9a5f7a65614077dbfb66db396b08e1c11e412c096fbcd",
+  "actor_profile": "nav_goal_map_localization_v2"
+}
