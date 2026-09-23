@@ -4,7 +4,8 @@ Reads PoseCaptureQualificationCallback outputs (``metrics/*.pose.npz``) from one
 ``run_eval.sh ... custom`` directories and reports, per clip and seed:
 
 * completion (no native tracking termination);
-* executed vs reference pelvis height and head-top height, from URDF FK of the recorded
+* executed vs reference pelvis height and head-top height (minimum, and the steady-window
+  median/max over t > ``--steady-after-s``, the pre-declared overhang statistic), from URDF FK of the recorded
   robot and reference joint states (visual surface for the head, collision shapes elsewhere);
 * bodies whose collision surface comes within ``--floor-eps`` of the floor (floor-contact
   candidates), as a fraction of ticks;
@@ -42,7 +43,7 @@ def heights(geometry, qpos):
     return poses, col, head_top
 
 
-def clip_readout(path, geometry, floor_eps, manifest):
+def clip_readout(path, geometry, floor_eps, manifest, steady_after_s=2.0):
     d = np.load(path, allow_pickle=True)
     names = [str(x) for x in d["joint_names_isaac"]]
     n = int(d["robot_root_pos"].shape[0])
@@ -73,6 +74,13 @@ def clip_readout(path, geometry, floor_eps, manifest):
         pelvis_min_z=dict(robot=round(float(robot[:, 2].min()), 3), ref=round(float(ref[:, 2].min()), 3)),
         head_top_min=dict(robot=round(float(head_r.min()), 3), ref=round(float(head_ref.min()), 3)),
         head_top_p10=dict(robot=round(float(np.quantile(head_r, 0.1)), 3), ref=round(float(np.quantile(head_ref, 0.1)), 3)),
+        head_top_steady=dict(
+            window_start_s=steady_after_s,
+            robot_median=round(float(np.median(head_r[int(steady_after_s / float(d["dt"])):])), 3),
+            robot_max=round(float(head_r[int(steady_after_s / float(d["dt"])):].max()), 3),
+            ref_median=round(float(np.median(head_ref[int(steady_after_s / float(d["dt"])):])), 3),
+            ref_max=round(float(head_ref[int(steady_after_s / float(d["dt"])):].max()), 3),
+        ),
         floor_contact_candidates=contact,
         final_root_xy_drift_m=round(float(np.linalg.norm(robot[-1, :2] - ref[-1, :2])), 3),
         max_root_xy_drift_m=round(float(np.linalg.norm(robot[:, :2] - ref[:, :2], axis=1).max()), 3),
@@ -92,18 +100,19 @@ def main():
     p.add_argument("--runs", type=Path, nargs="+", required=True)
     p.add_argument("--manifest", type=Path, required=True)
     p.add_argument("--floor-eps", type=float, default=0.03)
+    p.add_argument("--steady-after-s", type=float, default=2.0, help="start of the steady head-top window")
     p.add_argument("--out", type=Path, required=True)
     a = p.parse_args()
     manifest = {Path(c["file"]).stem: c for c in json.loads(a.manifest.read_text())["clips"]}
     geometry = G1Geometry()
     runs = {}
     for run in a.runs:
-        clips = [clip_readout(f, geometry, a.floor_eps, manifest) for f in sorted((run / "metrics").glob("*.pose.npz"))]
+        clips = [clip_readout(f, geometry, a.floor_eps, manifest, a.steady_after_s) for f in sorted((run / "metrics").glob("*.pose.npz"))]
         runs[run.name] = clips
         done = sum(c["completed"] for c in clips)
         print(f"{run.name}: {done}/{len(clips)} completed")
     a.out.parent.mkdir(parents=True, exist_ok=True)
-    a.out.write_text(json.dumps(dict(schema="planner_tracking_readout_v1", floor_eps=a.floor_eps, runs=runs), indent=1))
+    a.out.write_text(json.dumps(dict(schema="planner_tracking_readout_v2", floor_eps=a.floor_eps, steady_after_s=a.steady_after_s, runs=runs), indent=1))
 
 
 if __name__ == "__main__":

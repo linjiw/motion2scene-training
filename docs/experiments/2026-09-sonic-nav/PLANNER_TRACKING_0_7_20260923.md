@@ -22,14 +22,14 @@ Run September 23, 2026. Release SONIC (`model_step_041550.pt`, sha `e6bdab…`) 
    - The six P1 failures are foot and end-effector tracking terminations on sprinting references.
 
    **Decision (roadmap 0.7 gate):** closed-loop replanning from the measured pelvis is required. The planner baseline must re-anchor its goal command on the robot's measured state (roadmap Phase 1.2). Open-loop reference reproduction cannot meet the 0.25 m goal tolerance. This is the same drift that caps release SONIC at 15/24 on the legacy stopping panel.
-3. **Executed low postures are higher than planned.** The steady-phase head top is taken over t > 2 s and averaged over 3 seeds. It comes from URDF forward kinematics of the recorded joint states, using the visual surface for the head [C from M].
+3. **Executed low postures are higher than planned.** The steady-phase head top is taken over t > 2 s (`head_top_steady` in the readout). Medians are averaged over 3 seeds; maxima are the maximum over all 3 seeds. It comes from URDF forward kinematics of the recorded joint states, using the visual surface for the head [C from M].
 
    | Mode | Head top, median / max (m) | Reference median (m) | Pelvis min (m) | Speed (m/s) | Non-foot floor contact (≤3 cm) |
    |---|---|---|---|---|---|
-   | Walk (mode 1) | 1.303 / 1.315 | 1.298 | 0.75 | 0.32 | none |
-   | STEALTH_WALK (18) | 1.228 / 1.243 | 1.204 | 0.66 | 0.88 | none |
-   | **STEALTH_WALK_2 (22)** | **1.044 / 1.064** | 0.932 | 0.51 | 0.60 | **none** |
-   | Crawl, staged (8) | 0.704 / 0.944 | 0.597 | 0.41 | 0.50 | hands 40%, knees 56–86% of ticks |
+   | Walk (mode 1) | 1.303 / 1.316 | 1.298 | 0.75 | 0.32 | none |
+   | STEALTH_WALK (18) | 1.228 / 1.250 | 1.204 | 0.66 | 0.88 | none |
+   | **STEALTH_WALK_2 (22)** | **1.044 / 1.081** | 0.932 | 0.51 | 0.60 | **none** |
+   | Crawl, staged (8) | 0.704 / 0.948 | 0.597 | 0.41 | 0.50 | hands 40%, knees 56–86% of ticks |
    | Elbow crawl (14) | min 0.21–0.29 | min 0.24–0.30 | 0.14–0.19 | — | forearms, hands, knees, thighs |
    | Squat, requested height ≤0.3 (4) | min 0.92–0.95 | min 0.79 | 0.43 (requested 0.30) | static | none |
 
@@ -39,8 +39,8 @@ Run September 23, 2026. Release SONIC (`model_step_041550.pt`, sha `e6bdab…`) 
 ## Consequences for the benchmark (Phase 1.5)
 
 - **Walk-under.** An underside above about 1.33 m can be passed upright.
-- **Duck band, feet only: about 1.10–1.30 m.** STEALTH_WALK_2 keeps the head top at or below 1.064 m at 0.6 m/s with only the feet on the floor. This is F3's B3-feasible band. The margin assumption (≥3 cm over the max) is to be fixed in the lock.
-- **Below about 1.07 m, crawling is required.** Crawling puts hands and knees on the floor. It needs a crawl family with a per-body contact whitelist (hands, knees and, for elbow crawl, forearms) and a crawl fall rule. Otherwise it belongs in the pre-registered expressivity band E.
+- **Duck band, feet only: about 1.11–1.30 m.** STEALTH_WALK_2 keeps the head top at or below 1.081 m (maximum over 3 seeds) at 0.6 m/s with only the feet on the floor. This is F3's B3-feasible band. The margin assumption (≥3 cm over the max) is to be fixed in the lock.
+- **Below about 1.08 m, crawling is required.** Crawling puts hands and knees on the floor. It needs a crawl family with a per-body contact whitelist (hands, knees and, for elbow crawl, forearms) and a crawl fall rule. Otherwise it belongs in the pre-registered expressivity band E.
 - **Closed-loop crawling.** Crawls drift by 2–4 m open-loop, so closed-loop crawl control needs the same measured-state re-anchoring.
 
 ## Protocol and evidence
