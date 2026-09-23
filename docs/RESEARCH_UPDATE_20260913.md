@@ -1,3 +1,5 @@
+> **Superseded (September 23, 2026).** For current status, see [docs/STATUS.md](STATUS.md) and the [revised roadmap](ROADMAP_20260923.md). This file is kept as a historical record.
+
 # Research update — September 13, 2026
 
 This update supersedes the package's earlier pending-recovery summary. It records completed source experiments; syncing the package does not rerun native training or physics. See the [sync manifest](publication/research-sync-20260913.json) for source revision, snapshot time and copied-file SHA-256 hashes.

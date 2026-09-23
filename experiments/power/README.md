@@ -1,0 +1,8 @@
+# Power simulations for navigation panel comparisons
+
+CPU-only simulations behind the power figures in [the roadmap §10](../../docs/ROADMAP_20260923.md#10-evaluation-protocol). They are simulated statistics, not measurements.
+
+- `sim_indep.py`: logistic model of 19 paired tasks. It uses task effects, an arm×task interaction and per-instance effects shared across arms (same seed, same physics draw). The six long tasks are fixed at failure. The test is a pooled two-sided exact McNemar. `run(S, pA, pB, ...)` returns rejection rates for S instances per task.
+- `gate.py`: sweeps S for 7/19 vs 4/19 and other rate pairs.
+
+The variance components are assumptions, not estimates. 7/19 is an in-sample rate. Roadmap Phase 0.1 requires re-simulating the registered gate (one-sided task-stratified CMH, Holm over two comparators, mean ≥5/19) before the confirmation launch. Requires numpy and scipy.

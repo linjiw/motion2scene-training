@@ -1,3 +1,5 @@
+> **Archived line (September 23, 2026).** Execution of this Motion2Scene/ICRA pilot has been BLOCKED since September 11 ([audit](audit/20260911-pilot-boundary/README.md)); the ICRA deadline passed. The active SONIC → motor → navigation work is summarized in [docs/STATUS.md](../../STATUS.md) and the [roadmap](../../ROADMAP_20260923.md). Only this line's assets (overhang tasks, the LOCKED V3 layouts, sensor-perturbation and statistics code) are reused.
+
 # Motion2Scene
 
 Stable research reference: [research compass](RESEARCH_COMPASS.md).

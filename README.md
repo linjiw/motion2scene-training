@@ -2,7 +2,7 @@
 
 A separate, self-contained research checkout for SONIC teacher training, BFM student distillation, Motion2Scene scene/obstacle generation, and dataset visualization. It contains a working-tree snapshot of both research codebases, actual datasets and selected checkpoints in Git LFS, plus portable commands that create new local configurations.
 
-**Research status (September 23, 2026):** the full-command motor completes 86–88/89 training and ~10/20 development motions. On the local stack, the best goal/map navigation student is approach-weighted short-cycle DAgger (cycle 2), which completes 7/19 feasible stopping tasks on one evaluation seed. Confirmation seeds are pending. The known-map student has no perception yet. See the [status and roadmap](docs/ROADMAP_20260923.md) for the layer-by-layer state, bottlenecks and ordered plan, and the [DAgger report](docs/sonic/motion2scene/NAV_8192_DAGGER_REENTRY_20260914.md) for the latest numbers.
+**Research status (September 23, 2026):** release SONIC is the best tracker on the repaired corpus: 17–18/20 dev clips. The motor student completes ~86/89 train and ~10/20 dev motions. The best known-map navigation student completes 7/19 feasible stopping tasks, but only in-sample, on the seed that produced its training labels. Those tasks are timed reproductions of training clips, not navigation. No perception or goal-conditioned RL exists yet. The next steps are held-out-seed confirmation, a SONIC-planner baseline and a benchmark that forces route and posture decisions. See [STATUS](docs/STATUS.md), the [roadmap](docs/ROADMAP_20260923.md) and the [docs index](docs/README.md).
 
 Read the [readiness audit](docs/READINESS_AUDIT.md) before setting up native training.
 
@@ -59,7 +59,7 @@ tmux new -s new-teacher "scripts/m2s_native.sh teacher-train $PWD/workspace/new-
 
 `teacher-train` blocks until training ends (wall cap 48 h), so run it in `tmux` or similar. A packet has one attempt: any launch failure uses it up, so prepare a new output name to retry. Run a 500-iteration packet first to measure throughput, and see [SETUP.md](docs/SETUP.md) for disk budget and how to stop a run.
 
-Preparation verifies repaired manifests, uses all 89 screened training clips and all 20 development clips for loader validation, creates local configuration paths, and runs the real CPU motion loader. Training initializes from the released SONIC checkpoint with a fresh optimizer. The launch is bounded, writes checkpoints/receipts and refuses to reuse an existing attempt. The CLI starts the training monitor only; evaluation is a separate declared experiment. No final repaired checkpoint is bundled while its source training remains live.
+Preparation verifies repaired manifests, uses all 89 screened training clips and all 20 development clips for loader validation, creates local configuration paths, and runs the real CPU motion loader. Training initializes from the released SONIC checkpoint with a fresh optimizer. The launch is bounded, writes checkpoints/receipts and refuses to reuse an existing attempt. The CLI starts the training monitor only; evaluation is a separate declared experiment. No repaired teacher checkpoint is bundled. The 8192×500 teacher that the current motor and navigation students use lives in the local `workspace/` (see [STATUS](docs/STATUS.md)).
 
 ## Student smoke training and scene generation
 
@@ -104,7 +104,8 @@ See [dataset coverage](docs/DATASETS.md), [workflow map](docs/WORKFLOWS.md), and
 
 | Document | Purpose |
 |---|---|
-| [Status and roadmap](docs/ROADMAP_20260923.md) | Current state per layer, bottlenecks, ordered plan |
+| [Status](docs/STATUS.md) | One-page current state per layer, with protocol stamps |
+| [Roadmap](docs/ROADMAP_20260923.md) | Corrections, bottlenecks, competitive landscape, ordered plan with gates |
 | [Setup](docs/SETUP.md) | Environments, data extraction, readiness and troubleshooting |
 | [Readiness audit](docs/READINESS_AUDIT.md) | Executed checks and remaining native integration gaps |
 | [Distillation research](docs/DISTILLATION_RESEARCH.md) | Current evidence, related work, extensible student framework and navigation-context roadmap |
