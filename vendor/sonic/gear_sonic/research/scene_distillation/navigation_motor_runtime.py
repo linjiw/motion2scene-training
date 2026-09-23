@@ -9,14 +9,39 @@ from gear_sonic.research.scene_distillation.motor_runtime import (
     load_motor,
     motor_commands,
 )
+from gear_sonic.research.scene_distillation.navigation_ablation import (
+    ObservationAblation,
+    ablation_record,
+    observation_task,
+    reference_endpoint,
+)
 from gear_sonic.research.scene_distillation.navigation_localization import CausalLocalization
 from gear_sonic.research.scene_distillation.navigation_motor import NavigationInput, load_navigation
 
 
 class NavigationMotorCallback(DirectSceneTaskCallback):
+    # Opt-in stage-config flags (goal_rotation_deg, zero_obstacles) change only the actor's
+    # view of the task; scoring, physics and the reference keep the original task.
+    ablation = ObservationAblation()
+    # Subclasses that record training rows or privileged diagnostics opt out.
+    supports_observation_ablation = True
+
     def _begin_task(self, env, teacher, task):
+        ablation = ObservationAblation.from_config(self.config)
+        if ablation.active and not self.supports_observation_ablation:
+            raise ValueError("Observation ablations are evaluation-only (nav mode)")
+        self.ablation = ablation
         self.localization = CausalLocalization()
         self.decision_tick = 0
+
+    def _task_result_fields(self, task, roots):
+        if not self.ablation.active:
+            return {}
+        return dict(
+            navigation_ablation=ablation_record(
+                task, self.ablation, roots[-1], reference_endpoint(task)
+            )
+        )
 
     def _load_student(self, device):
         if self.config.get("actor_profile") not in (
@@ -32,6 +57,7 @@ class NavigationMotorCallback(DirectSceneTaskCallback):
         return student
 
     def _navigation_actor(self, student, env, teacher, observation, task):
+        task = observation_task(task, self.ablation)
         command = env.motion_command
         context = task_context(
             task,

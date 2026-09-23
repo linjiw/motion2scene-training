@@ -39,6 +39,10 @@ class DirectSceneTaskCallback:
     def _complete_task(self, task, score, output):
         pass
 
+    def _task_result_fields(self, task, roots):
+        """Extra task-result.json fields. None by default, so default receipts are unchanged."""
+        return {}
+
     def _goal_stop(self, task, roots, speeds, forces, fell):
         return score_navigation_task(task, roots, speeds, forces, fell=fell)["navigation_success"]
 
@@ -212,6 +216,7 @@ class DirectSceneTaskCallback:
                 contact_dt=0.005,
                 scene_teacher_qualified=False,
             )
+            score.update(self._task_result_fields(task, roots))
             np.savez_compressed(
                 output / "trace.npz",
                 root_xyz=roots,
