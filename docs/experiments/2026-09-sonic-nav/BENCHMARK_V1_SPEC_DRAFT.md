@@ -84,5 +84,9 @@ Step-over obstacles are left out of v1. They need a foot-clearance scorer.
 
 1. Calibrate the deadline constants and the 3 cm margin on the Phase 1.3 smoke runs (dev seeds).
 2. Measure contact forces for crawl (0.7 only has geometric proximity) before fixing the F3-crawl whitelist and fall rule.
-3. Pick the external anchor (Phase 1.8; CAT or Gallant) and list which families it is scored on.
+3. **External anchor (Phase 1.8), decided: CAT generalist v1.** It is Apache-2.0, has public G1 weights (`Axian12138/Click-and-Traverse`, `generalist_v1` ONNX) and takes goal guidance over a known voxel map. It runs in MuJoCo and moves legs only (12 DoF); the upper body stays at its default pose. PASSAGE already reports it zero-shot (70.3% success, 14.0% collision-free). Plan:
+   - evaluate it natively in MuJoCo on exported F0–F4 scenes (2 days);
+   - an Isaac port is optional (3 days).
+
+   Gallant has no weights and no licence file. MTC and PASSAGE have no released code. See the [scoop watch, 2026-09-23](scoop-watch/2026-09-23-anchor-and-scoop.md).
 4. Build the Phase 1.4 multi-instance harness. Evaluating about 900+ dev episodes per arm sequentially is not practical: at the typical 290 ms/step that is days per arm.
