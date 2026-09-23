@@ -44,7 +44,13 @@ ARGS=(
   "++manager_env.config.navigation_task_path=$TASK"
   "++callbacks.im_eval.stage_config=$STAGE"
 )
+# Optional extra Hydra overrides, whitespace-separated (e.g. a nominal-dynamics profile).
+# shellcheck disable=SC2206
+[ -n "${M2S_EXTRA_ARGS:-}" ] && ARGS+=(${M2S_EXTRA_ARGS})
 "$PY" -c 'import json,sys; print(json.dumps(sys.argv[1:], indent=2))' "$PY" "${ARGS[@]}" > "$OUT/command.json"
+# Provenance: harness commit and GPU state at launch.
+{ echo "harness_commit=$(git -C "$KIT" rev-parse HEAD 2>/dev/null)"; echo "harness_dirty=$(git -C "$KIT" status --porcelain -- scripts vendor 2>/dev/null | wc -l)";
+  echo "extra_args=${M2S_EXTRA_ARGS:-}"; nvidia-smi --query-gpu=memory.used,memory.total,utilization.gpu --format=csv,noheader 2>/dev/null; } > "$OUT/launch-provenance.txt"
 START=$(date +%s)
 cd "$KIT/vendor/sonic" || exit 2
 env -u PYTHONPATH \

@@ -1,0 +1,157 @@
+{
+ "id": "nav8192-confirm-v1",
+ "registered": "2026-09-23",
+ "stage": 1,
+ "question": "Does approach-weighted short-cycle DAgger (cycle 2) beat uniform DAgger and its parent nav-v2-recovery on physics instances never used for collection?",
+ "context": "All prior collection and evaluation used seed 91260 with bit-deterministic rollouts, so 7/19 (approach-c2) is in-sample. Seeds change startup domain randomization. See docs/ROADMAP_20260923.md Phase 0.2.",
+ "arms": {
+  "dag-approach-c2": {
+   "checkpoint": "workspace/nav-8192/dagger/dag-approach/c2-fit/step-003000.pt",
+   "sha256": "426f0fc526a70f0e56c9a5f7a65614077dbfb66db396b08e1c11e412c096fbcd",
+   "mode": "nav",
+   "packet": "workspace/nav-8192"
+  },
+  "dag-uniform-c2": {
+   "checkpoint": "workspace/nav-8192/dagger/dag-uniform/c2-fit/step-003000.pt",
+   "sha256": "3af09f466ada1e192c2b19af544c2e1a417e4c0a6a57c9a8aeb26795fb5be138",
+   "mode": "nav",
+   "packet": "workspace/nav-8192"
+  },
+  "nav-v2-recovery": {
+   "checkpoint": "workspace/nav-8192/fit/nav-v2-recovery/step-003000.pt",
+   "sha256": "d4b3c0e288c4d59d724bb3a469de09f7e06b36330bcd9203ea382138edcefd60",
+   "mode": "nav",
+   "packet": "workspace/nav-8192"
+  }
+ },
+ "references": {
+  "teacher_8192x500": {
+   "mode": "teacher",
+   "packet": "workspace/nav-8192",
+   "checkpoint": "/home/robotixx/motion2scene-training/workspace/distill-8192/teacher/model_step_000500.pt",
+   "sha256": "26ca1ed70c2287c1acb6243820649db4b8513a5d9b8b16abc115f890d87b6bff",
+   "tasks": "all 24"
+  },
+  "release_sonic": {
+   "mode": "teacher",
+   "packet": "workspace/nav-release",
+   "checkpoint": "/home/robotixx/motion2scene-training/workspace/teacher-8192-500-review/eval/release/model_step_041550.pt",
+   "sha256": "e6bdab3f64a39336b3d41877d4f497d05f58af275f288ec0e6746c283ded8909",
+   "tasks": "all 24",
+   "seeds": [
+    92601
+   ]
+  }
+ },
+ "tasks": {
+  "feasible_19": [
+   "00120-stop-clear",
+   "00120-stop-corridor",
+   "00265-stop-clear",
+   "00265-stop-corridor",
+   "00413-stop-clear",
+   "00677-stop-clear",
+   "00677-stop-corridor",
+   "00707-stop-clear",
+   "00707-stop-corridor",
+   "00711-stop-clear",
+   "00711-stop-corridor",
+   "00770-stop-clear",
+   "00770-stop-corridor",
+   "00801-stop-clear",
+   "00801-stop-corridor",
+   "00908-stop-clear",
+   "00908-stop-corridor",
+   "00976-stop-clear",
+   "00976-stop-corridor"
+  ],
+  "all_24": [
+   "00120-stop-clear",
+   "00120-stop-corridor",
+   "00265-stop-clear",
+   "00265-stop-corridor",
+   "00399-stop-clear",
+   "00399-stop-corridor",
+   "00413-stop-clear",
+   "00413-stop-corridor",
+   "00677-stop-clear",
+   "00677-stop-corridor",
+   "00707-stop-clear",
+   "00707-stop-corridor",
+   "00711-stop-clear",
+   "00711-stop-corridor",
+   "00770-stop-clear",
+   "00770-stop-corridor",
+   "00781-stop-clear",
+   "00781-stop-corridor",
+   "00801-stop-clear",
+   "00801-stop-corridor",
+   "00908-stop-clear",
+   "00908-stop-corridor",
+   "00976-stop-clear",
+   "00976-stop-corridor"
+  ],
+  "task_sha256": {
+   "00120-stop-clear": "1b663b2481621bfd4c0bd3da9c227d7554796f346f6455077f3e521ec4395a0b",
+   "00120-stop-corridor": "7997a8ab717a9bcc128cd9c0e07bf1dc96597901d3ec112016e2779dcfd35b48",
+   "00265-stop-clear": "76f81b7eb37492d394304d1133a3d7c61f6766f397e3f2afa773229ec94c30c6",
+   "00265-stop-corridor": "7c815d2586f251aae1abf714f5e3b13918bb3e5d2b02b0bc1a8c7368d9571333",
+   "00399-stop-clear": "65c0efe40615cff8adabfddb49a5e36343871055a7c908baea83b16e1fa7f299",
+   "00399-stop-corridor": "15ef0ce463a97e61330181856fd24b29ed6fe95b6d47181883e858b6050cc29b",
+   "00413-stop-clear": "861aa0e864b2af0ddef5ae35782e76ca24351c55f9beb8cfe0c5561fde98d2d7",
+   "00413-stop-corridor": "ceb9451b14af2fd96b7473fb18d5ebb7cdde148088ac9c29e8f8f0846bac9402",
+   "00677-stop-clear": "8f6da47ad8ec707ce2340c64eab3b5b2b9cdeacf3db154a57ec2b921abe9c7fd",
+   "00677-stop-corridor": "1c7f19cc7216eaaf8d8528a63482ecf62e0be66bcf9155f0bbaf231ba19929b9",
+   "00707-stop-clear": "1601f3657b181bfdee23dc66efb6c8f2c0042187bc73cd34fe16955dc05cd662",
+   "00707-stop-corridor": "8f051165f0b559ff6e4479c0402117e5f4a925e4937d55f6607e5dfe977e554f",
+   "00711-stop-clear": "d22257aa08e2098f708260f8cbb7207c933d9801bcbe7b3a892d7a8084e4b7f1",
+   "00711-stop-corridor": "fc6214ee559faab90d3bfd2d220554daf619b2591b90ddb7a6ab7f267833aa11",
+   "00770-stop-clear": "576caf4bddc4a279696e6dc002869c280cb3cc118a5a46c0f63b7e9720ba2e7d",
+   "00770-stop-corridor": "c27c44fdec72d0ad355fc7a2bc08b6ecb1e2a59cb3ab0f3924e13a649d795c8a",
+   "00781-stop-clear": "cf5b5df9f16318ff66b3bba1afca3bfb90f277789ad3cd4b192ca5b5918ca56a",
+   "00781-stop-corridor": "f900377d4a10c4defb94d2c8ee1d0ee450c9bb04f1450046fa171764ce5cfbf5",
+   "00801-stop-clear": "66db6ca1c49cd24afea850258a7cb607b8bf4c47fbb7ff8bc900449bebc9fca0",
+   "00801-stop-corridor": "4b0a92119b472d0368945386dfc95683cdc15a04d0ff1ef248c2e26443a1f730",
+   "00908-stop-clear": "0f95d3e4f15a9d56706045fceb10ef85092c5ecf64424735845fabd2fdc0b5a1",
+   "00908-stop-corridor": "c7fa3987224b34c127302b77fb68d789927adf33065bf8d6f861ca655a9f9345",
+   "00976-stop-clear": "b42ce615e9ff83c1cd7947864b94f290034d07d18e9676567cb581267cdd9018",
+   "00976-stop-corridor": "d33eaa2cebd5b427b5869de71456c9714843732069bec5e06eb0b700fc005a7d"
+  }
+ },
+ "seeds": {
+  "stage1": [
+   92601,
+   92602,
+   92603
+  ],
+  "stage2_from": 92604,
+  "prior_out_of_sample": {
+   "91262": "nav-v2-recovery 1/24 (1/19 feasible); reported separately"
+  },
+  "burned_registry": "experiments/seeds.yaml"
+ },
+ "scorer": "unchanged legacy scorer: 3-D pelvis distance <=0.25 m and speed <=0.10 m/s for 50 consecutive ticks before the reference-derived deadline; prohibited contact >1 N or pelvis <0.25 m terminates",
+ "primary_metric": "successes per 19 feasible tasks per seed; paired by (task, seed)",
+ "futility": "Stop after Stage 1 if approach-c2 averages <=3/19 across the three seeds, OR if its discordant wins over nav-v2-recovery do not exceed its discordant losses.",
+ "stage2_rule": "Stage 2 (seeds from 92604; count sized by simulating the gate on CPU) runs only if Stage 1 is not futile AND the Phase 0.4 goal-rotation ablation shows the adapter uses the goal.",
+ "confirmation_gate": "Confirmed only if an exact task-stratified CMH test (one-sided) passes against BOTH uniform-c2 and nav-v2-recovery with Holm correction at alpha=0.025, AND the approach-c2 mean is >=5/19.",
+ "variance_probe": {
+  "arm": "dag-approach-c2",
+  "tasks": [
+   "00908-stop-clear",
+   "00677-stop-corridor"
+  ],
+  "runs": [
+   "91260 default DR (determinism re-check, in-sample diagnostic)",
+   "92601 nominal_d1",
+   "92602 nominal_d1"
+  ],
+  "nominal_d1_overrides": "++eval_remove_events=[physics_material,add_joint_default_pos,base_com,randomize_rigid_body_mass,push_robot,compliance_force_push]",
+  "note": "default-DR runs at 92601/92602 come from Stage 1 itself"
+ },
+ "deviations": [
+  "InstanceDumpCallback (realized DR parameters) deferred; realized parameters are not yet logged."
+ ],
+ "infra_rule": "Infrastructure failures (PROCESS_FAILED, startup OOM, KILL timeout) are rerun at most twice and logged; policy failures are never rerun.",
+ "runner": "experiments/nav8192-confirm-v1/launch.sh (tmux sessions confirmA, confirmB)"
+}
