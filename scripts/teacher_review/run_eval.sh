@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # One native Isaac Lab evaluation for the teacher-8192-500 review.
-# Usage: run_eval.sh <release|trained500|previous8000> <development|train> [callback_target] [out_suffix]
+# Usage: run_eval.sh <release|trained500|previous8000> <development|train|custom> [callback_target] [out_suffix]
+# Optional overrides (defaults reproduce the original review exactly):
+#   SEED=91231  MOTION_DIR=<dir of motion pkls>  NUM_ENVS=<N>  OUT_DIR=<output dir>  ALLOW_CONCURRENT=1
+# split=custom requires MOTION_DIR, NUM_ENVS and OUT_DIR.
 # Mirrors workspace/m2s-repaired-teacher-step6200-comparison-20260912/current/command.json
 # with the scripts/m2s_native.sh environment (unset PYTHONPATH, user-owned TMPDIR and USD cache).
 set -uo pipefail
@@ -20,13 +23,17 @@ esac
 case "$SPLIT" in
   development) N=20 ;;
   train) N=89 ;;
+  custom) N=${NUM_ENVS:?NUM_ENVS required for custom}; : "${MOTION_DIR:?MOTION_DIR required}" "${OUT_DIR:?OUT_DIR required}" ;;
   *) echo "unknown split $SPLIT" >&2; exit 2 ;;
 esac
+N=${NUM_ENVS:-$N}
+SEED=${SEED:-91231}
+MOTION_DIR=${MOTION_DIR:-$KIT/workspace/teacher-8192-500/motions/$SPLIT}
 STAGE=$REVIEW/eval/$ARM
-OUT=$STAGE/$SPLIT$SUFFIX
+OUT=${OUT_DIR:-$STAGE/$SPLIT$SUFFIX}
 [ -f "$STAGE/config.yaml" ] && [ -e "$STAGE/$CKPT" ] || { echo "not staged: $STAGE" >&2; exit 2; }
 [ -e "$OUT/metrics" ] && { echo "refusing to overwrite $OUT/metrics" >&2; exit 3; }
-if pgrep -u "$(id -u)" -f "eval_agent_trl.py|train_agent_trl.py" >/dev/null; then
+if [ -z "${ALLOW_CONCURRENT:-}" ] && pgrep -u "$(id -u)" -f "gear_sonic/(eval|train)_agent_trl.py" >/dev/null; then
   echo "another Isaac eval/train process is running; run launches sequentially" >&2; exit 4
 fi
 mkdir -p "$OUT" "$HOME/.cache/m2s/tmp" "$HOME/.cache/m2s/isaaclab-usd"
@@ -36,7 +43,7 @@ ARGS=(
   "checkpoint=$STAGE/$CKPT"
   "++headless=true"
   "++num_envs=$N"
-  "++seed=91231"
+  "++seed=$SEED"
   "++use_wandb=false"
   "++use_encoder=g1"
   "++eval_output_dir=$OUT/metrics"
@@ -48,7 +55,7 @@ ARGS=(
   "++manager_env.config.render_results=false"
   "++manager_env.config.render_ego=false"
   "++manager_env.commands.motion.debug_vis=false"
-  "++manager_env.commands.motion.motion_lib_cfg.motion_file=$KIT/workspace/teacher-8192-500/motions/$SPLIT"
+  "++manager_env.commands.motion.motion_lib_cfg.motion_file=$MOTION_DIR"
   "++manager_env.commands.motion.motion_lib_cfg.override_num_motions_to_load=$N"
   "++manager_env.commands.motion.motion_lib_cfg.sort_motion_keys=true"
   "++manager_env.commands.motion.motion_lib_cfg.multi_thread=false"
@@ -93,4 +100,5 @@ json.dump({"exit_code": code, "timed_out": code == 124, "wall_seconds": end - st
 PYEOF
 echo "exit=$CODE wall_s=$(awk "BEGIN{print $END - $START}") out=$OUT"
 [ "$CODE" -eq 0 ] || exit "$CODE"
+[ "$SPLIT" = custom ] && exit 0
 env -u PYTHONPATH "$PY" "$HERE/check_run.py" --review "$REVIEW" "$ARM" "$SPLIT" --suffix "$SUFFIX"
