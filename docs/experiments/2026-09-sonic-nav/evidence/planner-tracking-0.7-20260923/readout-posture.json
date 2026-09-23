@@ -1,0 +1,1990 @@
+{
+ "schema": "planner_tracking_readout_v1",
+ "floor_eps": 0.03,
+ "runs": {
+  "posture-release-92610": [
+   {
+    "clip": "planner_crawl_direct",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.425,
+     "ref": 0.395
+    },
+    "head_top_min": {
+     "robot": 0.589,
+     "ref": 0.526
+    },
+    "head_top_p10": {
+     "robot": 0.625,
+     "ref": 0.545
+    },
+    "floor_contact_candidates": {
+     "left_hand": 0.391,
+     "right_hand": 0.371,
+     "left_knee_shin": 0.559,
+     "right_knee_shin": 0.563
+    },
+    "final_root_xy_drift_m": 2.11,
+    "max_root_xy_drift_m": 2.11,
+    "final_planar_speed_mps": 0.357
+   },
+   {
+    "clip": "planner_crawl_staged",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.408,
+     "ref": 0.388
+    },
+    "head_top_min": {
+     "robot": 0.606,
+     "ref": 0.477
+    },
+    "head_top_p10": {
+     "robot": 0.654,
+     "ref": 0.562
+    },
+    "floor_contact_candidates": {
+     "left_hand": 0.419,
+     "right_hand": 0.411,
+     "left_knee_shin": 0.856,
+     "right_knee_shin": 0.864
+    },
+    "final_root_xy_drift_m": 1.844,
+    "max_root_xy_drift_m": 1.844,
+    "final_planar_speed_mps": 0.579
+   },
+   {
+    "clip": "planner_elbow_crawl_direct",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.139,
+     "ref": 0.193
+    },
+    "head_top_min": {
+     "robot": 0.206,
+     "ref": 0.235
+    },
+    "head_top_p10": {
+     "robot": 0.285,
+     "ref": 0.313
+    },
+    "floor_contact_candidates": {
+     "left_upper_arm": 0.132,
+     "right_upper_arm": 0.008,
+     "left_elbow_forearm": 0.659,
+     "right_elbow_forearm": 0.649,
+     "left_hand": 0.874,
+     "right_hand": 0.86,
+     "left_thigh": 0.236,
+     "right_thigh": 0.509,
+     "left_knee_shin": 0.768,
+     "right_knee_shin": 0.85
+    },
+    "final_root_xy_drift_m": 3.379,
+    "max_root_xy_drift_m": 3.379,
+    "final_planar_speed_mps": 0.108
+   },
+   {
+    "clip": "planner_elbow_crawl_staged",
+    "condition": "posture_table",
+    "ticks": 599,
+    "motion_steps": 600,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.185,
+     "ref": 0.223
+    },
+    "head_top_min": {
+     "robot": 0.276,
+     "ref": 0.304
+    },
+    "head_top_p10": {
+     "robot": 0.294,
+     "ref": 0.327
+    },
+    "floor_contact_candidates": {
+     "left_upper_arm": 0.045,
+     "right_upper_arm": 0.002,
+     "left_elbow_forearm": 0.456,
+     "right_elbow_forearm": 0.362,
+     "left_hand": 0.691,
+     "right_hand": 0.696,
+     "left_thigh": 0.063,
+     "right_thigh": 0.209,
+     "left_knee_shin": 0.756,
+     "right_knee_shin": 0.856
+    },
+    "final_root_xy_drift_m": 3.664,
+    "max_root_xy_drift_m": 3.664,
+    "final_planar_speed_mps": 0.133
+   },
+   {
+    "clip": "planner_kneel_two_legs_h0.4",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.393,
+     "ref": 0.388
+    },
+    "head_top_min": {
+     "robot": 0.921,
+     "ref": 0.868
+    },
+    "head_top_p10": {
+     "robot": 0.922,
+     "ref": 0.868
+    },
+    "floor_contact_candidates": {
+     "left_knee_shin": 0.766,
+     "right_knee_shin": 0.783
+    },
+    "final_root_xy_drift_m": 0.135,
+    "max_root_xy_drift_m": 0.141,
+    "final_planar_speed_mps": 0.019
+   },
+   {
+    "clip": "planner_squat_h0.1",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.453,
+     "ref": 0.3
+    },
+    "head_top_min": {
+     "robot": 0.943,
+     "ref": 0.784
+    },
+    "head_top_p10": {
+     "robot": 0.966,
+     "ref": 0.786
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.082,
+    "max_root_xy_drift_m": 0.093,
+    "final_planar_speed_mps": 0.036
+   },
+   {
+    "clip": "planner_squat_h0.2",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.446,
+     "ref": 0.3
+    },
+    "head_top_min": {
+     "robot": 0.945,
+     "ref": 0.784
+    },
+    "head_top_p10": {
+     "robot": 0.965,
+     "ref": 0.786
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.089,
+    "max_root_xy_drift_m": 0.099,
+    "final_planar_speed_mps": 0.008
+   },
+   {
+    "clip": "planner_squat_h0.3",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.426,
+     "ref": 0.307
+    },
+    "head_top_min": {
+     "robot": 0.917,
+     "ref": 0.793
+    },
+    "head_top_p10": {
+     "robot": 0.944,
+     "ref": 0.794
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.098,
+    "max_root_xy_drift_m": 0.103,
+    "final_planar_speed_mps": 0.021
+   },
+   {
+    "clip": "planner_squat_h0.4",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.474,
+     "ref": 0.401
+    },
+    "head_top_min": {
+     "robot": 0.963,
+     "ref": 0.834
+    },
+    "head_top_p10": {
+     "robot": 0.972,
+     "ref": 0.836
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.076,
+    "max_root_xy_drift_m": 0.086,
+    "final_planar_speed_mps": 0.015
+   },
+   {
+    "clip": "planner_squat_h0.5",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.527,
+     "ref": 0.493
+    },
+    "head_top_min": {
+     "robot": 1.021,
+     "ref": 0.917
+    },
+    "head_top_p10": {
+     "robot": 1.031,
+     "ref": 0.926
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.066,
+    "max_root_xy_drift_m": 0.075,
+    "final_planar_speed_mps": 0.017
+   },
+   {
+    "clip": "planner_squat_h0.6",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.608,
+     "ref": 0.603
+    },
+    "head_top_min": {
+     "robot": 1.116,
+     "ref": 1.042
+    },
+    "head_top_p10": {
+     "robot": 1.119,
+     "ref": 1.043
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.041,
+    "max_root_xy_drift_m": 0.058,
+    "final_planar_speed_mps": 0.017
+   },
+   {
+    "clip": "planner_squat_h0.7",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.71,
+     "ref": 0.704
+    },
+    "head_top_min": {
+     "robot": 1.225,
+     "ref": 1.18
+    },
+    "head_top_p10": {
+     "robot": 1.226,
+     "ref": 1.18
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.008,
+    "max_root_xy_drift_m": 0.022,
+    "final_planar_speed_mps": 0.049
+   },
+   {
+    "clip": "planner_squat_h0.8",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.756,
+     "ref": 0.787
+    },
+    "head_top_min": {
+     "robot": 1.286,
+     "ref": 1.313
+    },
+    "head_top_p10": {
+     "robot": 1.311,
+     "ref": 1.314
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.016,
+    "max_root_xy_drift_m": 0.034,
+    "final_planar_speed_mps": 0.019
+   },
+   {
+    "clip": "planner_stealth_walk2_22",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.507,
+     "ref": 0.474
+    },
+    "head_top_min": {
+     "robot": 1.013,
+     "ref": 0.913
+    },
+    "head_top_p10": {
+     "robot": 1.019,
+     "ref": 0.923
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.598,
+    "max_root_xy_drift_m": 0.598,
+    "final_planar_speed_mps": 0.334
+   },
+   {
+    "clip": "planner_stealth_walk_18",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.649,
+     "ref": 0.666
+    },
+    "head_top_min": {
+     "robot": 1.179,
+     "ref": 1.166
+    },
+    "head_top_p10": {
+     "robot": 1.195,
+     "ref": 1.184
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.613,
+    "max_root_xy_drift_m": 0.613,
+    "final_planar_speed_mps": 0.707
+   },
+   {
+    "clip": "planner_strafe_left_mode1",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.712,
+     "ref": 0.734
+    },
+    "head_top_min": {
+     "robot": 1.241,
+     "ref": 1.249
+    },
+    "head_top_p10": {
+     "robot": 1.248,
+     "ref": 1.258
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.485,
+    "max_root_xy_drift_m": 0.486,
+    "final_planar_speed_mps": 0.644
+   },
+   {
+    "clip": "planner_strafe_left_mode2",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.697,
+     "ref": 0.716
+    },
+    "head_top_min": {
+     "robot": 1.225,
+     "ref": 1.234
+    },
+    "head_top_p10": {
+     "robot": 1.232,
+     "ref": 1.248
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 1.077,
+    "max_root_xy_drift_m": 1.077,
+    "final_planar_speed_mps": 1.086
+   },
+   {
+    "clip": "planner_strafe_right_mode1",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.734,
+     "ref": 0.744
+    },
+    "head_top_min": {
+     "robot": 1.257,
+     "ref": 1.252
+    },
+    "head_top_p10": {
+     "robot": 1.262,
+     "ref": 1.262
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.171,
+    "max_root_xy_drift_m": 0.186,
+    "final_planar_speed_mps": 0.263
+   },
+   {
+    "clip": "planner_walk_back_mode1",
+    "condition": "extra_walk",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.75,
+     "ref": 0.754
+    },
+    "head_top_min": {
+     "robot": 1.281,
+     "ref": 1.28
+    },
+    "head_top_p10": {
+     "robot": 1.293,
+     "ref": 1.288
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.668,
+    "max_root_xy_drift_m": 0.668,
+    "final_planar_speed_mps": 0.207
+   },
+   {
+    "clip": "planner_walk_diag45_mode2",
+    "condition": "extra_walk",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.704,
+     "ref": 0.688
+    },
+    "head_top_min": {
+     "robot": 1.232,
+     "ref": 1.209
+    },
+    "head_top_p10": {
+     "robot": 1.27,
+     "ref": 1.27
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.266,
+    "max_root_xy_drift_m": 0.266,
+    "final_planar_speed_mps": 0.656
+   },
+   {
+    "clip": "planner_walk_fwd_mode1",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.746,
+     "ref": 0.755
+    },
+    "head_top_min": {
+     "robot": 1.276,
+     "ref": 1.284
+    },
+    "head_top_p10": {
+     "robot": 1.292,
+     "ref": 1.29
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.815,
+    "max_root_xy_drift_m": 0.815,
+    "final_planar_speed_mps": 0.284
+   },
+   {
+    "clip": "planner_walk_fwd_mode2",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.656,
+     "ref": 0.658
+    },
+    "head_top_min": {
+     "robot": 1.182,
+     "ref": 1.17
+    },
+    "head_top_p10": {
+     "robot": 1.262,
+     "ref": 1.269
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.571,
+    "max_root_xy_drift_m": 0.571,
+    "final_planar_speed_mps": 0.663
+   },
+   {
+    "clip": "planner_walk_turn90_mode1",
+    "condition": "extra_walk",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.753,
+     "ref": 0.755
+    },
+    "head_top_min": {
+     "robot": 1.282,
+     "ref": 1.284
+    },
+    "head_top_p10": {
+     "robot": 1.296,
+     "ref": 1.29
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.393,
+    "max_root_xy_drift_m": 0.426,
+    "final_planar_speed_mps": 0.276
+   },
+   {
+    "clip": "planner_waypoint_3m_ahead",
+    "condition": "extra_walk",
+    "ticks": 399,
+    "motion_steps": 400,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.688,
+     "ref": 0.687
+    },
+    "head_top_min": {
+     "robot": 1.202,
+     "ref": 1.186
+    },
+    "head_top_p10": {
+     "robot": 1.274,
+     "ref": 1.269
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.426,
+    "max_root_xy_drift_m": 0.436,
+    "final_planar_speed_mps": 0.021
+   },
+   {
+    "clip": "planner_waypoint_turnaround",
+    "condition": "extra_walk",
+    "ticks": 399,
+    "motion_steps": 400,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.698,
+     "ref": 0.703
+    },
+    "head_top_min": {
+     "robot": 1.222,
+     "ref": 1.209
+    },
+    "head_top_p10": {
+     "robot": 1.277,
+     "ref": 1.275
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.729,
+    "max_root_xy_drift_m": 0.73,
+    "final_planar_speed_mps": 0.021
+   }
+  ],
+  "posture-release-92611": [
+   {
+    "clip": "planner_crawl_direct",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.428,
+     "ref": 0.395
+    },
+    "head_top_min": {
+     "robot": 0.579,
+     "ref": 0.526
+    },
+    "head_top_p10": {
+     "robot": 0.621,
+     "ref": 0.545
+    },
+    "floor_contact_candidates": {
+     "left_hand": 0.365,
+     "right_hand": 0.395,
+     "left_knee_shin": 0.561,
+     "right_knee_shin": 0.567
+    },
+    "final_root_xy_drift_m": 2.933,
+    "max_root_xy_drift_m": 2.933,
+    "final_planar_speed_mps": 0.317
+   },
+   {
+    "clip": "planner_crawl_staged",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.398,
+     "ref": 0.388
+    },
+    "head_top_min": {
+     "robot": 0.584,
+     "ref": 0.477
+    },
+    "head_top_p10": {
+     "robot": 0.619,
+     "ref": 0.562
+    },
+    "floor_contact_candidates": {
+     "left_hand": 0.459,
+     "right_hand": 0.549,
+     "left_knee_shin": 0.782,
+     "right_knee_shin": 0.747
+    },
+    "final_root_xy_drift_m": 2.256,
+    "max_root_xy_drift_m": 2.256,
+    "final_planar_speed_mps": 0.653
+   },
+   {
+    "clip": "planner_elbow_crawl_direct",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.178,
+     "ref": 0.193
+    },
+    "head_top_min": {
+     "robot": 0.212,
+     "ref": 0.235
+    },
+    "head_top_p10": {
+     "robot": 0.287,
+     "ref": 0.313
+    },
+    "floor_contact_candidates": {
+     "left_upper_arm": 0.102,
+     "right_upper_arm": 0.014,
+     "left_elbow_forearm": 0.591,
+     "right_elbow_forearm": 0.691,
+     "left_hand": 0.864,
+     "right_hand": 0.874,
+     "left_thigh": 0.11,
+     "right_thigh": 0.433,
+     "left_knee_shin": 0.679,
+     "right_knee_shin": 0.828
+    },
+    "final_root_xy_drift_m": 3.135,
+    "max_root_xy_drift_m": 3.135,
+    "final_planar_speed_mps": 0.277
+   },
+   {
+    "clip": "planner_elbow_crawl_staged",
+    "condition": "posture_table",
+    "ticks": 599,
+    "motion_steps": 600,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.181,
+     "ref": 0.223
+    },
+    "head_top_min": {
+     "robot": 0.288,
+     "ref": 0.304
+    },
+    "head_top_p10": {
+     "robot": 0.312,
+     "ref": 0.327
+    },
+    "floor_contact_candidates": {
+     "left_upper_arm": 0.013,
+     "left_elbow_forearm": 0.409,
+     "right_elbow_forearm": 0.351,
+     "left_hand": 0.701,
+     "right_hand": 0.688,
+     "left_thigh": 0.043,
+     "right_thigh": 0.167,
+     "left_knee_shin": 0.753,
+     "right_knee_shin": 0.826
+    },
+    "final_root_xy_drift_m": 3.904,
+    "max_root_xy_drift_m": 3.904,
+    "final_planar_speed_mps": 0.105
+   },
+   {
+    "clip": "planner_kneel_two_legs_h0.4",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.384,
+     "ref": 0.388
+    },
+    "head_top_min": {
+     "robot": 0.914,
+     "ref": 0.868
+    },
+    "head_top_p10": {
+     "robot": 0.921,
+     "ref": 0.868
+    },
+    "floor_contact_candidates": {
+     "left_knee_shin": 0.763,
+     "right_knee_shin": 0.773
+    },
+    "final_root_xy_drift_m": 0.145,
+    "max_root_xy_drift_m": 0.151,
+    "final_planar_speed_mps": 0.032
+   },
+   {
+    "clip": "planner_squat_h0.1",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.456,
+     "ref": 0.3
+    },
+    "head_top_min": {
+     "robot": 0.957,
+     "ref": 0.784
+    },
+    "head_top_p10": {
+     "robot": 0.974,
+     "ref": 0.786
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.082,
+    "max_root_xy_drift_m": 0.096,
+    "final_planar_speed_mps": 0.045
+   },
+   {
+    "clip": "planner_squat_h0.2",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.453,
+     "ref": 0.3
+    },
+    "head_top_min": {
+     "robot": 0.941,
+     "ref": 0.784
+    },
+    "head_top_p10": {
+     "robot": 0.97,
+     "ref": 0.786
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.085,
+    "max_root_xy_drift_m": 0.09,
+    "final_planar_speed_mps": 0.04
+   },
+   {
+    "clip": "planner_squat_h0.3",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.433,
+     "ref": 0.307
+    },
+    "head_top_min": {
+     "robot": 0.947,
+     "ref": 0.793
+    },
+    "head_top_p10": {
+     "robot": 0.953,
+     "ref": 0.794
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.104,
+    "max_root_xy_drift_m": 0.111,
+    "final_planar_speed_mps": 0.013
+   },
+   {
+    "clip": "planner_squat_h0.4",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.476,
+     "ref": 0.401
+    },
+    "head_top_min": {
+     "robot": 0.967,
+     "ref": 0.834
+    },
+    "head_top_p10": {
+     "robot": 0.971,
+     "ref": 0.836
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.071,
+    "max_root_xy_drift_m": 0.086,
+    "final_planar_speed_mps": 0.019
+   },
+   {
+    "clip": "planner_squat_h0.5",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.533,
+     "ref": 0.493
+    },
+    "head_top_min": {
+     "robot": 1.023,
+     "ref": 0.917
+    },
+    "head_top_p10": {
+     "robot": 1.035,
+     "ref": 0.926
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.055,
+    "max_root_xy_drift_m": 0.062,
+    "final_planar_speed_mps": 0.044
+   },
+   {
+    "clip": "planner_squat_h0.6",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.596,
+     "ref": 0.603
+    },
+    "head_top_min": {
+     "robot": 1.104,
+     "ref": 1.042
+    },
+    "head_top_p10": {
+     "robot": 1.105,
+     "ref": 1.043
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.04,
+    "max_root_xy_drift_m": 0.048,
+    "final_planar_speed_mps": 0.011
+   },
+   {
+    "clip": "planner_squat_h0.7",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.704,
+     "ref": 0.704
+    },
+    "head_top_min": {
+     "robot": 1.222,
+     "ref": 1.18
+    },
+    "head_top_p10": {
+     "robot": 1.223,
+     "ref": 1.18
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.042,
+    "max_root_xy_drift_m": 0.047,
+    "final_planar_speed_mps": 0.02
+   },
+   {
+    "clip": "planner_squat_h0.8",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.754,
+     "ref": 0.787
+    },
+    "head_top_min": {
+     "robot": 1.284,
+     "ref": 1.313
+    },
+    "head_top_p10": {
+     "robot": 1.311,
+     "ref": 1.314
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.013,
+    "max_root_xy_drift_m": 0.021,
+    "final_planar_speed_mps": 0.031
+   },
+   {
+    "clip": "planner_stealth_walk2_22",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.509,
+     "ref": 0.474
+    },
+    "head_top_min": {
+     "robot": 1.02,
+     "ref": 0.913
+    },
+    "head_top_p10": {
+     "robot": 1.03,
+     "ref": 0.923
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.389,
+    "max_root_xy_drift_m": 0.389,
+    "final_planar_speed_mps": 0.342
+   },
+   {
+    "clip": "planner_stealth_walk_18",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.662,
+     "ref": 0.666
+    },
+    "head_top_min": {
+     "robot": 1.192,
+     "ref": 1.166
+    },
+    "head_top_p10": {
+     "robot": 1.214,
+     "ref": 1.184
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.318,
+    "max_root_xy_drift_m": 0.318,
+    "final_planar_speed_mps": 0.638
+   },
+   {
+    "clip": "planner_strafe_left_mode1",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.728,
+     "ref": 0.734
+    },
+    "head_top_min": {
+     "robot": 1.256,
+     "ref": 1.249
+    },
+    "head_top_p10": {
+     "robot": 1.263,
+     "ref": 1.258
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.236,
+    "max_root_xy_drift_m": 0.245,
+    "final_planar_speed_mps": 0.642
+   },
+   {
+    "clip": "planner_strafe_left_mode2",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.712,
+     "ref": 0.716
+    },
+    "head_top_min": {
+     "robot": 1.241,
+     "ref": 1.234
+    },
+    "head_top_p10": {
+     "robot": 1.254,
+     "ref": 1.248
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.97,
+    "max_root_xy_drift_m": 0.97,
+    "final_planar_speed_mps": 1.094
+   },
+   {
+    "clip": "planner_strafe_right_mode1",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.731,
+     "ref": 0.744
+    },
+    "head_top_min": {
+     "robot": 1.253,
+     "ref": 1.252
+    },
+    "head_top_p10": {
+     "robot": 1.26,
+     "ref": 1.262
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.229,
+    "max_root_xy_drift_m": 0.229,
+    "final_planar_speed_mps": 0.268
+   },
+   {
+    "clip": "planner_walk_back_mode1",
+    "condition": "extra_walk",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.749,
+     "ref": 0.754
+    },
+    "head_top_min": {
+     "robot": 1.277,
+     "ref": 1.28
+    },
+    "head_top_p10": {
+     "robot": 1.287,
+     "ref": 1.288
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.706,
+    "max_root_xy_drift_m": 0.706,
+    "final_planar_speed_mps": 0.215
+   },
+   {
+    "clip": "planner_walk_diag45_mode2",
+    "condition": "extra_walk",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.704,
+     "ref": 0.688
+    },
+    "head_top_min": {
+     "robot": 1.233,
+     "ref": 1.209
+    },
+    "head_top_p10": {
+     "robot": 1.272,
+     "ref": 1.27
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.519,
+    "max_root_xy_drift_m": 0.519,
+    "final_planar_speed_mps": 0.627
+   },
+   {
+    "clip": "planner_walk_fwd_mode1",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.75,
+     "ref": 0.755
+    },
+    "head_top_min": {
+     "robot": 1.281,
+     "ref": 1.284
+    },
+    "head_top_p10": {
+     "robot": 1.294,
+     "ref": 1.29
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.581,
+    "max_root_xy_drift_m": 0.601,
+    "final_planar_speed_mps": 0.318
+   },
+   {
+    "clip": "planner_walk_fwd_mode2",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.662,
+     "ref": 0.658
+    },
+    "head_top_min": {
+     "robot": 1.19,
+     "ref": 1.17
+    },
+    "head_top_p10": {
+     "robot": 1.261,
+     "ref": 1.269
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.528,
+    "max_root_xy_drift_m": 0.528,
+    "final_planar_speed_mps": 0.733
+   },
+   {
+    "clip": "planner_walk_turn90_mode1",
+    "condition": "extra_walk",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.748,
+     "ref": 0.755
+    },
+    "head_top_min": {
+     "robot": 1.278,
+     "ref": 1.284
+    },
+    "head_top_p10": {
+     "robot": 1.296,
+     "ref": 1.29
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.313,
+    "max_root_xy_drift_m": 0.318,
+    "final_planar_speed_mps": 0.255
+   },
+   {
+    "clip": "planner_waypoint_3m_ahead",
+    "condition": "extra_walk",
+    "ticks": 399,
+    "motion_steps": 400,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.681,
+     "ref": 0.687
+    },
+    "head_top_min": {
+     "robot": 1.192,
+     "ref": 1.186
+    },
+    "head_top_p10": {
+     "robot": 1.275,
+     "ref": 1.269
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.37,
+    "max_root_xy_drift_m": 0.374,
+    "final_planar_speed_mps": 0.012
+   },
+   {
+    "clip": "planner_waypoint_turnaround",
+    "condition": "extra_walk",
+    "ticks": 399,
+    "motion_steps": 400,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.703,
+     "ref": 0.703
+    },
+    "head_top_min": {
+     "robot": 1.225,
+     "ref": 1.209
+    },
+    "head_top_p10": {
+     "robot": 1.265,
+     "ref": 1.275
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.701,
+    "max_root_xy_drift_m": 0.701,
+    "final_planar_speed_mps": 0.032
+   }
+  ],
+  "posture-release-92612": [
+   {
+    "clip": "planner_crawl_direct",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.426,
+     "ref": 0.395
+    },
+    "head_top_min": {
+     "robot": 0.58,
+     "ref": 0.526
+    },
+    "head_top_p10": {
+     "robot": 0.632,
+     "ref": 0.545
+    },
+    "floor_contact_candidates": {
+     "left_hand": 0.341,
+     "right_hand": 0.389,
+     "left_knee_shin": 0.557,
+     "right_knee_shin": 0.561
+    },
+    "final_root_xy_drift_m": 2.559,
+    "max_root_xy_drift_m": 2.559,
+    "final_planar_speed_mps": 0.455
+   },
+   {
+    "clip": "planner_crawl_staged",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.418,
+     "ref": 0.388
+    },
+    "head_top_min": {
+     "robot": 0.591,
+     "ref": 0.477
+    },
+    "head_top_p10": {
+     "robot": 0.671,
+     "ref": 0.562
+    },
+    "floor_contact_candidates": {
+     "left_hand": 0.429,
+     "right_hand": 0.435,
+     "left_knee_shin": 0.844,
+     "right_knee_shin": 0.854
+    },
+    "final_root_xy_drift_m": 1.649,
+    "max_root_xy_drift_m": 1.649,
+    "final_planar_speed_mps": 0.556
+   },
+   {
+    "clip": "planner_elbow_crawl_direct",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.174,
+     "ref": 0.193
+    },
+    "head_top_min": {
+     "robot": 0.217,
+     "ref": 0.235
+    },
+    "head_top_p10": {
+     "robot": 0.304,
+     "ref": 0.313
+    },
+    "floor_contact_candidates": {
+     "left_upper_arm": 0.076,
+     "right_upper_arm": 0.04,
+     "left_elbow_forearm": 0.437,
+     "right_elbow_forearm": 0.511,
+     "left_hand": 0.872,
+     "right_hand": 0.872,
+     "left_thigh": 0.152,
+     "right_thigh": 0.359,
+     "left_knee_shin": 0.705,
+     "right_knee_shin": 0.764
+    },
+    "final_root_xy_drift_m": 3.412,
+    "max_root_xy_drift_m": 3.412,
+    "final_planar_speed_mps": 0.127
+   },
+   {
+    "clip": "planner_elbow_crawl_staged",
+    "condition": "posture_table",
+    "ticks": 599,
+    "motion_steps": 600,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.182,
+     "ref": 0.223
+    },
+    "head_top_min": {
+     "robot": 0.267,
+     "ref": 0.304
+    },
+    "head_top_p10": {
+     "robot": 0.295,
+     "ref": 0.327
+    },
+    "floor_contact_candidates": {
+     "left_upper_arm": 0.022,
+     "left_elbow_forearm": 0.484,
+     "right_elbow_forearm": 0.399,
+     "left_hand": 0.711,
+     "right_hand": 0.73,
+     "left_thigh": 0.082,
+     "right_thigh": 0.234,
+     "left_knee_shin": 0.798,
+     "right_knee_shin": 0.878
+    },
+    "final_root_xy_drift_m": 3.75,
+    "max_root_xy_drift_m": 3.75,
+    "final_planar_speed_mps": 0.243
+   },
+   {
+    "clip": "planner_kneel_two_legs_h0.4",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.408,
+     "ref": 0.388
+    },
+    "head_top_min": {
+     "robot": 0.938,
+     "ref": 0.868
+    },
+    "head_top_p10": {
+     "robot": 0.939,
+     "ref": 0.868
+    },
+    "floor_contact_candidates": {
+     "left_knee_shin": 0.756,
+     "right_knee_shin": 0.776
+    },
+    "final_root_xy_drift_m": 0.138,
+    "max_root_xy_drift_m": 0.145,
+    "final_planar_speed_mps": 0.026
+   },
+   {
+    "clip": "planner_squat_h0.1",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.424,
+     "ref": 0.3
+    },
+    "head_top_min": {
+     "robot": 0.928,
+     "ref": 0.784
+    },
+    "head_top_p10": {
+     "robot": 0.946,
+     "ref": 0.786
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.109,
+    "max_root_xy_drift_m": 0.113,
+    "final_planar_speed_mps": 0.015
+   },
+   {
+    "clip": "planner_squat_h0.2",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.426,
+     "ref": 0.3
+    },
+    "head_top_min": {
+     "robot": 0.926,
+     "ref": 0.784
+    },
+    "head_top_p10": {
+     "robot": 0.952,
+     "ref": 0.786
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.101,
+    "max_root_xy_drift_m": 0.11,
+    "final_planar_speed_mps": 0.023
+   },
+   {
+    "clip": "planner_squat_h0.3",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.436,
+     "ref": 0.307
+    },
+    "head_top_min": {
+     "robot": 0.945,
+     "ref": 0.793
+    },
+    "head_top_p10": {
+     "robot": 0.956,
+     "ref": 0.794
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.1,
+    "max_root_xy_drift_m": 0.104,
+    "final_planar_speed_mps": 0.03
+   },
+   {
+    "clip": "planner_squat_h0.4",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.488,
+     "ref": 0.401
+    },
+    "head_top_min": {
+     "robot": 0.981,
+     "ref": 0.834
+    },
+    "head_top_p10": {
+     "robot": 0.988,
+     "ref": 0.836
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.075,
+    "max_root_xy_drift_m": 0.085,
+    "final_planar_speed_mps": 0.02
+   },
+   {
+    "clip": "planner_squat_h0.5",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.529,
+     "ref": 0.493
+    },
+    "head_top_min": {
+     "robot": 1.017,
+     "ref": 0.917
+    },
+    "head_top_p10": {
+     "robot": 1.027,
+     "ref": 0.926
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.053,
+    "max_root_xy_drift_m": 0.069,
+    "final_planar_speed_mps": 0.029
+   },
+   {
+    "clip": "planner_squat_h0.6",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.613,
+     "ref": 0.603
+    },
+    "head_top_min": {
+     "robot": 1.122,
+     "ref": 1.042
+    },
+    "head_top_p10": {
+     "robot": 1.122,
+     "ref": 1.043
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.025,
+    "max_root_xy_drift_m": 0.035,
+    "final_planar_speed_mps": 0.018
+   },
+   {
+    "clip": "planner_squat_h0.7",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.691,
+     "ref": 0.704
+    },
+    "head_top_min": {
+     "robot": 1.202,
+     "ref": 1.18
+    },
+    "head_top_p10": {
+     "robot": 1.205,
+     "ref": 1.18
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.029,
+    "max_root_xy_drift_m": 0.046,
+    "final_planar_speed_mps": 0.018
+   },
+   {
+    "clip": "planner_squat_h0.8",
+    "condition": "posture_table",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.753,
+     "ref": 0.787
+    },
+    "head_top_min": {
+     "robot": 1.284,
+     "ref": 1.313
+    },
+    "head_top_p10": {
+     "robot": 1.312,
+     "ref": 1.314
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.014,
+    "max_root_xy_drift_m": 0.02,
+    "final_planar_speed_mps": 0.017
+   },
+   {
+    "clip": "planner_stealth_walk2_22",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.519,
+     "ref": 0.474
+    },
+    "head_top_min": {
+     "robot": 1.038,
+     "ref": 0.913
+    },
+    "head_top_p10": {
+     "robot": 1.049,
+     "ref": 0.923
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.374,
+    "max_root_xy_drift_m": 0.405,
+    "final_planar_speed_mps": 0.46
+   },
+   {
+    "clip": "planner_stealth_walk_18",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.671,
+     "ref": 0.666
+    },
+    "head_top_min": {
+     "robot": 1.201,
+     "ref": 1.166
+    },
+    "head_top_p10": {
+     "robot": 1.218,
+     "ref": 1.184
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.121,
+    "max_root_xy_drift_m": 0.155,
+    "final_planar_speed_mps": 0.591
+   },
+   {
+    "clip": "planner_strafe_left_mode1",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.723,
+     "ref": 0.734
+    },
+    "head_top_min": {
+     "robot": 1.251,
+     "ref": 1.249
+    },
+    "head_top_p10": {
+     "robot": 1.26,
+     "ref": 1.258
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.193,
+    "max_root_xy_drift_m": 0.195,
+    "final_planar_speed_mps": 0.64
+   },
+   {
+    "clip": "planner_strafe_left_mode2",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.694,
+     "ref": 0.716
+    },
+    "head_top_min": {
+     "robot": 1.224,
+     "ref": 1.234
+    },
+    "head_top_p10": {
+     "robot": 1.237,
+     "ref": 1.248
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 1.199,
+    "max_root_xy_drift_m": 1.199,
+    "final_planar_speed_mps": 1.086
+   },
+   {
+    "clip": "planner_strafe_right_mode1",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.73,
+     "ref": 0.744
+    },
+    "head_top_min": {
+     "robot": 1.253,
+     "ref": 1.252
+    },
+    "head_top_p10": {
+     "robot": 1.261,
+     "ref": 1.262
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.242,
+    "max_root_xy_drift_m": 0.248,
+    "final_planar_speed_mps": 0.341
+   },
+   {
+    "clip": "planner_walk_back_mode1",
+    "condition": "extra_walk",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.753,
+     "ref": 0.754
+    },
+    "head_top_min": {
+     "robot": 1.284,
+     "ref": 1.28
+    },
+    "head_top_p10": {
+     "robot": 1.294,
+     "ref": 1.288
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.68,
+    "max_root_xy_drift_m": 0.68,
+    "final_planar_speed_mps": 0.227
+   },
+   {
+    "clip": "planner_walk_diag45_mode2",
+    "condition": "extra_walk",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.702,
+     "ref": 0.688
+    },
+    "head_top_min": {
+     "robot": 1.232,
+     "ref": 1.209
+    },
+    "head_top_p10": {
+     "robot": 1.267,
+     "ref": 1.27
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.488,
+    "max_root_xy_drift_m": 0.488,
+    "final_planar_speed_mps": 0.669
+   },
+   {
+    "clip": "planner_walk_fwd_mode1",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.755,
+     "ref": 0.755
+    },
+    "head_top_min": {
+     "robot": 1.285,
+     "ref": 1.284
+    },
+    "head_top_p10": {
+     "robot": 1.298,
+     "ref": 1.29
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.211,
+    "max_root_xy_drift_m": 0.263,
+    "final_planar_speed_mps": 0.257
+   },
+   {
+    "clip": "planner_walk_fwd_mode2",
+    "condition": "posture_table",
+    "ticks": 499,
+    "motion_steps": 500,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.658,
+     "ref": 0.658
+    },
+    "head_top_min": {
+     "robot": 1.186,
+     "ref": 1.17
+    },
+    "head_top_p10": {
+     "robot": 1.261,
+     "ref": 1.269
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.509,
+    "max_root_xy_drift_m": 0.509,
+    "final_planar_speed_mps": 0.666
+   },
+   {
+    "clip": "planner_walk_turn90_mode1",
+    "condition": "extra_walk",
+    "ticks": 299,
+    "motion_steps": 300,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.748,
+     "ref": 0.755
+    },
+    "head_top_min": {
+     "robot": 1.278,
+     "ref": 1.284
+    },
+    "head_top_p10": {
+     "robot": 1.285,
+     "ref": 1.29
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.368,
+    "max_root_xy_drift_m": 0.368,
+    "final_planar_speed_mps": 0.22
+   },
+   {
+    "clip": "planner_waypoint_3m_ahead",
+    "condition": "extra_walk",
+    "ticks": 399,
+    "motion_steps": 400,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.684,
+     "ref": 0.687
+    },
+    "head_top_min": {
+     "robot": 1.202,
+     "ref": 1.186
+    },
+    "head_top_p10": {
+     "robot": 1.271,
+     "ref": 1.269
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.464,
+    "max_root_xy_drift_m": 0.464,
+    "final_planar_speed_mps": 0.014
+   },
+   {
+    "clip": "planner_waypoint_turnaround",
+    "condition": "extra_walk",
+    "ticks": 399,
+    "motion_steps": 400,
+    "completed": true,
+    "progress": 1.0,
+    "term_flags": {},
+    "pelvis_min_z": {
+     "robot": 0.694,
+     "ref": 0.703
+    },
+    "head_top_min": {
+     "robot": 1.224,
+     "ref": 1.209
+    },
+    "head_top_p10": {
+     "robot": 1.267,
+     "ref": 1.275
+    },
+    "floor_contact_candidates": {},
+    "final_root_xy_drift_m": 0.648,
+    "max_root_xy_drift_m": 0.655,
+    "final_planar_speed_mps": 0.039
+   }
+  ]
+ }
+}

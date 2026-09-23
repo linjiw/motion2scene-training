@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 41.71090126037598,
+  "checkpoint": "/home/robotixx/motion2scene-training/workspace/teacher-8192-500-review/eval/release/model_step_041550.pt",
+  "checkpoint_target": "/home/robotixx/motion2scene-training/workspace/teacher-8192-500/inputs/sonic_release.pt",
+  "gpu_total_mib_before": 1758,
+  "gpu_total_mib_peak": 5515
+}
