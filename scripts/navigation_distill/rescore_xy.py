@@ -354,6 +354,15 @@ def infra_failures(stage):
     return sum(1 for line in path.read_text().splitlines() if "PROCESS_FAILED" in line)
 
 
+def xy_outcome(row):
+    """XY outcome class: success, contact_or_fall, reached_not_held or never_reached."""
+    if row["xy_success"]:
+        return "success"
+    if not row["collision_free"] or row["fell"]:
+        return "contact_or_fall"
+    return "reached_not_held" if row["first_xy_reach_row"] is not None else "never_reached"
+
+
 def _count(rows, key):
     return sum(1 for r in rows if r.get(key))
 
@@ -383,6 +392,10 @@ def summarize(rows, packet, feasible):
             xy=_count(scored, "xy_success"),
             xy_fd=_count(scored, "xy_fd_success"),
             xy_whole_trace=_count(scored, "xy_whole_trace_success"),
+            xy_outcomes={
+                k: sum(1 for r in scored if xy_outcome(r) == k)
+                for k in ("success", "reached_not_held", "never_reached", "contact_or_fall")
+            },
             gained=sum(1 for r in scored if r["xy_success"] and not r["legacy_3d_success"]),
             lost=sum(1 for r in scored if r["legacy_3d_success"] and not r["xy_success"]),
             feasible_episodes=len(sub),
@@ -463,9 +476,9 @@ def write_markdown(path, rows, table, provenance, feasible):
         "## Evaluation panels (unassisted: teacher, full-command motor, navigation adapter)",
         "",
         "| panel | seed | episodes | legacy 3-D | XY | XY-FD | XY whole-trace | gained / lost "
-        "| legacy 3-D /19 | XY /19 | median final XY err (m) | median min XY err (m) "
-        "| median path ratio | repro match |",
-        "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|",
+        "| legacy 3-D /19 | XY /19 | XY: held / reached not held / never reached / contact "
+        "| median final XY err (m) | median min XY err (m) | median path ratio | repro match |",
+        "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|",
     ]
     evals = [t for t in table if t["kind"] == "evaluation"]
     for t in evals:
@@ -474,6 +487,7 @@ def write_markdown(path, rows, table, provenance, feasible):
             f"| {t['xy']} | {t['xy_fd']} | {t['xy_whole_trace']} | {t['gained']} / {t['lost']} "
             f"| {t['legacy_3d_feasible']}/{t['feasible_episodes']} "
             f"| {t['xy_feasible']}/{t['feasible_episodes']} "
+            f"| {' / '.join(str(v) for v in t['xy_outcomes'].values())} "
             f"| {_fmt(t['median_final_xy_err_m'])} | {_fmt(t['median_min_xy_err_m'])} "
             f"| {_fmt(t['median_path_ratio'])} | {t['legacy_repro_match']}/{t['episodes']} |"
         )

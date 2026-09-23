@@ -84,6 +84,17 @@ def test_suffix_hold_restarts_at_the_takeover_row():
     assert R.first_hold(TASK, root, speed, force, start=500) == (False, None, 0)
 
 
+def test_xy_outcome_classes():
+    base = dict(xy_success=False, collision_free=True, fell=False, first_xy_reach_row=None)
+    assert R.xy_outcome(dict(base, xy_success=True, collision_free=False)) == "success"
+    assert R.xy_outcome(dict(base, collision_free=False, first_xy_reach_row=3)) == (
+        "contact_or_fall"
+    )
+    assert R.xy_outcome(dict(base, fell=True)) == "contact_or_fall"
+    assert R.xy_outcome(dict(base, first_xy_reach_row=0)) == "reached_not_held"
+    assert R.xy_outcome(base) == "never_reached"
+
+
 def test_planar_speed_and_root_metrics():
     root, speed, force = trace()
     fd = R.planar_speed_fd(root, speed)
@@ -179,6 +190,9 @@ def test_end_to_end_packet_with_symlinked_stage(tmp_path, monkeypatch):
     (panel,) = summary["panels"]
     assert panel["legacy_3d"] == 1 and panel["xy"] == 2 and panel["gained"] == 1
     assert panel["kind"] == "evaluation" and panel["traces_missing"] == 1
+    assert panel["xy_outcomes"] == dict(
+        success=2, reached_not_held=0, never_reached=0, contact_or_fall=0
+    )
     assert "Episodes whose outcome changes (1)" in (out / "rescore_summary.md").read_text()
     with pytest.raises(FileExistsError):
         R.main()
