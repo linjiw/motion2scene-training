@@ -1,0 +1,322 @@
+{
+  "schema": "token_space_diagnostics_v1",
+  "bin_width": 0.0625,
+  "rows": 10015,
+  "episodes": 30,
+  "shards": [
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00015.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00051.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00118.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00124.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00185.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00246.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00265.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00287.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00350.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00381.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00391.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00413.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00428.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00455.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00490.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00522.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00584.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00649.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00679.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00711.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00731.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00754.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00783.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00801.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00820.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00860.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00893.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00916.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00953.npz",
+    "workspace/distill-8192/collect/seed-91400/metrics/episode-00990.npz"
+  ],
+  "note": "Offline properties of frozen networks on recorded states; no physics.",
+  "release": {
+    "checkpoint": "workspace/models/sonic_release.pt",
+    "sha256": "e6bdab3f64a39336b3d41877d4f497d05f58af275f288ec0e6746c283ded8909",
+    "policy_std": {
+      "mean": 0.3847016990184784,
+      "min": 0.2968585193157196,
+      "max": 0.50001060962677
+    },
+    "natural_per_step_action_change_rms": 0.129630908370018,
+    "perturbation": {
+      "0.5_bin": {
+        "gaussian_offlattice_action_rms": 0.05770032852888107,
+        "uniform_lattice_action_rms": 0.06657261401414871,
+        "uniform_lattice_mean_abs_shift_bins": 0.33257612586021423
+      },
+      "1_bin": {
+        "gaussian_offlattice_action_rms": 0.11664378643035889,
+        "uniform_lattice_action_rms": 0.09478667378425598,
+        "uniform_lattice_mean_abs_shift_bins": 0.66677325963974
+      },
+      "2_bin": {
+        "gaussian_offlattice_action_rms": 0.23788990080356598,
+        "uniform_lattice_action_rms": 0.16637387871742249,
+        "uniform_lattice_mean_abs_shift_bins": 1.1996427774429321
+      },
+      "single_dim_plus1_bin_action_rms": {
+        "mean": 0.014517002331558615,
+        "max": 0.01790057122707367,
+        "min": 0.012035945430397987,
+        "top8_dims": [
+          37,
+          35,
+          41,
+          11,
+          42,
+          46,
+          48,
+          51
+        ]
+      }
+    },
+    "token_dynamics": {
+      "per_step_mean_abs_change_bins": 0.20221738517284393,
+      "per_step_fraction_dims_changed": 0.20086535811424255,
+      "per_step_p95_abs_change_bins": 1.0,
+      "per_step_max_abs_change_bins": 3.0,
+      "levels_used_per_dim": {
+        "mean": 19.015625,
+        "min": 14,
+        "max": 27
+      },
+      "level_entropy_bits_per_dim": {
+        "mean": 3.5075771249830723,
+        "min": 2.793546676635742
+      },
+      "level_range": [
+        -14,
+        12
+      ]
+    },
+    "blend": {
+      "lag_10": {
+        "endpoint_action_rms": 0.4803425073623657,
+        "midpoint_nonlinearity_rms": 0.05540287867188454,
+        "snapped_vs_continuous_midpoint_rms": 0.04049093276262283
+      },
+      "lag_25": {
+        "endpoint_action_rms": 0.9307630658149719,
+        "midpoint_nonlinearity_rms": 0.1910565048456192,
+        "snapped_vs_continuous_midpoint_rms": 0.04406752064824104
+      },
+      "lag_50": {
+        "endpoint_action_rms": 0.6594583988189697,
+        "midpoint_nonlinearity_rms": 0.10107287019491196,
+        "snapped_vs_continuous_midpoint_rms": 0.043157003819942474
+      }
+    },
+    "held_token": {
+      "lag_1": {
+        "held_vs_teacher_action_rms": 0.06725214421749115,
+        "teacher_action_change_rms": 0.129630908370018
+      },
+      "lag_2": {
+        "held_vs_teacher_action_rms": 0.10825489461421967,
+        "teacher_action_change_rms": 0.22466816008090973
+      },
+      "lag_5": {
+        "held_vs_teacher_action_rms": 0.2396002560853958,
+        "teacher_action_change_rms": 0.45051729679107666
+      },
+      "lag_10": {
+        "held_vs_teacher_action_rms": 0.4845764935016632,
+        "teacher_action_change_rms": 0.6872891187667847
+      },
+      "lag_25": {
+        "held_vs_teacher_action_rms": 0.9434383511543274,
+        "teacher_action_change_rms": 0.9575242400169373
+      }
+    },
+    "cycle": {
+      "recorded_tokens": {
+        "mean_abs_bins": 0.12781140208244324,
+        "fraction_dims_changed": 0.1249719187617302,
+        "per_sample_mean_bins_p50": 0.109375,
+        "per_sample_mean_bins_p99": 0.65625
+      },
+      "corpus_p99_threshold_bins": 0.65625,
+      "uniform_pm1_bins": {
+        "mean_abs_bins": 0.5315682888031006,
+        "fraction_dims_changed": 0.5019720196723938,
+        "per_sample_mean_bins_p50": 0.53125,
+        "per_sample_mean_bins_p99": 0.84375,
+        "fraction_above_corpus_p99": 0.06709934771060944
+      },
+      "uniform_pm2_bins": {
+        "mean_abs_bins": 0.9026975035667419,
+        "fraction_dims_changed": 0.6823171377182007,
+        "per_sample_mean_bins_p50": 0.890625,
+        "per_sample_mean_bins_p99": 1.234375,
+        "fraction_above_corpus_p99": 0.9833250045776367
+      },
+      "uniform_pm4_bins": {
+        "mean_abs_bins": 1.6861145496368408,
+        "fraction_dims_changed": 0.8253604173660278,
+        "per_sample_mean_bins_p50": 1.671875,
+        "per_sample_mean_bins_p99": 2.234375,
+        "fraction_above_corpus_p99": 1.0
+      },
+      "random_lattice_tokens": {
+        "mean_abs_bins": 6.720569133758545,
+        "fraction_dims_changed": 0.9587899446487427,
+        "per_sample_mean_bins_p50": 6.6875,
+        "per_sample_mean_bins_p99": 8.65625,
+        "fraction_above_corpus_p99": 1.0
+      }
+    },
+    "kin_reconstruction_rms": 0.44711312651634216,
+    "reference_rms": 0.7622125744819641
+  },
+  "teacher": {
+    "checkpoint": "workspace/distill-8192/teacher/model_step_000500.pt",
+    "sha256": "26ca1ed70c2287c1acb6243820649db4b8513a5d9b8b16abc115f890d87b6bff",
+    "policy_std": {
+      "mean": 0.46732643246650696,
+      "min": 0.39897650480270386,
+      "max": 0.500013530254364
+    },
+    "parity": {
+      "token_max_abs_diff": 0.0,
+      "action_max_abs_diff": 1.9073486328125e-05
+    },
+    "natural_per_step_action_change_rms": 0.1326177418231964,
+    "perturbation": {
+      "0.5_bin": {
+        "gaussian_offlattice_action_rms": 0.04381801187992096,
+        "uniform_lattice_action_rms": 0.050558678805828094,
+        "uniform_lattice_mean_abs_shift_bins": 0.33257612586021423
+      },
+      "1_bin": {
+        "gaussian_offlattice_action_rms": 0.0882270336151123,
+        "uniform_lattice_action_rms": 0.07181823998689651,
+        "uniform_lattice_mean_abs_shift_bins": 0.66677325963974
+      },
+      "2_bin": {
+        "gaussian_offlattice_action_rms": 0.17772290110588074,
+        "uniform_lattice_action_rms": 0.12524597346782684,
+        "uniform_lattice_mean_abs_shift_bins": 1.1996427774429321
+      },
+      "single_dim_plus1_bin_action_rms": {
+        "mean": 0.011022434337064624,
+        "max": 0.013454871252179146,
+        "min": 0.009299250319600105,
+        "top8_dims": [
+          42,
+          37,
+          11,
+          48,
+          51,
+          17,
+          1,
+          41
+        ]
+      }
+    },
+    "token_dynamics": {
+      "per_step_mean_abs_change_bins": 0.2702835500240326,
+      "per_step_fraction_dims_changed": 0.264335572719574,
+      "per_step_p95_abs_change_bins": 1.0,
+      "per_step_max_abs_change_bins": 4.0,
+      "levels_used_per_dim": {
+        "mean": 22.640625,
+        "min": 17,
+        "max": 29
+      },
+      "level_entropy_bits_per_dim": {
+        "mean": 3.8637859374284744,
+        "min": 3.3542962074279785
+      },
+      "level_range": [
+        -15,
+        13
+      ]
+    },
+    "blend": {
+      "lag_10": {
+        "endpoint_action_rms": 0.4606885015964508,
+        "midpoint_nonlinearity_rms": 0.05601978302001953,
+        "snapped_vs_continuous_midpoint_rms": 0.031028948724269867
+      },
+      "lag_25": {
+        "endpoint_action_rms": 0.9006842970848083,
+        "midpoint_nonlinearity_rms": 0.19983787834644318,
+        "snapped_vs_continuous_midpoint_rms": 0.03379840776324272
+      },
+      "lag_50": {
+        "endpoint_action_rms": 0.6374759674072266,
+        "midpoint_nonlinearity_rms": 0.10331477969884872,
+        "snapped_vs_continuous_midpoint_rms": 0.03265821561217308
+      }
+    },
+    "held_token": {
+      "lag_1": {
+        "held_vs_teacher_action_rms": 0.0640033558011055,
+        "teacher_action_change_rms": 0.1326177418231964
+      },
+      "lag_2": {
+        "held_vs_teacher_action_rms": 0.10442136973142624,
+        "teacher_action_change_rms": 0.23585309088230133
+      },
+      "lag_5": {
+        "held_vs_teacher_action_rms": 0.23353521525859833,
+        "teacher_action_change_rms": 0.4769168496131897
+      },
+      "lag_10": {
+        "held_vs_teacher_action_rms": 0.46192848682403564,
+        "teacher_action_change_rms": 0.7230132222175598
+      },
+      "lag_25": {
+        "held_vs_teacher_action_rms": 0.9135457873344421,
+        "teacher_action_change_rms": 1.0070056915283203
+      }
+    },
+    "cycle": {
+      "recorded_tokens": {
+        "mean_abs_bins": 0.36327850818634033,
+        "fraction_dims_changed": 0.3434988260269165,
+        "per_sample_mean_bins_p50": 0.34375,
+        "per_sample_mean_bins_p99": 0.9509429931640625
+      },
+      "corpus_p99_threshold_bins": 0.9509429931640625,
+      "uniform_pm1_bins": {
+        "mean_abs_bins": 0.6794105768203735,
+        "fraction_dims_changed": 0.5806087851524353,
+        "per_sample_mean_bins_p50": 0.65625,
+        "per_sample_mean_bins_p99": 1.125,
+        "fraction_above_corpus_p99": 0.037843234837055206
+      },
+      "uniform_pm2_bins": {
+        "mean_abs_bins": 1.0534510612487793,
+        "fraction_dims_changed": 0.7184488773345947,
+        "per_sample_mean_bins_p50": 1.046875,
+        "per_sample_mean_bins_p99": 1.5134429931640625,
+        "fraction_above_corpus_p99": 0.767548680305481
+      },
+      "uniform_pm4_bins": {
+        "mean_abs_bins": 1.8714771270751953,
+        "fraction_dims_changed": 0.8383814692497253,
+        "per_sample_mean_bins_p50": 1.859375,
+        "per_sample_mean_bins_p99": 2.578125,
+        "fraction_above_corpus_p99": 1.0
+      },
+      "random_lattice_tokens": {
+        "mean_abs_bins": 6.845325946807861,
+        "fraction_dims_changed": 0.957761824131012,
+        "per_sample_mean_bins_p50": 6.796875,
+        "per_sample_mean_bins_p99": 9.03125,
+        "fraction_above_corpus_p99": 1.0
+      }
+    },
+    "kin_reconstruction_rms": 0.29820147156715393,
+    "reference_rms": 0.7622125744819641
+  },
+  "release_vs_teacher_action_rms": 0.31796807050704956
+}
