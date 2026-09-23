@@ -150,7 +150,9 @@
   "note": "default-DR runs at 92601/92602 come from Stage 1 itself"
  },
  "deviations": [
-  "InstanceDumpCallback (realized DR parameters) deferred; realized parameters are not yet logged."
+  "InstanceDumpCallback (realized DR parameters) deferred; realized parameters are not yet logged.",
+  "2026-09-23 (logged after launch): 4 Stage-1 tasks launched 12:58-13:01 UTC-4 (approach-c2-92601 and recovery-92601: 00677-stop-corridor, 00770-stop-clear) record harness_dirty=1-2. Cause: a new untracked module (gear_sonic/research/goal_teacher/diag_token_space.py) briefly existed in vendor/sonic before being moved out; it is not imported by eval_agent_trl or any nav/teacher callback, so executed code was unchanged.",
+  "2026-09-23: panels span harness commits 661a234 (24 tasks), 000d185 and 6a094ab. Commits after 661a234 add only new modules, tests and docs (goal_teacher, planner, eval_stats, sensor geometry, link checker) that the evaluation does not import; scripts/navigation_distill/{run_stage.sh,scene_native.sh,stage_config.py} and the imported vendor modules are unchanged across them."
  ],
  "infra_rule": "Infrastructure failures (PROCESS_FAILED, startup OOM, KILL timeout) are rerun at most twice and logged; policy failures are never rerun.",
  "runner": "experiments/nav8192-confirm-v1/launch.sh (tmux sessions confirmA, confirmB)"
