@@ -19,7 +19,7 @@ cd vendor/sonic && export PY="env -u PYTHONPATH PYTHONPATH=$PWD TRL_EXPERIMENTAL
 
 | Stage | Command | Output |
 |---|---|---|
-| 1. Tasks | `$PY $T/build_tasks.py --motions <repaired train dir> --ledger <teacher packet>/motion-ledger.json --body-reference <hindsight reference.npz> --ids 00908 ... --output $NAV_PACKET/tasks` | `tasks/<id>/{clear,corridor}.{json,usda}`, native motion with a 2 s stationary tail, `manifest.json` |
+| 1. Tasks | `$PY $T/build_tasks.py --motions <repaired train dir> --ledger <teacher packet>/motion-ledger.json --body-reference <hindsight reference.npz> --ids 00908 ... --output $NAV_PACKET/tasks` | `tasks/<id>/{clear,corridor}.{json,usda}`, native motion with a 2 s stationary tail, `manifest.json`. The build fails if any obstacle footprint is within `--min-clearance-m` (0.35 m) of the start pelvis or goal XY; `--clearance-fix shift-out` moves the offending corridor wall outward by the smallest whole centimetre instead and records the shift |
 | 2. Teacher positives | `bash $T/run_stage.sh teacher $NAV_PACKET/collect/teacher-S S - -- tasks/*/*.json` | `StoppingTeacherCallback`: `teacher-episode.npz` + `collection.json` per task; only successes are eligible |
 | 3. Motor control | `bash $T/run_stage.sh full <stage> S <motor.pt> -- tasks...` | `FullMotorTaskCallback`: does the frozen motor complete the task with oracle commands |
 | 4. nav-v0 | `$PY $T/aggregate_stopping.py --stages collect/teacher-S --output collect/teacher-positive.json`, then `$PY $T/nav_fit_config.py --motor <motor.pt> --manifest ... --out fit/nav-v0-config.json`, then `$PY -m gear_sonic.research.scene_distillation.navigation_motor --config ... --output fit/nav-v0` | goal/map adapter from teacher positives |
@@ -29,6 +29,7 @@ cd vendor/sonic && export PY="env -u PYTHONPATH PYTHONPATH=$PWD TRL_EXPERIMENTAL
 | 8. nav-v2 forks | `nav_fit_config.py --view motor_recovery --warm-start fit/nav-v1/... --recovery-fraction 0.5 --fresh-behavior <sha of nav-v1>` versus `--recovery-fraction 0` | equal-update replay-versus-recovery comparison |
 | 9. Evaluate | `bash $T/run_stage.sh nav <stage> S <nav.pt> -- tasks...`; `python3 $T/table.py <stage>...` | unassisted goal/map panel at declared seeds |
 | 10. Export evidence | `python3 $T/export_results.py --packet $NAV_PACKET --out <docs evidence dir> [--copy-receipts <stage>] [--glob 'dagger/*/c2-recovery/*/task/task-result.json' --prefix dagger-c2-]` | `task-results.csv` and `recovery-attempts.csv`. `--copy-receipts` also copies each run's small JSON receipts; traces, shards and checkpoints stay in the packet. Example: [`nav-8192-dagger-reentry-20260914/`](../../docs/sonic/motion2scene/evidence/nav-8192-dagger-reentry-20260914/README.md) |
+| 11. XY re-score | `python3 $T/rescore_xy.py --packet $NAV_PACKET --output <new dir>` (numpy only, read-only on the packet) | `rescore.csv` (one row per unique episode: legacy 3-D flag and its exact reproduction, XY-goal flags, final/min goal error, time to goal, path ratio, height deviation), `rescore_summary.{md,json}` per panel |
 
 `run_stage.sh` and `run_recovery.sh` skip tasks whose receipt already exists, so a stage can be
 resumed after a failed launch (a shared GPU can refuse device memory at startup; the runner

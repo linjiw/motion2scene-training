@@ -13,6 +13,144 @@ from gear_sonic.research.scene_distillation.observations import navigation_obser
 
 SCHEMA = "bfm_known_map_navigation_task_v1"
 
+# Minimum horizontal distance from any obstacle footprint to the start pelvis XY and to the
+# goal XY. The legacy 00399-corridor wall stood 0.23 m from both and produced a ~3.8 kN
+# contact at the first control step.
+MIN_START_GOAL_CLEARANCE_M = 0.35
+
+
+def _convex_hull(points):
+    """Counter-clockwise convex hull of 2-D points (monotone chain), without repeats."""
+    pts = sorted({(float(x), float(y)) for x, y in np.asarray(points, dtype=np.float64)})
+    if len(pts) < 3:
+        raise ValueError("Degenerate obstacle footprint")
+
+    def cross(o, a, b):
+        return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0])
+
+    lower, upper = [], []
+    for p in pts:
+        while len(lower) >= 2 and cross(lower[-2], lower[-1], p) <= 0:
+            lower.pop()
+        lower.append(p)
+    for p in reversed(pts):
+        while len(upper) >= 2 and cross(upper[-2], upper[-1], p) <= 0:
+            upper.pop()
+        upper.append(p)
+    hull = np.asarray(lower[:-1] + upper[:-1])
+    if len(hull) < 3:
+        raise ValueError("Degenerate obstacle footprint")
+    return hull
+
+
+def obstacle_footprint(obstacle):
+    """Horizontal projection of one known-map primitive.
+
+    Returns ("circle", center_xy, radius) for spheres and upright cylinders, otherwise
+    ("polygon", ccw_vertices_xy) for the convex hull of the projected solid. Dimensions are
+    full extents, as in write_collision_scene and scene_features.
+    """
+    shape = obstacle["shape"]
+    center = np.asarray(obstacle["center_xyz"], dtype=np.float64)
+    size = np.asarray(obstacle["full_dimensions_xyz"], dtype=np.float64)
+    if center.shape != (3,) or size.shape != (3,) or not (size > 0).all():
+        raise ValueError("Obstacle needs a 3-D center and positive full dimensions")
+    if shape == "sphere":
+        return ("circle", center[:2], size[0] / 2)
+    rotation = rotation_wxyz(obstacle["quaternion_wxyz"])
+    half = size / 2
+    if shape in ("box", "beam"):
+        local = np.array([[x, y, z] for x in (-1, 1) for y in (-1, 1) for z in (-1, 1)]) * half
+    elif shape == "cylinder":
+        if abs(rotation[2, 2]) >= 1 - 1e-9:
+            return ("circle", center[:2], half[0])
+        angle = np.linspace(0, 2 * np.pi, 64, endpoint=False)
+        ring = np.stack([np.cos(angle) * half[0], np.sin(angle) * half[1]], -1)
+        local = np.concatenate(
+            [np.column_stack([ring, np.full(64, z)]) for z in (-half[2], half[2])]
+        )
+    else:
+        raise ValueError(f"No footprint for obstacle shape {shape!r}")
+    return ("polygon", _convex_hull((local @ rotation.T + center)[:, :2]))
+
+
+def horizontal_clearance_m(obstacle, xy):
+    """Horizontal distance from a point to an obstacle footprint; zero on or inside it."""
+    p = np.asarray(xy, dtype=np.float64)[:2]
+    footprint = obstacle_footprint(obstacle)
+    if footprint[0] == "circle":
+        return float(max(0.0, np.linalg.norm(p - footprint[1]) - footprint[2]))
+    a = footprint[1]
+    edge = np.roll(a, -1, axis=0) - a
+    offset = p - a
+    if (edge[:, 0] * offset[:, 1] - edge[:, 1] * offset[:, 0] >= 0).all():
+        return 0.0
+    t = np.clip((offset * edge).sum(1) / (edge * edge).sum(1), 0, 1)
+    return float(np.linalg.norm(offset - t[:, None] * edge, axis=1).min())
+
+
+def start_goal_clearance(obstacles, start_xyz, goal_xyz):
+    """Per-obstacle horizontal clearance of the start pelvis and goal, in metres."""
+    return [
+        dict(
+            obstacle_index=i,
+            shape=obstacle["shape"],
+            start_m=horizontal_clearance_m(obstacle, start_xyz),
+            goal_m=horizontal_clearance_m(obstacle, goal_xyz),
+        )
+        for i, obstacle in enumerate(obstacles)
+    ]
+
+
+def require_start_goal_clearance(
+    obstacles, start_xyz, goal_xyz, min_clearance_m=MIN_START_GOAL_CLEARANCE_M, label="task"
+):
+    """Fail loudly when any obstacle footprint crowds the start pelvis or the goal."""
+    if not np.isfinite(min_clearance_m) or min_clearance_m < 0:
+        raise ValueError("Clearance margin must be a finite nonnegative distance")
+    rows = start_goal_clearance(obstacles, start_xyz, goal_xyz)
+    bad = [
+        f"obstacle {r['obstacle_index']} ({r['shape']}) {end} {r[end + '_m']:.3f} m"
+        for r in rows
+        for end in ("start", "goal")
+        if r[end + "_m"] < min_clearance_m
+    ]
+    if bad:
+        raise ValueError(
+            f"{label}: obstacle footprint closer than {min_clearance_m} m horizontal to "
+            "start pelvis/goal: " + "; ".join(bad)
+        )
+    return rows
+
+
+def shift_to_clearance(
+    obstacle,
+    direction_xy,
+    start_xyz,
+    goal_xyz,
+    min_clearance_m=MIN_START_GOAL_CLEARANCE_M,
+    step_m=0.01,
+    max_shift_m=1.0,
+):
+    """Smallest horizontal translation along direction_xy, in whole step_m increments, that
+    restores start/goal clearance. Shape, size, height and orientation are kept.
+
+    Returns (moved_obstacle, shift_m); shift_m is 0 when the obstacle already clears.
+    """
+    d = np.asarray(direction_xy, dtype=np.float64)[:2]
+    if not np.isfinite(d).all() or np.linalg.norm(d) < 1e-9 or step_m <= 0:
+        raise ValueError("Shift needs a nonzero direction and a positive step")
+    d = d / np.linalg.norm(d)
+    center = np.asarray(obstacle["center_xyz"], dtype=np.float64)
+    for k in range(int(np.floor(max_shift_m / step_m + 1e-9)) + 1):
+        shift = round(k * step_m, 9)
+        xy = center[:2] + shift * d
+        moved = dict(obstacle, center_xyz=[float(xy[0]), float(xy[1]), float(center[2])])
+        rows = start_goal_clearance([moved], start_xyz, goal_xyz)
+        if min(rows[0]["start_m"], rows[0]["goal_m"]) >= min_clearance_m:
+            return moved, shift
+    raise ValueError(f"No shift up to {max_shift_m} m restores {min_clearance_m} m clearance")
+
 
 def navigation_request_sha256(task):
     """Identify a public request independently of its training-only motion/continuation ID."""

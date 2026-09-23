@@ -15,8 +15,10 @@ from gear_sonic.dataset_generation.kimodo_motion_adapter import (
 )
 from gear_sonic.research.hindsight_training.runtime import sha
 from gear_sonic.research.scene_distillation.tasks import (
+    MIN_START_GOAL_CLEARANCE_M,
     SCHEMA,
     binding,
+    require_start_goal_clearance,
     validate_task,
     write_collision_scene,
 )
@@ -28,6 +30,7 @@ def main():
     parser.add_argument("--ledger", type=Path, required=True)
     parser.add_argument("--body-reference", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--min-clearance-m", type=float, default=MIN_START_GOAL_CLEARANCE_M)
     args = parser.parse_args()
     p = args.packet.resolve()
     m = json.loads((p / "qualified-collection.json").read_text())
@@ -111,6 +114,10 @@ def main():
                 ]
             if variant == "changed_goal":
                 target[:2] += side * 0.75
+            # Fail before authoring a scene whose footprint crowds the start or goal.
+            require_start_goal_clearance(
+                obstacles, start, target, args.min_clearance_m, label=id + "-" + variant
+            )
             scene = folder / (variant + ".usda")
             write_collision_scene(scene, obstacles, start, target)
             source = folder / (variant + "-proposal.json")

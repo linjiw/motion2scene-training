@@ -39,6 +39,21 @@
       "path": "vendor/sonic/decoupled_wbc/tests/test_navigation_reentry.py",
       "snapshot_sha256": null,
       "current_sha256": "a772688cfa853ed041cec7b81d2ccf17e312879f33e0a7e6d635b9d151d156ea"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/tasks.py",
+      "snapshot_sha256": "443cbc84ed3c87f48098f3ea28dbc994b173d9feb26232c09541799a1224c384",
+      "current_sha256": "6c7420be120fb28596622f641d6ddaa5516581997af54f9754eb7fe922b4f6dd"
+    },
+    {
+      "path": "vendor/sonic/gear_sonic/research/scene_distillation/prepare_repaired_tasks.py",
+      "snapshot_sha256": "3ed2824f9078225be013ec432476cc670761308f6238afa54dc0f8706dcf10c4",
+      "current_sha256": "315dc8cece6af0c9712d11cab3326985300915abd4b3e22d8f5990f23794dbe1"
+    },
+    {
+      "path": "vendor/sonic/decoupled_wbc/tests/test_task_clearance.py",
+      "snapshot_sha256": null,
+      "current_sha256": "4a0748b43f767ca2f8664976514e21c34291bb2f18c9d1c1e06e94d656fff8d6"
     }
   ],
   "reasons": [
@@ -49,6 +64,9 @@
     "Optional braking-aware in-episode row sampling (approach_weight/approach_radius_m) for the navigation adapter fit; default path unchanged",
     "Unit test for approach_row_weights/weighted_row_index",
     "Add phase-rewind re-entry probe callback (new file, diagnostic only; emits no training shard)",
-    "Unit test for rewind_frame (new file)"
+    "Unit test for rewind_frame (new file)",
+    "Start/goal obstacle-footprint clearance helpers (MIN_START_GOAL_CLEARANCE_M=0.35, require_start_goal_clearance, shift_to_clearance); validate_task unchanged so legacy tasks still load",
+    "prepare_repaired_tasks fails loudly when an obstacle footprint is within --min-clearance-m of the start pelvis or goal XY",
+    "Unit tests for obstacle footprint clearance and the outward shift rule (new file)"
   ]
 }
