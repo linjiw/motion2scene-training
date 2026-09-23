@@ -1,0 +1,276 @@
+{
+ "registration": "experiments/nav8192-confirm-v1/registration.json",
+ "task_set": "feasible_19",
+ "seeds": [
+  92601,
+  92602,
+  92603
+ ],
+ "unpaired_seeds_dropped": [],
+ "provenance": {
+  "approach": {
+   "registered_sha256": "426f0fc526a70f0e56c9a5f7a65614077dbfb66db396b08e1c11e412c096fbcd",
+   "observed": [
+    "426f0fc526a70f0e56c9a5f7a65614077dbfb66db396b08e1c11e412c096fbcd"
+   ],
+   "match": true
+  },
+  "uniform": {
+   "registered_sha256": "3af09f466ada1e192c2b19af544c2e1a417e4c0a6a57c9a8aeb26795fb5be138",
+   "observed": [
+    "3af09f466ada1e192c2b19af544c2e1a417e4c0a6a57c9a8aeb26795fb5be138"
+   ],
+   "match": true
+  },
+  "recovery": {
+   "registered_sha256": "d4b3c0e288c4d59d724bb3a469de09f7e06b36330bcd9203ea382138edcefd60",
+   "observed": [
+    "d4b3c0e288c4d59d724bb3a469de09f7e06b36330bcd9203ea382138edcefd60"
+   ],
+   "match": true
+  }
+ },
+ "arms": [
+  {
+   "arm": "approach",
+   "seeds": [
+    92601,
+    92602,
+    92603
+   ],
+   "per_seed_success": [
+    0,
+    0,
+    0
+   ],
+   "per_seed_known": [
+    19,
+    19,
+    19
+   ],
+   "pooled_success": 0,
+   "pooled_known": 57,
+   "pooled_rate": 0.0,
+   "wilson95": [
+    0.0,
+    0.06313883485297893
+   ],
+   "mean_per_panel": 0.0
+  },
+  {
+   "arm": "uniform",
+   "seeds": [
+    92601,
+    92602,
+    92603
+   ],
+   "per_seed_success": [
+    0,
+    0,
+    0
+   ],
+   "per_seed_known": [
+    19,
+    19,
+    19
+   ],
+   "pooled_success": 0,
+   "pooled_known": 57,
+   "pooled_rate": 0.0,
+   "wilson95": [
+    0.0,
+    0.06313883485297893
+   ],
+   "mean_per_panel": 0.0
+  },
+  {
+   "arm": "recovery",
+   "seeds": [
+    92601,
+    92602,
+    92603
+   ],
+   "per_seed_success": [
+    0,
+    0,
+    0
+   ],
+   "per_seed_known": [
+    19,
+    19,
+    19
+   ],
+   "pooled_success": 0,
+   "pooled_known": 57,
+   "pooled_rate": 0.0,
+   "wilson95": [
+    0.0,
+    0.06313883485297893
+   ],
+   "mean_per_panel": 0.0
+  }
+ ],
+ "futility_stage1": {
+  "status": "complete",
+  "decision": true,
+  "result": {
+   "stop": true,
+   "approach_mean": 0.0,
+   "wins": 0,
+   "losses": 0,
+   "reasons": [
+    "approach mean 0.000 <= 3.0",
+    "discordant wins 0 <= losses 0 vs recovery"
+   ],
+   "seeds_used": 3
+  }
+ },
+ "confirmation_gate": {
+  "status": "complete",
+  "decision": false,
+  "result": {
+   "p_vs_uniform": 1.0,
+   "p_vs_recovery": 1.0,
+   "holm_adjusted": [
+    1.0,
+    1.0
+   ],
+   "tests_pass": false,
+   "approach_mean": 0.0,
+   "mean_pass": false,
+   "confirmed": false,
+   "alpha": 0.025,
+   "min_mean": 5.0,
+   "seeds": 3
+  }
+ },
+ "secondary": {
+  "approach_vs_uniform": {
+   "a": "approach",
+   "b": "uniform",
+   "seeds": [
+    92601,
+    92602,
+    92603
+   ],
+   "discordant_a_only": 0,
+   "discordant_b_only": 0,
+   "mcnemar_two_sided": 1.0,
+   "mcnemar_one_sided_a_gt_b": 1.0,
+   "cmh_one_sided_a_gt_b": {
+    "p": 1.0,
+    "p_fraction": "1/1",
+    "alternative": "greater",
+    "statistic": 0,
+    "null_expectation": 0.0,
+    "support": [
+     0,
+     0
+    ],
+    "informative_strata": 0,
+    "strata": 19,
+    "mantel_haenszel_odds_ratio": null,
+    "complete_pairs": 57,
+    "unknown_pairs": 0
+   },
+   "cmh_two_sided": {
+    "p": 1.0,
+    "p_fraction": "1/1",
+    "alternative": "two-sided",
+    "statistic": 0,
+    "null_expectation": 0.0,
+    "support": [
+     0,
+     0
+    ],
+    "informative_strata": 0,
+    "strata": 19,
+    "mantel_haenszel_odds_ratio": null,
+    "complete_pairs": 57,
+    "unknown_pairs": 0
+   },
+   "task_cluster_bootstrap": {
+    "mean_difference": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "per_panel_difference": 0.0,
+    "per_panel_ci": [
+     0.0,
+     0.0
+    ],
+    "share_draws_nonpositive": 1.0,
+    "tasks_used": 19,
+    "draws": 20000,
+    "seed": 202609231,
+    "confidence": 0.95,
+    "rng": "numpy.random.default_rng / PCG64; tasks resampled, seeds kept together"
+   }
+  },
+  "approach_vs_recovery": {
+   "a": "approach",
+   "b": "recovery",
+   "seeds": [
+    92601,
+    92602,
+    92603
+   ],
+   "discordant_a_only": 0,
+   "discordant_b_only": 0,
+   "mcnemar_two_sided": 1.0,
+   "mcnemar_one_sided_a_gt_b": 1.0,
+   "cmh_one_sided_a_gt_b": {
+    "p": 1.0,
+    "p_fraction": "1/1",
+    "alternative": "greater",
+    "statistic": 0,
+    "null_expectation": 0.0,
+    "support": [
+     0,
+     0
+    ],
+    "informative_strata": 0,
+    "strata": 19,
+    "mantel_haenszel_odds_ratio": null,
+    "complete_pairs": 57,
+    "unknown_pairs": 0
+   },
+   "cmh_two_sided": {
+    "p": 1.0,
+    "p_fraction": "1/1",
+    "alternative": "two-sided",
+    "statistic": 0,
+    "null_expectation": 0.0,
+    "support": [
+     0,
+     0
+    ],
+    "informative_strata": 0,
+    "strata": 19,
+    "mantel_haenszel_odds_ratio": null,
+    "complete_pairs": 57,
+    "unknown_pairs": 0
+   },
+   "task_cluster_bootstrap": {
+    "mean_difference": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "per_panel_difference": 0.0,
+    "per_panel_ci": [
+     0.0,
+     0.0
+    ],
+    "share_draws_nonpositive": 1.0,
+    "tasks_used": 19,
+    "draws": 20000,
+    "seed": 202609231,
+    "confidence": 0.95,
+    "rng": "numpy.random.default_rng / PCG64; tasks resampled, seeds kept together"
+   }
+  }
+ },
+ "note": "Stage-1 readout: the futility rule is binding; the gate is informational."
+}

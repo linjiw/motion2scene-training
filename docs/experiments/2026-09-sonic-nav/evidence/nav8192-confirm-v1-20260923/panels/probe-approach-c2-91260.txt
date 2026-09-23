@@ -1,0 +1,2 @@
+00908-stop-clear success hold 50 reach True force 0.0 fell False steps 238 stop goal_hold
+00677-stop-corridor FAIL hold 11 reach True force 0.0 fell False steps 350 stop deadline

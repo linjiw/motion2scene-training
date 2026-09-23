@@ -1,1 +1,1 @@
-{"id": "nav8192-confirm-v1", "registered": "2026-09-23", "file": "experiments/nav8192-confirm-v1/registration.json", "status": "registered"}
+{"id": "nav8192-confirm-v1", "registered": "2026-09-23", "file": "experiments/nav8192-confirm-v1/registration.json", "status": "closed: futility (stage 1)", "result": "approach-c2 0/57, uniform-c2 0/57, nav-v2-recovery 0/57 on seeds 92601-92603; teacher 58/72", "report": "docs/experiments/2026-09-sonic-nav/NAV8192_CONFIRM_V1_STAGE1_20260923.md"}

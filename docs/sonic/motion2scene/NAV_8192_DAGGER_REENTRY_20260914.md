@@ -1,3 +1,5 @@
+> **Held-out result (September 23, 2026): the DAgger arms score 0/57 on fresh seeds.** Every number in this report is in-sample at seed 91260, the seed that produced the training labels (rollouts are bit-deterministic). Both cycle-2 arms and nav-v2-recovery score 0/19 at each of seeds 92601–92603. See [nav8192-confirm-v1 Stage 1](../../experiments/2026-09-sonic-nav/NAV8192_CONFIRM_V1_STAGE1_20260923.md).
+
 # Short-cycle navigation DAgger, braking-aware sampling and a phase-rewind re-entry probe
 
 September 14, 2026. Follow-up to the [24-task stopping study](NAV_8192_STOPPING_20260913.md), which ended with three recommendations: switch early and often in a short-cycle DAgger loop, weight braking rows, and build a re-entry continuation before collecting late switches. This report runs the first two as a matched pair of arms and tests the third as a diagnostic probe. All runs use the 8192-env teacher, the `s1-3200` motor, the 24-task panel (19 tasks feasible for teacher and motor) and seed 91260.

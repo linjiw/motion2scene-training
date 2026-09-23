@@ -1,0 +1,9255 @@
+{
+ "item": "roadmap Phase 0.9: MID-360 sensor geometry on G1 (CPU)",
+ "generated": "2026-09-23T13:37:39",
+ "code_commit": "519e1d26274a53d153ca21b10b06c6ccb95faff9",
+ "spec": {
+  "h_fov_deg": 360.0,
+  "elev_min_deg": -7.0,
+  "elev_max_deg": 52.0,
+  "blind_zone_m": 0.1,
+  "range_m": 40.0,
+  "frame_rate_hz": 10.0,
+  "scan": "non-repetitive"
+ },
+ "conventions": {
+  "heading_frame": "origin at the sensor, z up (gravity), x = torso heading",
+  "elevation": "degrees above the horizontal plane in the heading frame",
+  "distances": "horizontal, from the sensor (not from the robot's leading edge)",
+  "inf": "never inside the field of view",
+  "blocked_fraction": "share of FOV directions (uniform in solid angle) hitting a link",
+  "stats": "p5/p50/p95/min/max over frames; inf_fraction = share of inf values"
+ },
+ "inputs": {
+  "workspace": "/home/robotixx/motion2scene-training/workspace",
+  "kinematics_urdf": {
+   "path": "/home/robotixx/motion2scene-training/workspace/vendor/sonic/gear_sonic/data/assets/robot_description/urdf/g1/main.urdf",
+   "sha256": "6e107391d015ab27438026bb953b21ef8fa6a02305e65393985908941d7fd98d"
+  },
+  "upright_mount_urdf": {
+   "path": "/home/robotixx/motion2scene-training/.claude/worktrees/wf_f47e1f81-f33-5/vendor/sonic/decoupled_wbc/control/robot_model/model_data/g1/g1_29dof.urdf",
+   "sha256": "56d0c7b4e44351ee8e89e7b1f1fcc8b02d5ec5cd191e43239d2b06f039e75860"
+  },
+  "mesh_dir": "/home/robotixx/motion2scene-training/workspace/vendor/sonic/gear_sonic/data/assets/robot_description/meshes/g1",
+  "executed_rollouts": "/home/robotixx/motion2scene-training/workspace/teacher-8192-500-review/eval/release",
+  "reference_clips": "/home/robotixx/motion2scene-training/workspace/m2s-hindsight-dataset-v1-20260911/motions"
+ },
+ "mounts": {
+  "inverted": {
+   "parent": "torso_link",
+   "xyz": [
+    0.0002835,
+    3e-05,
+    0.41618
+   ],
+   "rpy": [
+    0.0,
+    3.101,
+    3.1415
+   ],
+   "source": "/home/robotixx/motion2scene-training/workspace/vendor/sonic/gear_sonic/data/assets/robot_description/urdf/g1/main.urdf",
+   "sensor_z_axis_in_torso": [
+    -0.0405815,
+    3.76002e-06,
+    -0.999176
+   ],
+   "window_in_level_torso_frame_deg": {
+    "front": [
+     -54.3258,
+     4.67421
+    ],
+    "left": [
+     -52.0603,
+     7.00602
+    ],
+    "back": [
+     -49.6742,
+     9.32579
+    ],
+    "right": [
+     -52.0607,
+     7.00558
+    ]
+   }
+  },
+  "upright": {
+   "parent": "torso_link",
+   "xyz": [
+    0.0002835,
+    3e-05,
+    0.41618
+   ],
+   "rpy": [
+    0.0,
+    0.0401426,
+    0.0
+   ],
+   "source": "/home/robotixx/motion2scene-training/.claude/worktrees/wf_f47e1f81-f33-5/vendor/sonic/decoupled_wbc/control/robot_model/model_data/g1/g1_29dof.urdf",
+   "sensor_z_axis_in_torso": [
+    0.0401318,
+    0.0,
+    0.999194
+   ],
+   "window_in_level_torso_frame_deg": {
+    "front": [
+     -9.3,
+     49.7
+    ],
+    "left": [
+     -7.00567,
+     52.0592
+    ],
+    "back": [
+     -4.7,
+     54.3
+    ],
+    "right": [
+     -7.00567,
+     52.0592
+    ]
+   }
+  }
+ },
+ "mount_survey": [
+  {
+   "file": "/home/robotixx/motion2scene-training/workspace/vendor/sonic/gear_sonic/data/assets/robot_description/urdf/g1/main.urdf",
+   "xyz_in_parent": [
+    0.0002835,
+    3e-05,
+    0.41618
+   ],
+   "rpy": [
+    0.0,
+    3.101,
+    3.1415
+   ],
+   "sensor_position_in_pelvis_frame_zero_joints": [
+    -0.00368,
+    3e-05,
+    0.46018
+   ],
+   "sensor_z_axis_in_torso": [
+    -0.0405815,
+    3.76002e-06,
+    -0.999176
+   ],
+   "orientation": "inverted",
+   "tilt_from_torso_axis_deg": 2.32579
+  },
+  {
+   "file": "/home/robotixx/motion2scene-training/.claude/worktrees/wf_f47e1f81-f33-5/vendor/sonic/decoupled_wbc/control/robot_model/model_data/g1/g1_29dof.urdf",
+   "xyz_in_parent": [
+    0.0002835,
+    3e-05,
+    0.40618
+   ],
+   "rpy": [
+    0.0,
+    0.0401426,
+    0.0
+   ],
+   "sensor_position_in_pelvis_frame_zero_joints": [
+    -0.00368,
+    3e-05,
+    0.46018
+   ],
+   "sensor_z_axis_in_torso": [
+    0.0401318,
+    0.0,
+    0.999194
+   ],
+   "orientation": "upright",
+   "tilt_from_torso_axis_deg": 2.3
+  },
+  {
+   "file": "/home/robotixx/motion2scene-training/.claude/worktrees/wf_f47e1f81-f33-5/vendor/sonic/decoupled_wbc/control/robot_model/model_data/g1/g1_29dof_with_hand.urdf",
+   "xyz_in_parent": [
+    0.0002835,
+    3e-05,
+    0.40618
+   ],
+   "rpy": [
+    0.0,
+    0.0401426,
+    0.0
+   ],
+   "sensor_position_in_pelvis_frame_zero_joints": [
+    -0.00368,
+    3e-05,
+    0.46018
+   ],
+   "sensor_z_axis_in_torso": [
+    0.0401318,
+    0.0,
+    0.999194
+   ],
+   "orientation": "upright",
+   "tilt_from_torso_axis_deg": 2.3
+  },
+  {
+   "file": "/home/robotixx/motion2scene-training/.claude/worktrees/wf_f47e1f81-f33-5/vendor/sonic/decoupled_wbc/sim2mujoco/resources/robots/g1/g1.urdf",
+   "xyz_in_parent": [
+    0.0002835,
+    3e-05,
+    0.41618
+   ],
+   "rpy": [
+    0.0,
+    0.0401426,
+    0.0
+   ],
+   "sensor_position_in_pelvis_frame_zero_joints": [
+    -0.00368,
+    3e-05,
+    0.46018
+   ],
+   "sensor_z_axis_in_torso": [
+    0.0401318,
+    0.0,
+    0.999194
+   ],
+   "orientation": "upright",
+   "tilt_from_torso_axis_deg": 2.3
+  },
+  {
+   "file": "/opt/ros/humble/share/unitree_description/urdf/g1/main.urdf",
+   "xyz_in_parent": [
+    0.0002835,
+    3e-05,
+    0.41618
+   ],
+   "rpy": [
+    0.0,
+    3.101,
+    3.1415
+   ],
+   "sensor_position_in_pelvis_frame_zero_joints": [
+    -0.00368,
+    3e-05,
+    0.46018
+   ],
+   "sensor_z_axis_in_torso": [
+    -0.0405815,
+    3.76002e-06,
+    -0.999176
+   ],
+   "orientation": "inverted",
+   "tilt_from_torso_axis_deg": 2.32579
+  }
+ ],
+ "checks": {
+  "upright_raw_xyz_in_its_own_torso_frame": [
+   0.0002835,
+   3e-05,
+   0.40618
+  ],
+  "upright_xyz_in_main_urdf_torso_frame": [
+   0.0002835,
+   3e-05,
+   0.41618
+  ],
+  "sensor_position_gap_between_mounts_m": 1.0842e-19,
+  "fk_validation": {
+   "probe_clip": "00102",
+   "reference_npz_max_body_error_m": 5.22744e-07,
+   "isaac_ref_track_max_body_error_m": 1.04623e-06
+  },
+  "executed_foot_sole_above_floor_m": {
+   "n": 9359,
+   "inf_fraction": 0.0,
+   "p5": -5.91964e-05,
+   "p50": -1.95468e-05,
+   "p95": 1.26903e-06,
+   "min": -0.000365,
+   "max": 0.020602
+  },
+  "mesh_vs_fk_torso_position_error_m": 0.0
+ },
+ "clip_sets": {
+  "gait": [
+   "00102",
+   "00116",
+   "00120",
+   "00134",
+   "00185",
+   "00246",
+   "00256",
+   "00265",
+   "00363",
+   "00382",
+   "00384",
+   "00395",
+   "00413",
+   "00455",
+   "00499",
+   "00526",
+   "00693",
+   "00711",
+   "00733",
+   "00754",
+   "00796",
+   "00805",
+   "00811",
+   "00820",
+   "00850",
+   "00976"
+  ],
+  "crouch": [
+   "00490",
+   "00494",
+   "00578",
+   "00720",
+   "00781",
+   "00831",
+   "00904",
+   "00916",
+   "00835"
+  ],
+  "crawl": [
+   "00350",
+   "00785"
+  ],
+  "selection": {
+   "gait": "unstyled 'A person ...' forward-walking prompts; frames with planar root speed 0.3-1.6 m/s (0.2 s smoothing)",
+   "crouch": "crouch/duck/lower-body prompts; frames with the sensor >= 0.15 m below the default standing height and torso pitch < 60 deg",
+   "crawl": "crawl prompts; frames with torso pitch >= 45 deg",
+   "executed": "release SONIC physics rollouts (Isaac, 50 Hz, floor z=0) of the repaired hindsight clips (workspace/teacher-8192-500-review/eval/release)",
+   "reference": "kinematic reference clips (30 Hz); floor = per-frame lowest foot sole"
+  }
+ },
+ "postures": {
+  "inverted": {
+   "default_standing": {
+    "height": {
+     "n": 1,
+     "inf_fraction": 0.0,
+     "p5": 1.2172,
+     "p50": 1.2172,
+     "p95": 1.2172,
+     "min": 1.2172,
+     "max": 1.2172
+    },
+    "pitch": {
+     "n": 1,
+     "inf_fraction": 0.0,
+     "p5": -0.0,
+     "p50": -0.0,
+     "p95": -0.0,
+     "min": -0.0,
+     "max": -0.0
+    },
+    "roll": {
+     "n": 1,
+     "inf_fraction": 0.0,
+     "p5": 0.0,
+     "p50": 0.0,
+     "p95": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "head_top": {
+     "n": 1,
+     "inf_fraction": 0.0,
+     "p5": 1.28752,
+     "p50": 1.28752,
+     "p95": 1.28752,
+     "min": 1.28752,
+     "max": 1.28752
+    },
+    "speed": {
+     "n": 1,
+     "inf_fraction": 0.0,
+     "p5": 0.0,
+     "p50": 0.0,
+     "p95": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "window_front_deg": {
+     "lo": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": -54.3258,
+      "p50": -54.3258,
+      "p95": -54.3258,
+      "min": -54.3258,
+      "max": -54.3258
+     },
+     "hi": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 4.67421,
+      "p50": 4.67421,
+      "p95": 4.67421,
+      "min": 4.67421,
+      "max": 4.67421
+     },
+     "gap_fraction": 0.0
+    },
+    "window_left_deg": {
+     "lo": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": -52.0603,
+      "p50": -52.0603,
+      "p95": -52.0603,
+      "min": -52.0603,
+      "max": -52.0603
+     },
+     "hi": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 7.00602,
+      "p50": 7.00602,
+      "p95": 7.00602,
+      "min": 7.00602,
+      "max": 7.00602
+     },
+     "gap_fraction": 0.0
+    },
+    "window_back_deg": {
+     "lo": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": -49.6742,
+      "p50": -49.6742,
+      "p95": -49.6742,
+      "min": -49.6742,
+      "max": -49.6742
+     },
+     "hi": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 9.32579,
+      "p50": 9.32579,
+      "p95": 9.32579,
+      "min": 9.32579,
+      "max": 9.32579
+     },
+     "gap_fraction": 0.0
+    },
+    "window_right_deg": {
+     "lo": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": -52.0607,
+      "p50": -52.0607,
+      "p95": -52.0607,
+      "min": -52.0607,
+      "max": -52.0607
+     },
+     "hi": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 7.00558,
+      "p50": 7.00558,
+      "p95": 7.00558,
+      "min": 7.00558,
+      "max": 7.00558
+     },
+     "gap_fraction": 0.0
+    },
+    "lowest_elevation_any_az_deg": {
+     "n": 1,
+     "inf_fraction": 0.0,
+     "p5": -54.3258,
+     "p50": -54.3258,
+     "p95": -54.3258,
+     "min": -54.3258,
+     "max": -54.3258
+    },
+    "highest_elevation_any_az_deg": {
+     "n": 1,
+     "inf_fraction": 0.0,
+     "p5": 9.32579,
+     "p50": 9.32579,
+     "p95": 9.32579,
+     "min": 9.32579,
+     "max": 9.32579
+    },
+    "blind_floor_radius_fov_only_m": {
+     "front": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.873818,
+      "p50": 0.873818,
+      "p95": 0.873818,
+      "min": 0.873818,
+      "max": 0.873818
+     },
+     "left": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.948922,
+      "p50": 0.948922,
+      "p95": 0.948922,
+      "min": 0.948922,
+      "max": 0.948922
+     },
+     "back": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 1.0332,
+      "p50": 1.0332,
+      "p95": 1.0332,
+      "min": 1.0332,
+      "max": 1.0332
+     },
+     "right": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.948907,
+      "p50": 0.948907,
+      "p95": 0.948907,
+      "min": 0.948907,
+      "max": 0.948907
+     },
+     "min": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.873818,
+      "p50": 0.873818,
+      "p95": 0.873818,
+      "min": 0.873818,
+      "max": 0.873818
+     }
+    },
+    "n_frames": 1
+   },
+   "gait_executed": {
+    "height": {
+     "n": 7627,
+     "inf_fraction": 0.0,
+     "p5": 1.16115,
+     "p50": 1.20152,
+     "p95": 1.22947,
+     "min": 1.08644,
+     "max": 1.24587
+    },
+    "pitch": {
+     "n": 7627,
+     "inf_fraction": 0.0,
+     "p5": -6.55865,
+     "p50": 1.80573,
+     "p95": 11.4547,
+     "min": -17.4867,
+     "max": 32.809
+    },
+    "roll": {
+     "n": 7627,
+     "inf_fraction": 0.0,
+     "p5": -6.36388,
+     "p50": -0.377437,
+     "p95": 6.32563,
+     "min": -15.4586,
+     "max": 17.082
+    },
+    "head_top": {
+     "n": 7627,
+     "inf_fraction": 0.0,
+     "p5": 1.23123,
+     "p50": 1.27179,
+     "p95": 1.29977,
+     "min": 1.15603,
+     "max": 1.31629
+    },
+    "speed": {
+     "n": 7627,
+     "inf_fraction": 0.0,
+     "p5": 0.406956,
+     "p50": 0.942623,
+     "p95": 1.4555,
+     "min": 0.30004,
+     "max": 1.59954
+    },
+    "window_front_deg": {
+     "lo": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": -66.1154,
+      "p50": -56.2248,
+      "p95": -47.8602,
+      "min": -87.3745,
+      "max": -37.7609
+     },
+     "hi": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": -6.76822,
+      "p50": 2.88177,
+      "p95": 11.2457,
+      "min": -28.1199,
+      "max": 22.2239
+     },
+     "gap_fraction": 0.0
+    },
+    "window_left_deg": {
+     "lo": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": -59.6503,
+      "p50": -52.7824,
+      "p95": -46.0095,
+      "min": -79.7452,
+      "max": -35.7498
+     },
+     "hi": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.655219,
+      "p50": 6.65296,
+      "p95": 13.3946,
+      "min": -8.73306,
+      "max": 24.4234
+     },
+     "gap_fraction": 0.0
+    },
+    "window_back_deg": {
+     "lo": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": -56.341,
+      "p50": -47.9724,
+      "p95": -38.5534,
+      "min": -68.1421,
+      "max": -17.0902
+     },
+     "hi": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 2.77286,
+      "p50": 11.1408,
+      "p95": 20.8052,
+      "min": -8.03576,
+      "max": 42.1644
+     },
+     "gap_fraction": 0.0
+    },
+    "window_right_deg": {
+     "lo": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": -58.937,
+      "p50": -51.993,
+      "p95": -46.566,
+      "min": -70.3935,
+      "max": -37.2197
+     },
+     "hi": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.687565,
+      "p50": 7.42585,
+      "p95": 13.5725,
+      "min": -10.2203,
+      "max": 23.1925
+     },
+     "gap_fraction": 0.0
+    },
+    "lowest_elevation_any_az_deg": {
+     "n": 7627,
+     "inf_fraction": 0.0,
+     "p5": -67.2543,
+     "p50": -57.7502,
+     "p95": -53.5008,
+     "min": -87.396,
+     "max": -52.0416
+    },
+    "highest_elevation_any_az_deg": {
+     "n": 7627,
+     "inf_fraction": 0.0,
+     "p5": 8.50074,
+     "p50": 12.7501,
+     "p95": 22.2529,
+     "min": 7.04156,
+     "max": 42.3806
+    },
+    "blind_floor_radius_fov_only_m": {
+     "front": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.521528,
+      "p50": 0.805539,
+      "p95": 1.08917,
+      "min": 0.051536,
+      "max": 1.50561
+     },
+     "left": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.690364,
+      "p50": 0.912289,
+      "p95": 1.16158,
+      "min": 0.203324,
+      "max": 1.57192
+     },
+     "back": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.797932,
+      "p50": 1.08452,
+      "p95": 1.48611,
+      "min": 0.466472,
+      "max": 3.6554
+     },
+     "right": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.722259,
+      "p50": 0.937795,
+      "p95": 1.13147,
+      "min": 0.387003,
+      "max": 1.56637
+     },
+     "min": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.493684,
+      "p50": 0.757536,
+      "p95": 0.893176,
+      "min": 0.0511124,
+      "max": 0.950438
+     }
+    },
+    "n_frames": 7627
+   },
+   "gait_reference": {
+    "height": {
+     "n": 4549,
+     "inf_fraction": 0.0,
+     "p5": 1.16718,
+     "p50": 1.21647,
+     "p95": 1.24155,
+     "min": 1.04199,
+     "max": 1.2571
+    },
+    "pitch": {
+     "n": 4549,
+     "inf_fraction": 0.0,
+     "p5": 2.61662,
+     "p50": 10.403,
+     "p95": 24.761,
+     "min": -10.8379,
+     "max": 38.9009
+    },
+    "roll": {
+     "n": 4549,
+     "inf_fraction": 0.0,
+     "p5": -6.12524,
+     "p50": -0.0334821,
+     "p95": 6.53647,
+     "min": -18.8812,
+     "max": 17.491
+    },
+    "head_top": {
+     "n": 4549,
+     "inf_fraction": 0.0,
+     "p5": 1.23703,
+     "p50": 1.28632,
+     "p95": 1.31145,
+     "min": 1.11166,
+     "max": 1.3271
+    },
+    "speed": {
+     "n": 4549,
+     "inf_fraction": 0.0,
+     "p5": 0.447147,
+     "p50": 0.998788,
+     "p95": 1.48208,
+     "min": 0.300219,
+     "max": 1.59888
+    },
+    "window_front_deg": {
+     "lo": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": -79.3923,
+      "p50": -64.8287,
+      "p95": -57.0806,
+      "min": -90.0,
+      "max": -45.0929
+     },
+     "hi": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": -20.0559,
+      "p50": -5.72833,
+      "p95": 2.06659,
+      "min": -34.223,
+      "max": 15.6103
+     },
+     "gap_fraction": 0.0
+    },
+    "window_left_deg": {
+     "lo": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": -66.2065,
+      "p50": -54.1853,
+      "p95": -47.0099,
+      "min": -90.0,
+      "max": -38.3083
+     },
+     "hi": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": 0.952061,
+      "p50": 7.20911,
+      "p95": 13.9796,
+      "min": -13.581,
+      "max": 28.3
+     },
+     "gap_fraction": 0.00109914
+    },
+    "window_back_deg": {
+     "lo": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": -47.7212,
+      "p50": -39.4678,
+      "p95": -26.2956,
+      "min": -90.0,
+      "max": -14.5756
+     },
+     "hi": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": 11.9657,
+      "p50": 19.7358,
+      "p95": 34.1436,
+      "min": -1.31683,
+      "max": 48.2342
+     },
+     "gap_fraction": 0.0116509
+    },
+    "window_right_deg": {
+     "lo": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": -64.5921,
+      "p50": -54.1879,
+      "p95": -49.7118,
+      "min": -90.0,
+      "max": -41.2211
+     },
+     "hi": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": 0.474616,
+      "p50": 7.23151,
+      "p95": 14.3198,
+      "min": -12.1649,
+      "max": 29.6293
+     },
+     "gap_fraction": 0.00373709
+    },
+    "lowest_elevation_any_az_deg": {
+     "n": 4549,
+     "inf_fraction": 0.0,
+     "p5": -79.617,
+     "p50": -65.0083,
+     "p95": -58.0315,
+     "min": -90.0,
+     "max": -52.7072
+    },
+    "highest_elevation_any_az_deg": {
+     "n": 4549,
+     "inf_fraction": 0.0,
+     "p5": 13.0312,
+     "p50": 20.0055,
+     "p95": 34.6125,
+     "min": 7.70725,
+     "max": 48.972
+    },
+    "blind_floor_radius_fov_only_m": {
+     "front": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": 0.218702,
+      "p50": 0.573136,
+      "p95": 0.792533,
+      "min": 6.66081e-17,
+      "max": 1.20316
+     },
+     "left": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": 0.518968,
+      "p50": 0.879721,
+      "p95": 1.12442,
+      "min": 6.66081e-17,
+      "max": 1.50941
+     },
+     "back": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": 1.10775,
+      "p50": 1.47748,
+      "p95": 2.39853,
+      "min": 6.66081e-17,
+      "max": 4.2672
+     },
+     "right": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": 0.562344,
+      "p50": 0.877404,
+      "p95": 1.03707,
+      "min": 6.66081e-17,
+      "max": 1.3743
+     },
+     "min": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": 0.215475,
+      "p50": 0.568177,
+      "p95": 0.764728,
+      "min": 6.66081e-17,
+      "max": 0.932972
+     }
+    },
+    "n_frames": 4549
+   },
+   "crouch_executed": {
+    "height": {
+     "n": 1732,
+     "inf_fraction": 0.0,
+     "p5": 0.822491,
+     "p50": 0.914165,
+     "p95": 1.02556,
+     "min": 0.691238,
+     "max": 1.06656
+    },
+    "pitch": {
+     "n": 1732,
+     "inf_fraction": 0.0,
+     "p5": 5.70958,
+     "p50": 26.238,
+     "p95": 39.0371,
+     "min": -0.962645,
+     "max": 55.4805
+    },
+    "roll": {
+     "n": 1732,
+     "inf_fraction": 0.0,
+     "p5": -43.3698,
+     "p50": -0.689585,
+     "p95": 14.8059,
+     "min": -48.2512,
+     "max": 29.9061
+    },
+    "head_top": {
+     "n": 1732,
+     "inf_fraction": 0.0,
+     "p5": 0.891696,
+     "p50": 0.984015,
+     "p95": 1.09532,
+     "min": 0.760792,
+     "max": 1.13642
+    },
+    "speed": {
+     "n": 1732,
+     "inf_fraction": 0.0,
+     "p5": 0.0222467,
+     "p50": 0.383761,
+     "p95": 0.759376,
+     "min": 0.0022121,
+     "max": 0.906593
+    },
+    "window_front_deg": {
+     "lo": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": -90.0,
+      "p50": -82.8263,
+      "p95": -61.7169,
+      "min": -90.0,
+      "max": -56.5593
+     },
+     "hi": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": -33.398,
+      "p50": -21.3825,
+      "p95": -0.859258,
+      "min": -50.6792,
+      "max": 6.05777
+     },
+     "gap_fraction": 0.0
+    },
+    "window_left_deg": {
+     "lo": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": -90.0,
+      "p50": -67.2145,
+      "p95": -41.6573,
+      "min": -90.0,
+      "max": -25.3434
+     },
+     "hi": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": -41.6542,
+      "p50": 7.15966,
+      "p95": 24.8998,
+      "min": -45.9831,
+      "max": 39.8959
+     },
+     "gap_fraction": 0.0236721
+    },
+    "window_back_deg": {
+     "lo": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": -90.0,
+      "p50": -30.3726,
+      "p95": -17.3645,
+      "min": -90.0,
+      "max": -14.291
+     },
+     "hi": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": 15.4551,
+      "p50": 35.9498,
+      "p95": 49.2945,
+      "min": 9.18535,
+      "max": 65.059
+     },
+     "gap_fraction": 0.10739
+    },
+    "window_right_deg": {
+     "lo": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": -90.0,
+      "p50": -64.7692,
+      "p95": -43.2443,
+      "min": -90.0,
+      "max": -21.9432
+     },
+     "hi": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": -8.76751,
+      "p50": 8.79599,
+      "p95": 57.0718,
+      "min": -24.8128,
+      "max": 61.5906
+     },
+     "gap_fraction": 0.100462
+    },
+    "lowest_elevation_any_az_deg": {
+     "n": 1732,
+     "inf_fraction": 0.0,
+     "p5": -90.0,
+     "p50": -83.231,
+     "p95": -63.7208,
+     "min": -90.0,
+     "max": -56.958
+    },
+    "highest_elevation_any_az_deg": {
+     "n": 1732,
+     "inf_fraction": 0.0,
+     "p5": 18.7192,
+     "p50": 38.2246,
+     "p95": 61.2629,
+     "min": 11.958,
+     "max": 65.8092
+    },
+    "blind_floor_radius_fov_only_m": {
+     "front": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": 5.13882e-17,
+      "p50": 0.119048,
+      "p95": 0.474138,
+      "min": 4.23261e-17,
+      "max": 0.593378
+     },
+     "left": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": 5.13882e-17,
+      "p50": 0.391429,
+      "p95": 1.02322,
+      "min": 4.23261e-17,
+      "max": 1.75884
+     },
+     "back": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": 5.13882e-17,
+      "p50": 1.54457,
+      "p95": 3.177,
+      "min": 4.23261e-17,
+      "max": 3.93519
+     },
+     "right": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": 5.13882e-17,
+      "p50": 0.437847,
+      "p95": 1.0115,
+      "min": 4.23261e-17,
+      "max": 2.54922
+     },
+     "min": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": 5.13882e-17,
+      "p50": 0.112068,
+      "p95": 0.43163,
+      "min": 4.23261e-17,
+      "max": 0.584558
+     }
+    },
+    "n_frames": 1732
+   },
+   "crouch_reference": {
+    "height": {
+     "n": 1021,
+     "inf_fraction": 0.0,
+     "p5": 0.675082,
+     "p50": 0.756569,
+     "p95": 0.983917,
+     "min": 0.595317,
+     "max": 1.06674
+    },
+    "pitch": {
+     "n": 1021,
+     "inf_fraction": 0.0,
+     "p5": 29.8626,
+     "p50": 45.2412,
+     "p95": 58.6186,
+     "min": 20.0046,
+     "max": 59.9877
+    },
+    "roll": {
+     "n": 1021,
+     "inf_fraction": 0.0,
+     "p5": -57.005,
+     "p50": -4.05602,
+     "p95": 22.0217,
+     "min": -65.353,
+     "max": 34.9414
+    },
+    "head_top": {
+     "n": 1021,
+     "inf_fraction": 0.0,
+     "p5": 0.744472,
+     "p50": 0.825356,
+     "p95": 1.05346,
+     "min": 0.663255,
+     "max": 1.13634
+    },
+    "speed": {
+     "n": 1021,
+     "inf_fraction": 0.0,
+     "p5": 0.00738079,
+     "p50": 0.415097,
+     "p95": 0.796109,
+     "min": 0.00189669,
+     "max": 1.8611
+    },
+    "window_front_deg": {
+     "lo": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": -90.0,
+      "p50": -90.0,
+      "p95": -86.7686,
+      "min": -90.0,
+      "max": -80.684
+     },
+     "hi": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": -53.7628,
+      "p50": -39.7171,
+      "p95": -24.9667,
+      "min": -55.3014,
+      "max": -14.9619
+     },
+     "gap_fraction": 0.0
+    },
+    "window_left_deg": {
+     "lo": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": -90.0,
+      "p50": -90.0,
+      "p95": -77.7504,
+      "min": -90.0,
+      "max": -30.398
+     },
+     "hi": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": -62.5906,
+      "p50": 4.35734,
+      "p95": 37.2708,
+      "min": -67.5703,
+      "max": 53.7232
+     },
+     "gap_fraction": 0.0391773
+    },
+    "window_back_deg": {
+     "lo": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": -90.0,
+      "p50": -90.0,
+      "p95": -18.746,
+      "min": -90.0,
+      "max": -14.204
+     },
+     "hi": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": 39.4712,
+      "p50": 55.3296,
+      "p95": 68.9377,
+      "min": 30.0628,
+      "max": 75.3092
+     },
+     "gap_fraction": 0.784525
+    },
+    "window_right_deg": {
+     "lo": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": -90.0,
+      "p50": -90.0,
+      "p95": -62.4303,
+      "min": -90.0,
+      "max": -34.5588
+     },
+     "hi": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": -19.5549,
+      "p50": 15.9059,
+      "p95": 78.7041,
+      "min": -36.3851,
+      "max": 82.4795
+     },
+     "gap_fraction": 0.136141
+    },
+    "lowest_elevation_any_az_deg": {
+     "n": 1021,
+     "inf_fraction": 0.0,
+     "p5": -90.0,
+     "p50": -90.0,
+     "p95": -86.9418,
+     "min": -90.0,
+     "max": -83.0392
+    },
+    "highest_elevation_any_az_deg": {
+     "n": 1021,
+     "inf_fraction": 0.0,
+     "p5": 41.9409,
+     "p50": 56.5858,
+     "p95": 79.8623,
+     "min": 38.0334,
+     "max": 82.9522
+    },
+    "blind_floor_radius_fov_only_m": {
+     "front": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": 4.13368e-17,
+      "p50": 4.66653e-17,
+      "p95": 0.0412314,
+      "min": 3.64526e-17,
+      "max": 0.174706
+     },
+     "left": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": 4.13368e-17,
+      "p50": 4.66653e-17,
+      "p95": 0.158463,
+      "min": 3.64526e-17,
+      "max": 1.68327
+     },
+     "back": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": 4.13368e-17,
+      "p50": 4.66653e-17,
+      "p95": 2.1879,
+      "min": 3.64526e-17,
+      "max": 3.05684
+     },
+     "right": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": 4.13368e-17,
+      "p50": 4.66653e-17,
+      "p95": 0.378562,
+      "min": 3.64526e-17,
+      "max": 1.06226
+     },
+     "min": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": 4.13368e-17,
+      "p50": 4.66653e-17,
+      "p95": 0.0391706,
+      "min": 3.64526e-17,
+      "max": 0.130025
+     }
+    },
+    "n_frames": 1021
+   },
+   "crawl_executed": {
+    "height": {
+     "n": 746,
+     "inf_fraction": 0.0,
+     "p5": 0.539591,
+     "p50": 0.588855,
+     "p95": 0.649548,
+     "min": 0.520224,
+     "max": 0.686739
+    },
+    "pitch": {
+     "n": 746,
+     "inf_fraction": 0.0,
+     "p5": 63.7376,
+     "p50": 69.6754,
+     "p95": 78.6913,
+     "min": 55.5402,
+     "max": 81.9618
+    },
+    "roll": {
+     "n": 746,
+     "inf_fraction": 0.0,
+     "p5": -33.5101,
+     "p50": 8.45759,
+     "p95": 46.545,
+     "min": -46.3362,
+     "max": 59.3376
+    },
+    "head_top": {
+     "n": 746,
+     "inf_fraction": 0.0,
+     "p5": 0.604324,
+     "p50": 0.655468,
+     "p95": 0.716766,
+     "min": 0.584421,
+     "max": 0.755136
+    },
+    "speed": {
+     "n": 746,
+     "inf_fraction": 0.0,
+     "p5": 0.0408534,
+     "p50": 0.135448,
+     "p95": 0.348337,
+     "min": 0.0143181,
+     "max": 0.431207
+    },
+    "window_front_deg": {
+     "lo": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": -90.0,
+      "p50": -90.0,
+      "p95": -90.0,
+      "min": -90.0,
+      "max": -90.0
+     },
+     "hi": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": -73.724,
+      "p50": -64.4141,
+      "p95": -56.6639,
+      "min": -75.7114,
+      "max": 90.0
+     },
+     "gap_fraction": 0.00670241
+    },
+    "window_left_deg": {
+     "lo": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": -90.0,
+      "p50": -90.0,
+      "p95": -90.0,
+      "min": -90.0,
+      "max": -90.0
+     },
+     "hi": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": -56.9742,
+      "p50": 49.4638,
+      "p95": 83.5155,
+      "min": -63.5187,
+      "max": 90.0
+     },
+     "gap_fraction": 0.0268097
+    },
+    "window_back_deg": {
+     "lo": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": -90.0,
+      "p50": -90.0,
+      "p95": -90.0,
+      "min": -90.0,
+      "max": -90.0
+     },
+     "hi": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": 73.6157,
+      "p50": 80.8602,
+      "p95": 88.1422,
+      "min": 66.7329,
+      "max": 90.0
+     },
+     "gap_fraction": 0.864611
+    },
+    "window_right_deg": {
+     "lo": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": -90.0,
+      "p50": -90.0,
+      "p95": -90.0,
+      "min": -90.0,
+      "max": -90.0
+     },
+     "hi": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": -62.8895,
+      "p50": -4.44832,
+      "p95": 82.9855,
+      "min": -69.8463,
+      "max": 90.0
+     },
+     "gap_fraction": 0.00402145
+    },
+    "lowest_elevation_any_az_deg": {
+     "n": 746,
+     "inf_fraction": 0.0,
+     "p5": -90.0,
+     "p50": -90.0,
+     "p95": -90.0,
+     "min": -90.0,
+     "max": -90.0
+    },
+    "highest_elevation_any_az_deg": {
+     "n": 746,
+     "inf_fraction": 0.0,
+     "p5": 74.049,
+     "p50": 82.4333,
+     "p95": 88.2213,
+     "min": 71.0227,
+     "max": 90.0
+    },
+    "blind_floor_radius_fov_only_m": {
+     "front": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": 3.30404e-17,
+      "p50": 3.6057e-17,
+      "p95": 3.97733e-17,
+      "min": 3.18545e-17,
+      "max": 4.20507e-17
+     },
+     "left": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": 3.30404e-17,
+      "p50": 3.6057e-17,
+      "p95": 3.97733e-17,
+      "min": 3.18545e-17,
+      "max": 4.20507e-17
+     },
+     "back": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": 3.30404e-17,
+      "p50": 3.6057e-17,
+      "p95": 3.97733e-17,
+      "min": 3.18545e-17,
+      "max": 4.20507e-17
+     },
+     "right": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": 3.30404e-17,
+      "p50": 3.6057e-17,
+      "p95": 3.97733e-17,
+      "min": 3.18545e-17,
+      "max": 4.20507e-17
+     },
+     "min": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": 3.30404e-17,
+      "p50": 3.6057e-17,
+      "p95": 3.97733e-17,
+      "min": 3.18545e-17,
+      "max": 4.20507e-17
+     }
+    },
+    "n_frames": 746
+   }
+  },
+  "upright": {
+   "default_standing": {
+    "height": {
+     "n": 1,
+     "inf_fraction": 0.0,
+     "p5": 1.2172,
+     "p50": 1.2172,
+     "p95": 1.2172,
+     "min": 1.2172,
+     "max": 1.2172
+    },
+    "pitch": {
+     "n": 1,
+     "inf_fraction": 0.0,
+     "p5": -0.0,
+     "p50": -0.0,
+     "p95": -0.0,
+     "min": -0.0,
+     "max": -0.0
+    },
+    "roll": {
+     "n": 1,
+     "inf_fraction": 0.0,
+     "p5": 0.0,
+     "p50": 0.0,
+     "p95": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "head_top": {
+     "n": 1,
+     "inf_fraction": 0.0,
+     "p5": 1.28752,
+     "p50": 1.28752,
+     "p95": 1.28752,
+     "min": 1.28752,
+     "max": 1.28752
+    },
+    "speed": {
+     "n": 1,
+     "inf_fraction": 0.0,
+     "p5": 0.0,
+     "p50": 0.0,
+     "p95": 0.0,
+     "min": 0.0,
+     "max": 0.0
+    },
+    "window_front_deg": {
+     "lo": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": -9.3,
+      "p50": -9.3,
+      "p95": -9.3,
+      "min": -9.3,
+      "max": -9.3
+     },
+     "hi": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 49.7,
+      "p50": 49.7,
+      "p95": 49.7,
+      "min": 49.7,
+      "max": 49.7
+     },
+     "gap_fraction": 0.0
+    },
+    "window_left_deg": {
+     "lo": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": -7.00567,
+      "p50": -7.00567,
+      "p95": -7.00567,
+      "min": -7.00567,
+      "max": -7.00567
+     },
+     "hi": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 52.0592,
+      "p50": 52.0592,
+      "p95": 52.0592,
+      "min": 52.0592,
+      "max": 52.0592
+     },
+     "gap_fraction": 0.0
+    },
+    "window_back_deg": {
+     "lo": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": -4.7,
+      "p50": -4.7,
+      "p95": -4.7,
+      "min": -4.7,
+      "max": -4.7
+     },
+     "hi": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 54.3,
+      "p50": 54.3,
+      "p95": 54.3,
+      "min": 54.3,
+      "max": 54.3
+     },
+     "gap_fraction": 0.0
+    },
+    "window_right_deg": {
+     "lo": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": -7.00567,
+      "p50": -7.00567,
+      "p95": -7.00567,
+      "min": -7.00567,
+      "max": -7.00567
+     },
+     "hi": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 52.0592,
+      "p50": 52.0592,
+      "p95": 52.0592,
+      "min": 52.0592,
+      "max": 52.0592
+     },
+     "gap_fraction": 0.0
+    },
+    "lowest_elevation_any_az_deg": {
+     "n": 1,
+     "inf_fraction": 0.0,
+     "p5": -9.3,
+     "p50": -9.3,
+     "p95": -9.3,
+     "min": -9.3,
+     "max": -9.3
+    },
+    "highest_elevation_any_az_deg": {
+     "n": 1,
+     "inf_fraction": 0.0,
+     "p5": 54.3,
+     "p50": 54.3,
+     "p95": 54.3,
+     "min": 54.3,
+     "max": 54.3
+    },
+    "blind_floor_radius_fov_only_m": {
+     "front": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 7.43301,
+      "p50": 7.43301,
+      "p95": 7.43301,
+      "min": 7.43301,
+      "max": 7.43301
+     },
+     "left": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 9.90521,
+      "p50": 9.90521,
+      "p95": 9.90521,
+      "min": 9.90521,
+      "max": 9.90521
+     },
+     "back": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 14.8051,
+      "p50": 14.8051,
+      "p95": 14.8051,
+      "min": 14.8051,
+      "max": 14.8051
+     },
+     "right": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 9.90521,
+      "p50": 9.90521,
+      "p95": 9.90521,
+      "min": 9.90521,
+      "max": 9.90521
+     },
+     "min": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 7.43301,
+      "p50": 7.43301,
+      "p95": 7.43301,
+      "min": 7.43301,
+      "max": 7.43301
+     }
+    },
+    "n_frames": 1
+   },
+   "gait_executed": {
+    "height": {
+     "n": 7627,
+     "inf_fraction": 0.0,
+     "p5": 1.16115,
+     "p50": 1.20152,
+     "p95": 1.22947,
+     "min": 1.08644,
+     "max": 1.24587
+    },
+    "pitch": {
+     "n": 7627,
+     "inf_fraction": 0.0,
+     "p5": -6.55865,
+     "p50": 1.80573,
+     "p95": 11.4547,
+     "min": -17.4867,
+     "max": 32.809
+    },
+    "roll": {
+     "n": 7627,
+     "inf_fraction": 0.0,
+     "p5": -6.36388,
+     "p50": -0.377437,
+     "p95": 6.32563,
+     "min": -15.4586,
+     "max": 17.082
+    },
+    "head_top": {
+     "n": 7627,
+     "inf_fraction": 0.0,
+     "p5": 1.23123,
+     "p50": 1.27179,
+     "p95": 1.29977,
+     "min": 1.15603,
+     "max": 1.31629
+    },
+    "speed": {
+     "n": 7627,
+     "inf_fraction": 0.0,
+     "p5": 0.406956,
+     "p50": 0.942623,
+     "p95": 1.4555,
+     "min": 0.30004,
+     "max": 1.59954
+    },
+    "window_front_deg": {
+     "lo": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": -20.7793,
+      "p50": -11.115,
+      "p95": -2.74706,
+      "min": -42.1385,
+      "max": 8.06189
+     },
+     "hi": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 38.5792,
+      "p50": 47.9982,
+      "p95": 56.3668,
+      "min": 17.1161,
+      "max": 68.1683
+     },
+     "gap_fraction": 0.0
+    },
+    "window_left_deg": {
+     "lo": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": -13.5726,
+      "p50": -7.42565,
+      "p95": -0.687629,
+      "min": -23.1903,
+      "max": 10.2196
+     },
+     "hi": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 46.5638,
+      "p50": 51.9908,
+      "p95": 58.932,
+      "min": 37.218,
+      "max": 70.3864
+     },
+     "gap_fraction": 0.0
+    },
+    "window_back_deg": {
+     "lo": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": -11.2715,
+      "p50": -2.9076,
+      "p95": 6.74187,
+      "min": -22.25,
+      "max": 28.094
+     },
+     "hi": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 47.8344,
+      "p50": 56.199,
+      "p95": 66.0896,
+      "min": 37.7348,
+      "max": 87.3486
+     },
+     "gap_fraction": 0.0
+    },
+    "window_right_deg": {
+     "lo": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": -13.3944,
+      "p50": -6.6528,
+      "p95": -0.65483,
+      "min": -24.4216,
+      "max": 8.73253
+     },
+     "hi": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 46.0074,
+      "p50": 52.779,
+      "p95": 59.6498,
+      "min": 35.7452,
+      "max": 79.6803
+     },
+     "gap_fraction": 0.0
+    },
+    "lowest_elevation_any_az_deg": {
+     "n": 7627,
+     "inf_fraction": 0.0,
+     "p5": -22.2411,
+     "p50": -12.7331,
+     "p95": -8.4999,
+     "min": -42.3551,
+     "max": -7.01585
+    },
+    "highest_elevation_any_az_deg": {
+     "n": 7627,
+     "inf_fraction": 0.0,
+     "p5": 53.4999,
+     "p50": 57.7334,
+     "p95": 67.2423,
+     "min": 52.0158,
+     "max": 87.3704
+    },
+    "blind_floor_radius_fov_only_m": {
+     "front": {
+      "n": 7627,
+      "inf_fraction": 0.0211092,
+      "p5": 3.09983,
+      "p50": 6.08691,
+      "p95": 18.8043,
+      "min": 1.24212,
+      "max": 3715.21
+     },
+     "left": {
+      "n": 7627,
+      "inf_fraction": 0.037105,
+      "p5": 4.84317,
+      "p50": 9.05345,
+      "p95": 32.1596,
+      "min": 2.70011,
+      "max": 34654.0
+     },
+     "back": {
+      "n": 7627,
+      "inf_fraction": 0.2638,
+      "p5": 5.44918,
+      "p50": 15.8156,
+      "p95": 115.262,
+      "min": 2.84525,
+      "max": 16341.3
+     },
+     "right": {
+      "n": 7627,
+      "inf_fraction": 0.0385473,
+      "p5": 5.02549,
+      "p50": 10.1157,
+      "p95": 32.4139,
+      "min": 2.39265,
+      "max": 54446.4
+     },
+     "min": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 2.88113,
+      "p50": 5.31151,
+      "p95": 8.09272,
+      "min": 1.23272,
+      "max": 9.76086
+     }
+    },
+    "n_frames": 7627
+   },
+   "gait_reference": {
+    "height": {
+     "n": 4549,
+     "inf_fraction": 0.0,
+     "p5": 1.16718,
+     "p50": 1.21647,
+     "p95": 1.24155,
+     "min": 1.04199,
+     "max": 1.2571
+    },
+    "pitch": {
+     "n": 4549,
+     "inf_fraction": 0.0,
+     "p5": 2.61662,
+     "p50": 10.403,
+     "p95": 24.761,
+     "min": -10.8379,
+     "max": 38.9009
+    },
+    "roll": {
+     "n": 4549,
+     "inf_fraction": 0.0,
+     "p5": -6.12524,
+     "p50": -0.0334821,
+     "p95": 6.53647,
+     "min": -18.8812,
+     "max": 17.491
+    },
+    "head_top": {
+     "n": 4549,
+     "inf_fraction": 0.0,
+     "p5": 1.23703,
+     "p50": 1.28632,
+     "p95": 1.31145,
+     "min": 1.11166,
+     "max": 1.3271
+    },
+    "speed": {
+     "n": 4549,
+     "inf_fraction": 0.0,
+     "p5": 0.447147,
+     "p50": 0.998788,
+     "p95": 1.48208,
+     "min": 0.300219,
+     "max": 1.59888
+    },
+    "window_front_deg": {
+     "lo": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": -34.1175,
+      "p50": -19.7099,
+      "p95": -11.9398,
+      "min": -48.2084,
+      "max": 1.34316
+     },
+     "hi": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": 26.3214,
+      "p50": 39.4936,
+      "p95": 47.747,
+      "min": 14.6015,
+      "max": 90.0
+     },
+     "gap_fraction": 0.0116509
+    },
+    "window_left_deg": {
+     "lo": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": -14.3179,
+      "p50": -7.23097,
+      "p95": -0.47468,
+      "min": -29.6223,
+      "max": 12.1617
+     },
+     "hi": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": 49.706,
+      "p50": 54.1773,
+      "p95": 64.5793,
+      "min": 41.2011,
+      "max": 90.0
+     },
+     "gap_fraction": 0.00395691
+    },
+    "window_back_deg": {
+     "lo": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": -2.09242,
+      "p50": 5.70254,
+      "p95": 20.0296,
+      "min": -15.6366,
+      "max": 34.1972
+     },
+     "hi": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": 57.0548,
+      "p50": 64.8029,
+      "p95": 79.3661,
+      "min": 45.0666,
+      "max": 90.0
+     },
+     "gap_fraction": 0.0
+    },
+    "window_right_deg": {
+     "lo": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": -13.9779,
+      "p50": -7.20812,
+      "p95": -0.951672,
+      "min": -28.2927,
+      "max": 13.5782
+     },
+     "hi": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": 47.0074,
+      "p50": 54.1791,
+      "p95": 66.1844,
+      "min": 38.2978,
+      "max": 90.0
+     },
+     "gap_fraction": 0.00109914
+    },
+    "lowest_elevation_any_az_deg": {
+     "n": 4549,
+     "inf_fraction": 0.0,
+     "p5": -34.5869,
+     "p50": -19.9806,
+     "p95": -13.0059,
+     "min": -48.9471,
+     "max": -7.72825
+    },
+    "highest_elevation_any_az_deg": {
+     "n": 4549,
+     "inf_fraction": 0.0,
+     "p5": 58.0062,
+     "p50": 64.9834,
+     "p95": 79.5913,
+     "min": 52.7283,
+     "max": 90.0
+    },
+    "blind_floor_radius_fov_only_m": {
+     "front": {
+      "n": 4549,
+      "inf_fraction": 0.000879314,
+      "p5": 1.73304,
+      "p50": 3.40097,
+      "p95": 5.77974,
+      "min": 1.01068,
+      "max": 211.972
+     },
+     "left": {
+      "n": 4549,
+      "inf_fraction": 0.0439657,
+      "p5": 4.54472,
+      "p50": 9.36873,
+      "p95": 28.3765,
+      "min": 1.98414,
+      "max": 2807.82
+     },
+     "back": {
+      "n": 4549,
+      "inf_fraction": 0.891185,
+      "p5": 9.41868,
+      "p50": 37.7037,
+      "p95": 346.523,
+      "min": 4.3126,
+      "max": 12965.0
+     },
+     "right": {
+      "n": 4549,
+      "inf_fraction": 0.0430864,
+      "p5": 4.78647,
+      "p50": 9.36083,
+      "p95": 22.069,
+      "min": 1.95311,
+      "max": 5120.75
+     },
+     "min": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": 1.70237,
+      "p50": 3.35486,
+      "p95": 5.30377,
+      "min": 0.959355,
+      "max": 8.99492
+     }
+    },
+    "n_frames": 4549
+   },
+   "crouch_executed": {
+    "height": {
+     "n": 1732,
+     "inf_fraction": 0.0,
+     "p5": 0.822491,
+     "p50": 0.914165,
+     "p95": 1.02556,
+     "min": 0.691238,
+     "max": 1.06656
+    },
+    "pitch": {
+     "n": 1732,
+     "inf_fraction": 0.0,
+     "p5": 5.70958,
+     "p50": 26.238,
+     "p95": 39.0371,
+     "min": -0.962645,
+     "max": 55.4805
+    },
+    "roll": {
+     "n": 1732,
+     "inf_fraction": 0.0,
+     "p5": -43.3698,
+     "p50": -0.689585,
+     "p95": 14.8059,
+     "min": -48.2512,
+     "max": 29.9061
+    },
+    "head_top": {
+     "n": 1732,
+     "inf_fraction": 0.0,
+     "p5": 0.891696,
+     "p50": 0.984015,
+     "p95": 1.09532,
+     "min": 0.760792,
+     "max": 1.13642
+    },
+    "speed": {
+     "n": 1732,
+     "inf_fraction": 0.0,
+     "p5": 0.0222467,
+     "p50": 0.383761,
+     "p95": 0.759376,
+     "min": 0.0022121,
+     "max": 0.906593
+    },
+    "window_front_deg": {
+     "lo": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": -49.2684,
+      "p50": -35.9238,
+      "p95": -15.4292,
+      "min": -65.0325,
+      "max": -9.1574
+     },
+     "hi": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": 17.3903,
+      "p50": 30.3991,
+      "p95": 90.0,
+      "min": 14.3168,
+      "max": 90.0
+     },
+     "gap_fraction": 0.10739
+    },
+    "window_left_deg": {
+     "lo": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": -57.0581,
+      "p50": -8.79508,
+      "p95": 8.76638,
+      "min": -61.5756,
+      "max": 24.8083
+     },
+     "hi": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": 43.2234,
+      "p50": 64.7484,
+      "p95": 90.0,
+      "min": 21.9359,
+      "max": 90.0
+     },
+     "gap_fraction": 0.100462
+    },
+    "window_back_deg": {
+     "lo": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": 0.833404,
+      "p50": 21.3555,
+      "p95": 33.3671,
+      "min": -6.08587,
+      "max": 50.6527
+     },
+     "hi": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": 61.6911,
+      "p50": 82.8003,
+      "p95": 90.0,
+      "min": 56.5334,
+      "max": 90.0
+     },
+     "gap_fraction": 0.0
+    },
+    "window_right_deg": {
+     "lo": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": -24.8932,
+      "p50": -7.1574,
+      "p95": 41.6454,
+      "min": -39.8885,
+      "max": 45.9711
+     },
+     "hi": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": 41.648,
+      "p50": 67.176,
+      "p95": 90.0,
+      "min": 25.3347,
+      "max": 90.0
+     },
+     "gap_fraction": 0.0236721
+    },
+    "lowest_elevation_any_az_deg": {
+     "n": 1732,
+     "inf_fraction": 0.0,
+     "p5": -61.2456,
+     "p50": -38.1994,
+     "p95": -18.6959,
+     "min": -65.7837,
+     "max": -11.933
+    },
+    "highest_elevation_any_az_deg": {
+     "n": 1732,
+     "inf_fraction": 0.0,
+     "p5": 63.698,
+     "p50": 83.2057,
+     "p95": 90.0,
+     "min": 56.933,
+     "max": 90.0
+    },
+    "blind_floor_radius_fov_only_m": {
+     "front": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": 0.762602,
+      "p50": 1.30476,
+      "p95": 3.12148,
+      "min": 0.362454,
+      "max": 5.36223
+     },
+     "left": {
+      "n": 1732,
+      "inf_fraction": 0.192263,
+      "p5": 0.538273,
+      "p50": 3.87786,
+      "p95": 39.5992,
+      "min": 0.45178,
+      "max": 17043.7
+     },
+     "back": {
+      "n": 1732,
+      "inf_fraction": 0.965935,
+      "p5": 8.65574,
+      "p50": 22.6685,
+      "p95": 781.576,
+      "min": 8.12019,
+      "max": 5527.67
+     },
+     "right": {
+      "n": 1732,
+      "inf_fraction": 0.362009,
+      "p5": 1.56255,
+      "p50": 4.32513,
+      "p95": 26.6977,
+      "min": 0.918309,
+      "max": 1751.57
+     },
+     "min": {
+      "n": 1732,
+      "inf_fraction": 0.0,
+      "p5": 0.46359,
+      "p50": 1.21147,
+      "p95": 2.57583,
+      "min": 0.350109,
+      "max": 4.24604
+     }
+    },
+    "n_frames": 1732
+   },
+   "crouch_reference": {
+    "height": {
+     "n": 1021,
+     "inf_fraction": 0.0,
+     "p5": 0.675082,
+     "p50": 0.756569,
+     "p95": 0.983917,
+     "min": 0.595317,
+     "max": 1.06674
+    },
+    "pitch": {
+     "n": 1021,
+     "inf_fraction": 0.0,
+     "p5": 29.8626,
+     "p50": 45.2412,
+     "p95": 58.6186,
+     "min": 20.0046,
+     "max": 59.9877
+    },
+    "roll": {
+     "n": 1021,
+     "inf_fraction": 0.0,
+     "p5": -57.005,
+     "p50": -4.05602,
+     "p95": 22.0217,
+     "min": -65.353,
+     "max": 34.9414
+    },
+    "head_top": {
+     "n": 1021,
+     "inf_fraction": 0.0,
+     "p5": 0.744472,
+     "p50": 0.825356,
+     "p95": 1.05346,
+     "min": 0.663255,
+     "max": 1.13634
+    },
+    "speed": {
+     "n": 1021,
+     "inf_fraction": 0.0,
+     "p5": 0.00738079,
+     "p50": 0.415097,
+     "p95": 0.796109,
+     "min": 0.00189669,
+     "max": 1.8611
+    },
+    "window_front_deg": {
+     "lo": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": -68.9119,
+      "p50": -55.302,
+      "p95": -39.4438,
+      "min": -75.2598,
+      "max": -30.035
+     },
+     "hi": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": 18.685,
+      "p50": 90.0,
+      "p95": 90.0,
+      "min": 14.2299,
+      "max": 90.0
+     },
+     "gap_fraction": 0.783546
+    },
+    "window_left_deg": {
+     "lo": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": -78.6798,
+      "p50": -15.901,
+      "p95": 19.551,
+      "min": -82.4588,
+      "max": 36.372
+     },
+     "hi": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": 62.3611,
+      "p50": 90.0,
+      "p95": 90.0,
+      "min": 34.5403,
+      "max": 90.0
+     },
+     "gap_fraction": 0.136141
+    },
+    "window_back_deg": {
+     "lo": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": 24.9394,
+      "p50": 39.6911,
+      "p95": 53.7361,
+      "min": 14.9341,
+      "max": 55.2755
+     },
+     "hi": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": 86.7427,
+      "p50": 90.0,
+      "p95": 90.0,
+      "min": 80.6563,
+      "max": 90.0
+     },
+     "gap_fraction": 0.0
+    },
+    "window_right_deg": {
+     "lo": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": -37.2542,
+      "p50": -4.35527,
+      "p95": 62.5689,
+      "min": -53.705,
+      "max": 67.5512
+     },
+     "hi": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": 77.7144,
+      "p50": 90.0,
+      "p95": 90.0,
+      "min": 30.385,
+      "max": 90.0
+     },
+     "gap_fraction": 0.0391773
+    },
+    "lowest_elevation_any_az_deg": {
+     "n": 1021,
+     "inf_fraction": 0.0,
+     "p5": -79.8399,
+     "p50": -56.5602,
+     "p95": -41.9163,
+     "min": -82.932,
+     "max": -38.014
+    },
+    "highest_elevation_any_az_deg": {
+     "n": 1021,
+     "inf_fraction": 0.0,
+     "p5": 86.9172,
+     "p50": 90.0,
+     "p95": 90.0,
+     "min": 83.0202,
+     "max": 90.0
+    },
+    "blind_floor_radius_fov_only_m": {
+     "front": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": 0.26031,
+      "p50": 0.524692,
+      "p95": 0.961906,
+      "min": 0.192749,
+      "max": 1.84204
+     },
+     "left": {
+      "n": 1021,
+      "inf_fraction": 0.220372,
+      "p5": 0.115815,
+      "p50": 1.81007,
+      "p95": 22.6884,
+      "min": 0.0826192,
+      "max": 683.317
+     },
+     "back": {
+      "n": 1021,
+      "inf_fraction": 1.0
+     },
+     "right": {
+      "n": 1021,
+      "inf_fraction": 0.44858,
+      "p5": 0.811245,
+      "p50": 2.38901,
+      "p95": 17.2192,
+      "min": 0.579151,
+      "max": 5129.93
+     },
+     "min": {
+      "n": 1021,
+      "inf_fraction": 0.0,
+      "p5": 0.12628,
+      "p50": 0.493568,
+      "p95": 0.871226,
+      "min": 0.0773797,
+      "max": 1.36245
+     }
+    },
+    "n_frames": 1021
+   },
+   "crawl_executed": {
+    "height": {
+     "n": 746,
+     "inf_fraction": 0.0,
+     "p5": 0.539591,
+     "p50": 0.588855,
+     "p95": 0.649548,
+     "min": 0.520224,
+     "max": 0.686739
+    },
+    "pitch": {
+     "n": 746,
+     "inf_fraction": 0.0,
+     "p5": 63.7376,
+     "p50": 69.6754,
+     "p95": 78.6913,
+     "min": 55.5402,
+     "max": 81.9618
+    },
+    "roll": {
+     "n": 746,
+     "inf_fraction": 0.0,
+     "p5": -33.5101,
+     "p50": 8.45759,
+     "p95": 46.545,
+     "min": -46.3362,
+     "max": 59.3376
+    },
+    "head_top": {
+     "n": 746,
+     "inf_fraction": 0.0,
+     "p5": 0.604324,
+     "p50": 0.655468,
+     "p95": 0.716766,
+     "min": 0.584421,
+     "max": 0.755136
+    },
+    "speed": {
+     "n": 746,
+     "inf_fraction": 0.0,
+     "p5": 0.0408534,
+     "p50": 0.135448,
+     "p95": 0.348337,
+     "min": 0.0143181,
+     "max": 0.431207
+    },
+    "window_front_deg": {
+     "lo": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": -88.1158,
+      "p50": -80.8308,
+      "p95": -73.5892,
+      "min": -90.0,
+      "max": -66.7021
+     },
+     "hi": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": 90.0,
+      "p50": 90.0,
+      "p95": 90.0,
+      "min": 90.0,
+      "max": 90.0
+     },
+     "gap_fraction": 0.864611
+    },
+    "window_left_deg": {
+     "lo": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": -82.9322,
+      "p50": 4.44327,
+      "p95": 62.8629,
+      "min": -90.0,
+      "max": 69.8211
+     },
+     "hi": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": 90.0,
+      "p50": 90.0,
+      "p95": 90.0,
+      "min": 90.0,
+      "max": 90.0
+     },
+     "gap_fraction": 0.00402145
+    },
+    "window_back_deg": {
+     "lo": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": 56.6204,
+      "p50": 64.384,
+      "p95": 73.6974,
+      "min": -90.0,
+      "max": 75.6855
+     },
+     "hi": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": 90.0,
+      "p50": 90.0,
+      "p95": 90.0,
+      "min": 90.0,
+      "max": 90.0
+     },
+     "gap_fraction": 0.00670241
+    },
+    "window_right_deg": {
+     "lo": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": -83.4687,
+      "p50": -49.4126,
+      "p95": 56.9401,
+      "min": -90.0,
+      "max": 63.4808
+     },
+     "hi": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": 90.0,
+      "p50": 90.0,
+      "p95": 90.0,
+      "min": 90.0,
+      "max": 90.0
+     },
+     "gap_fraction": 0.0268097
+    },
+    "lowest_elevation_any_az_deg": {
+     "n": 746,
+     "inf_fraction": 0.0,
+     "p5": -88.1957,
+     "p50": -82.4086,
+     "p95": -74.0233,
+     "min": -90.0,
+     "max": -70.9987
+    },
+    "highest_elevation_any_az_deg": {
+     "n": 746,
+     "inf_fraction": 0.0,
+     "p5": 90.0,
+     "p50": 90.0,
+     "p95": 90.0,
+     "min": 90.0,
+     "max": 90.0
+    },
+    "blind_floor_radius_fov_only_m": {
+     "front": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": 0.0177251,
+      "p50": 0.095379,
+      "p95": 0.188781,
+      "min": 3.18545e-17,
+      "max": 0.290278
+     },
+     "left": {
+      "n": 746,
+      "inf_fraction": 0.532172,
+      "p5": 0.0415014,
+      "p50": 0.407721,
+      "p95": 14.3195,
+      "min": 3.18545e-17,
+      "max": 122.929
+     },
+     "back": {
+      "n": 746,
+      "inf_fraction": 0.993298,
+      "p5": 3.18701e-17,
+      "p50": 3.19691e-17,
+      "p95": 3.22435e-17,
+      "min": 3.18545e-17,
+      "max": 3.22489e-17
+     },
+     "right": {
+      "n": 746,
+      "inf_fraction": 0.245308,
+      "p5": 0.0490918,
+      "p50": 0.337334,
+      "p95": 2.42665,
+      "min": 3.18545e-17,
+      "max": 27.4661
+     },
+     "min": {
+      "n": 746,
+      "inf_fraction": 0.0,
+      "p5": 0.0170476,
+      "p50": 0.0785405,
+      "p95": 0.184314,
+      "min": 3.18545e-17,
+      "max": 0.23355
+     }
+    },
+    "n_frames": 746
+   }
+  }
+ },
+ "pitch_sweep": {
+  "inverted": [
+   {
+    "root_pitch_deg": -10,
+    "torso_pitch_deg": -10.0,
+    "front": [
+     -44.3258,
+     14.6742
+    ],
+    "back": [
+     -59.6742,
+     -0.674212
+    ],
+    "left": [
+     -52.6675,
+     7.0638
+    ]
+   },
+   {
+    "root_pitch_deg": -9,
+    "torso_pitch_deg": -9.0,
+    "front": [
+     -45.3258,
+     13.6742
+    ],
+    "back": [
+     -58.6742,
+     0.325788
+    ],
+    "left": [
+     -52.503,
+     7.04822
+    ]
+   },
+   {
+    "root_pitch_deg": -8,
+    "torso_pitch_deg": -8.0,
+    "front": [
+     -46.3258,
+     12.6742
+    ],
+    "back": [
+     -57.6742,
+     1.32579
+    ],
+    "left": [
+     -52.3624,
+     7.03486
+    ]
+   },
+   {
+    "root_pitch_deg": -7,
+    "torso_pitch_deg": -7.0,
+    "front": [
+     -47.3258,
+     11.6742
+    ],
+    "back": [
+     -56.6742,
+     2.32579
+    ],
+    "left": [
+     -52.2452,
+     7.02369
+    ]
+   },
+   {
+    "root_pitch_deg": -6,
+    "torso_pitch_deg": -6.0,
+    "front": [
+     -48.3258,
+     10.6742
+    ],
+    "back": [
+     -55.6742,
+     3.32579
+    ],
+    "left": [
+     -52.1511,
+     7.01471
+    ]
+   },
+   {
+    "root_pitch_deg": -5,
+    "torso_pitch_deg": -5.0,
+    "front": [
+     -49.3258,
+     9.67421
+    ],
+    "back": [
+     -54.6742,
+     4.32579
+    ],
+    "left": [
+     -52.0798,
+     7.00789
+    ]
+   },
+   {
+    "root_pitch_deg": -4,
+    "torso_pitch_deg": -4.0,
+    "front": [
+     -50.3258,
+     8.67421
+    ],
+    "back": [
+     -53.6742,
+     5.32579
+    ],
+    "left": [
+     -52.0311,
+     7.00322
+    ]
+   },
+   {
+    "root_pitch_deg": -3,
+    "torso_pitch_deg": -3.0,
+    "front": [
+     -51.3258,
+     7.67421
+    ],
+    "back": [
+     -52.6742,
+     6.32579
+    ],
+    "left": [
+     -52.0049,
+     7.0007
+    ]
+   },
+   {
+    "root_pitch_deg": -2,
+    "torso_pitch_deg": -2.0,
+    "front": [
+     -52.3258,
+     6.67421
+    ],
+    "back": [
+     -51.6742,
+     7.32579
+    ],
+    "left": [
+     -52.001,
+     7.00033
+    ]
+   },
+   {
+    "root_pitch_deg": -1,
+    "torso_pitch_deg": -1.0,
+    "front": [
+     -53.3258,
+     5.67421
+    ],
+    "back": [
+     -50.6742,
+     8.32579
+    ],
+    "left": [
+     -52.0194,
+     7.0021
+    ]
+   },
+   {
+    "root_pitch_deg": 0,
+    "torso_pitch_deg": -0.0,
+    "front": [
+     -54.3258,
+     4.67421
+    ],
+    "back": [
+     -49.6742,
+     9.32579
+    ],
+    "left": [
+     -52.0603,
+     7.00602
+    ]
+   },
+   {
+    "root_pitch_deg": 1,
+    "torso_pitch_deg": 1.0,
+    "front": [
+     -55.3258,
+     3.67421
+    ],
+    "back": [
+     -48.6742,
+     10.3258
+    ],
+    "left": [
+     -52.1237,
+     7.01208
+    ]
+   },
+   {
+    "root_pitch_deg": 2,
+    "torso_pitch_deg": 2.0,
+    "front": [
+     -56.3258,
+     2.67421
+    ],
+    "back": [
+     -47.6742,
+     11.3258
+    ],
+    "left": [
+     -52.2098,
+     7.02031
+    ]
+   },
+   {
+    "root_pitch_deg": 3,
+    "torso_pitch_deg": 3.0,
+    "front": [
+     -57.3258,
+     1.67421
+    ],
+    "back": [
+     -46.6742,
+     12.3258
+    ],
+    "left": [
+     -52.3189,
+     7.03072
+    ]
+   },
+   {
+    "root_pitch_deg": 4,
+    "torso_pitch_deg": 4.0,
+    "front": [
+     -58.3258,
+     0.674212
+    ],
+    "back": [
+     -45.6742,
+     13.3258
+    ],
+    "left": [
+     -52.4513,
+     7.04331
+    ]
+   },
+   {
+    "root_pitch_deg": 5,
+    "torso_pitch_deg": 5.0,
+    "front": [
+     -59.3258,
+     -0.325788
+    ],
+    "back": [
+     -44.6742,
+     14.3258
+    ],
+    "left": [
+     -52.6075,
+     7.05812
+    ]
+   },
+   {
+    "root_pitch_deg": 6,
+    "torso_pitch_deg": 6.0,
+    "front": [
+     -60.3258,
+     -1.32579
+    ],
+    "back": [
+     -43.6742,
+     15.3258
+    ],
+    "left": [
+     -52.7879,
+     7.07516
+    ]
+   },
+   {
+    "root_pitch_deg": 7,
+    "torso_pitch_deg": 7.0,
+    "front": [
+     -61.3258,
+     -2.32579
+    ],
+    "back": [
+     -42.6742,
+     16.3258
+    ],
+    "left": [
+     -52.9931,
+     7.09446
+    ]
+   },
+   {
+    "root_pitch_deg": 8,
+    "torso_pitch_deg": 8.0,
+    "front": [
+     -62.3258,
+     -3.32579
+    ],
+    "back": [
+     -41.6742,
+     17.3258
+    ],
+    "left": [
+     -53.2239,
+     7.11605
+    ]
+   },
+   {
+    "root_pitch_deg": 9,
+    "torso_pitch_deg": 9.0,
+    "front": [
+     -63.3258,
+     -4.32579
+    ],
+    "back": [
+     -40.6742,
+     18.3258
+    ],
+    "left": [
+     -53.4809,
+     7.13996
+    ]
+   },
+   {
+    "root_pitch_deg": 10,
+    "torso_pitch_deg": 10.0,
+    "front": [
+     -64.3258,
+     -5.32579
+    ],
+    "back": [
+     -39.6742,
+     19.3258
+    ],
+    "left": [
+     -53.7652,
+     7.16624
+    ]
+   },
+   {
+    "root_pitch_deg": 11,
+    "torso_pitch_deg": 11.0,
+    "front": [
+     -65.3258,
+     -6.32579
+    ],
+    "back": [
+     -38.6742,
+     20.3258
+    ],
+    "left": [
+     -54.0776,
+     7.19492
+    ]
+   },
+   {
+    "root_pitch_deg": 12,
+    "torso_pitch_deg": 12.0,
+    "front": [
+     -66.3258,
+     -7.32579
+    ],
+    "back": [
+     -37.6742,
+     21.3258
+    ],
+    "left": [
+     -54.4195,
+     7.22606
+    ]
+   },
+   {
+    "root_pitch_deg": 13,
+    "torso_pitch_deg": 13.0,
+    "front": [
+     -67.3258,
+     -8.32579
+    ],
+    "back": [
+     -36.6742,
+     22.3258
+    ],
+    "left": [
+     -54.792,
+     7.2597
+    ]
+   },
+   {
+    "root_pitch_deg": 14,
+    "torso_pitch_deg": 14.0,
+    "front": [
+     -68.3258,
+     -9.32579
+    ],
+    "back": [
+     -35.6742,
+     23.3258
+    ],
+    "left": [
+     -55.1968,
+     7.2959
+    ]
+   },
+   {
+    "root_pitch_deg": 15,
+    "torso_pitch_deg": 15.0,
+    "front": [
+     -69.3258,
+     -10.3258
+    ],
+    "back": [
+     -34.6742,
+     24.3258
+    ],
+    "left": [
+     -55.6354,
+     7.33472
+    ]
+   },
+   {
+    "root_pitch_deg": 16,
+    "torso_pitch_deg": 16.0,
+    "front": [
+     -70.3258,
+     -11.3258
+    ],
+    "back": [
+     -33.6742,
+     25.3258
+    ],
+    "left": [
+     -56.1099,
+     7.37623
+    ]
+   },
+   {
+    "root_pitch_deg": 17,
+    "torso_pitch_deg": 17.0,
+    "front": [
+     -71.3258,
+     -12.3258
+    ],
+    "back": [
+     -32.6742,
+     26.3258
+    ],
+    "left": [
+     -56.6224,
+     7.4205
+    ]
+   },
+   {
+    "root_pitch_deg": 18,
+    "torso_pitch_deg": 18.0,
+    "front": [
+     -72.3258,
+     -13.3258
+    ],
+    "back": [
+     -31.6742,
+     27.3258
+    ],
+    "left": [
+     -57.1754,
+     7.46761
+    ]
+   },
+   {
+    "root_pitch_deg": 19,
+    "torso_pitch_deg": 19.0,
+    "front": [
+     -73.3258,
+     -14.3258
+    ],
+    "back": [
+     -30.6742,
+     28.3258
+    ],
+    "left": [
+     -57.7719,
+     7.51764
+    ]
+   },
+   {
+    "root_pitch_deg": 20,
+    "torso_pitch_deg": 20.0,
+    "front": [
+     -74.3258,
+     -15.3258
+    ],
+    "back": [
+     -29.6742,
+     29.3258
+    ],
+    "left": [
+     -58.4152,
+     7.57068
+    ]
+   },
+   {
+    "root_pitch_deg": 21,
+    "torso_pitch_deg": 21.0,
+    "front": [
+     -75.3258,
+     -16.3258
+    ],
+    "back": [
+     -28.6742,
+     30.3258
+    ],
+    "left": [
+     -59.1091,
+     7.62683
+    ]
+   },
+   {
+    "root_pitch_deg": 22,
+    "torso_pitch_deg": 22.0,
+    "front": [
+     -76.3258,
+     -17.3258
+    ],
+    "back": [
+     -27.6742,
+     31.3258
+    ],
+    "left": [
+     -59.8583,
+     7.6862
+    ]
+   },
+   {
+    "root_pitch_deg": 23,
+    "torso_pitch_deg": 23.0,
+    "front": [
+     -77.3258,
+     -18.3258
+    ],
+    "back": [
+     -26.6742,
+     32.3258
+    ],
+    "left": [
+     -60.6682,
+     7.74889
+    ]
+   },
+   {
+    "root_pitch_deg": 24,
+    "torso_pitch_deg": 24.0,
+    "front": [
+     -78.3258,
+     -19.3258
+    ],
+    "back": [
+     -25.6742,
+     33.3258
+    ],
+    "left": [
+     -61.5451,
+     7.81503
+    ]
+   },
+   {
+    "root_pitch_deg": 25,
+    "torso_pitch_deg": 25.0,
+    "front": [
+     -79.3258,
+     -20.3258
+    ],
+    "back": [
+     -24.6742,
+     34.3258
+    ],
+    "left": [
+     -62.4971,
+     7.88476
+    ]
+   },
+   {
+    "root_pitch_deg": 26,
+    "torso_pitch_deg": 26.0,
+    "front": [
+     -80.3258,
+     -21.3258
+    ],
+    "back": [
+     -23.6742,
+     35.3258
+    ],
+    "left": [
+     -63.5337,
+     7.9582
+    ]
+   },
+   {
+    "root_pitch_deg": 27,
+    "torso_pitch_deg": 27.0,
+    "front": [
+     -81.3258,
+     -22.3258
+    ],
+    "back": [
+     -22.6742,
+     36.3258
+    ],
+    "left": [
+     -64.6671,
+     8.03552
+    ]
+   },
+   {
+    "root_pitch_deg": 28,
+    "torso_pitch_deg": 28.0,
+    "front": [
+     -82.3258,
+     -23.3258
+    ],
+    "back": [
+     -21.6742,
+     37.3258
+    ],
+    "left": [
+     -65.9129,
+     8.11687
+    ]
+   },
+   {
+    "root_pitch_deg": 29,
+    "torso_pitch_deg": 29.0,
+    "front": [
+     -83.3258,
+     -24.3258
+    ],
+    "back": [
+     -20.6742,
+     38.3258
+    ],
+    "left": [
+     -67.2921,
+     8.20243
+    ]
+   },
+   {
+    "root_pitch_deg": 30,
+    "torso_pitch_deg": 30.0,
+    "front": [
+     -84.3258,
+     -25.3258
+    ],
+    "back": [
+     -19.6742,
+     39.3258
+    ],
+    "left": [
+     -68.833,
+     8.29239
+    ]
+   }
+  ],
+  "upright": [
+   {
+    "root_pitch_deg": -10,
+    "torso_pitch_deg": -10.0,
+    "front": [
+     0.7,
+     59.7
+    ],
+    "back": [
+     -14.7,
+     44.3
+    ],
+    "left": [
+     -7.06402,
+     52.6723
+    ]
+   },
+   {
+    "root_pitch_deg": -9,
+    "torso_pitch_deg": -9.0,
+    "front": [
+     -0.3,
+     58.7
+    ],
+    "back": [
+     -13.7,
+     45.3
+    ],
+    "left": [
+     -7.04838,
+     52.5072
+    ]
+   },
+   {
+    "root_pitch_deg": -8,
+    "torso_pitch_deg": -8.0,
+    "front": [
+     -1.3,
+     57.7
+    ],
+    "back": [
+     -12.7,
+     46.3
+    ],
+    "left": [
+     -7.03496,
+     52.3659
+    ]
+   },
+   {
+    "root_pitch_deg": -7,
+    "torso_pitch_deg": -7.0,
+    "front": [
+     -2.3,
+     56.7
+    ],
+    "back": [
+     -11.7,
+     47.3
+    ],
+    "left": [
+     -7.02374,
+     52.2481
+    ]
+   },
+   {
+    "root_pitch_deg": -6,
+    "torso_pitch_deg": -6.0,
+    "front": [
+     -3.3,
+     55.7
+    ],
+    "back": [
+     -10.7,
+     48.3
+    ],
+    "left": [
+     -7.01469,
+     52.1534
+    ]
+   },
+   {
+    "root_pitch_deg": -5,
+    "torso_pitch_deg": -5.0,
+    "front": [
+     -4.3,
+     54.7
+    ],
+    "back": [
+     -9.7,
+     49.3
+    ],
+    "left": [
+     -7.00782,
+     52.0816
+    ]
+   },
+   {
+    "root_pitch_deg": -4,
+    "torso_pitch_deg": -4.0,
+    "front": [
+     -5.3,
+     53.7
+    ],
+    "back": [
+     -8.7,
+     50.3
+    ],
+    "left": [
+     -7.0031,
+     52.0323
+    ]
+   },
+   {
+    "root_pitch_deg": -3,
+    "torso_pitch_deg": -3.0,
+    "front": [
+     -6.3,
+     52.7
+    ],
+    "back": [
+     -7.7,
+     51.3
+    ],
+    "left": [
+     -7.00053,
+     52.0055
+    ]
+   },
+   {
+    "root_pitch_deg": -2,
+    "torso_pitch_deg": -2.0,
+    "front": [
+     -7.3,
+     51.7
+    ],
+    "back": [
+     -6.7,
+     52.3
+    ],
+    "left": [
+     -7.0001,
+     52.001
+    ]
+   },
+   {
+    "root_pitch_deg": -1,
+    "torso_pitch_deg": -1.0,
+    "front": [
+     -8.3,
+     50.7
+    ],
+    "back": [
+     -5.7,
+     53.3
+    ],
+    "left": [
+     -7.00181,
+     52.0189
+    ]
+   },
+   {
+    "root_pitch_deg": 0,
+    "torso_pitch_deg": -0.0,
+    "front": [
+     -9.3,
+     49.7
+    ],
+    "back": [
+     -4.7,
+     54.3
+    ],
+    "left": [
+     -7.00567,
+     52.0592
+    ]
+   },
+   {
+    "root_pitch_deg": 1,
+    "torso_pitch_deg": 1.0,
+    "front": [
+     -10.3,
+     48.7
+    ],
+    "back": [
+     -3.7,
+     55.3
+    ],
+    "left": [
+     -7.01168,
+     52.122
+    ]
+   },
+   {
+    "root_pitch_deg": 2,
+    "torso_pitch_deg": 2.0,
+    "front": [
+     -11.3,
+     47.7
+    ],
+    "back": [
+     -2.7,
+     56.3
+    ],
+    "left": [
+     -7.01986,
+     52.2075
+    ]
+   },
+   {
+    "root_pitch_deg": 3,
+    "torso_pitch_deg": 3.0,
+    "front": [
+     -12.3,
+     46.7
+    ],
+    "back": [
+     -1.7,
+     57.3
+    ],
+    "left": [
+     -7.03021,
+     52.316
+    ]
+   },
+   {
+    "root_pitch_deg": 4,
+    "torso_pitch_deg": 4.0,
+    "front": [
+     -13.3,
+     45.7
+    ],
+    "back": [
+     -0.7,
+     58.3
+    ],
+    "left": [
+     -7.04274,
+     52.4478
+    ]
+   },
+   {
+    "root_pitch_deg": 5,
+    "torso_pitch_deg": 5.0,
+    "front": [
+     -14.3,
+     44.7
+    ],
+    "back": [
+     0.3,
+     59.3
+    ],
+    "left": [
+     -7.05749,
+     52.6034
+    ]
+   },
+   {
+    "root_pitch_deg": 6,
+    "torso_pitch_deg": 6.0,
+    "front": [
+     -15.3,
+     43.7
+    ],
+    "back": [
+     1.3,
+     60.3
+    ],
+    "left": [
+     -7.07447,
+     52.7831
+    ]
+   },
+   {
+    "root_pitch_deg": 7,
+    "torso_pitch_deg": 7.0,
+    "front": [
+     -16.3,
+     42.7
+    ],
+    "back": [
+     2.3,
+     61.3
+    ],
+    "left": [
+     -7.09371,
+     52.9877
+    ]
+   },
+   {
+    "root_pitch_deg": 8,
+    "torso_pitch_deg": 8.0,
+    "front": [
+     -17.3,
+     41.7
+    ],
+    "back": [
+     3.3,
+     62.3
+    ],
+    "left": [
+     -7.11524,
+     53.2178
+    ]
+   },
+   {
+    "root_pitch_deg": 9,
+    "torso_pitch_deg": 9.0,
+    "front": [
+     -18.3,
+     40.7
+    ],
+    "back": [
+     4.3,
+     63.3
+    ],
+    "left": [
+     -7.13909,
+     53.4742
+    ]
+   },
+   {
+    "root_pitch_deg": 10,
+    "torso_pitch_deg": 10.0,
+    "front": [
+     -19.3,
+     39.7
+    ],
+    "back": [
+     5.3,
+     64.3
+    ],
+    "left": [
+     -7.16531,
+     53.7577
+    ]
+   },
+   {
+    "root_pitch_deg": 11,
+    "torso_pitch_deg": 11.0,
+    "front": [
+     -20.3,
+     38.7
+    ],
+    "back": [
+     6.3,
+     65.3
+    ],
+    "left": [
+     -7.19393,
+     54.0694
+    ]
+   },
+   {
+    "root_pitch_deg": 12,
+    "torso_pitch_deg": 12.0,
+    "front": [
+     -21.3,
+     37.7
+    ],
+    "back": [
+     7.3,
+     66.3
+    ],
+    "left": [
+     -7.225,
+     54.4105
+    ]
+   },
+   {
+    "root_pitch_deg": 13,
+    "torso_pitch_deg": 13.0,
+    "front": [
+     -22.3,
+     36.7
+    ],
+    "back": [
+     8.3,
+     67.3
+    ],
+    "left": [
+     -7.25857,
+     54.7822
+    ]
+   },
+   {
+    "root_pitch_deg": 14,
+    "torso_pitch_deg": 14.0,
+    "front": [
+     -23.3,
+     35.7
+    ],
+    "back": [
+     9.3,
+     68.3
+    ],
+    "left": [
+     -7.29471,
+     55.1861
+    ]
+   },
+   {
+    "root_pitch_deg": 15,
+    "torso_pitch_deg": 15.0,
+    "front": [
+     -24.3,
+     34.7
+    ],
+    "back": [
+     10.3,
+     69.3
+    ],
+    "left": [
+     -7.33346,
+     55.6239
+    ]
+   },
+   {
+    "root_pitch_deg": 16,
+    "torso_pitch_deg": 16.0,
+    "front": [
+     -25.3,
+     33.7
+    ],
+    "back": [
+     11.3,
+     70.3
+    ],
+    "left": [
+     -7.3749,
+     56.0974
+    ]
+   },
+   {
+    "root_pitch_deg": 17,
+    "torso_pitch_deg": 17.0,
+    "front": [
+     -26.3,
+     32.7
+    ],
+    "back": [
+     12.3,
+     71.3
+    ],
+    "left": [
+     -7.4191,
+     56.6089
+    ]
+   },
+   {
+    "root_pitch_deg": 18,
+    "torso_pitch_deg": 18.0,
+    "front": [
+     -27.3,
+     31.7
+    ],
+    "back": [
+     13.3,
+     72.3
+    ],
+    "left": [
+     -7.46613,
+     57.1608
+    ]
+   },
+   {
+    "root_pitch_deg": 19,
+    "torso_pitch_deg": 19.0,
+    "front": [
+     -28.3,
+     30.7
+    ],
+    "back": [
+     14.3,
+     73.3
+    ],
+    "left": [
+     -7.51608,
+     57.7562
+    ]
+   },
+   {
+    "root_pitch_deg": 20,
+    "torso_pitch_deg": 20.0,
+    "front": [
+     -29.3,
+     29.7
+    ],
+    "back": [
+     15.3,
+     74.3
+    ],
+    "left": [
+     -7.56904,
+     58.3982
+    ]
+   },
+   {
+    "root_pitch_deg": 21,
+    "torso_pitch_deg": 21.0,
+    "front": [
+     -30.3,
+     28.7
+    ],
+    "back": [
+     16.3,
+     75.3
+    ],
+    "left": [
+     -7.62511,
+     59.0908
+    ]
+   },
+   {
+    "root_pitch_deg": 22,
+    "torso_pitch_deg": 22.0,
+    "front": [
+     -31.3,
+     27.7
+    ],
+    "back": [
+     17.3,
+     76.3
+    ],
+    "left": [
+     -7.68439,
+     59.8385
+    ]
+   },
+   {
+    "root_pitch_deg": 23,
+    "torso_pitch_deg": 23.0,
+    "front": [
+     -32.3,
+     26.7
+    ],
+    "back": [
+     18.3,
+     77.3
+    ],
+    "left": [
+     -7.74699,
+     60.6467
+    ]
+   },
+   {
+    "root_pitch_deg": 24,
+    "torso_pitch_deg": 24.0,
+    "front": [
+     -33.3,
+     25.7
+    ],
+    "back": [
+     19.3,
+     78.3
+    ],
+    "left": [
+     -7.81304,
+     61.5219
+    ]
+   },
+   {
+    "root_pitch_deg": 25,
+    "torso_pitch_deg": 25.0,
+    "front": [
+     -34.3,
+     24.7
+    ],
+    "back": [
+     20.3,
+     79.3
+    ],
+    "left": [
+     -7.88267,
+     62.4718
+    ]
+   },
+   {
+    "root_pitch_deg": 26,
+    "torso_pitch_deg": 26.0,
+    "front": [
+     -35.3,
+     23.7
+    ],
+    "back": [
+     21.3,
+     80.3
+    ],
+    "left": [
+     -7.95601,
+     63.506
+    ]
+   },
+   {
+    "root_pitch_deg": 27,
+    "torso_pitch_deg": 27.0,
+    "front": [
+     -36.3,
+     22.7
+    ],
+    "back": [
+     22.3,
+     81.3
+    ],
+    "left": [
+     -8.03322,
+     64.6368
+    ]
+   },
+   {
+    "root_pitch_deg": 28,
+    "torso_pitch_deg": 28.0,
+    "front": [
+     -37.3,
+     21.7
+    ],
+    "back": [
+     23.3,
+     82.3
+    ],
+    "left": [
+     -8.11447,
+     65.8795
+    ]
+   },
+   {
+    "root_pitch_deg": 29,
+    "torso_pitch_deg": 29.0,
+    "front": [
+     -38.3,
+     20.7
+    ],
+    "back": [
+     24.3,
+     83.3
+    ],
+    "left": [
+     -8.19992,
+     67.2549
+    ]
+   },
+   {
+    "root_pitch_deg": 30,
+    "torso_pitch_deg": 30.0,
+    "front": [
+     -39.3,
+     19.7
+    ],
+    "back": [
+     25.3,
+     84.3
+    ],
+    "left": [
+     -8.28976,
+     68.7912
+    ]
+   }
+  ]
+ },
+ "overhead": {
+  "inverted": {
+   "default_standing": {
+    "1.00": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.155927,
+      "p50": 0.155927,
+      "p95": 0.155927,
+      "min": 0.155927,
+      "max": 0.155927
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     }
+    },
+    "1.05": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.120033,
+      "p50": 0.120033,
+      "p95": 0.120033,
+      "min": 0.120033,
+      "max": 0.120033
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     }
+    },
+    "1.10": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0841382,
+      "p50": 0.0841382,
+      "p95": 0.0841382,
+      "min": 0.0841382,
+      "max": 0.0841382
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     }
+    },
+    "1.15": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0482436,
+      "p50": 0.0482436,
+      "p95": 0.0482436,
+      "min": 0.0482436,
+      "max": 0.0482436
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     }
+    },
+    "1.20": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0123491,
+      "p50": 0.0123491,
+      "p95": 0.0123491,
+      "min": 0.0123491,
+      "max": 0.0123491
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     }
+    },
+    "1.25": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.401142,
+      "p50": 0.401142,
+      "p95": 0.401142,
+      "min": 0.401142,
+      "max": 0.401142
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     }
+    },
+    "1.30": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 1.01267,
+      "p50": 1.01267,
+      "p95": 1.01267,
+      "min": 1.01267,
+      "max": 1.01267
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.95,
+      "p50": 0.95,
+      "p95": 0.95,
+      "min": 0.95,
+      "max": 0.95
+     }
+    },
+    "1.35": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 1.62421,
+      "p50": 1.62421,
+      "p95": 1.62421,
+      "min": 1.62421,
+      "max": 1.62421
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 1.59,
+      "p50": 1.59,
+      "p95": 1.59,
+      "min": 1.59,
+      "max": 1.59
+     }
+    },
+    "1.40": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 2.23574,
+      "p50": 2.23574,
+      "p95": 2.23574,
+      "min": 2.23574,
+      "max": 2.23574
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 2.21,
+      "p50": 2.21,
+      "p95": 2.21,
+      "min": 2.21,
+      "max": 2.21
+     }
+    },
+    "1.45": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 2.84727,
+      "p50": 2.84727,
+      "p95": 2.84727,
+      "min": 2.84727,
+      "max": 2.84727
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 2.83,
+      "p50": 2.83,
+      "p95": 2.83,
+      "min": 2.83,
+      "max": 2.83
+     }
+    },
+    "1.50": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 3.4588,
+      "p50": 3.4588,
+      "p95": 3.4588,
+      "min": 3.4588,
+      "max": 3.4588
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 3.44,
+      "p50": 3.44,
+      "p95": 3.44,
+      "min": 3.44,
+      "max": 3.44
+     }
+    }
+   },
+   "gait_executed": {
+    "1.00": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.0765288,
+      "p50": 0.135294,
+      "p95": 0.189721,
+      "min": 0.00567987,
+      "max": 0.243452
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.100255,
+      "p50": 0.164711,
+      "p95": 0.223941,
+      "min": 0.0385895,
+      "max": 0.268608
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.167092,
+      "p50": 0.274518,
+      "p95": 0.373236,
+      "min": 0.0643159,
+      "max": 0.44768
+     }
+    },
+    "1.05": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.0538924,
+      "p50": 0.10189,
+      "p95": 0.145538,
+      "min": 0.00338706,
+      "max": 0.184901
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0803238,
+      "p50": 0.131859,
+      "p95": 0.183,
+      "min": 0.0204462,
+      "max": 0.230227
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.133873,
+      "p50": 0.219766,
+      "p95": 0.305,
+      "min": 0.034077,
+      "max": 0.383712
+     }
+    },
+    "1.10": {
+     "beam_above_sensor_fraction": 0.00157336,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.00157336,
+      "p5": 0.0306842,
+      "p50": 0.0681539,
+      "p95": 0.102083,
+      "min": 0.00109425,
+      "max": 0.12635
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0502471,
+      "p50": 0.0973359,
+      "p95": 0.144176,
+      "min": 0.0118972,
+      "max": 0.1708
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0837452,
+      "p50": 0.162226,
+      "p95": 0.240293,
+      "min": 0.0198286,
+      "max": 0.284666
+     }
+    },
+    "1.15": {
+     "beam_above_sensor_fraction": 0.0182247,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.0133735,
+      "p5": 0.0077046,
+      "p50": 0.0344528,
+      "p95": 0.0606597,
+      "min": 7.41412e-05,
+      "max": 11.964
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0258423,
+      "p50": 0.065101,
+      "p95": 0.106176,
+      "min": 0.00188103,
+      "max": 0.357096
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0430705,
+      "p50": 0.108502,
+      "p95": 0.17696,
+      "min": 0.00313504,
+      "max": 0.59516
+     }
+    },
+    "1.20": {
+     "beam_above_sensor_fraction": 0.472138,
+     "beam_above_head_top_fraction": 0.00406451,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.173987,
+      "p5": 0.00144761,
+      "p50": 0.0159624,
+      "p95": 0.814533,
+      "min": 6.90893e-06,
+      "max": 783.779
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.17
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0138181,
+      "p50": 0.0638697,
+      "p95": 0.456745,
+      "min": 0.00140506,
+      "max": 1.78841
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0230301,
+      "p50": 0.106449,
+      "p95": 0.761241,
+      "min": 0.00234177,
+      "max": 2.98068
+     }
+    },
+    "1.25": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 0.185263,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.265373,
+      "p5": 0.158675,
+      "p50": 0.569907,
+      "p95": 4.92378,
+      "min": 0.0380558,
+      "max": 2231.29
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.171875,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 1.72,
+      "min": 0.01,
+      "max": 7.33
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.200016,
+      "p50": 0.585662,
+      "p95": 1.98325,
+      "min": 0.0492403,
+      "max": 3.81605
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.33336,
+      "p50": 0.976103,
+      "p95": 3.30542,
+      "min": 0.0820671,
+      "max": 6.36009
+     }
+    },
+    "1.30": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 0.952406,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.265373,
+      "p5": 0.423521,
+      "p50": 1.23227,
+      "p95": 9.61837,
+      "min": 0.274149,
+      "max": 3678.8
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.25,
+      "p5": 0.1715,
+      "p50": 0.94,
+      "p95": 3.0785,
+      "min": 0.01,
+      "max": 7.26
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.475656,
+      "p50": 1.12014,
+      "p95": 2.69218,
+      "min": 0.282253,
+      "max": 4.9849
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.792759,
+      "p50": 1.86689,
+      "p95": 4.48696,
+      "min": 0.470422,
+      "max": 8.30817
+     }
+    },
+    "1.35": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.265373,
+      "p5": 0.666753,
+      "p50": 1.91104,
+      "p95": 14.5252,
+      "min": 0.422976,
+      "max": 5126.31
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.28125,
+      "p5": 0.5125,
+      "p50": 1.75,
+      "p95": 5.045,
+      "min": 0.29,
+      "max": 6.17
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.712051,
+      "p50": 1.60565,
+      "p95": 3.27446,
+      "min": 0.475639,
+      "max": 5.38924
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 1.18675,
+      "p50": 2.67608,
+      "p95": 5.45744,
+      "min": 0.792731,
+      "max": 8.98207
+     }
+    },
+    "1.40": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.265373,
+      "p5": 0.899904,
+      "p50": 2.56371,
+      "p95": 19.2196,
+      "min": 0.571412,
+      "max": 6573.82
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.3125,
+      "p5": 0.7645,
+      "p50": 2.35,
+      "p95": 6.456,
+      "min": 0.42,
+      "max": 7.34
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.93803,
+      "p50": 2.0598,
+      "p95": 4.00353,
+      "min": 0.593421,
+      "max": 5.76712
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 1.56338,
+      "p50": 3.433,
+      "p95": 6.67256,
+      "min": 0.989035,
+      "max": 9.61186
+     }
+    },
+    "1.45": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.265373,
+      "p5": 1.13371,
+      "p50": 3.22404,
+      "p95": 24.2421,
+      "min": 0.696605,
+      "max": 8021.33
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.375,
+      "p5": 0.9985,
+      "p50": 2.71,
+      "p95": 5.96,
+      "min": 0.55,
+      "max": 7.02
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 1.17046,
+      "p50": 2.46571,
+      "p95": 4.50787,
+      "min": 0.744215,
+      "max": 6.01598
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 1.95076,
+      "p50": 4.10952,
+      "p95": 7.51311,
+      "min": 1.24036,
+      "max": 10.0266
+     }
+    },
+    "1.50": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.265373,
+      "p5": 1.36285,
+      "p50": 3.8898,
+      "p95": 29.1701,
+      "min": 0.819344,
+      "max": 9468.84
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.390625,
+      "p5": 1.219,
+      "p50": 3.17,
+      "p95": 6.904,
+      "min": 0.68,
+      "max": 7.59
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 1.37672,
+      "p50": 2.81538,
+      "p95": 5.03591,
+      "min": 0.831763,
+      "max": 6.72264
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 2.29454,
+      "p50": 4.69229,
+      "p95": 8.39318,
+      "min": 1.38627,
+      "max": 11.2044
+     }
+    }
+   },
+   "gait_reference": {
+    "1.00": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.0,
+      "p5": 0.031944,
+      "p50": 0.103283,
+      "p95": 0.145669,
+      "min": 5.37572e-18,
+      "max": 0.2064
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0566367,
+      "p50": 0.130803,
+      "p95": 0.185868,
+      "min": 0.0070823,
+      "max": 0.258322
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0943945,
+      "p50": 0.218004,
+      "p95": 0.309779,
+      "min": 0.0118038,
+      "max": 0.430537
+     }
+    },
+    "1.05": {
+     "beam_above_sensor_fraction": 0.000879314,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.000879314,
+      "p5": 0.0223009,
+      "p50": 0.079525,
+      "p95": 0.113686,
+      "min": 2.3141e-18,
+      "max": 0.156561
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0480294,
+      "p50": 0.107328,
+      "p95": 0.153643,
+      "min": 0.0070823,
+      "max": 0.206846
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.080049,
+      "p50": 0.178879,
+      "p95": 0.256072,
+      "min": 0.0118038,
+      "max": 0.344744
+     }
+    },
+    "1.10": {
+     "beam_above_sensor_fraction": 0.00593537,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.00593537,
+      "p5": 0.0135626,
+      "p50": 0.0558333,
+      "p95": 0.0825842,
+      "min": 4.06016e-19,
+      "max": 0.10874
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0372013,
+      "p50": 0.0841405,
+      "p95": 0.126702,
+      "min": 0.00496114,
+      "max": 0.294794
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0620021,
+      "p50": 0.140234,
+      "p95": 0.21117,
+      "min": 0.00826857,
+      "max": 0.491323
+     }
+    },
+    "1.15": {
+     "beam_above_sensor_fraction": 0.0281381,
+     "beam_above_head_top_fraction": 0.00263794,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.0281381,
+      "p5": 0.00652801,
+      "p50": 0.0323547,
+      "p95": 0.0525884,
+      "min": 1.46721e-19,
+      "max": 0.0692496
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0254859,
+      "p50": 0.062989,
+      "p95": 0.101264,
+      "min": 0.00370619,
+      "max": 0.451416
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0424766,
+      "p50": 0.104982,
+      "p95": 0.168774,
+      "min": 0.00617699,
+      "max": 0.75236
+     }
+    },
+    "1.20": {
+     "beam_above_sensor_fraction": 0.249725,
+     "beam_above_head_top_fraction": 0.0151682,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.239393,
+      "p5": 0.00141705,
+      "p50": 0.0108505,
+      "p95": 0.0252287,
+      "min": 2.68462e-06,
+      "max": 28.1299
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.03125,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0138003,
+      "p50": 0.0504558,
+      "p95": 0.428896,
+      "min": 0.000411386,
+      "max": 1.25164
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0230005,
+      "p50": 0.084093,
+      "p95": 0.714826,
+      "min": 0.000685643,
+      "max": 2.08606
+     }
+    },
+    "1.25": {
+     "beam_above_sensor_fraction": 0.992746,
+     "beam_above_head_top_fraction": 0.0954056,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.888547,
+      "p5": 0.00285314,
+      "p50": 0.733776,
+      "p95": 6.5884,
+      "min": 5.61779e-05,
+      "max": 148.577
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.3125,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.31744,
+      "p50": 2.32796,
+      "p95": 9.19313,
+      "min": 0.00555397,
+      "max": 14.1965
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.529066,
+      "p50": 3.87994,
+      "p95": 15.3219,
+      "min": 0.00925661,
+      "max": 23.6608
+     }
+    },
+    "1.30": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 0.800396,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.892724,
+      "p5": 0.654385,
+      "p50": 2.30665,
+      "p95": 18.8721,
+      "min": 0.332608,
+      "max": 627.758
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.921875,
+      "p5": 0.01,
+      "p50": 1.19,
+      "p95": 7.278,
+      "min": 0.01,
+      "max": 7.43
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0085,
+      "p5": 1.1337,
+      "p50": 3.72538,
+      "p95": 10.3017,
+      "min": 0.384215,
+      "max": 15.051
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0085,
+      "p5": 1.8895,
+      "p50": 6.20896,
+      "p95": 17.1695,
+      "min": 0.640358,
+      "max": 25.0849
+     }
+    },
+    "1.35": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.892724,
+      "p5": 1.02181,
+      "p50": 3.7744,
+      "p95": 31.5929,
+      "min": 0.511564,
+      "max": 1106.94
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.984375,
+      "p5": 2.3,
+      "p50": 2.3,
+      "p95": 2.3,
+      "min": 2.3,
+      "max": 2.3
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.021,
+      "p5": 1.57387,
+      "p50": 4.8179,
+      "p95": 11.4472,
+      "min": 0.588566,
+      "max": 15.051
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.021,
+      "p5": 2.62312,
+      "p50": 8.02983,
+      "p95": 19.0787,
+      "min": 0.980943,
+      "max": 25.0849
+     }
+    },
+    "1.40": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.892724,
+      "p5": 1.41114,
+      "p50": 5.2103,
+      "p95": 44.2646,
+      "min": 0.69052,
+      "max": 1586.12
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.984375,
+      "p5": 3.39,
+      "p50": 3.39,
+      "p95": 3.39,
+      "min": 3.39,
+      "max": 3.39
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0305,
+      "p5": 2.01202,
+      "p50": 5.63041,
+      "p95": 12.7171,
+      "min": 0.709818,
+      "max": 15.051
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0305,
+      "p5": 3.35336,
+      "p50": 9.38402,
+      "p95": 21.1951,
+      "min": 1.18303,
+      "max": 25.0849
+     }
+    },
+    "1.45": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.892724,
+      "p5": 1.80108,
+      "p50": 6.7423,
+      "p95": 57.1394,
+      "min": 0.869476,
+      "max": 2065.3
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.984375,
+      "p5": 4.46,
+      "p50": 4.46,
+      "p95": 4.46,
+      "min": 4.46,
+      "max": 4.46
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0465,
+      "p5": 2.43778,
+      "p50": 6.24271,
+      "p95": 13.6513,
+      "min": 0.902624,
+      "max": 15.051
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0465,
+      "p5": 4.06296,
+      "p50": 10.4045,
+      "p95": 22.7521,
+      "min": 1.50437,
+      "max": 25.0849
+     }
+    },
+    "1.50": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.892724,
+      "p5": 2.20081,
+      "p50": 8.30194,
+      "p95": 70.0142,
+      "min": 1.04843,
+      "max": 2544.48
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.984375,
+      "p5": 5.54,
+      "p50": 5.54,
+      "p95": 5.54,
+      "min": 5.54,
+      "max": 5.54
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0865,
+      "p5": 2.78717,
+      "p50": 6.89037,
+      "p95": 14.1273,
+      "min": 1.07556,
+      "max": 15.051
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0865,
+      "p5": 4.64529,
+      "p50": 11.484,
+      "p95": 23.5455,
+      "min": 1.7926,
+      "max": 25.0849
+     }
+    }
+   },
+   "crouch_executed": {
+    "1.00": {
+     "beam_above_sensor_fraction": 0.897229,
+     "beam_above_head_top_fraction": 0.601617,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.864319,
+      "p5": 2.47354e-06,
+      "p50": 0.00276937,
+      "p95": 6.59371,
+      "min": 3.62668e-19,
+      "max": 525.87
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.375,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.1995,
+      "min": 0.01,
+      "max": 6.97
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0315192,
+      "p50": 3.05701,
+      "p95": 11.1752,
+      "min": 0.000808052,
+      "max": 12.1762
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.052532,
+      "p50": 5.09501,
+      "p95": 18.6253,
+      "min": 0.00134675,
+      "max": 20.2937
+     }
+    },
+    "1.05": {
+     "beam_above_sensor_fraction": 0.988453,
+     "beam_above_head_top_fraction": 0.875866,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.955543,
+      "p5": 0.000371108,
+      "p50": 3.57813,
+      "p95": 26.1287,
+      "min": 1.8587e-05,
+      "max": 698.272
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.625,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 5.58
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.358825,
+      "p50": 4.11495,
+      "p95": 11.4787,
+      "min": 0.00213907,
+      "max": 12.4109
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.598042,
+      "p50": 6.85825,
+      "p95": 19.1311,
+      "min": 0.00356512,
+      "max": 20.6848
+     }
+    },
+    "1.10": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 0.964781,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.96709,
+      "p5": 2.41418,
+      "p50": 5.38999,
+      "p95": 40.4975,
+      "min": 2.20711,
+      "max": 870.674
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.78125,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 2.579,
+      "min": 0.01,
+      "max": 7.35
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.2905,
+      "p5": 2.94892,
+      "p50": 7.66243,
+      "p95": 14.291,
+      "min": 2.29484,
+      "max": 15.0425
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.2905,
+      "p5": 4.91486,
+      "p50": 12.7707,
+      "p95": 23.8183,
+      "min": 3.82474,
+      "max": 25.0708
+     }
+    },
+    "1.15": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.96709,
+      "p5": 2.91907,
+      "p50": 6.58611,
+      "p95": 49.0814,
+      "min": 2.67826,
+      "max": 1043.08
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.890625,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.313,
+      "p5": 3.47068,
+      "p50": 8.1654,
+      "p95": 14.3195,
+      "min": 2.79385,
+      "max": 15.0425
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.313,
+      "p5": 5.78447,
+      "p50": 13.609,
+      "p95": 23.8658,
+      "min": 4.65641,
+      "max": 25.0708
+     }
+    },
+    "1.20": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.96709,
+      "p5": 3.42395,
+      "p50": 7.71843,
+      "p95": 57.6652,
+      "min": 3.14941,
+      "max": 1215.48
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.90625,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.339,
+      "p5": 3.90918,
+      "p50": 8.59655,
+      "p95": 14.3489,
+      "min": 3.1499,
+      "max": 15.0425
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.339,
+      "p5": 6.51529,
+      "p50": 14.3276,
+      "p95": 23.9149,
+      "min": 5.24983,
+      "max": 25.0708
+     }
+    },
+    "1.25": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.96709,
+      "p5": 3.92884,
+      "p50": 8.93161,
+      "p95": 66.2491,
+      "min": 3.62056,
+      "max": 1387.88
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.90625,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.3685,
+      "p5": 4.52574,
+      "p50": 9.11995,
+      "p95": 14.3897,
+      "min": 3.62784,
+      "max": 15.0425
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.3685,
+      "p5": 7.5429,
+      "p50": 15.1999,
+      "p95": 23.9829,
+      "min": 6.04641,
+      "max": 25.0708
+     }
+    },
+    "1.30": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.96709,
+      "p5": 4.43372,
+      "p50": 10.2447,
+      "p95": 74.8329,
+      "min": 4.09171,
+      "max": 1560.28
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.9375,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.394,
+      "p5": 5.01375,
+      "p50": 9.51774,
+      "p95": 14.4015,
+      "min": 4.09993,
+      "max": 15.0425
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.394,
+      "p5": 8.35626,
+      "p50": 15.8629,
+      "p95": 24.0025,
+      "min": 6.83321,
+      "max": 25.0708
+     }
+    },
+    "1.35": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.96709,
+      "p5": 4.93861,
+      "p50": 11.5577,
+      "p95": 83.4168,
+      "min": 4.56286,
+      "max": 1732.68
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 1.0
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.4235,
+      "p5": 5.49701,
+      "p50": 9.69248,
+      "p95": 14.4429,
+      "min": 4.60603,
+      "max": 15.0425
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.4235,
+      "p5": 9.16168,
+      "p50": 16.1541,
+      "p95": 24.0715,
+      "min": 7.67672,
+      "max": 25.0708
+     }
+    },
+    "1.40": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.96709,
+      "p5": 5.44349,
+      "p50": 12.8708,
+      "p95": 92.0006,
+      "min": 5.034,
+      "max": 1905.09
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 1.0
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.458,
+      "p5": 6.07867,
+      "p50": 9.90473,
+      "p95": 14.5427,
+      "min": 5.05254,
+      "max": 15.0425
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.458,
+      "p5": 10.1311,
+      "p50": 16.5079,
+      "p95": 24.2378,
+      "min": 8.4209,
+      "max": 25.0708
+     }
+    },
+    "1.45": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.96709,
+      "p5": 5.94838,
+      "p50": 14.1838,
+      "p95": 100.585,
+      "min": 5.50515,
+      "max": 2077.49
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 1.0
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.489,
+      "p5": 6.59707,
+      "p50": 10.2924,
+      "p95": 14.6168,
+      "min": 5.50872,
+      "max": 15.0425
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.489,
+      "p5": 10.9951,
+      "p50": 17.154,
+      "p95": 24.3613,
+      "min": 9.1812,
+      "max": 25.0708
+     }
+    },
+    "1.50": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.96709,
+      "p5": 6.45326,
+      "p50": 15.4969,
+      "p95": 109.168,
+      "min": 5.9763,
+      "max": 2249.89
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 1.0
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.524,
+      "p5": 6.88805,
+      "p50": 10.3423,
+      "p95": 14.6008,
+      "min": 6.07835,
+      "max": 15.0514
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.524,
+      "p5": 11.4801,
+      "p50": 17.2372,
+      "p95": 24.3347,
+      "min": 10.1306,
+      "max": 25.0857
+     }
+    }
+   }
+  },
+  "upright": {
+   "default_standing": {
+    "1.00": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 1.32637,
+      "p50": 1.32637,
+      "p95": 1.32637,
+      "min": 1.32637,
+      "max": 1.32637
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 1.31,
+      "p50": 1.31,
+      "p95": 1.31,
+      "min": 1.31,
+      "max": 1.31
+     }
+    },
+    "1.05": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 1.02104,
+      "p50": 1.02104,
+      "p95": 1.02104,
+      "min": 1.02104,
+      "max": 1.02104
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.99,
+      "p50": 0.99,
+      "p95": 0.99,
+      "min": 0.99,
+      "max": 0.99
+     }
+    },
+    "1.10": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.715709,
+      "p50": 0.715709,
+      "p95": 0.715709,
+      "min": 0.715709,
+      "max": 0.715709
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.67,
+      "p50": 0.67,
+      "p95": 0.67,
+      "min": 0.67,
+      "max": 0.67
+     }
+    },
+    "1.15": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.410378,
+      "p50": 0.410378,
+      "p95": 0.410378,
+      "min": 0.410378,
+      "max": 0.410378
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.33,
+      "p50": 0.33,
+      "p95": 0.33,
+      "min": 0.33,
+      "max": 0.33
+     }
+    },
+    "1.20": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.105046,
+      "p50": 0.105046,
+      "p95": 0.105046,
+      "min": 0.105046,
+      "max": 0.105046
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     }
+    },
+    "1.25": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0278148,
+      "p50": 0.0278148,
+      "p95": 0.0278148,
+      "min": 0.0278148,
+      "max": 0.0278148
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     }
+    },
+    "1.30": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0702179,
+      "p50": 0.0702179,
+      "p95": 0.0702179,
+      "min": 0.0702179,
+      "max": 0.0702179
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     }
+    },
+    "1.35": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.112621,
+      "p50": 0.112621,
+      "p95": 0.112621,
+      "min": 0.112621,
+      "max": 0.112621
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     }
+    },
+    "1.40": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.155024,
+      "p50": 0.155024,
+      "p95": 0.155024,
+      "min": 0.155024,
+      "max": 0.155024
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     }
+    },
+    "1.45": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.197427,
+      "p50": 0.197427,
+      "p95": 0.197427,
+      "min": 0.197427,
+      "max": 0.197427
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     }
+    },
+    "1.50": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.23983,
+      "p50": 0.23983,
+      "p95": 0.23983,
+      "min": 0.23983,
+      "max": 0.23983
+     },
+     "corridor_0.3m_m": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     }
+    }
+   },
+   "gait_executed": {
+    "1.00": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.0211092,
+      "p5": 0.453908,
+      "p50": 1.02468,
+      "p95": 3.23927,
+      "min": 0.136897,
+      "max": 610.592
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.046875,
+      "p5": 0.3,
+      "p50": 0.91,
+      "p95": 2.58,
+      "min": 0.22,
+      "max": 5.84
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.475405,
+      "p50": 0.938522,
+      "p95": 1.77311,
+      "min": 0.183928,
+      "max": 2.96045
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.792341,
+      "p50": 1.5642,
+      "p95": 2.95518,
+      "min": 0.306547,
+      "max": 4.93409
+     }
+    },
+    "1.05": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.0211092,
+      "p5": 0.322832,
+      "p50": 0.771435,
+      "p95": 2.4511,
+      "min": 0.0816351,
+      "max": 455.361
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.046875,
+      "p5": 0.15,
+      "p50": 0.67,
+      "p95": 1.96,
+      "min": 0.09,
+      "max": 4.45
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.351189,
+      "p50": 0.72229,
+      "p95": 1.52185,
+      "min": 0.168152,
+      "max": 2.70255
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.585315,
+      "p50": 1.20382,
+      "p95": 2.53641,
+      "min": 0.280253,
+      "max": 4.50426
+     }
+    },
+    "1.10": {
+     "beam_above_sensor_fraction": 0.00157336,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.0211092,
+      "p5": 0.183112,
+      "p50": 0.520437,
+      "p95": 1.68259,
+      "min": 0.000938201,
+      "max": 300.131
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.015625,
+      "p5": 0.01,
+      "p50": 0.39,
+      "p95": 1.325,
+      "min": 0.01,
+      "max": 7.2
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.210987,
+      "p50": 0.505455,
+      "p95": 1.17362,
+      "min": 0.02846,
+      "max": 2.20776
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.351645,
+      "p50": 0.842424,
+      "p95": 1.95603,
+      "min": 0.0474334,
+      "max": 3.6796
+     }
+    },
+    "1.15": {
+     "beam_above_sensor_fraction": 0.0182247,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.0211092,
+      "p5": 0.0394028,
+      "p50": 0.264916,
+      "p95": 0.913421,
+      "min": 0.000113672,
+      "max": 144.9
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.015625,
+      "p5": 0.01,
+      "p50": 0.02,
+      "p95": 0.615,
+      "min": 0.01,
+      "max": 1.62
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0689904,
+      "p50": 0.263134,
+      "p95": 0.691575,
+      "min": 0.00620754,
+      "max": 1.31653
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.114984,
+      "p50": 0.438556,
+      "p95": 1.15262,
+      "min": 0.0103459,
+      "max": 2.19422
+     }
+    },
+    "1.20": {
+     "beam_above_sensor_fraction": 0.472138,
+     "beam_above_head_top_fraction": 0.00406451,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.00668677,
+      "p5": 0.00230317,
+      "p50": 0.0327179,
+      "p95": 0.22928,
+      "min": 1.40375e-06,
+      "max": 5.4262
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0180258,
+      "p50": 0.0681639,
+      "p95": 0.212949,
+      "min": 0.000695497,
+      "max": 0.463929
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.030043,
+      "p50": 0.113606,
+      "p95": 0.354916,
+      "min": 0.00115916,
+      "max": 0.773215
+     }
+    },
+    "1.25": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 0.185263,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.0171446,
+      "p50": 0.0424912,
+      "p95": 0.0995438,
+      "min": 0.00331837,
+      "max": 0.409607
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0341778,
+      "p50": 0.0757774,
+      "p95": 0.134661,
+      "min": 0.0129672,
+      "max": 0.324047
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.056963,
+      "p50": 0.126296,
+      "p95": 0.224436,
+      "min": 0.021612,
+      "max": 0.540079
+     }
+    },
+    "1.30": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 0.952406,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.055124,
+      "p50": 0.0870431,
+      "p95": 0.159595,
+      "min": 0.0434453,
+      "max": 0.571972
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0730426,
+      "p50": 0.11987,
+      "p95": 0.193587,
+      "min": 0.0492403,
+      "max": 0.368488
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.121738,
+      "p50": 0.199784,
+      "p95": 0.322645,
+      "min": 0.0820671,
+      "max": 0.614147
+     }
+    },
+    "1.35": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.090893,
+      "p50": 0.131473,
+      "p95": 0.22089,
+      "min": 0.0703842,
+      "max": 0.734338
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.110526,
+      "p50": 0.164611,
+      "p95": 0.253864,
+      "min": 0.081208,
+      "max": 0.443616
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.18421,
+      "p50": 0.274351,
+      "p95": 0.423106,
+      "min": 0.135347,
+      "max": 0.73936
+     }
+    },
+    "1.40": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.12496,
+      "p50": 0.176199,
+      "p95": 0.28269,
+      "min": 0.0946346,
+      "max": 0.896703
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.147608,
+      "p50": 0.208057,
+      "p95": 0.312009,
+      "min": 0.108208,
+      "max": 0.513096
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.246014,
+      "p50": 0.346761,
+      "p95": 0.520014,
+      "min": 0.180347,
+      "max": 0.855161
+     }
+    },
+    "1.45": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.158864,
+      "p50": 0.220888,
+      "p95": 0.344854,
+      "min": 0.114686,
+      "max": 1.05907
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.182619,
+      "p50": 0.253811,
+      "p95": 0.369865,
+      "min": 0.125171,
+      "max": 0.612003
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.304364,
+      "p50": 0.423018,
+      "p95": 0.616441,
+      "min": 0.208618,
+      "max": 1.02001
+     }
+    },
+    "1.50": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 7627,
+      "inf_fraction": 0.0,
+      "p5": 0.192133,
+      "p50": 0.266197,
+      "p95": 0.4071,
+      "min": 0.134738,
+      "max": 1.22143
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.217111,
+      "p50": 0.298579,
+      "p95": 0.433642,
+      "min": 0.16054,
+      "max": 0.660237
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.361851,
+      "p50": 0.497632,
+      "p95": 0.722737,
+      "min": 0.267567,
+      "max": 1.1004
+     }
+    }
+   },
+   "gait_reference": {
+    "1.00": {
+     "beam_above_sensor_fraction": 0.0,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.0125302,
+      "p5": 0.267644,
+      "p50": 0.616377,
+      "p95": 1.05585,
+      "min": 0.0526736,
+      "max": 36.4892
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.143,
+      "p50": 0.565,
+      "p95": 0.8085,
+      "min": 0.01,
+      "max": 1.17
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.292717,
+      "p50": 0.620297,
+      "p95": 0.933643,
+      "min": 0.0844551,
+      "max": 1.35166
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.487862,
+      "p50": 1.03383,
+      "p95": 1.55607,
+      "min": 0.140758,
+      "max": 2.25276
+     }
+    },
+    "1.05": {
+     "beam_above_sensor_fraction": 0.000879314,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.0125302,
+      "p5": 0.190365,
+      "p50": 0.476188,
+      "p95": 0.824178,
+      "min": 0.00165369,
+      "max": 27.7151
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.063,
+      "p50": 0.42,
+      "p95": 0.6085,
+      "min": 0.01,
+      "max": 0.91
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.220076,
+      "p50": 0.490302,
+      "p95": 0.771512,
+      "min": 0.00868615,
+      "max": 1.1808
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.366793,
+      "p50": 0.817169,
+      "p95": 1.28585,
+      "min": 0.0144769,
+      "max": 1.968
+     }
+    },
+    "1.10": {
+     "beam_above_sensor_fraction": 0.00593537,
+     "beam_above_head_top_fraction": 0.0,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.0125302,
+      "p5": 0.115952,
+      "p50": 0.334615,
+      "p95": 0.588598,
+      "min": 0.00303617,
+      "max": 18.9409
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.26,
+      "p95": 0.43,
+      "min": 0.01,
+      "max": 0.65
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.141506,
+      "p50": 0.352322,
+      "p95": 0.560231,
+      "min": 0.0205836,
+      "max": 0.875213
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.235843,
+      "p50": 0.587204,
+      "p95": 0.933718,
+      "min": 0.0343061,
+      "max": 1.45869
+     }
+    },
+    "1.15": {
+     "beam_above_sensor_fraction": 0.0281381,
+     "beam_above_head_top_fraction": 0.00263794,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.0125302,
+      "p5": 0.0421789,
+      "p50": 0.193485,
+      "p95": 0.35952,
+      "min": 2.01668e-05,
+      "max": 10.1668
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.07,
+      "p95": 0.25,
+      "min": 0.01,
+      "max": 0.38
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0719971,
+      "p50": 0.218038,
+      "p95": 0.371738,
+      "min": 0.0103837,
+      "max": 0.848395
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.119995,
+      "p50": 0.363396,
+      "p95": 0.619564,
+      "min": 0.0173062,
+      "max": 1.41399
+     }
+    },
+    "1.20": {
+     "beam_above_sensor_fraction": 0.249725,
+     "beam_above_head_top_fraction": 0.0151682,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.0125302,
+      "p5": 0.00404739,
+      "p50": 0.055696,
+      "p95": 0.159364,
+      "min": 1.45399e-05,
+      "max": 1.39264
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.05
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.024433,
+      "p50": 0.0863403,
+      "p95": 0.197386,
+      "min": 0.00298471,
+      "max": 0.956702
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0407216,
+      "p50": 0.143901,
+      "p95": 0.328976,
+      "min": 0.00497451,
+      "max": 1.5945
+     }
+    },
+    "1.25": {
+     "beam_above_sensor_fraction": 0.992746,
+     "beam_above_head_top_fraction": 0.0954056,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.0116509,
+      "p5": 0.00939922,
+      "p50": 0.038946,
+      "p95": 0.150745,
+      "min": 1.91156e-05,
+      "max": 0.539017
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0272573,
+      "p50": 0.0733657,
+      "p95": 0.190064,
+      "min": 0.00480949,
+      "max": 0.998113
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0454288,
+      "p50": 0.122276,
+      "p95": 0.316773,
+      "min": 0.00801582,
+      "max": 1.66352
+     }
+    },
+    "1.30": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 0.800396,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.0116509,
+      "p5": 0.0603051,
+      "p50": 0.0986392,
+      "p95": 0.254487,
+      "min": 0.0414475,
+      "max": 0.730949
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0808606,
+      "p50": 0.133346,
+      "p95": 0.294562,
+      "min": 0.0506897,
+      "max": 1.074
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.134768,
+      "p50": 0.222244,
+      "p95": 0.490937,
+      "min": 0.0844829,
+      "max": 1.78999
+     }
+    },
+    "1.35": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.0116509,
+      "p5": 0.110974,
+      "p50": 0.158232,
+      "p95": 0.353938,
+      "min": 0.0758491,
+      "max": 0.922882
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.131894,
+      "p50": 0.194709,
+      "p95": 0.386692,
+      "min": 0.0868462,
+      "max": 1.19123
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.219824,
+      "p50": 0.324514,
+      "p95": 0.644487,
+      "min": 0.144744,
+      "max": 1.98539
+     }
+    },
+    "1.40": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.0116509,
+      "p5": 0.160232,
+      "p50": 0.218835,
+      "p95": 0.454344,
+      "min": 0.102383,
+      "max": 1.11481
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.185168,
+      "p50": 0.253123,
+      "p95": 0.484303,
+      "min": 0.115639,
+      "max": 1.3035
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.308613,
+      "p50": 0.421871,
+      "p95": 0.807172,
+      "min": 0.192731,
+      "max": 2.17249
+     }
+    },
+    "1.45": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.0116509,
+      "p5": 0.207463,
+      "p50": 0.279408,
+      "p95": 0.55725,
+      "min": 0.128916,
+      "max": 1.30675
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.232657,
+      "p50": 0.313379,
+      "p95": 0.586224,
+      "min": 0.131666,
+      "max": 1.3035
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.387761,
+      "p50": 0.522298,
+      "p95": 0.97704,
+      "min": 0.219443,
+      "max": 2.17249
+     }
+    },
+    "1.50": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 4549,
+      "inf_fraction": 0.0116509,
+      "p5": 0.254471,
+      "p50": 0.340101,
+      "p95": 0.657695,
+      "min": 0.15545,
+      "max": 1.49868
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.279442,
+      "p50": 0.373545,
+      "p95": 0.667841,
+      "min": 0.175639,
+      "max": 1.46981
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.465737,
+      "p50": 0.622576,
+      "p95": 1.11307,
+      "min": 0.292731,
+      "max": 2.44969
+     }
+    }
+   },
+   "crouch_executed": {
+    "1.00": {
+     "beam_above_sensor_fraction": 0.897229,
+     "beam_above_head_top_fraction": 0.601617,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.10739,
+      "p5": 1.0617e-17,
+      "p50": 0.129496,
+      "p95": 0.238405,
+      "min": 5.5479e-18,
+      "max": 1.02988
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.029934,
+      "p50": 0.16923,
+      "p95": 0.52286,
+      "min": 0.000580246,
+      "max": 1.45136
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.04989,
+      "p50": 0.282049,
+      "p95": 0.871434,
+      "min": 0.000967077,
+      "max": 2.41893
+     }
+    },
+    "1.05": {
+     "beam_above_sensor_fraction": 0.988453,
+     "beam_above_head_top_fraction": 0.875866,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.10739,
+      "p5": 1.36786e-17,
+      "p50": 0.207031,
+      "p95": 0.373662,
+      "min": 8.60952e-18,
+      "max": 1.22014
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0333684,
+      "p50": 0.249115,
+      "p95": 0.681505,
+      "min": 0.000580246,
+      "max": 1.66315
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.055614,
+      "p50": 0.415192,
+      "p95": 1.13584,
+      "min": 0.000967077,
+      "max": 2.77192
+     }
+    },
+    "1.10": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 0.964781,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.10739,
+      "p5": 1.67402e-17,
+      "p50": 0.307497,
+      "p95": 0.512467,
+      "min": 1.16711e-17,
+      "max": 1.41039
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0453058,
+      "p50": 0.34127,
+      "p95": 0.866648,
+      "min": 0.000580246,
+      "max": 1.80536
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0755097,
+      "p50": 0.568784,
+      "p95": 1.44441,
+      "min": 0.000967077,
+      "max": 3.00893
+     }
+    },
+    "1.15": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.10739,
+      "p5": 1.98018e-17,
+      "p50": 0.40755,
+      "p95": 0.654414,
+      "min": 1.47328e-17,
+      "max": 1.60065
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0453058,
+      "p50": 0.442785,
+      "p95": 0.992731,
+      "min": 0.000580246,
+      "max": 1.95385
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0755097,
+      "p50": 0.737975,
+      "p95": 1.65455,
+      "min": 0.000967077,
+      "max": 3.25641
+     }
+    },
+    "1.20": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.10739,
+      "p5": 2.28635e-17,
+      "p50": 0.502932,
+      "p95": 0.795921,
+      "min": 1.77944e-17,
+      "max": 1.79091
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0453058,
+      "p50": 0.538301,
+      "p95": 1.06409,
+      "min": 0.000580246,
+      "max": 2.09916
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0755097,
+      "p50": 0.897168,
+      "p95": 1.77348,
+      "min": 0.000967077,
+      "max": 3.4986
+     }
+    },
+    "1.25": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.10739,
+      "p5": 2.59251e-17,
+      "p50": 0.600163,
+      "p95": 0.945555,
+      "min": 2.0856e-17,
+      "max": 1.98116
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0453058,
+      "p50": 0.63189,
+      "p95": 1.20583,
+      "min": 0.000580246,
+      "max": 2.18861
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0755097,
+      "p50": 1.05315,
+      "p95": 2.00972,
+      "min": 0.000967077,
+      "max": 3.64768
+     }
+    },
+    "1.30": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.10739,
+      "p5": 2.89867e-17,
+      "p50": 0.697487,
+      "p95": 1.10306,
+      "min": 2.39176e-17,
+      "max": 2.17142
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.01,
+      "min": 0.01,
+      "max": 0.01
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0453058,
+      "p50": 0.73192,
+      "p95": 1.30927,
+      "min": 0.000580246,
+      "max": 2.28517
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0755097,
+      "p50": 1.21987,
+      "p95": 2.18211,
+      "min": 0.000967077,
+      "max": 3.80862
+     }
+    },
+    "1.35": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.10739,
+      "p5": 3.20483e-17,
+      "p50": 0.790821,
+      "p95": 1.25423,
+      "min": 2.69792e-17,
+      "max": 2.36168
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.301,
+      "min": 0.01,
+      "max": 0.59
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0453058,
+      "p50": 0.819953,
+      "p95": 1.41905,
+      "min": 0.000580246,
+      "max": 2.39703
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0755097,
+      "p50": 1.36659,
+      "p95": 2.36509,
+      "min": 0.000967077,
+      "max": 3.99505
+     }
+    },
+    "1.40": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.10739,
+      "p5": 3.51099e-17,
+      "p50": 0.882053,
+      "p95": 1.42215,
+      "min": 3.00408e-17,
+      "max": 2.55194
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.4355,
+      "min": 0.01,
+      "max": 0.79
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0453058,
+      "p50": 0.911627,
+      "p95": 1.58002,
+      "min": 0.000580246,
+      "max": 2.4988
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0755097,
+      "p50": 1.51938,
+      "p95": 2.63336,
+      "min": 0.000967077,
+      "max": 4.16467
+     }
+    },
+    "1.45": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.10739,
+      "p5": 3.81715e-17,
+      "p50": 0.975393,
+      "p95": 1.59295,
+      "min": 3.31025e-17,
+      "max": 2.74219
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.697,
+      "min": 0.01,
+      "max": 0.89
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0453058,
+      "p50": 1.00617,
+      "p95": 1.70849,
+      "min": 0.000580246,
+      "max": 2.54644
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0755097,
+      "p50": 1.67695,
+      "p95": 2.84749,
+      "min": 0.000967077,
+      "max": 4.24407
+     }
+    },
+    "1.50": {
+     "beam_above_sensor_fraction": 1.0,
+     "beam_above_head_top_fraction": 1.0,
+     "center_m": {
+      "n": 1732,
+      "inf_fraction": 0.10739,
+      "p5": 4.12332e-17,
+      "p50": 1.07004,
+      "p95": 1.76121,
+      "min": 3.61641e-17,
+      "max": 2.93245
+     },
+     "corridor_0.3m_m": {
+      "n": 64,
+      "inf_fraction": 0.0,
+      "p5": 0.01,
+      "p50": 0.01,
+      "p95": 0.8595,
+      "min": 0.01,
+      "max": 0.99
+     },
+     "approach_m": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0453058,
+      "p50": 1.08672,
+      "p95": 1.8169,
+      "min": 0.000580246,
+      "max": 2.6497
+     },
+     "approach_time_to_arrival_s": {
+      "n": 2000,
+      "inf_fraction": 0.0,
+      "p5": 0.0755097,
+      "p50": 1.8112,
+      "p95": 3.02816,
+      "min": 0.000967077,
+      "max": 4.41617
+     }
+    }
+   }
+  }
+ },
+ "body_extent_default_standing_m": {
+  "front_m": 0.276904,
+  "back_m": 0.06932,
+  "half_width_m": 0.263477,
+  "top_above_sensor_m": 0.07082
+ },
+ "self_occlusion": {
+  "inverted": {
+   "default_standing": {
+    "visual_mesh_exact": {
+     "blocked_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.02525,
+      "p50": 0.02525,
+      "p95": 0.02525,
+      "min": 0.02525,
+      "max": 0.02525
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "left_shoulder_pitch_link": 0.0107,
+      "right_shoulder_pitch_link": 0.0106,
+      "left_shoulder_roll_link": 0.002,
+      "right_shoulder_roll_link": 0.00195
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 0.874648,
+       "p50": 0.874648,
+       "p95": 0.874648,
+       "min": 0.874648,
+       "max": 0.874648
+      },
+      "left": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 1.40023,
+       "p50": 1.40023,
+       "p95": 1.40023,
+       "min": 1.40023,
+       "max": 1.40023
+      },
+      "back": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 1.03409,
+       "p50": 1.03409,
+       "p95": 1.03409,
+       "min": 1.03409,
+       "max": 1.03409
+      },
+      "right": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 1.40023,
+       "p50": 1.40023,
+       "p95": 1.40023,
+       "min": 1.40023,
+       "max": 1.40023
+      },
+      "min": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 0.874648,
+       "p50": 0.874648,
+       "p95": 0.874648,
+       "min": 0.874648,
+       "max": 0.874648
+      }
+     },
+     "proxies_dropped_for_containing_sensor": []
+    },
+    "isaac_collision_capsules": {
+     "blocked_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0054,
+      "p50": 0.0054,
+      "p95": 0.0054,
+      "min": 0.0054,
+      "max": 0.0054
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "left_shoulder_yaw_link": 0.00275,
+      "right_shoulder_yaw_link": 0.00265
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 0.874648,
+       "p50": 0.874648,
+       "p95": 0.874648,
+       "min": 0.874648,
+       "max": 0.874648
+      },
+      "left": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 1.11732,
+       "p50": 1.11732,
+       "p95": 1.11732,
+       "min": 1.11732,
+       "max": 1.11732
+      },
+      "back": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 1.03409,
+       "p50": 1.03409,
+       "p95": 1.03409,
+       "min": 1.03409,
+       "max": 1.03409
+      },
+      "right": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 1.11732,
+       "p50": 1.11732,
+       "p95": 1.11732,
+       "min": 1.11732,
+       "max": 1.11732
+      },
+      "min": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 0.874648,
+       "p50": 0.874648,
+       "p95": 0.874648,
+       "min": 0.874648,
+       "max": 0.874648
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [
+      "torso_link:urdf-cylinder"
+     ],
+     "iou_vs_visual_mesh_exact": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.213861,
+      "p50": 0.213861,
+      "p95": 0.213861,
+      "min": 0.213861,
+      "max": 0.213861
+     }
+    },
+    "bounding_capsules_boxes": {
+     "blocked_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.09815,
+      "p50": 0.09815,
+      "p95": 0.09815,
+      "min": 0.09815,
+      "max": 0.09815
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "torso_link": 0.077,
+      "left_shoulder_roll_link": 0.00885,
+      "right_shoulder_roll_link": 0.008,
+      "right_shoulder_pitch_link": 0.0022,
+      "left_shoulder_pitch_link": 0.0021
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 0.912241,
+       "p50": 0.912241,
+       "p95": 0.912241,
+       "min": 0.912241,
+       "max": 0.912241
+      },
+      "left": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 1.77435,
+       "p50": 1.77435,
+       "p95": 1.77435,
+       "min": 1.77435,
+       "max": 1.77435
+      },
+      "back": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 1.03409,
+       "p50": 1.03409,
+       "p95": 1.03409,
+       "min": 1.03409,
+       "max": 1.03409
+      },
+      "right": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 1.75786,
+       "p50": 1.75786,
+       "p95": 1.75786,
+       "min": 1.75786,
+       "max": 1.75786
+      },
+      "min": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 0.912241,
+       "p50": 0.912241,
+       "p95": 0.912241,
+       "min": 0.912241,
+       "max": 0.912241
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [],
+     "iou_vs_visual_mesh_exact": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.257259,
+      "p50": 0.257259,
+      "p95": 0.257259,
+      "min": 0.257259,
+      "max": 0.257259
+     }
+    },
+    "sphere_proxies_k16": {
+     "blocked_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.04045,
+      "p50": 0.04045,
+      "p95": 0.04045,
+      "min": 0.04045,
+      "max": 0.04045
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "right_shoulder_pitch_link": 0.0154,
+      "left_shoulder_pitch_link": 0.0141,
+      "left_shoulder_roll_link": 0.00645,
+      "right_shoulder_roll_link": 0.0045
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 0.874648,
+       "p50": 0.874648,
+       "p95": 0.874648,
+       "min": 0.874648,
+       "max": 0.874648
+      },
+      "left": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 1.30758,
+       "p50": 1.30758,
+       "p95": 1.30758,
+       "min": 1.30758,
+       "max": 1.30758
+      },
+      "back": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 1.03409,
+       "p50": 1.03409,
+       "p95": 1.03409,
+       "min": 1.03409,
+       "max": 1.03409
+      },
+      "right": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 1.27819,
+       "p50": 1.27819,
+       "p95": 1.27819,
+       "min": 1.27819,
+       "max": 1.27819
+      },
+      "min": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 0.874648,
+       "p50": 0.874648,
+       "p95": 0.874648,
+       "min": 0.874648,
+       "max": 0.874648
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [],
+     "iou_vs_visual_mesh_exact": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.59466,
+      "p50": 0.59466,
+      "p95": 0.59466,
+      "min": 0.59466,
+      "max": 0.59466
+     }
+    },
+    "n_frames": 1
+   },
+   "gait_executed": {
+    "visual_mesh_exact": {
+     "blocked_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0252,
+      "p50": 0.0254,
+      "p95": 0.0372725,
+      "min": 0.0252,
+      "max": 0.04385
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "left_shoulder_pitch_link": 0.0105031,
+      "right_shoulder_pitch_link": 0.0104135,
+      "right_shoulder_roll_link": 0.00245937,
+      "left_shoulder_roll_link": 0.00241354,
+      "right_shoulder_yaw_link": 0.000229167,
+      "right_hand_palm_link": 0.000222917,
+      "right_elbow_link": 0.000197917,
+      "right_hand_index_0_link": 0.00010625,
+      "right_wrist_pitch_link": 9.58333e-05,
+      "right_wrist_yaw_link": 7.70833e-05,
+      "right_hand_index_1_link": 6.14583e-05,
+      "left_hand_palm_link": 5.83333e-05,
+      "right_wrist_roll_link": 5.625e-05,
+      "left_shoulder_yaw_link": 5e-05,
+      "right_hand_thumb_1_link": 3.125e-05,
+      "right_hand_thumb_2_link": 2.91667e-05,
+      "right_hand_middle_1_link": 1.875e-05,
+      "left_wrist_yaw_link": 1.875e-05,
+      "left_wrist_pitch_link": 1.35417e-05,
+      "right_hand_middle_0_link": 1.25e-05,
+      "left_hand_index_0_link": 7.29167e-06,
+      "left_elbow_link": 7.29167e-06,
+      "left_hand_index_1_link": 5.20833e-06,
+      "left_wrist_roll_link": 3.125e-06,
+      "right_hand_thumb_0_link": 2.08333e-06,
+      "left_hand_middle_1_link": 1.04167e-06
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 0.547463,
+       "p50": 0.785949,
+       "p95": 1.01585,
+       "min": 0.409137,
+       "max": 1.13972
+      },
+      "left": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 1.11825,
+       "p50": 1.35485,
+       "p95": 1.65389,
+       "min": 0.578223,
+       "max": 1.83921
+      },
+      "back": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 0.868583,
+       "p50": 1.111,
+       "p95": 1.50445,
+       "min": 0.765263,
+       "max": 1.67329
+      },
+      "right": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 1.14894,
+       "p50": 1.39519,
+       "p95": 1.67476,
+       "min": 1.08973,
+       "max": 1.74402
+      },
+      "min": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 0.537371,
+       "p50": 0.758207,
+       "p95": 0.879921,
+       "min": 0.402356,
+       "max": 0.916595
+      }
+     },
+     "proxies_dropped_for_containing_sensor": []
+    },
+    "isaac_collision_capsules": {
+     "blocked_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.00545,
+      "p50": 0.00675,
+      "p95": 0.0244375,
+      "min": 0.0046,
+      "max": 0.02875
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "right_shoulder_yaw_link": 0.00405729,
+      "left_shoulder_yaw_link": 0.00376042,
+      "right_hand_palm_link": 0.000572917,
+      "right_elbow_link": 0.000360417,
+      "right_wrist_yaw_link": 0.000309375,
+      "right_hand_index_0_link": 0.000195833,
+      "left_hand_palm_link": 0.000104167,
+      "left_wrist_yaw_link": 7.39583e-05,
+      "left_elbow_link": 5e-05,
+      "right_hand_thumb_1_link": 4.58333e-05,
+      "right_hand_index_1_link": 3.64583e-05,
+      "right_hand_thumb_2_link": 2.1875e-05,
+      "left_hand_index_0_link": 1.35417e-05,
+      "left_hand_index_1_link": 4.16667e-06,
+      "right_hand_middle_1_link": 2.08333e-06,
+      "right_hand_middle_0_link": 2.08333e-06
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 0.562893,
+       "p50": 0.785949,
+       "p95": 1.01585,
+       "min": 0.535939,
+       "max": 1.13972
+      },
+      "left": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 0.851416,
+       "p50": 1.056,
+       "p95": 1.40484,
+       "min": 0.578223,
+       "max": 1.46785
+      },
+      "back": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 0.868583,
+       "p50": 1.111,
+       "p95": 1.50445,
+       "min": 0.765263,
+       "max": 1.67329
+      },
+      "right": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 0.862035,
+       "p50": 1.10458,
+       "p95": 1.37614,
+       "min": 0.757102,
+       "max": 1.64776
+      },
+      "min": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 0.537371,
+       "p50": 0.758014,
+       "p95": 0.879921,
+       "min": 0.402356,
+       "max": 0.916595
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [
+      "torso_link:urdf-cylinder"
+     ],
+     "iou_vs_visual_mesh_exact": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.215714,
+      "p50": 0.265748,
+      "p95": 0.534351,
+      "min": 0.178641,
+      "max": 0.573693
+     }
+    },
+    "bounding_capsules_boxes": {
+     "blocked_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0960025,
+      "p50": 0.098425,
+      "p95": 0.10837,
+      "min": 0.0954,
+      "max": 0.1135
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "torso_link": 0.0770844,
+      "left_shoulder_roll_link": 0.00853854,
+      "right_shoulder_roll_link": 0.00780833,
+      "left_shoulder_pitch_link": 0.00233854,
+      "right_shoulder_pitch_link": 0.00224375,
+      "right_shoulder_yaw_link": 0.000294792,
+      "right_hand_palm_link": 0.000189583,
+      "right_wrist_yaw_link": 9.47917e-05,
+      "right_wrist_roll_link": 8.125e-05,
+      "right_hand_index_0_link": 7.29167e-05,
+      "left_shoulder_yaw_link": 6.66667e-05,
+      "right_wrist_pitch_link": 6.66667e-05,
+      "right_elbow_link": 6.25e-05,
+      "right_hand_index_1_link": 5.3125e-05,
+      "left_hand_palm_link": 4.27083e-05,
+      "right_hand_thumb_2_link": 2.1875e-05,
+      "right_hand_thumb_1_link": 1.66667e-05,
+      "right_hand_middle_1_link": 8.33333e-06,
+      "left_hand_index_1_link": 8.33333e-06,
+      "left_hand_index_0_link": 4.16667e-06,
+      "right_hand_middle_0_link": 2.08333e-06
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 0.592037,
+       "p50": 0.822381,
+       "p95": 1.05981,
+       "min": 0.563743,
+       "max": 1.1885
+      },
+      "left": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 1.27411,
+       "p50": 1.64689,
+       "p95": 2.04169,
+       "min": 1.13421,
+       "max": 2.257
+      },
+      "back": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 0.868583,
+       "p50": 1.111,
+       "p95": 1.50445,
+       "min": 0.765263,
+       "max": 1.67329
+      },
+      "right": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 1.32775,
+       "p50": 1.67071,
+       "p95": 1.9993,
+       "min": 1.27746,
+       "max": 2.12333
+      },
+      "min": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 0.582439,
+       "p50": 0.809829,
+       "p95": 0.925889,
+       "min": 0.457341,
+       "max": 0.96419
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [],
+     "iou_vs_visual_mesh_exact": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.255361,
+      "p50": 0.258844,
+      "p95": 0.340844,
+      "min": 0.254536,
+      "max": 0.386344
+     }
+    },
+    "sphere_proxies_k16": {
+     "blocked_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0398675,
+      "p50": 0.0407,
+      "p95": 0.056075,
+      "min": 0.0397,
+      "max": 0.06265
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "right_shoulder_pitch_link": 0.0151635,
+      "left_shoulder_pitch_link": 0.0139594,
+      "left_shoulder_roll_link": 0.00660937,
+      "right_shoulder_roll_link": 0.00532708,
+      "right_shoulder_yaw_link": 0.000339583,
+      "right_hand_palm_link": 0.000285417,
+      "right_elbow_link": 0.000225,
+      "right_wrist_pitch_link": 0.00016875,
+      "right_hand_index_0_link": 0.00013125,
+      "left_shoulder_yaw_link": 8.85417e-05,
+      "right_hand_index_1_link": 8.64583e-05,
+      "right_wrist_yaw_link": 7.8125e-05,
+      "left_hand_palm_link": 7.60417e-05,
+      "right_wrist_roll_link": 3.75e-05,
+      "right_hand_middle_1_link": 3.4375e-05,
+      "right_hand_thumb_2_link": 3.33333e-05,
+      "right_hand_middle_0_link": 2.29167e-05,
+      "left_wrist_pitch_link": 2.29167e-05,
+      "right_hand_thumb_1_link": 1.45833e-05,
+      "left_hand_index_1_link": 1.25e-05,
+      "left_wrist_yaw_link": 1.14583e-05,
+      "left_hand_index_0_link": 6.25e-06,
+      "left_wrist_roll_link": 3.125e-06
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 0.562893,
+       "p50": 0.785949,
+       "p95": 1.01585,
+       "min": 0.535939,
+       "max": 1.13972
+      },
+      "left": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 1.13623,
+       "p50": 1.34862,
+       "p95": 1.74007,
+       "min": 1.08489,
+       "max": 1.82969
+      },
+      "back": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 0.868583,
+       "p50": 1.111,
+       "p95": 1.50445,
+       "min": 0.765263,
+       "max": 1.67329
+      },
+      "right": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 1.11012,
+       "p50": 1.4245,
+       "p95": 1.84387,
+       "min": 1.08381,
+       "max": 1.91375
+      },
+      "min": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 0.537371,
+       "p50": 0.761619,
+       "p95": 0.879921,
+       "min": 0.415944,
+       "max": 0.916595
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [],
+     "iou_vs_visual_mesh_exact": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.587787,
+      "p50": 0.600367,
+      "p95": 0.658705,
+      "min": 0.582324,
+      "max": 0.694511
+     }
+    },
+    "n_frames": 48
+   },
+   "crouch_executed": {
+    "visual_mesh_exact": {
+     "blocked_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.0425325,
+      "p50": 0.08165,
+      "p95": 0.105285,
+      "min": 0.0377,
+      "max": 0.1056
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "left_shoulder_roll_link": 0.0118187,
+      "right_shoulder_roll_link": 0.0104604,
+      "right_shoulder_pitch_link": 0.00664375,
+      "left_shoulder_yaw_link": 0.00607917,
+      "left_shoulder_pitch_link": 0.00598958,
+      "right_shoulder_yaw_link": 0.00507292,
+      "left_elbow_link": 0.00445417,
+      "right_elbow_link": 0.00415,
+      "left_hand_palm_link": 0.00247083,
+      "right_hand_palm_link": 0.00213125,
+      "right_wrist_pitch_link": 0.00201458,
+      "left_wrist_pitch_link": 0.00199583,
+      "left_hip_yaw_link": 0.00162083,
+      "left_wrist_yaw_link": 0.001525,
+      "right_wrist_yaw_link": 0.00145625,
+      "right_hip_yaw_link": 0.00109583,
+      "left_wrist_roll_link": 0.000908333,
+      "right_wrist_roll_link": 0.000902083,
+      "right_hand_thumb_1_link": 0.00068125,
+      "left_hand_thumb_1_link": 0.000666667,
+      "left_hand_index_0_link": 0.000627083,
+      "left_hand_thumb_2_link": 0.000497917,
+      "right_hand_index_0_link": 0.000489583,
+      "right_hand_thumb_2_link": 0.000472917,
+      "left_hand_index_1_link": 0.000295833,
+      "left_hand_middle_0_link": 0.000264583,
+      "right_hand_index_1_link": 0.00021875,
+      "left_knee_link": 0.00020625,
+      "left_hand_middle_1_link": 0.000172917,
+      "right_knee_link": 0.000147917,
+      "right_hand_middle_0_link": 0.00011875,
+      "right_ankle_roll_link": 0.000110417,
+      "right_hand_middle_1_link": 8.54167e-05,
+      "left_ankle_roll_link": 8.125e-05,
+      "right_hand_thumb_0_link": 4.375e-05,
+      "left_hand_thumb_0_link": 2.70833e-05
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00106851,
+       "p50": 0.136266,
+       "p95": 0.465592,
+       "min": 0.000768509,
+       "max": 0.583796
+      },
+      "left": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00240351,
+       "p50": 0.460428,
+       "p95": 1.48013,
+       "min": 0.000768509,
+       "max": 2.67416
+      },
+      "back": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00855629,
+       "p50": 1.74838,
+       "p95": 3.48316,
+       "min": 0.000768509,
+       "max": 3.72579
+      },
+      "right": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00205944,
+       "p50": 0.612035,
+       "p95": 1.32007,
+       "min": 0.000768509,
+       "max": 1.35262
+      },
+      "min": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00106851,
+       "p50": 0.129775,
+       "p95": 0.419427,
+       "min": 0.000768509,
+       "max": 0.553452
+      }
+     },
+     "proxies_dropped_for_containing_sensor": []
+    },
+    "isaac_collision_capsules": {
+     "blocked_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.0322575,
+      "p50": 0.0744,
+      "p95": 0.105567,
+      "min": 0.03085,
+      "max": 0.1062
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "left_shoulder_yaw_link": 0.0139458,
+      "right_shoulder_yaw_link": 0.0127292,
+      "left_elbow_link": 0.00745208,
+      "right_elbow_link": 0.007125,
+      "left_hand_palm_link": 0.00496667,
+      "left_wrist_yaw_link": 0.00445417,
+      "right_hand_palm_link": 0.00436042,
+      "right_wrist_yaw_link": 0.004225,
+      "left_knee_link": 0.00173333,
+      "right_knee_link": 0.00140625,
+      "left_hand_index_0_link": 0.00105417,
+      "left_hand_thumb_1_link": 0.000954167,
+      "right_hand_thumb_1_link": 0.000908333,
+      "right_hand_index_0_link": 0.000791667,
+      "left_hip_roll_link": 0.00046875,
+      "right_hand_thumb_2_link": 0.000435417,
+      "left_hand_thumb_2_link": 0.000408333,
+      "left_hand_index_1_link": 0.00020625,
+      "left_hand_middle_1_link": 0.000127083,
+      "right_hand_index_1_link": 0.000120833,
+      "right_ankle_roll_link": 8.54167e-05,
+      "left_hand_middle_0_link": 5.41667e-05,
+      "right_hip_roll_link": 5e-05,
+      "left_ankle_roll_link": 4.375e-05,
+      "right_hand_middle_1_link": 1.66667e-05
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00106851,
+       "p50": 0.136266,
+       "p95": 0.465592,
+       "min": 0.000768509,
+       "max": 0.577212
+      },
+      "left": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00536333,
+       "p50": 0.56979,
+       "p95": 1.31193,
+       "min": 0.000768509,
+       "max": 2.01297
+      },
+      "back": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.0138241,
+       "p50": 1.74838,
+       "p95": 3.48316,
+       "min": 0.000768509,
+       "max": 3.72579
+      },
+      "right": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00205944,
+       "p50": 0.612035,
+       "p95": 1.11784,
+       "min": 0.000768509,
+       "max": 1.20699
+      },
+      "min": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00106851,
+       "p50": 0.129775,
+       "p95": 0.419427,
+       "min": 0.000768509,
+       "max": 0.553452
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [
+      "torso_link:urdf-cylinder"
+     ],
+     "iou_vs_visual_mesh_exact": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.584378,
+      "p50": 0.657201,
+      "p95": 0.677805,
+      "min": 0.566524,
+      "max": 0.678756
+     }
+    },
+    "bounding_capsules_boxes": {
+     "blocked_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.106542,
+      "p50": 0.15295,
+      "p95": 0.193145,
+      "min": 0.10365,
+      "max": 0.19365
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "torso_link": 0.0770542,
+      "left_shoulder_roll_link": 0.0116917,
+      "right_shoulder_roll_link": 0.0104521,
+      "left_shoulder_yaw_link": 0.00710417,
+      "right_shoulder_yaw_link": 0.00706875,
+      "left_elbow_link": 0.00390417,
+      "right_elbow_link": 0.00386042,
+      "left_hand_palm_link": 0.00342708,
+      "left_wrist_roll_link": 0.00285417,
+      "right_hand_palm_link": 0.00262292,
+      "right_wrist_roll_link": 0.00249375,
+      "right_wrist_yaw_link": 0.00196042,
+      "left_wrist_yaw_link": 0.00186667,
+      "left_wrist_pitch_link": 0.00178958,
+      "right_wrist_pitch_link": 0.00171667,
+      "right_shoulder_pitch_link": 0.00171458,
+      "left_shoulder_pitch_link": 0.0017125,
+      "right_hip_yaw_link": 0.0012625,
+      "right_hand_thumb_2_link": 0.000689583,
+      "left_hand_thumb_1_link": 0.000679167,
+      "right_hand_thumb_1_link": 0.000595833,
+      "left_hip_yaw_link": 0.000585417,
+      "left_hand_thumb_2_link": 0.000570833,
+      "left_hand_index_0_link": 0.000516667,
+      "right_hand_index_0_link": 0.000452083,
+      "left_hand_index_1_link": 0.000445833,
+      "left_hand_middle_1_link": 0.000241667,
+      "right_hand_index_1_link": 0.000225,
+      "left_hand_middle_0_link": 0.000139583,
+      "right_ankle_roll_link": 8.54167e-05,
+      "right_hand_middle_0_link": 7.29167e-05,
+      "right_hand_middle_1_link": 6.66667e-05,
+      "right_knee_link": 4.79167e-05,
+      "left_ankle_roll_link": 1.04167e-05,
+      "left_knee_link": 2.08333e-06
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00379394,
+       "p50": 0.167218,
+       "p95": 0.612128,
+       "min": 0.000768509,
+       "max": 0.673951
+      },
+      "left": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.0117587,
+       "p50": 1.0255,
+       "p95": 2.27885,
+       "min": 0.000768509,
+       "max": 3.63345
+      },
+      "back": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.125248,
+       "p50": 1.74838,
+       "p95": 3.48316,
+       "min": 0.000768509,
+       "max": 3.72579
+      },
+      "right": {
+       "n": 24,
+       "inf_fraction": 0.0416667,
+       "p5": 0.0570263,
+       "p50": 1.38903,
+       "p95": 3.08256,
+       "min": 0.000768509,
+       "max": 3.59741
+      },
+      "min": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00379394,
+       "p50": 0.166388,
+       "p95": 0.50148,
+       "min": 0.000768509,
+       "max": 0.586001
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [],
+     "iou_vs_visual_mesh_exact": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.398601,
+      "p50": 0.527679,
+      "p95": 0.55372,
+      "min": 0.363724,
+      "max": 0.557823
+     }
+    },
+    "sphere_proxies_k16": {
+     "blocked_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.061775,
+      "p50": 0.110825,
+      "p95": 0.14224,
+      "min": 0.05635,
+      "max": 0.14235
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "left_shoulder_roll_link": 0.0159271,
+      "right_shoulder_roll_link": 0.0138687,
+      "right_shoulder_pitch_link": 0.0121271,
+      "left_shoulder_pitch_link": 0.0107271,
+      "left_shoulder_yaw_link": 0.00740208,
+      "right_shoulder_yaw_link": 0.00698958,
+      "left_elbow_link": 0.00571667,
+      "right_elbow_link": 0.00520625,
+      "left_hand_palm_link": 0.00339583,
+      "right_wrist_pitch_link": 0.00336875,
+      "left_wrist_pitch_link": 0.00333958,
+      "right_hand_palm_link": 0.00272083,
+      "left_hip_yaw_link": 0.00213958,
+      "right_hip_yaw_link": 0.00193542,
+      "right_wrist_yaw_link": 0.00128958,
+      "left_wrist_yaw_link": 0.00117292,
+      "left_hand_thumb_2_link": 0.0008375,
+      "left_wrist_roll_link": 0.000754167,
+      "right_hand_thumb_2_link": 0.000695833,
+      "right_hand_index_0_link": 0.000639583,
+      "right_wrist_roll_link": 0.000610417,
+      "left_hand_index_0_link": 0.000504167,
+      "left_hand_index_1_link": 0.000485417,
+      "right_hand_thumb_1_link": 0.000458333,
+      "right_hand_index_1_link": 0.0003625,
+      "left_knee_link": 0.000333333,
+      "left_hand_thumb_1_link": 0.000329167,
+      "right_knee_link": 0.00026875,
+      "left_hand_middle_1_link": 0.00024375,
+      "left_hand_middle_0_link": 0.00018125,
+      "right_hand_middle_0_link": 0.000145833,
+      "right_ankle_roll_link": 0.000133333,
+      "right_hand_middle_1_link": 0.000116667,
+      "left_ankle_roll_link": 8.125e-05,
+      "left_hand_thumb_0_link": 6.25e-06
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00106851,
+       "p50": 0.136266,
+       "p95": 0.465592,
+       "min": 0.000768509,
+       "max": 0.610608
+      },
+      "left": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00924159,
+       "p50": 0.7462,
+       "p95": 1.82145,
+       "min": 0.000768509,
+       "max": 2.83662
+      },
+      "back": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.0186708,
+       "p50": 1.74838,
+       "p95": 3.48316,
+       "min": 0.000768509,
+       "max": 3.72579
+      },
+      "right": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00205944,
+       "p50": 0.709096,
+       "p95": 2.61385,
+       "min": 0.000768509,
+       "max": 3.016
+      },
+      "min": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.00106851,
+       "p50": 0.129775,
+       "p95": 0.435517,
+       "min": 0.000768509,
+       "max": 0.553452
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [],
+     "iou_vs_visual_mesh_exact": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.67958,
+      "p50": 0.704006,
+      "p95": 0.742479,
+      "min": 0.661661,
+      "max": 0.744783
+     }
+    },
+    "n_frames": 24
+   }
+  },
+  "upright": {
+   "default_standing": {
+    "visual_mesh_exact": {
+     "blocked_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {},
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 7.43301,
+       "p50": 7.43301,
+       "p95": 7.43301,
+       "min": 7.43301,
+       "max": 7.43301
+      },
+      "left": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 9.91331,
+       "p50": 9.91331,
+       "p95": 9.91331,
+       "min": 9.91331,
+       "max": 9.91331
+      },
+      "back": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 14.8051,
+       "p50": 14.8051,
+       "p95": 14.8051,
+       "min": 14.8051,
+       "max": 14.8051
+      },
+      "right": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 9.91331,
+       "p50": 9.91331,
+       "p95": 9.91331,
+       "min": 9.91331,
+       "max": 9.91331
+      },
+      "min": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 7.43301,
+       "p50": 7.43301,
+       "p95": 7.43301,
+       "min": 7.43301,
+       "max": 7.43301
+      }
+     },
+     "proxies_dropped_for_containing_sensor": []
+    },
+    "isaac_collision_capsules": {
+     "blocked_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {},
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 7.43301,
+       "p50": 7.43301,
+       "p95": 7.43301,
+       "min": 7.43301,
+       "max": 7.43301
+      },
+      "left": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 9.91331,
+       "p50": 9.91331,
+       "p95": 9.91331,
+       "min": 9.91331,
+       "max": 9.91331
+      },
+      "back": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 14.8051,
+       "p50": 14.8051,
+       "p95": 14.8051,
+       "min": 14.8051,
+       "max": 14.8051
+      },
+      "right": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 9.91331,
+       "p50": 9.91331,
+       "p95": 9.91331,
+       "min": 9.91331,
+       "max": 9.91331
+      },
+      "min": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 7.43301,
+       "p50": 7.43301,
+       "p95": 7.43301,
+       "min": 7.43301,
+       "max": 7.43301
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [
+      "torso_link:urdf-cylinder"
+     ],
+     "iou_vs_visual_mesh_exact": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 1.0,
+      "p50": 1.0,
+      "p95": 1.0,
+      "min": 1.0,
+      "max": 1.0
+     }
+    },
+    "bounding_capsules_boxes": {
+     "blocked_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {},
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 7.43301,
+       "p50": 7.43301,
+       "p95": 7.43301,
+       "min": 7.43301,
+       "max": 7.43301
+      },
+      "left": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 9.91331,
+       "p50": 9.91331,
+       "p95": 9.91331,
+       "min": 9.91331,
+       "max": 9.91331
+      },
+      "back": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 14.8051,
+       "p50": 14.8051,
+       "p95": 14.8051,
+       "min": 14.8051,
+       "max": 14.8051
+      },
+      "right": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 9.91331,
+       "p50": 9.91331,
+       "p95": 9.91331,
+       "min": 9.91331,
+       "max": 9.91331
+      },
+      "min": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 7.43301,
+       "p50": 7.43301,
+       "p95": 7.43301,
+       "min": 7.43301,
+       "max": 7.43301
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [],
+     "iou_vs_visual_mesh_exact": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 1.0,
+      "p50": 1.0,
+      "p95": 1.0,
+      "min": 1.0,
+      "max": 1.0
+     }
+    },
+    "sphere_proxies_k16": {
+     "blocked_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {},
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 7.43301,
+       "p50": 7.43301,
+       "p95": 7.43301,
+       "min": 7.43301,
+       "max": 7.43301
+      },
+      "left": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 9.91331,
+       "p50": 9.91331,
+       "p95": 9.91331,
+       "min": 9.91331,
+       "max": 9.91331
+      },
+      "back": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 14.8051,
+       "p50": 14.8051,
+       "p95": 14.8051,
+       "min": 14.8051,
+       "max": 14.8051
+      },
+      "right": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 9.91331,
+       "p50": 9.91331,
+       "p95": 9.91331,
+       "min": 9.91331,
+       "max": 9.91331
+      },
+      "min": {
+       "n": 1,
+       "inf_fraction": 0.0,
+       "p5": 7.43301,
+       "p50": 7.43301,
+       "p95": 7.43301,
+       "min": 7.43301,
+       "max": 7.43301
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [],
+     "iou_vs_visual_mesh_exact": {
+      "n": 1,
+      "inf_fraction": 0.0,
+      "p5": 1.0,
+      "p50": 1.0,
+      "p95": 1.0,
+      "min": 1.0,
+      "max": 1.0
+     }
+    },
+    "n_frames": 1
+   },
+   "gait_executed": {
+    "visual_mesh_exact": {
+     "blocked_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {},
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 3.45679,
+       "p50": 5.57542,
+       "p95": 14.5512,
+       "min": 2.50853,
+       "max": 29.8943
+      },
+      "left": {
+       "n": 48,
+       "inf_fraction": 0.0208333,
+       "p5": 4.45151,
+       "p50": 9.14305,
+       "p95": 24.8707,
+       "min": 3.20338,
+       "max": 91.1667
+      },
+      "back": {
+       "n": 48,
+       "inf_fraction": 0.291667,
+       "p5": 7.3763,
+       "p50": 20.9417,
+       "p95": 225.249,
+       "min": 5.69672,
+       "max": 278.491
+      },
+      "right": {
+       "n": 48,
+       "inf_fraction": 0.0625,
+       "p5": 5.78484,
+       "p50": 10.3747,
+       "p95": 27.8016,
+       "min": 3.47929,
+       "max": 81.0732
+      },
+      "min": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 3.02656,
+       "p50": 5.15825,
+       "p95": 8.28957,
+       "min": 2.17039,
+       "max": 9.62783
+      }
+     },
+     "proxies_dropped_for_containing_sensor": []
+    },
+    "isaac_collision_capsules": {
+     "blocked_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {},
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 3.45679,
+       "p50": 5.57542,
+       "p95": 14.5512,
+       "min": 2.50853,
+       "max": 29.8943
+      },
+      "left": {
+       "n": 48,
+       "inf_fraction": 0.0208333,
+       "p5": 4.45151,
+       "p50": 9.14305,
+       "p95": 24.8707,
+       "min": 3.20338,
+       "max": 91.1667
+      },
+      "back": {
+       "n": 48,
+       "inf_fraction": 0.291667,
+       "p5": 7.3763,
+       "p50": 20.9417,
+       "p95": 225.249,
+       "min": 5.69672,
+       "max": 278.491
+      },
+      "right": {
+       "n": 48,
+       "inf_fraction": 0.0625,
+       "p5": 5.78484,
+       "p50": 10.3747,
+       "p95": 27.8016,
+       "min": 3.47929,
+       "max": 81.0732
+      },
+      "min": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 3.02656,
+       "p50": 5.15825,
+       "p95": 8.28957,
+       "min": 2.17039,
+       "max": 9.62783
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [
+      "torso_link:urdf-cylinder"
+     ],
+     "iou_vs_visual_mesh_exact": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 1.0,
+      "p50": 1.0,
+      "p95": 1.0,
+      "min": 1.0,
+      "max": 1.0
+     }
+    },
+    "bounding_capsules_boxes": {
+     "blocked_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {},
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 3.45679,
+       "p50": 5.57542,
+       "p95": 14.5512,
+       "min": 2.50853,
+       "max": 29.8943
+      },
+      "left": {
+       "n": 48,
+       "inf_fraction": 0.0208333,
+       "p5": 4.45151,
+       "p50": 9.14305,
+       "p95": 24.8707,
+       "min": 3.20338,
+       "max": 91.1667
+      },
+      "back": {
+       "n": 48,
+       "inf_fraction": 0.291667,
+       "p5": 7.3763,
+       "p50": 20.9417,
+       "p95": 225.249,
+       "min": 5.69672,
+       "max": 278.491
+      },
+      "right": {
+       "n": 48,
+       "inf_fraction": 0.0625,
+       "p5": 5.78484,
+       "p50": 10.3747,
+       "p95": 27.8016,
+       "min": 3.47929,
+       "max": 81.0732
+      },
+      "min": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 3.02656,
+       "p50": 5.15825,
+       "p95": 8.28957,
+       "min": 2.17039,
+       "max": 9.62783
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [],
+     "iou_vs_visual_mesh_exact": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 1.0,
+      "p50": 1.0,
+      "p95": 1.0,
+      "min": 1.0,
+      "max": 1.0
+     }
+    },
+    "sphere_proxies_k16": {
+     "blocked_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {},
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 3.45679,
+       "p50": 5.57542,
+       "p95": 14.5512,
+       "min": 2.50853,
+       "max": 29.8943
+      },
+      "left": {
+       "n": 48,
+       "inf_fraction": 0.0208333,
+       "p5": 4.45151,
+       "p50": 9.14305,
+       "p95": 24.8707,
+       "min": 3.20338,
+       "max": 91.1667
+      },
+      "back": {
+       "n": 48,
+       "inf_fraction": 0.291667,
+       "p5": 7.3763,
+       "p50": 20.9417,
+       "p95": 225.249,
+       "min": 5.69672,
+       "max": 278.491
+      },
+      "right": {
+       "n": 48,
+       "inf_fraction": 0.0625,
+       "p5": 5.78484,
+       "p50": 10.3747,
+       "p95": 27.8016,
+       "min": 3.47929,
+       "max": 81.0732
+      },
+      "min": {
+       "n": 48,
+       "inf_fraction": 0.0,
+       "p5": 3.02656,
+       "p50": 5.15825,
+       "p95": 8.28957,
+       "min": 2.17039,
+       "max": 9.62783
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [],
+     "iou_vs_visual_mesh_exact": {
+      "n": 48,
+      "inf_fraction": 0.0,
+      "p5": 1.0,
+      "p50": 1.0,
+      "p95": 1.0,
+      "min": 1.0,
+      "max": 1.0
+     }
+    },
+    "n_frames": 48
+   },
+   "crouch_executed": {
+    "visual_mesh_exact": {
+     "blocked_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0011475,
+      "min": 0.0,
+      "max": 0.00185
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "left_hand_index_0_link": 5.20833e-05,
+      "left_hand_index_1_link": 2.70833e-05,
+      "left_hand_middle_1_link": 2.29167e-05,
+      "left_hand_middle_0_link": 2.08333e-05,
+      "left_hand_palm_link": 1.04167e-05
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.754604,
+       "p50": 1.33331,
+       "p95": 1.96071,
+       "min": 0.673483,
+       "max": 2.64145
+      },
+      "left": {
+       "n": 24,
+       "inf_fraction": 0.208333,
+       "p5": 0.930852,
+       "p50": 4.5067,
+       "p95": 36.7275,
+       "min": 0.496692,
+       "max": 204.442
+      },
+      "back": {
+       "n": 24,
+       "inf_fraction": 1.0
+      },
+      "right": {
+       "n": 24,
+       "inf_fraction": 0.333333,
+       "p5": 1.36589,
+       "p50": 4.47751,
+       "p95": 273.816,
+       "min": 1.34244,
+       "max": 1056.5
+      },
+      "min": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.723984,
+       "p50": 1.20292,
+       "p95": 1.94654,
+       "min": 0.422588,
+       "max": 2.57155
+      }
+     },
+     "proxies_dropped_for_containing_sensor": []
+    },
+    "isaac_collision_capsules": {
+     "blocked_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.001785,
+      "min": 0.0,
+      "max": 0.0031
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "left_hand_index_0_link": 9.79167e-05,
+      "left_hand_palm_link": 7.29167e-05,
+      "left_hand_index_1_link": 2.29167e-05,
+      "left_hand_middle_1_link": 1.45833e-05,
+      "left_hand_middle_0_link": 8.33333e-06
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.754604,
+       "p50": 1.33331,
+       "p95": 1.96071,
+       "min": 0.673483,
+       "max": 2.64145
+      },
+      "left": {
+       "n": 24,
+       "inf_fraction": 0.208333,
+       "p5": 0.930852,
+       "p50": 4.5067,
+       "p95": 36.7275,
+       "min": 0.496692,
+       "max": 204.442
+      },
+      "back": {
+       "n": 24,
+       "inf_fraction": 1.0
+      },
+      "right": {
+       "n": 24,
+       "inf_fraction": 0.333333,
+       "p5": 1.36589,
+       "p50": 4.47751,
+       "p95": 273.816,
+       "min": 1.34244,
+       "max": 1056.5
+      },
+      "min": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.723984,
+       "p50": 1.21693,
+       "p95": 1.94654,
+       "min": 0.424474,
+       "max": 2.57155
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [
+      "torso_link:urdf-cylinder"
+     ],
+     "iou_vs_visual_mesh_exact": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.696429,
+      "p50": 1.0,
+      "p95": 1.0,
+      "min": 0.596774,
+      "max": 1.0
+     }
+    },
+    "bounding_capsules_boxes": {
+     "blocked_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.001445,
+      "min": 0.0,
+      "max": 0.0024
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "left_hand_index_1_link": 4.58333e-05,
+      "left_hand_index_0_link": 4.375e-05,
+      "left_hand_palm_link": 3.54167e-05,
+      "left_hand_middle_1_link": 3.33333e-05,
+      "left_hand_middle_0_link": 1.25e-05
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.754604,
+       "p50": 1.33331,
+       "p95": 1.96071,
+       "min": 0.673483,
+       "max": 2.64145
+      },
+      "left": {
+       "n": 24,
+       "inf_fraction": 0.208333,
+       "p5": 0.930852,
+       "p50": 4.5067,
+       "p95": 36.7275,
+       "min": 0.496692,
+       "max": 204.442
+      },
+      "back": {
+       "n": 24,
+       "inf_fraction": 1.0
+      },
+      "right": {
+       "n": 24,
+       "inf_fraction": 0.333333,
+       "p5": 1.36589,
+       "p50": 4.47751,
+       "p95": 273.816,
+       "min": 1.34244,
+       "max": 1056.5
+      },
+      "min": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.723984,
+       "p50": 1.20292,
+       "p95": 1.94654,
+       "min": 0.422588,
+       "max": 2.57155
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [],
+     "iou_vs_visual_mesh_exact": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.825,
+      "p50": 1.0,
+      "p95": 1.0,
+      "min": 0.770833,
+      "max": 1.0
+     }
+    },
+    "sphere_proxies_k16": {
+     "blocked_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.00136,
+      "min": 0.0,
+      "max": 0.0023
+     },
+     "blocked_within_blind_zone_fraction": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.0,
+      "p50": 0.0,
+      "p95": 0.0,
+      "min": 0.0,
+      "max": 0.0
+     },
+     "mean_share_by_link": {
+      "left_hand_index_1_link": 5.41667e-05,
+      "left_hand_middle_1_link": 3.54167e-05,
+      "left_hand_index_0_link": 3.54167e-05,
+      "left_hand_palm_link": 2.91667e-05,
+      "left_hand_middle_0_link": 8.33333e-06
+     },
+     "blind_floor_radius_m": {
+      "front": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.754604,
+       "p50": 1.33331,
+       "p95": 1.96071,
+       "min": 0.673483,
+       "max": 2.64145
+      },
+      "left": {
+       "n": 24,
+       "inf_fraction": 0.208333,
+       "p5": 0.930852,
+       "p50": 4.5067,
+       "p95": 36.7275,
+       "min": 0.496692,
+       "max": 204.442
+      },
+      "back": {
+       "n": 24,
+       "inf_fraction": 1.0
+      },
+      "right": {
+       "n": 24,
+       "inf_fraction": 0.333333,
+       "p5": 1.36589,
+       "p50": 4.47751,
+       "p95": 273.816,
+       "min": 1.34244,
+       "max": 1056.5
+      },
+      "min": {
+       "n": 24,
+       "inf_fraction": 0.0,
+       "p5": 0.723984,
+       "p50": 1.20292,
+       "p95": 1.94654,
+       "min": 0.418824,
+       "max": 2.57155
+      }
+     },
+     "proxies_dropped_for_containing_sensor": [],
+     "iou_vs_visual_mesh_exact": {
+      "n": 24,
+      "inf_fraction": 0.0,
+      "p5": 0.819697,
+      "p50": 1.0,
+      "p95": 1.0,
+      "min": 0.729167,
+      "max": 1.0
+     }
+    },
+    "n_frames": 24
+   }
+  }
+ },
+ "self_occlusion_setup": {
+  "rays_per_frame": 20000,
+  "isaac_collision_capsules": "main.urdf collision set; cylinders -> capsules (segment = cylinder length, assumed); mesh collisions -> bounding capsules",
+  "bounding_capsules_boxes": "one PCA bounding capsule or box per visual mesh (smaller volume wins); torso 4 boxes, pelvis contour 2 boxes",
+  "sphere_proxies_k16": "16 k-means spheres per moving visual mesh (radius = 90th percentile of member-vertex distances); torso/logo/head are rigid with the sensor and left to a static mask",
+  "visual_mesh_exact": "MuJoCo mj_multiRay on the main.urdf visual meshes (reference for IoU; matches brute-force triangle intersection to 1e-7 m)",
+  "excluded": "head_link shell and the head collision disk: the sensor sits inside them; the real head's aperture is not described by these files",
+  "n_proxies": {
+   "isaac_collision_capsules": 45,
+   "bounding_capsules_boxes": 52,
+   "sphere_proxies_k16": 736
+  }
+ },
+ "figures": [
+  "fig_side_view.png",
+  "fig_window_vs_pitch.png",
+  "fig_overhead_last_seen.png",
+  "fig_self_occlusion_map.png"
+ ]
+}

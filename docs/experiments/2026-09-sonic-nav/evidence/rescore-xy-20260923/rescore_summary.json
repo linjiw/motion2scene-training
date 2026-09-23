@@ -1,0 +1,776 @@
+{
+  "provenance": {
+    "generated_utc": "2026-09-23T17:16:19Z",
+    "script_sha256": "505cadfeeb39b2101d2358654ff679d8bd14f17b940e5fbbc54415b5cd0538b2",
+    "git_head": "141a230",
+    "packet": "/home/robotixx/motion2scene-training/workspace/nav-8192",
+    "command": [
+      "scripts/navigation_distill/rescore_xy.py",
+      "--packet",
+      "/home/robotixx/motion2scene-training/workspace/nav-8192",
+      "--output",
+      "/home/robotixx/motion2scene-training/workspace/phase0/rescore"
+    ],
+    "unique_episodes": 497,
+    "episode_paths": 535,
+    "feasible_panel": "eval/dag-approach-c2-91260",
+    "feasible_task_ids": [
+      "00120-stop-clear",
+      "00120-stop-corridor",
+      "00265-stop-clear",
+      "00265-stop-corridor",
+      "00413-stop-clear",
+      "00677-stop-clear",
+      "00677-stop-corridor",
+      "00707-stop-clear",
+      "00707-stop-corridor",
+      "00711-stop-clear",
+      "00711-stop-corridor",
+      "00770-stop-clear",
+      "00770-stop-corridor",
+      "00801-stop-clear",
+      "00801-stop-corridor",
+      "00908-stop-clear",
+      "00908-stop-corridor",
+      "00976-stop-clear",
+      "00976-stop-corridor"
+    ],
+    "speed_channel": {
+      "rows": 32457,
+      "median_recorded_mps": 0.10005025565624237,
+      "median_fd_planar_mps": 0.09897869893437394,
+      "median_abs_diff_mps": 0.00854732641334155,
+      "p90_abs_diff_mps": 0.02878243871027461,
+      "correlation": 0.9952229054446068,
+      "rows_below_threshold_recorded": 0.49986135502356965,
+      "rows_below_threshold_fd": 0.504205564285054,
+      "row_threshold_agreement": 0.9573281572542133
+    }
+  },
+  "panels": [
+    {
+      "panel": "collect/motor-demo-91260",
+      "aliases": [],
+      "episodes": 24,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 19,
+      "legacy_repro_match": 24,
+      "xy": 19,
+      "xy_fd": 16,
+      "xy_whole_trace": 19,
+      "xy_outcomes": {
+        "success": 19,
+        "reached_not_held": 1,
+        "never_reached": 1,
+        "contact_or_fall": 3
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 19,
+      "legacy_3d_feasible": 19,
+      "xy_feasible": 19,
+      "suffix_episodes": 0,
+      "legacy_suffix": 0,
+      "legacy_suffix_repro_match": 0,
+      "xy_suffix": 0,
+      "median_final_xy_err_m": 0.15933234904972743,
+      "median_min_xy_err_m": 0.10240646236731883,
+      "median_path_ratio": 1.1846221614502466,
+      "median_first_xy_reach_s": 5.04,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "MotorRecoveryCollectionCallback"
+      ],
+      "kind": "collection"
+    },
+    {
+      "panel": "collect/motor-demo-91261",
+      "aliases": [],
+      "episodes": 3,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 3,
+      "legacy_repro_match": 3,
+      "xy": 3,
+      "xy_fd": 2,
+      "xy_whole_trace": 3,
+      "xy_outcomes": {
+        "success": 3,
+        "reached_not_held": 0,
+        "never_reached": 0,
+        "contact_or_fall": 0
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 3,
+      "legacy_3d_feasible": 3,
+      "xy_feasible": 3,
+      "suffix_episodes": 0,
+      "legacy_suffix": 0,
+      "legacy_suffix_repro_match": 0,
+      "xy_suffix": 0,
+      "median_final_xy_err_m": 0.059535371069762165,
+      "median_min_xy_err_m": 0.03346837802620015,
+      "median_path_ratio": 1.2795348427917765,
+      "median_first_xy_reach_s": 2.32,
+      "seeds": [
+        "91261"
+      ],
+      "callback": [
+        "MotorRecoveryCollectionCallback"
+      ],
+      "kind": "collection"
+    },
+    {
+      "panel": "collect/recovery-v1-91260",
+      "aliases": [],
+      "episodes": 76,
+      "traces_missing": 0,
+      "infra_failures_rerun": 1,
+      "legacy_3d": 43,
+      "legacy_repro_match": 76,
+      "xy": 43,
+      "xy_fd": 32,
+      "xy_whole_trace": 43,
+      "xy_outcomes": {
+        "success": 43,
+        "reached_not_held": 7,
+        "never_reached": 25,
+        "contact_or_fall": 1
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 76,
+      "legacy_3d_feasible": 43,
+      "xy_feasible": 43,
+      "suffix_episodes": 76,
+      "legacy_suffix": 43,
+      "legacy_suffix_repro_match": 76,
+      "xy_suffix": 43,
+      "median_final_xy_err_m": 0.18024267946173178,
+      "median_min_xy_err_m": 0.15185392355266322,
+      "median_path_ratio": 1.206383976162344,
+      "median_first_xy_reach_s": 3.59,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "MotorRecoveryCollectionCallback"
+      ],
+      "kind": "collection"
+    },
+    {
+      "panel": "collect/reentry-v1-91260",
+      "aliases": [],
+      "episodes": 33,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 6,
+      "legacy_repro_match": 33,
+      "xy": 6,
+      "xy_fd": 5,
+      "xy_whole_trace": 6,
+      "xy_outcomes": {
+        "success": 6,
+        "reached_not_held": 12,
+        "never_reached": 14,
+        "contact_or_fall": 1
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 33,
+      "legacy_3d_feasible": 6,
+      "xy_feasible": 6,
+      "suffix_episodes": 33,
+      "legacy_suffix": 6,
+      "legacy_suffix_repro_match": 33,
+      "xy_suffix": 6,
+      "median_final_xy_err_m": 0.45124627952988733,
+      "median_min_xy_err_m": 0.23091558838757237,
+      "median_path_ratio": 1.2297295941150976,
+      "median_first_xy_reach_s": 5.890000000000001,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "ReentryProbeCallback"
+      ],
+      "kind": "collection"
+    },
+    {
+      "panel": "collect/teacher-91260",
+      "aliases": [],
+      "episodes": 24,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 19,
+      "legacy_repro_match": 24,
+      "xy": 19,
+      "xy_fd": 15,
+      "xy_whole_trace": 19,
+      "xy_outcomes": {
+        "success": 19,
+        "reached_not_held": 1,
+        "never_reached": 1,
+        "contact_or_fall": 3
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 19,
+      "legacy_3d_feasible": 19,
+      "xy_feasible": 19,
+      "suffix_episodes": 0,
+      "legacy_suffix": 0,
+      "legacy_suffix_repro_match": 0,
+      "xy_suffix": 0,
+      "median_final_xy_err_m": 0.13911182933503768,
+      "median_min_xy_err_m": 0.12218608260698519,
+      "median_path_ratio": 1.1845862075647968,
+      "median_first_xy_reach_s": 5.14,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "StoppingTeacherCallback"
+      ],
+      "kind": "evaluation"
+    },
+    {
+      "panel": "dagger/dag-approach/c1-recovery",
+      "aliases": [
+        "dagger/dag-uniform/c1-recovery"
+      ],
+      "episodes": 38,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 32,
+      "legacy_repro_match": 38,
+      "xy": 32,
+      "xy_fd": 24,
+      "xy_whole_trace": 32,
+      "xy_outcomes": {
+        "success": 32,
+        "reached_not_held": 1,
+        "never_reached": 4,
+        "contact_or_fall": 1
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 38,
+      "legacy_3d_feasible": 32,
+      "xy_feasible": 32,
+      "suffix_episodes": 38,
+      "legacy_suffix": 32,
+      "legacy_suffix_repro_match": 38,
+      "xy_suffix": 32,
+      "median_final_xy_err_m": 0.14649016263440615,
+      "median_min_xy_err_m": 0.0978457967425251,
+      "median_path_ratio": 1.2113939159151041,
+      "median_first_xy_reach_s": 5.04,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "MotorRecoveryCollectionCallback"
+      ],
+      "kind": "collection"
+    },
+    {
+      "panel": "dagger/dag-approach/c2-recovery",
+      "aliases": [],
+      "episodes": 38,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 34,
+      "legacy_repro_match": 38,
+      "xy": 34,
+      "xy_fd": 28,
+      "xy_whole_trace": 34,
+      "xy_outcomes": {
+        "success": 34,
+        "reached_not_held": 2,
+        "never_reached": 2,
+        "contact_or_fall": 0
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 38,
+      "legacy_3d_feasible": 34,
+      "xy_feasible": 34,
+      "suffix_episodes": 38,
+      "legacy_suffix": 34,
+      "legacy_suffix_repro_match": 38,
+      "xy_suffix": 34,
+      "median_final_xy_err_m": 0.15723900677177308,
+      "median_min_xy_err_m": 0.09156317965012373,
+      "median_path_ratio": 1.219079046877877,
+      "median_first_xy_reach_s": 4.92,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "MotorRecoveryCollectionCallback"
+      ],
+      "kind": "collection"
+    },
+    {
+      "panel": "dagger/dag-uniform/c2-recovery",
+      "aliases": [],
+      "episodes": 38,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 34,
+      "legacy_repro_match": 38,
+      "xy": 34,
+      "xy_fd": 28,
+      "xy_whole_trace": 34,
+      "xy_outcomes": {
+        "success": 34,
+        "reached_not_held": 1,
+        "never_reached": 3,
+        "contact_or_fall": 0
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 38,
+      "legacy_3d_feasible": 34,
+      "xy_feasible": 34,
+      "suffix_episodes": 38,
+      "legacy_suffix": 34,
+      "legacy_suffix_repro_match": 38,
+      "xy_suffix": 34,
+      "median_final_xy_err_m": 0.1682290105051008,
+      "median_min_xy_err_m": 0.11488104879984176,
+      "median_path_ratio": 1.2121871625155825,
+      "median_first_xy_reach_s": 5.04,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "MotorRecoveryCollectionCallback"
+      ],
+      "kind": "collection"
+    },
+    {
+      "panel": "eval/dag-approach-c1-91260",
+      "aliases": [],
+      "episodes": 19,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 4,
+      "legacy_repro_match": 19,
+      "xy": 4,
+      "xy_fd": 3,
+      "xy_whole_trace": 4,
+      "xy_outcomes": {
+        "success": 4,
+        "reached_not_held": 6,
+        "never_reached": 8,
+        "contact_or_fall": 1
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 19,
+      "legacy_3d_feasible": 4,
+      "xy_feasible": 4,
+      "suffix_episodes": 0,
+      "legacy_suffix": 0,
+      "legacy_suffix_repro_match": 0,
+      "xy_suffix": 0,
+      "median_final_xy_err_m": 0.5027157819993693,
+      "median_min_xy_err_m": 0.23166346529540796,
+      "median_path_ratio": 1.2802357838332905,
+      "median_first_xy_reach_s": 3.04,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "NavigationMotorCallback"
+      ],
+      "kind": "evaluation"
+    },
+    {
+      "panel": "eval/dag-approach-c2-91260",
+      "aliases": [],
+      "episodes": 19,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 7,
+      "legacy_repro_match": 19,
+      "xy": 7,
+      "xy_fd": 3,
+      "xy_whole_trace": 7,
+      "xy_outcomes": {
+        "success": 7,
+        "reached_not_held": 2,
+        "never_reached": 8,
+        "contact_or_fall": 2
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 19,
+      "legacy_3d_feasible": 7,
+      "xy_feasible": 7,
+      "suffix_episodes": 0,
+      "legacy_suffix": 0,
+      "legacy_suffix_repro_match": 0,
+      "xy_suffix": 0,
+      "median_final_xy_err_m": 0.4590829980121609,
+      "median_min_xy_err_m": 0.32963885070179827,
+      "median_path_ratio": 1.1516022006232516,
+      "median_first_xy_reach_s": 4.7,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "NavigationMotorCallback"
+      ],
+      "kind": "evaluation"
+    },
+    {
+      "panel": "eval/dag-uniform-c1-91260",
+      "aliases": [],
+      "episodes": 19,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 3,
+      "legacy_repro_match": 19,
+      "xy": 3,
+      "xy_fd": 1,
+      "xy_whole_trace": 3,
+      "xy_outcomes": {
+        "success": 3,
+        "reached_not_held": 6,
+        "never_reached": 7,
+        "contact_or_fall": 3
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 19,
+      "legacy_3d_feasible": 3,
+      "xy_feasible": 3,
+      "suffix_episodes": 0,
+      "legacy_suffix": 0,
+      "legacy_suffix_repro_match": 0,
+      "xy_suffix": 0,
+      "median_final_xy_err_m": 0.4974870062120721,
+      "median_min_xy_err_m": 0.24396186179127458,
+      "median_path_ratio": 1.244269045891072,
+      "median_first_xy_reach_s": 3.4699999999999998,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "NavigationMotorCallback"
+      ],
+      "kind": "evaluation"
+    },
+    {
+      "panel": "eval/dag-uniform-c2-91260",
+      "aliases": [],
+      "episodes": 19,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 2,
+      "legacy_repro_match": 19,
+      "xy": 2,
+      "xy_fd": 1,
+      "xy_whole_trace": 2,
+      "xy_outcomes": {
+        "success": 2,
+        "reached_not_held": 9,
+        "never_reached": 7,
+        "contact_or_fall": 1
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 19,
+      "legacy_3d_feasible": 2,
+      "xy_feasible": 2,
+      "suffix_episodes": 0,
+      "legacy_suffix": 0,
+      "legacy_suffix_repro_match": 0,
+      "xy_suffix": 0,
+      "median_final_xy_err_m": 0.5594724403014161,
+      "median_min_xy_err_m": 0.21308853852215165,
+      "median_path_ratio": 1.2196213835296768,
+      "median_first_xy_reach_s": 4.06,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "NavigationMotorCallback"
+      ],
+      "kind": "evaluation"
+    },
+    {
+      "panel": "eval/full-s1_3200-91260",
+      "aliases": [],
+      "episodes": 24,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 19,
+      "legacy_repro_match": 24,
+      "xy": 19,
+      "xy_fd": 16,
+      "xy_whole_trace": 19,
+      "xy_outcomes": {
+        "success": 19,
+        "reached_not_held": 1,
+        "never_reached": 1,
+        "contact_or_fall": 3
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 19,
+      "legacy_3d_feasible": 19,
+      "xy_feasible": 19,
+      "suffix_episodes": 0,
+      "legacy_suffix": 0,
+      "legacy_suffix_repro_match": 0,
+      "xy_suffix": 0,
+      "median_final_xy_err_m": 0.15933234904972743,
+      "median_min_xy_err_m": 0.10240646236731883,
+      "median_path_ratio": 1.1846221614502466,
+      "median_first_xy_reach_s": 5.04,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "FullMotorTaskCallback"
+      ],
+      "kind": "evaluation"
+    },
+    {
+      "panel": "eval/nav-v0-91260",
+      "aliases": [],
+      "episodes": 24,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 0,
+      "legacy_repro_match": 24,
+      "xy": 0,
+      "xy_fd": 0,
+      "xy_whole_trace": 0,
+      "xy_outcomes": {
+        "success": 0,
+        "reached_not_held": 5,
+        "never_reached": 17,
+        "contact_or_fall": 2
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 19,
+      "legacy_3d_feasible": 0,
+      "xy_feasible": 0,
+      "suffix_episodes": 0,
+      "legacy_suffix": 0,
+      "legacy_suffix_repro_match": 0,
+      "xy_suffix": 0,
+      "median_final_xy_err_m": 1.0136583813932551,
+      "median_min_xy_err_m": 0.5206157948867015,
+      "median_path_ratio": 1.0840321773348065,
+      "median_first_xy_reach_s": 4.17,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "NavigationMotorCallback"
+      ],
+      "kind": "evaluation"
+    },
+    {
+      "panel": "eval/nav-v1-91260",
+      "aliases": [],
+      "episodes": 24,
+      "traces_missing": 0,
+      "infra_failures_rerun": 1,
+      "legacy_3d": 1,
+      "legacy_repro_match": 24,
+      "xy": 1,
+      "xy_fd": 0,
+      "xy_whole_trace": 1,
+      "xy_outcomes": {
+        "success": 1,
+        "reached_not_held": 7,
+        "never_reached": 12,
+        "contact_or_fall": 4
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 19,
+      "legacy_3d_feasible": 1,
+      "xy_feasible": 1,
+      "suffix_episodes": 0,
+      "legacy_suffix": 0,
+      "legacy_suffix_repro_match": 0,
+      "xy_suffix": 0,
+      "median_final_xy_err_m": 0.9497062937594684,
+      "median_min_xy_err_m": 0.4207488610271981,
+      "median_path_ratio": 1.296225207078959,
+      "median_first_xy_reach_s": 3.13,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "NavigationMotorCallback"
+      ],
+      "kind": "evaluation"
+    },
+    {
+      "panel": "eval/nav-v2-recovery-91260",
+      "aliases": [],
+      "episodes": 24,
+      "traces_missing": 0,
+      "infra_failures_rerun": 10,
+      "legacy_3d": 4,
+      "legacy_repro_match": 24,
+      "xy": 4,
+      "xy_fd": 3,
+      "xy_whole_trace": 4,
+      "xy_outcomes": {
+        "success": 4,
+        "reached_not_held": 5,
+        "never_reached": 11,
+        "contact_or_fall": 4
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 19,
+      "legacy_3d_feasible": 4,
+      "xy_feasible": 4,
+      "suffix_episodes": 0,
+      "legacy_suffix": 0,
+      "legacy_suffix_repro_match": 0,
+      "xy_suffix": 0,
+      "median_final_xy_err_m": 0.8627328008580584,
+      "median_min_xy_err_m": 0.37723118576955145,
+      "median_path_ratio": 1.138197088491221,
+      "median_first_xy_reach_s": 3.46,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "NavigationMotorCallback"
+      ],
+      "kind": "evaluation"
+    },
+    {
+      "panel": "eval/nav-v2-recovery-91262",
+      "aliases": [],
+      "episodes": 24,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 1,
+      "legacy_repro_match": 24,
+      "xy": 1,
+      "xy_fd": 1,
+      "xy_whole_trace": 1,
+      "xy_outcomes": {
+        "success": 1,
+        "reached_not_held": 2,
+        "never_reached": 18,
+        "contact_or_fall": 3
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 19,
+      "legacy_3d_feasible": 1,
+      "xy_feasible": 1,
+      "suffix_episodes": 0,
+      "legacy_suffix": 0,
+      "legacy_suffix_repro_match": 0,
+      "xy_suffix": 0,
+      "median_final_xy_err_m": 1.0121654339490367,
+      "median_min_xy_err_m": 0.9414939092465815,
+      "median_path_ratio": 0.9174422006794357,
+      "median_first_xy_reach_s": 2.62,
+      "seeds": [
+        "91262"
+      ],
+      "callback": [
+        "NavigationMotorCallback"
+      ],
+      "kind": "evaluation"
+    },
+    {
+      "panel": "eval/nav-v2-replay-91260",
+      "aliases": [],
+      "episodes": 24,
+      "traces_missing": 0,
+      "infra_failures_rerun": 1,
+      "legacy_3d": 2,
+      "legacy_repro_match": 24,
+      "xy": 2,
+      "xy_fd": 2,
+      "xy_whole_trace": 2,
+      "xy_outcomes": {
+        "success": 2,
+        "reached_not_held": 6,
+        "never_reached": 14,
+        "contact_or_fall": 2
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 19,
+      "legacy_3d_feasible": 2,
+      "xy_feasible": 2,
+      "suffix_episodes": 0,
+      "legacy_suffix": 0,
+      "legacy_suffix_repro_match": 0,
+      "xy_suffix": 0,
+      "median_final_xy_err_m": 0.9184212372056799,
+      "median_min_xy_err_m": 0.40373942642785576,
+      "median_path_ratio": 1.3119568898383434,
+      "median_first_xy_reach_s": 3.08,
+      "seeds": [
+        "91260"
+      ],
+      "callback": [
+        "NavigationMotorCallback"
+      ],
+      "kind": "evaluation"
+    },
+    {
+      "panel": "eval/nav-v2-replay-91262",
+      "aliases": [],
+      "episodes": 3,
+      "traces_missing": 0,
+      "infra_failures_rerun": 0,
+      "legacy_3d": 0,
+      "legacy_repro_match": 3,
+      "xy": 0,
+      "xy_fd": 0,
+      "xy_whole_trace": 0,
+      "xy_outcomes": {
+        "success": 0,
+        "reached_not_held": 1,
+        "never_reached": 2,
+        "contact_or_fall": 0
+      },
+      "gained": 0,
+      "lost": 0,
+      "feasible_episodes": 3,
+      "legacy_3d_feasible": 0,
+      "xy_feasible": 0,
+      "suffix_episodes": 0,
+      "legacy_suffix": 0,
+      "legacy_suffix_repro_match": 0,
+      "xy_suffix": 0,
+      "median_final_xy_err_m": 0.9148234498512114,
+      "median_min_xy_err_m": 0.27572842750680043,
+      "median_path_ratio": 1.3318494950575144,
+      "median_first_xy_reach_s": 4.64,
+      "seeds": [
+        "91262"
+      ],
+      "callback": [
+        "NavigationMotorCallback"
+      ],
+      "kind": "evaluation"
+    }
+  ]
+}
