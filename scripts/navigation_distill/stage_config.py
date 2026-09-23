@@ -3,6 +3,11 @@
 Modes: teacher (StoppingTeacherCallback), full (FullMotorTaskCallback with a motor
 checkpoint), nav (NavigationMotorCallback with a navigation checkpoint), recovery
 (MotorRecoveryCollectionCallback: switch 0 = motor demonstration, >0 = learner prefix).
+
+nav mode also takes the Phase 0.4 observation ablations (navigation_ablation.py):
+--goal-rotation-deg rotates the observed goal about the start, --zero-obstacles shows an
+empty map. Both are written to the stage config only when given, so default configs are
+unchanged; scoring and physics keep the original task.
 """
 
 import argparse
@@ -11,6 +16,7 @@ import os
 from pathlib import Path
 
 from gear_sonic.research.hindsight_training.runtime import sha
+from gear_sonic.research.scene_distillation.navigation_ablation import ObservationAblation
 
 CALLBACKS = dict(
     teacher="gear_sonic.research.scene_distillation.stopping_teacher.StoppingTeacherCallback",
@@ -31,8 +37,30 @@ def main():
     p.add_argument("--takeover-tick", type=int, default=0)
     p.add_argument("--actor-profile", default="nav_goal_map_localization_v2")
     p.add_argument("--collect-to-deadline", action="store_true")
+    p.add_argument(
+        "--goal-rotation-deg",
+        type=float,
+        help="nav only: rotate the observed goal about the start (world yaw, degrees); "
+        "success is still scored against the original goal",
+    )
+    p.add_argument(
+        "--zero-obstacles",
+        action="store_true",
+        help="nav only: observe every primitive slot as absent; the walls stay in the scene",
+    )
     p.add_argument("--config", type=Path, required=True)
     a = p.parse_args()
+    ablation = {}
+    if a.goal_rotation_deg is not None:
+        ablation["goal_rotation_deg"] = a.goal_rotation_deg
+    if a.zero_obstacles:
+        ablation["zero_obstacles"] = True
+    if ablation and a.mode != "nav":
+        p.error("--goal-rotation-deg/--zero-obstacles apply to nav mode only")
+    try:
+        ObservationAblation.from_config(ablation)
+    except ValueError as error:
+        p.error(str(error))
     packet = Path(os.environ["NAV_PACKET"])
     ids = json.loads((packet / "ids.json").read_text())
     task = json.loads(a.task.read_text())
@@ -53,6 +81,7 @@ def main():
         c["actor_profile"] = "motion_full_current_v2"
     if a.mode == "nav":
         c["actor_profile"] = a.actor_profile
+        c.update(ablation)
     if a.mode == "reentry":
         motor = a.motor or a.student
         c.update(actor_profile=a.actor_profile, takeover_tick=a.takeover_tick,

@@ -20,6 +20,8 @@ class NavigationTakeoverCallback(NavigationMotorCallback):
     These probes do not certify arbitrary recovery or supply deployment inputs.
     """
 
+    supports_observation_ablation = False
+
     def _begin_task(self, env, teacher, task):
         super()._begin_task(env, teacher, task)
         if sha(self.config["motor_checkpoint"]) != self.config["motor_sha256"]:
@@ -94,6 +96,8 @@ class OriginalTeacherContinuationCallback(NavigationMotorCallback):
     Emits no motor-recovery receipt or training shard. These actions cannot be
     silently used as executed frozen-motor targets by the recovery loader.
     """
+
+    supports_observation_ablation = False
 
     def _begin_task(self, env, teacher, task):
         super()._begin_task(env, teacher, task)

@@ -17,6 +17,8 @@ class NavigationQueryCallback(NavigationMotorCallback):
     advice. Supported admission requires separate same-state continuation evidence.
     """
 
+    supports_observation_ablation = False
+
     def _begin_task(self, env, teacher, task):
         super()._begin_task(env, teacher, task)
         if task["split"] != "train":
