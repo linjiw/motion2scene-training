@@ -32,7 +32,21 @@ Both arms start from `nav-v2-recovery` (4/19 feasible tasks). One cycle = switch
 | cycle 1, uniform | 3 | 9 | 6 | 3 | 0.99 m |
 | cycle 1, approach-weighted | 4 | 10 | 6 | 1 | 0.96 m |
 
-Completion does not move in one cycle; which tasks pass does (approach: gains 00677-corridor, 00908 both; loses 00677-clear, 00707-clear, 00976-corridor, three of them with holds of 32–46 ticks). Mean final distance improves in both arms, and the approach arm keeps contacts at one versus three for uniform. Cycle 2 of both arms was running when this was written and will be appended.
+Completion does not move in one cycle; which tasks pass does (approach: gains 00677-corridor, 00908 both; loses 00677-clear, 00707-clear, 00976-corridor, three of them with holds of 32–46 ticks). Mean final distance improves in both arms, and the approach arm keeps contacts at one versus three for uniform.
+
+## Short-cycle DAgger, cycle 2 (appended September 23)
+
+Each arm now collects from its own cycle-1 checkpoint: same 12%/25% switches on the 19 feasible tasks, 34/38 supported in both arms. Each arm refits for 3,000 updates from cycle 1 on all supported recoveries so far (fresh = this cycle at 50%), with the same sampling rule it used before.
+
+| Arm (19 feasible tasks, seed 91260) | Start | Cycle 1 | **Cycle 2** | Reached goal (c2) | Holds ≥ 30 ticks (c2) | Contact (c2) | Mean final distance (c2) |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| uniform | 4 | 3 | **2** | 11 | 4 | 1 | 0.98 m |
+| approach-weighted | 4 | 4 | **7** | 9 | 7 | 2 | 1.03 m |
+
+Approach cycle 2 passes 00413-clear, 00677-clear, 00707-clear, 00707-corridor, 00770-corridor, 00908-clear and 00908-corridor. Two of these were near misses in cycle 1: 00677-clear (32-tick hold) and 00707-clear (46). Two are new: 00413-clear and 00770-corridor never reached the goal in cycle 1. Its contacts are 00801-corridor and 00711-corridor. Uniform cycle 2 passes only 00707-clear and 00801-corridor. Five of its attempts reach the goal and hold 15–49 ticks, but none completes the 50-tick hold. Uniform DAgger reaches the goal more often and holds less. That fits the braking hypothesis: without approach weighting, extra recoveries teach arrival but not stopping.
+
+This is the first arm on the local stack to exceed the 4/24 → 4/19 plateau. It still rests on **one evaluation seed and one training seed**. The earlier 4/24 → 1/24 confirmation drop shows that seed noise here can be as large as this effect. Before the arms are compared, both cycle-2 checkpoints need seeds 91262 and 91264.
+
 
 ## Reading
 
@@ -44,7 +58,7 @@ Completion does not move in one cycle; which tasks pass does (approach: gains 00
 
 1. Version a rewind-only re-entry continuation (`reference_phase_switch=True`, `rewind_frames`, deadline check) in the recovery receipt and loader, then collect re-entry recoveries at 50–75% switches; these cover the late approach/braking states the early switches never reach.
 2. A lateral re-entry rule (nearest frame on the path *plus* a bounded lateral shift of the reference, or a walk-back continuation) for the "beside the path" states.
-3. Two more evaluation seeds per arm before comparing arms; one seed cannot separate 3 from 4.
+3. Two more evaluation seeds per arm before comparing arms. One seed cannot separate 3 from 4, and 2 versus 7 needs confirmation too (see cycle 2).
 
 ## Evidence
 

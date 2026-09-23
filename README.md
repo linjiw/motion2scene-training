@@ -2,7 +2,7 @@
 
 A separate, self-contained research checkout for SONIC teacher training, BFM student distillation, Motion2Scene scene/obstacle generation, and dataset visualization. It contains a working-tree snapshot of both research codebases, actual datasets and selected checkpoints in Git LFS, plus portable commands that create new local configurations.
 
-**Research status:** the full-command motor reaches 88/89 training and 10/20 development completions. The latest navigation continuation fit completes 4/8 tasks on its first evaluation seed and 2/8 on confirmation, versus its parent's 4/8 and 1/8. Contact failures, seed sensitivity and a motion-sampling confound remain. Expanded motor/navigation evaluation is running. Read the [latest research update and log](docs/RESEARCH_UPDATE_20260913.md), [methods and architecture package](docs/sonic/motion2scene/methods_v2_20260913/README.md), and [full research report](docs/DISTILLATION_RESEARCH.md).
+**Research status (September 23, 2026):** the full-command motor completes 86–88/89 training and ~10/20 development motions. On the local stack, the best goal/map navigation student is approach-weighted short-cycle DAgger (cycle 2), which completes 7/19 feasible stopping tasks on one evaluation seed. Confirmation seeds are pending. The known-map student has no perception yet. See the [status and roadmap](docs/ROADMAP_20260923.md) for the layer-by-layer state, bottlenecks and ordered plan, and the [DAgger report](docs/sonic/motion2scene/NAV_8192_DAGGER_REENTRY_20260914.md) for the latest numbers.
 
 Read the [readiness audit](docs/READINESS_AUDIT.md) before setting up native training.
 
@@ -104,6 +104,7 @@ See [dataset coverage](docs/DATASETS.md), [workflow map](docs/WORKFLOWS.md), and
 
 | Document | Purpose |
 |---|---|
+| [Status and roadmap](docs/ROADMAP_20260923.md) | Current state per layer, bottlenecks, ordered plan |
 | [Setup](docs/SETUP.md) | Environments, data extraction, readiness and troubleshooting |
 | [Readiness audit](docs/READINESS_AUDIT.md) | Executed checks and remaining native integration gaps |
 | [Distillation research](docs/DISTILLATION_RESEARCH.md) | Current evidence, related work, extensible student framework and navigation-context roadmap |
