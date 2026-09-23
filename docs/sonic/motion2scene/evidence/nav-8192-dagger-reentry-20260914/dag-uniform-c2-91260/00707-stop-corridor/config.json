@@ -1,0 +1,12 @@
+{
+  "teacher_checkpoint": "/home/robotixx/motion2scene-training/workspace/distill-8192/teacher/model_step_000500.pt",
+  "teacher_sha256": "26ca1ed70c2287c1acb6243820649db4b8513a5d9b8b16abc115f890d87b6bff",
+  "task_path": "/home/robotixx/motion2scene-training/workspace/nav-8192/tasks/00707/corridor.json",
+  "output": "/home/robotixx/motion2scene-training/workspace/nav-8192/eval/dag-uniform-c2-91260/00707-stop-corridor/task",
+  "max_steps": 300,
+  "teacher_mode": false,
+  "command_profile": "context",
+  "student_checkpoint": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-uniform/c2-fit/step-003000.pt",
+  "student_sha256": "3af09f466ada1e192c2b19af544c2e1a417e4c0a6a57c9a8aeb26795fb5be138",
+  "actor_profile": "nav_goal_map_localization_v2"
+}

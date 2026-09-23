@@ -1,0 +1,1511 @@
+{
+  "schema": "motor_navigation_recovery_manifest_v1",
+  "parents": [
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00120-stop-clear/task/recovery.json",
+      "sha256": "12f434eb6dc3035f0a6b69ec77b4b38ced65effddde00c3c8c2a33a4084c1a04",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00120-stop-clear/task/trace.npz",
+        "sha256": "43136452c43d12ad911b56ffd1aa3744ceebd7614ee30a6ceb8220463bc1db52"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00120-stop-corridor/task/recovery.json",
+      "sha256": "7a0880dee41ce05b7cc6884a119646f21018b194d95f1e87edd96e0414796b49",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00120-stop-corridor/task/trace.npz",
+        "sha256": "43344805791affeb048acb9627103b89a9b1145989feefcbf743c40c9c22a2bd"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00265-stop-clear/task/recovery.json",
+      "sha256": "015c568f8e0a0cfbd8782a028e63802b5bd1a4ffd0956a369ff3ee5e6e84b5ed",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00265-stop-clear/task/trace.npz",
+        "sha256": "99b00216837558af54423fc096c80a9c977bc132692eec92ba6f618c436740a5"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00265-stop-corridor/task/recovery.json",
+      "sha256": "a8b7a24627deb8a15f7181e542681e41e62f2851d094f2d6593a52645b8f9e1e",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00265-stop-corridor/task/trace.npz",
+        "sha256": "6cffdc59200fba9b643b2166356570e50fd9ecf28f2ef027cd8a75600fdc200f"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00413-stop-clear/task/recovery.json",
+      "sha256": "7b714350cdfe937b820859d68905b3657fcda9dfa7b4b4f8939db9ca1440347e",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00413-stop-clear/task/trace.npz",
+        "sha256": "c24b4f8e4e560c88aced69d5a38e051ef395fb88a975357b25385779aa5f2bc8"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00677-stop-clear/task/recovery.json",
+      "sha256": "f533dec6de2fdfe8c347e28d323bb2b1c1fc9ca51770a0678bf0b3d5ee12a130",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00677-stop-clear/task/trace.npz",
+        "sha256": "f28e05b76bdf5c274b22c10dfe708a5237e74e4bf65c4ca434a599280019ea84"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00677-stop-corridor/task/recovery.json",
+      "sha256": "febf983569ee91223ce8fd6a0eb9b55a28de52075035776ec53ea436260f8872",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00677-stop-corridor/task/trace.npz",
+        "sha256": "c62ef75232676505a594d2384b71e9bf170dd0f7c32cd23f8d96a5ef25aab20d"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00707-stop-clear/task/recovery.json",
+      "sha256": "1a3e3b47cc14eaf98a072dfd0dc076216ae84dcff40fcf79d6abdb57b12279b5",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00707-stop-clear/task/trace.npz",
+        "sha256": "b5347ff1339e8b70dc29bdd01a2c307dab1c6004b550dd7e828d38b579fc8297"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00707-stop-corridor/task/recovery.json",
+      "sha256": "175df38ad67f9410d13630724643db9210b03cbcd00e78bf733797cbccc11690",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00707-stop-corridor/task/trace.npz",
+        "sha256": "b9b58c6618f9eb724a7636c82b946f35cd3423bf0b47db63822e8fe7f57d2a6e"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00711-stop-clear/task/recovery.json",
+      "sha256": "f8dd82927370e8c312783c255f3d8896d550536a0639eb52cb0dcf2ed704a8c2",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00711-stop-clear/task/trace.npz",
+        "sha256": "d522960911ff9c27867f757dfa60611e1dd6c63c3ad5ae7d0f6f51f2caeba7b7"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00711-stop-corridor/task/recovery.json",
+      "sha256": "cc5d0de9efd0b061141ff5be14d9e548bb05cd3b2f119f56f3d1e8a57ab0c9b1",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00711-stop-corridor/task/trace.npz",
+        "sha256": "d5133e20fc9e8aed5e5fc3ec5df896447fe3bb8bda7104f2f2aa6287a3f82242"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00770-stop-clear/task/recovery.json",
+      "sha256": "d6313f9ee885ab74b2aaed5177b4b8a21d094c14e867d929e76be8c84ecde26a",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00770-stop-clear/task/trace.npz",
+        "sha256": "756baf230a8dde2dbc330fbfcdd94b393126918e513e193da2a14989ef084c8e"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00770-stop-corridor/task/recovery.json",
+      "sha256": "64aa42976cf9dbee2b81b2ce61f7eb86c0acd2fd259c8e4c37bda6de2b06d6a4",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00770-stop-corridor/task/trace.npz",
+        "sha256": "c5b2b04b294343e1c243362299d1723738c3bd77f8296c5f9b6de7a59e175339"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00801-stop-clear/task/recovery.json",
+      "sha256": "7840c746151ffd18ffbecaf648ebe8152ce8cba95a5b528d5c391dba9443f1ae",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00801-stop-clear/task/trace.npz",
+        "sha256": "b6c2ad5710bb4d9cacccfe86eefc32d9fabe359e932d65fbf3465bc0c0121256"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00801-stop-corridor/task/recovery.json",
+      "sha256": "8911510415105821b812bf9d40f9bf6e96e0306ed2636c27ee1c7bdbe00f192d",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00801-stop-corridor/task/trace.npz",
+        "sha256": "d6c12dbd87a8b00afbb29a7e9624b2e9e5897743c79fdf2054b510ded1b1740f"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00908-stop-clear/task/recovery.json",
+      "sha256": "8d1821b7b29dec6e2325ef2700f63376ba27bf3dd77f08f05f01226741f5bd4b",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00908-stop-clear/task/trace.npz",
+        "sha256": "bf58d145acb79cade09ec39f7b096f26f0eba110cdcf294bacf13f93478807a1"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00908-stop-corridor/task/recovery.json",
+      "sha256": "0853f4820a0298bb32efe2634221fc504c23356c25ecf258d1c3a0ff059b7395",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00908-stop-corridor/task/trace.npz",
+        "sha256": "56e8db8cda51050384f6cd746047537c859abc26c688761a33c43fec43ca47eb"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00976-stop-clear/task/recovery.json",
+      "sha256": "fafcc34200d6395394c99fc30fcccff2ba0be89ddc1e62b5efbd90e7dbb94236",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00976-stop-clear/task/trace.npz",
+        "sha256": "ac8fb9b06c308de7bf27f0185bf09777365d9b93c2cc3fc0fc308855c263791c"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00976-stop-corridor/task/recovery.json",
+      "sha256": "feaf5c7ac2f5e2dafa7d4aefdd3053fb572a0c0fed4f52cd2c5d1e1b9a534906",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00976-stop-corridor/task/trace.npz",
+        "sha256": "b6c47bb22a538538792acdc2d3c1b9f703f0ca4ff474b9c576e87964a77c3dd6"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-clear-t154/task/recovery.json",
+      "sha256": "427c6b932e7f9ccd38d99e5912a87af4979c257c9052ae952605b9238ef787bd",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-clear-t154/task/trace.npz",
+        "sha256": "c4cbb2e858e0da89595dfdb271a18a5da35396457fb4e080f161ecf84b8a5d35"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-clear-t77/task/recovery.json",
+      "sha256": "7a8a474e0c6a23bea279c1844fbcd279cf88ff4c91598d60a99f3dda9b3d40dd",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-clear-t77/task/trace.npz",
+        "sha256": "316d5096abfb9cfe44bf60361ebd68655cefdcb72a14ab902ba9b879557fbd13"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-corridor-t154/task/recovery.json",
+      "sha256": "606f4afd69cae5ec795251adbd5b93813f53db7b4ad5a5e5a2f90b4d61cefcdd",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-corridor-t154/task/trace.npz",
+        "sha256": "e57b154472f323686e729fcf1bd70d156676dd08edd49dbe00072a28e9892253"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-corridor-t77/task/recovery.json",
+      "sha256": "50c2f907c331e39876ce45c24733141f1f638daee5a828cdaabcb9f834d79e81",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-corridor-t77/task/trace.npz",
+        "sha256": "d5cf40a5b99c2efccee7d8f70fc630f9d113d5f7dcf1de680798587059e0149a"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-clear-t59/task/recovery.json",
+      "sha256": "96d02197dbd8c27dd6b2200a230aa4df0d8057093d23f1efa73e997fb6ed4555",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-clear-t59/task/trace.npz",
+        "sha256": "b3c66ac20ed39943ab3a7c35a4ca1cb550523e9ff1cde7ee6720206934c40127"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-corridor-t59/task/recovery.json",
+      "sha256": "ddd0615f607f90a9f098011cc678804984b919635fb916a0fd505bf6d0c978f5",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-corridor-t59/task/trace.npz",
+        "sha256": "8429251538492967ee897f214aa71b6b3f4615d1f62b213d03e5e394a3fc77ac"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00413-stop-clear-t148/task/recovery.json",
+      "sha256": "67a2811973993ae634104f1fa0bebfcfbb21c7286aeec9e4ca7b5baaab72a3be",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00413-stop-clear-t148/task/trace.npz",
+        "sha256": "fa063ffcf4e7a0314b66b8c7e9e1c9b558171156646be41191fc19ae04cb7197"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00413-stop-clear-t74/task/recovery.json",
+      "sha256": "ea85be55627814206e714dbce0fc41b6654770ae70a2a7ec1b82cfbbf50f6624",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00413-stop-clear-t74/task/trace.npz",
+        "sha256": "7af5d2618c0d8fc09b6cf0f3d2cbef97a4d73fb890c16afa37efe65cabc31f01"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-clear-t139/task/recovery.json",
+      "sha256": "a156611de326ec99e5217432f9ad32afffd6f5a123c17863d1b8397843caa759",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-clear-t139/task/trace.npz",
+        "sha256": "58133ad096c969da57fbe44aa2d85975a31892d78d931fd9cf8fb81771b582e3"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-clear-t41/task/recovery.json",
+      "sha256": "48089985dd7cd65d0822103287f6f87bc518034c6501ae7cabc79b5bf81d3485",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-clear-t41/task/trace.npz",
+        "sha256": "51b73bd7e67aacdfa1b9c2dc81bcd758a6c046cb6b0b04fcdb70e146ad13705f"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-clear-t83/task/recovery.json",
+      "sha256": "f5eb5c58fd9347863bf702d25973233f59583c1589ae4378436a25b1cf849f7f",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-clear-t83/task/trace.npz",
+        "sha256": "24e7d1c9a1bb104b314bf2b54bb583f3f61593f09daeb370bf153b7d826b83ac"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-corridor-t40/task/recovery.json",
+      "sha256": "bf12b0c32383b0e884b07f8a81bfbc4793a2166c7d29951d0c07a0c66f9ba5b6",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-corridor-t40/task/trace.npz",
+        "sha256": "8b846b4c60967359c0fc29d9a20f5686ffc73cc108fa1b42134ac6c68659cba3"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-corridor-t81/task/recovery.json",
+      "sha256": "ce2a2f53213b6e3018e76c12bb3e3020590e61e377893ba646a82d6e05ae9c1e",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-corridor-t81/task/trace.npz",
+        "sha256": "5a3b056cef34303716c4d1cc26561dcfb63d53b4e98308d1c2efd64b9912d812"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-clear-t110/task/recovery.json",
+      "sha256": "f7788a16a5147c5bed4ceec017fdf684e35f579134515100a9e97793056c8384",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-clear-t110/task/trace.npz",
+        "sha256": "a1470420744041d0100df4ae84546422401df58ecd195150e8e4a8432fbb178a"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-clear-t165/task/recovery.json",
+      "sha256": "02c67c7d85fdc0a84660ad2606e245cc7901912c70d8a5abf1f4c3f310d46372",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-clear-t165/task/trace.npz",
+        "sha256": "0e448c7204aac7702021b5dd5cb47d477771be24fe1ee6efa729a692fa5fb56b"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-clear-t33/task/recovery.json",
+      "sha256": "2c1a74b43fb6fdfff3f6c086893e2f1c9a1c8d411a04789b146d290214120c76",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-clear-t33/task/trace.npz",
+        "sha256": "7cc96e47ee165634842212613971b30b1f5d87d19afda4951df6c3d941fcf0a3"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-clear-t66/task/recovery.json",
+      "sha256": "0cd7c1b4f73ac3540f7d85415b34accef9fe85b3a4ab061b2960ca24b9fc0993",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-clear-t66/task/trace.npz",
+        "sha256": "91521bd7351c91b115cdebcf201fc124a947d7323edc4a2e3c595ec983713727"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-corridor-t110/task/recovery.json",
+      "sha256": "1a4417efebdb9d225fffc5c17290e6efbd9a5ad0d4b2f5ea2101588cfd682951",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-corridor-t110/task/trace.npz",
+        "sha256": "11ccb66f7f90b0f4ab05d617ebfdd74888ed64582286d2dec3785c0f07bea403"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-corridor-t165/task/recovery.json",
+      "sha256": "151ea56b45cbd9fb79412937c525bc651af3a77b086a730a780c20c29fe03231",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-corridor-t165/task/trace.npz",
+        "sha256": "afeb45a67bc7129fdaa1ce8a2076731d6a3039762016318591fa0ef9fa288aa6"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-corridor-t33/task/recovery.json",
+      "sha256": "61e6790e28ee67eed2c6ea58de1ad14b5b05136856d04258492d9deb07ed928f",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-corridor-t33/task/trace.npz",
+        "sha256": "17b4bb0bf43c5b808322e0b272612559883cc84de3fc9e0604cca697cbe64dce"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-corridor-t66/task/recovery.json",
+      "sha256": "7680f364dc80eb18916ebd81cd1031e01961e2e0ef2b59751b3a2deb250183a0",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00707-stop-corridor-t66/task/trace.npz",
+        "sha256": "c861706fab7efd6bb6a551b112adc36f50f469b0026d9ba52fdf632bfa5a4547"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-clear-t124/task/recovery.json",
+      "sha256": "894391ef86e04b44867d386ecd88e7468e74a37d72487de359c032ab38c868d8",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-clear-t124/task/trace.npz",
+        "sha256": "eecd7a85037df9ec26a34e392d915dfc9e09963b22f8d01e5d2aba6acc08b075"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-clear-t62/task/recovery.json",
+      "sha256": "2e4c6f6c038d242f6e09fb1e6521789048c1cfe0b9c7efca6dfd42e5ab24abf5",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-clear-t62/task/trace.npz",
+        "sha256": "a1d8dde05f0c026c2255e8bfd6ab47ee070daf08552bc8e10c2d5df647dcca75"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-corridor-t124/task/recovery.json",
+      "sha256": "5768534b1b9f25255286d05ea8c0f8f2093b72710a58c69ad6ad6eb33a8e896e",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-corridor-t124/task/trace.npz",
+        "sha256": "e5c074b7f84e78b1ec351cac27d3bb14d97e1be8e482fb9aa3a4adeff5741b3c"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-corridor-t62/task/recovery.json",
+      "sha256": "3f580b7f9f1d6f4bfd2e307b8cfe12b87948718fb9eea3305788f5301dbc3392",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-corridor-t62/task/trace.npz",
+        "sha256": "c84b7647786869d5dd4cacbf2cb9b51ce495217bc7541fc109a9dc151e25ff02"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-clear-t102/task/recovery.json",
+      "sha256": "6712eba89307b2aef894851542fe50f9b5397ffc8c89f0b681fb8af6a45a9bc3",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-clear-t102/task/trace.npz",
+        "sha256": "d8fc2181ffecaa11ef57bec896374b01715dfac5d7f235711e51a3c43609d309"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-clear-t170/task/recovery.json",
+      "sha256": "16c3d040928a4332e8407e699be2c2fcb7003d61d3fec79177a0c8faf15677e1",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-clear-t170/task/trace.npz",
+        "sha256": "ac7c5303b2974cdd3d6dd3a68f5cf1dc6f81d229ea74995ace69f3d47325b1a3"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-clear-t255/task/recovery.json",
+      "sha256": "135fea3021190bbb334104db1fd230c65bd6abaaa13f677a79f7054043af6d5f",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-clear-t255/task/trace.npz",
+        "sha256": "366dc83f67c1585982369e83ae8810bedfd71e40adeb7075f2b2303c5231a192"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-clear-t51/task/recovery.json",
+      "sha256": "e51afb258eb1b7c50f079793d674868f6d388f24d0dff2057b863a680193904c",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-clear-t51/task/trace.npz",
+        "sha256": "43f771e7d8d525d464fda5e9a854c2ac0d196d61a8022b5d35ab71dcf0c6ae5e"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-corridor-t102/task/recovery.json",
+      "sha256": "e4b0d152e75f2fef63003e14fa620b136ffe47916e62eed0e5fdcd2e52bfcdd7",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-corridor-t102/task/trace.npz",
+        "sha256": "a2695f99470e6f90fe8b4cf2eef5a57d6fd5ef3aaef2c275cd36ade262063d84"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-corridor-t170/task/recovery.json",
+      "sha256": "c9cea80e7ca9cda9619fcc4cd9e58dd388fd3220d3ef2cd91975d580a1cf6ca5",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-corridor-t170/task/trace.npz",
+        "sha256": "b3b4335c368a9bd94ccc8d67df0162833e6904f136d51cf63d437207acfa63a3"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-corridor-t51/task/recovery.json",
+      "sha256": "0b968d8dcbe8bc38ae2e5de1bfc300666679a9b146f0e09b1e3fb91931e27d25",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-corridor-t51/task/trace.npz",
+        "sha256": "387e580d912abf0165b4a5a2d153ecd225648200bd7ac1a4aef0d4ca43b0996e"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-clear-t85/task/recovery.json",
+      "sha256": "ad64d84cf48d638a406eb42cb9ad20531ebbf9f0e24f90bffa4643e465d4a6fd",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-clear-t85/task/trace.npz",
+        "sha256": "4d83c4a15f1e9a8f6dde81106cb984403a9f0affb8d1d9867d83c420cf1ef592"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-clear-t112/task/recovery.json",
+      "sha256": "540d9dca96bc4b0ca9f9e81e4be05bc032a331ccc1fbee1b14a4b9e0074fb414",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-clear-t112/task/trace.npz",
+        "sha256": "9d3c0033ef9a2175897d69fdd04c3dbdf1553691df82b51a4e914ac586ee57ff"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-clear-t33/task/recovery.json",
+      "sha256": "8a3e571aeade4c54ea946b6b2a458f1ee82b4d9960b0b080471b99d99a40c749",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-clear-t33/task/trace.npz",
+        "sha256": "435019d316f6c6aa4d888b76f4f91ab42a9a6561d5a2a461feeef492cf708c9b"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-clear-t67/task/recovery.json",
+      "sha256": "bca9104eedb64a0498a9e3f353e8d13e8fb83a1ecbc2dadd7e529e1860dc5d39",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-clear-t67/task/trace.npz",
+        "sha256": "f27eed1b193b0adfa5ded3e8dd3a2050b99c9e5a1648190ae7968b6620137786"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-corridor-t111/task/recovery.json",
+      "sha256": "e4fc89639ac2083dc577e90b8cca810ac0e87b8a9757cbbcea38348b8a52a482",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-corridor-t111/task/trace.npz",
+        "sha256": "848d7c0051a5b1f413385920bf979e4baca3e690f7fb0c9634302334d39b7c97"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-corridor-t33/task/recovery.json",
+      "sha256": "5bc5d731df50528d8b5cc4465ab7e2e3b7954e5553a70a5d9caa438257617283",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-corridor-t33/task/trace.npz",
+        "sha256": "effee883ed89eb7ef00cc1013e5d301351fc38fd56e9f101acabae78f0b8972a"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-corridor-t66/task/recovery.json",
+      "sha256": "1aac085a2825d789990a82325cb2321ca6befacb6e0c97f2ac57be006e9ce1d6",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-corridor-t66/task/trace.npz",
+        "sha256": "cca87e1e2be08ca8a04dc2a9cdf1fa4067762d1974e22121b2f19597722ef48c"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-clear-t114/task/recovery.json",
+      "sha256": "db37a8f753de0fba91eeb428be71508a4f437c2ea13a9c28169ceec7eb648152",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-clear-t114/task/trace.npz",
+        "sha256": "12fe6964fe05ad787e39ff5174c8c0eedde20fcbb6cce3ffb2bbb73c60bf33a5"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-clear-t57/task/recovery.json",
+      "sha256": "7ae8e1aafb98c9a1bc69f8f9125f8a0d939cfe777b3211b43c32c737d2ad2f79",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-clear-t57/task/trace.npz",
+        "sha256": "1ee701bfa47f83f979b12d7a30f2ecc9a016f61e289f8c4e71fdfbd90ce98eb3"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-corridor-t114/task/recovery.json",
+      "sha256": "a68ffcf356378a0dfc5196a16c3ac3e8c3cf0c28f1d6e6cd37e39e62c8551fc0",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-corridor-t114/task/trace.npz",
+        "sha256": "b8a3caa771528d146bf76d0da5edd8fcd5f800f783e85c562099ee35a5b0c005"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-corridor-t57/task/recovery.json",
+      "sha256": "94e5ab90740fa26df32f4c5537a144ebead75adb08c6977b09f02719334f22a6",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-corridor-t57/task/trace.npz",
+        "sha256": "a03d61a018d9f0bd28c5857dcb75a2188edbf2d001f9e020e32abe45187547f5"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00120-stop-clear-t128/task/recovery.json",
+      "sha256": "28756062ba6fd8e716775d06adbf8589acd3fe2b8c6b949b9ac07f45b62ae4e3",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00120-stop-clear-t128/task/trace.npz",
+        "sha256": "d2bdb1e410f1f90e55630e531c9be1690dafb5ad480be1c55e357da61dfb6832"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00120-stop-clear-t61/task/recovery.json",
+      "sha256": "9b67132201f5f9f56f913719244b081f11263a41a3f01ab978f676728954544e",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00120-stop-clear-t61/task/trace.npz",
+        "sha256": "3d3262c421b55de6144eb8bdc76064e25dc7f1721f89d3116c575eb3ed6f7274"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00120-stop-corridor-t128/task/recovery.json",
+      "sha256": "be0c5f58ca177d71f2ff9c2ae38a52d91c608a1313c3f39903442f1187427a83",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00120-stop-corridor-t128/task/trace.npz",
+        "sha256": "204eddd0bbc7463196e244ffe7a98efa215dfd617d1672a92320c5cd278a99c5"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00120-stop-corridor-t61/task/recovery.json",
+      "sha256": "673b9f3350c79dfb3a1db1bfdf7b93df7edcd7cee73b88a29c17726613450e80",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00120-stop-corridor-t61/task/trace.npz",
+        "sha256": "503f9b6e6e9321ae1d5d42d62ed29cc3a07cf897a42b0a9807ed3ab3e719320b"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00265-stop-clear-t47/task/recovery.json",
+      "sha256": "5acd098aa385ee56ff582b04aaaba3c939a15ef4e7bfafb381ed1d74b89386a8",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00265-stop-clear-t47/task/trace.npz",
+        "sha256": "0463de7236b6a9221f1b233563ac923cd52dcfb7e420855c5d67a05ff2e3cc45"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00265-stop-clear-t98/task/recovery.json",
+      "sha256": "324edab7448ee035fb567056ffcaf16f881742ce4f63f206794933fac3b7d180",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00265-stop-clear-t98/task/trace.npz",
+        "sha256": "8ab9a1d0f38989cd3875ed1f0dbdc4f375a51b67c9c899af9df35abfd4865d8e"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00265-stop-corridor-t47/task/recovery.json",
+      "sha256": "169fbabe5cd52fa8ac7f799c6b2efe6d1c4be6c02fc2581e9bbfac693611349a",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00265-stop-corridor-t47/task/trace.npz",
+        "sha256": "bbfe5e00e60a7a205f3e13591f6253d68447e7304d1ae29542d1095d968ad9f8"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00265-stop-corridor-t98/task/recovery.json",
+      "sha256": "85c8b8afad999d88bcca3fca93389d5d1a507b4d736da5172bd778d5a4fbfa37",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00265-stop-corridor-t98/task/trace.npz",
+        "sha256": "991bb85ef61a8bbdee6c3e955adcd726d01c66d96cb6666370caceba6b4a74b9"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00677-stop-clear-t33/task/recovery.json",
+      "sha256": "a57f92dfd701c24bb607c349666b980130c43f2fa20e2a5c2d2ade22fab5f922",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00677-stop-clear-t33/task/trace.npz",
+        "sha256": "bd59ba88caad25463845e911a1d3255409b829bbf2ac0b69239fe80651dbf00e"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00677-stop-clear-t69/task/recovery.json",
+      "sha256": "1cfb2ec3375d0ef353f4933b74d900f9548d8bb13117e294919d3a863829907b",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00677-stop-clear-t69/task/trace.npz",
+        "sha256": "81c09bc739d61740d6498d88b6b4831b6d1d00188c406a8a17ea32be4281e139"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00677-stop-corridor-t32/task/recovery.json",
+      "sha256": "d54586d907a70ed943e363883fc6b45d0020c5842e5f2e76823949c9b99236f0",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00677-stop-corridor-t32/task/trace.npz",
+        "sha256": "9d84ed50a3f8e65ebc4e8449b8045e68ac6ea72a9d7b50e9747e3bf59e33df6e"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00677-stop-corridor-t68/task/recovery.json",
+      "sha256": "ab840a346d20f7dbf5c37eacfe87c69fc495ae5d23f07e85efced1d3b308ea2c",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00677-stop-corridor-t68/task/trace.npz",
+        "sha256": "de4408148ebb14edb8f708e8b7fcc39209e0bb7c7d4b700a1800a90a5923dac4"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00707-stop-clear-t26/task/recovery.json",
+      "sha256": "62ef35b2afbd0ccecd794c613b9fa52c94801a4688dd2e30db81dfaa459f69a7",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00707-stop-clear-t26/task/trace.npz",
+        "sha256": "e96f775bdfe346eb54824e8d18dc5c0aefe2b883e6e1a9c25fc59956f704f01f"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00707-stop-clear-t55/task/recovery.json",
+      "sha256": "d64f67ef7fd39a3cefaee418ece5616b6ffacdab1d0371145854771e0ce3d15a",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00707-stop-clear-t55/task/trace.npz",
+        "sha256": "022326ca20fc463235f712136e22021fc0e98c62a8e73a0c986f25f1e32f2526"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00707-stop-corridor-t26/task/recovery.json",
+      "sha256": "7077f78f3d10d8ede173fcfbd1d85133a394395503b3db954f29580a0f695548",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00707-stop-corridor-t26/task/trace.npz",
+        "sha256": "d75ce030fa4fdb89b4f3757b88ad27ab0c51560d5c64fec9127d0f0bc16ace27"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00707-stop-corridor-t55/task/recovery.json",
+      "sha256": "c0cdce50442787c4e302a42ca2c0f033d443398c2750b47dcaf32fef32b08484",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00707-stop-corridor-t55/task/trace.npz",
+        "sha256": "01dc00099a36b7712d039d8d22233c403816ce33fab131aa5b119fd8666a8172"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00711-stop-clear-t103/task/recovery.json",
+      "sha256": "9effd7dc94d42be3602b5575908a27e48e3a4616f2ed72954bddb2ce9a43da3f",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00711-stop-clear-t103/task/trace.npz",
+        "sha256": "36f04b1d5d34d4085f85cb4c5c436f695495fdfe0239c7100f8c716b8d00c7b3"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00711-stop-clear-t49/task/recovery.json",
+      "sha256": "00cb8a49d9ee998b18c29d329749f0d3a98d55d97011c0162bcafc61b77185c9",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00711-stop-clear-t49/task/trace.npz",
+        "sha256": "63e0e6e41d16034b4a9bf54ecba2f787f2fc32e00fe548eff7701f0082031e46"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00711-stop-corridor-t103/task/recovery.json",
+      "sha256": "67ef507d58a0f115ade0fbdd5d9bd4b4b73db44714f4b4bb8f58cabf103ba464",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00711-stop-corridor-t103/task/trace.npz",
+        "sha256": "de9ca84d6ecdceed00a0e218789505c76e415adabc588c69bfe9c0463b9094e8"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00711-stop-corridor-t49/task/recovery.json",
+      "sha256": "caec8929758fe83b4d7e9f26239354d9893c0fe2f5668228b7da9fb9b6899e24",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00711-stop-corridor-t49/task/trace.npz",
+        "sha256": "6b01fa8e6715aeee779d283805bc0fef6655986f2977b3eac9ffa2290952f243"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00770-stop-clear-t40/task/recovery.json",
+      "sha256": "b76cd78a73b86ff278545f639b084e806a7fd86b83513d93ad8affc3f9db8de2",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00770-stop-clear-t40/task/trace.npz",
+        "sha256": "b6ed6c482d65db947b9235d3b30d5563ac4a810783061e59ae5b7715fa9ca513"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00770-stop-clear-t85/task/recovery.json",
+      "sha256": "4b1708551f73e4482029622fafbf2e59d92e79b22d4cdc89a68d9b75f3598c06",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00770-stop-clear-t85/task/trace.npz",
+        "sha256": "ffca622c0d4c465ea381df1e47fa91c5a680caba8705dc0c69a5dbd2afb58f86"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00770-stop-corridor-t40/task/recovery.json",
+      "sha256": "e76388f9aebae697458c39f4f49d54c7f9bb589a96a984312d7598a4fe998b2d",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00770-stop-corridor-t40/task/trace.npz",
+        "sha256": "59863703d747f53754cdc2e36829573f9f15f8d1f78ad4a9df5680c43a54e429"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00770-stop-corridor-t85/task/recovery.json",
+      "sha256": "519d0c15f544ed82d2f93b0a45b3cf0121005076124f09eb35d1c51bf7531dc4",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00770-stop-corridor-t85/task/trace.npz",
+        "sha256": "492f2c955e96361cf0e77c111bcc6db36b77ad1fa750a46eaa6fb44be60e0af9"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00908-stop-clear-t26/task/recovery.json",
+      "sha256": "f1edc403e1cdbae2f94cec26d55daaf8308dccdad382909cfaa6316eeb809fa2",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00908-stop-clear-t26/task/trace.npz",
+        "sha256": "ea283f87c84b58a1ecbb51b341cedc2e059325083348c6f0b1d06ad592d29a34"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00908-stop-clear-t56/task/recovery.json",
+      "sha256": "12f66506dde2c230b2f9312d3efd23a4aabdf925a82498b1c94a8e694f5decbc",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00908-stop-clear-t56/task/trace.npz",
+        "sha256": "04317d04f17549e13f5d0539e59802d606c91af79975fbdda1dc49fb8fd37944"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00908-stop-corridor-t26/task/recovery.json",
+      "sha256": "b817621bd33ad896389263055b40b3d06de94c667218b8e9603ac558e96bab37",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00908-stop-corridor-t26/task/trace.npz",
+        "sha256": "f46c04fc8cadade1898bcaceaa59b33d70380ccbc22bd6a15c61f261d3741ce0"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00908-stop-corridor-t55/task/recovery.json",
+      "sha256": "72a4e9d09922a49477f4e0f3a6a5e2756b562c6a11add0e1bd434d5a8697c2c8",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00908-stop-corridor-t55/task/trace.npz",
+        "sha256": "201cd4d3b9570d949cfcf0b8415fc3fb9ac88c45139afe5cbe4e092ba8c48b01"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00976-stop-clear-t45/task/recovery.json",
+      "sha256": "ebf9e268362da866710d91abf377df277060cd8aa32a2184e114387dc8ef7e67",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00976-stop-clear-t45/task/trace.npz",
+        "sha256": "93dc4de701a581fe922b3be5a08c943e26c71ea4252b731d98c251d485a1386b"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00976-stop-clear-t95/task/recovery.json",
+      "sha256": "10fbd1e61fdc3ea727a7f3117ea12cef335d65c22f36ef8791196ed0a84f4300",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00976-stop-clear-t95/task/trace.npz",
+        "sha256": "e46b98a096bcee15dac9b29130eea1d00aa1d092339a8f6a4d589a52e3e559d9"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00976-stop-corridor-t45/task/recovery.json",
+      "sha256": "0e44e313b4ae826c2dfd3615e3288c316e41a292dce7448650ea2893b8f961fa",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00976-stop-corridor-t45/task/trace.npz",
+        "sha256": "01985959f409907ee89c4f1202261bcaaf7df7c142ae332ebb98c7a1aac27cd7"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00976-stop-corridor-t95/task/recovery.json",
+      "sha256": "1fd1f7e803e31236a3dd5ba083feaedda4ab8df1a390577cda8bf7b704508350",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00976-stop-corridor-t95/task/trace.npz",
+        "sha256": "e565ea0c84c27d86be884b82c516df8ec124886a1f46713f4ef0667f6558f53c"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00120-stop-clear-t128/task/recovery.json",
+      "sha256": "d8cd44b73c8f77e4ff033c5119d2160b97440786f751d8e866604b81ff25090b",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00120-stop-clear-t128/task/trace.npz",
+        "sha256": "d30e523c6b71b4c97255255ff02234fd9f09fa2b3f5cefdf72669d2a1c7e5506"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00120-stop-clear-t61/task/recovery.json",
+      "sha256": "32b4c20057567aeebbb55b594f2b80f50b482d030b20ac03fe2bffb43bb2aa6d",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00120-stop-clear-t61/task/trace.npz",
+        "sha256": "79bd2ea3fdd972bbef092c1ddb6bd9ebb11c5a3103e905400bdc86de75a86a96"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00120-stop-corridor-t128/task/recovery.json",
+      "sha256": "d1f35274892ca495eff99201e99ae4fad64eab1ddfb6f11079f23a8807aa269b",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00120-stop-corridor-t128/task/trace.npz",
+        "sha256": "d0a778235b8d2076b2e9d65a4c30769dddc48198e2e48fdf7b90f9d9c4f90bff"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00120-stop-corridor-t61/task/recovery.json",
+      "sha256": "c9036e36f17261d41e97518542f6a229f151c24811fa6fe8c1046b689a68d636",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00120-stop-corridor-t61/task/trace.npz",
+        "sha256": "5e7fdfc7ff9c1d959f3a0612087a6f6366c00af24fbcd1dc112961a677563db9"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00265-stop-clear-t47/task/recovery.json",
+      "sha256": "9eb75f490c75ec5c46b4edf8df038fcb620e1add3ab8ae130f731697c2c109ba",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00265-stop-clear-t47/task/trace.npz",
+        "sha256": "f83fe137909b10ec8a266e1fd8763d3a0fc28bb09f9bece86d978fac28647e28"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00265-stop-clear-t98/task/recovery.json",
+      "sha256": "df22a6cb9e1351b03a8c8675034dca5074d0644668f3fe6e39183db367f49fbf",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00265-stop-clear-t98/task/trace.npz",
+        "sha256": "e898c19ebd08c7f0bd94a292561033f4f9c403d517bac306d61f1a2e572185e3"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00265-stop-corridor-t47/task/recovery.json",
+      "sha256": "bdc35d2760e3d72e402dae508dbb0128fe464b1fb79b603c330d220cd5240d37",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00265-stop-corridor-t47/task/trace.npz",
+        "sha256": "bbabcd1e61958018d2f84505ed8e24ddb84ea60d0bf0d663643429710b5e50a4"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00265-stop-corridor-t98/task/recovery.json",
+      "sha256": "2bb6d9e19544c52883bcb0fa47e2a878bb2b605fd90d4303f622ae409c06419f",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00265-stop-corridor-t98/task/trace.npz",
+        "sha256": "e3f69ebbf3a6cd8b407e16e910d336b705991d62e0426d42a1e139f8add662f7"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00413-stop-clear-t124/task/recovery.json",
+      "sha256": "e4abb23110d79e64e43ef1ef205f0187e2d2fe0df18e7a33bc3951c410742580",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00413-stop-clear-t124/task/trace.npz",
+        "sha256": "fcda76b336a42b9eae8cb98c6d43c6f431100de3e74cd7a35409ffd20855c33d"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00413-stop-clear-t59/task/recovery.json",
+      "sha256": "6d78cd1aae7fc78a28e97e42dafb749df42f1c76e459c6880c9acc31cff4b4eb",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00413-stop-clear-t59/task/trace.npz",
+        "sha256": "c8e2d9c13913736a7adf64ead5ba1b8d5113ff4bb9a1650d3148a3402309d637"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00677-stop-clear-t33/task/recovery.json",
+      "sha256": "3d3ac83e6c1f95319a8452e5d9e38e1eb156b9cd2acc872cbf891581dd2e85cd",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00677-stop-clear-t33/task/trace.npz",
+        "sha256": "b0bda4e0ea52847ad843f17f71f1efd55a84d34d81c54de0b9ad6bd9db900ec0"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00677-stop-clear-t69/task/recovery.json",
+      "sha256": "f7b130fb4138137b7df07c937517889dec867c20b9482554f69aaf8c0aac1881",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00677-stop-clear-t69/task/trace.npz",
+        "sha256": "c0656a92320187ad657159cfbd650a6524cd732c55c4804c4ac8b4e02cf814b1"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00677-stop-corridor-t32/task/recovery.json",
+      "sha256": "65d9952dbf84a30b18df1d874a7e60462d3e0f0c8ba52e18f6aef809ce13884d",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00677-stop-corridor-t32/task/trace.npz",
+        "sha256": "79e803e5598e390e2014eff2760d1345372fb393dae0277788070057cce4ff4e"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00677-stop-corridor-t68/task/recovery.json",
+      "sha256": "bc63bd4b732a621f087dfbef8b53748cb28bea4c6d9a62046471db663cf36e18",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00677-stop-corridor-t68/task/trace.npz",
+        "sha256": "942877fa94554f58b5b0d8f1716d9932cc9c5548158fcd2f3825df376dcb6e7b"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00707-stop-clear-t26/task/recovery.json",
+      "sha256": "791b950d2f255b722a0648e3a9b6f45af45b2ecc558a1d8b28f3e5c24c0575ed",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00707-stop-clear-t26/task/trace.npz",
+        "sha256": "00a56e3cd8a212abd2788c15e5a7cb6b8c6a2c6bb3ebd50db4f20686a3012ef1"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00707-stop-clear-t55/task/recovery.json",
+      "sha256": "84b1400cc453b38d204e84feea17b79fdbd7fb6d3145049cb3650d4e209ed037",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00707-stop-clear-t55/task/trace.npz",
+        "sha256": "ad142f77755625f19b10e0cda53234fd2b4faa3f9406419d51c44bf927aac738"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00707-stop-corridor-t26/task/recovery.json",
+      "sha256": "075dde055702717af63c9a520745abb8d4d663ce3f31bebd0e0c2cc47058787b",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00707-stop-corridor-t26/task/trace.npz",
+        "sha256": "676f8439a373cb8f0731720a89ee79ea86b6453f5c3233f55927b78b7adbe97d"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00707-stop-corridor-t55/task/recovery.json",
+      "sha256": "5f67700aa624d6c8fcb4e6b5d880c0a1fcfb38c234a7ed903eac95dc416c7502",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00707-stop-corridor-t55/task/trace.npz",
+        "sha256": "70c6e7cc8f509959ff630d4b4445ef363bc22089e4a64ee7d9389e9cf1a2c312"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00711-stop-clear-t103/task/recovery.json",
+      "sha256": "577f5a5bb9012cb6061c4fa1f1b3984353d2a9a88d35b50544c0893424e919f6",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00711-stop-clear-t103/task/trace.npz",
+        "sha256": "866cb6b429e2bc94a2819a1beba91848faf336ca24c40f69bb8c162e259c29a0"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00711-stop-clear-t49/task/recovery.json",
+      "sha256": "084456f77a757867a885c7c68559356db9e4335192a6fbf6f3227d3f5a544f29",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00711-stop-clear-t49/task/trace.npz",
+        "sha256": "cbab4b78766988cc234f4ed1c22881cc104ae204834b851d7a97104f7736cb21"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00711-stop-corridor-t103/task/recovery.json",
+      "sha256": "abf2a1363e63bc7492422f644eaaba956c3b03052d6a93ff15b5e7897f84c9e8",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00711-stop-corridor-t103/task/trace.npz",
+        "sha256": "c5bc03de5ef92ebcd8bd0ad111c9b849ef1d14ca3364ddb460dd4e8353036a97"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00711-stop-corridor-t49/task/recovery.json",
+      "sha256": "c3f1d711a9a91ab29c565638eeb85ccdc086dbf97243fe12873bc3d755b20f2f",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00711-stop-corridor-t49/task/trace.npz",
+        "sha256": "aae0b8b14e5873f55a63855aa2397e4fa1046d8a33a826d1c9143f1315127cf2"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00770-stop-clear-t40/task/recovery.json",
+      "sha256": "b850ffa62eda309d881acef8ea816fbdd03e9d1a6b4a598b7b07ebd77c18aae6",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00770-stop-clear-t40/task/trace.npz",
+        "sha256": "a7d86837d124807c480ae9f202ac5fb9c28f3104c53b8cbe701ff0f13b305794"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00770-stop-clear-t85/task/recovery.json",
+      "sha256": "6638eda6d39380e2a5fe1d8558e99a742f6172b2a4828e791c97eb4642ab591e",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00770-stop-clear-t85/task/trace.npz",
+        "sha256": "02bd0e6db71cc908d3a52417193bcda50d9aec1aadcb8579308102000d036702"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00770-stop-corridor-t40/task/recovery.json",
+      "sha256": "1b8804c1e1bc25f8c6f61e5ecb563091ff957e74ceceff246ca74d4feb32168e",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00770-stop-corridor-t40/task/trace.npz",
+        "sha256": "359e3e95077e29aa11d9d0a41ecc3169e342452c6810c8dafb78b42dd970b559"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00770-stop-corridor-t85/task/recovery.json",
+      "sha256": "992c01f7ce4ab4b171924500599385805aa480c8940279751e7801b35f3b8f0f",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00770-stop-corridor-t85/task/trace.npz",
+        "sha256": "5a6446bc5b4c9b0d052bf230668acb48167f86e1d5610592f21f0abc71053c0b"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00801-stop-corridor-t142/task/recovery.json",
+      "sha256": "37b8385d7e12adfce4512644eebe7544d93b1f9085c4783a264b2b1218ab07d9",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00801-stop-corridor-t142/task/trace.npz",
+        "sha256": "2e9062dde301aba92a5be72a1cc8223c593c6384a756d5c9a7f31ad9e95009b6"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00801-stop-corridor-t68/task/recovery.json",
+      "sha256": "128bb2e6965831defc1e3bfc3ac7d1574102e15797e4b2cf8e45f3fb24fd372b",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00801-stop-corridor-t68/task/trace.npz",
+        "sha256": "0fcd68d44fab4f7baedc0342bed08cf7422bc06cddee29e3e8ed3a92b6980041"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00908-stop-clear-t26/task/recovery.json",
+      "sha256": "5e758ff262fe553f1b372e64f6f05dc2263f514bcca4af7314ec8fb67389074b",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00908-stop-clear-t26/task/trace.npz",
+        "sha256": "3370d1010e3cdc0855669911a27dca9b9ecc6d3d939a2c01c78ad4310387a604"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00908-stop-clear-t56/task/recovery.json",
+      "sha256": "c9411efb7900ee4de689c5def439c5b6517e9c6e09bfb6c1fcfdeed480b33592",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00908-stop-clear-t56/task/trace.npz",
+        "sha256": "347e6b3595f35d81980b9752a49ac5efaf554a36fe36faf60448b9c2e9c0f86c"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00908-stop-corridor-t26/task/recovery.json",
+      "sha256": "61d417b8c721b8dbfced67e9354898cb1264638c68835bdc57a3d0743dae94b2",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00908-stop-corridor-t26/task/trace.npz",
+        "sha256": "4d4b13b74479f06026ce6c776c5dedb843a6e8403f0687ddb4295327c862157f"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00908-stop-corridor-t55/task/recovery.json",
+      "sha256": "34bf721fa7cbc146515d279e30abe0dc56fa2b05966592bc5bd12e95fe93b3d5",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00908-stop-corridor-t55/task/trace.npz",
+        "sha256": "c9c50acc804da5ad8c458b2b56a99caa42c5f2f7d1d5eb840a0b17b7d6afb73f"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00976-stop-clear-t45/task/recovery.json",
+      "sha256": "fe48da3e3f514fe2dd94ca25befa652505791dd358ecb52aa751e97634338957",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00976-stop-clear-t45/task/trace.npz",
+        "sha256": "4c33b6e0c8cc78163edb7c196c4bbcb35af4434807e4dbc83fd08856ae83a567"
+      }
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00976-stop-corridor-t45/task/recovery.json",
+      "sha256": "c91a5dfa5026e068fd27399d88c102e51934500bed4ad715771621d24fb1f867",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00976-stop-corridor-t45/task/trace.npz",
+        "sha256": "4b589f4f97a220957353bf287575aa2b06ad725ebc2f1e30a8313066593b3094"
+      }
+    }
+  ],
+  "unsupported_attempts": [
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00399-stop-clear/task/recovery.json",
+      "sha256": "d11c2bb7223464b36d5246510dbfe1c430131c294ebb7b9a8dfce047eebaa357",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00399-stop-clear/task/trace.npz",
+        "sha256": "c090dba4e1f0243c5c2cf98c6e28a8904830dc38f48eaa068cac3d024e64c949"
+      },
+      "takeover_tick": 0,
+      "rows": 600
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00399-stop-corridor/task/recovery.json",
+      "sha256": "dd52bd7409901b6fde907964705569683104cd3e7dc2a046378535aeb423a58d",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00399-stop-corridor/task/trace.npz",
+        "sha256": "0df247dcd9093b423caaa6cb97ea73aa17ff4c49f7e35a7b29bdf9dbc6157964"
+      },
+      "takeover_tick": 0,
+      "rows": 1
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00413-stop-corridor/task/recovery.json",
+      "sha256": "951085ac42b9f3924d5074fff23714cfbf89c6cca76dd21c9d6c801635664e16",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00413-stop-corridor/task/trace.npz",
+        "sha256": "3e132c435d797d69af081e47daf7afb9f1f7e987a6d144a7727985fca45f2ebd"
+      },
+      "takeover_tick": 0,
+      "rows": 316
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00781-stop-clear/task/recovery.json",
+      "sha256": "75fe37f0e5b167d9062105afc29e0f4e5b2e844bded4480da0d52e81fa15b2cc",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00781-stop-clear/task/trace.npz",
+        "sha256": "b09d792d4d4c012587c1812e26d6cf63ffe2dd71c081b4bb03d1c7b34fcfc38f"
+      },
+      "takeover_tick": 0,
+      "rows": 450
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00781-stop-corridor/task/recovery.json",
+      "sha256": "ab5e75c9da45f87f43c91ff7864cb3bfe0c4c7449e82b1adb2267445c816a868",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/motor-demo-91260/00781-stop-corridor/task/trace.npz",
+        "sha256": "44bec10f94ee7482f3d4ed89dc11a19e3a1560179bc5d95edad7379a6fb09eda"
+      },
+      "takeover_tick": 0,
+      "rows": 115
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-clear-t257/task/recovery.json",
+      "sha256": "1beb613572dbe462648615631ea2665741f94e5caadd7d63700055eb9e1460f5",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-clear-t257/task/trace.npz",
+        "sha256": "b880bfda0b98299d61f27aad01c7eb75ad86ed1978d72f4ad5f7c4eeb17fb704"
+      },
+      "takeover_tick": 257,
+      "rows": 575
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-clear-t385/task/recovery.json",
+      "sha256": "4095392f3343662b9931f698be45f30829cf1d99fb58c646ffda449a17e7cec4",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-clear-t385/task/trace.npz",
+        "sha256": "dc08381a8ebdb9c09bb671b097e96e00b601607a36456aacc47a8509f96d905b"
+      },
+      "takeover_tick": 385,
+      "rows": 575
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-corridor-t257/task/recovery.json",
+      "sha256": "4c5f4c5db2e9dce31e927fe59f33e926fec52835f7f7659d4588d6c56433fccf",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-corridor-t257/task/trace.npz",
+        "sha256": "dd61bb63279d667239b84cf179046390bed31e15c582157c22e4fbed1df3599c"
+      },
+      "takeover_tick": 257,
+      "rows": 575
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-corridor-t386/task/recovery.json",
+      "sha256": "c9761848aff09f5af0e8e46fcb17be73c506fe202e215e44762a9eb5e75ff338",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00120-stop-corridor-t386/task/trace.npz",
+        "sha256": "5ff45d5076f46878bd6183db369e1fa3e4a73c720007bedf3df5a0a9ce7379d0"
+      },
+      "takeover_tick": 386,
+      "rows": 575
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-clear-t118/task/recovery.json",
+      "sha256": "87ee12f872104ca222f87502784baeeecf27be0bc463652818e7ebf85ca36380",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-clear-t118/task/trace.npz",
+        "sha256": "5bbd13db68a20420762cbbabc28067eb3707dbb0de5a6eec6d0b993202f5beb3"
+      },
+      "takeover_tick": 118,
+      "rows": 500
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-clear-t197/task/recovery.json",
+      "sha256": "047ea10e19c4078a0560454d9c42092d55587f8af27ef1e10c71e012c043a527",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-clear-t197/task/trace.npz",
+        "sha256": "039d453818761f57a6f6b1a4e9e8a303d989c13f32c37c8016e1896ec719f6cd"
+      },
+      "takeover_tick": 197,
+      "rows": 500
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-clear-t295/task/recovery.json",
+      "sha256": "95daaef2239de32b5bbdd3142f3bb4160d0ea9ac6c930d1c0900f62e3ae153d8",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-clear-t295/task/trace.npz",
+        "sha256": "3ffcfdd6fefa0ed0d46e5b45a95c26f63fd90a722c97667ad7679d95c61225ae"
+      },
+      "takeover_tick": 295,
+      "rows": 500
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-corridor-t118/task/recovery.json",
+      "sha256": "3d78c707d8deee861bb189574ec4e508618a96db1c29eccd35026b6e6b043376",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-corridor-t118/task/trace.npz",
+        "sha256": "7b73fcb69721c1026403687d7c5b7816c6af378774b054950116e18649f1e287"
+      },
+      "takeover_tick": 118,
+      "rows": 500
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-corridor-t197/task/recovery.json",
+      "sha256": "1bd60da8b9d9bb1283eed94844774cc20be831eb0f38c5a0526aa293e9bc4ac0",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-corridor-t197/task/trace.npz",
+        "sha256": "3de095d0b3624af665c89d98332752a7397335fae1793a8dc57062b71d633caf"
+      },
+      "takeover_tick": 197,
+      "rows": 500
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-corridor-t295/task/recovery.json",
+      "sha256": "c6322cab4fb3897455994198ebb17f287b9933883190697f4e935ad93f964539",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00265-stop-corridor-t295/task/trace.npz",
+        "sha256": "fd74b3f446e3255ebe7684e6d210f4ad06b5d6dc3221915f03e48c9b89988ac1"
+      },
+      "takeover_tick": 295,
+      "rows": 500
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00413-stop-clear-t248/task/recovery.json",
+      "sha256": "5ea2a2e9d163896081ad601af98d934f4af3e894910b04cfdb7da420d7597db4",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00413-stop-clear-t248/task/trace.npz",
+        "sha256": "331fef763a7005e99eb56ae5ebfa5741beef364d927956612a0e4f208c12b667"
+      },
+      "takeover_tick": 248,
+      "rows": 600
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00413-stop-clear-t372/task/recovery.json",
+      "sha256": "00ae8d7a55ba9bf0705fcec9639bd39f9e6e60ea247f30fc67dbb07f7011ced8",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00413-stop-clear-t372/task/trace.npz",
+        "sha256": "ca712891f53a49873281573b391912d6a2ca9fcfd7e4ffecafb2ba30d10b3a1d"
+      },
+      "takeover_tick": 372,
+      "rows": 600
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-clear-t208/task/recovery.json",
+      "sha256": "19e780281fbdc7b070dc7ceac1dc3c8bd51a7908fdc0aee00658c32728a0960f",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-clear-t208/task/trace.npz",
+        "sha256": "2ad26fe1540c95c137ad177c3ae0aef0a34d716e099a9037e0c11d7b86429391"
+      },
+      "takeover_tick": 208,
+      "rows": 350
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-corridor-t136/task/recovery.json",
+      "sha256": "a654ba1d141620b198364dbe44bf121c768fbc9942d89f50c818311de2dab8b0",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-corridor-t136/task/trace.npz",
+        "sha256": "b5bcf58806d3bea8e072c87895e99994810bed4847860f5adf9763f58d87d583"
+      },
+      "takeover_tick": 136,
+      "rows": 350
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-corridor-t204/task/recovery.json",
+      "sha256": "118447c8f3651db45444a3bf86447d6a43c8ee4e9a756d5441ccc31d66ed3204",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00677-stop-corridor-t204/task/trace.npz",
+        "sha256": "062b085a5ba396d51ab5195ebaf550f620e325808aa5cc00113c6169188bce95"
+      },
+      "takeover_tick": 204,
+      "rows": 350
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-clear-t207/task/recovery.json",
+      "sha256": "2ee8f7dc21bc699401cf353ec4ae24519735c55c41516280bd39881a395dc3ff",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-clear-t207/task/trace.npz",
+        "sha256": "57e64ac6827cbd09bea795d391b0acc268a1c3d764b6ca8662bec4abe82b8cec"
+      },
+      "takeover_tick": 207,
+      "rows": 475
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-clear-t311/task/recovery.json",
+      "sha256": "6b4a70b57b983dc240ef5abe3ff86396c1bb259f842e8e03007b20e0132420f5",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-clear-t311/task/trace.npz",
+        "sha256": "551e37e88528841f5d8a1d74ce28a2dd13bccbe141b8f59f7489102f1361042e"
+      },
+      "takeover_tick": 311,
+      "rows": 475
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-corridor-t207/task/recovery.json",
+      "sha256": "7de1040f99e1b41b60612b8a652661fa14d91577d22272054736c76d0643a965",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-corridor-t207/task/trace.npz",
+        "sha256": "3e1c75bfc816d5cc8b469af887dfcda818c11adf4ef3179dbb53b8e0ef8abeff"
+      },
+      "takeover_tick": 207,
+      "rows": 475
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-corridor-t311/task/recovery.json",
+      "sha256": "277c4ccd0deb3ebdf2d48e7d367b4f918c0091c181397e823091e6613fc4ae30",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00711-stop-corridor-t311/task/trace.npz",
+        "sha256": "0ba8ce81e38e2a38282f5656d2aa0964b1d71e0f183e3693f67b841e4360fb2b"
+      },
+      "takeover_tick": 311,
+      "rows": 239
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-corridor-t255/task/recovery.json",
+      "sha256": "e4d83484e51f9bd2b660a4869ef955c595959d1c1ff562474fd17e9150a01fd4",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00770-stop-corridor-t255/task/trace.npz",
+        "sha256": "42082810c118e9e7af84fcbcff4e4fbd4f74bed3e1ef7dc986b32ddd9d71eaa6"
+      },
+      "takeover_tick": 255,
+      "rows": 425
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-clear-t170/task/recovery.json",
+      "sha256": "d6078a8a424991fee1d06398365e14518bdae8b511d69555789bad4a2d4a7144",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-clear-t170/task/trace.npz",
+        "sha256": "b3ae8e45e1ab58855b644049c6c604335b0a927d16ad0cc2ee38e68b7b9683b2"
+      },
+      "takeover_tick": 170,
+      "rows": 625
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-clear-t284/task/recovery.json",
+      "sha256": "605801eba8a637eb479a1a386abcc24d3f62c194ade3a1600f6f3fa73acd73e1",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-clear-t284/task/trace.npz",
+        "sha256": "af74b0bbd790b135c377107561db78674a47a88911560f99d39715e58757e119"
+      },
+      "takeover_tick": 284,
+      "rows": 625
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-clear-t426/task/recovery.json",
+      "sha256": "87d3b1dd2c58e254d1208c5db0fab4b22b7d664bdda08189cbc88a92d0ef2f51",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-clear-t426/task/trace.npz",
+        "sha256": "905ae2d4c435dc577b6e5471bbdf02cf48a20a3ade0bf2d0c2f6e88603398c1e"
+      },
+      "takeover_tick": 426,
+      "rows": 625
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-corridor-t171/task/recovery.json",
+      "sha256": "a1e83d1e7ef02ccd48b4ef20fe6b7af623cc05c1fc91f1552632253ea2c9bb37",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-corridor-t171/task/trace.npz",
+        "sha256": "eb19a20f412124b943223059025742ca6799f2c7ee26d69dd5ae9415b7718698"
+      },
+      "takeover_tick": 171,
+      "rows": 625
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-corridor-t285/task/recovery.json",
+      "sha256": "0f2102ffbe3d1ee4f6cfe04a74e7063dc657b2948cd59ec0f5c5bd2afd4ba902",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-corridor-t285/task/trace.npz",
+        "sha256": "976b70c82ec7948e68c865b159cbe149e7bdf360658fb06d4a42e6905f109f76"
+      },
+      "takeover_tick": 285,
+      "rows": 625
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-corridor-t427/task/recovery.json",
+      "sha256": "eeaac7d62868ed29e285f04c3f756444eb8611e403c6c145c04ac49c6f430b75",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-corridor-t427/task/trace.npz",
+        "sha256": "0dab6a5a58245392f29e26fdb4bc4203188ab48ed5199c07f65077cdbf205dff"
+      },
+      "takeover_tick": 427,
+      "rows": 625
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-corridor-t85/task/recovery.json",
+      "sha256": "c47966e4db26b6c8889ffe63a11494293b36a7bc2bfcd0fca05104130280c8d6",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00801-stop-corridor-t85/task/trace.npz",
+        "sha256": "3fa7267792aab4b1763075d266e894a6e5202747c85f744317043f2920114879"
+      },
+      "takeover_tick": 85,
+      "rows": 625
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-clear-t168/task/recovery.json",
+      "sha256": "aa1f4c51d7199b1d5c785c326c61d7bc6dfef357952f7a9b2093f90cb8d4f7af",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-clear-t168/task/trace.npz",
+        "sha256": "92042d59f3f0ec94980073c7f827a62c79decfb0550d83c2adf72e22542bffdd"
+      },
+      "takeover_tick": 168,
+      "rows": 350
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-corridor-t167/task/recovery.json",
+      "sha256": "3dc973ba30e2c344ce40298f9e07da698c190b3acac6840f36702ac9724d572c",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00908-stop-corridor-t167/task/trace.npz",
+        "sha256": "fd0dac474be5a34f30852c2c973363b0b6347a06bf56defa2b6377f89c8322cb"
+      },
+      "takeover_tick": 167,
+      "rows": 350
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-clear-t191/task/recovery.json",
+      "sha256": "19bf9e7b117e748bf4493e042d3abd925b3a85248d1c2d30370a2ed24484da12",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-clear-t191/task/trace.npz",
+        "sha256": "228389dac06440a90a3bc57f6069799564fdbf12a5acbf66bd5e59f8a3a60175"
+      },
+      "takeover_tick": 191,
+      "rows": 500
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-clear-t287/task/recovery.json",
+      "sha256": "6a078fda95edd4d0a302086356c9e09e9d4aff5e5fe1bb9a36bcac86f4fe8afa",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-clear-t287/task/trace.npz",
+        "sha256": "e90042da6a852063ada30c5ed2d0cb012e04371618859bc9eb9b2b1a0881ac4f"
+      },
+      "takeover_tick": 287,
+      "rows": 500
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-corridor-t191/task/recovery.json",
+      "sha256": "4bddbf4a2e86bcb8ca4b90452099e64e4e35c9d85dc54c23dd6754e2f7e753a2",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-corridor-t191/task/trace.npz",
+        "sha256": "616481af3be375430bf859541af275c78fc83ab0671e6c7c7573249176442cab"
+      },
+      "takeover_tick": 191,
+      "rows": 500
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-corridor-t287/task/recovery.json",
+      "sha256": "cc80947ac62f386c6a5e572270ccfdcf8d633858699f12f3f3b99b85952fe3ca",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/collect/recovery-v1-91260/00976-stop-corridor-t287/task/trace.npz",
+        "sha256": "23be1e68eaf3749c28e06f5b8fce844b8e681a8c300c4b5f7427801ed00f14f0"
+      },
+      "takeover_tick": 287,
+      "rows": 500
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00413-stop-clear-t124/task/recovery.json",
+      "sha256": "a5b9ec64f126787d9c09ee0c146bb91e6e1882c6bf85551291e9c7c99195bbb7",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00413-stop-clear-t124/task/trace.npz",
+        "sha256": "160c5e5c9780ddd984204f230c3798d274e666e406c4afd0408a87c0f023aa2e"
+      },
+      "takeover_tick": 124,
+      "rows": 600
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00413-stop-clear-t59/task/recovery.json",
+      "sha256": "7feec4cf265be2762f5392e61207fd1fba182cbbe4dc4735daf1ef79644c9913",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00413-stop-clear-t59/task/trace.npz",
+        "sha256": "43797c0af934c0de2d91130562b9f62fb1aec75180b547fcc06b35289489b7cd"
+      },
+      "takeover_tick": 59,
+      "rows": 600
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00801-stop-clear-t142/task/recovery.json",
+      "sha256": "ad11468742c9606ef4b4b5141150806ce86280e26868fbd37f543b1d7f30ef5a",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00801-stop-clear-t142/task/trace.npz",
+        "sha256": "27c9345d6c4bddc103a692917775b9f03e58c2c444a756f3c337303cbd9760be"
+      },
+      "takeover_tick": 142,
+      "rows": 625
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00801-stop-clear-t68/task/recovery.json",
+      "sha256": "c974815a3a4adaf37a85edf572525cd1b387c2f985bbb9fa460b5625ee406bdf",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00801-stop-clear-t68/task/trace.npz",
+        "sha256": "29e7f0c5db6f4ebbaef1579eab519bce61f2f65a094d4bc797fa1f97f534dae7"
+      },
+      "takeover_tick": 68,
+      "rows": 625
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00801-stop-corridor-t142/task/recovery.json",
+      "sha256": "a685ff0d0a877eed8349594d853a5a79d49449d5b40ef0a9f09a6d7d2d7332ab",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00801-stop-corridor-t142/task/trace.npz",
+        "sha256": "a08e39d0bd9dd432cbb2a8abe4babc63068000d327c716e7d256bd258c1903d9"
+      },
+      "takeover_tick": 142,
+      "rows": 218
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00801-stop-corridor-t68/task/recovery.json",
+      "sha256": "8d3cee3015eedbcf5d897cae3c7643d65f026f8a87efafcae0dd4c6e572bb86f",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c1-recovery/00801-stop-corridor-t68/task/trace.npz",
+        "sha256": "65d5673d21daccba338b604aa86fb2ce299b7c4412f15a9d0df21f101503e2e8"
+      },
+      "takeover_tick": 68,
+      "rows": 625
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00801-stop-clear-t142/task/recovery.json",
+      "sha256": "09fd84edd23b251f8eac5a0bd09fd0536f711973eca8462e9107fbf87a7c8f0a",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00801-stop-clear-t142/task/trace.npz",
+        "sha256": "e2bae350387a5b1eb2f3803096200d68b141871856c7eff5451b16615dbb908a"
+      },
+      "takeover_tick": 142,
+      "rows": 625
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00801-stop-clear-t68/task/recovery.json",
+      "sha256": "8494df20f6264dedefe2bd6fef9b0a527cfa2d4d1917681d0cb0f5d45fdf499c",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00801-stop-clear-t68/task/trace.npz",
+        "sha256": "af41a10eb34a21b7cdb63ca9fc5e3bcd6c4575b7fa0512c6852932fe76799229"
+      },
+      "takeover_tick": 68,
+      "rows": 625
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00976-stop-clear-t95/task/recovery.json",
+      "sha256": "e71caec8639da81cdf064175545ad94a82ed79945477319e33627bcdb3087bca",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00976-stop-clear-t95/task/trace.npz",
+        "sha256": "84999566c88210f10a0c13d3c849a8913b84eb8b550b94b044aadbf2fe1c94ac"
+      },
+      "takeover_tick": 95,
+      "rows": 500
+    },
+    {
+      "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00976-stop-corridor-t95/task/recovery.json",
+      "sha256": "8e58a293ab7565fa33acbe96e10729d9e61c7372b26083703eb26ff124591de5",
+      "trace": {
+        "path": "/home/robotixx/motion2scene-training/workspace/nav-8192/dagger/dag-approach/c2-recovery/00976-stop-corridor-t95/task/trace.npz",
+        "sha256": "48fc94fe69f5f1ed444d38dc98303167c9f17de2fd91d3602143ac486419ae2b"
+      },
+      "takeover_tick": 95,
+      "rows": 500
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "state": "complete",
+  "updates": 3000,
+  "wall_seconds": 23.419284616997174,
+  "rows": 37077,
+  "episodes": 128,
+  "motions": 10,
+  "ancestry_groups": 1,
+  "frozen_motor_tensor_identity": true,
+  "full_command_action_identity": true,
+  "physical_success": null,
+  "evaluation_scope": "in-sample positive control only",
+  "recovery_fraction": 0.5,
+  "replay_motion_weights": null,
+  "sampled_rows_by_motion": {
+    "00120": 76770,
+    "00265": 77105,
+    "00413": 77060,
+    "00677": 76671,
+    "00707": 76902,
+    "00711": 76616,
+    "00770": 76732,
+    "00801": 76916,
+    "00908": 76234,
+    "00976": 76994
+  },
+  "qualified_recovery_episodes": 34,
+  "warm_start": true,
+  "approach_weight": null,
+  "approach_radius_m": null,
+  "approach_rows": null
+}

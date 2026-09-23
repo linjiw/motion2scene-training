@@ -1,8 +1,8 @@
 {
  "schema": "doc_link_baseline_v1",
  "generated_by": "scripts/check_doc_links.py --write-baseline",
- "files_scanned": 421,
- "links_checked": 1973,
+ "files_scanned": 422,
+ "links_checked": 1977,
  "counts": {"external_host": 271, "vendor_layout": 109, "missing": 174, "broken_anchor": 4},
  "broken": [
  {"file": "docs/sonic/datasheet_g1_indoor_corpus.md", "line": 5, "target": "../scripts/research/build_dataset_gallery.py", "class": "vendor_layout", "resolves_to": "vendor/sonic/scripts/research/build_dataset_gallery.py"},

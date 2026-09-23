@@ -28,6 +28,7 @@ cd vendor/sonic && export PY="env -u PYTHONPATH PYTHONPATH=$PWD TRL_EXPERIMENTAL
 | 7. Learner-prefix recoveries | `python3 $T/plan_recovery.py --tasks tasks/manifest.json --reference collect/teacher-S --fractions 0.15 0.3 0.5 --out plan.txt`, then `bash $T/run_recovery.sh <stage> S <nav.pt> <motor.pt> plan.txt` | navigation drives to the switch tick, the motor takes over; a suffix is admitted only if it earns its own 50-tick hold before the original deadline |
 | 8. nav-v2 forks | `nav_fit_config.py --view motor_recovery --warm-start fit/nav-v1/... --recovery-fraction 0.5 --fresh-behavior <sha of nav-v1>` versus `--recovery-fraction 0` | equal-update replay-versus-recovery comparison |
 | 9. Evaluate | `bash $T/run_stage.sh nav <stage> S <nav.pt> -- tasks...`; `python3 $T/table.py <stage>...` | unassisted goal/map panel at declared seeds |
+| 10. Export evidence | `python3 $T/export_results.py --packet $NAV_PACKET --out <docs evidence dir> [--copy-receipts <stage>] [--glob 'dagger/*/c2-recovery/*/task/task-result.json' --prefix dagger-c2-]` | `task-results.csv` and `recovery-attempts.csv`. `--copy-receipts` also copies each run's small JSON receipts; traces, shards and checkpoints stay in the packet. Example: [`nav-8192-dagger-reentry-20260914/`](../../docs/sonic/motion2scene/evidence/nav-8192-dagger-reentry-20260914/README.md) |
 
 `run_stage.sh` and `run_recovery.sh` skip tasks whose receipt already exists, so a stage can be
 resumed after a failed launch (a shared GPU can refuse device memory at startup; the runner
