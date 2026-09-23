@@ -4,6 +4,12 @@ Mirrors prepare_repaired_tasks.py (stopping-tasks-v2 style): each motion gets a 
 tail of --tail-seconds, a native motion file, a reference-with-hold.npz whose body_names
 drive the scene contact sensors, and two known-map scenes. Tasks are proposals; only an
 executed receipt qualifies them.
+
+Every obstacle footprint must keep --min-clearance-m of horizontal clearance from the start
+pelvis XY and from the goal XY, otherwise the build fails. --clearance-fix shift-out instead
+moves each offending corridor wall outward (away from the path midpoint, along its own
+lateral axis) by the smallest whole centimetre that restores the margin, and records the
+shift in the proposal and the task (legacy-v1.1 rebuild of 00399-corridor).
 """
 
 import argparse
@@ -20,11 +26,59 @@ from gear_sonic.dataset_generation.kimodo_motion_adapter import (
 )
 from gear_sonic.research.hindsight_training.runtime import sha
 from gear_sonic.research.scene_distillation.tasks import (
+    MIN_START_GOAL_CLEARANCE_M,
     SCHEMA,
     binding,
+    require_start_goal_clearance,
+    shift_to_clearance,
+    start_goal_clearance,
     validate_task,
     write_collision_scene,
 )
+
+CORRIDOR_OFFSET_M = 0.8
+CLEARANCE_FIX_STEP_M = 0.01
+CLEARANCE_FIX_MAX_M = 1.0
+
+
+def corridor_walls(mid_xy, side, quat, start, goal, min_clearance_m, fix):
+    """Two walls CORRIDOR_OFFSET_M either side of the path midpoint, parallel to start->goal.
+
+    With fix == "shift-out" a wall that crowds the start or goal moves outward (sign * side)
+    by the smallest CLEARANCE_FIX_STEP_M multiple that restores min_clearance_m. Returns the
+    walls and one amendment record per moved wall.
+    """
+    walls, amendments = [], []
+    for index, sign in enumerate((-1, 1)):
+        wall = {
+            "shape": "box",
+            "center_xyz": [*(mid_xy + sign * CORRIDOR_OFFSET_M * side), 0.75],
+            "quaternion_wxyz": quat,
+            "full_dimensions_xyz": [1.0, 0.2, 1.5],
+        }
+        if fix == "shift-out":
+            before = start_goal_clearance([wall], start, goal)[0]
+            if min(before["start_m"], before["goal_m"]) < min_clearance_m:
+                moved, shift = shift_to_clearance(
+                    wall, sign * side, start, goal, min_clearance_m,
+                    CLEARANCE_FIX_STEP_M, CLEARANCE_FIX_MAX_M,
+                )
+                after = start_goal_clearance([moved], start, goal)[0]
+                amendments.append(
+                    dict(
+                        obstacle_index=index,
+                        rule="shift_wall_outward_min_whole_cm_to_start_goal_clearance",
+                        shift_m=shift,
+                        direction_xy=[float(v) for v in sign * side],
+                        original_center_xyz=[float(v) for v in wall["center_xyz"]],
+                        center_xyz=moved["center_xyz"],
+                        clearance_before_m=dict(start=before["start_m"], goal=before["goal_m"]),
+                        clearance_after_m=dict(start=after["start_m"], goal=after["goal_m"]),
+                    )
+                )
+                wall = moved
+        walls.append(wall)
+    return walls, amendments
 
 
 def sonic_motion_entry_to_qpos(entry):
@@ -46,6 +100,12 @@ def main():
     parser.add_argument("--body-reference", type=Path, required=True, help="npz with robot body_names")
     parser.add_argument("--ids", nargs="+", required=True)
     parser.add_argument("--tail-seconds", type=float, default=2.0)
+    parser.add_argument("--variants", nargs="+", choices=("clear", "corridor"),
+                        default=["clear", "corridor"])
+    parser.add_argument("--min-clearance-m", type=float, default=MIN_START_GOAL_CLEARANCE_M,
+                        help="obstacle footprint to start pelvis / goal XY clearance")
+    parser.add_argument("--clearance-fix", choices=("none", "shift-out"), default="none",
+                        help="none: fail on a violation; shift-out: move offending walls outward")
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     ledger = {r["id"]: r for r in json.loads(args.ledger.read_text())}
@@ -92,18 +152,15 @@ def main():
         mid = q[(source_frames - 1) // 2, :3]
         yaw = float(np.arctan2(direction[1], direction[0]))
         quat = [float(np.cos(yaw / 2)), 0.0, 0.0, float(np.sin(yaw / 2))]
-        for variant in ("clear", "corridor"):
-            obstacles = []
+        for variant in args.variants:
+            obstacles, amendments = [], []
             if variant == "corridor":
-                for sign in (-1, 1):
-                    obstacles.append(
-                        {
-                            "shape": "box",
-                            "center_xyz": [*(mid[:2] + sign * 0.8 * side), 0.75],
-                            "quaternion_wxyz": quat,
-                            "full_dimensions_xyz": [1.0, 0.2, 1.5],
-                        }
-                    )
+                obstacles, amendments = corridor_walls(
+                    mid[:2], side, quat, start, goal, args.min_clearance_m, args.clearance_fix
+                )
+            clearance = require_start_goal_clearance(
+                obstacles, start, goal, args.min_clearance_m, label=f"{id}-stop-{variant}"
+            )
             scene = folder / (variant + ".usda")
             write_collision_scene(scene, obstacles, start, goal)
             source = folder / (variant + "-proposal.json")
@@ -116,6 +173,9 @@ def main():
                         "tail_seconds": args.tail_seconds,
                         "source_frames": source_frames,
                         "source": "synthetic research geometry; not generator success evidence",
+                        "min_start_goal_clearance_m": args.min_clearance_m,
+                        "start_goal_clearance_m": clearance,
+                        "clearance_amendments": amendments,
                     },
                     indent=2,
                 )
@@ -152,7 +212,10 @@ def main():
                 "terminal_reference_amendment": (
                     f"append {args.tail_seconds} seconds of terminal pose; unqualified continuation"
                 ),
+                "min_start_goal_clearance_m": args.min_clearance_m,
             }
+            if amendments:
+                task["clearance_amendments"] = amendments
             validate_task(task)
             path = folder / (variant + ".json")
             path.write_text(json.dumps(task, indent=2))
@@ -168,6 +231,9 @@ def main():
                 "training_motions": len(args.ids),
                 "development_opened": False,
                 "tail_seconds": args.tail_seconds,
+                "variants": args.variants,
+                "min_start_goal_clearance_m": args.min_clearance_m,
+                "clearance_fix": args.clearance_fix,
                 "warning": "Synthetic stopping candidates, not successful demonstrations.",
             },
             indent=2,
